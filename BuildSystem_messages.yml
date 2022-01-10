@@ -143,12 +143,12 @@ speed_set_flying: "%prefix% &7已將你的飛行速度設為 &b%speed%&7."
 speed_set_walking: "%prefix% &7已將你的行走速度設為 &b%speed%&7."
 
 # /day
-day_usage: "%prefix% &7用法: &b/day [world]"
+day_usage: "%prefix% &7用法: &b/day [世界]"
 day_unknown_world: "%prefix% &c未知的世界"
 day_set: "%prefix% &7已將世界 &b%world%&7 的時間設為白天."
 
 # /night
-night_usage: "%prefix% &7用法: &b/night [world]"
+night_usage: "%prefix% &7用法: &b/night [世界]"
 night_unknown_world: "%prefix% &c未知的世界"
 night_set: "%prefix% &7已將世界 &b%world%&7. 的時間設為晚上"
 
@@ -235,7 +235,7 @@ worlds_importall_invalid_character: "%prefix% &c✘ &7&o%world% &7包含無效�
 worlds_importall_world_imported: "%prefix% &a✔ &7已導入世界: &b%world%"
 worlds_importall_finished: "%prefix% &7所有世界已&a成功被&7導入."
 
-worlds_info_usage: "%prefix% &7用法: &b/worlds info [world]"
+worlds_info_usage: "%prefix% &7用法: &b/worlds info [世界]"
 worlds_info_unknown_world: "%prefix% &c未知的世界"
 world_info:
  - "&7&m-------------------------------------"
