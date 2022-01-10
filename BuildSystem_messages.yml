@@ -646,7 +646,7 @@ settings_placeplants_lore:
 settings_scoreboard_item: "&b計分板"
 settings_scoreboard_lore:
  - "&7&o計分板提供"
- - "&7&o很多有用的訊息"
+ - "&7&o很多有用的訊息."
 settings_scoreboard_disabled_item: "&c&mScoreboard"
 settings_scoreboard_disabled_lore:
  - "&7&oThe scoreboard has been"
