@@ -628,10 +628,10 @@ settings_nightvision_lore:
  - "&7&o當你開啟此選項"
  - "&7&o你將獲得永久夜視."
 
-settings_no_clip_item: "&bNoClip"
+settings_no_clip_item: "&b穿牆"
 settings_no_clip_lore:
- - "&7&oWhen flying against a wall you"
- - "&7&owill be put into spectator mode."
+ - "&7&o當你開啟此選項"
+ - "&7&o飛行時靠牆會自動變觀察者模式."
 
 settings_open_trapdoors_item: "&bOpen Trapdoors"
 settings_open_trapdoors_lore:
