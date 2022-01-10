@@ -1,0 +1,749 @@
+# ██████╗ ██╗   ██╗██╗██╗     ██████╗ ███████╗██╗   ██╗███████╗████████╗███████╗███╗   ███╗
+# ██╔══██╗██║   ██║██║██║     ██╔══██╗██╔════╝╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔════╝████╗ ████║
+# ██████╔╝██║   ██║██║██║     ██║  ██║███████╗ ╚████╔╝ ███████╗   ██║   █████╗  ██╔████╔██║
+# ██╔══██╗██║   ██║██║██║     ██║  ██║╚════██║  ╚██╔╝  ╚════██║   ██║   ██╔══╝  ██║╚██╔╝██║
+# ██████╔╝╚██████╔╝██║███████╗██████╔╝███████║   ██║   ███████║   ██║   ███████╗██║ ╚═╝ ██║
+# ╚═════╝  ╚═════╝ ╚═╝╚══════╝╚═════╝ ╚══════╝   ╚═╝   ╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚═╝
+
+
+# ---------
+# Messages
+# ---------
+prefix: "&8▎ &b建築系統 &8»"
+player_join: "&7[&a+&7] &a%player%"
+player_quit: "&7[&c-&7] &c%player%"
+loading_world: "&7讀取 &b%world%&7..."
+world_not_loaded: "&c世界未載入!"
+enter_world_name: "&7輸入 &b世界名稱"
+enter_generator_name: "&7輸入 &b地形生成器名稱"
+enter_world_creator: "&7輸入 &b世界創造者"
+enter_world_permission: "&7輸入 &b權限"
+enter_world_project: "&7輸入 &b專案名稱"
+enter_player_name: "&7輸入 &b玩家名稱"
+cancel_subtitle: "&7Type &ccancel &7to cancel"
+input_cancelled: "%prefix% &cInput cancelled!"
+update_available:
+ - "%prefix% &7啊! 有新的更新 &8[&bv%new_version%&8]"
+ - " &8➥ &7你現在的版本 : &bv%current_version%"
+command_archive_world: "%prefix% &c你不能在這裡使用這個命令 !"
+command_not_builder: "%prefix% &c只有建築者可以使用此命令!"
+
+
+# ---------
+# Scoreboard
+# ---------
+title: "&b&l建築系統"
+body:
+ - "&7&m                     &8"
+ - "&7世界:"
+ - " &b%world%"
+ - " "
+ - "&7狀態:"
+ - " %status%"
+ - "&7&m                     &7"
+
+
+# ---------
+# Commands
+# ---------
+sender_not_player: "您必須是玩家才能使用此命令 !"
+no_permissions: "%prefix% &c權限不足."
+
+# /back
+back_usage: "%prefix% &7用法 : &b/back"
+back_teleported: "%prefix% &7你會被傳送至你 &b之前的位置&7."
+back_failed: "%prefix% &c找不到之前的位置."
+
+# /build
+build_usage: "%prefix% &7用法: &b/build [玩家]"
+build_player_not_found: "%prefix% &c無法找到這個個玩家."
+build_activated_self: "%prefix% &7建築模式已&a開啟&7."
+build_activated_other_sender: "%prefix% &7建築模式已被&8[&7 %target%&8] &7&a啟用&7."
+build_activated_other_target: "%prefix% &7建築模式已被 &a啟用 &8[&7%sender%&8]&7 開啟."
+build_deactivated_self: "%prefix% &7建築模式已 &c關閉&7."
+build_deactivated_other_sender: "%prefix% &7構築模式 &8[&7為 %target%&8] &7是 &c停用&7."
+build_deactivated_other_target: "%prefix% &7構建模式是 &c停用 &8[&7由 %sender%&8]&7."
+
+# /buildSystem
+buildsystem_title: "%prefix% &7&n建築系統幫助:"
+buildsystem_back: "&7傳送到之前的位置."
+buildsystem_blocks: "&7打開帶有秘密方塊的選單."
+buildsystem_build: "讓你進入“建築模式”."
+buildsystem_config: "&7重新加載配置."
+buildsystem_day: "&7將世界上的時間設為白天."
+buildsystem_explosions: "&7開關是否防爆."
+buildsystem_gamemode: "&7改變你的遊戲模式."
+buildsystem_night: "&7將世界上的時間設為夜晚."
+buildsystem_noai: "&7開關生物 AI."
+buildsystem_physics: "&7開關方塊物理."
+buildsystem_settings: "&7管理用戶設置."
+buildsystem_setup: "&7更改創建世界時的默認項目."
+buildsystem_skull: "&7接收玩家或定制頭顱."
+buildsystem_speed: "&7更改你的飛行/步行速度"
+buildsystem_spawn: "&7傳送至重生點."
+buildsystem_top: "&7傳送到你上方的最高位置."
+buildsystem_worlds: "&7所有 &o/worlds &7指令 的概述."
+
+# /config
+config_usage: "%prefix% &7用法: &b/config reload"
+config_reloaded: "%prefix% &7已重新載入設定."
+
+# /explosions
+explosions_usage: "%prefix% &7用法: &b/explosions <世界>"
+explosions_unknown_world: "%prefix% &c未知世界."
+explosions_world_not_imported: "%prefix% &c必須載入世界 » /worlds import <世界>"
+explosions_activated: "%prefix% &7爆炸在 &b%world% &7已 &a啟用&7."
+explosions_deactivated: "%prefix% &77爆炸在 &b%world%  &7已 &c停用&7."
+explosions_deactivated_in_world: "%prefix% &7爆炸在 &b%world%  &7目前 &c停用&7."
+
+# /gamemode
+gamemode_usage: "%prefix% &7用法: &b/gamemode <模式> [玩家]"
+gamemode_player_not_found: "%prefix% &c找不到此玩家."
+gamemode_survival: "生存"
+gamemode_creative: "創造"
+gamemode_adventure: "冒險"
+gamemode_spectator: "觀察者"
+gamemode_set_self: "%prefix% &7你的遊戲模式已被設為 &b%gamemode%&7."
+gamemode_set_other: "%prefix% &b%target%&7 的遊戲模式已被設為 &b%gamemode%&7."
+
+# /physics
+physics_usage: "%prefix% &7用法: &b/physics <世界>"
+physics_unknown_world: "%prefix% &c錯誤的世界名."
+physics_world_not_imported: "%prefix% &c世界必須先被導入 » /worlds import <世界>"
+physics_activated: "%prefix% &7世界 : &b%world% &7的物理已 &a啟用&7."
+physics_activated_all: "%prefix% &7物理已在&b所有世界 &7&a啟用&7."
+physics_deactivated: "%prefix% &7世界 : &b%world% &7的物理已&c關閉&7."
+physics_deactivated_in_world: "%prefix% &7Physics in &b%world% &7are currently &cdeactivated&7."
+
+# /noAI
+noai_usage: "%prefix% &7用法: &b/noai <世界>"
+noai_unknown_world: "%prefix% &c未知的世界"
+noai_world_not_imported: "%prefix% &c世界必須被載入 » /worlds import <世界>"
+noai_deactivated: "%prefix% &7生物 AI 已在 &b%world% &7被 &a啟用&7."
+noai_activated: "%prefix% &7生物 AI 已在 &b%world% &7被 &c關閉&7."
+noai_activated_in_world: "%prefix% &7生物 AI 在&b%world% &7已被 &c關閉&7."
+
+# /skull
+skull_usage: "%prefix% &7用法: &b/skull [name]"
+skull_player_received: "%prefix% &7你收到了 &b%player%&7的頭顱."
+skull_custom_received: "%prefix% &7你收到了一個 &b自訂頭顱&7."
+
+# /spawn
+spawn_usage: "%prefix% &7用法: &b/spawn"
+spawn_admin: "%prefix% &7用法: &b/spawn [set/remove]"
+spawn_teleported: "%prefix% &7你已被傳送至 &b重生點&7."
+spawn_unavailable: "%prefix% &c這邊沒有重生點可以傳送."
+spawn_world_not_imported: "%prefix% &c世界必須被載入 » /worlds import <世界>"
+spawn_set: "%prefix% &7重生點已被設在 &b%x% %y% %z% &7(世界: &b%world%&7)."
+spawn_remove: "%prefix% &7已移除重生點."
+
+# /speed
+speed_usage: "%prefix% &7用法: &b/speed [1-5]"
+speed_set_flying: "%prefix% &7已將你的飛行速度設為 &b%speed%&7."
+speed_set_walking: "%prefix% &7已將你的行走速度設為 &b%speed%&7."
+
+# /day
+day_usage: "%prefix% &7用法: &b/day [world]"
+day_unknown_world: "%prefix% &c未知的世界"
+day_set: "%prefix% &7已將世界 &b%world%&7 的時間設為白天."
+
+# /night
+night_usage: "%prefix% &7用法: &b/night [world]"
+night_unknown_world: "%prefix% &c未知的世界"
+night_set: "%prefix% &7已將世界 &b%world%&7. 的時間設為晚上"
+
+# /top
+top_usage: "%prefix% &7用法: &b/top"
+top_teleported: "%prefix% &7你已被傳送至最高處 &btop&7."
+top_failed: "%prefix% &c沒有更高的結構在您的頭上."
+
+# /worlds
+worlds_addbuilder_usage: "%prefix% &7用法: &b/worlds addBuilder <世界>"
+worlds_addbuilder_error: "%prefix% &c錯誤: 請再試一遍!"
+worlds_addbuilder_unknown_world: "%prefix% &c未知的世界"
+worlds_addbuilder_player_not_found: "%prefix% &c找不到這個玩家."
+worlds_addbuilder_not_creator: "%prefix% &c你不是此世界的創作者."
+worlds_addbuilder_already_creator: "%prefix% &c你已經是此世界的創作者."
+worlds_addbuilder_already_added: "%prefix% &c這個玩家已經是建造者了."
+worlds_addbuilder_added: "%prefix% &b%builder% &7已成功&a加入&7建造者的行列."
+
+worlds_builders_usage: "%prefix% &7用法: &b/worlds builders <世界>"
+worlds_builders_unknown_world: "%prefix% &c未知的世界"
+
+worlds_world_name: "世界名稱"
+worlds_world_exists: "%prefix% &c這個世界已經存在."
+worlds_world_creation_invalid_characters: "%prefix% &7&o從世界名稱中刪除了無效字符."
+worlds_world_creation_started: "%prefix% &7世界: &b%world% &8(&7類型: &f%type%&8) &7的創建已開始..."
+worlds_template_creation_started: "%prefix% &7世界: &b%world% &8(&7模板: &f%template%&8) &7的創建已開始..."
+worlds_creation_finished: "%prefix% &7世界已&a成功&7創建."
+worlds_template_does_not_exist: "%prefix% &c此模板不存在."
+
+worlds_unknown_command: "%prefix% &7未知指令: &b/worlds help"
+worlds_navigator_open: "%prefix% &c您已經打開了導航器!"
+
+worlds_delete_usage: "%prefix% &7用法: &b/worlds delete <世界>"
+worlds_delete_unknown_world: "%prefix% &c未知的世界"
+worlds_delete_unknown_directory: "%prefix% &c刪除世界時發生錯誤: 未找到此目錄!"
+worlds_delete_error: "%prefix% &c刪除世界時發生錯誤: 請再嘗試一遍!"
+worlds_delete_canceled: "%prefix% &7世界: &b%world% &7的刪除已被取消."
+worlds_delete_started: "%prefix% &7已開始刪除 世界: &b%world% &7..."
+worlds_delete_finished: "%prefix% &7該世界已被&a成功&7刪除."
+worlds_delete_players_world: "%prefix% &7&o你所在的世界已被刪除."
+
+worlds_edit_usage: "%prefix% &7用法: &b/worlds edit <世界>"
+worlds_edit_unknown_world: "%prefix% &c未知的世界"
+worlds_edit_error: "%prefix% &cError: 請再嘗試一遍."
+
+worlds_help_usage: "%prefix% &7用法: &b/worlds help [page]"
+worlds_help_invalid_page: "%prefix% &c無效頁面."
+worlds_help_title_with_page: "%prefix% &7&n世界幫助:&8 (&7%page%/%max%&8)"
+worlds_help_permission: "&7&n權限&8: &b%permission%"
+worlds_help_help: "&7顯示所有子命令."
+worlds_help_info: "&7顯示有​​關世界的信息."
+worlds_help_item: "&7獲得 '世界導航器."
+worlds_help_tp: "&7傳送到另一個世界."
+worlds_help_edit: "&7打開世界編輯器。."
+worlds_help_addbuilder: "&7加一個建造者至世界."
+worlds_help_removebuilder: "&7將一個建造者從世界移除."
+worlds_help_builders: "&7打開世界的建造者名單."
+worlds_help_rename: "&7重新命名現有世界."
+worlds_help_setitem: "&7設置一個世界物品"
+worlds_help_setcreator: "&7設置世界的創造者"
+worlds_help_setproject: "&7設置世界項目."
+worlds_help_setpermission: "&7設置世界的權限."
+worlds_help_setstatus: "&7設置世界狀態."
+worlds_help_setspawn: "&7設置世界的出生點."
+worlds_help_removespawn: "&7移除世界的出生點."
+worlds_help_delete: "&7刪除一個世界."
+worlds_help_import: "&7載入一個世界."
+worlds_help_importall: "&7一次導入所有世界."
+worlds_help_unimport: "&7取消導入一個世界。"
+
+worlds_import_usage: "%prefix% &7用法: &b/worlds import <世界> [-g <generator>]"
+worlds_import_unknown_world: "%prefix% &c未知的世界"
+worlds_import_world_is_imported: "%prefix% &7這個世界已經被導入."
+worlds_import_unknown_generator: "%prefix% &c未知生成器."
+worlds_import_started: "%prefix% &7已開始導入世界: &b%world% &7..."
+worlds_import_invalid_character: "%prefix% &7無法導入世界: &c%world%&7. %prefix% &7&o包含無效字符: &c%char% "
+worlds_import_finished: "%prefix% &7世界&a成功&7導入."
+
+worlds_importall_usage: "%prefix% &7用法: &b/worlds importall"
+worlds_importall_no_worlds: "%prefix% &c沒有找到世界."
+worlds_importall_started: "%prefix% &7開始導入 &b%amount% &7 個世界 ..."
+worlds_importall_delay: "%prefix% &8➥ &7每個世界之間的延遲: &b%delay%s&7."
+worlds_importall_invalid_character: "%prefix% &c✘ &7&o%world% &7包含無效字符 &8(&c%char%&8)"
+worlds_importall_world_imported: "%prefix% &a✔ &7已導入世界: &b%world%"
+worlds_importall_finished: "%prefix% &7所有世界已&a成功被&7導入."
+
+worlds_info_usage: "%prefix% &7用法: &b/worlds info [world]"
+worlds_info_unknown_world: "%prefix% &c未知的世界"
+world_info:
+ - "&7&m-------------------------------------"
+ - "%prefix% &7&n世界資訊:&b %world%"
+ - " "
+ - " &8- &7創作者: &b%creator%"
+ - " &8- &7類型: &b%type%"
+ - " &8- &7私人狀態: &b%private%"
+ - " &8- &7建造者狀態: &b%builders_enabled%"
+ - " &8- &7建造者: &b%builders%"
+ - " &8- &7物品: &b%item%"
+ - " &8- &7狀態: &b%status%"
+ - " &8- &7項目: &b%project%"
+ - " &8- &7權限: &b%permission%"
+ - " &8- &7時間: &b%time%"
+ - " &8- &7開始時間: &b%creation%"
+ - " &8- &7物理: &b%physics%"
+ - " &8- &7爆炸: &b%explosions%"
+ - " &8- &7方塊破壞: &b%block_breaking%"
+ - " &8- &7鎖定位置: &b%block_placement%"
+ - " &8- &7生物 AI: &b%mobai%"
+ - " &8- &7自定義生成: &b%custom_spawn%"
+ - "&7&m-------------------------------------"
+
+worlds_item_receive: "%prefix% &7你收到了&b導航器&7."
+
+worlds_removebuilder_usage: "%prefix% &7用法: &b/worlds removeBuilder <世界>"
+worlds_removebuilder_error: "%prefix% &cError: 請再嘗試一遍!"
+worlds_removebuilder_unknown_world: "%prefix% &c未知的世界"
+worlds_removebuilder_player_not_found: "%prefix% &c找不到這個玩家."
+worlds_removebuilder_not_creator: "%prefix% &c你不是此世界的創作者."
+worlds_removebuilder_not_yourself: "%prefix% &c您不能將自己從創作者中移除."
+worlds_removebuilder_not_builder: "%prefix% &c此玩家不是建造者."
+worlds_removebuilder_removed: "%prefix% &b%builder% &7已被從建造者中&c移除&7."
+
+worlds_rename_usage: "%prefix% &7用法: &b/worlds rename <世界>"
+worlds_rename_unknown_world: "%prefix% &c未知的世界"
+worlds_rename_error: "%prefix% &c請再嘗試一遍."
+worlds_rename_same_name: "%prefix% &c這是世界現在的名字."
+worlds_rename_set: "%prefix% &7已將世界的名字從 &b%oldName% &7改為 &b%newName% &7."
+worlds_rename_players_world: "%prefix% &7&o你所在的世界正在重命名..."
+
+worlds_setitem_usage: "%prefix% &7用法: &b/worlds setItem <世界>"
+worlds_setitem_unknown_world: "%prefix% &c未知的世界"
+worlds_setitem_hand_empty: "%prefix% &c您手中沒有物品."
+worlds_setitem_set: "%prefix% &7世界: &b%world%&7的物品已被更改."
+
+worlds_setcreator_usage: "%prefix% &7用法: &b/worlds setCreator <世界>"
+worlds_setcreator_unknown_world: "%prefix% &c未知的世界"
+worlds_setcreator_error: "%prefix% &c請再嘗試一遍."
+worlds_setcreator_set: "%prefix% &7世界: &b%world%&7的創作者已被更改."
+
+worlds_setproject_usage: "%prefix% &7用法: &b/worlds setProject <世界>"
+worlds_setproject_unknown_world: "%prefix% &c未知的世界"
+worlds_setproject_error: "%prefix% &c請再嘗試一遍."
+worlds_setproject_set: "%prefix% &b%world%&7's project was successfully changed."
+
+worlds_setstatus_usage: "%prefix% &7用法: &b/worlds set狀態 <世界>"
+worlds_setstatus_unknown_world: "%prefix% &c未知的世界"
+worlds_setstatus_error: "%prefix% &c請再嘗試一遍."
+worlds_setstatus_set: "%prefix% &7世界: &b%world%&7的狀態已被更改為: %status%&7."
+
+worlds_setpermission_usage: "%prefix% &7用法: &b/worlds setPermission <世界>"
+worlds_setpermission_unknown_world: "%prefix% &c未知的世界"
+worlds_setpermission_error: "%prefix% &c請再嘗試一遍."
+worlds_setpermission_set: "%prefix% &7世界: &b%world%&7的權限已被更改成功."
+
+worlds_setspawn_world_not_imported: "%prefix% &c世界必須被載入 » /worlds import <世界>"
+worlds_setspawn_world_spawn_set: "%prefix% &7世界: &b%world%&7的重生點已被設置."
+
+worlds_removespawn_world_not_imported: "%prefix% &c世界必須被載入 » /worlds import <世界>"
+worlds_removespawn_world_spawn_removed: "%prefix% &7世界: &b%world%&7的重生點已被移除."
+
+worlds_tp_usage: "%prefix% &7用法: &b/worlds tp <世界>"
+worlds_tp_unknown_world: "%prefix% &c未知的世界"
+worlds_tp_world_not_imported: "%prefix% &c世界必須被載入 » /worlds import <世界>"
+worlds_tp_entry_forbidden: "%prefix% &c你不被允許進入此世界!"
+
+worlds_unimport_usage: "%prefix% &7用法: &b/worlds import <世界> [-g <generator>]"
+worlds_unimport_unknown_world: "%prefix% &c未知的世界"
+worlds_unimport_players_world: "%prefix% &7&o你所在的世界沒有被導入."
+worlds_unimport_finished: "%prefix% &7世界: &b%world% &7已被&卸載&7."
+
+
+# ---------
+# Items
+# ---------
+navigator_item: "&b&l導航器"
+barrier_item: "&c&l關閉庫存"
+custom_skull_item: "&b自訂頭顱"
+
+
+# ---------
+# GUIs
+# ---------
+# Multi-page inventory
+gui_previous_page: "&b« &7私人頁面"
+gui_next_page: "&7下一頁 &b»"
+
+# Old Navigator
+old_navigator_title: "&3» &8導航器"
+old_navigator_world_navigator: "&a世界導航器"
+old_navigator_world_archive: "&6世界歸檔"
+old_navigator_private_worlds: "&b私人世界"
+old_navigator_settings: "&c設定"
+
+# New Navigator
+new_navigator_world_navigator: "&a&l世界導航器"
+new_navigator_world_archive: "&6&l世界歸檔"
+new_navigator_private_worlds: "&b&l私人世界"
+
+# World Navigator
+world_navigator_title: "&3» &8世界導航器"
+world_navigator_no_worlds: "&c&n沒有可用的世界"
+world_navigator_create_world: "&b創建世界"
+world_item_title: "&3&l%world%"
+world_item_lore_normal:
+ - "&7狀態&8: %status%"
+ - ""
+ - "&7C創建者&8: &b%creator%"
+ - "&7項目專案&8: &b%project%"
+ - "&7權限&8: &b%permission%"
+ - ""
+ - "&7建造者&8:"
+ - "%builders%"
+world_item_lore_edit:
+ - "&7狀態&8: %status%"
+ - ""
+ - "&7創建者&8: &b%creator%"
+ - "&7項目專案&8: &b%project%"
+ - "&7權限&8: &b%permission%"
+ - ""
+ - "&7建造者&8:"
+ - "%builders%"
+ - ""
+ - "&8- &7&o左鍵&8: &7傳送"
+ - "&8- &7&o右鍵&8: &7編輯"
+world_item_builders_builder_template: "&b%builder%&7, "
+
+# World Archive
+archive_title: "&3» &8世界檔案"
+archive_no_worlds: "&c&n沒有可用的世界"
+
+# Private Worlds
+private_title: "&3» &8私人世界"
+private_no_worlds: "&c&n沒有可用的世界"
+private_create_world: "&b創建一個私人世界"
+
+# Setup
+setup_title: "&3» &8設置"
+setup_create_item_name: "&b創建一個世界物品"
+setup_create_item_lore:
+ - "&7這個物品會用在"
+ - "&7在選單顯示你的世界."
+ - ""
+ - "&7&n更改方式&7:"
+ - "&8» &7&o拖動新物品至舊物品上 "
+setup_default_item_name: "&b預設物品"
+setup_default_item_lore:
+ - "&7此物品是預設物品"
+ - "&7當世界創建時."
+ - ""
+ - "&7&n更改方式&7:"
+ - "&8» &7&o拖動新物品至舊物品上"
+setup_status_item_name: "&b狀態物品"
+setup_status_item_name_lore:
+ - "&7當你更改世界狀態時"
+ - "&7此物品將被顯示."
+ - ""
+ - "&7&n更改方式&7:"
+ - "&8» &7&o拖動新物品至舊物品上"
+setup_normal_world: "&b一般世界"
+setup_flat_world: "&a平坦世界"
+setup_nether_world: "&c地獄世界"
+setup_end_world: "&e終界世界"
+setup_void_world: "&f空蕩蕩的世界(?)"
+setup_imported_world: "&7導入世界"
+
+# Create World
+create_title: "&3» &8創建世界"
+create_predefined_worlds: "&6預定義的世界"
+create_templates: "&6模板"
+create_generators: "&6生成器"
+create_no_templates: "&c&n沒有可用的模板"
+create_normal_world: "&b一般世界"
+create_flat_world: "&a平坦世界"
+create_nether_world: "&c地獄世界"
+create_end_world: "&e終界世界"
+create_void_world: "&f空蕩的世界(?)"
+create_template: "&e%template%"
+create_generators_create_world: "&e用生成器生成一個世界"
+
+# World Type
+type_normal: "正常"
+type_flat: "平坦"
+type_nether: "地獄"
+type_end: "終界"
+type_void: "虛空"
+type_custom: "自定義"
+type_template: "模板"
+type_private: "私人"
+
+# Worlds Status
+status_title: "&8狀態 &7» &3%world%"
+status_not_started: "&c尚未開始"
+status_in_progress: "&6進行中"
+status_almost_finished: "&a即將完成"
+status_finished: "&2完成"
+status_archive: "&9歸檔"
+status_hidden: "&f隱藏"
+
+# Delete World
+delete_title: "&3» &8刪除世界"
+delete_world_name: "&e%world%"
+delete_world_name_lore:
+ - ""
+ - "&c&n警告&c: &7&o一旦世界刪除"
+ - "&7&o該世界將"
+ - "&7&o永遠無法回復!"
+delete_world_cancel: "&c取消"
+delete_world_confirm: "&a確認"
+
+# World Editor
+worldeditor_title: "&3» &8世界編輯"
+worldeditor_world_item: "&3&l%world%"
+
+worldeditor_blockbreaking_item: "&b方塊破壞"
+worldeditor_blockbreaking_lore:
+ - "&7&o切換是否可以"
+ - "&7&o破壞方塊."
+
+worldeditor_blockplacement_item: "&b方塊鎖定"
+worldeditor_blockplacement_lore:
+ - "&7&o切換是否可以"
+ - "&7&o放置方塊."
+
+worldeditor_physics_item: "&b方塊物理"
+worldeditor_physics_lore:
+ - "&7&o切換是否"
+ - "&7&o啟用物理."
+
+worldeditor_time_item: "&b時間"
+worldeditor_time_lore:
+ - "&7&o改變在世界上"
+ - "&7&o的時間."
+ - ""
+ - "&7&n現在時間&7: %time%"
+worldeditor_time_lore_sunrise: "&6日出"
+worldeditor_time_lore_noon: "&e中午"
+worldeditor_time_lore_night: "&9晚上"
+worldeditor_time_lore_unknown: "&f未知"
+
+worldeditor_explosions_item: "&b爆炸"
+worldeditor_explosions_lore:
+ - "&7&o切換是否"
+ - "&7&o啟用爆炸."
+
+worldeditor_butcher_item: "&b屠夫"
+worldeditor_butcher_lore:
+ - "&7&o清除世界上的所有動物."
+worldeditor_butcher_removed: "%prefix% &b%amount% &7隻生物已被移除."
+
+worldeditor_builders_item: "&b建造者"
+worldeditor_builders_lore:
+ - "&7&o管理誰可以"
+ - "&7&o在世界建築."
+ - ""
+ - "&8- &7&o左鍵&8: &7切換功能"
+ - "&8- &7&oR右鍵&8: &7管理建造者"
+worldeditor_builders_not_creator_item: "&c&m建造者"
+worldeditor_builders_not_creator_lore:
+ - "&7&o你不是該世界的"
+ - "&7&o創作者."
+
+worldeditor_builders_title: "&3» &8建造者"
+worldeditor_builders_creator_item: "&7&n創作者&7:"
+worldeditor_builders_creator_lore: "&8» &b%creator%"
+worldeditor_builders_no_creator_item: "&c世界沒有創造者!"
+worldeditor_builders_builder_item: "&b%builder%"
+worldeditor_builders_builder_lore:
+ - "&8- &7&oShift 點擊&8: &7移除"
+worldeditor_builders_add_builder_item: "&b添加建造者"
+
+worldeditor_gamerules_item: "&b遊戲規則 (Gamerules)"
+worldeditor_gamerules_lore:
+ - "&7&oM管理世界的遊戲規則 (gamerules)"
+
+worldeditor_gamerules_title: "&3» &8遊戲規則"
+worldeditor_gamerules_boolean_enabled:
+ - "&7&n現在狀態&7: &a開啟"
+worldeditor_gamerules_boolean_disabled:
+ - "&7&n現在狀態&7: &cfalse"
+worldeditor_gamerules_unknown:
+ - "&7&n現在狀態&7: &e%value%"
+worldeditor_gamerules_integer:
+ - "&7&n現在狀態&7: &e%value%"
+ - ""
+ - "&8- &7&o左鍵&8: &7減少 1"
+ - "&8- &7&oShift &7+ &7&o左鍵&8: &7減少 10"
+ - "&8- &7&o右鍵&8: &7增加 1"
+ - "&8- &7&oShift &7+ &7&o右鍵&8: &7增加 10"
+worldsettings_gamerule_:
+ - ""
+ - "&c&n警告&c: &7&o一旦該世界刪除"
+ - "&7&o資料將刪除"
+ - "&7&o並永遠無法回復!"
+
+worldeditor_visibility_item: "&b可見度"
+worldeditor_visibility_lore_public:
+ - "&7&o改變世界的可見度"
+ - ""
+ - "&7&n現在狀態&7: &b公開"
+worldeditor_visibility_lore_private:
+ - "&7&o改變世界的可見度"
+ - ""
+ - "&7&n現在狀態&7: &b私人"
+
+worldeditor_mobai_item: "&b生物 AI"
+worldeditor_mobai_lore:
+ - "&7&o切換是否啟用"
+ - "&7&o生物 AI."
+
+worldeditor_blockinteractions_item: "&bBlock Interactions"
+worldeditor_blockinteractions_lore:
+ - "&7&oToggle whether or not interactions"
+ - "&7&owith blocks are cancelled."
+
+worldeditor_status_item: "&b狀態"
+worldeditor_status_lore:
+ - "&7&o更改世界現在的"
+ - "&7&ostatus."
+ - ""
+ - "&7&n現在狀態&7: %status%"
+
+worldeditor_project_item: "&b專案項目"
+worldeditor_project_lore:
+ - "&7&o更改世界現在的"
+ - "&7&oproject."
+ - ""
+ - "&7&n現在狀態&7: &b%project%"
+
+worldeditor_permission_item: "&b權限"
+worldeditor_permission_lore:
+ - "&7&o更改世界現在的"
+ - "&7&opermission."
+ - ""
+ - "&7&n現在狀態&7: &b%permission%"
+
+# Settings
+settings_title: "&3» &8設定"
+
+settings_change_design_item: "&bChange Design"
+settings_change_design_lore:
+ - "&7&oSelect which colour the"
+ - "&7&oglass panes should have."
+
+settings_clear_inventory_item: "&b清除物品欄"
+settings_clear_inventory_lore:
+ - "&7&o當此選項開啟時"
+ - "&7&o將清除加入的玩家的物品欄"
+
+settings_disableinteract_item: "&b關閉方塊交互"
+settings_disableinteract_lore:
+ - "&7&o當此選項被開啟時"
+ - "&7&o將關閉方塊交互."
+
+settings_hideplayers_item: "&b隱藏玩家"
+settings_hideplayers_lore:
+ - "&7&o當此選項開啟時"
+ - "&7&o將隱藏所有線上玩家."
+
+settings_instantplacesigns_item: "&bInstant Place Signs"
+settings_instantplacesigns_lore:
+ - "&7&oWhen enabled signs are placed"
+ - "&7&owithout opening the text input."
+
+settings_keep_navigator_item: "&bKeep Navigator"
+settings_keep_navigator_lore:
+ - "&7&oWhen enabled the navigator"
+ - "&7&owill remain in your inventory"
+ - "&7&oeven when you clear it."
+
+settings_new_navigator_item: "&bNew Navigator"
+settings_new_navigator_lore:
+ - "&7&oA new and improved navigator"
+ - "&7&owhich is no longer a GUI."
+
+settings_nightvision_item: "&bNightvision"
+settings_nightvision_lore:
+ - "&7&oWhen enabled you will"
+ - "&7&oreceive permanent night vision."
+
+settings_no_clip_item: "&bNoClip"
+settings_no_clip_lore:
+ - "&7&oWhen flying against a wall you"
+ - "&7&owill be put into spectator mode."
+
+settings_open_trapdoors_item: "&bOpen Trapdoors"
+settings_open_trapdoors_lore:
+ - "&7&oWhen right clicking iron (trap-)doors"
+ - "&7&othey will be opened/closed."
+
+settings_placeplants_item: "&bPlace Plants"
+settings_placeplants_lore:
+ - "&7&oWhen enabled you can place"
+ - "&7&oplants on every kind of block."
+
+settings_scoreboard_item: "&bScoreboard"
+settings_scoreboard_lore:
+ - "&7&oA scoreboard which provides"
+ - "&7&oyou with useful information."
+settings_scoreboard_disabled_item: "&c&mScoreboard"
+settings_scoreboard_disabled_lore:
+ - "&7&oThe scoreboard has been"
+ - "&7&odisabled in the config."
+
+settings_slab_breaking_item: "&bSlab breaking"
+settings_slab_breaking_lore:
+ - "&7&oWhen breaking double slabs"
+ - "&7&oonly one half will be broken."
+
+settings_spawnteleport_item: "&bSpawn Teleport"
+settings_spawnteleport_lore:
+ - "&7&oWhen enabled you will be"
+ - "&7&oteleported to the spawn"
+ - "&7&oif it has been set."
+
+settings_worldsort_item: "&b世界排序"
+settings_worldsort_lore_alphabetically_name_az:
+ - "&7&o改變世界在"
+ - "&7&o導航器的排列."
+ - ""
+ - "&7&n現在狀態&7: &b&o名稱 (A-Z)"
+settings_worldsort_lore_alphabetically_name_za:
+ - "&7&o改變世界在"
+ - "&7&o導航器的排列."
+ - ""
+ - "&7&n現在狀態&7: &b&o名稱 (Z-A)"
+settings_worldsort_lore_alphabetically_project_az:
+ - "&7&o改變世界在"
+ - "&7&o導航器的排列."
+ - ""
+ - "&7&n現在狀態&7: &b&o專案項目 (A-Z)"
+settings_worldsort_lore_alphabetically_project_za:
+ - "&7&o改變世界在"
+ - "&7&o導航器的排列."
+ - ""
+ - "&7&n現在狀態&7: &b&o專案項目 (Z-A)"
+settings_worldsort_lore_date_newest:
+ - "&7&o改變世界在"
+ - "&7&o導航器的排列."
+ - ""
+ - "&7&n現在狀態&7: &b&o創建時間 (最新)"
+settings_worldsort_lore_date_oldest:
+ - "&7&o改變世界在"
+ - "&7&o導航器的排列."
+ - ""
+ - "&7&n現在狀態&7: &b&o創建時間 (最舊)"
+
+# Change Design
+design_title: "&3» &8改變顏色"
+design_red: "紅"
+design_orange: "橘"
+design_yellow: "黃"
+design_pink: "粉"
+design_magenta: "洋紅"
+design_purple: "紫"
+design_brown: "棕"
+design_lime: "淺綠"
+design_green: "綠"
+design_blue: "藍"
+design_aqua: "青"
+design_light_blue: "淺藍"
+design_white: "白"
+design_grey: "灰"
+design_dark_grey: "深灰"
+design_black: "黑"
+
+# Speed
+speed_title: "&3» &8速度"
+speed_1: "&b1"
+speed_2: "&b2"
+speed_3: "&b3"
+speed_4: "&b4"
+speed_5: "&b5"
+
+# Secret Blocks
+blocks_title: "&3» &8秘密方塊"
+blocks_full_oak_barch: "&b全橡木樹皮"
+blocks_full_spruce_barch: "&b全杉木樹皮"
+blocks_full_birch_barch: "&b全樺木樹皮"
+blocks_full_jungle_barch: "&b全叢林木樹皮"
+blocks_full_acacia_barch: "&b全相思木樹皮"
+blocks_full_dark_oak_barch: "&b全黑橡木樹皮”"
+blocks_red_mushroom: "&b紅蘑菇"
+blocks_brown_mushroom: "&b棕蘑菇"
+blocks_full_mushroom_stem: "&b全蘑菇莖"
+blocks_mushroom_stem: "&b蘑菇莖"
+blocks_mushroom_block: "&b蘑菇塊"
+blocks_smooth_stone: "&b平滑石頭"
+blocks_double_stone_slab: "&b雙層石台階"
+blocks_smooth_sandstone: "&b平滑砂岩"
+blocks_smooth_red_sandstone: "&b平滑紅砂岩"
+blocks_powered_redstone_lamp: "&b通電的紅石燈"
+blocks_burning_furnace: "&b永遠燃燒的熔爐"
+blocks_command_block: "&b指令方塊"
+blocks_barrier: "&b屏障"
+blocks_mob_spawner: "&b生怪磚"
+blocks_nether_portal: "&b地獄門"
+blocks_end_portal: "&b終界門"
+blocks_dragon_egg: "&b龍蛋"
