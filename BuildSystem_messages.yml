@@ -614,7 +614,7 @@ settings_instantplacesigns_lore:
 
 settings_keep_navigator_item: "&b保持導航器"
 settings_keep_navigator_lore:
- - "&7&oWhen enabled the navigator"
+ - "&7&o當你開啟此選項與導航器"
  - "&7&owill remain in your inventory"
  - "&7&oeven when you clear it."
 
