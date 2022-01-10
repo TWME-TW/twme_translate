@@ -113,7 +113,7 @@ physics_world_not_imported: "%prefix% &c世界必須先被導入 » /worlds impo
 physics_activated: "%prefix% &7世界 : &b%world% &7的物理已 &a啟用&7."
 physics_activated_all: "%prefix% &7物理已在&b所有世界 &7&a啟用&7."
 physics_deactivated: "%prefix% &7世界 : &b%world% &7的物理已&c關閉&7."
-physics_deactivated_in_world: "%prefix% &7Physics in &b%world% &7are currently &cdeactivated&7."
+physics_deactivated_in_world: "%prefix% &7物理在世界: &b%world% &7已經 &c停用&7."
 
 # /noAI
 noai_usage: "%prefix% &7用法: &b/noai <世界>"
