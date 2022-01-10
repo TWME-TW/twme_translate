@@ -640,8 +640,8 @@ settings_open_trapdoors_lore:
 
 settings_placeplants_item: "&b強制植物放置"
 settings_placeplants_lore:
- - "&7&oWhen enabled you can place"
- - "&7&oplants on every kind of block."
+ - "&7&o當你開啟此選項"
+ - "&7&o你將可放置植物到任何方塊上."
 
 settings_scoreboard_item: "&bScoreboard"
 settings_scoreboard_lore:
