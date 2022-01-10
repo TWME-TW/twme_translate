@@ -607,12 +607,12 @@ settings_hideplayers_lore:
  - "&7&o當此選項開啟時"
  - "&7&o將隱藏所有線上玩家."
 
-settings_instantplacesigns_item: "&bInstant Place Signs"
+settings_instantplacesigns_item: "&b立即放置告示牌"
 settings_instantplacesigns_lore:
- - "&7&oWhen enabled signs are placed"
- - "&7&owithout opening the text input."
+ - "&7&o當此選項開啟時"
+ - "&7&o無需再放告示牌時打字."
 
-settings_keep_navigator_item: "&bKeep Navigator"
+settings_keep_navigator_item: "&b保持導航器"
 settings_keep_navigator_lore:
  - "&7&oWhen enabled the navigator"
  - "&7&owill remain in your inventory"
@@ -657,11 +657,11 @@ settings_slab_breaking_lore:
  - "&7&oWhen breaking double slabs"
  - "&7&oonly one half will be broken."
 
-settings_spawnteleport_item: "&bSpawn Teleport"
+settings_spawnteleport_item: "&b初生點傳送"
 settings_spawnteleport_lore:
- - "&7&oWhen enabled you will be"
- - "&7&oteleported to the spawn"
- - "&7&oif it has been set."
+ - "&7&o當開啟此選項"
+ - "&7&o你將被傳送至初生點"
+ - "&7&o(如果有設置)."
 
 settings_worldsort_item: "&b世界排序"
 settings_worldsort_lore_alphabetically_name_az:
