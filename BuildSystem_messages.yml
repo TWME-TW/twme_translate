@@ -20,7 +20,7 @@ enter_world_creator: "&7輸入 &b世界創造者"
 enter_world_permission: "&7輸入 &b權限"
 enter_world_project: "&7輸入 &b專案名稱"
 enter_player_name: "&7輸入 &b玩家名稱"
-cancel_subtitle: "&7Type &ccancel &7to cancel"
+cancel_subtitle: "&7輸入 &ccancel &7來取消"
 input_cancelled: "%prefix% &cInput cancelled!"
 update_available:
  - "%prefix% &7啊! 有新的更新 &8[&bv%new_version%&8]"
