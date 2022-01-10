@@ -618,15 +618,15 @@ settings_keep_navigator_lore:
  - "&7&o導航器會持續在物品欄中"
  - "&7&o就算清空物品欄也還會在."
 
-settings_new_navigator_item: "&bNew Navigator"
+settings_new_navigator_item: "&b新導航器"
 settings_new_navigator_lore:
- - "&7&oA new and improved navigator"
- - "&7&owhich is no longer a GUI."
+ - "&7&o一個新的和改進的導航器"
+ - "&7&o這不再是一個 GUI."
 
-settings_nightvision_item: "&bNightvision"
+settings_nightvision_item: "&b夜視"
 settings_nightvision_lore:
- - "&7&oWhen enabled you will"
- - "&7&oreceive permanent night vision."
+ - "&7&o當你開啟此選項"
+ - "&7&o你將獲得永久夜視."
 
 settings_no_clip_item: "&bNoClip"
 settings_no_clip_lore:
