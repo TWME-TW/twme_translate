@@ -2077,7 +2077,7 @@ command:
       newSneaking: Sneaking
       newSprint: 衝刺
       newWalkSpeed: '&7走路速度: &6[walkspeed]'
-      newGameMode: '&fMode: &6[gameMode] '
+      newGameMode: '&f模式: &6[gameMode] '
       newGameModeHover:
       - '[sprint]'
       - '[sneaking]'
