@@ -620,57 +620,57 @@ info:
     heal:
     - 治療
     harm:
-    - harm
+    - 傷害
     jump:
-    - jump
+    - 跳躍提升
     confusion:
-    - confusion
+    - 噁心
     regeneration:
-    - regeneration
+    - 回復
     damage_resistance:
-    - damage_resistance
+    - 抗性
     fire_resistance:
-    - fire_resistance
+    - 抗火
     water_breathing:
-    - water_breathing
+    - 水下呼吸
     invisibility:
-    - invisibility
+    - 隱形
     blindness:
-    - blindness
+    - 失明
     night_vision:
-    - night_vision
+    - 夜視
     hunger:
-    - hunger
+    - 飢餓
     weakness:
-    - weakness
+    - 虛弱
     poison:
-    - poison
+    - 中毒
     wither:
-    - wither
+    - 凋零
     health_boost:
-    - health_boost
+    - 生命值提升
     absorption:
-    - absorption
+    - 吸收
     saturation:
-    - saturation
+    - 飽食
     glowing:
-    - glowing
+    - 發光
     levitation:
-    - levitation
+    - 漂浮
     luck:
-    - luck
+    - 幸運
     unluck:
-    - unluck
+    - 霉運
     slow_falling:
-    - Slow falling
+    - 緩降
     conduit_power:
-    - Conduit power
+    - 海靈祝福
     dolphins_grace:
-    - Dolphins grace
+    - 海豚悠游
     bad_omen:
-    - Bad omen
+    - 不祥之兆
     hero_of_the_village:
-    - Hero of the village
+    - 村莊英雄
 direction:
   n: 北
   ne: 東北
