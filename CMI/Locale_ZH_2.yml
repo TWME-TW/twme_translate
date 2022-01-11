@@ -858,7 +858,7 @@ command:
       editInfo: '&e點擊貼上舊內容，或者輸入 &6cancel &e來取消，或者輸入 &6remove &e來移除一行'
   anvil:
     help:
-      info: '&eOpen anvil'
+      info: '&e打開鐵砧'
       args: (playerName)
     info:
       feedback: '&eYou have opened anvil for &3[playerDisplayName]&e (&3[offon]&e).'
