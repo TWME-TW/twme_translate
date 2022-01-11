@@ -1542,11 +1542,11 @@ command:
       feedback: '&e你正在編輯 &3[playerDisplayName] &e的終界箱 (&3[offon]&e).'
   endgateway:
     help:
-      info: '&eToggle end gateway beam'
+      info: '&e切換終界折躍門光束(Beam)'
       args: ''
     info:
-      'off': '&7Beam was toggled &eOff'
-      'on': '&7Beam was toggled &6On'
+      'off': '&7光束已&e關閉'
+      'on': '&7光束已&6開啟'
   entityinfo:
     help:
       info: '&e查詢實體資訊'
@@ -1591,7 +1591,7 @@ command:
       targetfeedback: '&e你被玩家 &3[senderDisplayName]&e 撲滅了身上的火'
   feed:
     help:
-      info: '&e恢覆飢餓值'
+      info: '&e恢復飢餓值'
       args: '[playerName]'
     info:
       feedback: '&e你餵飽了玩家 &3[playerDisplayName]&e (&3[offon]&e).'
@@ -2454,7 +2454,7 @@ command:
       Clone: '&e從背包裡貼上物品'
       CloneExtra:
       - '&e右鍵點擊同時貼上盔甲欄物品'
-      - '&e再次點擊恢覆'
+      - '&e再次點擊恢復'
       timeDelay: '&e延遲: &6[time]'
       usages: '&e可使用 &6[times] &e次'
       usagesUnlimited: '&6無限制'
@@ -2982,7 +2982,7 @@ command:
     info:
       check: '&e玩家個人時間: &6[24h] &e或者 &6[12h] &e或者 &6[ticks]ticks'
       frozen: ' &c(-)'
-      gotreseted: '&6[playerDisplayName] &e的個人時間已恢覆為默認'
+      gotreseted: '&6[playerDisplayName] &e的個人時間已恢復為默認'
       gotfrozen: '&6[playerDisplayName] &e的個人時間已停止'
       gotunfrozen: '&6[playerDisplayName] &e的個人時間已繼續'
       setto: '&6[playerDisplayName]&e 將時間設置為 &6[24h] &e或者 &6[12h] &e或者 &6[ticks]ticks &e'
@@ -2998,7 +2998,7 @@ command:
       args: (playerName) [sun/rain/reset] (-s)
     info:
       check: '&e個人天氣: &6[weather]'
-      gotreseted: '&6[playerDisplayName] &e的個人天氣已恢覆為默認'
+      gotreseted: '&6[playerDisplayName] &e的個人天氣已恢復為默認'
       setto: '&e玩家 &6[playerDisplayName]&e 個人天氣已被設置為 &6[weather] &e'
       gotset: '&e你的個人天氣已被設置為 &6[weather]'
       reset: '&e個人天氣已重置'
