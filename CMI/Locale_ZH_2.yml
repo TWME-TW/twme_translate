@@ -2224,7 +2224,7 @@ command:
     info:
       enabled: Enabled
       disabled: Disabled
-      feedback: '&e[count] &6item frames are invisible around you'
+      feedback: '&e[count] &6個展示框已在你周圍隱形'
   iteminfo:
     help:
       info: '&e顯示物品資訊'
