@@ -171,8 +171,7 @@ info:
   changedPainting: '!actionbar!&e將畫布更名為 &6[name] &eID為 &6[id]'
   noSpam: '!title!&c不要洗頻!'
   noCmdSpam: '!title!&c指令使用頻率太快！'
-  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
-    with:&r [message]'
+  spamConsoleInform: '&c玩家 (&7[playerName]&c) 觸發了聊天過濾的 (&7[rules]&c) ,玩家的訊息: &r [message]'
   lookAtSign: '&e請指向一個告示牌'
   lookAtBlock: '&e請指向一個方塊'
   lookAtEntity: '&e請指向一個實體'
