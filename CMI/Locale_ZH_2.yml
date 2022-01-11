@@ -109,7 +109,7 @@ info:
   ShulkerBox: 界伏盒
   CantuseShulkerBox: '&c與玩家戰鬥時，無法使用界伏盒.
     Wait: [time]'
-  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. 無法使用它們!'
+  CantUseNonEncrypted: '!actionbar!&c此項目上的命令未加密. 無法使用它們!'
   CantDecode: '!actionbar!&c無法解碼 消息/指令. Key file contains wrong
     key for this task. 通知伺服器管理員這項訊息'
   Show: '&e展示'
@@ -157,8 +157,7 @@ info:
   flyingToHigh: '&c你不能再飛得更高了, 最大高度限制是 &6[max]&c!'
   specializedItemFail: '&c無法根據物品數量值:&7[value]確定具體物品'
   sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
-  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required
-    for night time speedup'
+  sleepersRequired: '!actionbar! &7&f[required] &7個人中有 &f[sleeping] 個人需要睡覺，才能加速晚上'
   sunSpeedingTitle: '&7[hour]'
   skippingNight: '!title!&7跳過晚上'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
