@@ -2917,7 +2917,7 @@ command:
       particleAmount: '&e粒子效果數量: &6[amount]'
       particlePercent: '&e兩邊減少的粒子百分比: &6[amount]%'
       activationRange: '&e激活範圍: &6[amount]'
-      particlePermission: '&eShow particles without permission: &6[state]'
+      particlePermission: '&e顯示沒有權限的粒子: &6[state]'
       bungeeTeleport: '&e傳送到確切的bungee位置: [state]'
       requiresPermission: '&e需要 &7[perm] &e權限來使用: [state]'
       kickBack: '&e防止沒有權限進入: [state]'
