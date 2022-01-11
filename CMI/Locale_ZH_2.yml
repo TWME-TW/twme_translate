@@ -2656,7 +2656,7 @@ command:
       notSet: '&c中心未設置'
       set: '&2中心已設置'
       noBlocks: '&c沒有足夠的方塊'
-      used: '&7Used: &7[blocks]'
+      used: '&7使用的: &7[blocks]'
       Action:
         Name:
           X: X
