@@ -989,7 +989,7 @@ command:
       args: (!) [message] (-s:[serverName,serverName])
       explanation:
       - 如果消息開頭是英文感嘆號 ! 那麼將會顯示簡化消息
-      - Servers can be defined to broadcast messages only in those servers
+      - 可以將伺服器定義為僅在這些伺服器中廣播消息
     info:
       format: '&e[&4Broadcast&e] &2[message]'
   blockcycling:
