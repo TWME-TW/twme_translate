@@ -622,25 +622,25 @@ info:
     absorption:
     - 吸收
     saturation:
-    - saturation
+    - 飽食
     glowing:
-    - glowing
+    - 發光
     levitation:
-    - levitation
+    - 漂浮
     luck:
-    - luck
+    - 幸運
     unluck:
-    - unluck
+    - 霉運
     slow_falling:
-    - Slow falling
+    - 緩降
     conduit_power:
-    - Conduit power
+    - 海靈祝福
     dolphins_grace:
-    - Dolphins grace
+    - 海豚悠游
     bad_omen:
-    - Bad omen
+    - 不祥之兆
     hero_of_the_village:
-    - Hero of the village
+    - 村莊英雄
 direction:
   n: 北
   ne: 東北
