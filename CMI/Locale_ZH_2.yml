@@ -2330,7 +2330,7 @@ command:
       cantKick: '&e你不能踢出這個玩家'
       messageToAll: '&6[playerDisplayName] &e從伺服器被踢出'
       kickReason: ' &e理由: &6[reason]'
-      all: '&eKicked &6[amount] &eplayers from server'
+      all: '&eK從伺服器踢出 &6[amount] &e個玩家'
   killall:
     help:
       info: '&e擊殺周圍的怪物'
