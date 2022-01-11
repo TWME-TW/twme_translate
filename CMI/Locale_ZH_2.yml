@@ -1428,7 +1428,7 @@ command:
     info:
       color: '&e當前顏色 - &c[red],&2[green],&9[blue] &eHex:&6#[hex]'
       custom: '&e啟用自定義顏色模式： &6[mode]'
-      bound: '&e靈魂綁定到 to: &6'
+      bound: '&e靈魂綁定到: &6'
       boundName: '[playerName]'
   editctext:
     help:
