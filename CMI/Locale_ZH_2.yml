@@ -1081,7 +1081,7 @@ command:
       add: '&e為 &6[playerDisplayName]&e 增加了 &6[amount]元 &e生怪磚生成費用'
       set: '&e將 &6[playerDisplayName] &e的生怪磚生成費用設定為 &6[amount]元 &e'
       clear: '&e清除了 &6[playerDisplayName] &e的所有怪磚生成費用'
-      reset: '&e重置 &6[playerDisplayName] &e的怪磚生成收費群組'
+      reset: '&e重置 &6[playerDisplayName] &e的生怪磚生成收費群組'
       take: '&e從 &6[playerDisplayName] &e收取了&6[amount]元 &e生怪磚生成費用'
   chat:
     help:
