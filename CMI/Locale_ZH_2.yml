@@ -4032,7 +4032,7 @@ command:
       feedback: '&e已傳送至玩家 &3[sourceDisplayName]-(&3[offon]&e) &e的位置.'
       bad:
         msg: '&c將要傳送至的地點不安全，原因： [reason]'
-        extraMsg: '&e使用 &6/tpbypass &e來無視危險，你只有 [time] 操作時間'
+        extraMsg: '&e使用 &6/tpbypass &e來無視危險，你只有 [time] 的操作時間'
         lava: '&c有岩漿'
         void: '&c是虛空'
         suffocation: '&c會窒息'
