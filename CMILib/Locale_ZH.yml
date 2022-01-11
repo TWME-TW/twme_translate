@@ -76,7 +76,7 @@ info:
   bungeeNoGo: '&c此功能在基於Bungee伺服器上無法作用'
   clickToTeleport: '&e點擊傳送'
   UseMaterial: '&4請使用物品名字!'
-  IncorrectMaterial: '&4Incorrect material name!'
+  IncorrectMaterial: '&4材料名稱不正確!'
   UseInteger: '&4請使用數字'
   UseBoolean: '&4請使用布林值 True 或者 False!'
   NoLessThan: '&4數值不能小於 [amount]!'
