@@ -590,15 +590,15 @@ info:
     heal:
     - 立即治療
     harm:
-    - harm
+    - 立即傷害
     jump:
     - 跳躍提升
     confusion:
     - 噁心
     regeneration:
-    - regeneration
+    - 回復
     damage_resistance:
-    - damage_resistance
+    - 抗性
     fire_resistance:
     - 抗性
     water_breathing:
@@ -606,9 +606,9 @@ info:
     invisibility:
     - 隱形
     blindness:
-    - blindness
+    - 失明
     night_vision:
-    - night_vision
+    - 夜視
     hunger:
     - hunger
     weakness:
