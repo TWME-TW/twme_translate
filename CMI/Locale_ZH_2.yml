@@ -1891,10 +1891,10 @@ command:
       - '&7務必記住大按鈕模式'
       - '&7會阻止你通過'
       order: '&7向下移動: &6[state]'
-      autoButton: '&7Automatically generate pagination buttons'
+      autoButton: '&7自動的生成分頁按鈕'
       autoButtonLore:
-      - '&eCurrent hologram doesnt have any pages create'
-      - '&eUse &6!nextpage! &eas a new line to make next page'
+      - '&e目前的全息圖沒有任何頁面創建'
+      - '&e在新的一行輸入 &6!nextpage! &e來製作下一頁'
       autoButtonForward: '&2這個全息圖已創建往前按鈕'
       autoButtonBackward: '&2這個全息圖已創建後退按鈕 '
       moveX: '&7X:&e[x]'
