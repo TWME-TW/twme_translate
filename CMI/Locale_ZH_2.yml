@@ -3868,7 +3868,7 @@ command:
     info:
       same: '&e目標玩家數據和源玩家數據已準備完畢'
       transferred: '&6[sourceName] &e的玩家數據成功轉移至 &6[Name]'
-      failed: '&cFailed to switch player data'
+      failed: '&c轉移玩家數據失敗'
   tablistupdate:
     help:
       info: '&e強制玩家更新TAB列表'
