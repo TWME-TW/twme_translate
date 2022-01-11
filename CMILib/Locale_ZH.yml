@@ -185,7 +185,7 @@ info:
   skullOwner: '!actionbar!&7Owner:&r [playerName]'
   circle: '&3圓形'
   square: '&5正方形'
-  clear: '&7Clear'
+  clear: '&7清除'
   protectedArea: '&c保護區域. 不可以這樣做.'
   valueToLong: '&e數值過長，最長: [max]'
   valueToShort: '&e數值過短，最短: [min]'
