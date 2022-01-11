@@ -30,7 +30,7 @@ ticket:
   required: &c你沒有這列火車的票!
   used: &a您已使用您的票 &e%0%&a !
   conflict: &c您擁有多張可用於此列車的車票。 請把正確的票拿在手上!
-  ownerconflict: &c這張火車票: %0% 不是您的, i它是 %1% 的!
+  ownerconflict: &c這張車票: %0% 不是您的, 它是 %1% 的!
   typeconflict: &c車票: %0% 不能用於此火車!
   add: &f[票務系統]&e 你的銀行帳戶收到了 %0% !
   check: &f[票務系統]&e You currently have %0% in your bank account!
