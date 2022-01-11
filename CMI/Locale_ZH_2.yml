@@ -2735,8 +2735,8 @@ command:
       TargetMsg: '&7[&8[senderDisplayName] &7-> &8我&7]&r&f [message]'
       SenderMsg: '&7[&8我 &7-> &8[playerDisplayName]&7]&r&f [message]'
       consoleMsg: '[[senderDisplayName] -> [playerDisplayName]] [message]'
-      noPM: '&c該玩家現在不接受私人消息'
-      badGroup: '&cCan''t send private messages to this group of players'
+      noPM: '&c該玩家現在不接受私人訊息'
+      badGroup: '&c無法向這組的玩家發送私人訊息'
   msgtoggle:
     help:
       info: '&e切換私人消息狀態'
