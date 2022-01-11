@@ -189,7 +189,7 @@ info:
     Offline: '&c離線'
     not: '&c這個伺服器不在群組下'
     noserver: '&c找不到這個伺服器'
-    server: '&eServer: &7[name]'
+    server: '&e伺服器: &7[name]'
   variables:
     Online: '&6在線'
     Offline: '&c離線'
