@@ -1381,7 +1381,7 @@ command:
       title: '&c請放入所有不需要的垃圾'
   distance:
     help:
-      info: '&e檢查2點之間的距離'
+      info: '&e檢查兩點之間的距離'
       args: (playerName) (playerName)
     info:
       feedback: '&7距離: &e[dist] &7x:&e[x] &7y:&e[y] &7z:&e[z] &7方向:&e[dir]'
