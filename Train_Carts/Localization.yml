@@ -13,7 +13,7 @@ commands:
     description: 為完整的火車執行 TrainCarts 命令
     usage: 請參閱 TrainCarts 的開發或 WIKI 頁面
 command:
-  about: TrainCarts %0% - See WIKI page for more information
+  about: TrainCarts %0% - 更多訊息，請參閱 WIKI 頁面
   noperm: &cYou do not have permission, ask an admin to do this for you.
   animate:
     success: &aNow playing animation &e%0%&a at speed &e%1%&a with phase delay &e%2%
