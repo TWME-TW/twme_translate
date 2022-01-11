@@ -4092,7 +4092,7 @@ command:
       started: '&e傳送開始!'
       current: '&e當前已傳送 &3[amount] &e，已有 &3[files] &e個文件被檢索'
       total: '&e總傳送量 &3[amount] &e，被檢索文件數量 &3[files] &e'
-      WorldNotFound: '&eWorld by given &7[name] &ename is not loaded. Make sure its
+      WorldNotFound: '&e給予的世界名: &7[name] &e未加載. Make sure its
         correct one. We will use as it is.'
   tpbypass:
     help:
