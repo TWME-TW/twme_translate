@@ -40,7 +40,7 @@ ticket:
 waiter:
   notfound: &c無法在軌道上找到 &e%0%&c 標準!
 pathfinding:
-  busy: &eLooking for a way to reach the destination...
+  busy: &e尋找到達目的地的方法中...
   failed: &cDestination &e%0%&c could not be reached from here!
 chest:
   noperm: &cYou do not have permission to use the train storage chest!
