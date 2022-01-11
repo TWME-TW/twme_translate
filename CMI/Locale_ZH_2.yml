@@ -1344,7 +1344,7 @@ command:
       unCuffed: '&6[playerDisplayName] &e不再是限制狀態'
       free: '&e你自由了，不再受任何限制'
       gotCuffed: '&e你現在受到了管理員的限制'
-      cuffedInfo: '&eYou are cuffed'
+      cuffedInfo: '&e你被銬上了 '
       cantCuff: '&c你不能限制這個玩家!'
   customrecipe:
     help:
