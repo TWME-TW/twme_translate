@@ -2371,7 +2371,7 @@ command:
       canUseIn: '&e距離下一次可用還有: [time]'
       cooldown: '&e冷卻: [time]'
       noKit: '&e沒有叫這個名字的禮包'
-      kitDoesntExist: '&eCan''t find kit ([kitName])'
+      kitDoesntExist: '&e無法發現禮包 ([kitName])'
       noKitAccess: '&c你沒有權限使用這個禮包'
       noFoundKit: '&e無任何禮包，請先創建一個'
       givenKit: '&e你將禮包 &6[kit] &e給予了 &6[playerDisplayName]'
