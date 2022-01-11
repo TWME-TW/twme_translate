@@ -19,7 +19,7 @@ command:
     success: &aNow playing animation &e%0%&a at speed &e%1%&a with phase delay &e%2%
     failure: &cFailed to find animation &e%0%&c!
 edit:
-  noselect: &eYou haven't selected a train to edit yet!
+  noselect: &e您尚未選擇要編輯的火車!
   notallowed: &cYou are not allowed to own trains!
   nonefound: &cYou do not own any trains you can edit.
   notowned: &cYou do not own this train!
