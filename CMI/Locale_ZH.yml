@@ -69,7 +69,7 @@ info:
   NameChange: '&6[playerDisplayName] &e進入伺服器，他的原名是: &6[namelist]'
   Cooldowns: '&e該指令 &6[cmd] &e需要冷卻 &6[time]'
   specializedCooldowns: '&e該指令需要冷卻，請等待 &6[time]'
-  specializedRunning: '&eCommand still running, please wait &6[time]'
+  specializedRunning: '&e該指令仍在執行中，請等待 &6[time]'
   CooldownOneTime: '&e該指令只能使用一次'
   WarmUp:
     canceled: '&e哎呀，你移動了一下，指令取消了'
