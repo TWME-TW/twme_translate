@@ -1922,7 +1922,7 @@ command:
       noHomes: '&c沒有已保存的家'
       private: '&c這個家是私有的'
       remove: '&cShift+右鍵來移除家'
-      guiTitle: '&0[playerDisplayName] &8homes [current]/[max]'
+      guiTitle: '&0[playerDisplayName] &8的家 [current]/[max]'
   homes:
     help:
       info: '&e查詢家的列表'
