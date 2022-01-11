@@ -46,10 +46,10 @@ chest:
   noperm: &c您沒有權限使用火車儲物箱!
   give: &a您已獲得一個火車儲物箱物品. 用它來存儲和生成火車!
   update: &a您的火車儲物箱物品已更新
-  locked: &cYour train storage chest item is locked and can not pick up the train
-  pickup: &aTrain picked up and stored inside the item!
+  locked: &c您的火車儲物箱物品已鎖定，無法取走火車
+  pickup: &a火車拾起並存放在物品內!
   spawn:
-    success: &aTrain stored inside the item has been spawned on the rails!
-    empty: &cTrain can not be spawned, no train is stored in the item!
-    norail: &cTrain can not be spawned, clicked block is not a known rail!
-    blocked: &cTrain can not be spawned, no space on rails!
+    success: &a存放在物品內的火車已在鐵軌上生成!
+    empty: &c火車無法生成，物品中沒有存儲火車!
+    norail: &c火車無法生成，點擊的方塊不是已知的鐵軌!
+    blocked: &c!火車無法生成，鐵軌上沒有空間
