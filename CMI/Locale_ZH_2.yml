@@ -2920,7 +2920,7 @@ command:
       particlePermission: '&eShow particles without permission: &6[state]'
       bungeeTeleport: '&e傳送到確切的bungee位置: [state]'
       requiresPermission: '&e需要 &7[perm] &e權限來使用: [state]'
-      kickBack: '&ePrevent enter without permission: [state]'
+      kickBack: '&e防止沒有權限進入: [state]'
       informPermission: '&e通知缺少權限: [state]'
       teleportToLocation: '&e傳送至傳送門位置'
       teleportToTarget: '&e傳送至傳送門目的地'
