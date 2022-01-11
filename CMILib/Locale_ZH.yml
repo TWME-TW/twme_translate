@@ -233,7 +233,7 @@ info:
   skippingNight: '!title!&7跳過晚上'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
   repairConfirm: '&e點擊來確認修復 &7[items] &e要花 &7[cost]'
-  bookDate: '&7Written at &f[date]'
+  bookDate: '&7撰寫於 &f[date]'
   maintenance: '&7維護模式'
   mapLimit: '&c不能超過 30 000 000 個方塊'
   startedEditingPainting: '&e開始畫布編輯，點擊其它方塊取消'
@@ -241,8 +241,7 @@ info:
   changedPainting: '!actionbar!&e將畫布更名為 &6[name] &eID為 &6[id]'
   noSpam: '!title!&c不要洗頻!'
   noCmdSpam: '!title!&c指令使用頻率太快！'
-  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
-    with:&r [message]'
+  spamConsoleInform: '&c玩家 (&7[playerName]&c) 觸發了聊天過濾的 (&7[rules]&c) ,玩家的訊息: &r [message]'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
   FirstJoin: '&e歡迎 &6[playerDisplayName] &e來到創造建築伺服器'
   LogoutCustom: ' &6[playerDisplayName] &e下線了...'
@@ -740,7 +739,7 @@ econ:
   notEnoughMoney: '&c你沒有足夠的現金. 還需要 (&6[amount]&c)'
   tooMuchMoney: '&c你現金太多了'
   disabled: '&c經濟已禁用，你不能使用這個指令'
-  commandCost: '&7此指令的價格為 &6[cost] &7重複此操作或單擊此處確認'
+  commandCost: '&7此指令的價格為 &6[cost] &7重複此操作或點擊此處確認'
 Selection:
   SelectPoints: '&c用選擇工具選擇 2 個點 AKA: &6[tool]'
   PrimaryPoint: '&e選擇 &6第一個 &e選擇點 [point]'
