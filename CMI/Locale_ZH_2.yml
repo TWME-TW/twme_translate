@@ -165,7 +165,7 @@ info:
   bookDate: '&7在 &f[date] &7時寫的'
   maintenance: '&7維護模式'
   notSet: 未設定
-  mapLimit: '&c不能超過 30 000 000 個方塊'
+  mapLimit: '&c不能超過 30,000,000 個方塊'
   startedEditingPainting: '&e開始畫布編輯，點擊其它方塊取消'
   canceledEditingPainting: '&e你取消了畫布編輯'
   changedPainting: '!actionbar!&e將畫布更名為 &6[name] &eID為 &6[id]'
