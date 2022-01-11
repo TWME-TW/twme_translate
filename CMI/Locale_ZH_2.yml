@@ -268,7 +268,7 @@ info:
   valueToLong: '&e數值過長，最長: [max]'
   valueToShort: '&e數值過短，最短: [min]'
   pvp:
-    noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
+    noGodDamage: '!actionbar!&c你不能在上帝模式時傷害玩家'
   InvEmpty:
     armor: '&e你應該清空裝備欄!'
     hand: '&e你應該清空手中物品!'
