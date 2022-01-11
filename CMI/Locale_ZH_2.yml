@@ -2203,7 +2203,7 @@ command:
       related: "&7相關帳戶:\n&f[list]    "
   item:
     help:
-      info: '&eGive item to yourself'
+      info: '&e給自己物品'
       args: '[itemname] (amount)'
       explanation:
       - Name and lore supports placeholders
