@@ -1812,8 +1812,8 @@ command:
       feedback: '&6享受你的新帽子吧!'
       targetfeedback: '&3[senderDisplayName]&6 更換了你的頭戴帽子!'
       fullinv: '&3[playerDisplayName] &6的背包已滿, 不能改變帽子!'
-      incorrect: '&3Incorrect item in head slot, cant replace with new one. Remove
-        it manually'
+      incorrect: '&3頭部物品欄中的物品不正確，無法更換新物品.
+        請盡快移除它'
   head:
     help:
       info: '&e獲得玩家的頭顱'
