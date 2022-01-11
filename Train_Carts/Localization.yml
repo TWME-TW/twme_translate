@@ -27,7 +27,7 @@ select:
   destination: &e您已選擇 &f%0%&e 作為您的目的地!
 ticket:
   expired: &c你的票: %0% 已過期
-  required: &cYou do not own a ticket for this train!
+  required: &c你沒有這列火車的票!
   used: &aYou have used your &e%0%&a ticket!
   conflict: &cYou own multiple tickets that can be used for this train. Please hold
     the right ticket in your hand!
