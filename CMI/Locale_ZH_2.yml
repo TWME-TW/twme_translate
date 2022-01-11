@@ -2016,7 +2016,7 @@ command:
       savingInProgress: '&eData will be saved into data base in next couple minutes
         depending on how many entries we need to save'
       HDfile: '&c找不到HolographicDisplays插件數據庫文件.導入中止.'
-      HDexist: '&cHologram by &7[name] &cname already exists. Skipping.'
+      HDexist: '&c全息圖 &7[name] &c已經存在. 跳過.'
       HDfailed: '&c無法加載 全息圖 (&7[name]&c)'
       HDimported: '&e導入 &7[amount]個 &e全息圖'
   importoldusers:
