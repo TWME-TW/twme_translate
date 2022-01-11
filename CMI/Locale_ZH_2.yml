@@ -776,7 +776,7 @@ Ender:
 Chat:
   localPrefix: ''
   shoutPrefix: '&c[S]&r'
-  shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
+  shoutDeduction: '!actionbar!&c因為喊 (shout) 扣除&e[amount] &c'
   # Use \n to add new line
   publicHover: '&e發送時間: &6%server_time_hh:mm:ss%'
   privateHover: '&e發送時間: &6%server_time_hh:mm:ss%'
