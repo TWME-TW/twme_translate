@@ -2684,8 +2684,8 @@ command:
           Rotate90H: '&e順時針旋轉 &690 &e度'
           Rotate90HC: '&e逆時針旋轉 &690 &e度'
           Rotate180H: '&e旋轉 &6180 &e度'
-          Pause: '&e暫停仿制'
-          Location: '&e設置仿制中心'
+          Pause: '&e暫停鏡像'
+          Location: '&e設置鏡像中心'
   mobhead:
     help:
       info: '&e獲得生物頭顱'
@@ -2693,9 +2693,9 @@ command:
     info:
       got: '&e獲得 &6[type] &e頭顱'
       base: '&7基礎掉落機率: &f[chance]%'
-      personal: '&7Drop chance for you: &f[chance]%'
+      personal: '&7你的掉落機率: &f[chance]%'
       headSpecific: '&7頭部掉落機率: &f[chance]%'
-      criteria: '&7Criteria: &f[criteria]%'
+      criteria: '&7標準: &f[criteria]%'
       title: '&7[current]&8/&7[total]'
   money:
     help:
