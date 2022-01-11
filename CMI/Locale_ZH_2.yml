@@ -1860,13 +1860,13 @@ command:
       intervalLore:
       - '&7每多少秒讓動態懸浮字更新一次'
       - '&7如果是靜態懸浮字請設置為 -1'
-      pageInterval: '&7Change page every &6[second] &7seconds'
+      pageInterval: '&7每 &6[second] &7秒更改全息圖頁面'
       pageIntervalLore:
-      - '&7How often, in seconds, hologram page is changed automatically'
-      pageIntervalNoPages: '&4This hologram doesn''t have any pages yet'
+      - '&7自動更改全息圖頁面的頻率（以秒為單位）'
+      pageIntervalNoPages: '&4此全息圖還沒有任何頁面'
       text: '&7字符間距 &6[space]'
       usync: '&7文本同步更改: &6[state]'
-      reqPermission: '&7Requires permission to see: &6[state]'
+      reqPermission: '&需要權限才能看: &6[state]'
       teleport: '&7傳送到懸浮字所在位置'
       icon: '&7圖標間距 &6[space]'
       iconLore:
