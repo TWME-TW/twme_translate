@@ -4251,7 +4251,7 @@ command:
       targetUnvanish: '&6[playerDisplayName] &e不再是隱身狀態'
       list: '&e[place]. &6[playerDisplayName] &e(&6[offon]&e)'
       noVanished: '&e沒有隱身的玩家'
-      noMsg: '&cCant send messages while vanished. Update this in vanishedit'
+      noMsg: '&c在隱形時無法發送訊息. 在隱形編輯器更改此選項'
   vanishedit:
     help:
       info: '&e編輯玩家的隱身狀態'
