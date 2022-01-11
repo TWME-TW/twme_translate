@@ -2013,8 +2013,8 @@ command:
       converted: '&e導入: &6[done]&e/&6[total] &e名玩家'
       convertedWarps: '&e導入 &6[amount] &e個地標'
       noInfo: '&c你必須指定你想導入什麼舊數據'
-      savingInProgress: '&eData will be saved into data base in next couple minutes
-        depending on how many entries we need to save'
+      savingInProgress: '&e資料將在這幾分鐘內保存至資料庫
+        時間取決於有多少資料'
       HDfile: '&c找不到HolographicDisplays插件數據庫文件.導入中止.'
       HDexist: '&c全息圖 &7[name] &c已經存在. 跳過.'
       HDfailed: '&c無法加載 全息圖 (&7[name]&c)'
