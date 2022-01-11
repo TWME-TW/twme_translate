@@ -2311,8 +2311,8 @@ command:
     info:
       jailList: '&6[place]. &e[jailName] &7Cells:&e[cellCount] &7Jailed:&6[count]'
       cellList: '&6[place]. &7Id:&e[cellId] &7Jailed:&6[count]'
-      cellJailedList: '&6[place]. &e[playerDisplayName] &7release in &e[time]'
-      Release: '&7Click to release'
+      cellJailedList: '&6[place]. &e[playerDisplayName] &7將在 &e[time] &7 後釋放'
+      Release: '&7點擊釋放'
   jump:
     help:
       info: '&e跳至目標方塊'
