@@ -189,7 +189,7 @@ info:
   protectedArea: '&c保護區域. 不可以這樣做.'
   valueToLong: '&e數值過長，最長: [max]'
   valueToShort: '&e數值過短，最短: [min]'
-  pickIcon: '&8Pick icon'
+  pickIcon: '&8選擇圖標 '
   # Following locale lines got moved to CMI folder and will be removed in future updates from this file. If you want to modify those lines check CMI locale directory
   Same: '&c你不能打開你自己的背包'
   cantLoginWithDifCap: '&c請注意名字的大小寫! 舊名字:&e[oldName]&c. 當前名字: &e[currentName]'
