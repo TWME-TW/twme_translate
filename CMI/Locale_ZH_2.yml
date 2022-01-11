@@ -2860,7 +2860,7 @@ command:
       args: (playerName)
     info:
       feedback: '&ePing: &6[ping]'
-      selffeedback: '&eYour ping is &6[ping]ms'
+      selffeedback: '&e你的延遲: &6[ping]ms'
       customMessage: '[message]'
   placeholders:
     help:
