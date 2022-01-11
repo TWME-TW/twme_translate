@@ -211,7 +211,7 @@ info:
       DontMove: '&4在&7[autoTimeLeft] &4秒內請不要移動!'
       WaitFor: '&4等待 &7[autoTimeLeft] &4秒!'
   Spawner: '&r[type] 生怪磚'
-  FailedSpawnerMine: '!actionbar!&c生成生磚失敗. &7[percent]% &c掉落機率'
+  FailedSpawnerMine: '!actionbar!&c生成礦物失敗. &7[percent]% &c掉落機率'
   ClickSpawner: '!actionbar!&7[percent]% &e掉落機率'
   Elevator:
     created: '&e創建電梯告示牌'
