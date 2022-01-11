@@ -4218,10 +4218,10 @@ command:
       unmutedTarget: '&e你現在能發言了'
   unmutechat:
     help:
-      info: '&eUnmute public chat'
+      info: '&e解除公開聊天室禁言''
       args: (-s)
     info:
-      unmuted: '&eUnmuted public chat'
+      unmuted: '&e解除公開聊天室禁言''
   usermeta:
     help:
       info: '&e設置玩家的 meta data'
