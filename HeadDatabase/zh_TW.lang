@@ -31,7 +31,7 @@ messages.notEnoughMoney: &c你的錢不夠!
 messages.notEnoughSpace: &c背包內空間不夠
 messages.buyMessage: &a你購買了 %item% &a並花費金錢 &2%price%
 messages.backToMenu: &c返回主選單
-messages.clickToSearch: &a&n&l點擊這里&b 搜索頭顱
+messages.clickToSearch: &a&n&l點擊這裡&b 搜索頭顱
 messages.noHeadsFound: &e沒有找到任何頭顱!
 messages.moreSpecific: &e請詳細一些!
 messages.headsFound: &e找到頭顱!
@@ -40,7 +40,7 @@ messages.pluginInfo: &c插件訊息
 messages.pluginSuggest: &c建議頭顱
 messages.pluginSuggestLore: &7請先檢查數據庫
 messages.chatSearch: &b輸入你要搜索的內容
-messages.databaseStillLoading: &c頭顱數據庫正在加載中！ 請稍等一會再進行此操作
+messages.databaseStillLoading: &c頭顱數據庫正在載入中！ 請稍等一下再進行此操作
 messages.customCommandItemName: &c返回主選單
 messages.patience: &c冷卻中，稍後才能得到另一個頭顱!
 messages.overflow: &e由於您的背包已滿，您獲得的頭顱掉在了地上!
