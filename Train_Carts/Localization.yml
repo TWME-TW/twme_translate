@@ -5,7 +5,7 @@
 commands:
   savedtrain:
     description: 對已保存的火車執行 TrainCarts 命令
-    usage: See development or WIKI page of TrainCarts
+    usage: 請參閱 TrainCarts 的開發或 WIKI 頁面
   cart:
     description: Perform TrainCarts commands for single minecarts
     usage: See development or WIKI page of TrainCarts
