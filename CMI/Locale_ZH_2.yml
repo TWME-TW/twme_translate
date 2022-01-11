@@ -1371,7 +1371,7 @@ command:
       info: '&e禁止附魔'
       args: '[enchant/id] (disable/enable)'
     info:
-      title: 建國以後禁止附魔
+      title: 附魔禁用
       feedback: '&6[enchantName] &e附魔當前狀態是 [state]'
   dispose:
     help:
