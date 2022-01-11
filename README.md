@@ -5,4 +5,5 @@ A place to store some plugin translations
 > 翻譯有問題歡迎提出，我會盡快修復
 
 Discord ID：TWME#5162
+
 Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
