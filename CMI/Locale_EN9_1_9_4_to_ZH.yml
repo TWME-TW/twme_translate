@@ -118,7 +118,7 @@
 # After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
 
 info:
-  Same: '&cCan''t open your own inventory for editing!'
+  Same: '&c你不能打開你自己的背包!'
   cantLoginWithDifCap: '&cCan''t login with different name capitalization! Old name:
     &e[oldName]&c. Current: &e[currentName]'
   Searching: '&eSearching for player data, please wait, this can take some time to
