@@ -2206,7 +2206,7 @@ command:
       info: '&e給自己物品'
       args: '[itemname] (amount)'
       explanation:
-      - Name and lore supports placeholders
+      - '物品名稱和物品描述支持Placeholders'
       - 'Example: /give stone'
       - /give stone 5 n Stonehenge
       - /give stick e knockback:1
