@@ -1,37 +1,25 @@
-instruments:
-    PIANO: "DIRT"
-    BASS_GUITAR: "OAK_PLANKS"
-    SNARE_DRUM: "SAND"
-    STICKS: "GLASS"
-    BASS_DRUM: "STONE"
-    BELL: "GOLD_BLOCK"
-    FLUTE: "CLAY"
-    CHIME: "PACKED_ICE"
-    GUITAR: "WHITE_WOOL"
-    XYLOPHONE: "BONE_BLOCK"
-    IRON_XYLOPHONE: "IRON_BLOCK"
-    COW_BELL: "SOUL_SAND"
-    DIDGERIDOO: "PUMPKIN"
-    BIT: "EMERALD_BLOCK"
-    BANJO: "HAY_BLOCK"
-    PLING: "GLOWSTONE"
-# Configure the plugin messages, the message should always include all the %s as
-# it's used to paste in information such as instrument names. The messages won't work without them !!!
-messages:
-    menu-title: "音階盒編輯器"
-    second-octave: "(第二八度)"
-    menu-instrument-change-title: "§6§l%s"
-    menu-instrument-change-description: "§7Sets the note block\n§7sound to %s\n§0 \n§e§lL-CLICK §7to set\n§e§lR-CLICK §7to play preview"
-    menu-note-change-title: "§6§l%s"
-    menu-note-change-description: "§7Equals to note %s\n§7or %s clicks on\n§7the noteblock\n§0 \n§e§lL-CLICK §7to set\n§e§lR-CLICK §7to play preview"
-    menu-note-change-message: "§eNote set to %s"
-    button-close: "§cClose"
-    button-back: "§eBack"
-    button-instrument-menu: "§6§lChange instrument\n§7Open a menu to change the\n§7noteblock's instrument\n§0 \n§eClick to open"
-    no-build-permission: "§cYou're not allowed to build here!"
-    no-build-permission-below: "§cYou don't have permission to edit the block below the note block!"
-    not-looking-at-noteblock: "§cYou're not looking at a note block!"
-    not-a-player: "§cThis command must be executed as a player!"
-    command-no-permission: "§cInsufficient permission: noteblockeditor.command"
-    config-reload: "§eReloaded config!"
-    config-reload-no-permission: "§cNo permission to reload!"
+# Thank you for Downloading InvisibleItemFrames!
+#
+# Feel free to check out my other plugins here:
+# https://www.spigotmc.org/members/429752/#resources
+
+Messages:
+
+  Only Players: "&c此指令只能由玩家輸入。"
+  
+  No Permission: "&c你沒有權限"
+
+  Toggle: "&a此展示框已被設為 %status%"
+  Toggle On: "&2&l正常"
+  Toggle Off: "&c&l隱形"
+
+  Toggle Mode: "&a你已 %status%&a 切換模式!"
+  Toggle Mode On: "&2&l開啟"
+  Toggle Mode Off: "&c&l關閉"
+  
+  Not Looking: "&c你的遊戲十字準星未對準一個展示框"
+  
+  Command Usage:
+    - "&c展示框控制教學:"
+    - "&a/ITF toggle &7- &f將看著的展示框切換為正常/隱形"
+    - "&a/ITF togglemode &7- &fEnable/Disable 開啟此模式後，右鍵可將展示框切換成正常/隱形"
