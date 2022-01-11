@@ -73,7 +73,7 @@ info:
   ModuleNotEnabled: '&c該功能未啟用!'
   versionNotSupported: '&c伺服器版本不支持此特性'
   spigotNotSupported: '&c您需要 Paper 或其分支的服務器核心'
-  bungeeNoGo: '&c此功能在基於Bungee伺服器上無法作用'
+  bungeeNoGo: '&c此功能在基於 Bungee 伺服器上無法作用'
   clickToTeleport: '&e點擊傳送'
   UseMaterial: '&4請使用物品名字!'
   IncorrectMaterial: '&4材料名稱不正確!'
