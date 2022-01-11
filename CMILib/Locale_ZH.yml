@@ -352,7 +352,7 @@ info:
     DESERT: 沙漠
     DESERT_HILLS: 沙漠丘陵
     DESERT_LAKES: 沙漠湖泊
-    DRIPSTONE_CAVES: Dripstone caves
+    DRIPSTONE_CAVES: 鐘乳石洞穴
     END_BARRENS: 終界荒地
     END_HIGHLANDS: 終界高地
     END_MIDLANDS: 終界平地
@@ -417,7 +417,7 @@ info:
     area_effect_cloud: 藥水雲
     armor_stand: 盔甲座
     arrow: 箭
-    axolotl: Axolotl
+    axolotl: 蠑螈
     bat: 蝙蝠
     bee: 蜜蜂
     blaze: 烈焰人
@@ -440,9 +440,9 @@ info:
     ender_crystal: 終界水晶
     ender_dragon: 終界龍
     ender_pearl: 終界珍珠
-    ender_signal: Ender signal
+    ender_signal: 終界之眼指向的座標 
     evoker: 喚魔者
-    evoker_fangs: 尖牙
+    evoker_fangs : 尖牙
     experience_orb: 經驗球
     falling_block: 掉落的方塊
     fireball: 火球
@@ -451,9 +451,9 @@ info:
     fox: 狐狸
     ghast: 地獄幽靈
     giant: 巨人
-    glow_item_frame: Glow item frame
-    glow_squid: Glow squid
-    goat: Goat
+    glow_item_frame: 發光的物品展示框
+    glow_squid: 發光魷魚
+    goat: 山羊
     guardian: 深海守衛
     hoglin: 豬布獸
     horse: 馬
@@ -466,12 +466,12 @@ info:
     llama: 羊駝
     llama_spit: 羊駝口水
     magma_cube: 熔岩史萊姆
-    marker: Marker
+    marker: 標記
     minecart: 礦車
     minecart_chest: 箱子礦車
     minecart_command: 命令方塊礦車
     minecart_furnace: 動力礦車
-    minecart_hopper: 漏鬥礦車
+    minecart_hopper: 漏斗礦車
     minecart_mob_spawner: 生怪磚礦車
     minecart_tnt: TNT礦車
     mule: 騾
@@ -482,12 +482,12 @@ info:
     parrot: 鸚鵡
     phantom: 夜魅
     pig: 豬
-    piglin: 豬布林蠻兵
-    piglin_brute: Piglin brute
+    piglin: 豬布林
+    piglin_brute: 豬布林蠻兵 
     pillager: 掠奪者
     player: 玩家
     polar_bear: 北極熊
-    primed_tnt: 激活的TNT
+    primed_tnt: 點燃的TNT
     pufferfish: 河豚
     rabbit: 兔子
     ravager: 劫毀獸
@@ -501,8 +501,8 @@ info:
     slime: 史萊姆
     small_fireball: 小火球
     snowball: 雪球
-    snowman: 雪傀儡
-    spectral_arrow: 光靈箭
+    snowman: 雪人
+    spectral_arrow: 發光箭
     spider: 蜘蛛
     splash_potion: 噴濺藥水
     squid: 魷魚
@@ -556,7 +556,7 @@ info:
     binding_curse:
     - 綁定詛咒
     loot_bonus_blocks:
-    - Fortune
+    - 幸運
     protection_environmental:
     - 保護
     dig_speed:
@@ -600,7 +600,7 @@ info:
     impaling:
     - 魚叉
     protection_fall:
-    - FallProtection
+    - 摔落保護
     - 輕盈
     arrow_damage:
     - 強力
@@ -608,17 +608,17 @@ info:
     - 無限
   PotionEffectAliases:
     speed:
-    - speed
+    - 速度
     slow:
-    - slow
+    - 緩慢 
     fast_digging:
-    - fast_digging
+    - 挖掘加速
     slow_digging:
-    - slow_digging
+    - 挖掘疲勞
     increase_damage:
-    - increase_damage
+    - 立即傷害
     heal:
-    - heal
+    - 治療
     harm:
     - harm
     jump:
