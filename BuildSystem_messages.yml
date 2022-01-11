@@ -527,7 +527,7 @@ worldeditor_gamerules_title: "&3» &8遊戲規則"
 worldeditor_gamerules_boolean_enabled:
  - "&7&n現在狀態&7: &a開啟"
 worldeditor_gamerules_boolean_disabled:
- - "&7&n現在狀態&7: &cfalse"
+ - "&7&n現在狀態&7: &c關閉"
 worldeditor_gamerules_unknown:
  - "&7&n現在狀態&7: &e%value%"
 worldeditor_gamerules_integer:
