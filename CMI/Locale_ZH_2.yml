@@ -578,33 +578,33 @@ info:
     - 無限
   PotionEffectAliases:
     speed:
-    - speed
+    - 速度
     slow:
-    - slow
+    - 緩慢
     fast_digging:
-    - fast_digging
+    - 挖掘加速
     slow_digging:
-    - slow_digging
+    - 挖掘疲勞
     increase_damage:
-    - increase_damage
+    - 立即傷害
     heal:
-    - heal
+    - 立即治療
     harm:
     - harm
     jump:
-    - jump
+    - 跳躍提升
     confusion:
-    - confusion
+    - 噁心
     regeneration:
     - regeneration
     damage_resistance:
     - damage_resistance
     fire_resistance:
-    - fire_resistance
+    - 抗性
     water_breathing:
-    - water_breathing
+    - 水下呼吸
     invisibility:
-    - invisibility
+    - 隱形
     blindness:
     - blindness
     night_vision:
