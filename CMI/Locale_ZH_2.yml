@@ -3877,11 +3877,11 @@ command:
       updated: '&eTab列表已更新'
   tagtoggle:
     help:
-      info: '&e切換聊天艾特音效'
+      info: '&e切換聊天TAG音效'
       args: (playerName)
     info:
-      feedbackDisabled: '&e禁用艾特音效'
-      feedbackEnabled: '&e啟用艾特音效'
+      feedbackDisabled: '&e禁用TAG音效'
+      feedbackEnabled: '&e啟用TAG音效'
   tempban:
     help:
       info: '&e暫時封鎖玩家'
