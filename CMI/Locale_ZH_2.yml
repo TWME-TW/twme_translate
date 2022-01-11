@@ -2219,7 +2219,7 @@ command:
       - /give minecraft:diamond_helmet 1 0 {ench:[{id:0,lvl:100},{id:2,lvl:100},{id:34,lvl:100}]}
   itemframe:
     help:
-      info: '&eManage item frames'
+      info: '&e管理展示框'
       args: (invisible/fixed/invulnerable)
     info:
       enabled: Enabled
