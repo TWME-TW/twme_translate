@@ -3838,7 +3838,7 @@ command:
         mins: '&e[mins] &6分 '
         secs: '&e[secs] &6秒 '
       MemoryUsage: ' &e內存使用: &6[percent]% &e(&6[current]&e/&6[max] MB&e)'
-      MemoryUsageHover: "&f空閑: &7[free] \n&f可用: &7[allocated] \n&f最大: &7[max] \n&f總\
+      MemoryUsageHover: "&f空閒: &7[free] \n&f可用: &7[allocated] \n&f最大: &7[max] \n&f總\
         計: &7[total]"
       Java: ' &eJava 版本: &6[mainV].[majorV].[minorV]&e(&6[update]&e) Build: &6[build]'
       DiskUsage: ' &e磁盤占用: &6[percent]% &e(&6[current]&e/&6[max] GB&e)'
