@@ -4074,7 +4074,7 @@ command:
       args: '[playerName]'
     info:
       gotRequest: '&6[senderDisplayName] &e請求你傳送到他那裡'
-      accept: '&6Click to accept teleportation request!'
+      accept: '&6點擊接受傳送請求!'
   tpall:
     help:
       info: '&e將所有玩家傳送至你所在位置'
