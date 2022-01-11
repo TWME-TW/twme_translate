@@ -33,11 +33,11 @@ ticket:
     the right ticket in your hand!
   ownerconflict: &cThe train ticket %0% is not yours, it belongs to %1%!
   typeconflict: &cThe train ticket %0% can not be used for this train!
-  add: &f[Ticket System]&e You received %0% in your bank account!
-  check: &f[Ticket System]&e You currently have %0% in your bank account!
-  buyfail: &f[Ticket System]&c You can't afford a Ticket for %0%, sorry.
-  buy: &f[Ticket System]&e You bought a Ticket for %0%.
-  buyowner: &f[Ticket System]&e %0% &ebought a Ticket for %1% on &f%2%&e.
+  add: &f[票務系統]&e You received %0% in your bank account!
+  check: &f[票務系統]&e You currently have %0% in your bank account!
+  buyfail: &f[票務系統]&c You can't afford a Ticket for %0%, sorry.
+  buy: &f[票務系統]&e You bought a Ticket for %0%.
+  buyowner: &f[票務系統]&e %0% &ebought a Ticket for %1% on &f%2%&e.
 waiter:
   notfound: &cDidn't find a &e%0%&c sign on the track!
 pathfinding:
