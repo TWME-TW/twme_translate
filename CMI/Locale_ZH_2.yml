@@ -610,13 +610,13 @@ info:
     night_vision:
     - 夜視
     hunger:
-    - hunger
+    - 飢餓
     weakness:
-    - weakness
+    - 虛弱
     poison:
-    - poison
+    - 中毒
     wither:
-    - wither
+    - 凋零
     health_boost:
     - health_boost
     absorption:
