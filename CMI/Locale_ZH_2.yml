@@ -618,9 +618,9 @@ info:
     wither:
     - 凋零
     health_boost:
-    - health_boost
+    - 生命值提升
     absorption:
-    - absorption
+    - 吸收
     saturation:
     - saturation
     glowing:
