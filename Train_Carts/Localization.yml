@@ -28,9 +28,8 @@ select:
 ticket:
   expired: &c你的票: %0% 已過期
   required: &c你沒有這列火車的票!
-  used: &aYou have used your &e%0%&a ticket!
-  conflict: &cYou own multiple tickets that can be used for this train. Please hold
-    the right ticket in your hand!
+  used: &a您已使用您的票 &e%0%&a !
+  conflict: &c您擁有多張可用於此列車的車票。 請把正確的票拿在手上!
   ownerconflict: &cThe train ticket %0% is not yours, it belongs to %1%!
   typeconflict: &cThe train ticket %0% can not be used for this train!
   add: &f[票務系統]&e You received %0% in your bank account!
