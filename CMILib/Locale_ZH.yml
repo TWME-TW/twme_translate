@@ -248,11 +248,11 @@ info:
   LoginCustom: ' &6[playerDisplayName] &e上線了！！！'
   deathlocation: '&e你死在了位於&6[world]&e世界的x:&6[x]&e,y:&6[y]&e z:&6[z]'
   book:
-    exploit: '&cYou cant create book with more than [amount] pages'
+    exploit: '&c你不能創建超過 [amount] 頁的書'
   combat:
-    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
-      Wait: [time]'
-    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
+    CantUseShulkerBox: '&c戰鬥時無法使用界符盒.
+      等待: [time]'
+    CantUseCommand: '!actionbar!&c在戰鬥中無法使用命令. 等待: [time]'
     bossBarPvp: '&cCombat mode [autoTimeLeft]'
     bossBarPve: '&2Combat mode [autoTimeLeft]'
   noSchedule: '&c找不到這個計劃任務'
