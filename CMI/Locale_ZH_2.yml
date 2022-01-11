@@ -2869,7 +2869,7 @@ command:
     info:
       list: '&e[place]. &6[placeholder]'
       outputResult: ' &e結果: &6[result]'
-      parse: '&6[placeholder] &eby [source] &6result &8|&f[result]&8|'
+      parse: '&6[placeholder] &eby [source] &6結果 &8|&f[result]&8|'
   playercollision:
     help:
       info: '&e設置玩家的碰撞模式'
