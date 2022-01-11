@@ -2108,7 +2108,7 @@ command:
       newSeeHoverNot: '&2不能看到你'
       newBanned: '被禁止 '
       newBannedHover:
-      - '&7Banned by: &e[name]'
+      - '&7被 &e[name] &7禁止'
       - '&7Left: &e[left]'
       - '&7For: &e[reason]'
       newMuted: '靜言'
