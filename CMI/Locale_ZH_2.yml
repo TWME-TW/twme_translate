@@ -4002,11 +4002,11 @@ command:
       message: '&f[messsage]'
   togglecompass:
     help:
-      info: '&eShow or hide compass bossbar'
+      info: '&e顯示/隱藏羅盤在怪物血量條'
       args: ''
     info:
-      ToggleOff: '&eBoss bar compass got disabled'
-      ToggleOn: '&6Boss bar compass got enabled'
+      ToggleOff: '&e已關閉羅盤顯示'
+      ToggleOn: '&6已開啟羅盤顯示'
   toggleshiftedit:
     help:
       info: '&e切換可用shift編輯告示牌'
