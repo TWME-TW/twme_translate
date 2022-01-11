@@ -121,7 +121,7 @@ info:
   Same: '&c你不能打開你自己的背包!'
   cantLoginWithDifCap: '&c請注意名字的大小寫! 舊名字:&e[oldName]&c. 現在名字: &e[currentName]'
   Searching: '&e正在搜尋玩家數據，請稍等...'
-  NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
+  NoCommandWhileSleeping: '&c不能在睡覺時執行指令!'
   PurgeNotEnabled: '&cPurge function is not enabled in config file!'
   TeamManagementDisabled: '&7This feature will have limited functionalaty while DisableTeamManagement
     is set to true!'
