@@ -4,7 +4,7 @@
 #> https://dev.bukkit.org/projects/bkcommonlib/pages/general/localization
 commands:
   savedtrain:
-    description: Performs TrainCarts commands for trains that have been saved
+    description: 對已保存的火車執行 TrainCarts 命令
     usage: See development or WIKI page of TrainCarts
   cart:
     description: Perform TrainCarts commands for single minecarts
