@@ -3672,7 +3672,7 @@ command:
       spawnedEntities: '&e生成了 &6[entities] &e實體 '
       spawnedPasangers: '&e以及 &6[passengers] &e騎著的實體'
       nothingSpawned: '&e沒有實體生成'
-      cantSpawn: '&eCan''t spawn this type of entity'
+      cantSpawn: '&e無法生成此種實體'
   staffmsg:
     help:
       info: '&e在管理員聊天頻道聊天'
