@@ -90,7 +90,7 @@ info:
     通知伺服器管理員這項訊息'
   CantTeleport: '&e你無法傳送，因為你攜帶了過量的限制物品'
   BlackList: '&e[material] [amount] &6最多: [max]'
-  wrongPortal: '&cYou are in incorrect area of effect'
+  wrongPortal: '&c您處於錯誤的影響區域'
   ItemWillBreak: '!actionbar!&e你的物品 (&6[itemName]&e) 馬上快要爆了 &e[current]&6/&e[max]'
   ArmorWillBreak: '!actionbar!&e你的 [itemName] 快要壞掉了! &e[current]&6/&e[max]'
   flyingToHigh: '&c你不能再飛得更高了, 最大高度限制是 &6[max]&c!'
