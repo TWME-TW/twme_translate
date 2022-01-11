@@ -2094,7 +2094,7 @@ command:
       newPos: '&f位置 '
       newPosHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newAfk: 'AFK '
-      newAfkHover: '&6Afk for last: [time]'
+      newAfkHover: '&6最後的AFK: [time]'
       newBed: '&f床 '
       newBedHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newDeath: '&f死亡 '
