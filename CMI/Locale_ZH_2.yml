@@ -2475,8 +2475,8 @@ command:
       - '&e這個決定了你打什麼指令能獲得禮包'
       displayName: '&7DisplayName: &r&f[name]'
       editDisplayName:
-      - '&eClick to change display name'
-      - '&eThis only used for visual purposes'
+      - '&e點擊更改顯示名稱'
+      - '&e這只用於視覺效果'
       kitGroup: '&e禮包組: &6[group]'
       dropItems: '&e背包已滿時丟棄物品: &6[state]'
       commands: '&e指令:'
