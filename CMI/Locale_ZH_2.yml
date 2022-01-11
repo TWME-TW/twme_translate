@@ -1792,7 +1792,7 @@ command:
       tnt: ' &e激活的TNT: &6[tnt]'
       boat: ' &e船: &6[boat]'
       minecart: ' &e礦車: &6[minecart]'
-      nothing: '&e伺服器很幹凈，沒有垃圾需要移除'
+      nothing: '&e伺服器很乾淨，沒有垃圾需要移除'
   haspermission:
     help:
       info: '&e檢查玩家是否有某權限'
@@ -1800,7 +1800,7 @@ command:
     info:
       title: '&6[playerDisplayName] &e-> &6[permission]'
       none: '&e權限未設置，且玩家不是 OP. 結果為 &6[state]'
-      softSet: '&eSet by plugin.yml to &6[state]'
+      softSet: '&e由 plugin.yml 設置為 &6[state]'
       hardSet: '&e因某些插件的限制，難以設置為 &6[state] &e'
       notHardSet: '&e沒有設置難度, 可能導致&e某些情況&c出錯'
       ops: '&e結果為 &6[state] &e因為玩家是 OP'
