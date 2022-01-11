@@ -3133,7 +3133,7 @@ command:
       feedback: '&e已成功修復 &3[playerDisplayName]&e-(&3[offon]&e) 的 &3[amount]&e 件物品.'
       feedbackMoney: '&eYou have repaired &3[amount]&e items for &3[playerDisplayName]&e
         (&3[offon]&e). Cost: &7[cost]'
-      itemOwner: '&e上一次修覆由: &6[owner]'
+      itemOwner: '&e上一次修復由: &6[owner]'
       cantUse: '!title!&c你不能使用這個!subtitle!&e請自己修理這個!'
   repaircost:
     help:
