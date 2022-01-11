@@ -2115,7 +2115,7 @@ command:
       newMutedHover:
       - '&7Left: &e[left]'
       - '&7For: &e[reason]'
-      newShadowMutedHover: '&4Shadow mute'
+      newShadowMutedHover: '&4隱形禁言'
       newCuffed: 'Cuffed '
       newJailed: '入獄 '
       newJailedHover:
