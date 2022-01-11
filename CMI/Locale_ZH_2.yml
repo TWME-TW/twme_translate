@@ -162,7 +162,7 @@ info:
   skippingNight: '!title!&7跳過晚上'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
   repairConfirm: '&e點擊來確認修復 &7[items] &e要花 &7[cost]'
-  bookDate: '&7Written at &f[date]'
+  bookDate: '&7在 &f[date] &7時寫的'
   maintenance: '&7維護模式'
   notSet: 未設定
   mapLimit: '&c不能超過 30 000 000 個方塊'
