@@ -652,7 +652,7 @@ settings_scoreboard_disabled_lore:
  - "&7&o計分板已被"
  - "&7&o從設置(config)中關閉."
 
-settings_slab_breaking_item: "&bSlab breaking"
+settings_slab_breaking_item: "&b半磚破壞"
 settings_slab_breaking_lore:
  - "&7&oWhen breaking double slabs"
  - "&7&oonly one half will be broken."
