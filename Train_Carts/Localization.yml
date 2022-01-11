@@ -36,7 +36,7 @@ ticket:
   check: &f[票務系統]&e 你的銀行帳戶目前有 %0% !
   buyfail: &f[票務系統]&c 抱歉，您的錢不夠，無法購買這張車票: %0%.
   buy: &f[票務系統]&e 你買了一張 %0% 的票.
-  buyowner: &f[票務系統]&e %0% &ebought a Ticket for %1% on &f%2%&e.
+  buyowner: &f[票務系統]&e %0% &e在 &f%2% &e買了一張車票.
 waiter:
   notfound: &cDidn't find a &e%0%&c sign on the track!
 pathfinding:
