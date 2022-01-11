@@ -2032,7 +2032,7 @@ command:
       args: '[playerName/uuid]'
     info:
       feedback:
-        uuid: '&e貼上UUID至聊天框內'
+        uuid: '&e貼上UUID至聊天欄內'
         ouuid: '&eShift + left click to paste online uuid into chat box'
       newName: '&6[playerName]'
       newBalance: '&7(&e[balance]&7) '
