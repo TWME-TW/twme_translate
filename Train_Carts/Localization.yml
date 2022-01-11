@@ -38,7 +38,7 @@ ticket:
   buy: &f[票務系統]&e 你買了一張 %0% 的票.
   buyowner: &f[票務系統]&e %0% &e在 &f%2% &e買了一張車票.
 waiter:
-  notfound: &c無法在軌道上找到 &e%0%&c 標準!
+  notfound: &c無法在軌道上找到 &e%0%&c 標誌!
 pathfinding:
   busy: &e尋找到達目的地的方法中...
   failed: &cDestination &e%0%&c could not be reached from here!
