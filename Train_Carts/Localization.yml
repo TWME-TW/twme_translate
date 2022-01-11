@@ -17,7 +17,7 @@ command:
   noperm: &c您沒有權限，請讓管理員為您執行此操作.
   animate:
     success: &a現在動畫 &e%0%&a 以 &e%1%&a 的速度和 &e%2% 的延遲播放
-    failure: &cFailed to find animation &e%0%&c!
+    failure: &c找不到動畫: &e%0%&c!
 edit:
   noselect: &e您尚未選擇要編輯的火車!
   notallowed: &cYou are not allowed to own trains!
