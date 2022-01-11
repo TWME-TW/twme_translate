@@ -1,0 +1,57 @@
+#> Below are the localization nodes set for plugin 'Train_Carts'.
+#> For colors, use the & character followed up by 0 - F
+#> Need help with this file? Please visit:
+#> https://dev.bukkit.org/projects/bkcommonlib/pages/general/localization
+commands:
+  savedtrain:
+    description: Performs TrainCarts commands for trains that have been saved
+    usage: See development or WIKI page of TrainCarts
+  cart:
+    description: Perform TrainCarts commands for single minecarts
+    usage: See development or WIKI page of TrainCarts
+  train:
+    description: Perform TrainCarts commands for complete trains
+    usage: See development or WIKI page of TrainCarts
+command:
+  about: TrainCarts %0% - See WIKI page for more information
+  noperm: &cYou do not have permission, ask an admin to do this for you.
+  animate:
+    success: &aNow playing animation &e%0%&a at speed &e%1%&a with phase delay &e%2%
+    failure: &cFailed to find animation &e%0%&c!
+edit:
+  noselect: &eYou haven't selected a train to edit yet!
+  notallowed: &cYou are not allowed to own trains!
+  nonefound: &cYou do not own any trains you can edit.
+  notowned: &cYou do not own this train!
+select:
+  destination: &eYou have selected &f%0%&e as your destination!
+ticket:
+  expired: &cYour ticket for %0% is expired
+  required: &cYou do not own a ticket for this train!
+  used: &aYou have used your &e%0%&a ticket!
+  conflict: &cYou own multiple tickets that can be used for this train. Please hold
+    the right ticket in your hand!
+  ownerconflict: &cThe train ticket %0% is not yours, it belongs to %1%!
+  typeconflict: &cThe train ticket %0% can not be used for this train!
+  add: &f[Ticket System]&e You received %0% in your bank account!
+  check: &f[Ticket System]&e You currently have %0% in your bank account!
+  buyfail: &f[Ticket System]&c You can't afford a Ticket for %0%, sorry.
+  buy: &f[Ticket System]&e You bought a Ticket for %0%.
+  buyowner: &f[Ticket System]&e %0% &ebought a Ticket for %1% on &f%2%&e.
+waiter:
+  notfound: &cDidn't find a &e%0%&c sign on the track!
+pathfinding:
+  busy: &eLooking for a way to reach the destination...
+  failed: &cDestination &e%0%&c could not be reached from here!
+chest:
+  noperm: &cYou do not have permission to use the train storage chest!
+  give: &aYou have been given a train storage chest item. Use it to store and spawn
+    trains
+  update: &aYour train storage chest item has been updated
+  locked: &cYour train storage chest item is locked and can not pick up the train
+  pickup: &aTrain picked up and stored inside the item!
+  spawn:
+    success: &aTrain stored inside the item has been spawned on the rails!
+    empty: &cTrain can not be spawned, no train is stored in the item!
+    norail: &cTrain can not be spawned, clicked block is not a known rail!
+    blocked: &cTrain can not be spawned, no space on rails!
