@@ -14,7 +14,7 @@ commands:
     usage: 請參閱 TrainCarts 的開發或 WIKI 頁面
 command:
   about: TrainCarts %0% - 更多訊息，請參閱 WIKI 頁面
-  noperm: &cYou do not have permission, ask an admin to do this for you.
+  noperm: &c您沒有權限，請讓管理員為您執行此操作.
   animate:
     success: &aNow playing animation &e%0%&a at speed &e%1%&a with phase delay &e%2%
     failure: &cFailed to find animation &e%0%&c!
