@@ -124,7 +124,7 @@ info:
   NoCommandWhileSleeping: '&c不能在睡覺時執行指令!'
   PurgeNotEnabled: '&c清除機制未在config中啟用!'
   TeamManagementDisabled: '&7當 DisableTeamManagement 設置為 true 時，此功能將被限制!'
-  NoGameMode: '&cPlease use 0/1/2/3 or Survival/Creative/Adventure/Spectator or s/c/a/sp!'
+  NoGameMode: '&c你只能使用 0/1/2/3 或者 Survival/Creative/Adventure/Spectator 或者 s/c/a/sp!'
   NameChange: '&6[playerDisplayName] &elogged in, also known as: &6[namelist]'
   Cooldowns: '&eThis command is on cooldown for another &6[time]'
   specializedCooldowns: '&eCooldown in motion for this command, please wait &6[time]'
