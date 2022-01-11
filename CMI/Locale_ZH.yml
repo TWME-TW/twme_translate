@@ -85,7 +85,7 @@ info:
     created: '&e創建電梯告示牌'
   CantPlaceSpawner: '&e你不能把一個生怪磚放置的距離另一個那麼近，距離至少要大於 (&6[range]&e)'
   ChunksLoading: '&e世界區塊數據正在加載中，請稍等...'
-  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. 無法使用它們!'
+  CantUseNonEncrypted: '!actionbar!&c此項目上的命令未加密. 無法使用它們!'
   CantDecode: '!actionbar!&c無法解碼 消息/指令. Key file contains wrong key for this task.
     通知伺服器管理員這項訊息'
   CantTeleport: '&e你無法傳送，因為你攜帶了過量的限制物品'
