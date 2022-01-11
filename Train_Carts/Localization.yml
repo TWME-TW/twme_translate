@@ -22,7 +22,7 @@ edit:
   noselect: &e您尚未選擇要編輯的火車!
   notallowed: &c你不被允許擁有火車!
   nonefound: &c您沒有擁有任何可以編輯的火車.
-  notowned: &cYou do not own this train!
+  notowned: &c您不擁有這列火車!
 select:
   destination: &eYou have selected &f%0%&e as your destination!
 ticket:
