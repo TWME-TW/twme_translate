@@ -1636,8 +1636,8 @@ command:
       InfoShow: '&6TPS: &3[tps] &6剩余 &e[left] &6(&e[min]m:[sec]s&6) &6速度: &e[speed]
         &6已找到: &e[found]'
       scanList: '&2[number]. &7X:&f[x] &7Z:&f[z]'
-      finished: '&e掃描完成, 請使用 &6/cmi fixchunk fix &e來修覆損壞區塊 &c區塊會重新生成，該操作不可逆！'
-      fixed: '&2[number] &e個區塊已修覆'
+      finished: '&e掃描完成, 請使用 &6/cmi fixchunk fix &e來修復損壞區塊 &c區塊會重新生成，該操作不可逆！'
+      fixed: '&2[number] &e個區塊已修復'
       total: '&e正在掃描 [current]/[until] 總量 [total]'
       stats:
       - '&e************************************************************'
@@ -2519,14 +2519,14 @@ command:
       feedback: '!actionbar!&6[&f發射!&6]'
   lfix:
     help:
-      info: '&e修覆周圍區塊的光照'
+      info: '&e修復周圍區塊的光照'
       args: (range) (playerName)
     info:
-      NoMore: '&e修覆範圍不能大於伺服器的目視區塊範圍，已自動設置為可設置最大範圍'
-      startFixing: '&e已找到 &6[amount] &e個區塊待修覆，正在開始'
-      InfoShow: '&6TPS: &3[tps] &6剩余 &e[left] &6(&e[min]m:[sec]s&6) &6速度: &e[speed]'
-      Finished: '&e光照修覆已完成'
-      Stopped: '&e光照修覆已停止'
+      NoMore: '&e修復範圍不能大於伺服器的目視區塊範圍，已自動設置為可設置最大範圍'
+      startFixing: '&e已找到 &6[amount] &e個區塊待修復，正在開始'
+      InfoShow: '&6TPS: &3[tps] &6剩餘 &e[left] &6(&e[min]m:[sec]s&6) &6速度: &e[speed]'
+      Finished: '&e光照修復已完成'
+      Stopped: '&e光照修復已停止'
   list:
     help:
       info: '&e顯示在線玩家列表'
@@ -3128,7 +3128,7 @@ command:
       - cmi.command.repair.hand - 允許修理手上的物品
       - cmi.command.repair.armor - 允許修理盔甲欄裡的物品
       - cmi.command.repair.all - 允許修理所有物品
-      - cmi.command.repair.repairshare.bypass - 不添加共享修復保護地修覆物品
+      - cmi.command.repair.repairshare.bypass - 不添加共享修復保護地修復物品
     info:
       feedback: '&e已成功修復 &3[playerDisplayName]&e-(&3[offon]&e) 的 &3[amount]&e 件物品.'
       feedbackMoney: '&eYou have repaired &3[amount]&e items for &3[playerDisplayName]&e
@@ -3137,7 +3137,7 @@ command:
       cantUse: '!title!&c你不能使用這個!subtitle!&e請自己修理這個!'
   repaircost:
     help:
-      info: '&e設置修覆物品花費'
+      info: '&e設置修復物品花費'
       args: (playerName) [amount]
       explanation:
       - 'Example:'
@@ -3148,11 +3148,11 @@ command:
       - /repaircost Zrips clear
       - /repaircost Zrips add 10
     info:
-      current: '&e當前物品基礎修覆花費: &6[cost]&e.'
+      current: '&e當前物品基礎修復花費: &6[cost]&e.'
       noitem: '&c必須把物品拿在手上'
-      cantDetermineCost: '&c無法為這件物品指定基礎修覆花費'
-      selffeedback: '&e玩家 &3[playerDisplayName]&e-(&3[offon]&e) 基礎修覆金額設置為 &3[amount] &e.'
-      targetfeedback: '&3[senderDisplayNaame]&e 將你的基礎修覆金額設置為 &3[amount]&e .'
+      cantDetermineCost: '&c無法為這件物品指定基礎修復花費'
+      selffeedback: '&e玩家 &3[playerDisplayName]&e-(&3[offon]&e) 基礎修復金額設置為 &3[amount] &e.'
+      targetfeedback: '&3[senderDisplayNaame]&e 將你的基礎修復金額設置為 &3[amount]&e .'
   replaceblock:
     help:
       info: '&e替換你周圍的方塊'
