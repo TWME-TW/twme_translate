@@ -1523,7 +1523,7 @@ command:
       cleared: '&e清除了物品上所有的附魔，被執行玩家 &3[playerDisplayName]&e (&3[offon]&e).'
       noitem: '&c玩家手上必須拿著物品！'
       invalidEnchant: '&c你不能附魔上面有非法附魔的物品'
-      clearedInvalid: '&eRemoved &6[amount] &einvalid enchantments from item'
+      clearedInvalid: '&e從物品中移除了 &6[amount] &e個無效的附魔'
       inccorectId: '&e無效的附魔名稱或者ID'
       wrongItem: '&e你手上的東西錯了'
       enchantlimit: '&c您無權使用此附魔'
