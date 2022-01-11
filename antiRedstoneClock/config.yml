@@ -1,0 +1,44 @@
+version: 0.9
+metrics: true
+MaxPulses: 150
+Delay: 300
+NotifyAdmins: true
+DropItems: true
+CreateSignWhenClockIsBreak: true
+Sign:
+  Line1: 紅石系統
+  Line2: 已被伺服器
+  Line3: '&4自動關閉'
+  Line4: ''
+IgnoreWorlds: redstoneWorld/survival
+IgnoreRegions: redstone/admins
+plotSquaredSupport: true
+worldGuardSupport: true
+checkedClock:
+  comparator: true
+  observer: true
+  piston: true
+  redstoneAndRepeater: true
+AutomaticallyBreakDetectedClock: true
+SummonLigthningAtRedstoneLocation: true
+teleportCMD: tp $x $y $z $world
+checkTPS:
+  minimumTPS: -1
+  maximumTPS: -1
+  intervalInSecond: 15
+disableRedstoneClockCheckAbove: 255
+Msg:
+  default:
+    prefix: '&b紅石偵測 &9&l> &r&b '
+    error: '&4紅石偵測 &l> &r&c '
+    no_permission: '&4錯誤 &9&l> &r&b你沒有權限!'
+    command_use: '&4紅石偵測 &l> &r&c指令用法: &6/arc $command'
+  message:
+    MsgToAdmin: 已停止在  世界 $World  座標 x:$X y:$Y Z:$Z.
+    unknownCmd: 未知指令. 輸入"/help" 以獲得幫助
+    reloadSuccess: 重載成功! 紅石監視器和第三方插件未受影響.
+    newValueInConfig: 新的設定項 $setting 的值 $value
+    RedStoneClockListHeader: '紅石機關列表: $page'
+    RedStoneClockListFooter: ''
+  Exception:
+    duplicate_object: 此列表已包含此紅石機構
