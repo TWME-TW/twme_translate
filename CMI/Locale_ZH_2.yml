@@ -2066,8 +2066,8 @@ command:
       newTurnedOnColor: '&a'
       newTurnedOffColor: '&7'
       newOp: 'OP '
-      newGod: 'God '
-      newFly: 'CanFly&6([flying]&6) '
+      newGod: '上帝模式 '
+      newFly: '可以飛&6([flying]&6) '
       newFlying: 飛行中
       newFlyHover: '&7飛行速度: &6[flyspeed]'
       newFlyTemp: '&7離時飛行: &6[time]'
