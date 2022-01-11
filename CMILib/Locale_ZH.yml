@@ -217,19 +217,18 @@ info:
     created: '&e創建電梯告示牌'
   CantPlaceSpawner: '&e你不能把一個生怪磚放置的距離另一個那麼近，距離至少要大於 (&6[range]&e)'
   ChunksLoading: '&e世界區塊數據正在加載中，請稍等...'
-  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. 無法使用它們!'
-  CantDecode: '!actionbar!&c無法解碼 消息/指令. Key file contains wrong key for this task.
-    通知伺服器管理員這項訊息'
+  CantUseNonEncrypted: '!actionbar!&c此項目上的命令未加密. 無法使用它們!'
+  CantDecode: '!actionbar!&c無法解碼 消息/指令. 密鑰文件對此任務為錯誤密鑰.
+    請通知伺服器管理員這項訊息'
   CantTeleport: '&e你無法傳送，因為你攜帶了過量的限制物品'
   BlackList: '&e[material] [amount] &6最多: [max]'
-  wrongPortal: '&cYou are in incorrect area of effect'
+  wrongPortal: '&c您處於錯誤的影響區域'
   ItemWillBreak: '!actionbar!&e你的物品 (&6[itemName]&e) 馬上快要爆了 &e[current]&6/&e[max]'
   ArmorWillBreak: '!actionbar!&e你的 [itemName] 快要壞掉了! &e[current]&6/&e[max]'
   flyingToHigh: '&c你不能再飛得更高了, 最大高度限制是 &6[max]&c!'
   specializedItemFail: '&c無法根據物品數量值:&7[value]確定具體物品'
   sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
-  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required
-    for night time speedup'
+  sleepersRequired: '!actionbar!&f[sleeping] &7&f[required] &7個人中有 &f[sleeping] 個人需要睡覺，才能加速晚上'
   sunSpeedingTitle: '&7[hour]'
   skippingNight: '!title!&7跳過晚上'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
