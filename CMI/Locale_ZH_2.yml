@@ -3095,7 +3095,7 @@ command:
       info: '&e重新讀取插件'
       args: ''
     info:
-      feedback: '&6插件重新讀取完成 繁體中文翻譯 by Nil'
+      feedback: '&6插件重新讀取完成 繁體中文翻譯 by TWME'
       failedConfig: '&4載入 config 文件失敗！請檢查有無語法錯誤！'
       failedLocale: '&4載入語言文件失敗！請檢查有無語法錯誤！'
   removehome:
