@@ -16,7 +16,7 @@ command:
   about: TrainCarts %0% - 更多訊息，請參閱 WIKI 頁面
   noperm: &c您沒有權限，請讓管理員為您執行此操作.
   animate:
-    success: &aNow playing animation &e%0%&a at speed &e%1%&a with phase delay &e%2%
+    success: &a現在動畫 &e%0%&a 以 &e%1%&a 的速度和 &e%2% 的延遲播放
     failure: &cFailed to find animation &e%0%&c!
 edit:
   noselect: &e您尚未選擇要編輯的火車!
