@@ -3072,8 +3072,8 @@ command:
       args: (playerName) (rankName) (confirm)
     info:
       noRank: ' &e你沒有和你相關的排名'
-      requiresPrevious: ' &e你還不能升到這個排名. It requires you to have
-        &6[rank] &erank(`s)'
+      requiresPrevious: ' &e你還不能升到這個排名. 它需要你有
+        &6[rank] &e排名(`s)'
       list: '&e選擇一個你想要提升排名的數據: '
       confirm: '&e點擊確認提升至 &6[rank]'
   realname:
