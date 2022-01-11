@@ -211,7 +211,7 @@ info:
     warmup: '&e不死圖騰效果: [time]'
     cantConsume: '&e不死圖騰使用被取消，因為還在冷卻中！'
   Inventory:
-    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
+    FullDrop: '&5你的背包有不能在你背包的物品. 已經被丟棄在地上了'
   InventorySave:
     info: '&8Info: &8[playerDisplayName]'
     saved: '&e[time] &e背包已保存 ID: &e[id]'
@@ -245,7 +245,7 @@ info:
   vanishSymbolOff: ''
   afkSymbolOn: '&8[&7離開&8]&r'
   afkSymbolOff: ''
-  nextPageConsole: '&fFor next page perform &5[command]'
+  nextPageConsole: '&f對於下一頁，執行 &5[command]'
   prevPage: '&2----<< &6上一頁 '
   prevPageGui: '&6上一頁 '
   prevPageClean: '&6上 '
