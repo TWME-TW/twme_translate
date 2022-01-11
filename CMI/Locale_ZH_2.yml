@@ -2478,7 +2478,7 @@ command:
       - '&eClick to change display name'
       - '&eThis only used for visual purposes'
       kitGroup: '&e禮包組: &6[group]'
-      dropItems: '&eDrop item if full: &6[state]'
+      dropItems: '&e背包以滿時丟棄物品: &6[state]'
       commands: '&e指令:'
       conditions: '&e獲得條件:'
       desc: '&e描述:'
