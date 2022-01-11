@@ -1884,7 +1884,7 @@ command:
       losLore:
       - '&7Check interval: [interval]'
       interact: '&7是否可交互: &6[state]'
-      commands: '&7Commands:'
+      commands: '&7指令:'
       particles: '&7是否顯示粒子效果: &6[state]'
       big: '&7大按鈕: &6[state]'
       bigLore:
