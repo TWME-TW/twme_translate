@@ -57,7 +57,7 @@ info:
   prefix: '&e[&aCMI&e] '
   NoPermission: '&c你沒有權限'
   CantHavePermission: '&c你無法擁有此權限!'
-  WrongGroup: '&cYou are in wrong group for this!'
+  WrongGroup: '&c你在錯誤的組中!'
   NoPlayerPermission: '&c[playerName] 沒有權限: [permission]'
   Ingame: '&c你只能在遊戲中這麼做'
   NoInformation: '&c找不到資訊'
