@@ -157,7 +157,7 @@ info:
     flying: '&6飛行'
     notflying: '&6未飛行'
   Inventory:
-    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
+    FullDrop: '&5你的背包有不能在你背包的物品. 已經被丟棄在地上了'
   TimeNotRecorded: '&e-無紀錄-'
   years: '&e[years] &6年 '
   oneYear: '&e[years] &6年 '
