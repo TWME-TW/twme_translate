@@ -1880,7 +1880,7 @@ command:
       relocate: '&7移動懸浮字'
       relocateLore:
       - '&7移動懸浮字至你當前位置'
-      los: '&7Consider line of sight: &6[state]'
+      los: '&7現在在告示牌的行數: &6[state]'
       losLore:
       - '&7Check interval: [interval]'
       interact: '&7是否可交互: &6[state]'
