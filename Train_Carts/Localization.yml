@@ -33,7 +33,7 @@ ticket:
   ownerconflict: &c這張車票: %0% 不是您的, 它是 %1% 的!
   typeconflict: &c車票: %0% 不能用於此火車!
   add: &f[票務系統]&e 你的銀行帳戶收到了 %0% !
-  check: &f[票務系統]&e You currently have %0% in your bank account!
+  check: &f[票務系統]&e 你的銀行帳戶目前有 %0% !
   buyfail: &f[票務系統]&c You can't afford a Ticket for %0%, sorry.
   buy: &f[票務系統]&e You bought a Ticket for %0%.
   buyowner: &f[票務系統]&e %0% &ebought a Ticket for %1% on &f%2%&e.
