@@ -96,7 +96,7 @@ info:
   ClickToPaste: '&e點擊貼上聊天室'
   CantTeleportWorld: '&e你不能傳送到該世界'
   CantTeleportNoWorld: '&c目標世界不存在，傳送已被取消'
-  ClickToConfirmDelete: '&eClick to confirm removal of &6[name]'
+  ClickToConfirmDelete: '&e點擊確認刪除 &6[name]'
   teleported: '&e你被傳送了.'
   PlayerSpliter: '&e----- &6[playerDisplayName] &e-----'
   Spliter: '&e--------------------------------------------------'
