@@ -24,7 +24,7 @@ edit:
   nonefound: &c您沒有擁有任何可以編輯的火車.
   notowned: &c您不擁有這列火車!
 select:
-  destination: &eYou have selected &f%0%&e as your destination!
+  destination: &e您已選擇 &f%0%&e 作為您的目的地!
 ticket:
   expired: &cYour ticket for %0% is expired
   required: &cYou do not own a ticket for this train!
