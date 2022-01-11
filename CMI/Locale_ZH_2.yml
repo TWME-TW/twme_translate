@@ -2109,7 +2109,7 @@ command:
       newBanned: '被禁止 '
       newBannedHover:
       - '&7被 &e[name] &7禁止'
-      - '&7Left: &e[left]'
+      - '&7剩餘: &e[left] 時間'
       - '&7原因: &e[reason]'
       newMuted: '靜言'
       newMutedHover:
