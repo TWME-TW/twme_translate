@@ -767,7 +767,7 @@ Locations: '&7地點: '
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
-  'off': '&7Playing'
+  'off': '&7遊玩中'
   MayNotRespond: '&e玩家處於離開狀態，可能無法回覆你'
   MayNotRespondStaff: '&e伺服器管理員處於離開狀態，可能無法立刻解決你的問題'
 BossBar:
