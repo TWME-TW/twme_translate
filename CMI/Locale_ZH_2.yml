@@ -1481,7 +1481,7 @@ command:
     info:
       exists: '&cWarp by this name (&7[newName]&c) already exists. Pick different
         one'
-      updated: '&eUpdated name from &7[oldName]&e into &7[newName]'
+      updated: '&e從 &7[oldName]&e 更新名稱為 &7[newName]'
       placeItem: '&2設置用於顯示地標圖標的物品'
       placeOffItem: '&2放置物品來設置自定義物品'
       autoLore: '&2自動lore生成: [state]'
