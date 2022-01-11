@@ -3215,7 +3215,7 @@ command:
       tpLimit: '&e正在冷卻中，請再等待 &6[time] &e然後重試'
       IncorrectLocation: '&6無法找到安全的傳送位置, 請再等待 &e[time] &6然後重試'
       teleported: '!actionbar!&6已傳送!!!'
-      waiting: '!actionbar!&6Looking for suitable location. Please wait'
+      waiting: '!actionbar!&6尋找合適的位置. 請稍等'
   sameip:
     help:
       info: '&e列出通過同IP登入的玩家'
