@@ -41,9 +41,9 @@ waiter:
   notfound: &c無法在軌道上找到 &e%0%&c 標誌!
 pathfinding:
   busy: &e尋找到達目的地的方法中...
-  failed: &cDestination &e%0%&c could not be reached from here!
+  failed: &c無法從此處到達目的地: &e%0%&c !
 chest:
-  noperm: &cYou do not have permission to use the train storage chest!
+  noperm: &c您沒有權限使用火車儲物箱!
   give: &aYou have been given a train storage chest item. Use it to store and spawn
     trains
   update: &aYour train storage chest item has been updated
