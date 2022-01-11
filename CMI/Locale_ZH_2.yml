@@ -1479,8 +1479,8 @@ command:
       info: '&e編輯地標'
       args: (warpName)
     info:
-      exists: '&cWarp by this name (&7[newName]&c) already exists. Pick different
-        one'
+      exists: '&c此地標名稱 (&7[newName]&c) 已經存在.
+        請選別的'
       updated: '&e從 &7[oldName]&e 更新名稱為 &7[newName]'
       placeItem: '&2設置用於顯示地標圖標的物品'
       placeOffItem: '&2放置物品來設置自定義物品'
