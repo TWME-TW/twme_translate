@@ -253,8 +253,8 @@ info:
     CantUseShulkerBox: '&c戰鬥時無法使用界符盒.
       等待: [time]'
     CantUseCommand: '!actionbar!&c在戰鬥中無法使用命令. 等待: [time]'
-    bossBarPvp: '&cCombat mode [autoTimeLeft]'
-    bossBarPve: '&2Combat mode [autoTimeLeft]'
+    bossBarPvp: '&c戰鬥模式 [autoTimeLeft]'
+    bossBarPve: '&2戰鬥模式 [autoTimeLeft]'
   noSchedule: '&c找不到這個計劃任務'
   totem:
     cooldown: '&e不死圖騰冷卻中: [time]'
