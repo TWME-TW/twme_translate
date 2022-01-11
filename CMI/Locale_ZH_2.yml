@@ -2014,7 +2014,7 @@ command:
       convertedWarps: '&e導入 &6[amount] &e個地標'
       noInfo: '&c你必須指定你想導入什麼舊數據'
       savingInProgress: '&e資料將在這幾分鐘內保存至資料庫
-        時間取決於有多少資料'
+        時間取決於有多少資料"<'
       HDfile: '&c找不到HolographicDisplays插件數據庫文件.導入中止.'
       HDexist: '&c全息圖 &7[name] &c已經存在. 跳過.'
       HDfailed: '&c無法加載 全息圖 (&7[name]&c)'
@@ -2135,7 +2135,7 @@ command:
       - '&7聊天室: &e[name]'
       - '&7Users in: &e[count]'
       nList:
-      - '&e------------- [enableColor]Enabled [disableColor]Disabled&e -------------'
+      - '&e------------- [enableColor]啟用 [disableColor]禁用&e -------------'
       - '&e| [name][balance][UUID][ip]'
       - '&e| [OP][god][fly][gameMode][afk][see]'
       - '&e| [banned][muted][cuffed][jailed][alert][chatroom]'
