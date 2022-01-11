@@ -286,9 +286,9 @@ info:
   afkSymbolOff: ''
   beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
   pvp:
-    noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
+    noGodDamage: '!actionbar!&c你不能在上帝模式時傷害玩家'
   pve:
-    noGodDamage: '!actionbar!&cYou can''t damage mobs while being immortal'
+    noGodDamage: '!actionbar!&c你不能在上帝模式時傷害生物'
   InvEmpty:
     armor: '&e你應該清空裝備欄!'
     hand: '&e你應該清空手中物品!'
