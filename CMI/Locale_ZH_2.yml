@@ -4019,7 +4019,7 @@ command:
       info: '&e顯示/隱藏不死圖騰的冷卻條'
       args: ''
     info:
-      toggle: '&eTotem cooldown bar toggled ([state]&e)'
+      toggle: '&e顯示/隱藏不死圖騰的冷卻條 ([state]&e)'
   top:
     help:
       info: '&e傳送至你所在坐標的最高點'
