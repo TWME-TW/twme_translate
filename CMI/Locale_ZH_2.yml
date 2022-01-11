@@ -1837,8 +1837,8 @@ command:
       - 需要 cmi.command.helpop.inform 權限才能看到求助資訊
     info:
       message: '&c[OP求助]&4[&7[senderDisplayName]&4]&r&c [message]'
-      feedback: '&c[Help]&7Your question was submitted to online staff'
-      offline: '&c[Help]&7There are no staff members currently online, try later'
+      feedback: '&c[Help]&7您的問題已提交給在線的工作人員'
+      offline: '&c[Help]&7目前沒有工作人員在線，請稍後再試'
   hideflags:
     help:
       info: '&e隱藏物品NBT標簽'
