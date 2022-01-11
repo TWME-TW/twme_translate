@@ -1395,7 +1395,7 @@ command:
       sentOffer: '&e捐贈給 &6[playerDisplayName]&e. 請等待玩家接受'
       gotOffer: '&e從 &6[sourceDisplayName]&e獲得 &6[type]&eX&6[amount] &e. 請點擊接受.'
       doesnthave: '&e玩家不再擁有此物品'
-      'no': '&eNo pending donations'
+      'no': '&e沒有待處理的捐款'
       list: '&7[number]. &e[playerDisplayName] &e- &7[material] &6x &e[amount]'
   dsign:
     help:
