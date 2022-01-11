@@ -3523,7 +3523,7 @@ command:
       explanation: '&2Buy price is only used in detecting posible exploits'
   shadowmute:
     help:
-      info: '&eMute player without telling him that he is muted'
+      info: '&e將玩家靜音而不告訴他他已被靜音'
       args: '[playerName] (time) (-s) (reason)'
   shakeitoff:
     help:
