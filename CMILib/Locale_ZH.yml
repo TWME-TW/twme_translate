@@ -167,7 +167,7 @@ info:
   oneHour: '&e[hours] &6小時 '
   min: '&e[mins] &6分鐘 '
   sec: '&e[secs] &6秒 '
-  nextPageConsole: '&fFor next page perform &5[command]'
+  nextPageConsole: '&f對於下一頁，執行 &5[command]'
   prevPage: '&2----<< &6上一頁 '
   prevPageGui: '&6上一頁 '
   prevPageClean: '&6上 '
