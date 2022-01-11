@@ -696,7 +696,7 @@ modify:
   addSymbol: ' &2+'
   addSymbolHover: '&2新建'
   cancelSymbol: ' &7&l[X]'
-  cancelSymbolHover: '&aCancel'
+  cancelSymbolHover: '&a取消'
   acceptSymbol: ' &2[!] '
   acceptSymbolHover: '&2接受'
   denySymbol: ' &4[X] '
@@ -717,25 +717,25 @@ modify:
   listNumbering: '&e[number]. '
   listAlign: '&80'
   ChangeHover: '&e點擊更改'
-  ChangeCommands: '&eCommands'
+  ChangeCommands: '&e指令'
   enabledColor: '&6'
   disabledColor: '&7'
   commandTitle: ' &e--- &6[name] &e---'
   commandList: ' &e[command]  '
   emptyLine: '&7[Empty line]'
   commandEdit: '&e編輯列表'
-  lineAddInfo: '&eEnter new line. Type &6cancel &eto cancel'
+  lineAddInfo: '&e輸入新的一行. 輸入 &6cancel &e來取消'
   commandAddInfo: '&e輸入一個新指令，或使用 &6cancel &e取消'
   commandAddInformationHover: "&e[playerName] 代表玩家變數 \n&e 想給指令加延遲請使用: \n&edelay! 5\
     \ \n&e支持特殊指令 獲得更多資訊 \n&ehttps://www.zrips.net/cmi/commands/specialized/"
   commandEditInfo: '&e點擊貼上舊內容，使用 &6cancel &e取消，或使用 &6remove &e移除一行'
-  listLimit: '&eList can''t be bigger than &6[amount] &eentries'
+  listLimit: '&e列表不能超過 &6[amount] &e個條目'
   commandEditInfoHover: '&e點擊貼上舊內容'
 teleportation:
-  relocation: '!actionbar!&4你將要傳送到的地方不安全，已將你傳送至 安全的地方'
+  relocation: '!actionbar!&4你將要傳送到的地方不安全，已將你傳送至安全的地方'
 econ:
   noMoney: '&c你的錢不夠'
-  charged: '!actionbar!&fCharged: &6[amount]'
+  charged: '!actionbar!&f收費: &6[amount]'
   notEnoughMoney: '&c你沒有足夠的現金. 還需要 (&6[amount]&c)'
   tooMuchMoney: '&c你現金太多了'
   disabled: '&c經濟已禁用，你不能使用這個指令'
@@ -750,7 +750,7 @@ Selection:
 Location:
   Title: '&8玩家位置'
   Killer: '&e擊殺者: &6[killer]'
-  OneLiner: '&eLocation: &6[location]'
+  OneLiner: '&e地點: &6[location]'
   DeathReason: '&e死亡原因: &6[reason]'
   Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
   World: '&e世界: &6[world]'
@@ -763,22 +763,7 @@ Location:
   - world-&2World
   - world_nether-&2World Nether
   - world_the_end-&2World The End
-  - YIS-&2Yis
-  - NY-&2Ny
-  - Yaju2-&2Yaju2
-  - Yaju_Flat-&2Yaju Flat
-  - road-&2Road
-  - Yaju-&2Yaju
-  - LookRorwardTo_island-&2Lookrorwardto Island
-  - normal-&2Normal
-  - RWG-&2Rwg
-  - test-&2Test
-  - world132123213-&2World132123213
-  - AFLR-&2Aflr
-  - OSHACRA-&2Oshacra
-  - nandakore-&2Nandakore
-  - Sayama-&2Sayama
-Locations: '&7Locations: '
+Locations: '&7地點: '
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
@@ -793,7 +778,7 @@ Potion:
   NoPotions: '&e無'
 Information:
   Title: '&8玩家資訊'
-  Health: '&eH血量: &6[Health]/[maxHealth]'
+  Health: '&e血量: &6[Health]/[maxHealth]'
   Hunger: '&e飢餓值: &6[Hunger]'
   Saturation: '&e飽食度: &6[Saturation]'
   Exp: '&e經驗: &6[Exp]'
@@ -801,7 +786,7 @@ Information:
   NotEnoughExpNeed: '&e經驗升級還需: &6[Exp]/[need]'
   tooMuchExp: '&e過多經驗: &6[Exp]/[need]'
   NotEnoughVotes: '&e投票數還需: &6[votes]'
-  TooMuchVotes: '&eToo many votes: &6[votes]'
+  TooMuchVotes: '&e票數過多: &6[votes]'
   BadGameMode: '&c當前遊戲模式下不能這麼做'
   BadArea: '&c你不可以在此區域這樣做'
   GameMode: '&e遊戲模式: &6[GameMode]'
@@ -817,7 +802,7 @@ Elytra:
   SpeedBoost: ' &2+ '
   SpeedSuperBoost: ' &6+ '
   CanUse: '&c沒有權限，無法裝載鞘翅'
-  CantGlide: '&cCan''t use elytra here!'
+  CantGlide: '&c不能在這裡使用鞘翅!'
   Charging: '&e充能 &f[percentage]&e%'
 NetherPortal:
   ToHigh: '&c傳送門太高了，最大高度 &6[max]&c!'
@@ -829,8 +814,8 @@ Ender:
 Chat:
   localPrefix: ''
   shoutPrefix: '&c[S]&r'
-  LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
-  shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
+  LocalNoOne: '!actionbar!&c現在沒有人可看到你的對話 ! 除非你在全域頻道聊天'
+  shoutDeduction: '!actionbar!&c扣除 &e[amount] &c'
   # Use \n to add new line
   publicHover: '&e發送時間: &6%server_time_hh:mm:ss%'
   privateHover: '&e發送時間: &6%server_time_hh:mm:ss%'
@@ -848,16 +833,16 @@ command:
       cmdFormat: '&6/[command]&f[arguments]'
       helpPageDescription: '&e* [description]'
       explanation: '&e * [explanation]'
-      title: '&e------ ======= &6Help&e &e======= ------'
+      title: '&e------ ======= &6幫助&e &e======= ------'
   nocmd:
     help:
-      info: '&eShows all available commands'
+      info: '&e顯示所有可用的指令'
       args: ''
   reload:
     help:
-      info: '&eReloads plugins config and locale files'
+      info: '&e重新讀取插件的設定和語言文件'
       args: ''
     info:
-      feedback: '&6Configs and locale files reloaded! Took [ms]ms'
-      failedConfig: '&4Failed to load config file! Check spelling!'
-      failedLocale: '&4Failed to load locale file! Check spelling!'
+      feedback: '&6重新讀取插件的設定和語言文件! 花費 [ms]ms'
+      failedConfig: '&4讀取設定檔失敗! 檢查拼寫!'
+      failedLocale: '&4讀取語言文件失敗! 檢查拼寫!'
