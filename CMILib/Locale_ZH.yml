@@ -839,7 +839,7 @@ Chat:
   privateHover: '&e發送時間: &6%server_time_hh:mm:ss%'
   staffHover: '&e發送時間: &6%server_time_hh:mm:ss%'
   helpopHover: '&e發送時間: &6%server_time_hh:mm:ss%'
-  link: '&l&4[&7鏈接&4]'
+  link: '&l&4[&7連結&4]'
   item: '&7[%cmi_iteminhand_displayname%[amount]&7]'
   itemAmount: ' x[amount]'
   itemEmpty: '&7[Mighty fist]'
