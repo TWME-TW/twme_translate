@@ -2123,7 +2123,7 @@ command:
       - '&7Cell: &e[id]'
       - '&7Left: &e[time]'
       - '&7Reason: &e[reason]'
-      newHomes: '&fHomes: &e[count] '
+      newHomes: '&f家: &e[count] '
       newMail: '&fMail: &e[count] '
       newWarnings: '&f警告: &e[count] '
       newAlert: '警報 '
