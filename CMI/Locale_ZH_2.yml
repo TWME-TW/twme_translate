@@ -2768,7 +2768,7 @@ command:
     info:
       mutedFor: '&e公共聊天停止接收，持續 &6[time]'
       isMuted: '!actionbar!&e公共聊天停止接收，持續 &6[time]'
-      muteReason: '&4Mute reason: &7[reason]'
+      muteReason: '&4原因: &7[reason]'
   nameplate:
     help:
       info: '&e設置玩家名前綴和後綴'
