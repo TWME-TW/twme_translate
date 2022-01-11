@@ -654,8 +654,8 @@ settings_scoreboard_disabled_lore:
 
 settings_slab_breaking_item: "&b半磚破壞"
 settings_slab_breaking_lore:
- - "&7&oWhen breaking double slabs"
- - "&7&oonly one half will be broken."
+ - "&7&o當打掉兩個疊在一起的半磚"
+ - "&7&o將只會打掉一個."
 
 settings_spawnteleport_item: "&b初生點傳送"
 settings_spawnteleport_lore:
