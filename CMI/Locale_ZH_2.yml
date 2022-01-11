@@ -3128,7 +3128,7 @@ command:
       - cmi.command.repair.hand - 允許修理手上的物品
       - cmi.command.repair.armor - 允許修理盔甲欄裡的物品
       - cmi.command.repair.all - 允許修理所有物品
-      - cmi.command.repair.repairshare.bypass - 不添加共享修覆保護地修覆物品
+      - cmi.command.repair.repairshare.bypass - 不添加共享修復保護地修覆物品
     info:
       feedback: '&e已成功修復 &3[playerDisplayName]&e-(&3[offon]&e) 的 &3[amount]&e 件物品.'
       feedbackMoney: '&eYou have repaired &3[amount]&e items for &3[playerDisplayName]&e
