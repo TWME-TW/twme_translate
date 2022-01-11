@@ -44,8 +44,7 @@ pathfinding:
   failed: &c無法從此處到達目的地: &e%0%&c !
 chest:
   noperm: &c您沒有權限使用火車儲物箱!
-  give: &aYou have been given a train storage chest item. Use it to store and spawn
-    trains
+  give: &a您已獲得一個火車儲物箱物品。 用它來存儲和生成火車
   update: &aYour train storage chest item has been updated
   locked: &cYour train storage chest item is locked and can not pick up the train
   pickup: &aTrain picked up and stored inside the item!
