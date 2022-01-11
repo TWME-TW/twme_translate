@@ -7,11 +7,11 @@ commands:
     description: 對已保存的火車執行 TrainCarts 命令
     usage: 請參閱 TrainCarts 的開發或 WIKI 頁面
   cart:
-    description: Perform TrainCarts commands for single minecarts
-    usage: See development or WIKI page of TrainCarts
+    description: 對單個礦車執行 TrainCarts 命令
+    usage: 請參閱 TrainCarts 的開發或 WIKI 頁面
   train:
-    description: Perform TrainCarts commands for complete trains
-    usage: See development or WIKI page of TrainCarts
+    description: 為完整的火車執行 TrainCarts 命令
+    usage: 請參閱 TrainCarts 的開發或 WIKI 頁面
 command:
   about: TrainCarts %0% - See WIKI page for more information
   noperm: &cYou do not have permission, ask an admin to do this for you.
