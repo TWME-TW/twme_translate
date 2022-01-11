@@ -827,7 +827,7 @@ command:
       current: '&e當前 &3[playerDisplayName] &e的空氣值: &3[amount]'
   alert:
     help:
-      info: '&e當玩家上線，提醒管理員'
+      info: '&e當玩家上線時，提醒管理員'
       args: '[playerName] (reason)'
       explanation:
       - '&e權限:'
