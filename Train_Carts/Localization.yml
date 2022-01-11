@@ -34,8 +34,8 @@ ticket:
   typeconflict: &c車票: %0% 不能用於此火車!
   add: &f[票務系統]&e 你的銀行帳戶收到了 %0% !
   check: &f[票務系統]&e 你的銀行帳戶目前有 %0% !
-  buyfail: &f[票務系統]&c You can't afford a Ticket for %0%, sorry.
-  buy: &f[票務系統]&e You bought a Ticket for %0%.
+  buyfail: &f[票務系統]&c 抱歉，您的錢不夠，無法購買這張車票: %0%.
+  buy: &f[票務系統]&e 你買了一張 %0% 的票.
   buyowner: &f[票務系統]&e %0% &ebought a Ticket for %1% on &f%2%&e.
 waiter:
   notfound: &cDidn't find a &e%0%&c sign on the track!
