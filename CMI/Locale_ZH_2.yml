@@ -4093,7 +4093,7 @@ command:
       current: '&e當前已傳送 &3[amount] &e，已有 &3[files] &e個文件被檢索'
       total: '&e總傳送量 &3[amount] &e，被檢索文件數量 &3[files] &e'
       WorldNotFound: '&e給予的世界名: &7[name] &e未加載. Make sure its
-        請確保給予的名稱正確. 我們將照這您給予的名稱執行.'
+        請確保給予的名稱正確. 我們將照著您給予的名稱執行.'
   tpbypass:
     help:
       info: '&e無視傳送到的位置是否安全'
