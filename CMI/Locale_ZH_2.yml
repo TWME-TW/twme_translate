@@ -1895,7 +1895,7 @@ command:
       autoButtonLore:
       - '&eCurrent hologram doesnt have any pages create'
       - '&eUse &6!nextpage! &eas a new line to make next page'
-      autoButtonForward: '&2This hologram already has forwards button created'
+      autoButtonForward: '&2這個全息圖已創建往前按鈕'
       autoButtonBackward: '&2這個全息圖已創建後退按鈕 '
       moveX: '&7X:&e[x]'
       moveY: '&7Y:&e[y]'
