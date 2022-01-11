@@ -112,7 +112,7 @@ info:
   noItem: '&c找不到物品'
   dontHaveItem: '&c你的背包中沒有 &6[itemName] x[amount] &c'
   wrongWorld: '&c不可在此世界這樣做'
-  differentWorld: '&cDifferent worlds'
+  differentWorld: '&c不同的世界'
   HaveItem: '&c在背包裡有&6[amount]x [itemName]'
   cantDoInGamemode: '&eYou can''t do this in this game mode'
   cantDoForPlayer: '&e你不能對 &6[playerDisplayName] &e這麼做'
