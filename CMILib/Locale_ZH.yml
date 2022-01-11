@@ -72,7 +72,7 @@ info:
   FeatureNotEnabled: '&c該機制未啟用'
   ModuleNotEnabled: '&c該功能未啟用!'
   versionNotSupported: '&c伺服器版本不支持此特性'
-  spigotNotSupported: '&cYou need Paper branch type server'
+  spigotNotSupported: '&c您需要 Paper 或其分支的服務器核心'
   bungeeNoGo: '&c此功能在基於bungee伺服器上無法作用'
   clickToTeleport: '&e點擊傳送'
   UseMaterial: '&4請使用物品名字!'
