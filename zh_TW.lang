@@ -1,0 +1,83 @@
+# zh_TW.lang
+
+! &bUsing &3"zh_TW.lang" &btranslated by &4TWME
+
+# Change the messages here, you can use & to use colors.
+# buyMessage must contain %Item% and %price%
+# database can contain %count%
+
+messages.prefix: &6頭顱系統> &r
+messages.database: &4自定義頭顱 &8 %count% 個已加載
+messages.search: &4頭顱搜索 &8 %count% 個頭顱
+messages.page: 頁
+messages.price: &a價格: &2
+messages.heads: 頭顱
+messages.head: 頭顱
+messages.other: 其它
+messages.loading: &c..加載中..
+messages.recentHeads: &e新加入
+messages.noPermissionToBuyLore: &c沒有權限
+messages.searchCommand: &7/hdb search [input]
+messages.pheadCommand: /phead [name]
+messages.loreColor: &8
+messages.headItemColor: &9
+messages.categoryColor: &c&l
+messages.categoryLoreColor: &e
+
+messages.suggest: &c建議頭顱:
+messages.submit: &c提交頭顱:
+messages.noPermission: &c你沒有權限!
+messages.notEnoughMoney: &c你的錢不夠!
+messages.notEnoughSpace: &c背包內空間不夠
+messages.buyMessage: &a你購買了 %item% &a並花費金錢 &2%price%
+messages.backToMenu: &c返回主選單
+messages.clickToSearch: &a&n&l點擊這里&b 搜索頭顱
+messages.noHeadsFound: &e沒有找到任何頭顱!
+messages.moreSpecific: &e請詳細一些!
+messages.headsFound: &e找到頭顱!
+messages.searchForHeads: &c搜索頭顱
+messages.pluginInfo: &c插件訊息
+messages.pluginSuggest: &c建議頭顱
+messages.pluginSuggestLore: &7請先檢查數據庫
+messages.chatSearch: &b輸入你要搜索的內容
+messages.databaseStillLoading: &c頭顱數據庫正在加載中！ 請稍等一會再進行此操作
+messages.customCommandItemName: &c返回主選單
+messages.patience: &c冷卻中，稍後才能得到另一個頭顱!
+messages.overflow: &e由於您的背包已滿，您獲得的頭顱掉在了地上!
+
+# CATEGORY NAMES
+
+category.alphabet: 字母
+category.animals: 動物
+category.blocks: 方塊
+category.decoration: 裝飾品
+category.food_drinks: 食物 & 飲料
+category.humans: 人類
+category.humanoid: 人形
+category.miscellaneous: 雜物
+category.monsters: 怪物
+category.plants: 植物
+category.custom: 自定義
+category.custom2: 自定義 2
+category.custom3: 自定義 3
+category.custom4: 自定義 4
+category.custom5: 自定義 5
+category.online_players: 在線玩家
+category.disabled: 禁用
+
+# EVENT NAMES
+
+event.halloween: &e萬聖節
+event.christmas: &b聖誕節
+event.newYear: &6新年
+event.valentines: &c情人節
+event.4thOfJuly: &c國慶日
+event.easter: &f復活節
+event.winter: &f冬季
+event.summer: &6夏日
+event.MayThe4th: &3原力與你同在
+event.piDay: &3派對
+event.pokemon: &6寶可夢
+event.pirate: &c國際海盜模仿日
+event.taco: &6炸玉米餅日
+event.mario: &c國際馬利歐節
