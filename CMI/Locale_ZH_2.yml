@@ -3829,7 +3829,7 @@ command:
     info:
       Platform: ' &e系統: &6[platform] &e(&6[os]&e) &e運行線程: &6[threads]'
       Tps: ' &eTPS: &6[tps]'
-      CpuUsage: ' &eCpu 使用: &6[cpuusage]% &e(&6[cores] cores&e)'
+      CpuUsage: ' &eCpu 使用: &6[cpuusage]% &e(&6[cores] 核&e)'
       Uptime:
         main: ' &e運營時間: '
         weeks: '&e[weeks] &6周 '
