@@ -119,8 +119,7 @@
 
 info:
   Same: '&c你不能打開你自己的背包!'
-  cantLoginWithDifCap: '&cCan''t login with different name capitalization! Old name:
-    &e[oldName]&c. Current: &e[currentName]'
+  cantLoginWithDifCap: '&c請注意名字的大小寫! 舊名字:&e[oldName]&c. 現在名字: &e[currentName]'
   Searching: '&eSearching for player data, please wait, this can take some time to
     finish!'
   NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
