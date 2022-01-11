@@ -1193,7 +1193,7 @@ command:
     info:
       feedback: '&e你清空了玩家 &3[playerDisplayName]&e 的背包 (&3[offon]&e).'
       targetfeedback: '&e你的背包被 &3[senderDisplayName]&e 清空了'
-      confirm: '&7點擊確認清空背包. &c所有物品將被清楚!'
+      confirm: '&7點擊確認清空背包. &c所有物品將被清除!'
   clearchat:
     help:
       info: '&e清除聊天室'
