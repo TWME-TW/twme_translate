@@ -194,8 +194,8 @@ info:
   Same: '&c你不能打開你自己的背包'
   cantLoginWithDifCap: '&c請注意名字的大小寫! 舊名字:&e[oldName]&c. 當前名字: &e[currentName]'
   Searching: '&e正在搜尋玩家數據，請稍等...'
-  NoCommandWhileSleeping: '&c不能睡覺時執行指令!'
-  PurgeNotEnabled: '&c合並機制未在config中啟用'
+  NoCommandWhileSleeping: '&c不能在睡覺時執行指令!'
+  PurgeNotEnabled: '&c清除機制未在config中啟用'
   TeamManagementDisabled: '&7This feature will have limited functionalaty while DisableTeamManagement
     is set to true!'
   NoGameMode: '&c你只能使用 0/1/2/3 或者 Survival/Creative/Adventure/Spectator 或者 s/c/a/sp!'
