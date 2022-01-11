@@ -682,7 +682,7 @@ direction:
   nw: 西北
 modify:
   middlemouse: '&2滑鼠中鍵單擊進行編輯'
-  qButtonEdit: '&2Click Q to edit'
+  qButtonEdit: '&2點擊 Q 來編輯'
   newItem: '&7放置新物品'
   newLine: '&2<新的一行>'
   newLineHover: '&2添加新的一行'
