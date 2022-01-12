@@ -78,7 +78,7 @@ info:
   TeamManagementDisabled: '&7當 DisableTeamManagement 設置為 true 時，此功能將被限制!'
   ModuleNotEnabled: '&c該功能未啟用!'
   versionNotSupported: '&c伺服器版本不支持此特性'
-  bungeeNoGo: '&c此功能在基於bungee伺服器上無法作用'
+  bungeeNoGo: '&c此功能在基於Bungee伺服器上無法作用'
   clickToTeleport: '&e點擊傳送'
   UseMaterial: '&4請使用物品名字!'
   IncorrectMaterial: '&4材料名稱不正確!'
