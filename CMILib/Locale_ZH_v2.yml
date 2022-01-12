@@ -57,7 +57,7 @@ info:
   prefix: '&e[&aCMI&e] '
   NoPermission: '&c你沒有權限'
   CantHavePermission: '&c你無法擁有此權限!'
-  WrongGroup: '&c你在錯誤的組中!'
+  WrongGroup: '&c你在錯誤的群組中!'
   NoPlayerPermission: '&c[playerName] 沒有權限: [permission]'
   Ingame: '&c你只能在遊戲中這麼做'
   NoInformation: '&c找不到資訊'
@@ -709,12 +709,12 @@ modify:
   commandList: ' &e[command]  '
   emptyLine: '&7[Empty line]'
   commandEdit: '&e編輯列表'
-  lineAddInfo: '&eEnter new line. Type &6cancel &eto cancel'
+  lineAddInfo: '&e輸入新的一行. 輸入 &6cancel &e來取消'
   commandAddInfo: '&e輸入一個新指令，或使用 &6cancel &e取消'
   commandAddInformationHover: "&e[playerName] 代表玩家變數 \n&e 想給指令加延遲請使用: \n&edelay! 5\
     \ \n&e支持特殊指令 獲得更多資訊 \n&ehttps://www.zrips.net/cmi/commands/specialized/"
   commandEditInfo: '&e點擊貼上舊內容，使用 &6cancel &e取消，或使用 &6remove &e移除一行'
-  listLimit: '&eList can''t be bigger than &6[amount] &eentries'
+  listLimit: '&e列表不能超過 &6[amount] &e個條目'
   commandEditInfoHover: '&e點擊貼上舊內容'
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
@@ -722,10 +722,10 @@ teleportation:
   relocation: '!actionbar!&4你將要傳送到的地方不安全，已將你傳送至 安全的地方'
 afk:
   'on': '&6AFK'
-  'off': '&7Playing'
+  'off': '&7遊玩中'
   left: '&6[playerDisplayName] &e回來了'
-  MayNotRespond: '&e玩家處於離開狀態，可能無法回覆你'
-  MayNotRespondStaff: '&e伺服器管理員處於離開狀態，可能無法立刻解決你的問題'
+  MayNotRespond: '&e玩家暫時處於離開狀態，可能無法回覆你'
+  MayNotRespondStaff: '&e伺服器管理員暫時處於離開狀態，可能無法立刻解決你的問題'
 BossBar:
   hpBar: '&f[victim] &e[max]&f/&e[current] &f(&c-[damage]&f)'
 Potion:
@@ -742,7 +742,7 @@ Information:
   NotEnoughExpNeed: '&e經驗升級還需: &6[Exp]/[need]'
   tooMuchExp: '&e過多經驗: &6[Exp]/[need]'
   NotEnoughVotes: '&e投票數還需: &6[votes]'
-  TooMuchVotes: '&eToo many votes: &6[votes]'
+  TooMuchVotes: '&e票數過多: &6[votes]'
   BadGameMode: '&c當前遊戲模式下不能這麼做'
   BadArea: '&c你不可以在此區域這樣做'
   GameMode: '&e遊戲模式: &6[GameMode]'
@@ -759,16 +759,16 @@ Information:
 econ:
   disabled: '&c經濟已禁用，你不能使用這個指令'
   noMoney: '&c你的錢不夠'
-  charged: '!actionbar!&fCharged: &6[amount]'
+  charged: '!actionbar!&f收費: &6[amount]'
   notEnoughMoney: '&c你沒有足夠的現金. 還需要 (&6[amount]&c)'
   tooMuchMoney: '&c你現金太多了'
-  commandCost: '&7此指令的價格為 &6[cost] &7重複此操作或單擊此處確認'
+  commandCost: '&7此指令的價格為 &6[cost] &7重複此操作或點擊此處確認'
 Elytra:
   Speed: '&e速度: &6[speed]&ekm/h'
   SpeedBoost: ' &2+ '
   SpeedSuperBoost: ' &6+ '
   CanUse: '&c沒有權限，無法裝載鞘翅'
-  CantGlide: '&cCan''t use elytra here!'
+  CantGlide: '&c不能在這裡使用鞘翅!'
   Charging: '&e充能 &f[percentage]&e%'
 Selection:
   SelectPoints: '&c用選擇工具選擇 2 個點 AKA: &6[tool]'
@@ -785,7 +785,7 @@ NetherPortal:
 Location:
   Title: '&8玩家位置'
   Killer: '&e擊殺者: &6[killer]'
-  OneLiner: '&eLocation: &6[location]'
+  OneLiner: '&地點: &6[location]'
   DeathReason: '&e死亡原因: &6[reason]'
   Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
   World: '&e世界: &6[world]'
@@ -794,20 +794,20 @@ Location:
   Z: '&eZ: &6[z]'
   Pitch: '&ePitch: &6[pitch]'
   Yaw: '&eYaw: &6[yaw]'
-Locations: '&7Locations: '
+Locations: '&7地點: '
 Ender:
   Title: '&7打開終界箱'
 Chat:
   localPrefix: ''
   shoutPrefix: '&c[S]&r'
-  LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
-  shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
+  LocalNoOne: '!actionbar!&c現在沒有人可看到你的對話 ! 除非你在全域頻道聊'
+  shoutDeduction: '!actionbar!&c扣除 &e[amount] &c'
   # Use \n to add new line
   publicHover: '&e發送時間: &6%server_time_hh:mm:ss%'
   privateHover: '&e發送時間: &6%server_time_hh:mm:ss%'
   staffHover: '&e發送時間: &6%server_time_hh:mm:ss%'
   helpopHover: '&e發送時間: &6%server_time_hh:mm:ss%'
-  link: '&l&4[&7鏈接&4]'
+  link: '&l&4[&7連結&4]'
   item: '&7[%cmi_iteminhand_displayname%[amount]&7]'
   itemAmount: ' x[amount]'
   itemEmpty: '&7[Mighty fist]'
