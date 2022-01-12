@@ -51,7 +51,7 @@ no_permissions: "%prefix% &c權限不足."
 
 # /back
 back_usage: "%prefix% &7用法 : &b/back"
-back_teleported: "%prefix% &7你會被傳送至你 &b之前的位置&7."
+back_teleported: "%prefix% &7你會被傳送至你&b之前的位置&7."
 back_failed: "%prefix% &c找不到之前的位置."
 
 # /build
