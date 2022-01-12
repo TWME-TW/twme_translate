@@ -633,7 +633,7 @@ settings_no_clip_lore:
  - "&7&o當你開啟此選項"
  - "&7&o飛行時靠牆會自動變觀察者模式."
 
-settings_open_trapdoors_item: "&bO強制開門"
+settings_open_trapdoors_item: "&b強制開門"
 settings_open_trapdoors_lore:
  - "&7&o當你右鍵鐵 (活版)門"
  - "&7&o門將開/關."
