@@ -17,8 +17,8 @@ Messages:
   Toggle Mode On: "&2&l開啟"
   Toggle Mode Off: "&c&l關閉"
   
-  Scan: "&aFound %count% item frames."
-  Scan No Number: "&cPlease provide a scan radius."
+  Scan: "&a找到 %count% 個展示框."
+  Scan No Number: "&c請輸入掃描半徑."
   
   Not Looking: "&cYou're not looking at an Item Frame."
   Non Number: "&c&l%value%&c is not a number or out of range (1-127)"
