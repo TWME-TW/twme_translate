@@ -25,6 +25,6 @@ Messages:
   
   Command Usage:
     - "&c物品展示框工具用法:"
-    - "&a/ITF toggle &7- &fWhile looking at Item Frame."
+    - "&a/ITF toggle &7- &f將你遊戲準心指向的物品展示框切換為隱形/現形."
     - "&a/ITF togglemode &7- &fEnable/Disable where you can right click Item Frames"
     - "&a/ITF scan (radius) &7- &fScan for Item Frames and spawn some particles at them"
