@@ -5,13 +5,13 @@
 
 Messages:
 
-  Only Players: "&cThis can only be used by a player."
+  Only Players: "&c這只能由玩家使用."
   
-  No Permission: "&cYou don't have permission to do this."
+  No Permission: "&c您沒有權限執行此動作."
 
-  Toggle: "&aYou have toggled this Item Frame to be %status%"
-  Toggle On: "&2&lVISIBLE"
-  Toggle Off: "&c&lINVISIBLE"
+  Toggle: "&a您已將此物品展示框切換為 %status%"
+  Toggle On: "&2&l可視"
+  Toggle Off: "&c&l隱形"
 
   Toggle Mode: "&aYou have %status%&a toggle mode!"
   Toggle Mode On: "&2&lENABLED"
