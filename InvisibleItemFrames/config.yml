@@ -27,4 +27,4 @@ Messages:
     - "&c物品展示框工具用法:"
     - "&a/ITF toggle &7- &f將你遊戲準心指向的物品展示框切換為隱形/現形."
     - "&a/ITF togglemode &7- &f開啟/關閉物品展示框快速切換模式 (右鍵切換)"
-    - "&a/ITF scan (radius) &7- &fScan for Item Frames and spawn some particles at them"
+    - "&a/ITF scan (半徑) &7- &fScan for Item Frames and spawn some particles at them"
