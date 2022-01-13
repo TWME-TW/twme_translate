@@ -6,7 +6,7 @@
 plugin-stop: "Stopping plugin!"
 metrics-started: "Metrics started"
 metrics-error: "Metrics failed to start"
-update-checker-started: "Checking for updates..."
+update-checker-started: "檢查更新中..."
 update-checker-new-release: |-
   DriveBackup version <latest-version> has been released, You are currently running version <current-version>
   Update at: <gold><click:open_url:http://bit.ly/2VGtF7L>http://bit.ly/2VGtF7L</click></gold>" or with <gold><click:run_command:/drivebackup update>/drivebackup update</click></gold>
