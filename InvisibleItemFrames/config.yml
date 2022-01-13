@@ -24,7 +24,7 @@ Messages:
   Non Number: "&c&l%value%&c 不是數字或超出範圍 (1-127)"
   
   Command Usage:
-    - "&cInvisibleItemFrames Usages:"
+    - "&c物品展示框工具用法:"
     - "&a/ITF toggle &7- &fWhile looking at Item Frame."
     - "&a/ITF togglemode &7- &fEnable/Disable where you can right click Item Frames"
     - "&a/ITF scan (radius) &7- &fScan for Item Frames and spawn some particles at them"
