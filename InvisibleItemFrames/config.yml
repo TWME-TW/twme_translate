@@ -21,7 +21,7 @@ Messages:
   Scan No Number: "&c請輸入掃描半徑."
   
   Not Looking: "&c你必須看著物品展示框."
-  Non Number: "&c&l%value%&c is not a number or out of range (1-127)"
+  Non Number: "&c&l%value%&c 不是數字或超出範圍 (1-127)"
   
   Command Usage:
     - "&cInvisibleItemFrames Usages:"
