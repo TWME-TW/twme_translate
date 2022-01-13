@@ -13,9 +13,9 @@ Messages:
   Toggle On: "&2&l可視"
   Toggle Off: "&c&l隱形"
 
-  Toggle Mode: "&aYou have %status%&a toggle mode!"
-  Toggle Mode On: "&2&lENABLED"
-  Toggle Mode Off: "&c&lDISABLED"
+  Toggle Mode: "&a您已 %status%&a 快速切換模式!"
+  Toggle Mode On: "&2&l開啟"
+  Toggle Mode Off: "&c&l關閉"
   
   Scan: "&aFound %count% item frames."
   Scan No Number: "&cPlease provide a scan radius."
