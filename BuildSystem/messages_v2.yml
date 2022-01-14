@@ -61,7 +61,7 @@ build_activated_self: "%prefix% &7建築模式已&a開啟&7."
 build_activated_other_sender: "%prefix% &7建築模式已被&8[&7 %target%&8] &7&a啟用&7."
 build_activated_other_target: "%prefix% &7建築模式已被 &a啟用 &8[&7%sender%&8]&7 開啟."
 build_deactivated_self: "%prefix% &7建築模式已 &c關閉&7."
-build_deactivated_other_sender: "%prefix% &7構築模式 &8[&7為 %target%&8] &7是 &c停用&7."
+build_deactivated_other_sender: "%prefix% &7建築模式 &8[&7為 %target%&8] &7是 &c停用&7."
 build_deactivated_other_target: "%prefix% &7建築模式已被 &c停用 &8[&7由 %sender%&8]&7."
 
 # /buildSystem
@@ -355,7 +355,7 @@ world_item_title: "&3&l%world%"
 world_item_lore_normal:
  - "&7狀態&8: %status%"
  - ""
- - "&7C創建者&8: &b%creator%"
+ - "&7創建者&8: &b%creator%"
  - "&7項目專案&8: &b%project%"
  - "&7權限&8: &b%permission%"
  - ""
