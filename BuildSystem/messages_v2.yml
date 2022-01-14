@@ -504,7 +504,7 @@ worldeditor_builders_lore:
  - "&7&o在世界建築."
  - ""
  - "&8- &7&o左鍵&8: &7切換功能"
- - "&8- &7&oR右鍵&8: &7管理建築者"
+ - "&8- &7&o右鍵&8: &7管理建築者"
 worldeditor_builders_not_creator_item: "&c&m建築者"
 worldeditor_builders_not_creator_lore:
  - "&7&o你不是該世界的"
