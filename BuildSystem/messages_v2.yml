@@ -513,7 +513,7 @@ worldeditor_builders_not_creator_lore:
 worldeditor_builders_title: "&3» &8建築師"
 worldeditor_builders_creator_item: "&7&n創建者&7:"
 worldeditor_builders_creator_lore: "&8» &b%creator%"
-worldeditor_builders_no_creator_item: "&c世界沒有創造者!"
+worldeditor_builders_no_creator_item: "&c世界沒有創建者!"
 worldeditor_builders_builder_item: "&b%builder%"
 worldeditor_builders_builder_lore:
  - "&8- &7&oShift 點擊&8: &7移除"
