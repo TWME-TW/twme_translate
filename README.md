@@ -17,3 +17,4 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[CMILib](https://www.spigotmc.org/resources/cmilib.87610/)|未知|||
 |[DriveBackupV2](https://www.spigotmc.org/resources/drivebackupv2.79519/)|1.5.4||還沒翻完||
 |[FastAsyncWorldEdit](https://www.spigotmc.org/resources/fast-async-worldedit.13932/)||||
+|[HeadDatabase](https://www.spigotmc.org/resources/head-database.14280/)|4.15.1|||
