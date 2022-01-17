@@ -13,5 +13,5 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |:---|:---|:---|:---|
 |[AlwaysOnline](https://www.spigotmc.org/resources/alwaysonline.66591/)|6.1.5|[連結](https://github.com/TWME-TW/twme_translate/tree/main/AlwaysOnline)||
 |[BuildSystem](https://www.spigotmc.org/resources/buildsystem-1-8-1-18.60441/)|2.17.2|[連結](https://github.com/TWME-TW/twme_translate/tree/main/BuildSystem)|以v2為最新版(更新中)|
-|CMI|忘記了|懶得貼|更新中|
+|CMI|忘記了|接下來都懶得貼|更新中|
 |[DriveBackupV2](https://www.spigotmc.org/resources/drivebackupv2.79519/)|1.5.4||還沒翻完||
