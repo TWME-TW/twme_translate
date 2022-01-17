@@ -16,3 +16,4 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[CMI(Content Management Interface)](https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/)|忘記了|接下來都懶得貼|更新中|
 |[CMILib](https://www.spigotmc.org/resources/cmilib.87610/)|未知|||
 |[DriveBackupV2](https://www.spigotmc.org/resources/drivebackupv2.79519/)|1.5.4||還沒翻完||
+|[FastAsyncWorldEdit](https://www.spigotmc.org/resources/fast-async-worldedit.13932/)||||
