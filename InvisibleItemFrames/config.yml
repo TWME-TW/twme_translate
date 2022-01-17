@@ -3,28 +3,32 @@
 # Feel free to check out my other plugins here:
 # https://www.spigotmc.org/members/429752/#resources
 
-Messages:
+# Language used for the plugin
+# <#XXXXXX> for hex colors.
+Language:
 
-  Only Players: "&c這只能由玩家使用."
+  # Prefix for player chat messages. Set to "" to disable.
+  Prefix: "<#D2967A>[ITF] "
   
-  No Permission: "&c您沒有權限執行此動作."
-
+  # Player messages
+  No Permission: "&cY您沒有權限執行此動作."
   Toggle: "&a您已將此物品展示框切換為 %status%"
-  Toggle On: "&2&l現行"
+  Toggle On: "&2&l現形"
   Toggle Off: "&c&l隱形"
-
   Toggle Mode: "&a您已 %status%&a 快速切換模式!"
   Toggle Mode On: "&2&l開啟"
   Toggle Mode Off: "&c&l關閉"
-  
   Scan: "&a找到 %count% 個物品展示框."
   Scan No Number: "&c請輸入掃描半徑."
-  
   Not Looking: "&c你必須看著物品展示框."
   Non Number: "&c&l%value%&c 不是數字或超出範圍 (1-127)"
   
+  # Player & console messages
   Command Usage:
     - "&c物品展示框工具用法:"
     - "&a/ITF toggle &7- &f將你遊戲準心指向的物品展示框切換為隱形/現形."
     - "&a/ITF togglemode &7- &f開啟/關閉物品展示框快速切換模式 (右鍵切換)"
-    - "&a/ITF scan (半徑) &7- &f掃描半徑內的物品展示框並在它們的位置顯示粒子"
+    - "&a/ITF scan (radius) &7- &f掃描半徑內的物品展示框並在它們的位置顯示粒子"
+    
+  # Console messages
+  Only Players: "&c這只能由玩家使用."
