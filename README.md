@@ -18,7 +18,7 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[DriveBackupV2](https://www.spigotmc.org/resources/drivebackupv2.79519/)|1.5.4||還沒翻完||
 |[FastAsyncWorldEdit](https://www.spigotmc.org/resources/fast-async-worldedit.13932/)||||
 |[HeadDatabase](https://www.spigotmc.org/resources/head-database.14280/)|4.15.1|||
-|[InvisibleItemFrames](https://www.spigotmc.org/resources/invisibleitemframes-better-item-frames.85085/updates)|2.5.0|||
+|[InvisibleItemFrames](https://www.spigotmc.org/resources/invisibleitemframes-better-item-frames.85085/updates)|2.5.0||未經測試|
 |[NoteBlockEditor](https://www.spigotmc.org/resources/noteblockeditor.87150/)|1.4.0||完全未經測試|
 |[PetBlocks](https://www.spigotmc.org/resources/petblocks-mysql-bungeecord-customizeable-gui-1-8-1-18.12056/)|未知|||
 |[SchematicBrushReborn](https://www.spigotmc.org/resources/schematic-brush-reborn.79441/)|||未實裝|
