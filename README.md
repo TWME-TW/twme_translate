@@ -22,3 +22,4 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[NoteBlockEditor](https://www.spigotmc.org/resources/noteblockeditor.87150/)|1.4.0||完全未經測試|
 |[PetBlocks](https://www.spigotmc.org/resources/petblocks-mysql-bungeecord-customizeable-gui-1-8-1-18.12056/)|未知|||
 |[SchematicBrushReborn](https://www.spigotmc.org/resources/schematic-brush-reborn.79441/)|||未實裝|
+|[TrainCarts](https://www.spigotmc.org/resources/traincarts.39592/)||||
