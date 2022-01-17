@@ -7,3 +7,8 @@ A place to store some plugin translations
 Discord ID：TWME#5162
 
 Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
+
+現有插件：
+|插件|版本|
+|:---|:---|
+|AlwaysOnline|1|
