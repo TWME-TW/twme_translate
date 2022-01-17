@@ -9,6 +9,6 @@ Discord ID：TWME#5162
 Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 
 現有插件：
-|插件|版本|
-|:---|:---|
-|AlwaysOnline|1|
+|插件|版本|檔案連結|
+|:---|:---|:---|
+|[AlwaysOnline](https://www.spigotmc.org/resources/alwaysonline.66591/)|6.1.5|
