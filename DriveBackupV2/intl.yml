@@ -14,11 +14,11 @@ update-checker-unsupported-release: |-
   您正在運行不受支持的版本!
   推薦的版本是 <latest-version>, 你正在運行的版本是 <current-version>
   如果插件最近剛剛更新，請忽略此消息
-update-checker-failed: "There was an issue attempting to check for the latest DriveBackupV2 release"
-updater-start: "Attempting to download the latest version of DriveBackupV2"
-updater-no-updates: "You are using the latest version of DriveBackupV2!"
-updater-fetch-failed: "Unable to fetch latest version of DriveBackupV2"
-updater-update-failed: "Plugin update failed, see console for more info"
+update-checker-failed: "嘗試檢查是否有新的 DriveBackupV2 版本時出現問題"
+updater-start: "正在嘗試下載最新版本的 DriveBackupV2"
+updater-no-updates: "您正在使用最新版本的 DriveBackupV2!"
+updater-fetch-failed: "無法獲取最新版本的 DriveBackupV2"
+updater-update-failed: "插件更新失敗, 查看控制台了解更多信息"
 updater-successful: "Successfully updated plugin! Please restart your server in order for changes to take effect"
 config-loaded: "Config loaded!"
 config-reloaded: "Config reloaded!"
