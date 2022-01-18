@@ -3,17 +3,17 @@
 #
 # If not, feel free to contribute!
 
-plugin-stop: "Stopping plugin!"
-metrics-started: "Metrics started"
-metrics-error: "Metrics failed to start"
+plugin-stop: "停止插件中!"
+metrics-started: "指標已啟動"
+metrics-error: "指標啟動失敗"
 update-checker-started: "檢查更新中..."
 update-checker-new-release: |-
-  DriveBackup version <latest-version> has been released, You are currently running version <current-version>
-  Update at: <gold><click:open_url:http://bit.ly/2VGtF7L>http://bit.ly/2VGtF7L</click></gold>" or with <gold><click:run_command:/drivebackup update>/drivebackup update</click></gold>
+  DriveBackupV2的新版本 <latest-version> 已經發布, 您現在正在運行的版本 <current-version>
+  在此更新: <gold><click:open_url:http://bit.ly/2VGtF7L>http://bit.ly/2VGtF7L</click></gold>" 或 <gold><click:run_command:/drivebackup update>/drivebackup update</click></gold>
 update-checker-unsupported-release: |-
-  You are running an unsupported release!
-  The recommended release is <latest-version>, and you are running <current-version>
-  If the plugin has just recently updated, please ignore this message
+  您正在運行不受支持的版本!
+  推薦的版本是 <latest-version>, 你正在運行的版本是 <current-version>
+  如果插件最近剛剛更新，請忽略此消息
 update-checker-failed: "There was an issue attempting to check for the latest DriveBackupV2 release"
 updater-start: "Attempting to download the latest version of DriveBackupV2"
 updater-no-updates: "You are using the latest version of DriveBackupV2!"
