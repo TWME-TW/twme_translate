@@ -65,8 +65,8 @@ link-provider-complete: "你的 <provider> 帳號已連結!"
 google-pick-shared-drive: "您可以訪問一個或多個共享儲存空間，如果您想使用其中一個，請點擊它它或在聊天中輸入它的號碼."
 default-google-drive-name: "我的儲存空間"
 google-shared-drive-option: "<bold>[<drive-num>]</bold> <gold><hover:show_text:Select Drive><click:run_command:'<select-command>'><drive-name></click></hover></gold>"
-file-upload-message: "File uploaded in <length> seconds (<speed>KB/s)"
-backup-forced: "Forcing a backup"
+file-upload-message: "文件上傳時間 <length> 秒 (<speed>KB/s)"
+backup-forced: "強制備份"
 backup-already-running: |-
   A backup is already running
   <backup-status>
