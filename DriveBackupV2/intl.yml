@@ -178,4 +178,4 @@ drivebackup-help-command: |-
   <gold><click:run_command:/drivebackup test dropbox>/drivebackup test dropbox</click></gold> - Tests the connection to Dropbox
   <gold><click:run_command:/drivebackup update>/drivebackup update</click></gold> - Updates the plugin if there is a newer version
 list-delimiter: ", "
-list-last-delimiter: " and "
+list-last-delimiter: " 和 "
