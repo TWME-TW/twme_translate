@@ -114,7 +114,7 @@ backup-method-not-auth: |-
   請驗證 <gold>config.yml<gold> 中的所有憑證是否正確
 backup-method-error-occurred: "無法備份到 <upload-method>，驗證所有憑據是否正確或用 <gold><click:run_command:'<diagnose-command>'><diagnose-command></click></gold> 診斷問題"
 backup-method-not-auth-authenticator: |-
-  Skipping backup to <upload-method>, failed to authenticate
+  跳過備份到 <upload-method>，驗證失敗
   Please try re-linking your account, run <gold><click:run_command:'<link-command>'><link-command></click></gold>
 backup-method-complete: "Backup to <gold><upload-method></gold> complete"
 backup-complete: "Backup complete"
