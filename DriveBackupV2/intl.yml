@@ -60,9 +60,9 @@ backups-scheduled: "安排備份在 <time> 每 <days> 運行一次"
 backups-interval-scheduled: "安排備份每 <delay> 分鐘運行一次"
 no-perm: "您無權執行此操作!"
 link-account-code: "連結你的 <provider> 帳號, 前往 <gold><click:open_url:'<link-url>'><link-url></click></gold> 並輸入 <gold><click:copy_to_clipboard:'<link-code>'><link-code></click></gold>"
-link-provider-failed: "未能連結您的 <provider> 帳戶，請重試"
+link-provider-failed: "未能連結您的 <provider> 帳戶, 請重試"
 link-provider-complete: "你的 <provider> 帳號已連結!"
-google-pick-shared-drive: "您可以訪問一個或多個共享儲存空間，如果您想使用其中一個，請點擊它它或在聊天中輸入它的號碼."
+google-pick-shared-drive: "您可以訪問一個或多個共享儲存空間, 如果您想使用其中一個, 請點擊它它或在聊天中輸入它的號碼."
 default-google-drive-name: "我的儲存空間"
 google-shared-drive-option: "<bold>[<drive-num>]</bold> <gold><hover:show_text:Select Drive><click:run_command:'<select-command>'><drive-name></click></hover></gold>"
 file-upload-message: "文件上傳時間 <length> 秒 (<speed>KB/s)"
@@ -72,22 +72,22 @@ backup-already-running: |-
   <backup-status>
 backup-no-methods: "未啟用任何備份方法"
 backup-empty-list: "T備份列表為空"
-backup-start: "創建備份，服務器可能會滯後一段時間..."
+backup-start: "創建備份, 服務器可能會滯後一段時間..."
 external-ftp-backup-start: "從 (S)FTP 服務器 (<socket-addr>) 下載文件以包含在備份中"
-external-ftp-backup-blacklisted: "未在來自外部 (S)FTP 服務器的備份中包含 <blacklisted-files> 文件，因為它們已被 \"<glob-pattern>\" 列入黑名單"
-external-ftp-backup-failed: 無法在備份中包含來自 (S)FTP 服務器 (<socket-addr>) 的文件，請檢查 <gold>config.yml</gold> 中的服務器資訊
+external-ftp-backup-blacklisted: "未在來自外部 (S)FTP 服務器的備份中包含 <blacklisted-files> 文件, 因為它們已被 \"<glob-pattern>\" 列入黑名單"
+external-ftp-backup-failed: 無法在備份中包含來自 (S)FTP 服務器 (<socket-addr>) 的文件, 請檢查 <gold>config.yml</gold> 中的服務器資訊
 external-ftp-backup-complete: "(S)FTP 服務器 (<socket-addr>) 中的文件已成功包含在備份中"
 external-mysql-backup-start: "從 MySQL 服務器 (<socket-addr>) 下載數據庫以包含在備份中"
-external-mysql-backup-blacklisted: "未在備份中包含表 \"<blacklist-entry>\"，因為它已被列入黑名單"
-external-mysql-backup-failed: 未能在備份中包含來自 MySQL 服務器 (<socket-addr>) 的數據庫，請檢查 <gold>config.yml</gold> 中的服務器憑證
+external-mysql-backup-blacklisted: "未在備份中包含表 \"<blacklist-entry>\", 因為它已被列入黑名單"
+external-mysql-backup-failed: 未能在備份中包含來自 MySQL 服務器 (<socket-addr>) 的數據庫, 請檢查 <gold>config.yml</gold> 中的服務器憑證
 external-mysql-backup-complete: "MySQL 服務器 (<socket-addr>) 中的數據庫已成功包含在備份中"
 local-backup-date-format-invalid: |-
-  無法解析存儲備份“<file-name>”的日期格式，這可能是由於 config.yml 中的日期格式正在更新
+  無法解析存儲備份“<file-name>”的日期格式, 這可能是由於 config.yml 中的日期格式正在更新
   備份會先被刪除
-local-backup-backlisted: "備份中未包含 <blacklisted-files-count> 文件，因為它們已被 \"<glob-pattern>\" 列入黑名單"
-local-backup-in-backup-folder: "備份中未包含 <files-in-backup-folder-count> 文件，因為它們位於用於備份的文件夾中"
-local-backup-failed-to-include: "未能在備份中包含 \"<file-path>\"，是否已鎖定？ 您有權訪問它嗎？"
-local-backup-limit-reached: "有 <backup-count> 個文件超過了本地限制 <backup-limit>，刪除最舊的"
+local-backup-backlisted: "備份中未包含 <blacklisted-files-count> 文件, 因為它們已被 \"<glob-pattern>\" 列入黑名單"
+local-backup-in-backup-folder: "備份中未包含 <files-in-backup-folder-count> 文件, 因為它們位於用於備份的文件夾中"
+local-backup-failed-to-include: "未能在備份中包含 \"<file-path>\", 是否已鎖定？ 您有權訪問它嗎？"
+local-backup-limit-reached: "有 <backup-count> 個文件超過了本地限制 <backup-limit>, 刪除最舊的"
 local-backup-file-failed-to-delete: "無法刪除本地備份 \"<local-backup-name>\""
 local-backup-failed-to-delete: "Local backup deletion failed"
 backup-location-start: "Doing backups for \"<location>\""
@@ -100,22 +100,22 @@ backup-local-failed: |-
   Even if local-keep-count is set to zero, the plugin needs to temporarily create a local backup
   Skipping backup location
 backup-method-uploading: "上傳文件到 <upload-method>"
-backup-method-limit-reached: "<upload-method> 中的當前備份位置有 <file-count> 個文件，超過了 <file-limit> 個的限制，刪除"
+backup-method-limit-reached: "<upload-method> 中的當前備份位置有 <file-count> 個文件, 超過了 <file-limit> 個的限制, 刪除"
 backup-method-prune-failed: "刪除超出限制的備份失敗"
 backup-method-shared-drive-prune-failed: |-
   刪除超出限制的備份失敗
-  嘗試讓共享雲端硬盤的所有者提升您帳戶的權限，或將 keep-count 設置為 0 以禁用刪除備份
+  嘗試讓共享雲端硬盤的所有者提升您帳戶的權限, 或將 keep-count 設置為 0 以禁用刪除備份
 backup-method-upload-failed: "上傳失敗"
 backup-method-not-linked: |-
-  跳過備份到 <upload-method>，帳戶尚未連結
-  要連結您的帳戶，請運行 <gold><click:run_command:'<link-command>'><link-command></click></gold>
+  跳過備份到 <upload-method>, 帳戶尚未連結
+  要連結您的帳戶, 請運行 <gold><click:run_command:'<link-command>'><link-command></click></gold>
 backup-method-not-auth: |-
-  跳過備份到 <upload-method>，驗證失敗
+  跳過備份到 <upload-method>, 驗證失敗
   請驗證 <gold>config.yml<gold> 中的所有憑證是否正確
-backup-method-error-occurred: "無法備份到 <upload-method>，驗證所有憑據是否正確或用 <gold><click:run_command:'<diagnose-command>'><diagnose-command></click></gold> 診斷問題"
+backup-method-error-occurred: "無法備份到 <upload-method>, 驗證所有憑據是否正確或用 <gold><click:run_command:'<diagnose-command>'><diagnose-command></click></gold> 診斷問題"
 backup-method-not-auth-authenticator: |-
-  跳過備份到 <upload-method>，驗證失敗
-  要連結您的帳戶，請運行 <gold><click:run_command:'<link-command>'><link-command></click></gold>
+  跳過備份到 <upload-method>, 驗證失敗
+  要連結您的帳戶, 請運行 <gold><click:run_command:'<link-command>'><link-command></click></gold>
 backup-method-complete: "完成備份到 <gold><upload-method></gold>"
 backup-complete: "備份完成"
 backup-disabled-inactivity: "由於不活動而禁用自動備份"
