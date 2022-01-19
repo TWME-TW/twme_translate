@@ -119,7 +119,7 @@ backup-method-not-auth-authenticator: |-
 backup-method-complete: "完成備份到 <gold><upload-method></gold>"
 backup-complete: "備份完成"
 backup-disabled-inactivity: "由於不活動而禁用自動備份"
-backup-status-not-running: "No backups are running"
+backup-status-not-running: "沒有備份正在運行"
 backup-status-compressing: "Compressing backup set \"<set-name>\", set <set-num> of <set-count>"
 backup-status-uploading: "Uploading backup set \"<set-name>\", set <set-num> of <set-count>"
 next-backup: "The next backup is in %TIME minutes"
