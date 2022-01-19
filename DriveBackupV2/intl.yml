@@ -75,20 +75,20 @@ backup-empty-list: "T備份列表為空"
 backup-start: "創建備份，服務器可能會滯後一段時間..."
 external-ftp-backup-start: "從 (S)FTP 服務器 (<socket-addr>) 下載文件以包含在備份中"
 external-ftp-backup-blacklisted: "未在來自外部 (S)FTP 服務器的備份中包含 <blacklisted-files> 文件，因為它們已被 \"<glob-pattern>\" 列入黑名單"
-external-ftp-backup-failed: 無法在備份中包含來自 (S)FTP 服務器 (<socket-addr>) 的文件，請檢查 <gold>config.yml</gold> 中的服務器憑據
-external-ftp-backup-complete: "Files from a (S)FTP server (<socket-addr>) were successfully included in the backup"
-external-mysql-backup-start: "Downloading databases from a MySQL server (<socket-addr>) to include in backup"
-external-mysql-backup-blacklisted: "Didn't include table \"<blacklist-entry>\" in the backup, as it is blacklisted"
-external-mysql-backup-failed: Failed to include databases from a MySQL server (<socket-addr>) in the backup, please check the server credentials in the <gold>config.yml</gold>
-external-mysql-backup-complete: "Databases from a MySQL server (<socket-addr>) were successfully included in the backup"
+external-ftp-backup-failed: 無法在備份中包含來自 (S)FTP 服務器 (<socket-addr>) 的文件，請檢查 <gold>config.yml</gold> 中的服務器資訊
+external-ftp-backup-complete: "(S)FTP 服務器 (<socket-addr>) 中的文件已成功包含在備份中"
+external-mysql-backup-start: "從 MySQL 服務器 (<socket-addr>) 下載數據庫以包含在備份中"
+external-mysql-backup-blacklisted: "未在備份中包含表 \"<blacklist-entry>\"，因為它已被列入黑名單"
+external-mysql-backup-failed: 未能在備份中包含來自 MySQL 服務器 (<socket-addr>) 的數據庫，請檢查 <gold>config.yml</gold> 中的服務器憑據
+external-mysql-backup-complete: "MySQL 服務器 (<socket-addr>) 中的數據庫已成功包含在備份中"
 local-backup-date-format-invalid: |-
-  Unable to parse date format of stored backup "<file-name>", this can be due to the date format being updated in the config.yml
-  Backup will be the first deleted
-local-backup-backlisted: "Didn't include <blacklisted-files-count> file(s) in the backup, as they are blacklisted by \"<glob-pattern>\""
-local-backup-in-backup-folder: "Didn't include <files-in-backup-folder-count> file(s) in the backup, as they are in the folder used for backups"
-local-backup-failed-to-include: "Failed to include \"<file-path>\" in the backup, is it locked? Do you have permission to access it?"
-local-backup-limit-reached: "There are <backup-count> file(s) which exceeds the local limit of <backup-limit>, deleting oldest"
-local-backup-file-failed-to-delete: "Failed to delete local backup \"<local-backup-name>\""
+  無法解析存儲備份“<file-name>”的日期格式，這可能是由於 config.yml 中的日期格式正在更新
+  備份會先被刪除
+local-backup-backlisted: "備份中未包含 <blacklisted-files-count> 文件，因為它們已被 \"<glob-pattern>\" 列入黑名單"
+local-backup-in-backup-folder: "備份中未包含 <files-in-backup-folder-count> 文件，因為它們位於用於備份的文件夾中"
+local-backup-failed-to-include: "未能在備份中包含 \"<file-path>\"，是否已鎖定？ 您有權訪問它嗎？"
+local-backup-limit-reached: "有 <backup-count> 個文件超過了本地限制 <backup-limit>，刪除最舊的"
+local-backup-file-failed-to-delete: "無法刪除本地備份 \"<local-backup-name>\""
 local-backup-failed-to-delete: "Local backup deletion failed"
 backup-location-start: "Doing backups for \"<location>\""
 backup-failed-absolute-path: |-
