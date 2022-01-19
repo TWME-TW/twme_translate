@@ -115,10 +115,10 @@ backup-method-not-auth: |-
 backup-method-error-occurred: "無法備份到 <upload-method>，驗證所有憑據是否正確或用 <gold><click:run_command:'<diagnose-command>'><diagnose-command></click></gold> 診斷問題"
 backup-method-not-auth-authenticator: |-
   跳過備份到 <upload-method>，驗證失敗
-  Please try re-linking your account, run <gold><click:run_command:'<link-command>'><link-command></click></gold>
-backup-method-complete: "Backup to <gold><upload-method></gold> complete"
-backup-complete: "Backup complete"
-backup-disabled-inactivity: "Disabling automatic backups due to inactivity"
+  要連結您的帳戶，請運行 <gold><click:run_command:'<link-command>'><link-command></click></gold>
+backup-method-complete: "完成備份到 <gold><upload-method></gold>"
+backup-complete: "備份完成"
+backup-disabled-inactivity: "由於不活動而禁用自動備份"
 backup-status-not-running: "No backups are running"
 backup-status-compressing: "Compressing backup set \"<set-name>\", set <set-num> of <set-count>"
 backup-status-uploading: "Uploading backup set \"<set-name>\", set <set-num> of <set-count>"
