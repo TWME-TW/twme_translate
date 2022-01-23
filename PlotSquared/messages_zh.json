@@ -96,7 +96,7 @@
   "ratings.rating_not_valid": "<prefix><red>您需要指定一個 1 到 10 的數字</red>",
   "ratings.rating_already_exists": "<prefix><gray>您已經評過分了 <plot></gray>",
   "ratings.rating_applied": "<prefix><dark_aqua>您已成功為地皮評分 <gray><plot></gray></dark_aqua>",
-  "ratings.rating_disliked": "<prefix><dark_aqua>你成功為地皮點了踩 <gray><plot></gray></dark_aqua>",
+  "ratings.rating_disliked": "<prefix><dark_aqua>你成功為地皮點了噓 <gray><plot></gray></dark_aqua>",
   "ratings.rating_liked": "<prefix><dark_aqua>你成功為地皮點了讚 <gray><plot></gray></dark_aqua>",
   "ratings.rating_not_your_own": "<prefix><red>你無法為自己的地皮評分</red>",
   "ratings.rating_not_done": "<prefix><red>你只能給完成的地皮評分</red>",
