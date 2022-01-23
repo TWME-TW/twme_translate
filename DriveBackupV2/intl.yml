@@ -125,7 +125,7 @@ backup-status-uploading: "Uploading backup set \"<set-name>\", set <set-num> of 
 next-backup: "The next backup is in %TIME minutes"
 next-schedule-backup: "The next backup is at %DATE"
 next-schedule-backup-format: "h:mm a EEE, MMM d O"
-auto-backups-disabled: "Automatic backups are disabled"
+auto-backups-disabled: "自動備份已關閉"
 test-method-not-specified: "Please specify a backup method to test"
 test-method-invalid: "\"<specified-method>\" isn't a valid backup method"
 test-method-not-enabled: "<upload-method> backups are disabled, you can enable them in the <gold>config.yml</gold>"
