@@ -276,7 +276,7 @@
   "debugexec.expiry_started": "<prefix><gold>啟動地皮過期任務</gold>",
   "debugexec.expiry_already_started": "<prefix><gold>地皮過期任務已經開始過了</gold>",
   "debugexec.script_list_item": "<dark_gray>[</dark_gray><gold><number></gold><dark_gray>]</dark_gray><gold> <name></gold>",
-  "debugexec.analyze_done": "<prefix><gold>已完成請使用 </gold><gray><command></gray><gold> 獲取更多信息 ",
+  "debugexec.analyze_done": "<prefix><gold>已完成請使用 </gold><gray><command></gray><gold> 獲取更多訊息 ",
   "expiry.expired_options_clicky": "<gold><num> <are_or_is> 已過期的:</gold><click:run_command:<list_cmd>><hover:show_text:\"<list_cmd>\"><gray><plot></gray></hover></click>\n<dark_gray> - </dark_gray><click:run_command:<cmd_del>><hover:show_text:\"<cmd_del>\"><gray>刪除這個 (<cmd_del>)</gray></hover></click>\n<dark_gray> - </dark_gray><click:run_command:<cmd_keep_1d>><hover:show_text:\"<cmd_keep_1d>\"><gray>一天後再提醒 (<cmd_keep_1d>)</gray></hover></click>\n<dark_gray> - </dark_gray><click:run_command:<cmd_keep>><hover:show_text:\"<cmd_keep>\"><gray>保留這個 (<cmd_keep>)</gray></hover></click>\n<dark_gray> - </dark_gray><click:run_command:<cmd_no_show_expir>><hover:show_text:\"<cmd_no_show_expir>\"><gray>不要再向我展示這個 (<cmd_no_show_expir>)</gray></hover></click>",
   "debugimportworlds.single_plot_area": "<prefix><red>必須是一個單一的地皮片區</red>",
   "debugimportworlds.world_container": "<prefix><red>世界容器必須配置為單獨的基礎文件目錄</red>",
