@@ -587,10 +587,10 @@ worldeditor_permission_lore:
 # Settings
 settings_title: "&3» &8設定"
 
-settings_change_design_item: "&bChange Design"
+settings_change_design_item: "&b更改設計"
 settings_change_design_lore:
- - "&7&oSelect which colour the"
- - "&7&oglass panes should have."
+ - "&7&o選擇背景顏色顏色"
+ - "&7&o將會改變GUI的顏色."
 
 settings_clear_inventory_item: "&b清除物品欄"
 settings_clear_inventory_lore:
