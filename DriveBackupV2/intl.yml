@@ -89,7 +89,7 @@ local-backup-in-backup-folder: "備份中未包含 <files-in-backup-folder-count
 local-backup-failed-to-include: "未能在備份中包含 \"<file-path>\", 是否已鎖定？ 您有權訪問它嗎？"
 local-backup-limit-reached: "有 <backup-count> 個文件超過了本地限制 <backup-limit>, 刪除最舊的"
 local-backup-file-failed-to-delete: "無法刪除本地備份 \"<local-backup-name>\""
-local-backup-failed-to-delete: "Local backup deletion failed"
+local-backup-failed-to-delete: "本地備份刪除失敗"
 backup-location-start: "Doing backups for \"<location>\""
 backup-failed-absolute-path: |-
   Failed to create a backup, path to folder to backup is absolute, expected a relative path
