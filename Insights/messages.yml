@@ -1,7 +1,7 @@
 messages:
   prefix: '<aqua><bold>Insights <dark_gray>» '
   update-available: '<prefix><dark_aqua>Version <green><version> <dark_aqua>of <aqua>Insights
-    <dark_aqua>is now available! Info: <aqua><body>'
+    <dark_aqua>is now available! 資訊: <aqua><body>'
   configs-reloaded: <prefix><dark_aqua>All configurations have been reloaded!
   area-scan-started: <prefix><dark_aqua>Please wait while we scan this <area>...
   area-scan-queued: <prefix><red>This <area> is currently queued for scanning...
