@@ -7,7 +7,7 @@ messages:
   area-scan-completed: <actionbar><aqua>Scan completed!
   limit-reached: <prefix><red>You have reached the limit of <limit>x <name> in this
     <area>. Please remove some.
-  limit-disallowed-placement: <prefix><red>You can't place <name> in this <area>!
+  limit-disallowed-placement: <prefix><red>你不能放置 <name> 在 <area>!
   limit-notification: '<dark_aqua><name>: <aqua><count><dark_aqua>/<aqua><limit>'
   scan:
     start: <prefix><dark_aqua>Scanning <aqua><bold><count></bold><dark_aqua> chunks...
