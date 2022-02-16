@@ -154,7 +154,7 @@ night_set: "%prefix% &7已將世界 &b%world%&7. 的時間設為晚上"
 
 # /top
 top_usage: "%prefix% &7用法: &b/top"
-top_teleported: "%prefix% &7你已被傳送至最高處 &btop&7."
+top_teleported: "%prefix% &7你已被傳送至&b最高處&7."
 top_failed: "%prefix% &c沒有更高的結構在您的頭上."
 
 # /worlds
