@@ -82,7 +82,7 @@ buildsystem_skull: "&7接收玩家或定制頭顱."
 buildsystem_speed: "&7更改你的飛行/步行速度"
 buildsystem_spawn: "&7傳送至重生點."
 buildsystem_top: "&7傳送到你上方的最高位置."
-buildsystem_worlds: "&7所有 &o/worlds &7指令 的概述."
+buildsystem_worlds: "&7所有 &o/worlds &7指令 的介紹."
 
 # /config
 config_usage: "%prefix% &7用法: &b/config reload"
