@@ -104,7 +104,7 @@ backup-method-limit-reached: "<upload-method> 中的當前備份位置有 <file-
 backup-method-prune-failed: "刪除超出限制的備份失敗"
 backup-method-shared-drive-prune-failed: |-
   刪除超出限制的備份失敗
-  嘗試讓共享雲端硬盤的所有者提升您帳戶的權限, 或將 keep-count 設置為 0 以禁用刪除備份
+  嘗試讓共享雲端硬碟的所有者提升您帳戶的權限, 或將 keep-count 設置為 0 以禁用刪除備份
 backup-method-upload-failed: "上傳失敗"
 backup-method-not-linked: |-
   跳過備份到 <upload-method>, 帳戶尚未連結
