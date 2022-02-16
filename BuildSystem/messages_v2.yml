@@ -67,7 +67,7 @@ build_deactivated_other_target: "%prefix% &7建築模式已被 &c停用 &8[&7由
 # /buildSystem
 buildsystem_title: "%prefix% &7&n建築系統幫助:"
 buildsystem_back: "&7傳送到之前的位置."
-buildsystem_blocks: "&7打開帶有秘密方塊的選單."
+buildsystem_blocks: "&7打開有秘密方塊的選單."
 buildsystem_build: "讓你進入“建築模式”."
 buildsystem_config: "&7重新加載配置."
 buildsystem_day: "&7將世界上的時間設為白天."
