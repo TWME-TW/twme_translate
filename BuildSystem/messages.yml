@@ -179,7 +179,7 @@ worlds_creation_finished: "%prefix% &7世界已&a成功&7創建."
 worlds_template_does_not_exist: "%prefix% &c此模板不存在."
 
 worlds_unknown_command: "%prefix% &7未知指令: &b/worlds help"
-worlds_navigator_open: "%prefix% &c您已經打開了管理器!"
+worlds_navigator_open: "%prefix% &c您已經打開了世界管理器!"
 
 worlds_delete_usage: "%prefix% &7用法: &b/worlds delete <世界>"
 worlds_delete_unknown_world: "%prefix% &c未知的世界"
@@ -260,7 +260,7 @@ world_info:
  - " &8- &7自定義生成: &b%custom_spawn%"
  - "&7&m-------------------------------------"
 
-worlds_item_receive: "%prefix% &7你收到了&b管理器&7."
+worlds_item_receive: "%prefix% &7你收到了&b世界管理器&7."
 
 worlds_removebuilder_usage: "%prefix% &7用法: &b/worlds removeBuilder <世界>"
 worlds_removebuilder_error: "%prefix% &c錯誤: 請再嘗試一遍!"
@@ -323,7 +323,7 @@ worlds_unimport_finished: "%prefix% &7世界: &b%world% &7已被&卸載&7."
 # ---------
 # Items
 # ---------
-navigator_item: "&b&l管理器"
+navigator_item: "&b&l世界管理器"
 barrier_item: "&c&l關閉庫存"
 custom_skull_item: "&b自訂頭顱"
 
@@ -336,7 +336,7 @@ gui_previous_page: "&b« &7私人頁面"
 gui_next_page: "&7下一頁 &b»"
 
 # Old Navigator
-old_navigator_title: "&3» &8管理器"
+old_navigator_title: "&3» &8世界管理器"
 old_navigator_world_navigator: "&a世界管理器"
 old_navigator_world_archive: "&6世界歸檔"
 old_navigator_private_worlds: "&b私人世界"
@@ -612,15 +612,15 @@ settings_instantplacesigns_lore:
  - "&7&o當此選項開啟時"
  - "&7&o無需再放告示牌時打字."
 
-settings_keep_navigator_item: "&b保持管理器"
+settings_keep_navigator_item: "&b保持世界管理器"
 settings_keep_navigator_lore:
- - "&7&o當你開啟此選項與管理器"
- - "&7&o管理器會持續在物品欄中"
+ - "&7&o當你開啟此選項與世界管理器"
+ - "&7&o世界管理器會持續在物品欄中"
  - "&7&o就算清空物品欄也還會在."
 
-settings_new_navigator_item: "&b新管理器"
+settings_new_navigator_item: "&b新世界管理器"
 settings_new_navigator_lore:
- - "&7&o一個新的和改進的管理器"
+ - "&7&o一個新的和改進的世界管理器"
  - "&7&o這不再是一個 GUI."
 
 settings_nightvision_item: "&b夜視"
@@ -666,32 +666,32 @@ settings_spawnteleport_lore:
 settings_worldsort_item: "&b世界排序"
 settings_worldsort_lore_alphabetically_name_az:
  - "&7&o改變世界在"
- - "&7&o管理器選單的排列."
+ - "&7&o世界管理器選單的排列."
  - ""
  - "&7&n現在狀態&7: &b&o名稱 (A-Z)"
 settings_worldsort_lore_alphabetically_name_za:
  - "&7&o改變世界在"
- - "&7&o管理器選單的排列."
+ - "&7&o世界管理器選單的排列."
  - ""
  - "&7&n現在狀態&7: &b&o名稱 (Z-A)"
 settings_worldsort_lore_alphabetically_project_az:
  - "&7&o改變世界在"
- - "&7&o管理器選單的排列."
+ - "&7&o世界管理器選單的排列."
  - ""
  - "&7&n現在狀態&7: &b&o專案項目 (A-Z)"
 settings_worldsort_lore_alphabetically_project_za:
  - "&7&o改變世界在"
- - "&7&o管理器選單的排列."
+ - "&7&o世界管理器選單的排列."
  - ""
  - "&7&n現在狀態&7: &b&o專案項目 (Z-A)"
 settings_worldsort_lore_date_newest:
  - "&7&o改變世界在"
- - "&7&o管理器選單的排列."
+ - "&7&o世界管理器選單的排列."
  - ""
  - "&7&n現在狀態&7: &b&o創建時間 (最新)"
 settings_worldsort_lore_date_oldest:
  - "&7&o改變世界在"
- - "&7&o管理器選單的排列."
+ - "&7&o世界管理器選單的排列."
  - ""
  - "&7&n現在狀態&7: &b&o創建時間 (最舊)"
 
