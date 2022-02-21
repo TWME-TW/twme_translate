@@ -9,7 +9,7 @@
 
 error_no_permission: '[錯誤:](#ff3300) [您無權執行該命令.](#ff7e5e)'
 error_no_last_position: '[錯誤:](#ff3300) [你沒有最後一個位置可以返回!](#ff7e5e)'
-teleporting_last_position: '[回到你的最後一個職位中](#00fb9a) [%1%](#00fb9a
+teleporting_last_position: '[回到你的最後一個位置中](#00fb9a) [%1%](#00fb9a
   bold) [秒](#00fb9a)'
 teleporting_offline_player: '[Teleporting you to where %1% last logged out...](#00fb9a)'
 teleporting_countdown_start: '[You will be teleported in](#00fb9a) [%1%](#00fb9a bold)
