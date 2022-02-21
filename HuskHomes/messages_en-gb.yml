@@ -233,7 +233,7 @@ teleporting_all_players: '[Teleporting all players to your position...](#00fb9a)
 home_command_description: 傳送到你的一個家
 sethome_command_description: 用自訂的名字設置一個新家
 delhome_command_description: 刪除您之前設置的家
-edithome_command_description: Edit one of your homes
+edithome_command_description: 編輯你的一個家
 warp_command_description: Teleport to a warp
 setwarp_command_description: Set a new warp with given name
 delwarp_command_description: Delete a warp
