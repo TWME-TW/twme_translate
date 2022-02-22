@@ -13,7 +13,7 @@ teleporting_last_position: '[回到你的最後一個位置中](#00fb9a) [%1%](#
   bold) [秒](#00fb9a)'
 teleporting_offline_player: '[正在將你傳送到 %1% 最後登出的位置...](#00fb9a)'
 teleporting_countdown_start: '[即將在](#00fb9a) [%1%](#00fb9a bold)
-  [秒後傳送](#00fb9a)'
+  [秒 後傳送](#00fb9a)'
 teleporting_cancelled_movement: '[Teleportation cancelled; you moved!](#ff7e5e)'
 teleporting_cancelled_damage: '[Teleportation cancelled; you took damage!](#ff7e5e)'
 teleporting_complete: '[Teleportation complete!](#00fb9a)'
