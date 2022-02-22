@@ -16,7 +16,7 @@ teleporting_countdown_start: '[即將在](#00fb9a) [%1%](#00fb9a bold)
   [秒 後傳送](#00fb9a)'
 teleporting_cancelled_movement: '[傳送取消,原因: 你移動了!](#ff7e5e)'
 teleporting_cancelled_damage: '[傳送取消,原因: 你受到了傷害!](#ff7e5e)'
-teleporting_complete: '[Teleportation complete!](#00fb9a)'
+teleporting_complete: '[傳送完成!](#00fb9a)'
 teleporting_action_bar_countdown: '[Teleporting in](#00fb9a) [%1%](#00fb9a bold)[...](#00fb9a)'
 teleporting_action_bar_cancelled: '[Teleportation cancelled!](#ff7e5e)'
 teleporting_please_stand_still: '[Teleportation will be cancelled if you move or take
