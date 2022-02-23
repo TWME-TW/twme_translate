@@ -424,7 +424,7 @@ create_normal_world: "&b一般世界"
 create_flat_world: "&a平坦世界"
 create_nether_world: "&c地獄世界"
 create_end_world: "&e終界世界"
-create_void_world: "&f空蕩的世界(?)"
+create_void_world: "&f虛空世界(?)"
 create_template: "&e%template%"
 create_generators_create_world: "&e用生成器生成一個世界"
 
