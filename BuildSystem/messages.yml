@@ -343,7 +343,7 @@ old_navigator_private_worlds: "&b私人世界"
 old_navigator_settings: "&c設定"
 
 # New Navigator
-new_navigator_world_navigator: "&a&l世界管理器"
+new_navigator_world_navigator: "&a&l公共世界列表"
 new_navigator_world_archive: "&6&l世界歸檔"
 new_navigator_private_worlds: "&b&l私人世界"
 
