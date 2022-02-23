@@ -337,7 +337,7 @@ gui_next_page: "&7下一頁 &b»"
 
 # Old Navigator
 old_navigator_title: "&3» &8世界管理器"
-old_navigator_world_navigator: "&a世界管理器"
+old_navigator_world_navigator: "&a公共世界列表"
 old_navigator_world_archive: "&6世界歸檔"
 old_navigator_private_worlds: "&b私人世界"
 old_navigator_settings: "&c設定"
