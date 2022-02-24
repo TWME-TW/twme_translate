@@ -779,7 +779,7 @@ Chat:
   privateHover: '&e發送時間: &6%server_time_hh:mm:ss%'
   staffHover: '&e發送時間: &6%server_time_hh:mm:ss%'
   helpopHover: '&e發送時間: &6%server_time_hh:mm:ss%'
-  link: '&l&4[&7鏈接&4]'
+  link: '&l&4[&7連結&4]'
   item: '&7[%cmi_iteminhand_displayname%[amount]&7]'
   itemAmount: ' x[amount]'
   itemEmpty: '&7[Mighty fist]'
@@ -808,7 +808,7 @@ command:
       args: (playerName)
   afkcheck:
     help:
-      info: '&e檢查玩家afk狀態'
+      info: '&e檢查玩家 掛機 狀態'
       args: '[playerName]'
     info:
       feedback: '&e[playerDisplayName]&e: &6[status]'
@@ -962,7 +962,7 @@ command:
   ban:
     help:
       info: '&e封鎖玩家'
-      args: '[playerName] (reason) (-s)'
+      args: '[playerName] (原因) (-s)'
       explanation:
       - cmi.command.ban.bypass - 使自己避免封鎖
     info:
