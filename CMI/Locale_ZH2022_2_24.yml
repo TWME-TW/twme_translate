@@ -964,7 +964,7 @@ command:
       info: '&e封鎖玩家'
       args: '[playerName] (原因) (-s)'
       explanation:
-      - cmi.command.ban.bypass - 使自己避免封鎖
+      - cmi.command.ban.bypass - 避免自己被封鎖
     info:
       # Make sure that OverrideLoginMessage is enabled in config file
       message: '&c你已被該伺服器封鎖'
