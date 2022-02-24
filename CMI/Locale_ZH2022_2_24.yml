@@ -3125,8 +3125,8 @@ command:
       - cmi.command.repair.repairshare.bypass - 不添加共享修復保護地修復物品
     info:
       feedback: '&e已成功修復 &3[playerDisplayName]&e-(&3[offon]&e) 的 &3[amount]&e 件物品.'
-      feedbackMoney: '&e你以為 &3[playerDisplayName]&e 修理  &3[amount]&e items for 
-        (&3[offon]&e). Cost: &7[cost]'
+      feedbackMoney: '&e你以為 &3[playerDisplayName]&e 修理  &3[amount]&e 件物品
+        (&3[offon]&e). 花費: &7[cost]'
       itemOwner: '&e上一次修復由: &6[owner]'
       cantUse: '!title!&c你不能使用這個!subtitle!&e請自己修理這個!'
   repaircost:
@@ -3320,8 +3320,8 @@ command:
     info:
       enchantWorth: '&e附魔價值: &7[price]'
       enchantFailChance: '&4失敗機率: &7[chance]%'
-      enchantFailed: '&c失敗. &7[enchant]&c level &7[level] &cWith &7[chance]% &cfail
-        chance'
+      enchantFailed: '&c失敗. &7[enchant]&c 等級 &7[level] &c以 &7[chance]% &c失敗
+        次數'
       enchantLevelChance: '&c等級降低的機率: &7[chance]%'
       gotIngredients: '&e你得到了 [itemList]'
       gotIngredientsFormat: '&6[material]&7-&6[amount]'
