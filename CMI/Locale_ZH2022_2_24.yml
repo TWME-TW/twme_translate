@@ -1,4 +1,4 @@
-# Full color code support and some variables
+# 支持全彩色碼和一些變量
 # Keep in mind that variables wont work for some lines, when it will for anothers :)
 # Just keep them where there are now and everything will be ok :)
 # Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
