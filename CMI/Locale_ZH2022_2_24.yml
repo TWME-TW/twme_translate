@@ -110,8 +110,7 @@ info:
   CantuseShulkerBox: '&c與玩家戰鬥時，無法使用界伏盒.
     Wait: [time]'
   CantUseNonEncrypted: '!actionbar!&c此項目上的命令未加密. 無法使用它們!'
-  CantDecode: '!actionbar!&c無法解碼 消息/指令. Key file contains wrong
-    key for this task. 通知伺服器管理員這項訊息'
+  CantDecode: '!actionbar!&c無法解碼 消息/指令. 密鑰文件包含此任務的錯誤密鑰. 通知伺服器管理員這項訊息'
   Show: '&e展示'
   Remove: '&c移除'
   Back: '&e返回'
@@ -121,7 +120,7 @@ info:
   Delete: '&c刪除'
   Click: '&e點擊'
   Preview: '&ePreview'
-  PasteOld: '&e貼上舊德內容'
+  PasteOld: '&e貼上舊的內容'
   ClickToPaste: '&e點擊貼上聊天室'
   CantTeleportWorld: '&e你不能傳送到該世界'
   CantTeleportNoWorld: '&c目標世界不存在，傳送已被取消'
@@ -858,8 +857,8 @@ command:
       info: '&e打開鐵砧'
       args: (playerName)
     info:
-      feedback: '&eYou have opened anvil for &3[playerDisplayName]&e (&3[offon]&e).'
-      targetfeedback: '&3[senderDisplayName]&e opened anvil for you.'
+      feedback: '&e你已為 &3[playerDisplayName]&e 打開鐵砧 (&3[offon]&e).'
+      targetfeedback: '&3[senderDisplayName]&e 為你打開鐵砧.'
   armorstand:
     help:
       info: '&e打開盔甲座編輯'
@@ -966,7 +965,7 @@ command:
       explanation:
       - cmi.command.ban.bypass - 避免自己被封鎖
     info:
-      # Make sure that OverrideLoginMessage is enabled in config file
+      # 請確認 OverrideLoginMessage 已在 config 開啟
       message: '&c你已被該伺服器封鎖'
       reason: '&6原因: &e[reason]'
       defaultReason: '&e違反伺服器規則'
@@ -988,7 +987,7 @@ command:
       - 如果消息開頭是英文驚嘆號 ! 那麼將會顯示簡化消息
       - 可以將伺服器定義為僅在這些伺服器中廣播消息
     info:
-      format: '&e[&4Broadcast&e] &2[message]'
+      format: '&e[&4廣播&e] &2[message]'
   blockcycling:
     help:
       info: '&e旋轉方塊的朝向'
@@ -998,12 +997,12 @@ command:
       info: '&e查詢方塊資訊'
       args: ''
     info:
-      Info: ' &eId: &6[id][data] &eMaterial: &6[name][ndata]'
+      Info: ' &eId: &6[id][data] &e材質: &6[name][ndata]'
       RealName: ' &e真實名稱: &6[name]'
-      TempLight: ' &eTemperature: &6[temp]&e, Light - block: &6[blevel]&e, sky: &6[slevel]&e,
+      TempLight: ' &e溫度: &6[temp]&e, 光 - 方塊: &6[blevel]&e, 天空: &6[slevel]&e,
         overral: &6[level]'
-      Resistance: ' &eResistance - Mining: &6[mining]&e, Explosion: &6[explosion]'
-      noteBlock: ' &eTone: &6[tone] &eOctave: &6[octave] &6Instrument: &e[instrument]
+      Resistance: ' &e硬度: &6[mining]&e, 抗暴度: &6[explosion]'
+      noteBlock: ' &e音: &6[tone] &e八度: &6[octave] &6樂器: &e[instrument]
         &6Pitch: &7[pitch]'
       BlockState: ' &7[state]: &f[value]'
   blocknbt:
@@ -1105,8 +1104,8 @@ command:
       globalListPrivate: '&2(P)'
       globalListJoined: '&2+'
       globalListHover:
-        Owner: '&7Owner: [playerDisplayName]'
-        Ends: ' &7Expires in: [time]'
+        Owner: '&7擁有者: [playerDisplayName]'
+        Ends: ' &7到期時間: [time]'
         Names: '&7[playerDisplayName]'
   checkaccount:
     help:
@@ -1141,7 +1140,7 @@ command:
       list: '&e[place]. &f[command] &7[args]'
       hover: '&e[desc]'
       variableColor: '&f'
-      noCommandFound: '&7No commands found by this keyword'
+      noCommandFound: '&7找不到此關鍵字的命令'
   checkexp:
     help:
       info: '&e查詢玩家經驗'
@@ -1158,8 +1157,8 @@ command:
       hover: '&e[desc]'
       others: |-
         &4
-        ---->When command is used on another player<----
-        &cBase command required
+        ---->在其他玩家上使用命令時<----
+        &c需要基本命令
       permissionColor: '&6'
       cmdPermissionColor: '&2'
       variableColor: '&f'
@@ -1181,12 +1180,11 @@ command:
       info: '&e清空玩家背包'
       args: (playerName) (-s)
       explanation:
-      - 'Posible clearTypes: quickbar, inventory, partinventory, weapons, armorslots,
-        tools, armors, mainhand, offhand'
-      - Should start with + sign
-      - Multiple types can be used
-      - cmi clear +armors - will remove armor type items
-      - cmi clear +armorslots - will remove items from armorslots
+      - '可清除的類型：快速物品欄、背包、部分背包、武器、盔甲槽、工具、盔甲、主手、副手'
+      - 應該以 + 號開頭
+      - 可以使用多種類型
+      - /cmi clear +armors - 將移除盔甲類型的物品
+      - /cmi clear +armorslots - 將從盔甲槽中移除物品
     info:
       feedback: '&e你清空了玩家 &3[playerDisplayName]&e 的背包 (&3[offon]&e).'
       targetfeedback: '&e你的背包被 &3[senderDisplayName]&e 清空了'
@@ -1227,10 +1225,10 @@ command:
       hovers:
       - '[color]⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛'
       - '&f#[hex]'
-      - '&7Closest match: '
+      - '&7最接近的比賽: '
       - '[colorHex] - [colorName]'
       - '[closeColor]⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛'
-      - Shift+Click
+      - Shift+點擊
   colors:
     help:
       info: '&e顯示可用顏色'
@@ -1321,8 +1319,7 @@ command:
       info: '&e發送tellraw類型訊息'
       args: '[playerName/all] [formattedMessage]'
       explanation:
-      - Usage is same as shown in http://www.zrips.net/cmi/custom-text/ aka customtext
-        command
+      - 用法與 http://www.zrips.net/cmi/custom-text/ aka customtext 命令中所示的相同
   ctext:
     help:
       info: '&e顯示自定義內容'
@@ -1555,9 +1552,9 @@ command:
       lastDamage: '&e上一擊傷害: &6[cause]'
       tamed: '&e已馴化: &6[state]'
       owner: '&e主人: &6[playerDisplayName]'
-      grows: '&eGrows up in: &6[time]'
-      horse: '&eHorse: &6[jump]&eblocks &6[speed]&eblocks/sec'
-      villager: '&eProfession: &7[profession] &eLvl: &7[lvl] &eType: &7[type]'
+      grows: '&e成長於: &6[time]'
+      horse: '&e馬: &6[jump]&e格 &6[speed]&e格/秒'
+      villager: '&e職業: &7[profession] &e等級: &7[lvl] &e類型: &7[type]'
   entitynbt:
     help:
       info: '&e查詢實體NBT資訊'
