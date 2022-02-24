@@ -18,12 +18,12 @@
 # [senderDisplayName]顯示發送玩家的顯示名稱
 # [senderLvl] 顯示發送的玩家的等級
 # [senderExp] 顯示發送的玩家的總經驗
-# [senderHp] to show Sender player health
-# [senderMaxHp] to show Sender player max health
-# [senderHunger] to show Sender player hunger level
-# [senderGameMode] to show Sender player gamemode
-# [senderPrefix] to show Sender player prefix if possible
-# [senderSuffix] to show Sender player suffix if possible
+# [senderHp] t顯示發送的玩家的生命值
+# [senderMaxHp] 顯示發送的玩家的最大生命
+# [senderHunger] 顯示發送的玩家的飢餓度
+# [senderGameMode] 顯示發送的玩家的遊戲模式
+# [senderPrefix] 如果有,顯示發送的玩家的前綴
+# [senderSuffix] 如果有,顯示發送的玩家的後綴
 # Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
 # [sourceName] to show source player name
 # [sourceDisplayName] to show source player display name
