@@ -139,13 +139,13 @@ info:
   noItem: '&c找不到物品'
   dontHaveItem: '&c你的背包中沒有 &6[itemName] x[amount] &c'
   wrongWorld: '&c不可在此世界這樣做'
-  wrongPortal: '&cYou are in incorrect area of effect'
-  differentWorld: '&cDifferent worlds'
+  wrongPortal: '&c您處於錯誤的影響區域'
+  differentWorld: '&c不同的世界'
   HaveItem: '&c在背包裡有&6[amount]x [itemName]'
   ItemWillBreak: '!actionbar!&e你的物品 (&6[itemName]&e) 馬上快要爆了 &e[current]&6/&e[max]'
   ArmorWillBreak: '!actionbar!&e你的 [itemName] 快要壞掉了! &e[current]&6/&e[max]'
   cantDoForPlayer: '&e你不能對 &6[playerDisplayName] &e這麼做'
-  cantDoForYourSelf: '&eYou can''t do this to yourself'
+  cantDoForYourSelf: '&e你不能對自己這麼做'
   cantDetermineMobType: '&c無法指定怪物種類 &e[type] &c'
   cantRename: '!actionbar!&e你不能更改為這個名字'
   wrongName: '&c錯誤的名字'
@@ -161,7 +161,7 @@ info:
   sunSpeedingTitle: '&7[hour]'
   skippingNight: '!title!&7跳過晚上'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
-  repairConfirm: '&e點擊來確認修復 &7[items] &e要花 &7[cost]'
+  repairConfirm: '&e點擊來確認修復 &7[items] &e要花費 &7[cost]'
   bookDate: '&7在 &f[date] &7時寫的'
   maintenance: '&7維護模式'
   notSet: 未設定
@@ -210,7 +210,7 @@ info:
   Inventory:
     FullDrop: '&5你的背包有不能在你背包的物品. 已經被丟棄在地上了'
   InventorySave:
-    info: '&8Info: &8[playerDisplayName]'
+    info: '&8資訊: &8[playerDisplayName]'
     saved: '&e[time] &e背包已保存 ID: &e[id]'
     NoSavedInv: '&e該玩家沒有已保存的背包'
     NoEntries: '&4數據存在，但是沒有已保存的背包'
@@ -305,7 +305,7 @@ info:
     suicide: 自殺
     thorns: 荊棘
     void: 虛空
-    wither: 雕零
+    wither: 凋零
   Biomes:
     BADLANDS: 惡地
     BADLANDS_PLATEAU: 惡地高原
