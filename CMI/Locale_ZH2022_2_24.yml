@@ -1572,8 +1572,8 @@ command:
       - /exp Zrips clear
       - /exp Zrips add 10
     info:
-      current: '&e[playerDisplayName] &eis at &6[lvl]&elvl with &6[currentExp]&eexp
-        or with &6[exp]&eexp in total.'
+      current: '&e[playerDisplayName] &e現在是 &6[lvl]&e等 + &6[currentExp]&e經驗值
+        總共 &6[exp]&e經驗值.'
       selfFeedback: '&e經驗已設置為 &3[exp] &e，被執行玩家 &3[playerDisplayName]&e (&3[offon]&e).'
       targetFeedback: '&e你的經驗值已被設置為 &3[exp]&e，執行玩家 &3[senderDisplayName]&e.'
   ext:
@@ -1657,10 +1657,10 @@ command:
       buttonMoney: '&6使用金錢充能'
       max: '&6已充能至最大值'
       lore:
-      - '&eLeft click +1. Cost: &7[amount1]'
-      - '&6Shift left click +10. Cost: &7[amount10]'
-      - '&eRight click +100. Cost: &7[amount100]'
-      - '&6Shift right click +1000. Cost: &7[amount1000]'
+      - '&e左鍵 +1. 花費: &7[amount1]'
+      - '&6Shift 左鍵 +10. 花費: &7[amount10]'
+      - '&e右鍵 +100. 花費: &7[amount100]'
+      - '&6Shift 右鍵 +1000. 花費: &7[amount1000]'
       - ''
       changeAmount: '&e([amount]&e)'
   fly:
@@ -2027,10 +2027,10 @@ command:
     info:
       feedback:
         uuid: '&e貼上UUID至聊天欄內'
-        ouuid: '&eShift + left click to paste online uuid into chat box'
+        ouuid: '&eShift + 左鍵 貼上UUID至聊天欄內'
       newName: '&6[playerName]'
       newBalance: '&7(&e[balance]&7) '
-      newDisplayName: '&7Display name: &r[playerDisplayName]'
+      newDisplayName: '&7顯示名稱: &r[playerDisplayName]'
       newNameHover:
       - '[playerDisplayName]'
       - '[nick]'
@@ -2047,7 +2047,7 @@ command:
       newNameHoverGroup: '&7群組: &f[group]'
       newNameHoverKnownAs: '&7也稱為: &f[nameList]'
       newNameHoverIp: '&7IP: &f[ip]'
-      newNameHoverPing: '&7Ping: &f[ping]'
+      newNameHoverPing: '&7延遲: &f[ping]'
       newNameHoverCountry: ' &7[country] &f(&2[countryCode]&f)'
       newFirstLogin: '&7第一次登入: &6[firstLogin]'
       newPlaytime: '&7遊戲時間: &6[time]'
@@ -2056,7 +2056,7 @@ command:
       newOnlineStateOff: '&7下線'
       newUUID: '&fUUID '
       newUUIDHover: '&7UUID: &6[UUID]'
-      newOUUIDHover: '&7OnlineUUID: &6[OUUID]'
+      newOUUIDHover: '&7正版UUID: &6[OUUID]'
       newTurnedOnColor: '&a'
       newTurnedOffColor: '&7'
       newOp: 'OP '
@@ -2066,7 +2066,7 @@ command:
       newFlyHover: '&7飛行速度: &6[flyspeed]'
       newFlyTemp: '&7離時飛行: &6[time]'
       newFlyCharge: '&7飛行費用: &6[charge]'
-      newElytraFlyHover: '&7Flying with elytra'
+      newElytraFlyHover: '&7使用鞘翅飛'
       newGodHover: '&7TempGod for: &e[time]'
       newSneaking: Sneaking
       newSprint: 衝刺
@@ -2088,7 +2088,7 @@ command:
       newPos: '&f位置 '
       newPosHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newAfk: 'AFK '
-      newAfkHover: '&6最後的AFK: [time]'
+      newAfkHover: '&6最後的AFK時間: [time]'
       newBed: '&f床 '
       newBedHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newDeath: '&f死亡 '
@@ -2107,27 +2107,27 @@ command:
       - '&7原因: &e[reason]'
       newMuted: '靜言'
       newMutedHover:
-      - '&7Left: &e[left]'
-      - '&7For: &e[reason]'
+      - '&7剩下 : &e[left]'
+      - '&7原因: &e[reason]'
       newShadowMutedHover: '&4隱形禁言'
-      newCuffed: 'Cuffed '
+      newCuffed: '銬上 '
       newJailed: '入獄 '
       newJailedHover:
-      - '&7Jail: &e[jail]'
-      - '&7Cell: &e[id]'
-      - '&7Left: &e[time]'
-      - '&7Reason: &e[reason]'
+      - '&監獄: &e[jail]'
+      - '&7細胞(?): &e[id]'
+      - '&7剩下: &e[time]'
+      - '&7原因: &e[reason]'
       newHomes: '&f家: &e[count] '
-      newMail: '&fMail: &e[count] '
+      newMail: '&f信: &e[count] '
       newWarnings: '&f警告: &e[count] '
       newAlert: '警報 '
       newAlertHover:
-      - '&7Left: &e[left]'
-      - '&7For: &e[reason]'
+      - '&7剩下: &e[left]'
+      - '&7原因: &e[reason]'
       newChatRoom: '聊天室 '
       newChatRoomHover:
       - '&7聊天室: &e[name]'
-      - '&7Users in: &e[count]'
+      - '&7用戶在: &e[count]'
       nList:
       - '&e------------- [enableColor]啟用 [disableColor]禁用&e -------------'
       - '&e| [name][balance][UUID][ip]'
@@ -2228,7 +2228,7 @@ command:
       realName: ' &e物品真名: &6[name]'
       bukkitName: ' &eBukkit 名稱: &6[name]'
       mojangName: ' &eMojang 名稱: &6[name]'
-      entityType: ' &eEntity Type: &6[type]'
+      entityType: ' &eEntity 類型: &6[type]'
       durability: ' &e耐久: &6[current]&e/&6[max]'
   itemlore:
     help:
@@ -2489,7 +2489,7 @@ command:
       reset: '&eKit (&6[kit]&e) 使用次數被 &6[playerDisplayName] 重置'
       list: '&e[place]. &6[kit] &e[used]/[usages]'
       listHover: '&e點擊重置'
-      noCd: '&eThere are no kit''s with usage above 0'
+      noCd: '&e上面沒有使用的禮包 0'
   lastonline:
     help:
       info: '&e顯示之前 x 分鐘內所有在線玩家'
@@ -3105,7 +3105,7 @@ command:
       args: '[uuid/duplicates]'
     info:
       removed: '&e玩家 (&6[uuid]&e) 已移除'
-      removedDuplicate: '&6[amount]/[max] &eduplicates removed'
+      removedDuplicate: '&6[amount]/[max] &e已刪除重複項'
   removewarp:
     help:
       info: '&e移除地標'
@@ -3125,7 +3125,7 @@ command:
       - cmi.command.repair.repairshare.bypass - 不添加共享修復保護地修復物品
     info:
       feedback: '&e已成功修復 &3[playerDisplayName]&e-(&3[offon]&e) 的 &3[amount]&e 件物品.'
-      feedbackMoney: '&eYou have repaired &3[amount]&e items for &3[playerDisplayName]&e
+      feedbackMoney: '&e你以為 &3[playerDisplayName]&e 修理  &3[amount]&e items for 
         (&3[offon]&e). Cost: &7[cost]'
       itemOwner: '&e上一次修復由: &6[owner]'
       cantUse: '!title!&c你不能使用這個!subtitle!&e請自己修理這個!'
