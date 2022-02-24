@@ -9,15 +9,15 @@
 # [exp] 顯示玩家全部經驗
 # [hp] 顯示玩家生命
 # [maxHp] 顯示玩家最大生命
-# [hunger] to show target player hunger level
+# [hunger] 顯示目標玩家的飢餓度
 # [gameMode] 顯示玩家遊戲模式
-# [prefix] to show target player prefix if possible
-# [suffix] to show target player suffix if possible
-# Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
+# [prefix] 如果有,顯示目標玩家前綴
+# [suffix] 如果有,顯示目標玩家後綴
+# 顯示發送行命令的控制台或玩家。 例如 Zrips 執行 /heal Zhax 然後將顯示 Zrips 
 # [senderName] 顯示發送者玩家ID
-# [senderDisplayName] to show Sender player display name
-# [senderLvl] to show Sender player level
-# [senderExp] to show Sender player total exp
+# [senderDisplayName]顯示發送玩家的顯示名稱
+# [senderLvl] 顯示發送的玩家的等級
+# [senderExp] 顯示發送的玩家的總經驗
 # [senderHp] to show Sender player health
 # [senderMaxHp] to show Sender player max health
 # [senderHunger] to show Sender player hunger level
