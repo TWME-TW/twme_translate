@@ -2067,7 +2067,7 @@ command:
       newFlyTemp: '&7離時飛行: &6[time]'
       newFlyCharge: '&7飛行費用: &6[charge]'
       newElytraFlyHover: '&7使用鞘翅飛'
-      newGodHover: '&7TempGod for: &e[time]'
+      newGodHover: '&7暫時無敵: &e[time]'
       newSneaking: Sneaking
       newSprint: 衝刺
       newWalkSpeed: '&7走路速度: &6[walkspeed]'
