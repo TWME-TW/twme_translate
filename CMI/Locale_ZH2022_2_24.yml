@@ -412,7 +412,7 @@ info:
     ender_crystal: 終界水晶
     ender_dragon: 終界龍
     ender_pearl: 終界珍珠
-    ender_signal: Ender signal
+    ender_signal: 終界之眼的指向座標
     evoker: 喚魔者
     evoker_fangs: 尖牙
     experience_orb: 經驗球
@@ -697,8 +697,8 @@ warp:
 teleportation:
   relocation: '!actionbar!&4你將要傳送到的地方不安全，已將你傳送至 安全的地方'
 afk:
-  'on': '&6AFK'
-  'off': '&7Playing'
+  'on': '&掛機'
+  'off': '&7遊玩中'
   left: '&6[playerDisplayName] &e回來了'
   MayNotRespond: '&e玩家處於離開狀態，可能無法回覆你'
   MayNotRespondStaff: '&e伺服器管理員處於離開狀態，可能無法立刻解決你的問題'
@@ -718,7 +718,7 @@ Information:
   NotEnoughExpNeed: '&e經驗升級還需: &6[Exp]/[need]'
   tooMuchExp: '&e過多經驗: &6[Exp]/[need]'
   NotEnoughVotes: '&e投票數還需: &6[votes]'
-  TooMuchVotes: '&eToo many votes: &6[votes]'
+  TooMuchVotes: '&e投票太多: &6[votes]'
   BadGameMode: '&c當前遊戲模式下不能這麼做'
   BadArea: '&c你不可以在此區域這樣做'
   GameMode: '&e遊戲模式: &6[GameMode]'
