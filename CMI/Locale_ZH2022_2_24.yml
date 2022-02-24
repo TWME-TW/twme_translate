@@ -3393,7 +3393,7 @@ command:
       feedback: '&6[playerDisplayName] &e上一次 &6[offon] &e是在 &6[time]'
   select:
     help:
-      info: '&eManage selection area'
+      info: '&e管理選擇區域'
       args: (pos1/pos2/shift/expand/contract/clear) (amount)
   sell:
     help:
@@ -3413,7 +3413,7 @@ command:
       args: '[serverName] (playerName)'
   serverlist:
     help:
-      info: '&eShow server list'
+      info: '&e顯示伺服器列表'
       args: ''
     info:
       listOnline: '&7[place]. &2[serverName] &6[count]&7/&6[max]'
@@ -3510,11 +3510,11 @@ command:
       ingridient: '&2原料'
       ingridients: '&7[ingridient]&f(&7[amount]&f) = &e[price]'
       notSet: '&e價格未設置'
-      notSetBuy: '&7Buy price not set'
+      notSetBuy: '&7購買價格未設置'
       result: '&2合成資訊 &7[result]&f(&7[amount]&f)'
       ingridientsPrice: '&c原料價格: &7[price]'
       resultPrice: '&c可出售並獲得: &7[price]'
-      explanation: '&2Buy price is only used in detecting posible exploits'
+      explanation: '&2購買價格僅用於檢測可能的漏洞'
   shadowmute:
     help:
       info: '&e將玩家靜音而不告訴他他已被靜音'
@@ -3573,7 +3573,7 @@ command:
       args: '[skinName/off] (playerName)'
     info:
       changed: '&e已改變皮膚為 &6[skinOwner] &e'
-      failed: '&e應用皮膚失敗'
+      failed: '&e更改皮膚失敗'
       resetSteve: '&e移除皮膚'
       reset: '&e切換回默認皮膚'
       update: '&e更新皮膚'
@@ -3593,11 +3593,11 @@ command:
       toggled: '&e聊天偷窺已設置為 &6[state] &e狀態'
   solve:
     help:
-      info: '&eSolve equation'
+      info: '&求解方程'
       args: '[equation]'
     info:
       result: '&7結果: &e[res]'
-      incorrect: '&cIncorrect input: &e[input]'
+      incorrect: '&c輸入錯誤: &e[input]'
   sound:
     help:
       info: '&e在目標位置播放音效'
@@ -3789,7 +3789,7 @@ command:
         FURNACE_INTERACTION: 使用熔爐
         DISPENSER_INSPECTED: 使用發射器
         DROPPER_INSPECTED: 使用投擲器
-        HOPPER_INSPECTED: 使用漏鬥
+        HOPPER_INSPECTED: 使用漏斗
         CHEST_OPENED: 打開箱子
         TRAPPED_CHEST_TRIGGERED: 打開陷阱箱
         ENDERCHEST_OPENED: 打開終界箱
@@ -3892,7 +3892,7 @@ command:
         &6[time] &e理由是: &6[reason]'
       time: '&e你將在 &6[time] &e後解封'
       badTime: '&c指定的時間格式不正確'
-      badTimeRanges: '&cYou can''t ban for longer than [time] &6([seconds])'
+      badTimeRanges: '&c你不能禁止超過 [time] &6([seconds])'
   tempipban:
     help:
       info: '&e臨時封鎖ip'
@@ -4079,8 +4079,7 @@ command:
       info: '&e將所有來自某一世界的玩家傳送至你所在位置'
       args: '[worldName]'
       explanation:
-      - -a variable will teleport everyone who are in no longer existing world to
-        target location
+      - -a 變量會將不再存在的世界中的每個人傳送到目標位置
     info:
       started: '&e傳送開始!'
       current: '&e當前已傳送 &3[amount] &e，已有 &3[files] &e個文件被檢索'
@@ -4263,8 +4262,8 @@ command:
       bossbar: '&e隱身中顯示bossbar消息'
       afkcommands: '&e可在隱身中切換離開狀態'
       PrivateMessages: '&e私人消息'
-      relogDisable: '&eDisable vanish on relog'
-      noMessages: '&eNo public messages'
+      relogDisable: '&e重新登錄時禁用隱形'
+      noMessages: '&e無公共訊息'
       bossbarTitle: '&f隱身中'
   version:
     help:
@@ -4274,12 +4273,12 @@ command:
       cmiVersion: '&eCMI 插件版本: &6[version]'
       cmiVersionNew: '&e-> [newVersion]'
       dbType: ' &7[db]'
-      newServer: '&eServer: &6[version]'
+      newServer: '&e伺服器: &6[version]'
       Economy: '&eCMI economy: &6[state] '
-      Chat: '&eCMI Chat: &6[state] '
+      Chat: '&eCMI 聊天: &6[state] '
       CMIB: '&7CMIB '
       newVault: '&eVault: &6[version] '
-      Modules: '&eModules -> &a[enabled] enabled &7[disabled] disabled&e: &c[list]'
+      Modules: '&e模塊 -> &a[enabled] 已開起 &7[disabled] 已關閉&e: &c[list]'
       Bungee: ' &eBungeeCord '
   viewrange:
     help:
@@ -4367,7 +4366,7 @@ command:
       - '[creator]'
       creator: '&e創建者: &6[creator]'
       noWarpByName: '&c沒有叫這個名字的地標'
-      noAccess: '&cNo access to this warp'
+      noAccess: '&c無法訪問此Warp'
       guiTitle: '&6地標'
       pageTitles:
       - '&2Warps 1'
@@ -4375,7 +4374,7 @@ command:
       - '&0Warps 3'
   warpgroups:
     help:
-      info: '&eLists warp groups'
+      info: '&e列出Warp組'
       args: ''
     info:
       list: '&e[number]. &7[group] &6(&e[amount]&6)'
