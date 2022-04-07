@@ -1,5 +1,5 @@
 vehicle-storage-title: "車箱"
-package-description: "&f這是一個一個 <type>"
+package-description: "&f這是一個 <type>"
 package-health-prefix: "&a生命值: &e"
 package-fuel-prefix: "&9燃料: &e"
 bike-use-nopermission: "&c您無權使用這輛自行車."
