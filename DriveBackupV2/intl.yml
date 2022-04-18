@@ -94,7 +94,7 @@ backup-location-start: "正在為 \"<location>\" 進行備份"
 backup-failed-absolute-path: |-
   創建備份失敗，要備份的文件夾路徑是絕對路徑，應為相對路徑
   絕對路徑可以覆蓋敏感文件，請參閱文檔了解更多信息
-  <
+  跳過備份位置
 backup-local-failed: |-
   Failed to create local backup
   Even if local-keep-count is set to zero, the plugin needs to temporarily create a local backup
