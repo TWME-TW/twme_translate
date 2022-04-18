@@ -96,9 +96,9 @@ backup-failed-absolute-path: |-
   絕對路徑可以覆蓋敏感文件，請參閱文檔了解更多信息
   跳過備份位置
 backup-local-failed: |-
-  Failed to create local backup
-  Even if local-keep-count is set to zero, the plugin needs to temporarily create a local backup
-  Skipping backup location
+  創建本地備份失敗
+  即使 local-keep-count 設置為零，插件也需要臨時創建本地備份
+  跳過備份位置
 backup-method-uploading: "上傳文件到 <upload-method>"
 backup-method-limit-reached: "<upload-method> 中的當前備份位置有 <file-count> 個文件, 超過了 <file-limit> 個的限制, 刪除"
 backup-method-prune-failed: "刪除超出限制的備份失敗"
