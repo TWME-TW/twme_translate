@@ -71,7 +71,7 @@ backup-already-running: |-
   一個備份已經正在執行
   <backup-status>
 backup-no-methods: "未啟用任何備份方法"
-backup-empty-list: "T備份列表為空"
+backup-empty-list: "備份列表為空"
 backup-start: "創建備份, 服務器可能會滯後一段時間..."
 external-ftp-backup-start: "從 (S)FTP 服務器 (<socket-addr>) 下載文件以包含在備份中"
 external-ftp-backup-blacklisted: "未在來自外部 (S)FTP 服務器的備份中包含 <blacklisted-files> 文件, 因為它們已被 \"<glob-pattern>\" 列入黑名單"
