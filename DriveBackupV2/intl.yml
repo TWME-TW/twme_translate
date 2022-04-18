@@ -92,9 +92,9 @@ local-backup-file-failed-to-delete: "無法刪除本地備份 \"<local-backup-na
 local-backup-failed-to-delete: "本地備份刪除失敗"
 backup-location-start: "正在為 \"<location>\" 進行備份"
 backup-failed-absolute-path: |-
-  Failed to create a backup, path to folder to backup is absolute, expected a relative path
-  An absolute path can overwrite sensitive files, see the docs for more information
-  Skipping backup location
+  創建備份失敗，要備份的文件夾路徑是絕對路徑，應為相對路徑
+  絕對路徑可以覆蓋敏感文件，請參閱文檔了解更多信息
+  <
 backup-local-failed: |-
   Failed to create local backup
   Even if local-keep-count is set to zero, the plugin needs to temporarily create a local backup
