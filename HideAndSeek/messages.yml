@@ -25,8 +25,8 @@ Messages:
   unknown_command: '&c未知指令! 使用 /has 獲得指令列表!'
   no_arenas: 沒有可用的場地!
   no_player_found: 找不到任何同名的玩家!
-  already_in_game: You are already in a game!
-  unknown_arena: Could not find any arena with that name!
+  already_in_game: 你已經在遊戲中!
+  unknown_arena: 找不到任何具有該名稱的競技場!
   arena_not_available: This game is currently not available to join!
   arena_not_ready: The arena is missing something! you may not join yet!
   arena_full: That arena is full!
