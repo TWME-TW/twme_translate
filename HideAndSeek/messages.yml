@@ -26,9 +26,9 @@ Messages:
   no_arenas: 沒有可用的場地!
   no_player_found: 找不到任何同名的玩家!
   already_in_game: 你已經在遊戲中!
-  unknown_arena: 找不到任何具有該名稱的競技場!
-  arena_not_available: This game is currently not available to join!
-  arena_not_ready: The arena is missing something! you may not join yet!
+  unknown_arena: 找不到任何具有該名稱的場地!
+  arena_not_available: 此遊戲暫時無法加入!
+  arena_not_ready: 場地缺少了一些東西！ 你可能還沒有加入!
   arena_full: That arena is full!
   arena_join: You have joined the arena &e%arena%
   arena_join_broadcast: '&e%player% &6has &ajoined &6the game! (&e%players%&6/&e%maxPlayers%&6)'
