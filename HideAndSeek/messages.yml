@@ -24,7 +24,7 @@ Messages:
   no_console: 只有玩家可以使用該命令
   unknown_command: '&c未知指令! 使用 /has 獲得指令列表!'
   no_arenas: 沒有可用的場地!
-  no_player_found: Could not find any player with that name!
+  no_player_found: 找不到任何同名的玩家!
   already_in_game: You are already in a game!
   unknown_arena: Could not find any arena with that name!
   arena_not_available: This game is currently not available to join!
