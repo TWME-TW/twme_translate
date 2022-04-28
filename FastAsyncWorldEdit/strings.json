@@ -6,7 +6,7 @@
 	"fawe.worldedit.history.find.hover": "已改變 {0} 個方塊, 點擊以獲取更多資訊。",
 
 	"fawe.info.lighting.propagate.selection": "光源已經被擴散到 {0} 個區塊。 (提示: 使用 //removelight 移除光源)。",
-	"fawe.info.updated.lighting.selection": " {0}  區塊的光源已被更新 . (傳輸封包(packets)可能會花上幾秒鐘)。",
+	"fawe.info.updated.lighting.selection": " {0}  區塊的光源已被更新 。 (傳輸封包(packets)可能會花上幾秒鐘)。",
 	"fawe.info.set.region": "選擇為您當前允許的地域(region)。",
 
 	"fawe.info.worldedit.toggle.tips.on": "已禁用 FAWE 提示。。",
