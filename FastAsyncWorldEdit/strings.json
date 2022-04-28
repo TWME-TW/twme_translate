@@ -36,7 +36,7 @@
 
 	"fawe.worldedit.selection.selection.count": "已選取 {0} 個方塊。",
 
-	"fawe.worldedit.anvil.world.is.loaded": "不該再世界已讀取時執行此指令. 卸載該世界或 使用 -f來覆寫(記得先儲存)。",
+	"fawe.worldedit.anvil.world.is.loaded": "不該再世界已讀取時執行此指令。 卸載該世界或 使用 -f來覆寫(記得先儲存)。",
 
 	"fawe.worldedit.brush.brush.reset": "重設你的筆刷。 (SHIFT + Click)。",
 	"fawe.worldedit.brush.brush.none": "你沒拿著筆刷!",
