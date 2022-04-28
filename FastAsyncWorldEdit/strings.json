@@ -462,12 +462,12 @@
     "worldedit.tool.tracemask.set": "已設定追蹤遮罩。",
     "worldedit.tool.tracemask.disabled": "已禁用追蹤遮罩。",
 
-    "worldedit.execute.script-permissions": "你沒有權限使用該手稿。",
-    "worldedit.executelast.no-script": "輸入/cs 後加上手稿名稱。",
-    "worldedit.script.read-error": "手稿讀取錯誤: {0}。",
-    "worldedit.script.unsupported": "只支援 .js 手稿。",
-    "worldedit.script.file-not-found": "手稿不存在: {0}。",
-    "worldedit.script.no-script-engine": "找不到已經安裝的手稿引擎。\n參見： https://worldedit.enginehub.org/en/latest/usage/other/craftscripts/。",
+    "worldedit.execute.script-permissions": "你沒有權限使用該腳本。",
+    "worldedit.executelast.no-script": "輸入/cs 後加上腳本名稱。",
+    "worldedit.script.read-error": "腳本讀取錯誤: {0}。",
+    "worldedit.script.unsupported": "只支援 .js 腳本。",
+    "worldedit.script.file-not-found": "腳本不存在: {0}。",
+    "worldedit.script.no-script-engine": "找不到已經安裝的腳本引擎。\n參見： https://worldedit.enginehub.org/en/latest/usage/other/craftscripts/。",
     "worldedit.script.failed": "未能執行: {0}。",
     "worldedit.script.failed-console": "未能執行 (請查看控制臺): {0}。",
 
