@@ -1,0 +1,35 @@
+# +----------------------------------------------------------------------------------------------+
+# |                                                                                              |
+# |                                         Resource World                                       |
+# |                                                                                              |
+# |                               Discord: https://discord.gg/m7j2Y9H                            |
+# |                                                                                              |
+# |                                           Author: Nik                                        |
+# |                                                                                              |
+# +----------------------------------------------------------------------------------------------+
+
+prefix: '&a&l[&2Resource World&a&l]&f&l: '
+update_found: '&aThere is an Update available, Your version &f%current%&a new version
+  &f%new%'
+disabled_command: '&cSorry, You can''t use that Command in this World!'
+resetting_the_world: '&fCleaning up the Resource World, This may cause Lag!'
+resetting_the_nether: '&fCleaning up the Nether World, This may cause Lag!'
+resetting_the_end: '&fCleaning up the End World, This may cause Lag!'
+world_has_been_reset: '&fThe Resource World has been Reset!'
+nether_has_been_reset: '&fThe Nether World has been Reset!'
+end_has_been_reset: '&fThe End World has been Reset!'
+console_message: '&f&lThis command cannot be executed through the Console :('
+no_perm: '&cYou do not have permission to execute this command!'
+cooldown_message: '&cYou can teleport to the Resource World again in %seconds% seconds.'
+cooldown_spawn: '&cYou can teleport to spawn again in %seconds% seconds.'
+reloaded: '&fYou have successfully reloaded the plugin!'
+teleport_delay: '&aTeleporting to the Resource World in %seconds% seconds.'
+gui_name: '&2&lResource World Menu'
+worlds_gui_name: '&2&lReset A Resource World'
+teleported_message: '&fYou have been Teleported back to spawn!'
+not_exist: '&cThe Resource World is currently under Maintenance, Please try again
+  later!'
+teleport_paid: '&a%price% &fHave been taken from your balance.'
+teleport_error: '&cYou do not have enough money to Teleport to the Resource World.'
+teleported_players: '&aTeleported all the players back to spawn!'
+update_not_found: '&f&lYou''re running the Latest Version &c&l<3'
