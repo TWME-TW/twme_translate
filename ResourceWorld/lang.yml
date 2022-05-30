@@ -13,9 +13,9 @@ update_found: '&a有可用的更新
 , 你的版本 &f%current%&a 新的版本
   &f%new%'
 disabled_command: '&c對不起，你不能在這個世界上使用這個命令!'
-resetting_the_world: '&f新生成一般資源世界中，這可能會導致延遲!'
+resetting_the_world: '&f新生成一般資源世界中，這可能會導致卡頓!'
 resetting_the_nether: '&f重新生成地獄資源世界中，這可能會導致卡頓!'
-resetting_the_end: '&fCleaning up the End World, This may cause Lag!'
+resetting_the_end: '&f重新生成終界資源世界中，這可能會導致卡頓!'
 world_has_been_reset: '&fThe Resource World has been Reset!'
 nether_has_been_reset: '&fThe Nether World has been Reset!'
 end_has_been_reset: '&fThe End World has been Reset!'
