@@ -5,7 +5,7 @@ render-not-in-progress: <red>世界 <world> 沒有進行中的渲染
 cancelled-render: <green>世界 <world> 的渲染已取消
 successfully-reset-map: <green>世界 <world> 的渲染已重置
 paused-renders: <green>世界 <world> 的渲染已暫停
-unpaused-renders: <green>世界 <world> 的渲染已恢覆
+unpaused-renders: <green>世界 <world> 的渲染已恢復
 command:
     message:
         console-must-specify-player: <red>從控制台執行此命令時必須指定一個玩家
@@ -68,7 +68,7 @@ log:
     found-total-region-files: 共找到 <total> 個區域文件
     finished-rendering: 世界 <world> 的渲染已完成
     cancelled-rendering: 世界 <world> 的渲染已取消
-    resumed-rendering: 世界 <world> 的渲染已恢覆
+    resumed-rendering: 世界 <world> 的渲染已恢復
     scanning-region-progress: '(<percent>) 世界: <world> 區塊: <current_chunks>/<total_chunks>
         已用時: <elapsed> 剩餘時間: <eta> 速度: <rate> cps'
     scanning-region-progress-with-regions: '(<percent>) 世界: <world> 區域: <current_regions>/<total_regions>
