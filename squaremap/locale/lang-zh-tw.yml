@@ -12,14 +12,14 @@ command:
         player-not-found-for-input: <red>沒有找到玩家 '<input>'
         console-must-specify-world: <red>從控制台執行此命令時必須指定一個世界
         no-such-world: <red>沒有找到世界 '<world>'
-        map-not-enabled-for-world: <red>世界 '<world>' 的渲染未啟用'
+        map-not-enabled-for-world: <red>世界 '<world>' 的渲染未啟用
         confirmation-required: <red>請輸入 /<command> confirm 確認操作
         no-pending-commands: <red>你沒有任何待處理的命令
         progresslogging:
-            enabled: <green>渲染進度日志已啟用
-            disabled: <green>渲染進度日志已禁用
-            set-rate: <green>渲染進度日志的間隔已設置為 </green><seconds> 秒
-            statusmessage: '渲染進度日志狀態: <enabled>, 間隔: <green><seconds></green> 秒'
+            enabled: <green>渲染進度日誌已啟用
+            disabled: <green>渲染進度日誌已禁用
+            set-rate: <green>渲染進度日誌的間隔已設置為 </green><seconds> 秒
+            statusmessage: '渲染進度日誌狀態: <enabled>, 間隔: <green><seconds></green> 秒'
     prefix: '<white>[<gradient:#C028FF:#5B00FF>squaremap</gradient>]</white> '
     description:
         help: 獲取 squaremap 的命令幫助
@@ -31,9 +31,9 @@ command:
         pause-render: 暫停渲染指定世界
         radius-render: 指定半徑渲染
         progresslogging:
-            status: 顯示渲染進度日志的當前設置
-            toggle: 切換渲染進度日志的狀態
-            rate: 設置渲染進度日志的間隔 (秒)
+            status: 顯示渲染進度日誌的當前設置
+            toggle: 切換渲染進度日誌的狀態
+            rate: 設置渲染進度日誌的間隔 (秒)
         hide: 在地圖中隱藏玩家
         show: 在地圖中顯示玩家
     argument:
