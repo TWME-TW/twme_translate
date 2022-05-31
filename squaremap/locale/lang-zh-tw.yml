@@ -70,9 +70,9 @@ log:
     cancelled-rendering: 世界 <world> 的渲染已取消
     resumed-rendering: 世界 <world> 的渲染已恢覆
     scanning-region-progress: '(<percent>) 世界: <world> 區塊: <current_chunks>/<total_chunks>
-        已用時: <elapsed> 剩余時間: <eta> 速度: <rate> cps'
+        已用時: <elapsed> 剩餘時間: <eta> 速度: <rate> cps'
     scanning-region-progress-with-regions: '(<percent>) 世界: <world> 區域: <current_regions>/<total_regions>
-        區塊: <current_chunks>/<total_chunks> 已用時: <elapsed> 剩余時間: <eta> 速度: <rate>
+        區塊: <current_chunks>/<total_chunks> 已用時: <elapsed> 剩餘時間: <eta> 速度: <rate>
         cps'
     internal-web-disabled: 內部Web伺服器已在 config.yml 設置為關閉
     internal-web-started: 內部Web伺服器已啟動於 <bind>:<port>
