@@ -25,3 +25,6 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[TrainCarts](https://www.spigotmc.org/resources/traincarts.39592/)||||
 |[AntiRedstoneClock](https://www.spigotmc.org/resources/antiredstoneclock-worldguard-plotsquard-support-1-8-1-17.18557/)|1.5.0|||
 |[PlotSquared v6](https://www.spigotmc.org/resources/plotsquared-v6.77506/)|||翻譯中|
+|[Mob Farm Manager](https://www.spigotmc.org/resources/mob-farm-manager-supports-1-7-10-up-to-1-18-hopper-support.15127/) |2.0.3.0|||
+
+
