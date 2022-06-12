@@ -1752,7 +1752,7 @@ command:
       feedback: '&e你為 &3[playerDisplayName]&e-(&3[offon]&e) &3[boolean]&e [color]發光 &e.'
       targetfeedback: '&3[senderDisplayName]&e 幫你 &3[boolean]&e [color]發光.'
       title: Pick glow color
-      incorrect: '&4Incorrect color name'
+      incorrect: '&4顏色名稱不正確'
   gm:
     help:
       info: '&e設置玩家的遊戲模式'
