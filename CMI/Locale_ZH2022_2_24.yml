@@ -1751,7 +1751,7 @@ command:
     info:
       feedback: '&e你為 &3[playerDisplayName]&e-(&3[offon]&e) &3[boolean]&e [color]發光 &e.'
       targetfeedback: '&3[senderDisplayName]&e 幫你 &3[boolean]&e [color]發光.'
-      title: Pick glow color
+      title: 選擇發光顏色
       incorrect: '&4顏色名稱不正確'
   gm:
     help:
