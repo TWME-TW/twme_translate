@@ -1783,7 +1783,7 @@ command:
       exporbs: ' &e經驗球: &6[exporbs]'
       blocks: ' &e掉落的方塊: &6[blocks]'
       projectiles: ' &e彈射物: &6[projectiles]'
-      tnt: ' &e激活的TNT: &6[tnt]'
+      tnt: ' &e點燃的TNT: &6[tnt]'
       boat: ' &e船: &6[boat]'
       minecart: ' &e礦車: &6[minecart]'
       nothing: '&e伺服器很乾淨，沒有垃圾需要移除'
