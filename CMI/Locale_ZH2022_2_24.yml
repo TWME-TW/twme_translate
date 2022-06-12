@@ -2645,7 +2645,7 @@ command:
     info:
       started: '&e鏡像複製已開始'
       stopped: '&6鏡像複製已結束'
-      tooFar: '&c你距離鏡像中心太遠了 (最大半徑 &6[blocks] &c方塊). 仿制已暫停'
+      tooFar: '&c你距離鏡像中心太遠了 (最大半徑 &6[blocks] &c方塊). 複製已暫停'
       title: 鏡像複製
       notSet: '&c中心未設置'
       set: '&2中心已設置'
