@@ -661,7 +661,7 @@ modify:
   addSymbol: ' &2+'
   addSymbolHover: '&2新建'
   cancelSymbol: ' &7&l[X]'
-  cancelSymbolHover: '&aCancel'
+  cancelSymbolHover: '&a取消'
   acceptSymbol: ' &2[!] '
   acceptSymbolHover: '&2接受'
   denySymbol: ' &4[X] '
@@ -685,7 +685,7 @@ modify:
   commandList: ' &e[command]  '
   emptyLine: '&7[Empty line]'
   commandEdit: '&e編輯列表'
-  lineAddInfo: '&eEnter new line. Type &6cancel &eto cancel'
+  lineAddInfo: '&e輸入新的一行. 輸入 &6cancel &e來取消'
   commandAddInfo: '&e輸入一個新指令，或使用 &6cancel &e取消'
   commandAddInformationHover: "&e[playerName] 代表玩家變數 \n&e 想給指令加延遲請使用: \n&edelay! 5\
     \ \n&e支持特殊指令 獲得更多資訊 \n&ehttps://www.zrips.net/cmi/commands/specialized/"
@@ -734,7 +734,7 @@ Information:
 econ:
   disabled: '&c經濟已禁用，你不能使用這個指令'
   noMoney: '&c你的錢不夠'
-  charged: '!actionbar!&fCharged: &6[amount]'
+  charged: '!actionbar!&f: &6[amount]'
   notEnoughMoney: '&c你沒有足夠的現金. 還需要 (&6[amount]&c)'
   tooMuchMoney: '&c你現金太多了'
   commandCost: '&7此指令的價格為 &6[cost] &7重複此操作或單擊此處確認'
