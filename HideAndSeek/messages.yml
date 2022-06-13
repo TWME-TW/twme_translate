@@ -29,19 +29,19 @@ Messages:
   unknown_arena: 找不到任何具有該名稱的場地!
   arena_not_available: 此遊戲暫時無法加入!
   arena_not_ready: 場地缺少了一些東西！ 你可能還沒有加入!
-  arena_full: That arena is full!
-  arena_join: You have joined the arena &e%arena%
-  arena_join_broadcast: '&e%player% &6has &ajoined &6the game! (&e%players%&6/&e%maxPlayers%&6)'
-  not_in_game: You must be in a game to do that!
-  in_game: You must not be in a game to do that!
-  arena_leave: You have left the game!
-  arena_leave_broadcast: '&e%player% &6has &cleft &6the game! (&e%players%&6/&e%maxPlayers%&6)'
-  command_usage: 'Usage: &a/has %cmd%&e %usage%'
-  empty_hand_sign_error: You must have nothing in hand to use this sign!
-  firework_use: '&a + %earnedCoins% Coins'
-  cooldown: You may not use this yet! please wait &e%time%
-  disguise_select: You have selected the block &e%disguise%&6 as your disguise!
-  player_death: You have been killed!
+  arena_full: 這個場地已經滿了!
+  arena_join: 你已經加入了 &e%arena%
+  arena_join_broadcast: '&e%player% &6&a加入了 &6遊戲 ! (&e%players%&6/&e%maxPlayers%&6)'
+  not_in_game: 你必須在遊戲中!
+  in_game: 你不能在遊戲中這樣做!
+  arena_leave: 你已經離開遊戲!
+  arena_leave_broadcast: '&e%player% &6&c離開了 &6遊戲 ! (&e%players%&6/&e%maxPlayers%&6)'
+  command_usage: '用法: &a/has %cmd%&e %usage%'
+  empty_hand_sign_error: 你手上必須沒有任何東西才能使用這個告示牌!
+  firework_use: '&a + %earnedCoins% 金幣'
+  cooldown: 你可能還沒有使用這個！ 請等待 &e%time%
+  disguise_select: 你選擇了方塊 &e%disguise%&6 作為你的偽裝!
+  player_death: 你被殺了!
   player_death_broadcast: '%team% &e%player%&6 has been killed'
   player_kill: You have earned &b%earnedCoins% &6coins and &d%earnedExp% &6exp!
   player_earn_karma: '&d+%earnedKarma% Karma!'
