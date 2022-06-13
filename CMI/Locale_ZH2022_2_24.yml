@@ -119,7 +119,7 @@ info:
   Save: '&e保存'
   Delete: '&c刪除'
   Click: '&e點擊'
-  Preview: '&ePreview'
+  Preview: '&e預覽'
   PasteOld: '&e貼上舊的內容'
   ClickToPaste: '&e點擊貼上聊天室'
   CantTeleportWorld: '&e你不能傳送到該世界'
@@ -396,7 +396,7 @@ info:
     cat: 貓
     cave_spider: 洞穴蜘蛛
     chicken: 雞
-    cod: 鳕鱼
+    cod: 鱈魚
     cow: 牛
     creeper: 苦力怕
     dolphin: 海豚
@@ -453,7 +453,7 @@ info:
     pillager: 掠奪者
     player: 玩家
     polar_bear: 北極熊
-    primed_tnt: 激活的TNT
+    primed_tnt: 點燃的TNT
     pufferfish: 河豚
     rabbit: 兔子
     ravager: 劫毀獸
@@ -1815,12 +1815,12 @@ command:
       targetFeedback: '&3[senderDisplayName]&e 給你玩家 &3[headName] &e的頭顱!'
   heal:
     help:
-      info: '&e治愈玩家'
+      info: '&e治癒玩家'
       args: '[playerName] (healamount/healpercent)'
     info:
       feedback: '&e你治癒了 &3[playerDisplayName]&e-(&3[offon]&e).'
       feedbackMulti: '&e你回復了 &e玩家 &3[count]血.'
-      targetfeedback: '&e你被玩家 &3[senderDisplayName]&e 治愈了'
+      targetfeedback: '&e你被玩家 &3[senderDisplayName]&e 治癒了'
   helpop:
     help:
       info: '&e向伺服器管理員求助'
@@ -2941,7 +2941,7 @@ command:
     info:
       NoMore: '&e範圍不能大於 32 區塊，已自動設置為最大範圍'
       startSending: '&e已找到 &6[amount] &e個區塊待加載，正在開始...'
-      InfoShow: '&6TPS: &3[tps] &6剩余 &e[left] &6(&e[min]m:[sec]s&6) &6速度: &e[speed]'
+      InfoShow: '&6TPS: &3[tps] &6剩餘 &e[left] &6(&e[min]m:[sec]s&6) &6速度: &e[speed]'
       Finished: '&e已完成，可能需要花一點時間來加載你周圍的區塊'
   prewards:
     help:
@@ -3168,7 +3168,7 @@ command:
       speedChange: '&e替換速度設置為 [amount]'
       autospeedChange: '&e自動調速設置為 [state]'
       messagesChange: '&e資訊輸出設置為 [state]'
-      infoShow: '&6TPS: &3[tps] &6剩余 &e[left] &6(&e[time]&6) &6速度: &e[speed] &6替換:
+      infoShow: '&6TPS: &3[tps] &6剩餘 &e[left] &6(&e[time]&6) &6速度: &e[speed] &6替換:
         &e[found]'
       finished: '&e替換已完成!!! 替換了: &6[amount] &e個方塊! 耗時 &6[time]&e.'
   reply:
@@ -4191,7 +4191,7 @@ command:
     info:
       removed: '&e移除 -[list]'
       startScanning: '&e已找到 &6[amount] &e個區塊可卸載，正在開始...'
-      InfoShow: '&6TPS: &3[tps] &6剩余 &e[left] &6(&e[min]m:[sec]s&6) &6速度: &e[speed]
+      InfoShow: '&6TPS: &3[tps] &6剩餘 &e[left] &6(&e[min]m:[sec]s&6) &6速度: &e[speed]
         &6卸載區塊: &e[found]'
       Finished: '&e完成!!! 卸載了: &6[amount] &e個區塊! 耗時 &6[minutes] &e分 &6[seconds] &e秒'
   unmute:
