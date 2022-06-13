@@ -647,7 +647,7 @@ direction:
   w: 西
   nw: 西北
 modify:
-  middlemouse: '&2滑鼠中鍵單擊進行編輯'
+  middlemouse: '&2滑鼠中鍵點擊進行編輯'
   newItem: '&7放置新物品'
   newLine: '&2<新的一行>'
   newLineHover: '&2添加新的一行'
@@ -737,7 +737,7 @@ econ:
   charged: '!actionbar!&f花費: &6[amount]'
   notEnoughMoney: '&c你沒有足夠的現金. 還需要 (&6[amount]&c)'
   tooMuchMoney: '&c你現金太多了'
-  commandCost: '&7此指令的價格為 &6[cost] &7重複此操作或單擊此處確認'
+  commandCost: '&7此指令的價格為 &6[cost] &7重複此操作或點擊此處確認'
 Elytra:
   Speed: '&e速度: &6[speed]&ekm/h'
   SpeedBoost: ' &2+ '
@@ -1051,7 +1051,7 @@ command:
       info: '&e給所有玩家發送公告'
       args: '[message]'
       explanation:
-      - 如果消息開頭是英文感嘆號 ! 那麼將會顯示簡化消息
+      - 如果消息開頭是英文驚嘆號! 那麼將會顯示簡化消息
       - 可以將世界定義為僅在那些世界中廣播消息
     info:
       format: '&e[&4公告&e] &2[message]'
@@ -2384,7 +2384,7 @@ command:
     info:
       notCd: '&e禮包未在冷卻中'
       reset: '&e玩家 &6[playerDisplayName]&e 的禮包 (&6[kit]&e) 的冷卻時間已重置，被操作玩家 '
-      resetAll: '&eKit (&6[kit]&e) cooldown got reset for &6[count] &eplayers'
+      resetAll: '&e已將禮包 (&6[kit]&e)  的冷卻時間對 &6[count] &e位玩家 重置'
       list: '&e[place]. &6[kit] &e[time]'
       listHover: '&e點擊重置'
       noCd: '&e沒有冷卻中的禮包'
@@ -3130,7 +3130,7 @@ command:
       info: '&e設置修復物品花費'
       args: (playerName) [amount]
       explanation:
-      - 'Example:'
+      - '範例:'
       - /repaircost 10
       - /repaircost set 10
       - /repaircost add 10
@@ -3445,8 +3445,7 @@ command:
       private: ' &2(私有)'
       noMore: '&c你已經達到可設置家的最大數量'
       noOverwrite: '&c你不能直接創建已有名字的家來覆蓋舊的家 你只能先刪掉舊的，或者換個新名字'
-      slotTaken: '!actionbar!&cHome slot is already been used by &7[homeName]&c, consider
-        another one'
+      slotTaken: '!actionbar!&c這個名字已被 &7[homeName] &c使用, 請使用另一個'
   setmotd:
     help:
       info: 設置伺服器MOTD
@@ -3473,7 +3472,7 @@ command:
       feedback: '&6出生點設置在了 ([world],[x],[y],[z])!'
       group: ' &e([group])'
       rng: ' &e(Rng: [rng])'
-      respawn: '&7單擊以將此spawn點設置為可能的重生位置'
+      respawn: '&7點擊以將此 出生點 設置為可能的重生位置'
   setwarp:
     help:
       info: '&e設置地標'
@@ -4392,7 +4391,7 @@ command:
       currentState: '&6[world] &e-> &6[weather] &e下一個 &6[time]'
       sunny: 晴天
       rainy: 下雨
-      thundering: 雷暴
+      thundering: 暴風雨
   whowas:
     help:
       info: '&e顯示玩家之前的名字'
