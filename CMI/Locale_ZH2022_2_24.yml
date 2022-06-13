@@ -2065,7 +2065,7 @@ command:
       newFlyCharge: '&7飛行費用: &6[charge]'
       newElytraFlyHover: '&7使用鞘翅飛'
       newGodHover: '&7暫時無敵: &e[time]'
-      newSneaking: Sneaking
+      newSneaking: 蹲下中
       newSprint: 衝刺
       newWalkSpeed: '&7走路速度: &6[walkspeed]'
       newGameMode: '&f模式: &6[gameMode] '
@@ -2111,7 +2111,7 @@ command:
       newJailed: '入獄 '
       newJailedHover:
       - '&監獄: &e[jail]'
-      - '&7細胞(?): &e[id]'
+      - '&7牢房: &e[id]'
       - '&7剩下: &e[time]'
       - '&7原因: &e[reason]'
       newHomes: '&f家: &e[count] '
@@ -2567,7 +2567,7 @@ command:
       add: '&e新的IP (&6[ip]&e) 已被添加至玩家 &6[playerDisplayName]'
       remove: '&eIp (&6[ip]&e) 已被從玩家 &6[playerDisplayName] &e的列表中移除'
       clear: '&e所有IP已被從玩家 &6[playerDisplayName] &e的列表中移除'
-      ipNotFound: '&cIp 未找到'
+      ipNotFound: '&cIP 未找到'
       empty: '&c列表為空'
       list: '&6[place]&e. &6[ip]'
   mail:
@@ -2781,7 +2781,7 @@ command:
       args: '[newNickName/off] (playerName)'
       explanation:
       - '改變暱稱: cmi.command.nick.different'
-      - 無視暱稱長度限制 cmi.command.nick.bypass.length
+      - '無視暱稱長度限制 cmi.command.nick.bypass.length'
     info:
       changed: '&e暱稱已改變為 &r[newNickName] &e，舊暱稱是 &r[oldNickName]'
       changedTarget: '&e你的暱稱&e被 &r[senderDisplayName] 改為 &r[newNickName]'
@@ -2824,7 +2824,7 @@ command:
       info: '&e播放自定義粒子動畫'
       args: ''
       explanation:
-      - 使用方法在 http://www.zrips.net/cmi/extra/particles/
+      - '使用方法在 http://www.zrips.net/cmi/extra/particles/'
   patrol:
     help:
       info: '&e巡邏'
@@ -3017,7 +3017,7 @@ command:
       requiredExp: ' &e經驗: [color][current]&e/&6[needed]'
       requiredVotes: ' &e票數: [color][current]&e/&6[needed]'
       requiredPerm: ' &e權限: '
-      requiredMcmmo: ' &eMcmmo: '
+      requiredMcmmo: ' &eMcMMO: '
       requiredMcmmoList: ' &e[color][name]'
       requiredMcmmoListHover: ' &e[color][current]&e/&6[needed]'
       requiredMcmmoPower: mcmmo能量
@@ -3122,8 +3122,7 @@ command:
       - cmi.command.repair.repairshare.bypass - 不添加共享修復保護地修復物品
     info:
       feedback: '&e已成功修復 &3[playerDisplayName]&e-(&3[offon]&e) 的 &3[amount]&e 件物品.'
-      feedbackMoney: '&e你以為 &3[playerDisplayName]&e 修理  &3[amount]&e 件物品
-        (&3[offon]&e). 花費: &7[cost]'
+      feedbackMoney: '&e你以為 &3[playerDisplayName]&e 修理  &3[amount]&e 件物品(&3[offon]&e). 花費: &7[cost]'
       itemOwner: '&e上一次修復由: &6[owner]'
       cantUse: '!title!&c你不能使用這個!subtitle!&e請自己修理這個!'
   repaircost:
@@ -3147,10 +3146,9 @@ command:
   replaceblock:
     help:
       info: '&e替換你周圍的方塊'
-      args: '&eid &6[blockName:data/id:data]&e w &6[blockName:data/id:data] &er &6[range
-        in chunks/g]&e y &6[max height]'
+      args: '&eid &6[blockName:data/id:data]&e w &6[blockName:data/id:data] &er &6[range in chunks/g]&e y &6[max height]'
       explanation:
-      - '&6SubCommands:'
+      - '&6子命令:'
       - '&e- &6pause &e- 暫停替換'
       - '- &6continue &e- 繼續替換'
       - '- &6stop &e- 停止替換'
@@ -3290,8 +3288,7 @@ command:
       autospeedChange: '&e自動調速設置為 [state]'
       messagesChange: '&e資訊輸出設置為 [state]'
       NoInfo: '&e無資訊'
-      infoShow: '&6TPS: &3[tps] &6剩余 &e[left] &6(&e[time]&6) &6速度: &e[speed] &6已找到:
-        &e[found]'
+      infoShow: '&6TPS: &3[tps] &6剩余 &e[left] &6(&e[time]&6) &6速度: &e[speed] &6已找到: &e[found]'
       Teleport: '&e點擊傳送'
       scanList: '&2[number]. &e[place] &6[amount] &8(&7X:&f[x] &7Y:&f[y] &7Z:&f[z]&8)'
       scanListChecked: '&7[number]. [place] [amount] (X:[x] Y:[y] Z:[z])'
@@ -3322,19 +3319,19 @@ command:
       enchantLevelChance: '&c等級降低的機率: &7[chance]%'
       gotIngredients: '&e你得到了 [itemList]'
       gotIngredientsFormat: '&6[material]&7-&6[amount]'
-      itemBroke: '&cItem broke with [chance]% break chance'
-      confirm: '&2確認清除. Cost: &c[price]'
+      itemBroke: '&c物品以 [chance]% 機率損壞'
+      confirm: '&2確認清除. 花費: &c[price]'
       itemBreakChance: '&c物品損毀機率: [chance]%'
-      itemBreakChanceExtra: '&c[durability]% durability adds [chance]% break chance'
-      itemBreak: '&cItem will break on click!'
+      itemBreakChanceExtra: '&c[durability]% 耐久度增加 [chance]% 機率損壞'
+      itemBreak: '&c物品將在點擊時損壞!'
       ingredientReturnChance: '&7成分退回機會: [chance]%'
       cantScavenge: '&c無法清除'
-      insertItem: '&2Insert item in a slot above'
+      insertItem: '&2在上方的欄位中插入物品'
       scavengeCost: '&8清除成本: [cost]'
       moreTitle: '金額不正確: [input]/[required]'
       moreLore:
       - '&b您需要更多此物品.'
-      - '&bRequires atleast &e[amount]'
+      - '&b至少需要 &e[amount]'
       title: '&2Scavenger'
   schedule:
     help:
