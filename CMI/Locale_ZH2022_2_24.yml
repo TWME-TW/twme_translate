@@ -912,7 +912,7 @@ command:
         gravity: '&7受重力影響'
         glow: '&7發光'
         invulnerable: '&7無敵'
-        name: '&7Name'
+        name: '&7名字'
         interactable: '&7可交互'
   attachcommand:
     help:
@@ -1075,7 +1075,7 @@ command:
       cantBreak: '&e你不能破壞這個，因為你不在能量群組內'
       minusCd: '&e生怪磚生成冷卻時間減少&6[sec]&e秒'
       add: '&e為 &6[playerDisplayName]&e 增加了 &6[amount]元 &e生怪磚生成費用'
-      set: '&e將 &6[playerDisplayName] &e的生怪磚生成費用設定為 &6[amount]元 &e'
+      set: '&e將 &6[playerDisplayName] &e的生怪磚生成費用設定為 &6[amount] &e元'
       clear: '&e清除了 &6[playerDisplayName] &e的所有怪磚生成費用'
       reset: '&e重置 &6[playerDisplayName] &e的生怪磚生成收費群組'
       take: '&e從 &6[playerDisplayName] &e收取了&6[amount]元 &e生怪磚生成費用'
@@ -1716,7 +1716,7 @@ command:
     info:
       feedback: '&6將 &e[amount] &6x &e[itemname] &6(&e[customitemname]&6) 給予玩家 &e[playerDisplayName]'
       maxLimit: '&c一次不可獲得多於&7[max]的物品'
-      notItem: '&c我們無法給您這個, 因為這個不是物品'
+      notItem: '&c我們無法給你這個, 因為這個不是物品'
       maxLimitResize: '&c你不可獲得多於 &7[max]. &c調整限制.'
   giveall:
     help:
