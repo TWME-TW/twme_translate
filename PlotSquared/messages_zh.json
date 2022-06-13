@@ -429,7 +429,7 @@
   "help.help_item": "<gold><usage> <gray>[<gold><alias></gold>]</gray>\n <dark_gray>- </dark_gray><gray><desc></gray>\n",
   "help.help_display_all_commands": "<prefix><gray>顯示所有命令</gray>",
   "help.direction": "<prefix><gold>當前朝向:</gold><gray><dir></gray>",
-  "help.no_permission": "<prefix><red>You have no permission to access commands of that sub category, hence you cannot access the help page.</red>",
+  "help.no_permission": "<prefix><red>您無權訪問該子類別的命令,因此您無法訪問幫助頁面.</red>",
   "category.command_category_claiming": "<gray>地皮申領</gray>",
   "category.command_category_teleport": "<gray>地皮傳送</gray>",
   "category.command_category_settings": "<gray>地皮保護</gray>",
