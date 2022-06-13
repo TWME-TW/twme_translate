@@ -50,7 +50,7 @@ command:
 click-for-help: 點擊獲取幫助
 click-to-confirm: 點擊進行確認
 click-to-toggle: 點擊進行切換
-plugin-reloaded: <green><name> v<version> 已重新載入
+plugin-reloaded: <green><name>  <version> 已重新載入
 ui:
     page-title: squaremap - {world}
     coordinates: 坐標<br/>{x}, {z}
