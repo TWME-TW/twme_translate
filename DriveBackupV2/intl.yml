@@ -138,8 +138,8 @@ player-join-update-available: |-
   有可用更新，請在此處獲取: <gold><click:open_url:http://bit.ly/2M14uVD>http://bit.ly/2M14uVD</click></gold>
   或執行 <gold><click:run_command:/drivebackup update>/drivebackup update</click></gold>
 player-join-backup-failed: |-
-  <red>The last backup failed!<red>
-  Check the console for more info
+  <red>最近一次的備份失敗!<red>
+  檢查控制台以獲得更多資訊
 debug-log-creating: "Generating Debug Log"
 debug-log-created: "Debug URL: <url>"
 connection-error: "Failed to connect to <domain>, check your network connection and server firewall"
