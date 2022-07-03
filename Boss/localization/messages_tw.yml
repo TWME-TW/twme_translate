@@ -28,24 +28,24 @@
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------
 Commands:
-  Error: '&4&lOups! &cThe command failed :( Check the console and report the error.'
-  Header_No_Subcommands: '&cThere are no arguments for this command.'
-  Header_No_Subcommands_Permission: '&cYou don''t have permissions to view any subcommands.'
+  Error: '&4&l阿! &c命令失敗 :( 檢查控制台報錯.'
+  Header_No_Subcommands: '&c此命令沒有參數.'
+  Header_No_Subcommands_Permission: '&c您無權查看任何子命令.'
   Header_Color: GOLD
   Header_Secondary_Color: RED
-  Reloading: reloading
-  Disabled: disabled
-  Use_While_Null: '&cCannot use this command while the plugin is {state}.'
-  Incompatible: This command requires Minecraft {0} or greater.
+  Reloading: 重新載入中
+  Disabled: 已停用
+  Use_While_Null: '&c無法使用此指令 在插件狀態為 {state} 時.'
+  Incompatible: 此指令需要 {0} 或更高的 Minecraft 版本.
   Toggled_Plugin_Part: '''&7You are '' + (ignoring ? ''&2no longer'' : ''&cnow'') + '' &7ignoring {0}.'''
   Use_Alternative_Header: false
-  Alternative_Header: '&cBoss: &7Type ''/{0} ?'' to see all commands.'
-  No_Console: '&cYou may only use this command as a player.'
-  No_BungeeCord: You need BungeeCord enabled use this feature.
-  Requires_Console: '&cThis command requires execution from the console.'
-  Requires_Tools: To use this feature, enable Register_Tools in settings.yml and restart.
-  Console_Missing_Player_Name: When running from console, specify player name.
-  Cooldown_Wait: '&cWait {duration} second(s) before using this command again.'
+  Alternative_Header: '&cBoss: &7輸入 ''/{0} ?'' 查看所有指令.'
+  No_Console: '&c您只能作為玩家使用此命令.'
+  No_BungeeCord: 您需要使用 BungeeCord 才能使用此功能.
+  Requires_Console: '&c此命令需要從控制台執行.'
+  Requires_Tools: 要使用此功能, 請在 settings.yml 中啟用 Register_Tools 並重新啟動.
+  Console_Missing_Player_Name: 從控制台運行時，請指定玩家名稱.
+  Cooldown_Wait: '&c在再次使用此命令之前請等待 {duration} 秒.'
   Invalid_Argument: '&cInvalid argument. Run &6/{label} ? &cfor help.'
   Invalid_Sub_Argument: '&cInvalid argument. Run ''/{label} {0}'' for help.'
   Invalid_Argument_Multiline: '&cInvalid argument. Usage:'
