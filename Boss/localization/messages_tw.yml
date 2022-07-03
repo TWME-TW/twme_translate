@@ -53,7 +53,7 @@ Commands:
   Invalid_Number: '該數字必須是整數或小數. 得到: ''{input}'''
   Invalid_World: '無效的世界 ''{world}''. 可用: {available}'
   Invalid_Boss: '名為''{0}''的 Boss 不存在. 可用: {1}'
-  Invalid_Bosses: There are no Bosses alive that match your search.
+  Invalid_Bosses: 沒有與您的搜索符合的 Boss 活著.
   Invalid_Boss_Type: '&cInvalid Boss type ''{0}''. Available: {1}'
   Invalid_Boss_Uid: 'Invalid Boss from entity UUID: {0}'
   Invalid_Boss_Dead: '&cThe Boss is no longer alive.'
