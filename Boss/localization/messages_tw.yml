@@ -56,42 +56,42 @@ Commands:
   Invalid_Bosses: 沒有與您的搜索符合的 Boss 活著.
   Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''. 可用的: {1}'
   Invalid_Boss_Uid: 'Invalid Boss from entity UUID: {0}'
-  Invalid_Boss_Dead: '&cThe Boss is no longer alive.'
-  Invalid_Boss_Uninstalled: Boss '{0}' is not installed on this server.
-  Invalid_Amount: Please enter a valid amount number.
-  Label_Authors: Made by
-  Label_Description: '&c&lDescription:'
-  Label_Optional_Args: optional arguments
-  Label_Required_Args: required arguments
-  Label_Usages: '&c&lUsages:'
-  Label_Usage: '&c&lUsage:'
+  Invalid_Boss_Dead: '&cBoss 已死亡.'
+  Invalid_Boss_Uninstalled: Boss '{0}' 未安裝在此服務器上.
+  Invalid_Amount: 請輸入有效的金額.
+  Label_Authors: 製作人
+  Label_Description: '&c&l描述:'
+  Label_Optional_Args: 可選參數
+  Label_Required_Args: 必需的參數
+  Label_Usages: '&c&l用法:'
+  Label_Usage: '&c&l用法:'
   Label_Help_For: Help for /{label}
   Label_Subcommand_Description: ' &f/{label} {sublabel} {usage+}{dash+}{description}'
-  Help_Tooltip_Description: '&7Description: &f{description}'
-  Help_Tooltip_Permission: '&7Permission: &f{permission}'
-  Help_Tooltip_Usage: '&7Usage: &f'
-  Reload_Description: Reload the configuration.
-  Reload_Started: Reloading plugin's data, please wait..
-  Reload_Success: '&6Boss {plugin_version} has been reloaded.'
-  Reload_Fail: '&4Oups, &creloading failed! See the console for more information. Error: {error}'
-  Reload_File_Load_Error: '&4Oups, &cthere was a problem loading files from your disk! See the console for more information. Boss has not been reloaded.'
-  Debug_Description: ZIP your settings for reporting bugs.
-  Debug_Preparing: '&6Preparing debug log...'
-  Debug_Success: '&2Successfuly copied {amount} file(s) to debug.zip. Your sensitive MySQL information has been removed from yml files. Please upload it via ufile.io and send it to us for review.'
-  Debug_Copy_Fail: '&cCopying files failed on file messages_en and it was stopped. See console for more information.'
-  Debug_Zip_Fail: '&cCreating a ZIP of your files failed, see console for more information. Please ZIP debug/ folder and send it to us via ufile.io manually.'
+  Help_Tooltip_Description: '&7描述: &f{description}'
+  Help_Tooltip_Permission: '&7權限: &f{permission}'
+  Help_Tooltip_Usage: '&7用法: &f'
+  Reload_Description: 重新加載配置.
+  Reload_Started: 正在重新加載插件的數據, 請稍候..
+  Reload_Success: '&6Boss {plugin_version} 已重新加載.'
+  Reload_Fail: '&4Oups, &c重新加載 失敗! 有關更多信息請參閱控制台. 錯誤: {error}'
+  Reload_File_Load_Error: '&4Oups, &c從您的磁盤加載文件時出現問題! 有關更多信息請參閱控制台. Boss 沒有重新加載.'
+  Debug_Description: 壓縮您的設置以報告錯誤.
+  Debug_Preparing: '&6正在準備除錯日誌...'
+  Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip. 您的敏感 MySQL 信息已從 yml 文件中刪除. 請通過 ufile.io 上傳並發送給我們進行審核.'
+  Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了. 有關更多信息請參閱控制台.'
+  Debug_Zip_Fail: '&c創建文件的 ZIP 失敗, 請參閱控制台了解更多信息. 請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們.'
   Perms_Description: List all permissions the plugin has.
-  Perms_Header: Listing All Plugin Permissions
-  Perms_Main: Main
-  Perms_Permissions: 'Permissions:'
+  Perms_Header: 列出插件所有權限
+  Perms_Main: 主要
+  Perms_Permissions: '權限:'
   Perms_True_By_Default: '&7[true by default]'
-  Perms_Info: '&7Info: &f'
-  Perms_Default: '&7Default? '
-  Perms_Applied: '&7Do you have it? '
-  Perms_Yes: '&2yes'
-  Perms_No: '&cno'
+  Perms_Info: '&7資訊: &f'
+  Perms_Default: '&7預設? '
+  Perms_Applied: '&7你有嗎? '
+  Perms_Yes: '&2是'
+  Perms_No: '&c否'
   Biome:
-    Description: Find biome at your or a player's location.
+    Description: 在您或玩家的位置找到生物群落.
     Success: '&7Biome at x: {0} y: {1} z: {2} is &6{3}.'
   Butcher:
     Description: Kill spawned Bosses.

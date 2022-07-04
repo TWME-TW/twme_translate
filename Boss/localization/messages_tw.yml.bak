@@ -28,53 +28,53 @@
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------
 Commands:
-  Error: '&4&lOups! &cThe command failed :( Check the console and report the error.'
-  Header_No_Subcommands: '&cThere are no arguments for this command.'
-  Header_No_Subcommands_Permission: '&cYou don''t have permissions to view any subcommands.'
+  Error: '&4&l阿! &c命令失敗 :( 檢查控制台並報告錯誤.'
+  Header_No_Subcommands: '&c此命令沒有參數.'
+  Header_No_Subcommands_Permission: '&c您沒有查看任何子命令的權限.'
   Header_Color: GOLD
   Header_Secondary_Color: RED
-  Reloading: reloading
-  Disabled: disabled
-  Use_While_Null: '&cCannot use this command while the plugin is {state}.'
-  Incompatible: This command requires Minecraft {0} or greater.
+  Reloading: 重新載入中
+  Disabled: 已停用
+  Use_While_Null: '&c無法使用此指令 在插件狀態為 {state} 時.'
+  Incompatible: 此指令需要 {0} 或更高的 Minecraft 版本.
   Toggled_Plugin_Part: '''&7You are '' + (ignoring ? ''&2no longer'' : ''&cnow'') + '' &7ignoring {0}.'''
   Use_Alternative_Header: false
-  Alternative_Header: '&cBoss: &7Type ''/{0} ?'' to see all commands.'
-  No_Console: '&cYou may only use this command as a player.'
-  No_BungeeCord: You need BungeeCord enabled use this feature.
-  Requires_Console: '&cThis command requires execution from the console.'
-  Requires_Tools: To use this feature, enable Register_Tools in settings.yml and restart.
-  Console_Missing_Player_Name: When running from console, specify player name.
-  Cooldown_Wait: '&cWait {duration} second(s) before using this command again.'
-  Invalid_Argument: '&cInvalid argument. Run &6/{label} ? &cfor help.'
-  Invalid_Sub_Argument: '&cInvalid argument. Run ''/{label} {0}'' for help.'
-  Invalid_Argument_Multiline: '&cInvalid argument. Usage:'
-  Invalid_Time: 'Expected time such as ''3 hours'' or ''15 minutes'', got: ''{input}'''
-  Invalid_Number: 'The number must be a whole or a decimal number. Got: ''{input}'''
-  Invalid_World: 'Invalid world ''{world}''. Available: {available}'
-  Invalid_Boss: 'Boss named ''{0}'' doesn''t exist. Available: {1}'
-  Invalid_Bosses: There are no Bosses alive that match your search.
-  Invalid_Boss_Type: '&cInvalid Boss type ''{0}''. Available: {1}'
+  Alternative_Header: '&cBoss: &7輸入 ''/{0} ?'' 查看所有指令.'
+  No_Console: '&c您只能作為玩家使用此命令.'
+  No_BungeeCord: 您需要使用 BungeeCord 才能使用此功能.
+  Requires_Console: '&c此命令需要從控制台執行.'
+  Requires_Tools: 要使用此功能, 請在 settings.yml 中啟用 Register_Tools 並重新啟動.
+  Console_Missing_Player_Name: 從控制台運行時，請指定玩家名稱.
+  Cooldown_Wait: '&c在再次使用此命令之前請等待 {duration} 秒.'
+  Invalid_Argument: '&c無效的引數. 運行 &6/{label} ？  &c尋求幫助.'
+  Invalid_Sub_Argument: '&c無效的子引數. 運行 ''/{label} {0}'' 尋求幫助.'
+  Invalid_Argument_Multiline: '&c無效的引數。 用法:'
+  Invalid_Time: '預期時間, 例如 ''3 hours'' 或 ''15 minutes'', 得到：''{input}'''
+  Invalid_Number: '該數字必須是整數或小數. 得到: ''{input}'''
+  Invalid_World: '無效的世界 ''{world}''. 可用: {available}'
+  Invalid_Boss: '名為''{0}''的 Boss 不存在. 可用: {1}'
+  Invalid_Bosses: 沒有與您的搜索符合的 Boss 活著.
+  Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''. 可用的: {1}'
   Invalid_Boss_Uid: 'Invalid Boss from entity UUID: {0}'
-  Invalid_Boss_Dead: '&cThe Boss is no longer alive.'
-  Invalid_Boss_Uninstalled: Boss '{0}' is not installed on this server.
-  Invalid_Amount: Please enter a valid amount number.
-  Label_Authors: Made by
-  Label_Description: '&c&lDescription:'
-  Label_Optional_Args: optional arguments
-  Label_Required_Args: required arguments
-  Label_Usages: '&c&lUsages:'
-  Label_Usage: '&c&lUsage:'
+  Invalid_Boss_Dead: '&cBoss 已死亡.'
+  Invalid_Boss_Uninstalled: Boss '{0}' 未安裝在此服務器上.
+  Invalid_Amount: 請輸入有效的金額.
+  Label_Authors: 製作人
+  Label_Description: '&c&l描述:'
+  Label_Optional_Args: 可選參數
+  Label_Required_Args: 必需的參數
+  Label_Usages: '&c&l用法:'
+  Label_Usage: '&c&l用法:'
   Label_Help_For: Help for /{label}
   Label_Subcommand_Description: ' &f/{label} {sublabel} {usage+}{dash+}{description}'
-  Help_Tooltip_Description: '&7Description: &f{description}'
-  Help_Tooltip_Permission: '&7Permission: &f{permission}'
-  Help_Tooltip_Usage: '&7Usage: &f'
-  Reload_Description: Reload the configuration.
-  Reload_Started: Reloading plugin's data, please wait..
-  Reload_Success: '&6Boss {plugin_version} has been reloaded.'
-  Reload_Fail: '&4Oups, &creloading failed! See the console for more information. Error: {error}'
-  Reload_File_Load_Error: '&4Oups, &cthere was a problem loading files from your disk! See the console for more information. Boss has not been reloaded.'
+  Help_Tooltip_Description: '&7描述: &f{description}'
+  Help_Tooltip_Permission: '&7權限: &f{permission}'
+  Help_Tooltip_Usage: '&7用法: &f'
+  Reload_Description: 重新加載配置.
+  Reload_Started: 正在重新加載插件的數據, 請稍候..
+  Reload_Success: '&6Boss {plugin_version} 已重新加載.'
+  Reload_Fail: '&4Oups, &c重新加載 失敗! 有關更多信息請參閱控制台. 錯誤: {error}'
+  Reload_File_Load_Error: '&4Oups, &c從您的磁盤加載文件時出現問題! 有關更多信息請參閱控制台. Boss 沒有重新加載.'
   Debug_Description: ZIP your settings for reporting bugs.
   Debug_Preparing: '&6Preparing debug log...'
   Debug_Success: '&2Successfuly copied {amount} file(s) to debug.zip. Your sensitive MySQL information has been removed from yml files. Please upload it via ufile.io and send it to us for review.'
