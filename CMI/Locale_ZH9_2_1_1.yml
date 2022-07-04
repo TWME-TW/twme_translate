@@ -167,10 +167,10 @@ info:
     quickbarslots: '&e你的快捷欄中至少要有 &6[count] &e個空位!'
     subinv: '&e你的子(副)背包應該為空的!'
     subinvslots: '&e你的子(副)背包至少要有 &6[count] &e個空位!'
-  Relog: '&eRelog might be needed for change to take effect'
-  CommandFormat: '&cIncorrect command format'
-  ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
-  ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
+  Relog: '&e可能需要重新登錄才能使更改生效'
+  CommandFormat: '&c命令格式不正確'
+  ServerSwitchOut: ' &6[playerDisplayName] &e已傳送到 &6[serverName] 伺服器' 
+  ServerSwitchIn: ' &6[playerDisplayName] &e來自 &6[serverName] &e伺服器'
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
