@@ -155,12 +155,12 @@ info:
   pvp:
     noGodDamage: '!actionbar!&c你不能在上帝模式時傷害玩家'
   pve:
-    noGodDamage: '!actionbar!&cYou can''t damage mobs while being immortal'
+    noGodDamage: '!actionbar!&c你不能在上帝模式時傷害動物'
   InvEmpty:
     armor: '&e你應該清空裝備欄!'
     hand: '&e你應該清空手中物品!'
     maininv: '&e你的主要背包應該為空的!'
-    maininvslots: '&e你的主要背包應該至少有 &6[count] &e個空位 slots!'
+    maininvslots: '&e你的主要背包應該至少有 &6[count] &e個空位!'
     inv: '&e你應該清空背包!'
     offhand: '&e你應該清空副手!'
     quickbar: '&e!'
