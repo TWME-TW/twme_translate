@@ -4079,9 +4079,9 @@ command:
       total: '&e總價值: &7[total]'
   worthlist:
     help:
-      info: '&eCheck list of items with set sell prices'
+      info: '&e檢查具有設定售價的物品清單'
       args: (playerName) (-missing)
     info:
       type: '&7[type]'
-      worth: '&7Worth: &e[price]'
-      title: '&8Worth List'
+      worth: '&7價值: &e[price]'
+      title: '&8價值清單'
