@@ -28,33 +28,39 @@
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------
 Commands:
+<<<<<<< HEAD
   Error: '&4&l阿! &c命令失敗 :( 檢查控制台並報告錯誤.'
   Header_No_Subcommands: '&c此命令沒有參數.'
   Header_No_Subcommands_Permission: '&c您沒有查看任何子命令的權限.'
+=======
+  Error: '&4&l阿! &c命令失敗 :( 檢查控制台報錯.'
+  Header_No_Subcommands: '&c此命令沒有參數.'
+  Header_No_Subcommands_Permission: '&c您無權查看任何子命令.'
+>>>>>>> 93f3fe9577986140e6633dd2d31234fc029b098c
   Header_Color: GOLD
   Header_Secondary_Color: RED
-  Reloading: reloading
-  Disabled: disabled
-  Use_While_Null: '&cCannot use this command while the plugin is {state}.'
-  Incompatible: This command requires Minecraft {0} or greater.
+  Reloading: 重新載入中
+  Disabled: 已停用
+  Use_While_Null: '&c無法使用此指令 在插件狀態為 {state} 時.'
+  Incompatible: 此指令需要 {0} 或更高的 Minecraft 版本.
   Toggled_Plugin_Part: '''&7You are '' + (ignoring ? ''&2no longer'' : ''&cnow'') + '' &7ignoring {0}.'''
   Use_Alternative_Header: false
-  Alternative_Header: '&cBoss: &7Type ''/{0} ?'' to see all commands.'
-  No_Console: '&cYou may only use this command as a player.'
-  No_BungeeCord: You need BungeeCord enabled use this feature.
-  Requires_Console: '&cThis command requires execution from the console.'
-  Requires_Tools: To use this feature, enable Register_Tools in settings.yml and restart.
-  Console_Missing_Player_Name: When running from console, specify player name.
-  Cooldown_Wait: '&cWait {duration} second(s) before using this command again.'
-  Invalid_Argument: '&cInvalid argument. Run &6/{label} ? &cfor help.'
-  Invalid_Sub_Argument: '&cInvalid argument. Run ''/{label} {0}'' for help.'
-  Invalid_Argument_Multiline: '&cInvalid argument. Usage:'
-  Invalid_Time: 'Expected time such as ''3 hours'' or ''15 minutes'', got: ''{input}'''
-  Invalid_Number: 'The number must be a whole or a decimal number. Got: ''{input}'''
-  Invalid_World: 'Invalid world ''{world}''. Available: {available}'
-  Invalid_Boss: 'Boss named ''{0}'' doesn''t exist. Available: {1}'
-  Invalid_Bosses: There are no Bosses alive that match your search.
-  Invalid_Boss_Type: '&cInvalid Boss type ''{0}''. Available: {1}'
+  Alternative_Header: '&cBoss: &7輸入 ''/{0} ?'' 查看所有指令.'
+  No_Console: '&c您只能作為玩家使用此命令.'
+  No_BungeeCord: 您需要使用 BungeeCord 才能使用此功能.
+  Requires_Console: '&c此命令需要從控制台執行.'
+  Requires_Tools: 要使用此功能, 請在 settings.yml 中啟用 Register_Tools 並重新啟動.
+  Console_Missing_Player_Name: 從控制台運行時，請指定玩家名稱.
+  Cooldown_Wait: '&c在再次使用此命令之前請等待 {duration} 秒.'
+  Invalid_Argument: '&c無效的引數. 運行 &6/{label} ？  &c尋求幫助.'
+  Invalid_Sub_Argument: '&c無效的子引數. 運行 ''/{label} {0}'' 尋求幫助.'
+  Invalid_Argument_Multiline: '&c無效的引數。 用法:'
+  Invalid_Time: '預期時間, 例如 ''3 hours'' 或 ''15 minutes'', 得到：''{input}'''
+  Invalid_Number: '該數字必須是整數或小數. 得到: ''{input}'''
+  Invalid_World: '無效的世界 ''{world}''. 可用: {available}'
+  Invalid_Boss: '名為''{0}''的 Boss 不存在. 可用: {1}'
+  Invalid_Bosses: 沒有與您的搜索符合的 Boss 活著.
+  Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''. 可用的: {1}'
   Invalid_Boss_Uid: 'Invalid Boss from entity UUID: {0}'
   Invalid_Boss_Dead: '&cThe Boss is no longer alive.'
   Invalid_Boss_Uninstalled: Boss '{0}' is not installed on this server.
