@@ -28,15 +28,9 @@
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------
 Commands:
-<<<<<<< HEAD
   Error: '&4&l阿! &c命令失敗 :( 檢查控制台並報告錯誤.'
   Header_No_Subcommands: '&c此命令沒有參數.'
   Header_No_Subcommands_Permission: '&c您沒有查看任何子命令的權限.'
-=======
-  Error: '&4&l阿! &c命令失敗 :( 檢查控制台報錯.'
-  Header_No_Subcommands: '&c此命令沒有參數.'
-  Header_No_Subcommands_Permission: '&c您無權查看任何子命令.'
->>>>>>> 93f3fe9577986140e6633dd2d31234fc029b098c
   Header_Color: GOLD
   Header_Secondary_Color: RED
   Reloading: 重新載入中
