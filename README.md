@@ -19,12 +19,12 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[DriveBackupV2](https://www.spigotmc.org/resources/drivebackupv2.79519/)|1.5.4||還沒翻完|
 |[FastAsyncWorldEdit](https://www.spigotmc.org/resources/fast-async-worldedit.13932/)|||
 |[HeadDatabase](https://www.spigotmc.org/resources/head-database.14280/)|4.15.1||
+|[Mob Farm Manager](https://www.spigotmc.org/resources/mob-farm-manager-supports-1-7-10-up-to-1-18-hopper-support.15127/) |2.0.3.0||
 |[InvisibleItemFrames](https://www.spigotmc.org/resources/invisibleitemframes-better-item-frames.85085/updates)|2.5.0|未經測試|
 |[NoteBlockEditor](https://www.spigotmc.org/resources/noteblockeditor.87150/)|1.4.0|完全未經測試|
 |[PetBlocks](https://www.spigotmc.org/resources/petblocks-mysql-bungeecord-customizeable-gui-1-8-1-18.12056/)|未知||
 |[PlotSquared v6](https://www.spigotmc.org/resources/plotsquared-v6.77506/)||翻譯中|
 |[SchematicBrushReborn](https://www.spigotmc.org/resources/schematic-brush-reborn.79441/)||未實裝|
 |[TrainCarts](https://www.spigotmc.org/resources/traincarts.39592/)|||
-|[Mob Farm Manager](https://www.spigotmc.org/resources/mob-farm-manager-supports-1-7-10-up-to-1-18-hopper-support.15127/) |2.0.3.0||
 
 
