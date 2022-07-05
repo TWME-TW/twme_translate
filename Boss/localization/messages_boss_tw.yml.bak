@@ -43,13 +43,13 @@ Commands:
   Reload_Description: 重新加載配置.
   Reload_Started: '正在重新加載插件的數據, 請稍候..'
   Reload_Success: '&6Boss {plugin_version} 已重新加載.'
-  Reload_Fail: '&4Oups, &c重新加載 失敗! 有關更多信息請參閱控制台. 錯誤: {error}'
-  Reload_File_Load_Error: '&4Oups, &c從您的磁盤加載文件時出現問題! 有關更多信息請參閱控制台. Boss 沒有重新加載.'
+  Reload_Fail: '&4Oups, &c重新加載 失敗! 有關更多訊息請參閱控制台. 錯誤: {error}'
+  Reload_File_Load_Error: '&4Oups, &c從您的磁盤加載文件時出現問題! 有關更多訊息請參閱控制台. Boss 沒有重新加載.'
   Debug_Description: 壓縮您的設置以報告錯誤.
   Debug_Preparing: '&6正在準備除錯日誌...'
-  Debug_Success: &2已成功複製 {amount} 個文件到 debug.zip. 您的敏感 MySQL 信息已從 yml 文件中刪除. 請通過 ufile.io 上傳並發送給我們進行審核.
-  Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了. 有關更多信息請參閱控制台.'
-  Debug_Zip_Fail: '&c創建文件的 ZIP 失敗, 請參閱控制台了解更多信息. 請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們.'
+  Debug_Success: &2已成功複製 {amount} 個文件到 debug.zip. 您的敏感 MySQL 訊息已從 yml 文件中刪除. 請通過 ufile.io 上傳並發送給我們進行審核.
+  Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了. 有關更多訊息請參閱控制台.'
+  Debug_Zip_Fail: '&c創建文件的 ZIP 失敗, 請參閱控制台了解更多訊息. 請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們.'
   Perms_Description: List all permissions the plugin has.
   Perms_Header: 列出插件所有權限
   Perms_Main: 主要
@@ -128,7 +128,7 @@ Egg:
     - ''
     - '&f3. &7將 Debug key 設置為 ''[spawning]'' '
     - '&7在 settings.yml 並查看控制台'
-    - '&7了解更多信息.'
+    - '&7了解更多訊息.'
     Fail_Claim: '你不能在 {0} 的領地中生成 Boss.'
     Fail_Limit: Boss 超出限制(參見 Boss 選單 > 生成限制)
     Fail_Cancelled: 另一個插件取消了事件
@@ -175,9 +175,9 @@ Menu:
 Conversation:
   Not_Conversing: '&c只有當您被要求在聊天中輸入內容時, 您才能使用此指令.'
   Requires_Player: 只有玩家可以進入此對話.
-  Error: '&c哎呀! 這次對話有問題! 請聯繫管理員查看控制台以獲取詳細信息.'
+  Error: '&c哎呀! 這次對話有問題! 請聯繫管理員查看控制台以獲取詳細訊息.'
 Tool:
-  Error: '&c哎呀! 這個工具有問題! 請聯繫管理員查看控制台以獲取詳細信息.'
+  Error: '&c哎呀! 這個工具有問題! 請聯繫管理員查看控制台以獲取詳細訊息.'
 Cases:
   Second: '秒, 秒'
   Message: '訊息, 訊息'
@@ -198,7 +198,7 @@ World: 世界
 Enabled: '&2已啟用'
 Disabled: '&4已禁用'
 And: 和
-Data_Missing: '&c{name} 缺少資料庫信息! 請僅在遊戲中創建 {type}! 跳過..'
+Data_Missing: '&c{name} 缺少資料庫訊息! 請僅在遊戲中創建 {type}! 跳過..'
 Data_Loading: 資料庫正在加載資料，請稍候...
 No_Permission: '&c沒有權限: {permission}'
 Version: 1
