@@ -47,7 +47,7 @@ Commands:
   Reload_File_Load_Error: '&4Oups, &c從您的磁盤加載文件時出現問題! 有關更多訊息請參閱控制台. Boss 沒有重新加載.'
   Debug_Description: 壓縮您的設置以報告錯誤.
   Debug_Preparing: '&6正在準備除錯日誌...'
-  Debug_Success: &2已成功複製 {amount} 個文件到 debug.zip. 您的敏感 MySQL 訊息已從 yml 文件中刪除. 請通過 ufile.io 上傳並發送給我們進行審核.
+  Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip. 您的敏感 MySQL 訊息已從 yml 文件中刪除. 請通過 ufile.io 上傳並發送給我們進行審核.'
   Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了. 有關更多訊息請參閱控制台.'
   Debug_Zip_Fail: '&c創建文件的 ZIP 失敗, 請參閱控制台了解更多訊息. 請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們.'
   Perms_Description: List all permissions the plugin has.

@@ -1,5 +1,5 @@
 Commands:
-  Error: '&4&l阿! &c指令失敗 :( 檢查控制台並報告錯誤.'
+  Error: '&4&l哎呀! &c指令失敗 :( 檢查控制台並報告錯誤.'
   Header_No_Subcommands: '&c此指令沒有參數.'
   Header_No_Subcommands_Permission: '&c您沒有查看任何子指令的權限.'
   Header_Color: GOLD
