@@ -48,162 +48,130 @@ Experience:
   Pickup: '&6你現在 &7{level} &6等並還有 &7{exp}&6經驗。'
 Upgrades:
   Locked: '&7此升級可從 &6{phase} &7獲得！'
-  Lack_Levels: '&7You lack &6{levels} &7to afford this upgrade.'
-  Lack_Space: '&6Your inventory lacks space! Dropping rest of the items on the floor.'
-  Successful_Purchase: '&aPurchased: &7{upgrade} for {levels}!'
+  Lack_Levels: '&7你缺少 &6{levels} &7 等來支付這次升級。'
+  Lack_Space: '&6您的庫存空間不足！ 將其餘物品掉落在地板上。'
+  Successful_Purchase: '&a已購買：&7{upgrade} 至 {levels}！'
 Bossbar:
-  Title: 'Phase {phase}'
-  Next_Phase: '&6&lArena Entered the &4&l{phase} &6&lPhase'
+  Title: '階段 {phase}'
+  Next_Phase: '&6&l競技場 進入 &4&l{phase} &6&l階段'
   Color:
     Start: GREEN
     Mid: BLUE
     Near_End: RED
 Phase:
-  Next_Phase_Wait: '&6Prepare yourself! The next phase starts in {delay} seconds.'
+  Next_Phase_Wait: '&6做好準備！ 下一階段在 {delay} 秒後開始。'
   Max_Phase:
-    Text: '&6&lArena reached its maximum phase.'
+    Text: '&6&l競技場達到了最高階段。'
     Sound: 'ENTITY_FIREWORK_BLAST, 1F, 1F'
 Title:
   Kick:
-    Title: '&cGame over'
-    Subtitle: '&7Thank you for playing in {arena}'
+    Title: '&c遊戲結束'
+    Subtitle: '&7感謝您遊玩 {arena}'
   Escape:
-    Title: '&cGame over'
-    Subtitle: '&7You abandoned the {arena} area'
+    Title: '&c遊戲結束'
+    Subtitle: '&7你放棄了 {arena} 區域'
 Currency:
-  Name: 'Nugget, Nuggets'
+  Name: '金塊, 金塊'
   Color: GOLD
-  Received: >-
-    &7You received &6{amount} &7and have &6{balance}. &7Go spend them on
-    /arena rewards!
+  Received: '&7您收到 &6{amount} &7並擁有&6 {balance}&7。 把它們花在/arena rewards上！'
 Menu:
-  Cannot_Open_In_Arena: '&cCannot open menu while playing in an arena!'
-  Cannot_Open_Outside_Arena: '&cThis menu is only accessible inside an arena!'
-  Cannot_Open_Outside_Lobby: '&cThis menu is only accessible in the lobby!'
-  Use_Class_Menu: '&cPlease use the class menu to edit class upgrades'
+  Cannot_Open_In_Arena: '&c在競技場玩時無法打開菜單！'
+  Cannot_Open_Outside_Arena: '&c此菜單只能在競技場內訪問！'
+  Cannot_Open_Outside_Lobby: '&c此菜單僅在大廳提供！'
+  Use_Class_Menu: '&c請使用階級菜單編輯階級升級'
   Rewards:
-    Label: '&4Menu Rewards'
-    Individual_Label: Choose a Reward
-    Class_Not_Yet_Configured: '&c&oClass yet not configured!'
-    Select_Class: Select a class
-    Choose_Reward: Choose a Reward
-    More_Nuggets_Needed: '&4You need {reward_cost} Nuggets for this'
-    Bought_Reward: '&2Bought! Remaining: {remaining}'
-    Items_Label: Items
-    Items_Description: |-
-      &r
-      Purchase valuable items to
-      enhance your survival experience.
-    Blocks_Label: Blocks
-    Blocks_Description: |-
-      &r
-      Purchase blocks you can build
-      with while playing in survival.
-    Packs_Label: Packs
-    Packs_Description: |-
-      &r
-      Purchase reward packs or special
-      items only available here.
-    Class_Label: Upgrade Your Class
-    Class_Description: |-
-      &r
-      Upgrade your classes to
-      higher tiers here.
-    Info_Player: |-
-      Balance: &f{nuggets}
-      &r
-      You can spend them on rewards
-      in form of items or special packs.
-    Info_Admin: |-
-      &6Nuggets&7 that players receive in
-      arena, can be spent on rewards.
-      &r
-      You can configure the rewards here.
+    Label: '&菜單獎勵'
+    Individual_Label: 選擇獎勵
+    Class_Not_Yet_Configured: '&c&o階級尚未配置！'
+    Select_Class: 選擇一個階級
+    Choose_Reward: 選擇獎勵
+    More_Nuggets_Needed: '&4為此，您需要 {reward_cost} 塊金塊'
+    Bought_Reward: '&2購買成功! 剩餘: {remaining}'
+    Items_Label: 物品
+    Items_Description: '&r購買貴重物品以增強您的生存體驗。'
+    Blocks_Label: 方塊
+    Blocks_Description: '&r購買你可以在生存遊戲中建造的方塊。'
+    Packs_Label: 包
+    Packs_Description: '&r購買僅在此處可用的獎勵包或特殊物品。'
+    Class_Label: 升級你的階級
+    Class_Description: '&r在這裡將您的階級升級到更高級別。'
+    Info_Player: '餘額: &f{nuggets}&r您可以將它們用於獎勵物品或特殊禮包。'
+    Info_Admin: '&6玩家在競技場獲得的金塊&7，可用於獎勵。&r您可以在此處配置獎勵。'
     Info:
       Edit:
         Items:
-          '0': '&7To edit the rewards, simply'
-          '1': '&emove &7items from your inventory here.'
+          '0': '&7要編輯獎勵，只需'
+          '1': '&e將 &7物品從您的背包中移至此處。'
         Pieces:
-          '0': '&eClick &7an item to set its price'
+          '0': '&e點擊 &7一個物品以設置其價格'
       Purchase:
-        '0': '&7Balance: &f{balance}'
-        '2': '&7Click to make a purchase.'
+        '0': '&7餘額: &f{balance}'
+        '2': '&7點擊進行購買。'
         '3': ' '
-        '4': '&7The item wil be saved to'
-        '5': '&7your inventory.'
+        '4': '&7該物品將保存到'
+        '5': '&7你的背包.'
     Tier:
-      Already_Bought: '&2Thou already hast this tier!'
-      Maximum_Reached: '&2You have the maximum tier'
-      Too_High: '&4This tier is too high for you!'
-      Locked: '&cThis tier is locked'
-      Top: '&cThis is the top tier'
-      Next: '&dNext Tier ->'
-      Added: '&7Added Tier'
-      Purchased: '&6You have purchased {name} Tier {tier}'
-      Purchased_Menu_Title: '&2&lBought tier {tier}!'
+      Already_Bought: '&2你已經有這個等級了!'
+      Maximum_Reached: '&2您已達到最高等級'
+      Too_High: '&4這等級對你來說太高了！'
+      Locked: '&c此等級已鎖定'
+      Top: '&這是最高等級'
+      Next: '&d下一個等級 ->'
+      Added: '&7添加等級'
+      Purchased: '&6您已購買 {name} 等級 {tier}'
+      Purchased_Menu_Title: '&2&l購買等級 {tier}!'
     Not_Set:
-      Helmet: '&7Helmet not set'
-      Chestplate: '&7Chestplate not set'
-      Leggings: '&7Leggings not set'
-      Boots: '&7Boots not set'
+      Helmet: '&7未設置頭盔'
+      Chestplate: '&7未設置胸甲'
+      Leggings: '&7未設置褲子'
+      Boots: '&7未設置靴子'
 Commands:
-  No_Console: '&cYou may only use this command as a player'
-  Disallowed_While_Playing: '&cThis command is disabled while you play in an arena.'
-  Invalid_Argument: '&cInvalid parameter. Run &6/{label} ? &cfor help.'
-  Invalid_Sub_Argument: '&cInvalid parameter. Run ''/{label} {0}'' for help.'
-  Invalid_Argument_Multiline: '&cInvalid parameter. Usage:'
-  Label_Description: '&cDescription: {description}'
-  Label_Usage: '&cUsage:'
-  Label_Usages: '&cUsages:'
-  Error: >-
-    &4&lOups! &cThe command failed :( Check the console and report the
-    error.
+  No_Console: '&c您只能作為玩家使用此命令'
+  Disallowed_While_Playing: '&c當您在競技場中玩遊戲時，此命令會被禁用。'
+  Invalid_Argument: '&c無效的參數。 運行 &6/{label} ？ &c尋求幫助。'
+  Invalid_Sub_Argument: '&c無效的參數。 運行“/{label} {0}”尋求幫助。'
+  Invalid_Argument_Multiline: '&c無效的參數。 用法：'
+  Label_Description: '&c描述： {description}'
+  Label_Usage: '&c用法：'
+  Label_Usages: '&c用法：'
+  Error: '&4&l哎呀！ &c命令失敗:(查看控制台報錯。'
   Join:
-    Suggest: 'Use ''/{label} join <arena>'' to join one.'
+    Suggest: '使用 ''/{label} join <arena>'' 加入其中一個。'
   Leave:
-    Not_Playing: '&cYou are not playing in any arena.'
-    Success: '&6You have abandoned the game in {arena}!'
+    Not_Playing: '&c你沒有在任何競技場上比賽。'
+    Success: '&6您已放棄 {arena} 中的遊戲！'
   Start:
-    Not_Lobby: >-
-      &cYou can only start arenas in lobby state. Use /{label} join first to
-      join an arena.
-    Success: '&6Forced start of the arena {arena}.'
+    Not_Lobby: '&c您只能在大廳狀態下啟動競技場。 先使用 /{label} join 加入競技場。'
+    Success: '&6強制開始競技場 {arena}。'
     Fail: '&cArena {arena} could not start, perhaps player limits were not met?'
   Stop:
-    Already_Stopped: '&cThe arena {arena} is already stopped.'
-    Success: '&7The arena {arena} has been &cstopped.'
+    Already_Stopped: '&c競技場 {arena} 無法啟動，可能沒有達到玩家限制？'
+    Success: '&7競技場 {arena} 已經 &c停止。'
   Menu:
-    Lookup_Failed: '&cObject ''{object}'' not found. Run &7/{label} {0}&c.'
+    Lookup_Failed: '&c找不到對象“{object}”。 運行 &7/{label} {0}&c。'
   Nuggets:
-    Specify_Player: '&cPlease specify the player name.'
-    Invalid_Parameter: '&cUnknown parameter ''{2}''. Available: {available}'
-    Invalid_Amount: '&cInvalid {currency_name} amount: {3}'
-    Balance: '&7You have &6{balance}'
-    Balance_Other: '&6{player} &7has &6{balance}'
-    Set: '&7Set &6{player}''s &7{currency_name} &7to &6{balance}'
-    Gave: '&6{player} &7was given {amount} and has &6{balance}'
-    Took: '&6{player} &7was taken {amount} and has &6{balance}'
+    Specify_Player: '&c請指定玩家名稱。'
+    Invalid_Parameter: '&c未知參數''{2}''。 可用：{available}'
+    Invalid_Amount: '&c{currency_name}金額無效: {3}'
+    Balance: '&7你有 &6{balance}'
+    Balance_Other: '&6{player} &7有 &6{balance}'
+    Set: '&7設置 &6{player}''s &7{currency_name} &7為 &6{balance}'
+    Gave: '&6{player} &7被給予 {amount} 並且擁有 &6{balance}'
+    Took: '&6{player} &7被拿走 {amount} 剩下 &6{balance}'
   Edit:
-    Arena_Running: >-
-      &cCannot edit running arenas. Please stop the arena first via
-      &7/{label} stop {arena}&c.
-    Already_Editing: '&cYou are already editing {arena}.'
-    Enabled: >-
-      &7Arena {arena} is now in &aedit mode&7. Use /{label} tools to obtain
-      setup tools.
-    Disabled: '&7Arena {arena} is &cno longer in edit mode&7.'
+    Arena_Running: '&c無法編輯正在運行的競技場。 請先執行 &7/{label} stop {arena}&c 停止競技場。'
+    Already_Editing: '&c您已經在編輯 {arena}。'
+    Enabled: '競技場 {arena} 現在處於 &a編輯 模式&7。 使用 /{label} tool獲取設置工具。'
+    Disabled: '&7競技場 {arena} 不再處於編輯模式&7。'
   Find:
-    Wrong_Syntax: >-
-      &cInvalid syntax! Enter &7player's name&c, or &7world x y z&c, or just
-      &7x y z
-    Not_Found: '&cNo arena found at your location.'
-    Not_Found_Location: '&cNo arena found at {location}.'
-    Found: '&7Found the &2{arena}&7 arena at your location.'
-    Found_Other: '&7{player} is playing in the &2{arena}&7 arena.'
-    Found_Location: '&7Found &2{arena}&7 arena at {location}.'
+    Wrong_Syntax: '&c無效的語法！ 輸入 &7玩家名稱&c, 或 &7world x y z&c, 或只有 &7x y z'
+    Not_Found: '&c在您的位置找不到競技場。'
+    Not_Found_Location: '&c在 {location} 找不到競技場。'
+    Found: '&7在您所在的位置找到了 &2{arena}&7 競技場。'
+    Found_Other: '&7{player} 正在 &2{arena}&7 競技場中遊玩。'
+    Found_Location: '&7在 {location} 找到 &2{arena}&7 競技場。'
   Change_State:
-    Disabled: '&6Successfully disabled arena &7{name}'
+    Disabled: '&6已成功停用競技場 &7{name}'
     Enabled: '&6Successfully enabled arena &7{name}'
   Reload_Success: '&7The plugin has been reloaded successfully.'
   Reload_Fail: >-
