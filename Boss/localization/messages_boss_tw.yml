@@ -120,7 +120,7 @@ Commands:
     Description: 管理 Boss 區域.
   Remove:
     Description: 從硬碟中刪除 Boss. 活著的 Boss 將被保留, 使用宰殺或掃描指令將其移除.
-    Success: '&c從磁盤中刪除了&7 Boss ''{0}''. 活著的老闆被保留了.'
+    Success: '&c從硬碟中刪除了&7 Boss ''{0}''. 活著的 Boss 被保留了.'
   Scan:
     Description: 從已卸載的區塊中移除 Boss.
   Spawn:

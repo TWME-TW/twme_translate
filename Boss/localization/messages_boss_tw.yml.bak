@@ -80,7 +80,7 @@ Commands:
   Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip. 您的敏感 MySQL 訊息已從 yml 文件中刪除. 請通過 ufile.io 上傳並發送給我們進行審核.'
   Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了. 有關更多訊息請參閱控制台.'
   Debug_Zip_Fail: '&c創建文件的 ZIP 失敗, 請參閱控制台了解更多訊息. 請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們.'
-  Perms_Description: List all permissions the plugin has.
+  Perms_Description: 列出插件擁有的所有權限.
   Perms_Header: 列出插件所有權限
   Perms_Main: 主要
   Perms_Permissions: '權限:'
