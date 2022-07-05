@@ -8,7 +8,7 @@ Commands:
   Disabled: 已停用
   Use_While_Null: '&c無法使用此指令 在插件狀態為 {state} 時.'
   Incompatible: '此指令需要 {0} 或更高的 Minecraft 版本.'
-  Toggled_Plugin_Part: '''&7你是 '' + (ignoring ? ''&2不再'' : ''&c現在'') + '' &7忽略 {0}.'''
+  Toggled_Plugin_Part: '''&7You are '' + (ignoring ? ''&2no longer'' : ''&cnow'') + '' &7ignoring {0}.'''
   Alternative_Header: '&cBoss: &7輸入 ''/{0} ?'' 查看所有指令.'
   No_Console: '&c您只能作為玩家使用此命令.'
   No_BungeeCord: 您需要使用 BungeeCord 才能使用此功能.
@@ -25,7 +25,7 @@ Commands:
   Invalid_Boss: '名為''{0}''的 Boss 不存在. 可用: {1}'
   Invalid_Bosses: 沒有與您的搜索符合的 Boss 活著.
   Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''. 可用的: {1}'
-  Invalid_Boss_Uid: '來自實體的無效 Boss UUID: {0}'
+  Invalid_Boss_Uid: 'Invalid Boss from entity UUID: {0}'
   Invalid_Boss_Dead: '&cBoss 已死亡.'
   Invalid_Boss_Uninstalled: 'Boss ''{0}'' 未安裝在此服務器上.'
   Invalid_Amount: 請輸入有效的金額.
