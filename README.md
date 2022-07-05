@@ -13,6 +13,7 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |:---|:---|:---|
 |[AlwaysOnline](https://www.spigotmc.org/resources/alwaysonline.66591/)|6.1.5||
 |[AntiRedstoneClock](https://www.spigotmc.org/resources/antiredstoneclock-worldguard-plotsquard-support-1-8-1-17.18557/)|1.5.0||
+|[Boss](https://www.mc-market.org/resources/21619/)|4.4.1|
 |[BuildSystem](https://www.spigotmc.org/resources/buildsystem-1-8-1-18.60441/)|以v2為最新版(更新中)||
 |[CMI(Content Management Interface)](https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/)|忘記了|更新中|
 |[CMILib](https://www.spigotmc.org/resources/cmilib.87610/)|未知||
