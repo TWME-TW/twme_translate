@@ -71,7 +71,7 @@ Title:
     Title: '&c遊戲結束'
     Subtitle: '&7你放棄了 {arena} 區域'
 Currency:
-  Name: '金粒，金粒'
+  Name: '金粒, 金粒'
   Color: GOLD
   Received: '&7您收到 &6{amount} &7並擁有&6 {balance}&7。 把它們花在/arena rewards上！'
 Menu:
@@ -258,14 +258,14 @@ Class:
 World:
   Not_Found: '&c世界 ''{world}'' 不存在！'
 Cases:
-  Player: 玩家，玩家們
-  Level: 等級，等級
-  Exp: 經驗，經驗
-  Nugget: 金粒，金粒
-  Hour: 小時，小時
-  Minute: 分鐘，分鐘
-  Second: 秒，秒
-  Life: 生命，生命
+  Player: 玩家, 玩家們
+  Level: 等級, 等級
+  Exp: 經驗, 經驗
+  Nugget: 金粒, 金粒
+  Hour: 小時, 小時
+  Minute: 分鐘, 分鐘
+  Second: 秒, 秒
+  Life: 生命, 生命
 Parts:
   Usage: '&c用法：'
   Amount: 金額
