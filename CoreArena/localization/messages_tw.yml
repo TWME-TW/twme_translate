@@ -182,7 +182,7 @@ Conversation:
   Number_Help: '&c輸入一個非零數字，或輸入 ''exit'' 退出。'
   New:
     Help: '&7輸入 {type} 的 &6新名稱&7，或''exit''停止。'
-    Already_Exists: &c這個 {type} 已經存在。選擇一個不同的名稱。
+    Already_Exists: '&c這個 {type} 已經存在。選擇一個不同的名稱。'
     No_Spaces: '&c名稱中不允許有空格。 請改用 _。'
     Success: '&7新的 &6{type} &7{name} 已創建！ 使用 /arena menu 來編輯它。'
     Success_Arena: '&7一個新的 &6競技場 &7{name} 已創建。 競技場已進入 &e編輯 模式。 &7使用 /arena tools 對其進行編輯。'
