@@ -17,6 +17,7 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[BuildSystem](https://www.spigotmc.org/resources/buildsystem-1-8-1-18.60441/)|以v2為最新版(更新中)||
 |[CMI(Content Management Interface)](https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/)|忘記了|更新中|
 |[CMILib](https://www.spigotmc.org/resources/cmilib.87610/)|未知||
+|[CoreArena](https://www.mc-market.org/resources/21643/)|3.2.7|完全硬翻，尚未做任何校對，但已無格式錯誤|
 |[DriveBackupV2](https://www.spigotmc.org/resources/drivebackupv2.79519/)|1.5.4||還沒翻完|
 |[FastAsyncWorldEdit](https://www.spigotmc.org/resources/fast-async-worldedit.13932/)|||
 |[HeadDatabase](https://www.spigotmc.org/resources/head-database.14280/)|4.15.1||
