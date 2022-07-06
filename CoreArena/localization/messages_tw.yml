@@ -71,7 +71,7 @@ Title:
     Title: '&c遊戲結束'
     Subtitle: '&7你放棄了 {arena} 區域'
 Currency:
-  Name: '金塊, 金塊'
+  Name: '金粒，金粒'
   Color: GOLD
   Received: '&7您收到 &6{amount} &7並擁有&6 {balance}&7。 把它們花在/arena rewards上！'
 Menu:
@@ -85,7 +85,7 @@ Menu:
     Class_Not_Yet_Configured: '&c&o階級尚未配置！'
     Select_Class: 選擇一個階級
     Choose_Reward: 選擇獎勵
-    More_Nuggets_Needed: '&4為此，您需要 {reward_cost} 塊金塊'
+    More_Nuggets_Needed: '&4為此，您需要 {reward_cost} 塊金粒'
     Bought_Reward: '&2購買成功! 剩餘: {remaining}'
     Items_Label: 物品
     Items_Description: '&r購買貴重物品以增強您的生存體驗。'
@@ -96,7 +96,7 @@ Menu:
     Class_Label: 升級你的階級
     Class_Description: '&r在這裡將您的階級升級到更高級別。'
     Info_Player: '餘額: &f{nuggets}&r您可以將它們用於獎勵物品或特殊禮包。'
-    Info_Admin: '&6玩家在競技場獲得的金塊&7，可用於獎勵。&r您可以在此處配置獎勵。'
+    Info_Admin: '&6玩家在競技場獲得的金粒&7，可用於獎勵。&r您可以在此處配置獎勵。'
     Info:
       Edit:
         Items:
