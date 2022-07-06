@@ -30,7 +30,7 @@
 Commands:
   Error: '&4&l哎呀！&c指令失敗 :( 檢查控制台並報告錯誤。'
   Header_No_Subcommands: '&c此指令沒有參數。'
-  Header_No_Subcommands_Permission: '&c您沒有查看任何子指令的權限。'
+  Header_No_Subcommands_Permission: '&c你沒有查看任何子指令的權限。'
   Header_Color: GOLD
   Header_Secondary_Color: RED
   Reloading: 重新載入中
@@ -40,8 +40,8 @@ Commands:
   Toggled_Plugin_Part: '''&7你是 '' + (ignoring ? ''&2不再'' : ''&c現在'') + '' &7忽略 {0}。'''
   Use_Alternative_Header: false
   Alternative_Header: '&cBoss: &7輸入 ''/{0} ?'' 查看所有指令。'
-  No_Console: '&c您只能作為玩家使用此指令。'
-  No_BungeeCord: 您需要使用 BungeeCord 才能使用此功能。
+  No_Console: '&c你只能作為玩家使用此指令。'
+  No_BungeeCord: 你需要使用 BungeeCord 才能使用此功能。
   Requires_Console: '&c此指令需要從控制台執行。'
   Requires_Tools: 要使用此功能, 請在 settings.yml 中啟用 Register_Tools 並重新啟動。
   Console_Missing_Player_Name: 從控制台運行時，請指定玩家名稱。
@@ -53,7 +53,7 @@ Commands:
   Invalid_Number: '該數字必須是整數或小數。得到: ''{input}'''
   Invalid_World: '無效的世界 ''{world}''。可用: {available}'
   Invalid_Boss: '名為''{0}''的 Boss 不存在。可用: {1}'
-  Invalid_Bosses: 沒有與您的搜索符合的 Boss 活著.
+  Invalid_Bosses: 沒有與你的搜索符合的 Boss 活著.
   Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''。可用的: {1}'
   Invalid_Boss_Uid: '來自實體的無效 Boss UUID: {0}'
   Invalid_Boss_Dead: '&cBoss 已死亡。'
@@ -74,10 +74,10 @@ Commands:
   Reload_Started: 正在重新加載插件的數據，請稍候..
   Reload_Success: '&6Boss {plugin_version} 已重新加載。'
   Reload_Fail: '&4Oups，&c重新加載 失敗！有關更多訊息請參閱控制台。錯誤: {error}'
-  Reload_File_Load_Error: '&4Oups，&c從您的磁盤加載文件時出現問題！有關更多訊息請參閱控制台。Boss 沒有重新加載。'
-  Debug_Description: 壓縮您的設置以報告錯誤.
+  Reload_File_Load_Error: '&4Oups，&c從你的磁盤加載文件時出現問題！有關更多訊息請參閱控制台。Boss 沒有重新加載。'
+  Debug_Description: 壓縮你的設置以報告錯誤.
   Debug_Preparing: '&6正在準備除錯日誌..。'
-  Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip。您的敏感 MySQL 訊息已從 yml 文件中刪除。請通過 ufile.io 上傳並發送給我們進行審核。'
+  Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip。你的敏感 MySQL 訊息已從 yml 文件中刪除。請通過 ufile.io 上傳並發送給我們進行審核。'
   Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了。有關更多訊息請參閱控制台。'
   Debug_Zip_Fail: '&c創建文件的 ZIP 失敗，請參閱控制台了解更多訊息。請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們。'
   Perms_Description: 列出插件擁有的所有權限.
@@ -91,18 +91,18 @@ Commands:
   Perms_Yes: '&2是'
   Perms_No: '&c否'
   Biome:
-    Description: 在您或玩家的位置找到生物群落.
+    Description: 在你或玩家的位置找到生物群落.
     Success: '&7生物群落位於 x: {0} y: {1} z: {2} is &6{3}。'
   Butcher:
     Description: 殺死生成的 Boss.
     No_Player: '&4只有玩家可以從他們的位置指定宰殺半徑。'
     Invalid_Radius: 半徑必須在 0 到 10,000 之間.
-    Success_Radius: '&c已移除您周圍的 &7{0} {1}。'
+    Success_Radius: '&c已移除你周圍的 &7{0} {1}。'
     Success_World: '&c從 {1} 中刪除 &7{0}。'
     Success_All_Words: '&c從所有世界中刪除 &7{0}。'
   Egg:
     Description: 獲得 Boss 生怪蛋.
-    Success: '&7您已獲得 &f{0} &7Boss 的生怪蛋。'
+    Success: '&7你已獲得 &f{0} &7Boss 的生怪蛋。'
     Success_Other: '&7{0} &a收到 &7{1} Boss 蛋。'
     No_Player: 從控制台運行時，請將玩家指定為最後一個參數!
   Find:
@@ -129,14 +129,14 @@ Commands:
     Fail: 無法在 {1} 生成 Boss '{0}'
     Cannot_Autodetect_World: 只有活著的玩家才能使用 ~ 作為他們的世界!
     Cannot_Autodetect_Location: 只有活著的玩家才能使用 ~ 作為他們的位置!
-    Invalid_Position: 無效位置 '{0}'，輸入一個有效數字或 '~' 作為您的坐標.
+    Invalid_Position: 無效位置 '{0}'，輸入一個有效數字或 '~' 作為你的坐標.
   Spawn_Player:
     Description: 在玩家身後生成 Boss(偷偷摸摸).
   Tools:
     Description: 打開工具選單.
     Success: 為 {0} 打開了 Boss 工具選單.
   Uid:
-    Description: '您可以從指令方塊或控制台運行管理員指令。提示: 通過左鍵點擊帶有刷怪蛋的 Boss 來獲取 Boss uid。'
+    Description: '你可以從指令方塊或控制台運行管理員指令。提示: 通過左鍵點擊帶有刷怪蛋的 Boss 來獲取 Boss uid。'
     Tabcomplete_Help: 通過左鍵點擊帶有生怪蛋的 Boss 來獲取 uid.
     Bosstp_Usage: 指定世界名稱、x、y 和 z 坐標以將 Boss 傳送到.
     Invalid_Coordinate: '{0} 坐標無效，應為整數。'
@@ -158,7 +158,7 @@ Egg:
     - '&7WorldGuard，GriefPrevention 等等。'
     - '&7和他們的怪物生成標誌。'
     - ''
-    - '&f2. &7檢查您的 Boss 生成限制。'
+    - '&f2. &7檢查你的 Boss 生成限制。'
     - ''
     - '&f3. &7將 Debug key 設置為 ''[spawning]'' '
     - '&7在 settings.yml 並查看控制台'
@@ -176,20 +176,20 @@ Fight:
     Flight: 戰鬥
     God_Mode: 上帝模式
     Vanish: 隱形
-    Cheats_Disabled: 您正在與 Boss 戰鬥，禁用 {0}.
+    Cheats_Disabled: 你正在與 Boss 戰鬥，禁用 {0}.
     
 # -------------------------------------------------------------------------------------------------
 # Messages related to paginator splitting command help into multiple pages
 # -------------------------------------------------------------------------------------------------
 Pages:
   No_Page_Number: '&c請指定此指令的頁碼。'
-  No_Pages: '&c您沒有保存任何要顯示的頁面。'
+  No_Pages: '&c你沒有保存任何要顯示的頁面。'
   No_Page: 頁面不包含給定的頁碼.
-  Invalid_Page: '&c您的輸入 ''{input}'' 不是有效數字。'
+  Invalid_Page: '&c你的輸入 ''{input}'' 不是有效數字。'
   Go_To_Page: '&7前往第 {page} 頁'
   Go_To_First_Page: '&7前往第一頁'
   Tooltip:
-  - '&7您還可以使用'
+  - '&7你還可以使用'
   - '&7隱藏 ''/#flp <頁> 指令。'''
   
 # -------------------------------------------------------------------------------------------------
@@ -227,7 +227,7 @@ Menu:
 # Messages related to player conversation where server is waiting for his chat input
 # -------------------------------------------------------------------------------------------------
 Conversation:
-  Not_Conversing: '&c只有當您被要求在聊天中輸入內容時，您才能使用此指令。'
+  Not_Conversing: '&c只有當你被要求在聊天中輸入內容時，你才能使用此指令。'
   Requires_Player: 只有玩家可以進入此對話.
   Error: '&c哎呀！這次對話有問題！請聯繫管理員查看控制台以獲取詳細訊息。'
 
