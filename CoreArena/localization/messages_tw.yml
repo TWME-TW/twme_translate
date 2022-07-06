@@ -172,132 +172,106 @@ Commands:
     Found_Location: '&7在 {location} 找到 &2{arena}&7 競技場。'
   Change_State:
     Disabled: '&6已成功停用競技場 &7{name}'
-    Enabled: '&6Successfully enabled arena &7{name}'
-  Reload_Success: '&7The plugin has been reloaded successfully.'
-  Reload_Fail: >-
-    &4Oups! &cReloading failed due to an error! See console for more
-    information. &4Error: &c{error}
+    Enabled: '&6成功啟用競技場 &7{name}'
+  Reload_Success: '&7插件已成功重新加載。'
+  Reload_Fail: '&4哎呀！ &c由於錯誤，重新加載失敗！ 有關更多信息，請參見控制台。 &4錯誤：&c{error}'
 Conversation:
-  Invalid_Input: '&cInvalid input! Please follow instructions above.'
-  Stopped: '&cThe server conversation has been cancelled.'
-  Number_Help: '&cEnter a non-zero number, or type ''exit'' to exit.'
+  Invalid_Input: '&c輸入無效！ 請按照上述說明進行操作。'
+  Stopped: '&c服務器對話已取消。'
+  Number_Help: '&c輸入一個非零數字，或輸入 ''exit'' 退出。'
   New:
-    Help: '&7Type &6the name&7 of the new {type}, or ''exit'' to stop.'
-    Already_Exists: '&cThis {type} already exists. Choose a different name.'
-    No_Spaces: '&cSpaces are not allowed in names. Use _ instead.'
-    Success: >-
-      &7A new &6{type} &7{name} has been created! Use /arena menu to edit
-      it.
-    Success_Arena: >-
-      &7A new &6arena &7{name} has been created. The arena has been put into
-      the &eedit mode. &7Use /arena tools to edit it.
-    Error: '&cAn unhandled error occured during adding new object.'
+    Help: '&7輸入 {type} 的 &6新名稱&7，或''exit''停止。'
+    Already_Exists: >-
+      &cThis {type} already exists. Choose a different name.此 {type} 已存在。
+      選擇一個不同的名稱。
+    No_Spaces: '&c名稱中不允許有空格。 請改用 _。'
+    Success: '&7新的 &6{type} &7{name} 已創建！ 使用 /arena menu 來編輯它。'
+    Success_Arena: '&7一個新的 &6競技場 &7{name} 已創建。 競技場已進入 &e編輯 模式。 &7使用 /arena tools 對其進行編輯。'
+    Error: '&c添加新對象時發生未處理的錯誤。'
   Tier:
-    Help: '&7Type &6the price&7 for {class} Tier {tier}, or ''exit'' to stop.'
-    Price_Set: '&7This tier is now worth &6{amount}&7.'
+    Help: '&7輸入{class} 層 {tier} 的價格，或 ''exit'' 停止。'
+    Price_Set: '&7該等級現在價格 &6{amount}&7。'
   Reward:
-    Help: '&7Type &6the price&7 for this reward ({material}), or ''exit'' to stop.'
-    Price_Set: '&7This reward is now worth &6{amount}&7.'
+    Help: '&7輸入此&6獎勵&7的價格（{material}），或 ''exit'' 停止。'
+    Price_Set: '&7這個獎勵現在價格 &6{amount}&7。'
   Spawner_Minimum_Players:
-    Help: '&7Type &6the minimum amount&7 of players for this spawner to function.'
-    Set: '&7The spawner now requires at least &6{amount_players} &7to function.'
+    Help: '&7輸入此生怪磚運行的&6最少玩家數量&7。'
+    Set: '&7生怪磚現在至少需要 &6{amount_players} &7 位玩家才能運行。'
   Spawner_Chance:
-    Help: >-
-      &7Type &6the chance&7 (in percent) for this spawner to spawn mobs,
-      from 0 (never working) to 100 (always working).
-    Set: '&7The spawner has now {chance}% chance of spawning when it turns on.'
+    Help: '&7輸入這個生怪磚生成生物的&6機率&7（百分比），從 0（從不工作）到 100（總是工作）。'
+    Set: '&7生怪磚現在有 {chance}% 的機率在打開時生成。'
   Phase:
     Input_Matcher: '(from|between|on|till) ([0-9]{1,6})(((-)[0-9]{1,6})|)( phase|)'
-    Help: |-
-      &7Type &owhen &7you want this spawner to function.
-      &7a) from the start till a phase: Type &6"till <phase>"
-      &7b) only on one phase: Type &6"on <phase>"
-      &7c) from a phase and forever after: Type &6"from <phase>"
-      &7d) between phases: Type &6"between <phase>-<endPhase>"
-    Set_From: '&7The spawner will function from the &6{period}. phase&7.'
-    Set_On: '&7The spawner will function on the &6{period}. phase&7.'
-    Set_Till: '&7The spawner will function till the &6{period}. phase&7.'
-    Set_Between: '&7The spawner will function between &6{period} phases&7.'
+    Help: AAAAAAA
+    Set_From: '&7生怪磚將從 &6{period}  &7階段開始運行。'
+    Set_On: '&7生怪磚將在 &6{period} &7階段上運行。'
+    Set_Till: '&7生怪磚將一直運行到 &6{period} &7階段。'
+    Set_Between: '&7生怪磚將在 &6{period} &7階段之間運行。'
 Signs:
-  Removed_Outside_Arena: '&cThe sign is outside any arena, removing!'
-  Removed: '&7Registered sign in &6{arena} &7has been removed.'
-  Outside_Arena: '&cYou must place the sign within an arena!'
-  Object_Not_Found: '&cThe {type} {line} doesn''t exist!'
-  Created: '&7Registered new sign for arena &6{arena}&7.'
+  Removed_Outside_Arena: '&c該告示牌在任何競技場之外，正在移除！'
+  Removed: '&7&6{arena} &7 中註冊的告示牌已被刪除。'
+  Outside_Arena: '&c您必須將告示牌放置在競技場內！'
+  Object_Not_Found: '&c{type} {line} 不存在！'
+  Created: '&7為競技場 &6{arena}&7 註冊了新告示牌。'
   Arena:
-    Help: |-
-      &7When making an arena sign, use the following syntax:
-      &6[arena] &f- makes the plugin recognize the sign
-      &6<name> &f- the arena name
+    Help: '&7製作競技場告示牌時，使用以下語法：&6[arena] &f- 使插件識別標誌&6<name> &f- 競技場名稱'
   Class:
-    Help: |-
-      &7When making a class sign, use the following syntax:
-      &6[class] &f- makes the plugin recognize the sign
-      &6<name> &f- the class name
+    Help: '&7製作階級告示牌時，使用以下語法：&6[class] &f- 使插件識別符號&6<name> &f- 階級名'
   Upgrade:
-    Cost_Missing: '&cSpecify the cost on the third line, example: 5, 20, ...'
-    Cost_Invalid: '&cOnly specify the level number, example: 5, 20, ...'
-    Help: |-
-      &7When making an upgrade sign, use the following syntax:
-      &6[upgrade] &f- makes the plugin recognize the sign
-      &6<name> &f- the upgrade name
-      &6<level> &f- the price, in levels
+    Cost_Missing: '&c在第三行指定成本，例如：5、20、...'
+    Cost_Invalid: '&c只指定級別編號，例如：5, 20, ...'
+    Help: >-
+      &7製作升級告示牌時，使用以下語法：&6[upgrade] &f- 使插件識別告示牌&6<name> &f- 升級名稱&6<level>
+      &f- 價格，以等級為單位
   Power:
-    Type_Invalid: '&cThe trigger type {type} does not exist!'
-    Help: |-
-      &7When making a power sign, use the following syntax:
-      &6[power] &f- makes the plugin recognize the sign
-      &6<type> &f- when the redstone should be powered?
-               &fPossible: lobby (when lobby starts)
-                           &fstart (when arena starts)
-                           &fphase (on a new phase)
-                           &fend   (when arena ends)
+    Type_Invalid: '&c觸發器類型 {type} 不存在！'
+    Help: >-
+      &7製作紅石告示牌時，使用以下語法：&6[power] &f- 使插件識別告示牌&6<type> &f- 紅石什麼時候應該通電？
+      &fPossible: lobby (大廳開始時) &fstart (競技場開始時) &fphase (在新階段) &fend
+      (競技場結束時)
 Player:
-  Never_Played: '&c{player} has never played on the server.'
-  Never_Played_Arena: '&c{player} has never played an arena.'
-  Not_Found: '&c{player} has not been found on the server.'
-  Not_Online: '&cPlayer named ''{player}'' is not online!'
-  Not_Playing: '&c{player} is not playing in any arena.'
+  Never_Played: '&c{player} 從未在伺服器上玩過。'
+  Never_Played_Arena: '&c{player} 從未玩過競技場。'
+  Not_Found: '&c在伺服器上找不到 {player}。'
+  Not_Online: '&c名為 ''{player}'' 的玩家不在線！'
+  Not_Playing: '&c{player} 沒有在任何競技場上玩。'
 Class:
-  Selected: '&7Class &b{class} &7has been selected.'
-  No_Permission: '&cYou lack permission to use {class}!'
-  Not_Available: '&cArena {arena} does not support classes.'
+  Selected: '&7階級 &b{class} &7 已被選中。'
+  No_Permission: '&c您沒有使用 {class} 的權限！'
+  Not_Available: '&c競技場 {arena} 不支階級。'
 World:
-  Not_Found: '&cWorld ''{world}'' doesn''t exist!'
+  Not_Found: '&c世界 ''{world}'' 不存在！'
 Cases:
-  Player: 'player, players'
-  Level: 'level, levels'
-  Exp: 'exp, exp'
-  Nugget: 'Nugget, Nuggets'
-  Hour: 'hour, hours'
-  Minute: 'minute, minutes'
-  Second: 'second, seconds'
-  Life: 'life, lifes'
+  Player: 玩家，玩家們
+  Level: 等級，等級
+  Exp: 經驗，經驗
+  Nugget: 金粒，金粒
+  Hour: 小時，小時
+  Minute: 分鐘，分鐘
+  Second: 秒，秒
+  Life: 生命，生命
 Parts:
-  Usage: '&cUsage: '
-  Amount: amount
-  State: 'State: '
-  Size: 'Size: &7'
-  Players: 'Players: &7'
-  None: none
-  Buy: Buy
-  Edit: Edit
-  Cost: Cost
-  Purchase: Purchase
-  Price: Price
+  Usage: '&c用法：'
+  Amount: 金額
+  State: 狀態：
+  Size: 尺寸：&7
+  Players: 玩家：&7
+  None: 無
+  Buy: 買
+  Edit: 編輯
+  Cost: 花費
+  Purchase: 購買
+  Price: 價格
 Edit:
-  Saved_Changes: '&2Your changes have been saved.'
+  Saved_Changes: '&2你的修改已被保存。'
   Menu:
-    Edited: '&eYou are editing {mode}'
-    Switch_Pieces: Click to switch to editing prices.
-    Switch_Items: Click to switch to editing items.
+    Edited: '&e您正在編輯 {mode}'
+    Switch_Pieces: 點擊以切換到編輯價格。
+    Switch_Items: 單擊以切換到編輯物品。
 Update:
-  Available: |-
-    &2A new version of &3CoreArena&2 is available.
-    &2Current version: &f{current}&2; New version: &f{new}
-    &2URL: &7https://www.spigotmc.org/resources/{resource_id}/.
-Data_Missing: >-
-  {name} lacks database information! Please only create {type} in-game!
-  Skipping..
-No_Permission: '&cInsufficient permission ({permission}).'
+  Available: >-
+    &2&3CoreArena &2 的新版本可用。&2 當前版本：&f{current}&2;
+    新版本：&f{new}&2URL：&7https://www.spigotmc.org/resources/{resource_id}/。
+Data_Missing: '{name} 缺少資料庫資料！ 請僅在遊戲中創建 {type}！ 跳過..'
+No_Permission: '&c權限不足 ({permission})。'
 Version: 1
