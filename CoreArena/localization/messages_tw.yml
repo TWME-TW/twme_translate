@@ -100,16 +100,17 @@ Menu:
     Info:
       Edit:
         Items:
-          '0': '&7要編輯獎勵，只需'
-          '1': '&e將 &7物品從您的背包中移至此處。'
+          - '&7要編輯獎勵，只需'
+          - '&e將 &7物品從您的背包中移至此處。'
         Pieces:
-          '0': '&e點擊 &7一個物品以設置其價格'
+          - '&e點擊 &7一個物品以設置其價格'
       Purchase:
-        '0': '&7餘額: &f{balance}'
-        '2': '&7點擊進行購買。'
-        '3': ' '
-        '4': '&7該物品將保存到'
-        '5': '&7你的背包.'
+        - '&7餘額: &f{balance}'
+        - ''
+        - '&7點擊進行購買。'
+        - ' '
+        - '&7該物品將保存到'
+        - '&7你的背包.'
     Tier:
       Already_Bought: '&2你已經有這個等級了!'
       Maximum_Reached: '&2您已達到最高等級'
@@ -181,9 +182,7 @@ Conversation:
   Number_Help: '&c輸入一個非零數字，或輸入 ''exit'' 退出。'
   New:
     Help: '&7輸入 {type} 的 &6新名稱&7，或''exit''停止。'
-    Already_Exists: >-
-      &cThis {type} already exists. Choose a different name.此 {type} 已存在。
-      選擇一個不同的名稱。
+    Already_Exists: &c這個 {type} 已經存在。選擇一個不同的名稱。
     No_Spaces: '&c名稱中不允許有空格。 請改用 _。'
     Success: '&7新的 &6{type} &7{name} 已創建！ 使用 /arena menu 來編輯它。'
     Success_Arena: '&7一個新的 &6競技場 &7{name} 已創建。 競技場已進入 &e編輯 模式。 &7使用 /arena tools 對其進行編輯。'
@@ -202,7 +201,12 @@ Conversation:
     Set: '&7生怪磚現在有 {chance}% 的機率在打開時生成。'
   Phase:
     Input_Matcher: '(from|between|on|till) ([0-9]{1,6})(((-)[0-9]{1,6})|)( phase|)'
-    Help: AAAAAAA
+    Help: |-
+      &7鍵入 &owhen &7您希望此生成器起作用。
+      &7a) 從開始到一個階段：輸入 &6"till <phase>"
+      &7b) 僅在一個階段：輸入 &6"on <phase>"
+      &7c) 從一個階段到永遠：輸入 &6"from <phase>"
+      &7d) 階段之間：輸入 &6"between <phase>-<endPhase>"
     Set_From: '&7生怪磚將從 &6{period}  &7階段開始運行。'
     Set_On: '&7生怪磚將在 &6{period} &7階段上運行。'
     Set_Till: '&7生怪磚將一直運行到 &6{period} &7階段。'
@@ -214,21 +218,33 @@ Signs:
   Object_Not_Found: '&c{type} {line} 不存在！'
   Created: '&7為競技場 &6{arena}&7 註冊了新告示牌。'
   Arena:
-    Help: '&7製作競技場告示牌時，使用以下語法：&6[arena] &f- 使插件識別標誌&6<name> &f- 競技場名稱'
+    Help: |-
+      &7製作競技場告示牌時，請使用以下語法：
+      &6[arena] &f- 使插件識別告示牌
+      &6<name> &f- 競技場名稱
   Class:
-    Help: '&7製作階級告示牌時，使用以下語法：&6[class] &f- 使插件識別符號&6<name> &f- 階級名'
+    Help: |-
+      &7製作階級告示牌時，使用以下語法：
+      &6[class] &f- 使插件識別告示牌
+      &6<name> &f- 階級名
   Upgrade:
     Cost_Missing: '&c在第三行指定成本，例如：5、20、...'
     Cost_Invalid: '&c只指定級別編號，例如：5, 20, ...'
-    Help: >-
-      &7製作升級告示牌時，使用以下語法：&6[upgrade] &f- 使插件識別告示牌&6<name> &f- 升級名稱&6<level>
+    Help: |-
+      &7製作升級告示牌時，使用以下語法：
+      &6[upgrade] &f- 使插件識別告示牌
+      &6<name> &f- 升級名稱&6<level>
       &f- 價格，以等級為單位
   Power:
     Type_Invalid: '&c觸發器類型 {type} 不存在！'
-    Help: >-
-      &7製作紅石告示牌時，使用以下語法：&6[power] &f- 使插件識別告示牌&6<type> &f- 紅石什麼時候應該通電？
-      &fPossible: lobby (大廳開始時) &fstart (競技場開始時) &fphase (在新階段) &fend
-      (競技場結束時)
+    Help: |-
+      &7製作紅石告示牌時，使用以下語法：
+      &6[power] &f- 使插件識別告示牌
+      &6<type> &f- 紅石什麼時候應該通電？
+               &f可選的: lobby   (大廳開始時) 
+                         &fstart (競技場開始時) 
+                         &fphase (在新階段) 
+                         &fend   (當競技場結束時) 
 Player:
   Never_Played: '&c{player} 從未在伺服器上玩過。'
   Never_Played_Arena: '&c{player} 從未玩過競技場。'
@@ -269,9 +285,10 @@ Edit:
     Switch_Pieces: 點擊以切換到編輯價格。
     Switch_Items: 單擊以切換到編輯物品。
 Update:
-  Available: >-
-    &2&3CoreArena &2 的新版本可用。&2 當前版本：&f{current}&2;
-    新版本：&f{new}&2URL：&7https://www.spigotmc.org/resources/{resource_id}/。
+  Available: |-
+    &2&3CoreArena &2 有的新版本可用。
+    &2 當前版本：&f{current}&2;新版本：&f{new}
+    &2URL：&7https://www.spigotmc.org/resources/{resource_id}/。
 Data_Missing: '{name} 缺少資料庫資料！ 請僅在遊戲中創建 {type}！ 跳過..'
 No_Permission: '&c權限不足 ({permission})。'
 Version: 1
