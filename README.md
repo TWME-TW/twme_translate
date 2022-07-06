@@ -9,7 +9,7 @@ Discord ID：TWME#5162
 Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 
 現有已翻譯/正在翻譯插件：
-|插件|版本|備註|
+|插件|插件版本|備註|
 |:---|:---|:---|
 |[AlwaysOnline](https://www.spigotmc.org/resources/alwaysonline.66591/)|6.1.5||
 |[AntiRedstoneClock](https://www.spigotmc.org/resources/antiredstoneclock-worldguard-plotsquard-support-1-8-1-17.18557/)|1.5.0||
@@ -26,7 +26,7 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[NoteBlockEditor](https://www.spigotmc.org/resources/noteblockeditor.87150/)|1.4.0|完全未經測試|
 |[PetBlocks](https://www.spigotmc.org/resources/petblocks-mysql-bungeecord-customizeable-gui-1-8-1-18.12056/)|未知||
 |[PlotSquared v6](https://www.spigotmc.org/resources/plotsquared-v6.77506/)||翻譯中|
-|[SchematicBrushReborn](https://www.spigotmc.org/resources/schematic-brush-reborn.79441/)||插件未實裝翻譯功能|
+|[SchematicBrushReborn](https://www.spigotmc.org/resources/schematic-brush-reborn.79441/)|2.2.1|插件未實裝翻譯功能|
 |[TrainCarts](https://www.spigotmc.org/resources/traincarts.39592/)|未知||
 
 
