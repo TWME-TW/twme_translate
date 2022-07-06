@@ -28,26 +28,26 @@
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------
 Commands:
-  Error: '&4&l哎呀! &c指令失敗 :( 檢查控制台並報告錯誤.'
-  Header_No_Subcommands: '&c此指令沒有參數.'
-  Header_No_Subcommands_Permission: '&c您沒有查看任何子指令的權限.'
+  Error: '&4&l哎呀！&c指令失敗 :( 檢查控制台並報告錯誤。'
+  Header_No_Subcommands: '&c此指令沒有參數。'
+  Header_No_Subcommands_Permission: '&c您沒有查看任何子指令的權限。'
   Header_Color: GOLD
   Header_Secondary_Color: RED
   Reloading: 重新載入中
   Disabled: 已停用
-  Use_While_Null: '&c無法使用此指令 在插件狀態為 {state} 時.'
+  Use_While_Null: '&c無法使用此指令 在插件狀態為 {state} 時。'
   Incompatible: 此指令需要 {0} 或更高的 Minecraft 版本.
-  Toggled_Plugin_Part: '''&7你是 '' + (ignoring ? ''&2不再'' : ''&c現在'') + '' &7忽略 {0}.'''
+  Toggled_Plugin_Part: '''&7你是 '' + (ignoring ? ''&2不再'' : ''&c現在'') + '' &7忽略 {0}。'''
   Use_Alternative_Header: false
-  Alternative_Header: '&cBoss: &7輸入 ''/{0} ?'' 查看所有指令.'
-  No_Console: '&c您只能作為玩家使用此指令.'
+  Alternative_Header: '&cBoss: &7輸入 ''/{0} ?'' 查看所有指令。'
+  No_Console: '&c您只能作為玩家使用此指令。'
   No_BungeeCord: 您需要使用 BungeeCord 才能使用此功能.
-  Requires_Console: '&c此指令需要從控制台執行.'
+  Requires_Console: '&c此指令需要從控制台執行。'
   Requires_Tools: 要使用此功能, 請在 settings.yml 中啟用 Register_Tools 並重新啟動.
   Console_Missing_Player_Name: 從控制台運行時，請指定玩家名稱.
-  Cooldown_Wait: '&c在再次使用此指令之前請等待 {duration} 秒.'
-  Invalid_Argument: '&c無效的引數. 運行 &6/{label} ？  &c尋求幫助.'
-  Invalid_Sub_Argument: '&c無效的子引數. 運行 ''/{label} {0}'' 尋求幫助.'
+  Cooldown_Wait: '&c在再次使用此指令之前請等待 {duration} 秒。'
+  Invalid_Argument: '&c無效的引數. 運行 &6/{label} ？  &c尋求幫助。'
+  Invalid_Sub_Argument: '&c無效的子引數. 運行 ''/{label} {0}'' 尋求幫助。'
   Invalid_Argument_Multiline: '&c無效的引數。 用法:'
   Invalid_Time: 預期時間, 例如 '3 hours' 或 '15 minutes', 得到：'{input}'
   Invalid_Number: '該數字必須是整數或小數. 得到: ''{input}'''
@@ -56,7 +56,7 @@ Commands:
   Invalid_Bosses: 沒有與您的搜索符合的 Boss 活著.
   Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''. 可用的: {1}'
   Invalid_Boss_Uid: '來自實體的無效 Boss UUID: {0}'
-  Invalid_Boss_Dead: '&cBoss 已死亡.'
+  Invalid_Boss_Dead: '&cBoss 已死亡。'
   Invalid_Boss_Uninstalled: Boss '{0}' 未安裝在此伺服器上.
   Invalid_Amount: 請輸入有效的金額.
   Label_Authors: 製作人
@@ -72,14 +72,14 @@ Commands:
   Help_Tooltip_Usage: '&7用法: &f'
   Reload_Description: 重新加載配置.
   Reload_Started: 正在重新加載插件的數據, 請稍候..
-  Reload_Success: '&6Boss {plugin_version} 已重新加載.'
+  Reload_Success: '&6Boss {plugin_version} 已重新加載。'
   Reload_Fail: '&4Oups, &c重新加載 失敗! 有關更多訊息請參閱控制台. 錯誤: {error}'
-  Reload_File_Load_Error: '&4Oups, &c從您的磁盤加載文件時出現問題! 有關更多訊息請參閱控制台. Boss 沒有重新加載.'
+  Reload_File_Load_Error: '&4Oups, &c從您的磁盤加載文件時出現問題! 有關更多訊息請參閱控制台. Boss 沒有重新加載。'
   Debug_Description: 壓縮您的設置以報告錯誤.
-  Debug_Preparing: '&6正在準備除錯日誌...'
-  Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip. 您的敏感 MySQL 訊息已從 yml 文件中刪除. 請通過 ufile.io 上傳並發送給我們進行審核.'
-  Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了. 有關更多訊息請參閱控制台.'
-  Debug_Zip_Fail: '&c創建文件的 ZIP 失敗, 請參閱控制台了解更多訊息. 請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們.'
+  Debug_Preparing: '&6正在準備除錯日誌..。'
+  Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip. 您的敏感 MySQL 訊息已從 yml 文件中刪除. 請通過 ufile.io 上傳並發送給我們進行審核。'
+  Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了. 有關更多訊息請參閱控制台。'
+  Debug_Zip_Fail: '&c創建文件的 ZIP 失敗, 請參閱控制台了解更多訊息. 請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們。'
   Perms_Description: 列出插件擁有的所有權限.
   Perms_Header: 列出插件所有權限
   Perms_Main: 主要
@@ -92,25 +92,25 @@ Commands:
   Perms_No: '&c否'
   Biome:
     Description: 在您或玩家的位置找到生物群落.
-    Success: '&7生物群落位於 x: {0} y: {1} z: {2} is &6{3}.'
+    Success: '&7生物群落位於 x: {0} y: {1} z: {2} is &6{3}。'
   Butcher:
     Description: 殺死生成的 Boss.
-    No_Player: '&4只有玩家可以從他們的位置指定宰殺半徑.'
+    No_Player: '&4只有玩家可以從他們的位置指定宰殺半徑。'
     Invalid_Radius: 半徑必須在 0 到 10,000 之間.
-    Success_Radius: '&c已移除您周圍的 &7{0} {1}.'
-    Success_World: '&c從 {1} 中刪除 &7{0}.'
-    Success_All_Words: '&c從所有世界中刪除 &7{0}.'
+    Success_Radius: '&c已移除您周圍的 &7{0} {1}。'
+    Success_World: '&c從 {1} 中刪除 &7{0}。'
+    Success_All_Words: '&c從所有世界中刪除 &7{0}。'
   Egg:
     Description: 獲得 Boss 生怪蛋.
-    Success: '&7您已獲得 &f{0} &7Boss 的生怪蛋.'
-    Success_Other: '&7{0} &a收到 &7{1} Boss 蛋.'
+    Success: '&7您已獲得 &f{0} &7Boss 的生怪蛋。'
+    Success_Other: '&7{0} &a收到 &7{1} Boss 蛋。'
     No_Player: 從控制台運行時，請將玩家指定為最後一個參數!
   Find:
     Description: 在加載的區塊中查找 Boss.
   List:
     Description: 列出加載的 Boss.
     Start: '{prefix_info} &7可用 &8(&4{0}&8): &7'
-    Hover: '&7點擊打開這個 Boss 選單.'
+    Hover: '&7點擊打開這個 Boss 選單。'
   Menu:
     Description: 顯示主選單或 Boss 選單.
     Success: 已打開 {0} 的 Boss 選單.
@@ -120,7 +120,7 @@ Commands:
     Description: 管理 Boss 區域.
   Remove:
     Description: 從硬碟中刪除 Boss. 活著的 Boss 將被保留, 使用宰殺或掃描指令將其移除.
-    Success: '&c從硬碟中刪除了&7 Boss ''{0}''. 活著的 Boss 被保留了.'
+    Success: '&c從硬碟中刪除了&7 Boss ''{0}''. 活著的 Boss 被保留了。'
   Scan:
     Description: 從已卸載的區塊中移除 Boss.
   Spawn:
@@ -139,9 +139,9 @@ Commands:
     Description: '您可以從指令方塊或控制台運行管理員指令. 提示: 通過左鍵點擊帶有刷怪蛋的 Boss 來獲取 Boss uid。'
     Tabcomplete_Help: 通過左鍵點擊帶有生怪蛋的 Boss 來獲取 uid.
     Bosstp_Usage: 指定世界名稱、x、y 和 z 坐標以將 Boss 傳送到.
-    Invalid_Coordinate: '{0} 坐標無效, 應為整數.'
+    Invalid_Coordinate: '{0} 坐標無效, 應為整數。'
     Success_Tp: '&a將 &7{0} Boss 傳送到 {1}'
-    Success_Kill: '&c選中的 Boss 已被默默地殺死.'
+    Success_Kill: '&c選中的 Boss 已被默默地殺死。'
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to Boss Egg
@@ -155,14 +155,14 @@ Egg:
     - '&c&l解決生成問題:'
     - ''
     - '&f1. &7檢查諸如 Residence 之類的插件,'
-    - '&7WorldGuard, GriefPrevention 等等.'
-    - '&7和他們的怪物生成標誌.'
+    - '&7WorldGuard, GriefPrevention 等等。'
+    - '&7和他們的怪物生成標誌。'
     - ''
-    - '&f2. &7檢查您的 Boss 生成限制.'
+    - '&f2. &7檢查您的 Boss 生成限制。'
     - ''
     - '&f3. &7將 Debug key 設置為 ''[spawning]'' '
     - '&7在 settings.yml 並查看控制台'
-    - '&7了解更多訊息.'
+    - '&7了解更多訊息。'
     Fail_Claim: 你不能在 {0} 的領地中生成 Boss.
     Fail_Limit: Boss 超出限制(參見 Boss 選單 > 生成限制)
     Fail_Cancelled: 另一個插件取消了事件
@@ -182,31 +182,31 @@ Fight:
 # Messages related to paginator splitting command help into multiple pages
 # -------------------------------------------------------------------------------------------------
 Pages:
-  No_Page_Number: '&c請指定此指令的頁碼.'
-  No_Pages: '&c您沒有保存任何要顯示的頁面.'
+  No_Page_Number: '&c請指定此指令的頁碼。'
+  No_Pages: '&c您沒有保存任何要顯示的頁面。'
   No_Page: 頁面不包含給定的頁碼.
-  Invalid_Page: '&c您的輸入 ''{input}'' 不是有效數字.'
+  Invalid_Page: '&c您的輸入 ''{input}'' 不是有效數字。'
   Go_To_Page: '&7前往第 {page} 頁'
   Go_To_First_Page: '&7前往第一頁'
   Tooltip:
   - '&7您還可以使用'
-  - '&7隱藏 ''/#flp <頁> 指令.'''
+  - '&7隱藏 ''/#flp <頁> 指令。'''
   
 # -------------------------------------------------------------------------------------------------
 # Messages related to players
 # -------------------------------------------------------------------------------------------------
 Player:
-  Not_Online: '&c玩家 {player} &c在此伺服器上不在線.'
-  Not_Played_Before: '&c玩家 {player} &c之前沒有玩過，或者我們無法找到他的資料.'
+  Not_Online: '&c玩家 {player} &c在此伺服器上不在線。'
+  Not_Played_Before: '&c玩家 {player} &c之前沒有玩過，或者我們無法找到他的資料。'
   Full_Inventory: 庫存已滿, 因此有些物品掉在了地板上.
   
 # -------------------------------------------------------------------------------------------------
 # Messages related to menus
 # -------------------------------------------------------------------------------------------------
 Menu:
-  Cannot_Open_During_Conversation: '&c在打開選單之前輸入 ''exit'' 退出對話.'
-  Item_Deleted: '&2{item} 已被刪除.'
-  Error: '&c哎呀! 這個選單有問題! 請聯繫管理員查看控制台的詳細訊息.'
+  Cannot_Open_During_Conversation: '&c在打開選單之前輸入 ''exit'' 退出對話。'
+  Item_Deleted: '&2{item} 已被刪除。'
+  Error: '&c哎呀! 這個選單有問題! 請聯繫管理員查看控制台的詳細訊息。'
   Page_Previous: '&8<< &f頁 {page}'
   Page_Next: 頁{page} &8>>
   Page_First: '&7第一頁'
@@ -227,15 +227,15 @@ Menu:
 # Messages related to player conversation where server is waiting for his chat input
 # -------------------------------------------------------------------------------------------------
 Conversation:
-  Not_Conversing: '&c只有當您被要求在聊天中輸入內容時, 您才能使用此指令.'
+  Not_Conversing: '&c只有當您被要求在聊天中輸入內容時, 您才能使用此指令。'
   Requires_Player: 只有玩家可以進入此對話.
-  Error: '&c哎呀! 這次對話有問題! 請聯繫管理員查看控制台以獲取詳細訊息.'
+  Error: '&c哎呀! 這次對話有問題! 請聯繫管理員查看控制台以獲取詳細訊息。'
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to tools
 # -------------------------------------------------------------------------------------------------
 Tool:
-  Error: '&c哎呀! 這個工具有問題! 請聯繫管理員查看控制台以獲取詳細訊息.'
+  Error: '&c哎呀! 這個工具有問題! 請聯繫管理員查看控制台以獲取詳細訊息。'
 
 # -------------------------------------------------------------------------------------------------
 # Words for both singular and plural form. Separate these two forms with ", "
@@ -272,7 +272,7 @@ And: 和
 # -------------------------------------------------------------------------------------------------
 # Database related messages
 # -------------------------------------------------------------------------------------------------
-Data_Missing: '&c{name} 缺少資料庫訊息! 請僅在遊戲中創建 {type}! 跳過..'
+Data_Missing: '&c{name} 缺少資料庫訊息! 請僅在遊戲中創建 {type}! 跳過。'
 Data_Loading: 資料庫正在加載資料，請稍候...
 
 # -------------------------------------------------------------------------------------------------
