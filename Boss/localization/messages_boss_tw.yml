@@ -43,7 +43,7 @@ Commands:
   No_Console: '&c你只能作為玩家使用此指令。'
   No_BungeeCord: 你需要使用 BungeeCord 才能使用此功能。
   Requires_Console: '&c此指令需要從控制台執行。'
-  Requires_Tools: 要使用此功能, 請在 settings.yml 中啟用 Register_Tools 並重新啟動。
+  Requires_Tools: 要使用此功能，請在 settings.yml 中啟用 Register_Tools 並重新啟動。
   Console_Missing_Player_Name: 從控制台運行時，請指定玩家名稱。
   Cooldown_Wait: '&c在再次使用此指令之前請等待 {duration} 秒。'
   Invalid_Argument: '&c無效的引數。運行 &6/{label} ？  &c尋求幫助。'
@@ -52,89 +52,89 @@ Commands:
   Invalid_Time: 預期時間，例如 '3 hours' 或 '15 minutes'，得到：'{input}'
   Invalid_Number: '該數字必須是整數或小數。得到: ''{input}'''
   Invalid_World: '無效的世界 ''{world}''。可用: {available}'
-  Invalid_Boss: '名為''{0}''的 Boss 不存在。可用: {1}'
+  Invalid_Boss: '名為''{0}''的 Boss 不存在。可用：{1}'
   Invalid_Bosses: 沒有與你的搜索符合的 Boss 活著.
-  Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''。可用的: {1}'
-  Invalid_Boss_Uid: '來自實體的無效 Boss UUID: {0}'
+  Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''。可用的：{1}'
+  Invalid_Boss_Uid: '來自實體的無效 Boss UUID：{0}'
   Invalid_Boss_Dead: '&cBoss 已死亡。'
-  Invalid_Boss_Uninstalled: Boss '{0}' 未安裝在此伺服器上.
-  Invalid_Amount: 請輸入有效的金額.
+  Invalid_Boss_Uninstalled: Boss '{0}' 未安裝在此伺服器上。
+  Invalid_Amount: 請輸入有效的金額。
   Label_Authors: 製作人
-  Label_Description: '&c&l描述:'
+  Label_Description: '&c&l描述：'
   Label_Optional_Args: 可選參數
   Label_Required_Args: 必需的參數
-  Label_Usages: '&c&l用法:'
-  Label_Usage: '&c&l用法:'
+  Label_Usages: '&c&l用法：'
+  Label_Usage: '&c&l用法：'
   Label_Help_For: 幫助 /{label}
   Label_Subcommand_Description: ' &f/{label} {sublabel} {usage+}{dash+}{description}'
-  Help_Tooltip_Description: '&7描述: &f{description}'
-  Help_Tooltip_Permission: '&7權限: &f{permission}'
-  Help_Tooltip_Usage: '&7用法: &f'
+  Help_Tooltip_Description: '&7描述：&f{description}'
+  Help_Tooltip_Permission: '&7權限：&f{permission}'
+  Help_Tooltip_Usage: '&7用法：&f'
   Reload_Description: 重新加載配置.
   Reload_Started: 正在重新加載插件的數據，請稍候..
   Reload_Success: '&6Boss {plugin_version} 已重新加載。'
-  Reload_Fail: '&4Oups，&c重新加載 失敗！有關更多訊息請參閱控制台。錯誤: {error}'
-  Reload_File_Load_Error: '&4Oups，&c從你的磁盤加載文件時出現問題！有關更多訊息請參閱控制台。Boss 沒有重新加載。'
-  Debug_Description: 壓縮你的設置以報告錯誤.
+  Reload_Fail: '&4Oups，&c重新加載 失敗！有關更多訊息請參閱控制台。錯誤：{error}'
+  Reload_File_Load_Error: '&4哎呀，&c從你的磁盤加載文件時出現問題！有關更多訊息請參閱控制台。Boss 沒有重新加載。'
+  Debug_Description: 壓縮你的設置以報告錯誤。
   Debug_Preparing: '&6正在準備除錯日誌..。'
   Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip。你的敏感 MySQL 訊息已從 yml 文件中刪除。請通過 ufile.io 上傳並發送給我們進行審核。'
   Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了。有關更多訊息請參閱控制台。'
   Debug_Zip_Fail: '&c創建文件的 ZIP 失敗，請參閱控制台了解更多訊息。請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們。'
-  Perms_Description: 列出插件擁有的所有權限.
+  Perms_Description: 列出插件擁有的所有權限。
   Perms_Header: 列出插件所有權限
   Perms_Main: 主要
-  Perms_Permissions: '權限:'
+  Perms_Permissions: '權限：'
   Perms_True_By_Default: '&7[true by default]'
-  Perms_Info: '&7資訊: &f'
-  Perms_Default: '&7預設? '
-  Perms_Applied: '&7你有嗎? '
+  Perms_Info: '&7資訊：&f'
+  Perms_Default: '&7預設？'
+  Perms_Applied: '&7你有嗎？'
   Perms_Yes: '&2是'
   Perms_No: '&c否'
   Biome:
-    Description: 在你或玩家的位置找到生物群落.
+    Description: 在你或玩家的位置找到生物群落。
     Success: '&7生物群落位於 x: {0} y: {1} z: {2} is &6{3}。'
   Butcher:
-    Description: 殺死生成的 Boss.
+    Description: 殺死生成的 Boss。
     No_Player: '&4只有玩家可以從他們的位置指定宰殺半徑。'
-    Invalid_Radius: 半徑必須在 0 到 10,000 之間.
+    Invalid_Radius: 半徑必須在 0 到 10,000 之間。
     Success_Radius: '&c已移除你周圍的 &7{0} {1}。'
     Success_World: '&c從 {1} 中刪除 &7{0}。'
     Success_All_Words: '&c從所有世界中刪除 &7{0}。'
   Egg:
-    Description: 獲得 Boss 生怪蛋.
+    Description: 獲得 Boss 生怪蛋。
     Success: '&7你已獲得 &f{0} &7Boss 的生怪蛋。'
     Success_Other: '&7{0} &a收到 &7{1} Boss 蛋。'
-    No_Player: 從控制台運行時，請將玩家指定為最後一個參數!
+    No_Player: 從控制台運行時，請將玩家指定為最後一個參數！
   Find:
-    Description: 在加載的區塊中查找 Boss.
+    Description: 在加載的區塊中查找 Boss。
   List:
-    Description: 列出加載的 Boss.
-    Start: '{prefix_info} &7可用 &8(&4{0}&8): &7'
+    Description: 列出加載的 Boss。
+    Start: '{prefix_info} &7可用 &8(&4{0}&8)：&7'
     Hover: '&7點擊打開這個 Boss 選單。'
   Menu:
-    Description: 顯示主選單或 Boss 選單.
-    Success: 已打開 {0} 的 Boss 選單.
+    Description: 顯示主選單或 Boss 選單。
+    Success: 已打開 {0} 的 Boss 選單。
   New:
-    Description: 創建一個新 boss.
+    Description: 創建一個新 boss。
   Region:
-    Description: 管理 Boss 區域.
+    Description: 管理 Boss 區域。
   Remove:
-    Description: 從硬碟中刪除 Boss。活著的 Boss 將被保留，使用宰殺或掃描指令將其移除.
+    Description: 從硬碟中刪除 Boss。活著的 Boss 將被保留，使用宰殺或掃描指令將其移除。
     Success: '&c從硬碟中刪除了&7 Boss ''{0}''。活著的 Boss 被保留了。'
   Scan:
-    Description: 從已卸載的區塊中移除 Boss.
+    Description: 從已卸載的區塊中移除 Boss。
   Spawn:
     Description: 在世界中生成 Boss。此指令可以從控制台或指令方塊中使用。
     Success: 在 {1} 生成 '{0}'
     Fail: 無法在 {1} 生成 Boss '{0}'
-    Cannot_Autodetect_World: 只有活著的玩家才能使用 ~ 作為他們的世界!
-    Cannot_Autodetect_Location: 只有活著的玩家才能使用 ~ 作為他們的位置!
+    Cannot_Autodetect_World: 只有活著的玩家才能使用 ~ 作為他們的世界！
+    Cannot_Autodetect_Location: 只有活著的玩家才能使用 ~ 作為他們的位置！
     Invalid_Position: 無效位置 '{0}'，輸入一個有效數字或 '~' 作為你的坐標.
   Spawn_Player:
     Description: 在玩家身後生成 Boss(偷偷摸摸).
   Tools:
-    Description: 打開工具選單.
-    Success: 為 {0} 打開了 Boss 工具選單.
+    Description: 打開工具選單。
+    Success: 為 {0} 打開了 Boss 工具選單。
   Uid:
     Description: '你可以從指令方塊或控制台運行管理員指令。提示: 通過左鍵點擊帶有刷怪蛋的 Boss 來獲取 Boss uid。'
     Tabcomplete_Help: 通過左鍵點擊帶有生怪蛋的 Boss 來獲取 uid.
