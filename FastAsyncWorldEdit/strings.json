@@ -9,7 +9,7 @@
 	"fawe.info.updated.lighting.selection": " {0}  區塊的光源已被更新 。 (傳輸封包(packets)可能會花上幾秒鐘)。",
 	"fawe.info.set.region": "選擇為您當前允許的地域(region)。",
 
-	"fawe.info.worldedit.toggle.tips.on": "已禁用 FAWE 提示。。",
+	"fawe.info.worldedit.toggle.tips.on": "已禁用 FAWE 提示。",
 	"fawe.info.worldedit.toggle.tips.off": "已啟用 FAWE 提示。",
 	"fawe.info.worldedit.bypassed": "正越過 FAWE 限制。",
 	"fawe.info.worldedit.restricted": "你的 FAWE 編輯現已被限制。",
