@@ -44,17 +44,17 @@ Commands:
   No_BungeeCord: 您需要使用 BungeeCord 才能使用此功能。
   Requires_Console: '&c此指令需要從控制台執行。'
   Requires_Tools: 要使用此功能, 請在 settings.yml 中啟用 Register_Tools 並重新啟動。
-  Console_Missing_Player_Name: 從控制台運行時，請指定玩家名稱.
+  Console_Missing_Player_Name: 從控制台運行時，請指定玩家名稱。
   Cooldown_Wait: '&c在再次使用此指令之前請等待 {duration} 秒。'
-  Invalid_Argument: '&c無效的引數. 運行 &6/{label} ？  &c尋求幫助。'
-  Invalid_Sub_Argument: '&c無效的子引數. 運行 ''/{label} {0}'' 尋求幫助。'
+  Invalid_Argument: '&c無效的引數。運行 &6/{label} ？  &c尋求幫助。'
+  Invalid_Sub_Argument: '&c無效的子引數。運行 ''/{label} {0}'' 尋求幫助。'
   Invalid_Argument_Multiline: '&c無效的引數。 用法:'
   Invalid_Time: 預期時間，例如 '3 hours' 或 '15 minutes'，得到：'{input}'
-  Invalid_Number: '該數字必須是整數或小數. 得到: ''{input}'''
-  Invalid_World: '無效的世界 ''{world}''. 可用: {available}'
-  Invalid_Boss: '名為''{0}''的 Boss 不存在. 可用: {1}'
+  Invalid_Number: '該數字必須是整數或小數。得到: ''{input}'''
+  Invalid_World: '無效的世界 ''{world}''。可用: {available}'
+  Invalid_Boss: '名為''{0}''的 Boss 不存在。可用: {1}'
   Invalid_Bosses: 沒有與您的搜索符合的 Boss 活著.
-  Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''. 可用的: {1}'
+  Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''。可用的: {1}'
   Invalid_Boss_Uid: '來自實體的無效 Boss UUID: {0}'
   Invalid_Boss_Dead: '&cBoss 已死亡。'
   Invalid_Boss_Uninstalled: Boss '{0}' 未安裝在此伺服器上.
@@ -73,13 +73,13 @@ Commands:
   Reload_Description: 重新加載配置.
   Reload_Started: 正在重新加載插件的數據，請稍候..
   Reload_Success: '&6Boss {plugin_version} 已重新加載。'
-  Reload_Fail: '&4Oups，&c重新加載 失敗! 有關更多訊息請參閱控制台. 錯誤: {error}'
-  Reload_File_Load_Error: '&4Oups，&c從您的磁盤加載文件時出現問題! 有關更多訊息請參閱控制台. Boss 沒有重新加載。'
+  Reload_Fail: '&4Oups，&c重新加載 失敗! 有關更多訊息請參閱控制台。錯誤: {error}'
+  Reload_File_Load_Error: '&4Oups，&c從您的磁盤加載文件時出現問題! 有關更多訊息請參閱控制台。Boss 沒有重新加載。'
   Debug_Description: 壓縮您的設置以報告錯誤.
   Debug_Preparing: '&6正在準備除錯日誌..。'
-  Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip. 您的敏感 MySQL 訊息已從 yml 文件中刪除. 請通過 ufile.io 上傳並發送給我們進行審核。'
-  Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了. 有關更多訊息請參閱控制台。'
-  Debug_Zip_Fail: '&c創建文件的 ZIP 失敗，請參閱控制台了解更多訊息. 請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們。'
+  Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip。您的敏感 MySQL 訊息已從 yml 文件中刪除。請通過 ufile.io 上傳並發送給我們進行審核。'
+  Debug_Copy_Fail: '&c在文件 messages_en 上複製文件失敗且停止了。有關更多訊息請參閱控制台。'
+  Debug_Zip_Fail: '&c創建文件的 ZIP 失敗，請參閱控制台了解更多訊息。請壓縮 debug/ 文件夾並通過 ufile.io 手動發送給我們。'
   Perms_Description: 列出插件擁有的所有權限.
   Perms_Header: 列出插件所有權限
   Perms_Main: 主要
@@ -119,12 +119,12 @@ Commands:
   Region:
     Description: 管理 Boss 區域.
   Remove:
-    Description: 從硬碟中刪除 Boss. 活著的 Boss 將被保留，使用宰殺或掃描指令將其移除.
-    Success: '&c從硬碟中刪除了&7 Boss ''{0}''. 活著的 Boss 被保留了。'
+    Description: 從硬碟中刪除 Boss。活著的 Boss 將被保留，使用宰殺或掃描指令將其移除.
+    Success: '&c從硬碟中刪除了&7 Boss ''{0}''。活著的 Boss 被保留了。'
   Scan:
     Description: 從已卸載的區塊中移除 Boss.
   Spawn:
-    Description: 在世界中生成 Boss. 此指令可以從控制台或指令方塊中使用。
+    Description: 在世界中生成 Boss。此指令可以從控制台或指令方塊中使用。
     Success: 在 {1} 生成 '{0}'
     Fail: 無法在 {1} 生成 Boss '{0}'
     Cannot_Autodetect_World: 只有活著的玩家才能使用 ~ 作為他們的世界!
@@ -136,7 +136,7 @@ Commands:
     Description: 打開工具選單.
     Success: 為 {0} 打開了 Boss 工具選單.
   Uid:
-    Description: '您可以從指令方塊或控制台運行管理員指令. 提示: 通過左鍵點擊帶有刷怪蛋的 Boss 來獲取 Boss uid。'
+    Description: '您可以從指令方塊或控制台運行管理員指令。提示: 通過左鍵點擊帶有刷怪蛋的 Boss 來獲取 Boss uid。'
     Tabcomplete_Help: 通過左鍵點擊帶有生怪蛋的 Boss 來獲取 uid.
     Bosstp_Usage: 指定世界名稱、x、y 和 z 坐標以將 Boss 傳送到.
     Invalid_Coordinate: '{0} 坐標無效，應為整數。'
@@ -148,7 +148,7 @@ Commands:
 # -------------------------------------------------------------------------------------------------
 Egg:
   Spawn:
-    Fail_1: 由於 {1} 無法生成 '{0}' . 懸停
+    Fail_1: 由於 {1} 無法生成 '{0}' 。懸停
     Fail_2: '&n這裡&7'
     Fail_3: 獲得幫助.
     Fail_Hover:
@@ -273,7 +273,7 @@ And: 和
 # Database related messages
 # -------------------------------------------------------------------------------------------------
 Data_Missing: '&c{name} 缺少資料庫訊息! 請僅在遊戲中創建 {type}! 跳過。'
-Data_Loading: 資料庫正在加載資料，請稍候...
+Data_Loading: 資料庫正在加載資料，請稍候…
 
 # -------------------------------------------------------------------------------------------------
 # Messages shown when player runs a command he lacks permission for
