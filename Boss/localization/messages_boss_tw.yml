@@ -92,7 +92,7 @@ Commands:
   Perms_No: '&c否'
   Biome:
     Description: 在你或玩家的位置找到生物群落。
-    Success: '&7生物群落位於 x: {0} y: {1} z: {2} is &6{3}。'
+    Success: '&7生物群落位於 x: {0} y: {1} z: {2} 是 &6{3}。'
   Butcher:
     Description: 殺死生成的 Boss。
     No_Player: '&4只有玩家可以從他們的位置指定宰殺半徑。'
