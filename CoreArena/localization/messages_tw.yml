@@ -9,7 +9,7 @@ Arena:
     Already_Playing: '&c您已經在競技場 {arena} 中玩了！'
     Already_Running: '&c競技場已經在運行，稍後再試！'
     Full: '&c競技場已滿，請稍後再試！'
-    No_Arena_At_Location: 找不到您所在位置的競技場。 請指定競技場名稱。
+    No_Arena_At_Location: 找不到您所在位置的競技場。請指定競技場名稱。
     Inventory_Not_Empty: '&c加入前請清空背包！'
     Cannot_Run_Command_In_Arena: '&c遊玩時時不允許使用此指令！'
   Setup:
