@@ -25,7 +25,7 @@ input_cancelled: "%prefix% &c取消輸入！"
 update_available:
  - "%prefix% &7啊! 有新的更新 &8[&bv%new_version%&8]"
  - " &8➥ &7你現在的版本 : &bv%current_version%"
-command_archive_world: "%prefix% &c你不能在這裡使用這個命令 ！"
+command_archive_world: "%prefix% &c你不能在這裡使用這個命令！"
 command_not_builder: "%prefix% &c只有建築師可以使用此命令！"
 
 
@@ -46,7 +46,7 @@ body:
 # ---------
 # Commands
 # ---------
-sender_not_player: "您必須是玩家才能使用此命令 ！"
+sender_not_player: "您必須是玩家才能使用此命令！"
 no_permissions: "%prefix% &c權限不足。"
 
 # /back
