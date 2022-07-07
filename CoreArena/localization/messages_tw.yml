@@ -75,12 +75,12 @@ Currency:
   Color: GOLD
   Received: '&7您收到 &6{amount} &7並擁有&6 {balance}&7。 把它們花在/arena rewards上！'
 Menu:
-  Cannot_Open_In_Arena: '&c在競技場玩時無法打開菜單！'
-  Cannot_Open_Outside_Arena: '&c此菜單只能在競技場內訪問！'
-  Cannot_Open_Outside_Lobby: '&c此菜單僅在大廳提供！'
-  Use_Class_Menu: '&c請使用階級菜單編輯階級升級'
+  Cannot_Open_In_Arena: '&c在競技場玩時無法打開選單！'
+  Cannot_Open_Outside_Arena: '&c此選單只能在競技場內訪問！'
+  Cannot_Open_Outside_Lobby: '&c此選單僅在大廳提供！'
+  Use_Class_Menu: '&c請使用階級選單編輯階級升級'
   Rewards:
-    Label: '&菜單獎勵'
+    Label: '&選單獎勵'
     Individual_Label: 選擇獎勵
     Class_Not_Yet_Configured: '&c&o階級尚未配置！'
     Select_Class: 選擇一個階級
