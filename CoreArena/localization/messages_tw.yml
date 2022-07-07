@@ -1,5 +1,5 @@
 Arena:
-  Action_Denied_While_Editing: '&c出於安全原因，請先完成對競技場的編輯！ 運行 /arena edit {arena}'
+  Action_Denied_While_Editing: '&c出於安全原因，請先完成對競技場的編輯！運行 /arena edit {arena}'
   Error:
     Not_Enabled: '&c競技場 {arena} 未啟用。'
     Not_Found: '&c競技場 ''{arena}'' 不存在！'
@@ -28,16 +28,16 @@ Arena:
     End_Countdown: '&6注意！&7競技場 {arena} 將在 {seconds} 秒 結束！'
     End: '&6&lGG！&7&6{arena} &7的比賽已經結束！'
     End_Last_Player: '&7競技場已經&6結束&7因此你是最後一個離開的玩家！'
-    Death_Broadcast: '&c{player} 已經死了！ ({deaths}/{lifes_max})'
+    Death_Broadcast: '&c{player} 已經死了！({deaths}/{lifes_max})'
     Death_To_Victim: '&c你已經死了，還剩下 {lifes_left} 次。'
     Kick_Death_Broadcast: '&c{player}最後一次死亡並離開遊戲！'
     Kick_Death_To_Victim: '&c你已經死了，沒有更多的生命了，祝下次好運！'
     Kill_Broadcast: '&6{player} &7被 &6{killer} &7殺死了({lifes_left}/{lifes_max})'
     Kill_To_Victim: '&7你被殺了，還有e &6{lifes} &7次。'
     Kick_Kill_Broadcast: '&6{killer} &7已殺死玩家 &6{player}&7！剩下 {players} 名玩家！'
-    Kick_Kill_To_Victim: '&7你被 &6{killer} &7 殺死，遊戲結束！ 下次祝你好運 {player}！'
+    Kick_Kill_To_Victim: '&7你被 &6{killer} &7 殺死，遊戲結束！下次祝你好運 {player}！'
     Class_Auto_Assigned: '&7您沒有選擇任何階級，而是獲得了階級'
-    Friendly_Fire_Activated: '&c小心！ &6PvP &7已啟用！'
+    Friendly_Fire_Activated: '&c小心！&6PvP &7已啟用！'
     Explosive_Arrow_No_Ammo: '&7你缺少 &c爆炸箭&7 從這個弓上射擊。'
   State:
     Stopped: '&4已停止'
@@ -49,7 +49,7 @@ Experience:
 Upgrades:
   Locked: '&7此升級可從 &6{phase} &7獲得！'
   Lack_Levels: '&7你缺少 &6{levels} &7 等來支付這次升級。'
-  Lack_Space: '&6您的庫存空間不足！ 將其餘物品掉落在地板上。'
+  Lack_Space: '&6您的庫存空間不足！將其餘物品掉落在地板上。'
   Successful_Purchase: '&a已購買：&7{upgrade} 至 {levels}！'
 Bossbar:
   Title: '階段 {phase}'
@@ -59,7 +59,7 @@ Bossbar:
     Mid: BLUE
     Near_End: RED
 Phase:
-  Next_Phase_Wait: '&6做好準備！ 下一階段在 {delay} 秒後開始。'
+  Next_Phase_Wait: '&6做好準備！下一階段在 {delay} 秒後開始。'
   Max_Phase:
     Text: '&6&l競技場達到了最高階段。'
     Sound: 'ENTITY_FIREWORK_BLAST, 1F, 1F'
@@ -135,7 +135,7 @@ Commands:
   Label_Description: '&c描述： {description}'
   Label_Usage: '&c用法：'
   Label_Usages: '&c用法：'
-  Error: '&4&l哎呀！ &c指令失敗:(查看控制台報錯。'
+  Error: '&4&l哎呀！&c指令失敗:(查看控制台報錯。'
   Join:
     Suggest: '使用 ''/{label} join <arena>'' 加入其中一個。'
   Leave:
@@ -165,7 +165,7 @@ Commands:
     Enabled: '競技場 {arena} 現在處於 &a編輯 模式&7。使用 /{label} tool獲取設置工具。'
     Disabled: '&7競技場 {arena} 不再處於編輯模式&7。'
   Find:
-    Wrong_Syntax: '&c無效的語法！ 輸入 &7玩家名稱&c，或 &7world x y z&c，或只有 &7x y z'
+    Wrong_Syntax: '&c無效的語法！輸入 &7玩家名稱&c，或 &7world x y z&c，或只有 &7x y z'
     Not_Found: '&c在您的位置找不到競技場。'
     Not_Found_Location: '&c在 {location} 找不到競技場。'
     Found: '&7在您所在的位置找到了 &2{arena}&7 競技場。'
@@ -175,16 +175,16 @@ Commands:
     Disabled: '&6已成功停用競技場 &7{name}'
     Enabled: '&6成功啟用競技場 &7{name}'
   Reload_Success: '&7插件已成功重新加載。'
-  Reload_Fail: '&4哎呀！ &c由於錯誤，重新加載失敗！ 有關更多信息，請參見控制台。&4錯誤：&c{error}'
+  Reload_Fail: '&4哎呀！&c由於錯誤，重新加載失敗！有關更多信息，請參見控制台。&4錯誤：&c{error}'
 Conversation:
-  Invalid_Input: '&c輸入無效！ 請按照上述說明進行操作。'
+  Invalid_Input: '&c輸入無效！請按照上述說明進行操作。'
   Stopped: '&c服務器對話已取消。'
   Number_Help: '&c輸入一個非零數字，或輸入 ''exit'' 退出。'
   New:
     Help: '&7輸入 {type} 的 &6新名稱&7，或''exit''停止。'
     Already_Exists: '&c這個 {type} 已經存在。選擇一個不同的名稱。'
     No_Spaces: '&c名稱中不允許有空格。請改用 _。'
-    Success: '&7新的 &6{type} &7{name} 已創建！ 使用 /arena menu 來編輯它。'
+    Success: '&7新的 &6{type} &7{name} 已創建！使用 /arena menu 來編輯它。'
     Success_Arena: '&7一個新的 &6競技場 &7{name} 已創建。競技場已進入 &e編輯 模式。&7使用 /arena tools 對其進行編輯。'
     Error: '&c添加新對象時發生未處理的錯誤。'
   Tier:
@@ -289,6 +289,6 @@ Update:
     &2&3CoreArena &2 有的新版本可用。
     &2 當前版本：&f{current}&2;新版本：&f{new}
     &2URL：&7https://www.spigotmc.org/resources/{resource_id}/。
-Data_Missing: '{name} 缺少資料庫資料！ 請僅在遊戲中創建 {type}！ 跳過..'
+Data_Missing: '{name} 缺少資料庫資料！請僅在遊戲中創建 {type}！跳過..'
 No_Permission: '&c權限不足 ({permission})。'
 Version: 1
