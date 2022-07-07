@@ -286,8 +286,8 @@ Edit:
     Switch_Items: 單擊以切換到編輯物品。
 Update:
   Available: |-
-    &2&3CoreArena &2 有的新版本可用。
-    &2 當前版本：&f{current}&2;新版本：&f{new}
+    &2&3CoreArena &2有的新版本可用。
+    &2目前版本：&f{current}&2;新版本：&f{new}
     &2URL：&7https://www.spigotmc.org/resources/{resource_id}/。
 Data_Missing: '{name} 缺少資料庫資料！請僅在遊戲中創建 {type}！跳過..'
 No_Permission: '&c權限不足 ({permission})。'
