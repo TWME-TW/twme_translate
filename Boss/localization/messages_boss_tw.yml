@@ -53,7 +53,7 @@ Commands:
   Invalid_Number: '該數字必須是整數或小數。得到：''{input}'''
   Invalid_World: '無效的世界 ''{world}''。可用：{available}'
   Invalid_Boss: '名為''{0}''的 Boss 不存在。可用：{1}'
-  Invalid_Bosses: 沒有與你的搜索符合的 Boss 活著.
+  Invalid_Bosses: 沒有與你的搜索符合的 Boss 活著。
   Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''。可用的：{1}'
   Invalid_Boss_Uid: '來自實體的無效 Boss UUID：{0}'
   Invalid_Boss_Dead: '&cBoss 已死亡。'
@@ -70,7 +70,7 @@ Commands:
   Help_Tooltip_Description: '&7描述：&f{description}'
   Help_Tooltip_Permission: '&7權限：&f{permission}'
   Help_Tooltip_Usage: '&7用法：&f'
-  Reload_Description: 重新加載配置.
+  Reload_Description: 重新加載配置。
   Reload_Started: 正在重新加載插件的數據，請稍候..
   Reload_Success: '&6Boss {plugin_version} 已重新加載。'
   Reload_Fail: '&4Oups，&c重新加載 失敗！有關更多訊息請參閱控制台。錯誤：{error}'
@@ -129,16 +129,16 @@ Commands:
     Fail: 無法在 {1} 生成 Boss '{0}'
     Cannot_Autodetect_World: 只有活著的玩家才能使用 ~ 作為他們的世界！
     Cannot_Autodetect_Location: 只有活著的玩家才能使用 ~ 作為他們的位置！
-    Invalid_Position: 無效位置 '{0}'，輸入一個有效數字或 '~' 作為你的坐標.
+    Invalid_Position: 無效位置 '{0}'，輸入一個有效數字或 '~' 作為你的坐標。
   Spawn_Player:
-    Description: 在玩家身後生成 Boss(偷偷摸摸).
+    Description: 在玩家身後生成 Boss(偷偷摸摸)。
   Tools:
     Description: 打開工具選單。
     Success: 為 {0} 打開了 Boss 工具選單。
   Uid:
     Description: '你可以從指令方塊或控制台運行管理員指令。提示: 通過左鍵點擊帶有刷怪蛋的 Boss 來獲取 Boss uid。'
-    Tabcomplete_Help: 通過左鍵點擊帶有生怪蛋的 Boss 來獲取 uid.
-    Bosstp_Usage: 指定世界名稱、x、y 和 z 坐標以將 Boss 傳送到.
+    Tabcomplete_Help: 通過左鍵點擊帶有生怪蛋的 Boss 來獲取 uid。
+    Bosstp_Usage: 指定世界名稱、x、y 和 z 坐標以將 Boss 傳送。
     Invalid_Coordinate: '{0} 坐標無效，應為整數。'
     Success_Tp: '&a將 &7{0} Boss 傳送到 {1}'
     Success_Kill: '&c選中的 Boss 已被默默地殺死。'
@@ -150,12 +150,12 @@ Egg:
   Spawn:
     Fail_1: 由於 {1} 無法生成 '{0}' 。懸停
     Fail_2: '&n這裡&7'
-    Fail_3: 獲得幫助.
+    Fail_3: 獲得幫助。
     Fail_Hover:
-    - '&c&l解決生成問題:'
+    - '&c&l解決生成問題：'
     - ''
-    - '&f1. &7檢查諸如 Residence 之類的插件,'
-    - '&7WorldGuard，GriefPrevention 等等。'
+    - '&f1. &7檢查諸如 Residence 之類的插件，'
+    - '&7WorldGuard、GriefPrevention 等等。'
     - '&7和他們的怪物生成標誌。'
     - ''
     - '&f2. &7檢查你的 Boss 生成限制。'
@@ -163,7 +163,7 @@ Egg:
     - '&f3. &7將 Debug key 設置為 ''[spawning]'' '
     - '&7在 settings.yml 並查看控制台'
     - '&7了解更多訊息。'
-    Fail_Claim: 你不能在 {0} 的領地中生成 Boss.
+    Fail_Claim: 你不能在 {0} 的領地中生成 Boss。
     Fail_Limit: Boss 超出限制(參見 Boss 選單 > 生成限制)
     Fail_Cancelled: 另一個插件取消了事件
     Fail_API: 另一個使用 Boss 的插件阻止了該事件
@@ -176,7 +176,7 @@ Fight:
     Flight: 戰鬥
     God_Mode: 上帝模式
     Vanish: 隱形
-    Cheats_Disabled: 你正在與 Boss 戰鬥，禁用 {0}.
+    Cheats_Disabled: 你正在與 Boss 戰鬥，禁用 {0}。
     
 # -------------------------------------------------------------------------------------------------
 # Messages related to paginator splitting command help into multiple pages
@@ -184,7 +184,7 @@ Fight:
 Pages:
   No_Page_Number: '&c請指定此指令的頁碼。'
   No_Pages: '&c你沒有保存任何要顯示的頁面。'
-  No_Page: 頁面不包含給定的頁碼.
+  No_Page: 頁面不包含給定的頁碼。
   Invalid_Page: '&c你的輸入 ''{input}'' 不是有效數字。'
   Go_To_Page: '&7前往第 {page} 頁'
   Go_To_First_Page: '&7前往第一頁'
@@ -198,7 +198,7 @@ Pages:
 Player:
   Not_Online: '&c玩家 {player} &c在此伺服器上不在線。'
   Not_Played_Before: '&c玩家 {player} &c之前沒有玩過，或者我們無法找到他的資料。'
-  Full_Inventory: 庫存已滿，因此有些物品掉在了地板上.
+  Full_Inventory: 庫存已滿，因此有些物品掉在了地板上。
   
 # -------------------------------------------------------------------------------------------------
 # Messages related to menus
@@ -228,7 +228,7 @@ Menu:
 # -------------------------------------------------------------------------------------------------
 Conversation:
   Not_Conversing: '&c只有當你被要求在聊天中輸入內容時，你才能使用此指令。'
-  Requires_Player: 只有玩家可以進入此對話.
+  Requires_Player: 只有玩家可以進入此對話。
   Error: '&c哎呀！這次對話有問題！請聯繫管理員查看控制台以獲取詳細訊息。'
 
 # -------------------------------------------------------------------------------------------------
