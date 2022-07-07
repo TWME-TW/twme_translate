@@ -482,7 +482,7 @@ worldeditor_time_lore:
  - "&7&o改變在世界上"
  - "&7&o的時間."
  - ""
- - "&7&n現在時間&7: %time%"
+ - "&7&n現在時間&7：%time%"
 worldeditor_time_lore_sunrise: "&6日出"
 worldeditor_time_lore_noon: "&e中午"
 worldeditor_time_lore_night: "&9晚上"
@@ -525,13 +525,13 @@ worldeditor_gamerules_lore:
 
 worldeditor_gamerules_title: "&3» &8遊戲規則"
 worldeditor_gamerules_boolean_enabled:
- - "&7&n現在狀態&7: &a開啟"
+ - "&7&n現在狀態&7：&a開啟"
 worldeditor_gamerules_boolean_disabled:
- - "&7&n現在狀態&7: &c關閉"
+ - "&7&n現在狀態&7：&c關閉"
 worldeditor_gamerules_unknown:
- - "&7&n現在狀態&7: &e%value%"
+ - "&7&n現在狀態&7：&e%value%"
 worldeditor_gamerules_integer:
- - "&7&n現在狀態&7: &e%value%"
+ - "&7&n現在狀態&7：&e%value%"
  - ""
  - "&8- &7&o左鍵&8: &7減少 1"
  - "&8- &7&oShift &7+ &7&o左鍵&8: &7減少 10"
@@ -547,11 +547,11 @@ worldeditor_visibility_item: "&b可見度"
 worldeditor_visibility_lore_public:
  - "&7&o改變世界的可見度"
  - ""
- - "&7&n現在狀態&7: &b公開"
+ - "&7&n現在狀態&7：&b公開"
 worldeditor_visibility_lore_private:
  - "&7&o改變世界的可見度"
  - ""
- - "&7&n現在狀態&7: &b私人"
+ - "&7&n現在狀態&7：&b私人"
 
 worldeditor_mobai_item: "&b生物 AI"
 worldeditor_mobai_lore:
@@ -568,21 +568,21 @@ worldeditor_status_lore:
  - "&7&o更改世界現在的"
  - "&7&o狀態."
  - ""
- - "&7&n現在狀態&7: %status%"
+ - "&7&n現在狀態&7：%status%"
 
 worldeditor_project_item: "&b專案項目"
 worldeditor_project_lore:
  - "&7&o更改世界現在的"
  - "&7&oproject."
  - ""
- - "&7&n現在狀態&7: &b%project%"
+ - "&7&n現在狀態&7：&b%project%"
 
 worldeditor_permission_item: "&b權限"
 worldeditor_permission_lore:
  - "&7&o更改世界現在的"
  - "&7&opermission."
  - ""
- - "&7&n現在狀態&7: &b%permission%"
+ - "&7&n現在狀態&7：&b%permission%"
 
 # Settings
 settings_title: "&3» &8設定"
@@ -668,32 +668,32 @@ settings_worldsort_lore_alphabetically_name_az:
  - "&7&o改變世界在"
  - "&7&o世界管理器選單的排列."
  - ""
- - "&7&n現在狀態&7: &b&o名稱 (A-Z)"
+ - "&7&n現在狀態&7：&b&o名稱 (A-Z)"
 settings_worldsort_lore_alphabetically_name_za:
  - "&7&o改變世界在"
  - "&7&o世界管理器選單的排列."
  - ""
- - "&7&n現在狀態&7: &b&o名稱 (Z-A)"
+ - "&7&n現在狀態&7：&b&o名稱 (Z-A)"
 settings_worldsort_lore_alphabetically_project_az:
  - "&7&o改變世界在"
  - "&7&o世界管理器選單的排列."
  - ""
- - "&7&n現在狀態&7: &b&o專案項目 (A-Z)"
+ - "&7&n現在狀態&7：&b&o專案項目 (A-Z)"
 settings_worldsort_lore_alphabetically_project_za:
  - "&7&o改變世界在"
  - "&7&o世界管理器選單的排列."
  - ""
- - "&7&n現在狀態&7: &b&o專案項目 (Z-A)"
+ - "&7&n現在狀態&7：&b&o專案項目 (Z-A)"
 settings_worldsort_lore_date_newest:
  - "&7&o改變世界在"
  - "&7&o世界管理器選單的排列."
  - ""
- - "&7&n現在狀態&7: &b&o創建時間 (最新)"
+ - "&7&n現在狀態&7：&b&o創建時間 (最新)"
 settings_worldsort_lore_date_oldest:
  - "&7&o改變世界在"
  - "&7&o世界管理器選單的排列."
  - ""
- - "&7&n現在狀態&7: &b&o創建時間 (最舊)"
+ - "&7&n現在狀態&7：&b&o創建時間 (最舊)"
 
 # Change Design
 design_title: "&3» &8改變顏色"
