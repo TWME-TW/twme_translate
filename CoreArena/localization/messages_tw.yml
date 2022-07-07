@@ -18,15 +18,15 @@ Arena:
     Clone_Mob_Spawnpoint_Unknown: '&c選定的塊不是怪物生成點！'
   Lobby:
     Join_Player: '&7歡迎來到 &6{arena}&7.我們將在 &6{time}&7 開始。'
-    Join_Others: '&6{player} &7加入大廳 ({players}/{maxPlayers})!'
-    Start_Countdown: '&6做好準備! &7競技場 {arena} 將在 {seconds} 秒開始!'
-    Not_Enough_Players: '&c玩家太少 {arena} 無法開始 ({players}/{minPlayers})!'
-    Kick_No_Class: '&c您還沒有選擇任何階級，我們找不到適合您的階級!'
-    Tier_Too_Low: '&7競技場至少需要 &6 {arenaTier} &7級, 而你只有 &6{classTier} &7級。'
+    Join_Others: '&6{player} &7加入大廳 ({players}/{maxPlayers})！'
+    Start_Countdown: '&6做好準備! &7競技場 {arena} 將在 {seconds} 秒開始！'
+    Not_Enough_Players: '&c玩家太少 {arena} 無法開始 ({players}/{minPlayers})！'
+    Kick_No_Class: '&c您還沒有選擇任何階級，我們找不到適合您的階級！'
+    Tier_Too_Low: '&7競技場至少需要 &6 {arenaTier} &7級，而你只有 &6{classTier} &7級。'
   Game:
-    Start: '&7&6{arena} &7的比賽已經開始 ({players}/{maxPlayers})!'
-    End_Countdown: '&6注意! &7競技場 {arena} 將在 {seconds} 秒 結束!'
-    End: '&6&lGG! &7&6{arena} &7的比賽已經結束!'
+    Start: '&7&6{arena} &7的比賽已經開始 ({players}/{maxPlayers})！'
+    End_Countdown: '&6注意! &7競技場 {arena} 將在 {seconds} 秒 結束！'
+    End: '&6&lGG! &7&6{arena} &7的比賽已經結束！'
     End_Last_Player: '&7競技場已經&6結束&7因此你是最後一個離開的玩家！'
     Death_Broadcast: '&c{player} 已經死了！ ({deaths}/{lifes_max})'
     Death_To_Victim: '&c你已經死了，還剩下 {lifes_left} 次。'
@@ -37,7 +37,7 @@ Arena:
     Kick_Kill_Broadcast: '&6{killer} &7已殺死玩家 &6{player}&7! 剩下 {players} 名玩家！'
     Kick_Kill_To_Victim: '&7你被 &6{killer} &7 殺死，遊戲結束！ 下次祝你好運 {player}！'
     Class_Auto_Assigned: '&7您沒有選擇任何階級，而是獲得了階級'
-    Friendly_Fire_Activated: '&c小心！ &6PvP &7已啟用!'
+    Friendly_Fire_Activated: '&c小心！ &6PvP &7已啟用！'
     Explosive_Arrow_No_Ammo: '&7你缺少 &c爆炸箭&7 從這個弓上射擊。'
   State:
     Stopped: '&4已停止'
@@ -112,7 +112,7 @@ Menu:
         - '&7該物品將保存到'
         - '&7你的背包。'
     Tier:
-      Already_Bought: '&2你已經有這個等級了!'
+      Already_Bought: '&2你已經有這個等級了！'
       Maximum_Reached: '&2您已達到最高等級'
       Too_High: '&4這等級對你來說太高了！'
       Locked: '&c此等級已鎖定'
@@ -120,7 +120,7 @@ Menu:
       Next: '&d下一個等級 ->'
       Added: '&7添加等級'
       Purchased: '&6您已購買 {name} 等級 {tier}'
-      Purchased_Menu_Title: '&2&l購買等級 {tier}!'
+      Purchased_Menu_Title: '&2&l購買等級 {tier}！'
     Not_Set:
       Helmet: '&7未設置頭盔'
       Chestplate: '&7未設置胸甲'
@@ -144,7 +144,7 @@ Commands:
   Start:
     Not_Lobby: '&c您只能在大廳狀態下啟動競技場。 先使用 /{label} join 加入競技場。'
     Success: '&6強制開始競技場 {arena}。'
-    Fail: '&cArena {arena} could not start, perhaps player limits were not met?'
+    Fail: '&c競技場 {arena} 無法啟動，可能沒有達到玩家限制？'
   Stop:
     Already_Stopped: '&c競技場 {arena} 無法啟動，可能沒有達到玩家限制？'
     Success: '&7競技場 {arena} 已經 &c停止。'
@@ -165,7 +165,7 @@ Commands:
     Enabled: '競技場 {arena} 現在處於 &a編輯 模式&7。 使用 /{label} tool獲取設置工具。'
     Disabled: '&7競技場 {arena} 不再處於編輯模式&7。'
   Find:
-    Wrong_Syntax: '&c無效的語法！ 輸入 &7玩家名稱&c, 或 &7world x y z&c, 或只有 &7x y z'
+    Wrong_Syntax: '&c無效的語法！ 輸入 &7玩家名稱&c，或 &7world x y z&c，或只有 &7x y z'
     Not_Found: '&c在您的位置找不到競技場。'
     Not_Found_Location: '&c在 {location} 找不到競技場。'
     Found: '&7在您所在的位置找到了 &2{arena}&7 競技場。'
@@ -229,7 +229,7 @@ Signs:
       &6<name> &f- 階級名
   Upgrade:
     Cost_Missing: '&c在第三行指定成本，例如：5、20、...'
-    Cost_Invalid: '&c只指定級別編號，例如：5, 20, ...'
+    Cost_Invalid: '&c只指定級別編號，例如：5、20、...'
     Help: |-
       &7製作升級告示牌時，使用以下語法：
       &6[upgrade] &f- 使插件識別告示牌
