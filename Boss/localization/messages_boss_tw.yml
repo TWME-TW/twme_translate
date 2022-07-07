@@ -50,8 +50,8 @@ Commands:
   Invalid_Sub_Argument: '&c無效的子引數。運行 ''/{label} {0}'' 尋求幫助。'
   Invalid_Argument_Multiline: '&c無效的引數。 用法:'
   Invalid_Time: 預期時間，例如 '3 hours' 或 '15 minutes'，得到：'{input}'
-  Invalid_Number: '該數字必須是整數或小數。得到: ''{input}'''
-  Invalid_World: '無效的世界 ''{world}''。可用: {available}'
+  Invalid_Number: '該數字必須是整數或小數。得到：''{input}'''
+  Invalid_World: '無效的世界 ''{world}''。可用：{available}'
   Invalid_Boss: '名為''{0}''的 Boss 不存在。可用：{1}'
   Invalid_Bosses: 沒有與你的搜索符合的 Boss 活著.
   Invalid_Boss_Type: '&c無效的 Boss 類型 ''{0}''。可用的：{1}'
