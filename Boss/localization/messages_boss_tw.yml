@@ -74,7 +74,7 @@ Commands:
   Reload_Started: 正在重新加載插件的數據，請稍候..
   Reload_Success: '&6Boss {plugin_version} 已重新加載。'
   Reload_Fail: '&4Oups，&c重新加載 失敗！有關更多訊息請參閱控制台。錯誤：{error}'
-  Reload_File_Load_Error: '&4哎呀，&c從你的磁盤加載文件時出現問題！有關更多訊息請參閱控制台。Boss 沒有重新加載。'
+  Reload_File_Load_Error: '&4哎呀，&c從你的硬碟加載文件時出現問題！有關更多訊息請參閱控制台。Boss 沒有重新加載。'
   Debug_Description: 壓縮你的設置以報告錯誤。
   Debug_Preparing: '&6正在準備除錯日誌..。'
   Debug_Success: '&2已成功複製 {amount} 個文件到 debug.zip。你的敏感 MySQL 訊息已從 yml 文件中刪除。請通過 ufile.io 上傳並發送給我們進行審核。'
