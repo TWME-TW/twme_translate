@@ -11,7 +11,7 @@ Arena:
     Full: '&c競技場已滿，請稍後再試！'
     No_Arena_At_Location: 找不到您所在位置的競技場。 請指定競技場名稱。
     Inventory_Not_Empty: '&c加入前請清空背包！'
-    Cannot_Run_Command_In_Arena: '&c遊玩時時不允許使用此命令！'
+    Cannot_Run_Command_In_Arena: '&c遊玩時時不允許使用此指令！'
   Setup:
     Cannot_Edit: '&c要編輯競技場，請進入其設置模式。'
     Cannot_Clone: '&c無法克隆可視化塊！'
@@ -127,15 +127,15 @@ Menu:
       Leggings: '&7未設置褲子'
       Boots: '&7未設置靴子'
 Commands:
-  No_Console: '&c您只能作為玩家使用此命令'
-  Disallowed_While_Playing: '&c當您在競技場中玩遊戲時，此命令會被禁用。'
+  No_Console: '&c您只能作為玩家使用此指令'
+  Disallowed_While_Playing: '&c當您在競技場中玩遊戲時，此指令會被禁用。'
   Invalid_Argument: '&c無效的參數。 運行 &6/{label} ？ &c尋求幫助。'
   Invalid_Sub_Argument: '&c無效的參數。 運行“/{label} {0}”尋求幫助。'
   Invalid_Argument_Multiline: '&c無效的參數。 用法：'
   Label_Description: '&c描述： {description}'
   Label_Usage: '&c用法：'
   Label_Usages: '&c用法：'
-  Error: '&4&l哎呀！ &c命令失敗:(查看控制台報錯。'
+  Error: '&4&l哎呀！ &c指令失敗:(查看控制台報錯。'
   Join:
     Suggest: '使用 ''/{label} join <arena>'' 加入其中一個。'
   Leave:
