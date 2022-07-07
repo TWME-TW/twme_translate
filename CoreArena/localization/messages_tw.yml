@@ -19,14 +19,14 @@ Arena:
   Lobby:
     Join_Player: '&7歡迎來到 &6{arena}&7.我們將在 &6{time}&7 開始。'
     Join_Others: '&6{player} &7加入大廳 ({players}/{maxPlayers})！'
-    Start_Countdown: '&6做好準備! &7競技場 {arena} 將在 {seconds} 秒開始！'
+    Start_Countdown: '&6做好準備！&7競技場 {arena} 將在 {seconds} 秒開始！'
     Not_Enough_Players: '&c玩家太少 {arena} 無法開始 ({players}/{minPlayers})！'
     Kick_No_Class: '&c您還沒有選擇任何階級，我們找不到適合您的階級！'
     Tier_Too_Low: '&7競技場至少需要 &6 {arenaTier} &7級，而你只有 &6{classTier} &7級。'
   Game:
     Start: '&7&6{arena} &7的比賽已經開始 ({players}/{maxPlayers})！'
-    End_Countdown: '&6注意! &7競技場 {arena} 將在 {seconds} 秒 結束！'
-    End: '&6&lGG! &7&6{arena} &7的比賽已經結束！'
+    End_Countdown: '&6注意！&7競技場 {arena} 將在 {seconds} 秒 結束！'
+    End: '&6&lGG！&7&6{arena} &7的比賽已經結束！'
     End_Last_Player: '&7競技場已經&6結束&7因此你是最後一個離開的玩家！'
     Death_Broadcast: '&c{player} 已經死了！ ({deaths}/{lifes_max})'
     Death_To_Victim: '&c你已經死了，還剩下 {lifes_left} 次。'
@@ -34,7 +34,7 @@ Arena:
     Kick_Death_To_Victim: '&c你已經死了，沒有更多的生命了，祝下次好運！'
     Kill_Broadcast: '&6{player} &7被 &6{killer} &7殺死了({lifes_left}/{lifes_max})'
     Kill_To_Victim: '&7你被殺了，還有e &6{lifes} &7次。'
-    Kick_Kill_Broadcast: '&6{killer} &7已殺死玩家 &6{player}&7! 剩下 {players} 名玩家！'
+    Kick_Kill_Broadcast: '&6{killer} &7已殺死玩家 &6{player}&7！剩下 {players} 名玩家！'
     Kick_Kill_To_Victim: '&7你被 &6{killer} &7 殺死，遊戲結束！ 下次祝你好運 {player}！'
     Class_Auto_Assigned: '&7您沒有選擇任何階級，而是獲得了階級'
     Friendly_Fire_Activated: '&c小心！ &6PvP &7已啟用！'
@@ -86,7 +86,7 @@ Menu:
     Select_Class: 選擇一個階級
     Choose_Reward: 選擇獎勵
     More_Nuggets_Needed: '&4為此，您需要 {reward_cost} 塊金粒'
-    Bought_Reward: '&2購買成功! 剩餘: {remaining}'
+    Bought_Reward: '&2購買成功！剩餘: {remaining}'
     Items_Label: 物品
     Items_Description: '&r購買貴重物品以增強您的生存體驗。'
     Blocks_Label: 方塊
