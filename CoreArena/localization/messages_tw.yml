@@ -73,7 +73,7 @@ Title:
 Currency:
   Name: '金粒, 金粒'
   Color: GOLD
-  Received: '&7您收到 &6{amount} &7並擁有&6 {balance}&7。 把它們花在/arena rewards上！'
+  Received: '&7您收到 &6{amount} &7並擁有&6 {balance}&7。把它們花在/arena rewards上！'
 Menu:
   Cannot_Open_In_Arena: '&c在競技場玩時無法打開選單！'
   Cannot_Open_Outside_Arena: '&c此選單只能在競技場內訪問！'
@@ -129,9 +129,9 @@ Menu:
 Commands:
   No_Console: '&c您只能作為玩家使用此指令'
   Disallowed_While_Playing: '&c當您在競技場中玩遊戲時，此指令會被禁用。'
-  Invalid_Argument: '&c無效的參數。 運行 &6/{label} ？ &c尋求幫助。'
-  Invalid_Sub_Argument: '&c無效的參數。 運行“/{label} {0}”尋求幫助。'
-  Invalid_Argument_Multiline: '&c無效的參數。 用法：'
+  Invalid_Argument: '&c無效的參數。運行 &6/{label} ？ &c尋求幫助。'
+  Invalid_Sub_Argument: '&c無效的參數。運行“/{label} {0}”尋求幫助。'
+  Invalid_Argument_Multiline: '&c無效的參數。用法：'
   Label_Description: '&c描述： {description}'
   Label_Usage: '&c用法：'
   Label_Usages: '&c用法：'
@@ -142,17 +142,17 @@ Commands:
     Not_Playing: '&c你沒有在任何競技場上比賽。'
     Success: '&6您已放棄 {arena} 中的遊戲！'
   Start:
-    Not_Lobby: '&c您只能在大廳狀態下啟動競技場。 先使用 /{label} join 加入競技場。'
+    Not_Lobby: '&c您只能在大廳狀態下啟動競技場。先使用 /{label} join 加入競技場。'
     Success: '&6強制開始競技場 {arena}。'
     Fail: '&c競技場 {arena} 無法啟動，可能沒有達到玩家限制？'
   Stop:
     Already_Stopped: '&c競技場 {arena} 無法啟動，可能沒有達到玩家限制？'
     Success: '&7競技場 {arena} 已經 &c停止。'
   Menu:
-    Lookup_Failed: '&c找不到對象“{object}”。 運行 &7/{label} {0}&c。'
+    Lookup_Failed: '&c找不到對象“{object}”。運行 &7/{label} {0}&c。'
   Nuggets:
     Specify_Player: '&c請指定玩家名稱。'
-    Invalid_Parameter: '&c未知參數''{2}''。 可用：{available}'
+    Invalid_Parameter: '&c未知參數''{2}''。可用：{available}'
     Invalid_Amount: '&c{currency_name}金額無效: {3}'
     Balance: '&7你有 &6{balance}'
     Balance_Other: '&6{player} &7有 &6{balance}'
@@ -160,9 +160,9 @@ Commands:
     Gave: '&6{player} &7被給予 {amount} 並且擁有 &6{balance}'
     Took: '&6{player} &7被拿走 {amount} 剩下 &6{balance}'
   Edit:
-    Arena_Running: '&c無法編輯正在運行的競技場。 請先執行 &7/{label} stop {arena}&c 停止競技場。'
+    Arena_Running: '&c無法編輯正在運行的競技場。請先執行 &7/{label} stop {arena}&c 停止競技場。'
     Already_Editing: '&c您已經在編輯 {arena}。'
-    Enabled: '競技場 {arena} 現在處於 &a編輯 模式&7。 使用 /{label} tool獲取設置工具。'
+    Enabled: '競技場 {arena} 現在處於 &a編輯 模式&7。使用 /{label} tool獲取設置工具。'
     Disabled: '&7競技場 {arena} 不再處於編輯模式&7。'
   Find:
     Wrong_Syntax: '&c無效的語法！ 輸入 &7玩家名稱&c，或 &7world x y z&c，或只有 &7x y z'
@@ -175,7 +175,7 @@ Commands:
     Disabled: '&6已成功停用競技場 &7{name}'
     Enabled: '&6成功啟用競技場 &7{name}'
   Reload_Success: '&7插件已成功重新加載。'
-  Reload_Fail: '&4哎呀！ &c由於錯誤，重新加載失敗！ 有關更多信息，請參見控制台。 &4錯誤：&c{error}'
+  Reload_Fail: '&4哎呀！ &c由於錯誤，重新加載失敗！ 有關更多信息，請參見控制台。&4錯誤：&c{error}'
 Conversation:
   Invalid_Input: '&c輸入無效！ 請按照上述說明進行操作。'
   Stopped: '&c服務器對話已取消。'
@@ -183,9 +183,9 @@ Conversation:
   New:
     Help: '&7輸入 {type} 的 &6新名稱&7，或''exit''停止。'
     Already_Exists: '&c這個 {type} 已經存在。選擇一個不同的名稱。'
-    No_Spaces: '&c名稱中不允許有空格。 請改用 _。'
+    No_Spaces: '&c名稱中不允許有空格。請改用 _。'
     Success: '&7新的 &6{type} &7{name} 已創建！ 使用 /arena menu 來編輯它。'
-    Success_Arena: '&7一個新的 &6競技場 &7{name} 已創建。 競技場已進入 &e編輯 模式。 &7使用 /arena tools 對其進行編輯。'
+    Success_Arena: '&7一個新的 &6競技場 &7{name} 已創建。競技場已進入 &e編輯 模式。&7使用 /arena tools 對其進行編輯。'
     Error: '&c添加新對象時發生未處理的錯誤。'
   Tier:
     Help: '&7輸入{class} 層 {tier} 的價格，或 ''exit'' 停止。'
