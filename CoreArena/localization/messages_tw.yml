@@ -95,7 +95,7 @@ Menu:
     Packs_Description: '&r購買僅在此處可用的獎勵包或特殊物品。'
     Class_Label: 升級你的階級
     Class_Description: '&r在這裡將您的階級升級到更高級別。'
-    Info_Player: '餘額: &f{nuggets}&r您可以將它們用於獎勵物品或特殊禮包。'
+    Info_Player: '餘額：&f{nuggets}&r您可以將它們用於獎勵物品或特殊禮包。'
     Info_Admin: '&6玩家在競技場獲得的金粒&7，可用於獎勵。&r您可以在此處配置獎勵。'
     Info:
       Edit:
