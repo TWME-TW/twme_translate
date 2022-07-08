@@ -10,9 +10,9 @@ message-kick-new=你無法進入伺服器，因為 mojang 服務器已離線！
 #The message to display when a user attempts to login with an invalid minecraft username.
 message-kick-invalid=無效的用戶名。駭客？
 #The message to display when mojang servers go offline. Set to null to disable.
-message-mojang-offline=&5[&2維持上線系統&5]&a Mojang 服務器現在已離線！
+message-mojang-offline=&5[&2維持上線系統&5] &aMojang 服務器現在已離線！
 #The message to display when mojang servers go back online. Set to null to disable.
-message-mojang-online=&5[&2維持上線系統&5]&a Mojang 服務器現在已上線！
+message-mojang-online=&5[&2維持上線系統&5] &aMojang 服務器現在已上線！
 #Below are three session server check methods which can be used to determine if mojang is online or not.
 #For example, if http-head-session-server is true AND mojang-server-status is also true, then the plugin will
 #only go into mojang offline mode if both services claim the session servers are offline.
@@ -26,7 +26,7 @@ mojang-server-status=false
 ##########################################
 use_mysql=false
 host=127.0.0.1
-port=3306
+port=3306 
 database-name=minecraft
 database-username=root
 database-password=password
