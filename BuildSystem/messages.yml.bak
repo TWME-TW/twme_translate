@@ -173,6 +173,7 @@ worlds_builders_unknown_world: "%prefix% &c未知的世界"
 worlds_world_name: "世界名稱"
 worlds_world_exists: "%prefix% &c這個世界已經存在。"
 worlds_world_creation_invalid_characters: "%prefix% &7&o從世界名稱中刪除了無效字符。"
+worlds_world_creation_name_bank: "%prefix% &cThe world name cannot be blank."
 worlds_world_creation_started: "%prefix% &7世界：&b%world% &8(&7類型：&f%type%&8) &7的創建已開始…"
 worlds_template_creation_started: "%prefix% &7世界：&b%world% &8(&7模板：&f%template%&8) &7的創建已開始…"
 worlds_creation_finished: "%prefix% &7世界已&a成功&7創建。"
@@ -184,6 +185,7 @@ worlds_navigator_open: "%prefix% &c您已經打開了世界管理器！"
 worlds_delete_usage: "%prefix% &7用法：&b/worlds delete <世界>"
 worlds_delete_unknown_world: "%prefix% &c未知的世界"
 worlds_delete_unknown_directory: "%prefix% &c刪除世界時發生錯誤：未找到此目錄！"
+worlds_delete_not_creator: "%prefix% &cYou are not the creator of this world."
 worlds_delete_error: "%prefix% &c刪除世界時發生錯誤：請再嘗試一遍！"
 worlds_delete_canceled: "%prefix% &7世界：&b%world% &7的刪除已被取消。"
 worlds_delete_started: "%prefix% &7已開始刪除 世界：&b%world% &7…"
@@ -232,6 +234,7 @@ worlds_importall_no_worlds: "%prefix% &c沒有找到世界。"
 worlds_importall_started: "%prefix% &7開始導入 &b%amount% &7 個世界…"
 worlds_importall_delay: "%prefix% &8➥ &7每個世界之間的延遲：&b%delay%s&7。"
 worlds_importall_invalid_character: "%prefix% &c✘ &7&o%world% &7包含無效字符 &8(&c%char%&8)"
+worlds_importall_world_already_imported: "%prefix% &c&l✗ &7World already imported: &b%world%"
 worlds_importall_world_imported: "%prefix% &a✔ &7已導入世界：&b%world%"
 worlds_importall_finished: "%prefix% &7所有世界已&a成功被&7導入。"
 
@@ -438,7 +441,7 @@ type_custom: "自定義"
 type_template: "模板"
 type_private: "私人"
 
-# Worlds Status
+# World Status
 status_title: "&8狀態 &7» &3%world%"
 status_not_started: "&c尚未開始"
 status_in_progress: "&6進行中"
@@ -446,6 +449,12 @@ status_almost_finished: "&a即將完成"
 status_finished: "&2完成"
 status_archive: "&9歸檔"
 status_hidden: "&f隱藏"
+
+# World Difficulty
+difficulty_peaceful: "&fPeaceful"
+difficulty_easy: "&aEasy"
+difficulty_normal: "&6Normal"
+difficulty_hard: "&cHard"
 
 # Delete World
 delete_title: "&3» &8刪除世界"
@@ -553,6 +562,12 @@ worldeditor_blockinteractions_item: "&b方塊交互"
 worldeditor_blockinteractions_lore:
  - "&7&o切換是否啟用"
  - "&7&o方塊交互。"
+
+worldeditor_difficulty_item: "&bDifficulty"
+worldeditor_difficulty_lore:
+ - "&7&oChange the world's difficulty."
+ - ""
+ - "&7&nCurrently&7: %difficulty%"
 
 worldeditor_status_item: "&b狀態"
 worldeditor_status_lore:
@@ -722,6 +737,7 @@ blocks_smooth_sandstone: "&b平滑砂岩"
 blocks_smooth_red_sandstone: "&b平滑紅砂岩"
 blocks_powered_redstone_lamp: "&b通電的紅石燈"
 blocks_burning_furnace: "&b永遠燃燒的熔爐"
+blocks_piston_head: "&bPiston Head"
 blocks_command_block: "&b指令方塊"
 blocks_barrier: "&b屏障"
 blocks_mob_spawner: "&b生怪磚"

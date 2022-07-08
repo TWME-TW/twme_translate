@@ -563,11 +563,11 @@ worldeditor_blockinteractions_lore:
  - "&7&o切換是否啟用"
  - "&7&o方塊交互。"
 
-worldeditor_difficulty_item: "&bDifficulty"
+worldeditor_difficulty_item: "&b難易度"
 worldeditor_difficulty_lore:
- - "&7&oChange the world's difficulty."
+ - "&7&o改變世界的難易度。"
  - ""
- - "&7&nCurrently&7: %difficulty%"
+ - "&7&n現在難易度&7：%difficulty%"
 
 worldeditor_status_item: "&b狀態"
 worldeditor_status_lore:
@@ -737,7 +737,7 @@ blocks_smooth_sandstone: "&b平滑砂岩"
 blocks_smooth_red_sandstone: "&b平滑紅砂岩"
 blocks_powered_redstone_lamp: "&b通電的紅石燈"
 blocks_burning_furnace: "&b永遠燃燒的熔爐"
-blocks_piston_head: "&bPiston Head"
+blocks_piston_head: "&b活塞頭"
 blocks_command_block: "&b指令方塊"
 blocks_barrier: "&b屏障"
 blocks_mob_spawner: "&b生怪磚"
