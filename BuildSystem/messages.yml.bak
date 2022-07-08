@@ -563,8 +563,7 @@ worldeditor_status_lore:
 
 worldeditor_project_item: "&b專案項目"
 worldeditor_project_lore:
- - "&7&o更改世界現在的"
- - "&7&oproject。"
+ - "&7&o更改世界現在的專案項目。"
  - ""
  - "&7&n現在狀態&7：&b%project%"
 
@@ -653,33 +652,27 @@ settings_spawnteleport_lore:
 
 settings_worldsort_item: "&b世界排序"
 settings_worldsort_lore_alphabetically_name_az:
- - "&7&o改變世界在"
- - "&7&o世界管理器選單的排列。"
+ - "&7&o改變世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在狀態&7：&b&o名稱 (A-Z)"
 settings_worldsort_lore_alphabetically_name_za:
- - "&7&o改變世界在"
- - "&7&o世界管理器選單的排列。"
+ - "&7&o改變世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在狀態&7：&b&o名稱 (Z-A)"
 settings_worldsort_lore_alphabetically_project_az:
- - "&7&o改變世界在"
- - "&7&o世界管理器選單的排列。"
+ - "&7&o改變世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在狀態&7：&b&o專案項目 (A-Z)"
 settings_worldsort_lore_alphabetically_project_za:
- - "&7&o改變世界在"
- - "&7&o世界管理器選單的排列。"
+ - "&7&o改變世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在狀態&7：&b&o專案項目 (Z-A)"
 settings_worldsort_lore_date_newest:
- - "&7&o改變世界在"
- - "&7&o世界管理器選單的排列。"
+ - "&7&o改變世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在狀態&7：&b&o創建時間 (最新)"
 settings_worldsort_lore_date_oldest:
- - "&7&o改變世界在"
- - "&7&o世界管理器選單的排列。"
+ - "&7&o改變世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在狀態&7：&b&o創建時間 (最舊)"
 
