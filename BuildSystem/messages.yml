@@ -411,7 +411,7 @@ setup_normal_world: "&b一般世界"
 setup_flat_world: "&a平坦世界"
 setup_nether_world: "&c地獄世界"
 setup_end_world: "&e終界世界"
-setup_void_world: "&f空蕩蕩的世界(?)"
+setup_void_world: "&f虛空世界"
 setup_imported_world: "&7導入世界"
 
 # Create World
@@ -424,7 +424,7 @@ create_normal_world: "&b一般世界"
 create_flat_world: "&a平坦世界"
 create_nether_world: "&c地獄世界"
 create_end_world: "&e終界世界"
-create_void_world: "&f虛空世界(?)"
+create_void_world: "&f虛空世界"
 create_template: "&e%template%"
 create_generators_create_world: "&e用生成器生成一個世界"
 
@@ -453,8 +453,7 @@ delete_world_name: "&e%world%"
 delete_world_name_lore:
  - ""
  - "&c&n警告&c：&7&o一旦世界刪除"
- - "&7&o該世界將"
- - "&7&o永遠無法回復！"
+ - "&7&o該世界將永遠無法回復！"
 delete_world_cancel: "&c取消"
 delete_world_confirm: "&a確認"
 
