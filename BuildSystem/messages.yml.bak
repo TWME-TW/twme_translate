@@ -453,8 +453,7 @@ delete_world_name: "&e%world%"
 delete_world_name_lore:
  - ""
  - "&c&n警告&c：&7&o一旦世界刪除"
- - "&7&o該世界將"
- - "&7&o永遠無法回復！"
+ - "&7&o該世界將永遠無法回復！"
 delete_world_cancel: "&c取消"
 delete_world_confirm: "&a確認"
 
@@ -533,8 +532,7 @@ worldeditor_gamerules_integer:
 worldsettings_gamerule_:
  - ""
  - "&c&n警告&c：&7&o一旦該世界刪除"
- - "&7&o資料將刪除"
- - "&7&o並永遠無法回復！"
+ - "&7&o資料將刪除，永遠無法回復！"
 
 worldeditor_visibility_item: "&b可見度"
 worldeditor_visibility_lore_public:

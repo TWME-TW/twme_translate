@@ -532,8 +532,7 @@ worldeditor_gamerules_integer:
 worldsettings_gamerule_:
  - ""
  - "&c&n警告&c：&7&o一旦該世界刪除"
- - "&7&o資料將刪除"
- - "&7&o並永遠無法回復！"
+ - "&7&o資料將刪除，永遠無法回復！"
 
 worldeditor_visibility_item: "&b可見度"
 worldeditor_visibility_lore_public:
@@ -564,8 +563,7 @@ worldeditor_status_lore:
 
 worldeditor_project_item: "&b專案項目"
 worldeditor_project_lore:
- - "&7&o更改世界現在的"
- - "&7&oproject。"
+ - "&7&o更改世界現在的專案項目。"
  - ""
  - "&7&n現在狀態&7：&b%project%"
 
