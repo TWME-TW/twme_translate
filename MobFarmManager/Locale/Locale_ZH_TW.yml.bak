@@ -46,7 +46,7 @@ command:
       args: ''
     info:
       RemovedList: '&6[target](&e[amount]&6)'
-      Removed: '&6已移除：[list]!'
+      Removed: '&6已移除: [list]!'
       List: '&e[place]。&6[x]&e:&6[z] &e(&6[amount]&e)'
       Command: /tppos [x] [y] [z] [world]
       Hover: "&6傳送至 \n&e[world]"
