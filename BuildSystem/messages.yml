@@ -23,7 +23,7 @@ enter_player_name: "&7輸入 &b玩家名稱"
 cancel_subtitle: "&7輸入 &ccancel &7來取消"
 input_cancelled: "%prefix% &c取消輸入！"
 update_available:
- - "%prefix% &7啊！有新的更新 &8[&b%new_version%&8]"
+ - "%prefix% &7啊！有新的版本 &8[&b%new_version%&8]"
  - " &8➥ &7你現在的版本 ：&b%current_version%"
 command_archive_world: "%prefix% &c你不能在這裡使用這個命令！"
 command_not_builder: "%prefix% &c只有建築師可以使用此命令！"
@@ -82,7 +82,7 @@ buildsystem_skull: "&7接收玩家或定制頭顱。"
 buildsystem_speed: "&7更改你的飛行/步行速度"
 buildsystem_spawn: "&7傳送至重生點。"
 buildsystem_top: "&7傳送到你上方的最高位置。"
-buildsystem_worlds: "&7所有 &o/worlds &7指令 的介紹。"
+buildsystem_worlds: "&7所有 &o/worlds &7指令的介紹。"
 
 # /config
 config_usage: "%prefix% &7用法：&b/config reload"
@@ -124,8 +124,8 @@ noai_activated: "%prefix% &7生物 AI 已在 &b%world% &7被 &c關閉&7。"
 noai_activated_in_world: "%prefix% &7生物 AI 在&b%world% &7已被 &c關閉&7。"
 
 # /skull
-skull_usage: "%prefix% &7用法：&b/skull [name]"
-skull_player_received: "%prefix% &7你收到了 &b%player%&7的頭顱。"
+skull_usage: "%prefix% &7用法：&b/skull [玩家ID]"
+skull_player_received: "%prefix% &7你收到了 &b%player% &7的頭顱。"
 skull_custom_received: "%prefix% &7你收到了一個 &b自訂頭顱&7。"
 
 # /spawn
@@ -150,7 +150,7 @@ day_set: "%prefix% &7已將世界 &b%world%&7 的時間設為白天。"
 # /night
 night_usage: "%prefix% &7用法：&b/night [世界]"
 night_unknown_world: "%prefix% &c未知的世界"
-night_set: "%prefix% &7已將世界 &b%world%&7. 的時間設為晚上"
+night_set: "%prefix% &7已將世界 &b%world%&7。的時間設為晚上"
 
 # /top
 top_usage: "%prefix% &7用法：&b/top"
@@ -224,12 +224,12 @@ worlds_import_unknown_world: "%prefix% &c未知的世界"
 worlds_import_world_is_imported: "%prefix% &7這個世界已經被導入。"
 worlds_import_unknown_generator: "%prefix% &c未知生成器。"
 worlds_import_started: "%prefix% &7已開始導入世界：&b%world% &7…"
-worlds_import_invalid_character: "%prefix% &7無法導入世界：&c%world%&7. %prefix% &7&o包含無效字符：&c%char% "
+worlds_import_invalid_character: "%prefix% &7無法導入世界：&c%world%&7。%prefix% &7&o包含無效字符：&c%char% "
 worlds_import_finished: "%prefix% &7世界&a成功&7導入。"
 
 worlds_importall_usage: "%prefix% &7用法：&b/worlds importall"
 worlds_importall_no_worlds: "%prefix% &c沒有找到世界。"
-worlds_importall_started: "%prefix% &7開始導入 &b%amount% &7 個世界 …"
+worlds_importall_started: "%prefix% &7開始導入 &b%amount% &7 個世界…"
 worlds_importall_delay: "%prefix% &8➥ &7每個世界之間的延遲：&b%delay%s&7。"
 worlds_importall_invalid_character: "%prefix% &c✘ &7&o%world% &7包含無效字符 &8(&c%char%&8)"
 worlds_importall_world_imported: "%prefix% &a✔ &7已導入世界：&b%world%"
@@ -296,7 +296,7 @@ worlds_setproject_set: "%prefix% &7世界：&b%world%&7 的專案項目已成功
 worlds_setstatus_usage: "%prefix% &7用法：&b/worlds set狀態 <世界>"
 worlds_setstatus_unknown_world: "%prefix% &c未知的世界"
 worlds_setstatus_error: "%prefix% &c請再嘗試一遍。"
-worlds_setstatus_set: "%prefix% &7世界：&b%world%&7的狀態已被更改為: %status%&7。"
+worlds_setstatus_set: "%prefix% &7世界：&b%world%&7的狀態已被更改為：%status%&7。"
 
 worlds_setpermission_usage: "%prefix% &7用法：&b/worlds setPermission <世界>"
 worlds_setpermission_unknown_world: "%prefix% &c未知的世界"
@@ -353,7 +353,7 @@ world_navigator_no_worlds: "&c&n沒有可用的世界"
 world_navigator_create_world: "&b創建世界"
 world_item_title: "&3&l%world%"
 world_item_lore_normal:
- - "&7狀態&8: %status%"
+ - "&7狀態&8：%status%"
  - ""
  - "&7創建者&8：&b%creator%"
  - "&7項目專案&8：&b%project%"
@@ -362,7 +362,7 @@ world_item_lore_normal:
  - "&7建築師&8："
  - "%builders%"
 world_item_lore_edit:
- - "&7狀態&8: %status%"
+ - "&7狀態&8：%status%"
  - ""
  - "&7創建者&8：&b%creator%"
  - "&7項目專案&8：&b%project%"
@@ -373,26 +373,26 @@ world_item_lore_edit:
  - ""
  - "&8- &7&o左鍵&8：&7傳送"
  - "&8- &7&o右鍵&8：&7編輯"
-world_item_builders_builder_template: "&b%builder%&7, "
+world_item_builders_builder_template: "&b%builder%&7、"
 
 # World Archive
 archive_title: "&3» &8世界檔案"
-archive_no_worlds: "&c&n沒有可用的世界"
+archive_no_worlds: "&c&n沒有已存在的世界"
 
 # Private Worlds
 private_title: "&3» &8私人世界"
-private_no_worlds: "&c&n沒有可用的世界"
+private_no_worlds: "&c&n沒有已存在的世界"
 private_create_world: "&b創建一個私人世界"
 
 # Setup
 setup_title: "&3» &8設置"
 setup_create_item_name: "&b創建一個世界物品"
 setup_create_item_lore:
- - "&7這個物品會用在"
- - "&7在選單顯示你的世界。"
+ - "&7這個物品會用在在選單"
+ - "&7來代表你的世界。"
  - ""
  - "&7&n更改方式&7："
- - "&8» &7&o拖動新物品至舊物品上 "
+ - "&8» &7&o拖動新物品至舊物品上"
 setup_default_item_name: "&b預設物品"
 setup_default_item_lore:
  - "&7此物品是預設物品"
@@ -464,34 +464,29 @@ worldeditor_world_item: "&3&l%world%"
 
 worldeditor_blockbreaking_item: "&b方塊破壞"
 worldeditor_blockbreaking_lore:
- - "&7&o切換是否可以"
- - "&7&o破壞方塊。"
+ - "&7&o切換是否可以破壞方塊。"
 
 worldeditor_blockplacement_item: "&b方塊鎖定"
 worldeditor_blockplacement_lore:
- - "&7&o切換是否可以"
- - "&7&o放置方塊。"
+ - "&7&o切換是否可以放置方塊。"
 
 worldeditor_physics_item: "&b方塊物理"
 worldeditor_physics_lore:
- - "&7&o切換是否"
- - "&7&o啟用物理。"
+ - "&7&o切換是否啟用物理。"
 
 worldeditor_time_item: "&b時間"
 worldeditor_time_lore:
- - "&7&o改變在世界上"
- - "&7&o的時間。"
+ - "&7&o改變在世界上的時間。"
  - ""
  - "&7&n現在時間&7：%time%"
 worldeditor_time_lore_sunrise: "&6日出"
 worldeditor_time_lore_noon: "&e中午"
 worldeditor_time_lore_night: "&9晚上"
-worldeditor_time_lore_unknown: "&f未知"
+worldeditor_time_lore_unknown: "&f未知時間"
 
 worldeditor_explosions_item: "&b爆炸"
 worldeditor_explosions_lore:
- - "&7&o切換是否"
- - "&7&o啟用爆炸。"
+ - "&7&o切換是否啟用爆炸。"
 
 worldeditor_butcher_item: "&b清怪"
 worldeditor_butcher_lore:
@@ -500,15 +495,13 @@ worldeditor_butcher_removed: "%prefix% &b%amount% &7隻生物已被移除。"
 
 worldeditor_builders_item: "&b建築師"
 worldeditor_builders_lore:
- - "&7&o管理誰可以"
- - "&7&o在世界建築。"
+ - "&7&o管理誰可以在世界建築。"
  - ""
  - "&8- &7&o左鍵&8：&7切換功能"
  - "&8- &7&o右鍵&8：&7管理建築師"
 worldeditor_builders_not_creator_item: "&c&m建築師"
 worldeditor_builders_not_creator_lore:
- - "&7&o你不是該世界的"
- - "&7&o創建者。"
+ - "&7&o你不是該世界的創建者。"
 
 worldeditor_builders_title: "&3» &8建築師"
 worldeditor_builders_creator_item: "&7&n創建者&7："
@@ -597,10 +590,10 @@ settings_clear_inventory_lore:
  - "&7&o當此選項開啟時"
  - "&7&o將清除加入的玩家的物品欄"
 
-settings_disableinteract_item: "&b關閉方塊交互"
+settings_disableinteract_item: "&b關閉方塊更新"
 settings_disableinteract_lore:
  - "&7&o當此選項被開啟時"
- - "&7&o將關閉方塊交互。"
+ - "&7&o將關閉方塊更新。"
 
 settings_hideplayers_item: "&b隱藏玩家"
 settings_hideplayers_lore:
@@ -612,7 +605,7 @@ settings_instantplacesigns_lore:
  - "&7&o當此選項開啟時"
  - "&7&o無需再放告示牌時打字。"
 
-settings_keep_navigator_item: "&b保持世界管理器"
+settings_keep_navigator_item: "&b常駐世界管理器"
 settings_keep_navigator_lore:
  - "&7&o當你開啟此選項與世界管理器"
  - "&7&o世界管理器會持續在物品欄中"
@@ -620,7 +613,7 @@ settings_keep_navigator_lore:
 
 settings_new_navigator_item: "&b新世界管理器"
 settings_new_navigator_lore:
- - "&7&o一個新的和改進的世界管理器"
+ - "&7&o一個新的和先進的世界管理器"
  - "&7&o這不再是一個 GUI。"
 
 settings_nightvision_item: "&b夜視"
@@ -635,7 +628,7 @@ settings_no_clip_lore:
 
 settings_open_trapdoors_item: "&b強制開門"
 settings_open_trapdoors_lore:
- - "&7&o當你右鍵鐵 (活版)門"
+ - "&7&o當你右鍵鐵(活版)門"
  - "&7&o門將開/關。"
 
 settings_placeplants_item: "&b強制植物放置"
@@ -645,22 +638,19 @@ settings_placeplants_lore:
 
 settings_scoreboard_item: "&b計分板"
 settings_scoreboard_lore:
- - "&7&o計分板提供"
- - "&7&o很多有用的訊息。"
+ - "&7&o計分板提供很多有用的訊息。"
 settings_scoreboard_disabled_item: "&c&m計分板"
 settings_scoreboard_disabled_lore:
- - "&7&o計分板已被"
- - "&7&o從設置(config)中關閉。"
+ - "&7&o計分板已被從設置(config)中關閉。"
 
 settings_slab_breaking_item: "&b半磚破壞"
 settings_slab_breaking_lore:
- - "&7&o當打掉兩個疊在一起的半磚"
- - "&7&o將只會打掉一個。"
+ - "&7&o當打掉兩個疊在一起的半磚將只會打掉一個。"
 
-settings_spawnteleport_item: "&b初生點傳送"
+settings_spawnteleport_item: "&b重生點傳送"
 settings_spawnteleport_lore:
  - "&7&o當開啟此選項"
- - "&7&o你將被傳送至初生點"
+ - "&7&o你將被傳送至重生點"
  - "&7&o(如果有設置)。"
 
 settings_worldsort_item: "&b世界排序"
