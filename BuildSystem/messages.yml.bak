@@ -93,8 +93,8 @@ explosions_usage: "%prefix% &7用法：&b/explosions <世界>"
 explosions_unknown_world: "%prefix% &c未知世界。"
 explosions_world_not_imported: "%prefix% &c必須載入世界 » /worlds import <世界>"
 explosions_activated: "%prefix% &7爆炸在 &b%world% &7已 &a啟用&7。"
-explosions_deactivated: "%prefix% &7爆炸在 &b%world%  &7已 &c停用&7。"
-explosions_deactivated_in_world: "%prefix% &7爆炸在 &b%world%  &7目前 &c停用&7。"
+explosions_deactivated: "%prefix% &7爆炸在 &b%world% &7已 &c停用&7。"
+explosions_deactivated_in_world: "%prefix% &7爆炸在 &b%world% &7目前 &c停用&7。"
 
 # /gamemode
 gamemode_usage: "%prefix% &7用法：&b/gamemode <模式> [玩家]"
