@@ -626,7 +626,7 @@ settings_no_clip_lore:
 settings_open_trapdoors_item: "&b強制開門"
 settings_open_trapdoors_lore:
  - "&7&o當你右鍵鐵(活版)門"
- - "&7&o門將開/關。"
+ - "&7&o門將直接開/關。"
 
 settings_placeplants_item: "&b強制植物放置"
 settings_placeplants_lore:
