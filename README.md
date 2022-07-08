@@ -4,9 +4,13 @@
 
 > 翻譯有問題歡迎提出，我會盡快修復
 
+---
+
 Discord ID：TWME#5162
 
 Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
+
+---
 
 現有已翻譯/正在翻譯插件：
 |插件|插件版本|備註|
@@ -29,4 +33,6 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[SchematicBrushReborn](https://www.spigotmc.org/resources/schematic-brush-reborn.79441/)|2.2.1|插件未實裝翻譯功能|
 |[TrainCarts](https://www.spigotmc.org/resources/traincarts.39592/)|未知||
 
-
+---
+最近工作：
+將所有翻譯完成 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.md) 標準
