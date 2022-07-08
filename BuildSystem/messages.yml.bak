@@ -573,7 +573,7 @@ worldeditor_project_lore:
 worldeditor_permission_item: "&b權限"
 worldeditor_permission_lore:
  - "&7&o更改世界現在的"
- - "&7&opermission。"
+ - "&7&o權限 (permission)。"
  - ""
  - "&7&n現在狀態&7：&b%permission%"
 
