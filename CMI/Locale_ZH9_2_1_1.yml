@@ -59,7 +59,7 @@
 # After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
 
 info:
-  Same: '&c你不能打開你自己的背包'
+  Same: '&c你不能打開你自己的物品欄'
   cantLoginWithDifCap: '&c請注意名字的大小寫！舊名字：&e[oldName]&c。目前前名字：&e[currentName]'
   Searching: '&e正在搜尋玩家資料，請稍等……'
   NoCommandWhileSleeping: '&c不能在睡覺時執行指令！'
@@ -82,14 +82,14 @@ info:
   FailedSpawnerMine: '!actionbar!&c生成生磚失敗. &7[percent]% &c掉落機率'
   ClickSpawner: '!actionbar!&7[percent]% &e掉落機率'
   Elevator:
-    created: '&e創建電梯告示牌'
+    created: '&e建立電梯告示牌'
   CantPlaceSpawner: '&e你不能把一個生怪磚放置的距離另一個那麼近，距離至少要大於 (&6[range]&e)'
   ChunksLoading: '&e世界區塊資料正在加載中，請稍等……'
   CantUseNonEncrypted: '!actionbar!&c此項目上的指令未加密. 無法使用它們！'
-  CantDecode: '!actionbar!&c無法解碼 消息/指令. 密鑰文件包含此任務的錯誤密鑰. 通知伺服器管理員這項訊息'
+  CantDecode: '!actionbar!&c無法解碼 訊息/指令. 密鑰文件包含此任務的錯誤密鑰. 通知伺服器管理員這項訊息'
   CantTeleport: '&e你無法傳送，因為你攜帶了過量的限制物品'
   BlackList: '&e[material] [amount] &6最多: [max]'
-  wrongPortal: '&c您處於錯誤的影響區域'
+  wrongPortal: '&c你處於錯誤的影響區域'
   ItemWillBreak: '!actionbar!&e你的物品 (&6[itemName]&e) 馬上快要爆了 &e[current]&6/&e[max]'
   ArmorWillBreak: '!actionbar!&e你的 [itemName] 快要壞掉了！&e[current]&6/&e[max]'
   flyingToHigh: '&c你不能再飛得更高了, 最大高度限制是 &6[max]&c！'
@@ -129,22 +129,22 @@ info:
     cantConsume: '&e不死圖騰使用被取消，因為還在冷卻中！'
   InventorySave:
     info: '&8資訊: &8[playerDisplayName]'
-    saved: '&e[time] &e背包已保存 ID: &e[id]'
-    NoSavedInv: '&e該玩家沒有已保存的背包'
-    NoEntries: '&4資料存在，但是沒有已保存的背包'
-    CantFind: '&e找不到此ID的背包資料'
-    TopLine: '&e*************** [playerDisplayName] 已保存背包 ***************'
+    saved: '&e[time] &e物品欄已保存 ID: &e[id]'
+    NoSavedInv: '&e該玩家沒有已保存的物品欄'
+    NoEntries: '&4資料存在，但是沒有已保存的物品欄'
+    CantFind: '&e找不到此ID的物品欄資料'
+    TopLine: '&e*************** [playerDisplayName] 已保存物品欄 ***************'
     List: '&eid: &6[id]&e. &6[time]'
     KillerSymbol: '&c ☠'
-    Click: '&e點擊查詢 ([id]) 已保存背包'
+    Click: '&e點擊查詢 ([id]) 已保存物品欄'
     IdDontExist: '&4該ID不存在'
-    Deleted: '&e成功刪除已保存背包'
-    Restored: '&e你存儲了 &e[sourcename] &e背包，目標玩家： &e[targetname] &e'
-    GotRestored: '&e你的背包被存儲了 &e[sourcename] &e時間： &e[time]'
-    LoadForSelf: '&e為自己加載已保存背包'
-    LoadForOwner: '&e為所有者加載已保存背包'
-    NextInventory: '&e下一個背包'
-    PreviousInventory: '&e上一個背包'
+    Deleted: '&e成功刪除已保存物品欄'
+    Restored: '&e你存儲了 &e[sourcename] &e物品欄，目標玩家： &e[targetname] &e'
+    GotRestored: '&e你的物品欄被存儲了 &e[sourcename] &e時間： &e[time]'
+    LoadForSelf: '&e為自己加載已保存物品欄'
+    LoadForOwner: '&e為所有者加載已保存物品欄'
+    NextInventory: '&e下一個物品欄'
+    PreviousInventory: '&e上一個物品欄'
     Editable: '&e編輯模式啟用'
     NonEditable: '&e編輯模式禁用'
   vanishSymbolOn: '&8[&7H&8]&r'
@@ -159,16 +159,16 @@ info:
   InvEmpty:
     armor: '&e你應該清空裝備欄！'
     hand: '&e你應該清空手中物品！'
-    maininv: '&e你的主要背包應該為空的！'
-    maininvslots: '&e你的主要背包應該至少有 &6[count] &e個空位！'
-    inv: '&e你應該清空背包！'
+    maininv: '&e你的主要物品欄應該為空的！'
+    maininvslots: '&e你的主要物品欄應該至少有 &6[count] &e個空位！'
+    inv: '&e你應該清空物品欄！'
     offhand: '&e你應該清空副手！'
     quickbar: '&e！'
     quickbarslots: '&e你的快捷欄中至少要有 &6[count] &e個空位！'
-    subinv: '&e你的子(副)背包應該為空的！'
-    subinvslots: '&e你的子(副)背包至少要有 &6[count] &e個空位！'
+    subinv: '&e你的子(副)物品欄應該為空的！'
+    subinvslots: '&e你的子(副)物品欄至少要有 &6[count] &e個空位！'
   Relog: '&e可能需要重新登錄才能使更改生效'
-  CommandFormat: '&c命令格式不正確'
+  CommandFormat: '&c指令格式不正確'
   ServerSwitchOut: ' &6[playerDisplayName] &e已傳送到 &6[serverName] 伺服器' 
   ServerSwitchIn: ' &6[playerDisplayName] &e來自 &6[serverName] &e伺服器'
 warp:
@@ -217,8 +217,8 @@ Elytra:
 NetherPortal:
   ToHigh: '&c傳送門太高了，最大高度 &6[max]&c！'
   ToWide: '&c傳送門太寬了，最寬寬度 &6[max]&c！'
-  Creation: '!actionbar!&7建造 [height]x[width] 地域傳送門！'
-  Disabled: '&c傳送門創建已禁用'
+  Creation: '!actionbar!&7建造 [height]x[width] 地獄傳送門！'
+  Disabled: '&c傳送門建立已禁用'
 Ender:
   Title: '&7打開終界箱'
 Chat:
@@ -227,10 +227,10 @@ Chat:
   LocalNoOne: '!actionbar!&cNobody hear you, write！before message for global chat'
   shoutDeduction: '!actionbar!&c因為喊 (shout) 扣除&e[amount] &c'
   # Use \n to add new line
-  publicHover: '&e發送時間: &6%server_time_hh:mm:ss%'
-  privateHover: '&e發送時間: &6%server_time_hh:mm:ss%'
-  staffHover: '&e發送時間: &6%server_time_hh:mm:ss%'
-  helpopHover: '&e發送時間: &6%server_time_hh:mm:ss%'
+  publicHover: '&e傳送時間: &6%server_time_hh:mm:ss%'
+  privateHover: '&e傳送時間: &6%server_time_hh:mm:ss%'
+  staffHover: '&e傳送時間: &6%server_time_hh:mm:ss%'
+  helpopHover: '&e傳送時間: &6%server_time_hh:mm:ss%'
   link: '&l&4[&7連結&4]'
   item: '&7[%cmi_iteminhand_displayname%[amount]&7]'
   itemAmount: ' x[amount]'
@@ -258,8 +258,8 @@ command:
       args: ''
   actionbarmsg:
     help:
-      info: '&e給玩家發送actionbar消息'
-      args: '[playerName/all] [message]'
+      info: '&e給玩家傳送 action bar 訊息'
+      args: '[playerName/all] (-s:[seconds]) [message]'
     info:
       message: '&f[messsage]'
   afk:
@@ -303,7 +303,7 @@ command:
       - '&e!Alert!******** &6[name] &4上線了！&e*******!Alert！'
       reason: '&e提示原因: &6[reason]'
       removed: '&6[playerDisplayName] &e已從提示列表中移除'
-      added: '&e如果玩家 &6[playerDisplayName] &e在接下來24小時內上線的話，上線提示消息將被發送給每個管理員'
+      added: '&e如果玩家 &6[playerDisplayName] &e在接下來24小時內上線的話，上線提示訊息將被傳送給每個管理員'
       online: '&6[playerDisplayName] &e目前在線上'
   alertlist:
     help:
@@ -504,11 +504,11 @@ command:
       args: ''
   bbroadcast:
     help:
-      info: '&e向所有伺服器上的所有玩家廣播特殊消息'
+      info: '&e向所有伺服器上的所有玩家廣播特殊訊息'
       args: (!) [message] (-s:[serverName,serverName])
       explanation:
-      - 如果消息開頭是英文驚嘆號 ! 那麼將會顯示簡化消息
-      - 可以將伺服器定義為僅在這些伺服器中廣播消息
+      - 如果訊息開頭是英文驚嘆號 ! 那麼將會顯示簡化訊息
+      - 可以將伺服器定義為僅在這些伺服器中廣播訊息
     info:
       format: '&e[&4廣播&e] &2[message]'
   blockcycling:
@@ -548,7 +548,7 @@ command:
       unlocked: '&e該書已解鎖回書與筆'
   bossbarmsg:
     help:
-      info: '&e給玩家發送bossbar消息'
+      info: '&e給玩家傳送 bossbar 訊息'
       args: '[playerName/all] (-sec:[seconds])(-t:[timeToKeepFor]) (-n:nameOfBar)
         (-p:[maxValue/current]) (-c:[color]) (-s:[1,6,10,12,20]) (-cmd:"command;;command2")
         (-a:[ticks]) [message]'
@@ -571,11 +571,11 @@ command:
       - https://www.zrips.net/cmi/commands/bossbarmsg-handling/
   broadcast:
     help:
-      info: '&e給所有玩家發送公告'
+      info: '&e給所有玩家傳送公告'
       args: '[message]'
       explanation:
-      - 如果消息開頭是英文驚嘆號！那麼將會顯示簡化消息
-      - 可以將世界定義為僅在那些世界中廣播消息
+      - 如果訊息開頭是英文驚嘆號！那麼將會顯示簡化訊息
+      - 可以將世界定義為僅在那些世界中廣播訊息
     info:
       format: '&e[&4公告&e] &2[message]'
   burn:
@@ -621,10 +621,10 @@ command:
       watcherSymbolActive: '&2'
       watcherSymbolInactive: '&7'
       joinedInfo: '&e[playerDisplayName] &7加入聊天室'
-      alreadyIn: '&e您已經在 &7[chatRoomName] &e聊天室了'
+      alreadyIn: '&e你已經在 &7[chatRoomName] &e聊天室了'
       left: '&e離開 &7[chatRoomName] &e聊天室'
       leftInfo: '&e[playerDisplayName] &7離開聊天室'
-      invite: '&6[playerDisplayName] &e邀請您加入聊天室: &7[chatRoomName]'
+      invite: '&6[playerDisplayName] &e邀請你加入聊天室: &7[chatRoomName]'
       sentInvite: '&eInvited &6[playerDisplayName] &eto join chat room: &7[chatRoomName]'
       format: '&3|&7[chatRoomName]&3| &6[playerDisplayName]: &r[message]'
       nobody: '&4沒人在聊天室裡'
@@ -632,12 +632,12 @@ command:
       wrongName: '&4聊天室名稱錯誤'
       takenName: '&4聊天室名稱已存在，請使用不同的名稱'
       notIn: '&4用戶不在聊天室'
-      cantJoin: '&4聊天室是私人的，您沒有被邀請'
+      cantJoin: '&4聊天室是私人的，你沒有被邀請'
       cantSee: '&4Chat room is private, you don''t have permission to see messages
         in it'
       kicked: '&6[playerDisplayName] &e從聊天室踢出'
       cantleave: '&6Can''t leave locked room'
-      gotKicked: '&4您被 &7[chatRoomName] &4聊天室踢出了'
+      gotKicked: '&4你被 &7[chatRoomName] &4聊天室踢出了'
       list: '&e[chatRoomName]&e: &7[list]'
       globalList: '&7[number]. [joined]&e[chatRoomName][private]&e: &7[count][expires]'
       globalListPrivate: '&2(P)'
@@ -716,10 +716,10 @@ command:
       cantUse: '&e這張紙不能被使用，因為它已經是支票了'
   clear:
     help:
-      info: '&e清空玩家背包'
+      info: '&e清空玩家物品欄'
       args: (playerName) (-s)
       explanation:
-      - 可清除的類型：快速物品欄、背包、部分背包、武器、盔甲槽、工具、盔甲、主手、副手
+      - 可清除的類型：快速物品欄、物品欄、部分物品欄、武器、盔甲槽、工具、盔甲、主手、副手
       - 應該以 + 號開頭
       - 可以使用多種類型
       - /cmi clear +armors - 將移除盔甲類型的物品
@@ -728,7 +728,7 @@ command:
       clearFeedback: '&eYou have removed &6[amount] &eitems from &3[playerDisplayName]&e
         inventory (&3[offon]&e).'
       target: '&6[amount] &eitems got removed from your inventory by &3[senderDisplayName]&e.'
-      confirm: '&7點擊確認清空背包. &c所有物品將被清除！'
+      confirm: '&7點擊確認清空物品欄. &c所有物品將被清除！'
   clearchat:
     help:
       info: '&e清除聊天室'
@@ -805,7 +805,7 @@ command:
       args: (itemName)
     info:
       converted: '&e已將 &7[items] &e物品組合成 &7[blocks] &e方塊'
-      nothing: '&c你背包內沒有可組合為方塊的物品'
+      nothing: '&c你物品欄內沒有可組合為方塊的物品'
   counter:
     help:
       info: '&e周圍玩家計數'
@@ -815,10 +815,10 @@ command:
       - '&6cmi.command.counter.force &e- 強制一定範圍內所有玩家計數 '
       - '&6cmi.command.counter.time &e- 設置自定義時間範圍 '
       - '&6cmi.command.counter.range &e- 設置自定義範圍'
-      - '&6cmi.command.counter.msg &e- 設置自定義消息'
+      - '&6cmi.command.counter.msg &e- 設置自定義訊息'
       - '&6cmi.command.counter.autojoin &e- 自動加入計數'
       - -f 強制一定範圍內所有玩家計數
-      - '示例: /cmi counter start r:30 t:7 msg:&e自定義消息 -f'
+      - '示例: /cmi counter start r:30 t:7 msg:&e自定義訊息 -f'
     info:
       join: '&e加入計數'
       leave: '&e退出計數'
@@ -847,7 +847,7 @@ command:
       total: '&7總計'
   ctellraw:
     help:
-      info: '&e發送tellraw類型訊息'
+      info: '&e傳送tellraw類型訊息'
       args: '[playerName/all] [formattedMessage]'
       explanation:
       - 用法與 http://www.zrips.net/cmi/custom-text/ aka customtext 指令中所示的相同
@@ -936,7 +936,7 @@ command:
       explanation:
       - 滑鼠指向告示牌並輸入 /cmi dsign new
     info:
-      howTo: '&c這個不是已保存的告示牌,請使用 &e/cmi dsign new 來創建'
+      howTo: '&c這個不是已保存的告示牌,請使用 &e/cmi dsign new 來建立'
       gui: '&7---- &f<打開菜單> &7----'
       guiHover: '&7打開告示牌設置 GUI'
       individual: '&7私人: [state]'
@@ -972,12 +972,12 @@ command:
       addInfo: '&e輸入內容添加新的一行，輸入 &6cancel &e來取消'
       addInformationHover: "&e各種變數支持 \n&e如果想寫上可以點擊的文字: \n&e<T>&r內容&e</T><H>&r懸浮內容\
         &e</H><C>&r指令&e</C><SC>&r自動填充 內容&e</SC> \n&6<T> &e以及 &6</T> &e是必備的, 除了這兩個以\
-        外其它變數都是可選的 \n&e請使用 \\u005Cn 來切換下一行 \n&e如果想使用不止一個 JSON 消息，請使用 <Next> \n&6<CC>\
+        外其它變數都是可選的 \n&e請使用 \\u005Cn 來切換下一行 \n&e如果想使用不止一個 JSON 訊息，請使用 <Next> \n&6<CC>\
         \ &e執行控制台指令僅一次 \n&6<CCI> &e每次玩家點擊都 執行控制台指令 \n&6<URL> &e允許玩家打開 的網頁"
       newInfo: '&e輸入新自定義文本的名稱，或輸入 &6cancel &e返回'
       deleteInfo: '&e輸入 &6confirm &e來確認移除，或輸入 &6cancel &e取消'
       deleted: '&e自定義文字 (&6[ctext]&e) 被移除'
-      createdNew: '&e自定義文字 (&6[ctext]&e) 已創建'
+      createdNew: '&e自定義文字 (&6[ctext]&e) 已建立'
       hidden: '&eHidden: &6[state]'
       autoPage: '&e自動頁: &6[state]'
       autoAlias: '&e自動別稱: &6[state]'
@@ -1061,7 +1061,7 @@ command:
       clearedInvalid: '&e從物品中移除了 &6[amount] &e個無效的附魔'
       inccorectId: '&e無效的附魔名稱或者ID'
       wrongItem: '&e你手上的東西錯了'
-      enchantlimit: '&c您無權使用此附魔'
+      enchantlimit: '&c你無權使用此附魔'
       levellimit: '&c附魔等級太高，最高等級不能超過 &e[level].'
       posible: '&e可行的附魔: '
       posibleList: '&6[enchant]'
@@ -1137,7 +1137,7 @@ command:
       args: '[playerName]'
     info:
       feedback: '&e你餵飽了玩家 &3[playerDisplayName]&e (&3[offon]&e).'
-      feedbackMulti: '&e您已經餵飽了 &3[count]位 &e玩家.'
+      feedbackMulti: '&e你已經餵飽了 &3[count]位 &e玩家.'
       targetfeedback: '&e你被玩家 &3[senderDisplayName]&e 餵飽了.'
   findbiome:
     help:
@@ -1146,7 +1146,7 @@ command:
     info:
       infoShow: '&6TPS: &3[tps] &6剩下 &e[left] &6(&e[time]&6) &6速度: &e[speed]'
       stopped: '&e已停止！'
-      cantFindBiome: '&e找不到您想要的生物群系. 已檢查 &6[amount] &e區塊'
+      cantFindBiome: '&e找不到你想要的生物群系. 已檢查 &6[amount] &e區塊'
       teleportedTo: '&e傳送至 &6[biome] &e生物群系'
   fixchunk:
     help:
@@ -1286,7 +1286,7 @@ command:
       - '&e- &6e &e - 指定物品的附魔 '
       - '&e- &6-s &e - 將會靜默給予，不會有提示語 '
       - '&e- &6h &e - 後面跟上玩家ID，將把要給予的物品指定為他手裡的物品 '
-      - '&e- &6inv &e - 後面跟上玩家ID，將把要給予的物品指定為他全部背包的物品 '
+      - '&e- &6inv &e - 後面跟上玩家ID，將把要給予的物品指定為他全部物品欄的物品 '
       - '&e- &6offline &e- 包含離線玩家'
       - '&ecmi giveall stone 1 n &2一塊石頭 l &3物品的lore offline'
       - '&ecmi giveall h Zrips'
@@ -1370,7 +1370,7 @@ command:
     info:
       feedback: '&6享受你的新帽子吧！'
       targetfeedback: '&3[senderDisplayName]&6 更換了你的頭戴帽子！'
-      fullinv: '&3[playerDisplayName] &6的背包已滿, 不能改變帽子！'
+      fullinv: '&3[playerDisplayName] &6的物品欄已滿, 不能改變帽子！'
       incorrect: '&3頭部物品欄中的物品不正確，無法更換新物品. 請盡快移除它'
       cantUse: '&3Can''t use this item as a hat'
   head:
@@ -1396,7 +1396,7 @@ command:
       - 需要 cmi.command.helpop.inform 權限才能看到求助資訊
     info:
       message: '&c[OP求助]&4[&7[senderDisplayName]&4]&r&c [message]'
-      feedback: '&c[Help]&7您的問題已提交給在線上的工作人員'
+      feedback: '&c[Help]&7你的問題已提交給在線上的工作人員'
       offline: '&c[Help]&7目前沒有工作人員線上，請稍後再試'
   hideflags:
     help:
@@ -1409,10 +1409,10 @@ command:
       inccorectId: '&e無效的NBT標籤名稱'
   hologram:
     help:
-      info: '&e創建懸浮字'
+      info: '&e建立懸浮字'
       args: ''
     info:
-      howTo: '&c想創建一個新懸浮字請使用 &e/cmi hologram new &6[名稱]'
+      howTo: '&c想建立一個新懸浮字請使用 &e/cmi hologram new &6[名稱]'
       gui: '&7---- &f<打開設置菜單> &7----'
       guiHover: '&7打開懸浮字設置 GUI'
       interval: '&7每 &6[second] &7秒更新一次'
@@ -1462,10 +1462,10 @@ command:
       particleOffsetY: '&7Particle offset Y: &6[amount]'
       autoButton: '&7自動的生成分頁按鈕'
       autoButtonLore:
-      - '&e目前的全息圖沒有任何頁面創建'
+      - '&e目前的全息圖沒有任何頁面建立'
       - '&e在新的一行輸入 &6!nextpage! &e來製作下一頁'
-      autoButtonForward: '&2這個全息圖已創建往前按鈕'
-      autoButtonBackward: '&2這個全息圖已創建後退按鈕 '
+      autoButtonForward: '&2這個全息圖已建立往前按鈕'
+      autoButtonBackward: '&2這個全息圖已建立後退按鈕 '
       moveX: '&7X:&e[x]'
       moveY: '&7Y:&e[y]'
       moveZ: '&7Z:&e[z]'
@@ -1519,7 +1519,7 @@ command:
       targetfeedback: '&3[senderDisplayName]&e 將你的飢餓值已被設置為 &3[hunger]&e.'
   ic:
     help:
-      info: '&e創建交互指令'
+      info: '&e建立交互指令'
       args: (new) (name)
     info:
       public: ' &2[Public]'
@@ -1529,7 +1529,7 @@ command:
       permHover: ' &e需要權限: &7[permission] &e才能放置告示牌'
       editSign: ' &e[EditSignLines]'
       publicHover: '&e改變公共狀態'
-      createdPublic: '&e創建新的交互告示牌'
+      createdPublic: '&e建立新的交互告示牌'
       list: '&e[place]. &6[name]'
       listType: ' &e[type]    '
       editCommands: '&e編輯指令'
@@ -1720,39 +1720,39 @@ command:
       - '&e-----------------------------------------'
   inv:
     help:
-      info: '&e查看玩家背包'
+      info: '&e查看玩家物品欄'
       args: '[playerName]'
       explanation:
-      - cmi.command.inv.preventmodify - 防止自己的背包被編輯
-      - cmi.invedit - 允許編輯背包
+      - cmi.command.inv.preventmodify - 防止自己的物品欄被編輯
+      - cmi.invedit - 允許編輯物品欄
       - cmi.command.inv.location - 顯示玩家位置
     info:
-      feedback: '&e你正在編輯玩家 &3[playerDisplayName] &e的背包 (&3[offon]&e).'
+      feedback: '&e你正在編輯玩家 &3[playerDisplayName] &e的物品欄 (&3[offon]&e).'
   invcheck:
     help:
-      info: '&e在預覽模式下打開已保存的背包'
+      info: '&e在預覽模式下打開已保存的物品欄'
       args: (playerName) [id] (-e)
   invlist:
     help:
-      info: '&e顯示已保存的背包列表'
+      info: '&e顯示已保存的物品欄列表'
       args: (playerName)
   invload:
     help:
-      info: '&e加載已保存的背包'
+      info: '&e加載已保存的物品欄'
       args: (sourceName) (targetName) [id/last]
   invremove:
     help:
-      info: '&e移除已保存的背包'
+      info: '&e移除已保存的物品欄'
       args: (playerName) [id/all/last]
   invremoveall:
     help:
-      info: '&e移除所有已保存的背包'
+      info: '&e移除所有已保存的物品欄'
       args: '[confirmed]'
     info:
-      removed: '&e所有已保存背包已移除 ([count])'
+      removed: '&e所有已保存物品欄已移除 ([count])'
   invsave:
     help:
-      info: '&e保存背包'
+      info: '&e保存物品欄'
       args: (playerName)
   ipban:
     help:
@@ -1879,8 +1879,8 @@ command:
       noName: '&c沒有叫這個監獄的名字'
       noCell: '&c沒有叫這個id的牢房'
       exist: '&c叫這個名字的監獄已存在'
-      createdJail: '&e成功創建新監獄 (&6[jail]&e)'
-      createdCell: '&e成功創建監獄裡的新牢房 (&6[jail]&e:&6[cellId]&e)'
+      createdJail: '&e成功建立新監獄 (&6[jail]&e)'
+      createdCell: '&e成功建立監獄裡的新牢房 (&6[jail]&e:&6[cellId]&e)'
       collides: '&cCollides with &6[jailName] &ejail'
       jailList: '&e[place]. &6[jail] &e牢房:&6[cells] &e犯人: &6[amount]    '
       editCells: '&e編輯牢房列表'
@@ -1971,7 +1971,7 @@ command:
       noKit: '&e沒有叫這個名字的禮包'
       kitDoesntExist: '&e無法發現禮包 ([kitName])'
       noKitAccess: '&c你沒有權限使用這個禮包'
-      noFoundKit: '&e無任何禮包，請先創建一個'
+      noFoundKit: '&e無任何禮包，請先建立一個'
       givenKit: '&e你將禮包 &6[kit] &e給予了 &6[playerDisplayName]'
       title: '&8禮包'
       nameCanUse: '&6[kitName]'
@@ -2051,7 +2051,7 @@ command:
       Slot: '&e格子: &6[slot]'
       Page: '&ePage: &6[page]'
       SlotAuto: '&6自動'
-      Clone: '&e從背包裡貼上物品'
+      Clone: '&e從物品欄裡貼上物品'
       CloneExtra:
       - '&e右鍵點擊同時貼上盔甲欄物品'
       - '&e再次點擊恢復'
@@ -2079,7 +2079,7 @@ command:
       - '&e點擊更改顯示名稱'
       - '&e這只用於視覺效果'
       kitGroup: '&e禮包組: &6[group]'
-      dropItems: '&e背包已滿時丟棄物品: &6[state]'
+      dropItems: '&e物品欄已滿時丟棄物品: &6[state]'
       commands: '&e指令:'
       conditions: '&e獲得條件:'
       desc: '&e描述:'
@@ -2189,10 +2189,10 @@ command:
       targetfeedback: '&3[senderDisplayName]&e opened loom for you.'
   mail:
     help:
-      info: '&e查看郵箱或者發送郵件'
+      info: '&e查看郵箱或者傳送郵件'
       args: '[send/clear/read] [playerName] (message)'
     info:
-      sentMail: '&e發送郵件給 &6[playerDisplayName]'
+      sentMail: '&e傳送郵件給 &6[playerDisplayName]'
       gotMail: '!actionbar!&e你收到了來自 &6[senderDisplayName] &e的郵件'
       clearMail: '&e所有郵件被清空'
       removedMail: '&e移除郵件'
@@ -2204,10 +2204,10 @@ command:
       waitingMail: '&e你有 &6[amount] &e封新郵件，點擊查看'
   mailall:
     help:
-      info: '&e檢查/發送郵件給所有玩家'
+      info: '&e檢查/傳送郵件給所有玩家'
       args: '[send/clear/remove] [message]'
     info:
-      sentMail: '&e發送 &6[amount] &e封郵件'
+      sentMail: '&e傳送 &6[amount] &e封郵件'
       clearMail: '&6[amount] &e封郵件已刪除'
       removedMail: '&e移除 &6[amount] &e封郵件'
   maintenance:
@@ -2237,7 +2237,7 @@ command:
       changed: '&e已將伺服器最大人數從 &6[old] &e修改為 &6[new]&e. 現在在線上有 &6[current] 位'
   me:
     help:
-      info: '&e給玩家發送特殊的/me消息'
+      info: '&e給玩家傳送特殊的 /me 訊息'
       args: '[message]'
     info:
       format: '&5* [senderDisplayName] &5[message]'
@@ -2312,14 +2312,14 @@ command:
       args: '[action] [playerName] [amount]'
     info:
       newBalance: '&6[playerDisplayName] &e現有金錢: &6[money]'
-      paid: '&e你將 &6[amount] &e金錢發送給了 &6[playerDisplayName]'
+      paid: '&e你將 &6[amount] &e金錢傳送給了 &6[playerDisplayName]'
       gotMoney: '&e你收到了從 &6[senderDisplayName]&e 轉來的 &6[amount] &e金錢，你現在有: &6[money]'
       gotMoneyGive: '&e你收到了 &6[amount]&e. 現有金錢: &6[money]'
       lostMoney: '&6[amount]&e has been removed from your balance. Remaining: &6[money]'
       noMoney: '&c你的錢不夠'
       worldGroups: '&c不同的世界組之間不能互相轉錢'
       self: '&c你不可以給自己打錢.'
-      confirm: '&e點擊確認將 &6[money] &e金錢發送給 &6[playerDisplayName] &e，請務必注意安全交易！'
+      confirm: '&e點擊確認將 &6[money] &e金錢傳送給 &6[playerDisplayName] &e，請務必注意安全交易！'
       notAccepting: '&e該玩家不接受他人的付款'
       giveAll: '&e發出了 &6[totalAmount] &e金錢給 &6[playerCount] &e名玩家'
       takeAll: '&e從 &6[playerCount]個 &e玩家 &e取走了 &6[totalAmount] '
@@ -2336,19 +2336,19 @@ command:
       feedback: '&e將玩家 &3[playerDisplayName]&e (&3[offon]&e) 的最大堆疊設置為 &3[amount]&e '
   msg:
     help:
-      info: '&e給玩家發送私聊'
+      info: '&e給玩家傳送私聊'
       args: '[playerName] [message]'
       explanation:
-      - 如果消息的開頭為 ! 那麼發送者的名字將不會顯示在消息中
+      - 如果訊息的開頭為 ! 那麼傳送者的名字將不會顯示在訊息中
       - 需要權限 cmi.command.msg.clean permission
-      - 如果消息的開頭為 !- 那麼發送者的名字將不會顯示在消息中 而且不可回覆
+      - 如果訊息的開頭為 !- 那麼傳送者的名字將不會顯示在訊息中 而且不可回覆
       - 需要權限 cmi.command.msg.noreply
     info:
       TargetMsg: '&7[&8[senderDisplayName] &7-> &8我&7]&r&f [message]'
       SenderMsg: '&7[&8我 &7-> &8[playerDisplayName]&7]&r&f [message]'
       consoleMsg: '[[senderDisplayName] -> [playerDisplayName]] [message]'
       noPM: '&c該玩家現在不接受私人訊息'
-      badGroup: '&c無法向這組的玩家發送私人訊息'
+      badGroup: '&c無法向這組的玩家傳送私人訊息'
   mute:
     help:
       info: '&e禁言玩家'
@@ -2532,7 +2532,7 @@ command:
       locationSet: '&e傳送門 &6[portalName] &e已設置在你所站的位置'
       removed: '&e傳送門 &6[portalName] &e已移除'
       click: '&e點擊將傳送門 &6[portalName] &e設置在你所站的位置'
-      bungeeSet: '&e請移動至目的地並點擊此消息來設置傳送到的地點'
+      bungeeSet: '&e請移動至目的地並點擊此訊息來設置傳送到的地點'
       bungeeSetConfirmed: '&eBungee portal (&6[portal]&e) location set from &6[sourceServer]
         &eserver to &e[location]'
       bungeeSetEmpty: '&eInitiated portal location set at &6[serverName] &eserver,
@@ -2806,7 +2806,7 @@ command:
       finished: '&e替換已完成！！！替換了: &6[amount] &e個方塊！耗時 &6[time]&e.'
   reply:
     help:
-      info: '&e回覆上一個發消息的人'
+      info: '&e回覆上一個發訊息的人'
       args: '[message]'
     info:
       noOneToReply: '&eThere is no one to reply'
@@ -2859,14 +2859,14 @@ command:
       targetfeedback: '&e你的飽和度已被 &3[senderDisplayName]&e 設置為 &3[amount]&e.'
   saveall:
     help:
-      info: '&e保存每個玩家的背包'
+      info: '&e保存每個玩家的物品欄'
       args: '&3(daysRange/-online)'
       explanation:
-      - -online 該變數代表只保存線上玩家的背包
+      - -online 該變數代表只保存線上玩家的物品欄
     info:
       saving: '[simbol] &2已檢查: &e[checked]&2 總人數: &e[total]&2 已保存: &e[saved] &2已跳過:
         &e[skipped] [simbol]'
-      saved: '&e保存背包已完成，已保存: &6[saved] &e已跳過: &6[skipped]'
+      saved: '&e保存物品欄已完成，已保存: &6[saved] &e已跳過: &6[skipped]'
   saveditems:
     help:
       info: '&e保存及管理被保存的物品'
@@ -2969,7 +2969,7 @@ command:
       scavengeCost: '&8清除成本: [cost]'
       moreTitle: '金額不正確: [input]/[required]'
       moreLore:
-      - '&b您需要更多此物品.'
+      - '&b你需要更多此物品.'
       - '&b至少需要 &e[amount]'
       title: '&2Scavenger'
   schedule:
@@ -3008,16 +3008,16 @@ command:
       totalfound: '&e總共找到 &3[amount] &e個結果，已搜尋了 &3[files] &e個玩家'
       location:
         ender: '&3終界箱'
-        inv: '&e背包'
+        inv: '&e物品欄'
         invS: '&e界伏盒'
         PlayerVault: '&e玩家金錢'
       localsearch: '&e (本地搜尋模式)'
       localsearchhover: |-
-        &e將從本地文件中搜尋背包
+        &e將從本地文件中搜尋物品欄
         &e這將花費更長時間
       reglist: '&e[number]. &e[name]'
       list: '&2[number]. [location] &6[name]'
-      listhover: '&e點擊打開背包'
+      listhover: '&e點擊打開物品欄'
   seen:
     help:
       info: '&e查看玩家上一次下線時間'
@@ -3030,7 +3030,7 @@ command:
       args: (pos1/pos2/shift/expand/contract/clear) (amount)
   sell:
     help:
-      info: '&e從背包裡出售物品'
+      info: '&e從物品欄裡出售物品'
       args: (all/blocks/hand)
     info:
       total: '&e你出售了 &6[amount] &e件物品並賺到了 &6[total] &e金錢，當前金錢 &6[balance]'
@@ -3079,13 +3079,13 @@ command:
       - cmi.command.sethome.unlimited
       - -l 將為家設置新的自定義位置, 這需要 cmi.command.sethome.customloc 權限節點
     info:
-      set: '&e你創建了名叫 &6[homeName]&e 的家'
-      setBed: '&e創建床重生點'
+      set: '&e你建立了名叫 &6[homeName]&e 的家'
+      setBed: '&e建立床重生點'
       private: ' &2(私有)'
       noMore: '&c你已經達到可設置家的最大數量'
       exist: "&cHome location with this name (&6[name]&c) already exists！\n&eClick\
         \ to confirm overwrite."
-      noOverwrite: '&c你不能直接創建已有名字的家來覆蓋舊的家 你只能先刪掉舊的，或者換個新名字'
+      noOverwrite: '&c你不能直接建立已有名字的家來覆蓋舊的家 你只能先刪掉舊的，或者換個新名字'
       slotTaken: '!actionbar!&c這個名字已被 &7[homeName] &c使用, 請使用另一個'
       setIcon: '!actionbar:3!&7Set home icon as &6[material] &7material'
       tooManyInWorld: '&cYou cant have any more homes in this world. Max &6[max]&c
@@ -3124,10 +3124,10 @@ command:
       explanation:
       - '示例:'
       - /cmi setwarp spawn - 設置名叫spawn的地標
-      - /cmi setwarp spawn true - 創建地標，但是需要 cmi.command.warp.[地標名] 權限才能傳送至該地標
+      - /cmi setwarp spawn true - 建立地標，但是需要 cmi.command.warp.[地標名] 權限才能傳送至該地標
       - /cmi setwarp spawn hand - 將手中的物品作為地標GUI內的地標圖標
-      - /cmi setwarp spawn 13 - 創建地標並設置其在地標GUI裡的格數 (1-54)
-      - /cmi setwarp spawn true hand 13 - 用手中圖標創建地標, slot 13 ,需要權限
+      - /cmi setwarp spawn 13 - 建立地標並設置其在地標GUI裡的格數 (1-54)
+      - /cmi setwarp spawn true hand 13 - 用手中圖標建立地標, slot 13 ,需要權限
       - /cmi setwarp spawn true hand 13 false - 與上一個相同, 但不生成 lore
     info:
       newSet: '&e新地標 (&6[warp]&e) 已設置'
@@ -3169,14 +3169,14 @@ command:
       args: (playerName) (-t:targetPlayer) (type) (speed)
   silence:
     help:
-      info: '&e屏蔽公共消息'
+      info: '&e屏蔽公共訊息'
       args: ''
       explanation:
-      - cmi.command.silence.bypass - 無視消息屏蔽
+      - cmi.command.silence.bypass - 無視訊息屏蔽
     info:
       enabled: '&e靜默模式 &2已開啟'
       disabled: '&e靜默模式 &c已關閉'
-      inMode: '&e玩家正處於靜默模式，將不會收到公共消息'
+      inMode: '&e玩家正處於靜默模式，將不會收到公共訊息'
   silentchest:
     help:
       info: '&e切換靜默開箱'
@@ -3315,7 +3315,7 @@ command:
       args: '[message]'
     info:
       message: '&2[管理員頻道]&4[&7[senderDisplayName]&4]&r&c [message]'
-      toggledOn: '&e已開啟一個永久的管理員聊天頻道. 你現在可以在公告聊天中發表消息.'
+      toggledOn: '&e已開啟一個永久的管理員聊天頻道. 你現在可以在公告聊天中發表訊息.'
       toggledOff: '&e關閉管理員聊天頻道'
   stats:
     help:
@@ -3642,13 +3642,13 @@ command:
       setto: '&6[world] &e的時間已設置為 &6[24h] &e或者 &6[12h] &e或者 &6[ticks]ticks '
   titlemsg:
     help:
-      info: '&e給玩家發送Title消息'
+      info: '&e給玩家傳送 Title 訊息'
       args: '[playerName/all] [title %subtitle% subtitle]'
     info:
       message: '&f[messsage]'
   toast:
     help:
-      info: '&e給玩家發右上角進度消息'
+      info: '&e給玩家發右上角進度訊息'
       args: '[playerName/all] (-t:[advType]) (-icon:[material]) [message]'
     info:
       message: '&f[messsage]'
@@ -3677,26 +3677,26 @@ command:
       info: '&e請求傳送至玩家身邊'
       args: '[playerName]'
     info:
-      requestSent: '&e傳送請求已發送至 &6[playerDisplayName]'
+      requestSent: '&e傳送請求已傳送至 &6[playerDisplayName]'
       gotRequest: '&6[senderDisplayName] &e請求傳送至你身邊'
       time: '&e你只有 &6[time]&e 時間接受請求'
       canceled: '&e傳送請求已被取消'
       # This line cant contain anything else then default variables ([message][cancelButton]), you can switch them around to your liking tho
       senderFeedbackMessageFormat: '[message][cancelButton]'
-      alreadyRequesting: '&e您已經給 &6[playerDisplayName] &e發送了傳送請求，請等待對方接受'
-      banned: '&e你現在不能給玩家 &6[playerDisplayName] &e發送傳送請求，封鎖時間 &6[time]'
+      alreadyRequesting: '&e你已經給 &6[playerDisplayName] &e傳送了傳送請求，請等待對方接受'
+      banned: '&e你現在不能給玩家 &6[playerDisplayName] &e傳送傳送請求，封鎖時間 &6[time]'
   tpaall:
     help:
       info: '&e請求所有玩家傳送至你所在位置'
       args: ''
     info:
-      requestSent: '&e請求已發送給全部玩家'
+      requestSent: '&e請求已傳送給全部玩家'
   tpaccept:
     help:
       info: '&e接受傳送請求'
       args: (playerName)
     info:
-      noRequest: '&e沒有待處理的傳送消息'
+      noRequest: '&e沒有待處理的傳送訊息'
       NotOnline: '&e玩家不在線'
       accepted: '&6[playerDisplayName] &e接受了你的傳送請求'
       youAccepted: '&e傳送請求已接受'
@@ -3724,7 +3724,7 @@ command:
       started: '&e傳送開始！'
       current: '&e當前已傳送 &3[amount] &e，已有 &3[files] &e個文件被檢索'
       total: '&e總傳送量 &3[amount] &e，被檢索文件數量 &3[files] &e'
-      WorldNotFound: '&e給予的世界名: &7[name] &e未加載. Make sure its 請確保給予的名稱正確. 我們將照著您給予的名稱執行.'
+      WorldNotFound: '&e給予的世界名: &7[name] &e未加載. Make sure its 請確保給予的名稱正確. 我們將照著你給予的名稱執行.'
   tpbypass:
     help:
       info: '&e無視傳送到的位置是否安全'
@@ -3737,7 +3737,7 @@ command:
       info: '&e拒絕傳送請求'
       args: (playerName)
     info:
-      noRequest: '&e沒有待處理的傳送消息'
+      noRequest: '&e沒有待處理的傳送訊息'
       youDenied: '&e傳送請求已拒絕'
       denied: '&e[senderDisplayName] &e拒絕了你的傳送請求'
   tphere:
@@ -3814,7 +3814,7 @@ command:
       args: (itemName)
     info:
       converted: '&e將 &7[blocks] &e方塊轉換為 &7[items] &e物品'
-      nothing: '&c你背包裡沒有可以解壓的物品'
+      nothing: '&c你物品欄裡沒有可以解壓的物品'
   unjail:
     help:
       info: '&e把玩家從監獄中放出'
@@ -3878,7 +3878,7 @@ command:
       targetUnvanish: '&6[playerDisplayName] &e不再是隱身狀態'
       list: '&e[place]. &6[playerDisplayName] &e(&6[offon]&e)'
       noVanished: '&e沒有隱身的玩家'
-      noMsg: '&c在隱形時無法發送訊息. 在隱形編輯器更改此選項'
+      noMsg: '&c在隱形時無法傳送訊息. 在隱形編輯器更改此選項'
   vanishedit:
     help:
       info: '&e編輯玩家的隱身狀態'
@@ -3891,12 +3891,12 @@ command:
       mobAggro: '&e怪物敵對'
       interaction: '&e物理性交互'
       noisyChest: '&eNoisy chest''s'
-      informOnLeave: '&e顯示下線消息'
-      informOnJoin: '&e顯示上線消息'
+      informOnLeave: '&e顯示下線訊息'
+      informOnJoin: '&e顯示上線訊息'
       nightVision: '&e自動獲得夜視'
-      bossbar: '&e隱身中顯示bossbar消息'
+      bossbar: '&e隱身中顯示 bossbar 訊息'
       afkcommands: '&e可在隱身中切換離開狀態'
-      PrivateMessages: '&e私人消息'
+      PrivateMessages: '&e私人訊息'
       relogDisable: '&e重新登錄時禁用隱形'
       noMessages: '&e無公共訊息'
       fakeJoinLeave: '&eShow fake join/leave messages on vanish state change'
@@ -4007,7 +4007,7 @@ command:
       - '&7[worldName]'
       - '&e[x]:[y]:[z]'
       - '[creator]'
-      creator: '&e創建者: &6[creator]'
+      creator: '&e建立者: &6[creator]'
       noWarpByName: '&c沒有叫這個名字的地標'
       noAccess: '&c無法訪問此地標'
       guiTitle: '&6地標'
