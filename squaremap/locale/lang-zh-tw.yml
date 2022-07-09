@@ -78,7 +78,7 @@ log:
     internal-web-started: 內部Web伺服器已啟動於 <bind>:<port>
     internal-web-stopped: 內部Web伺服器已停止
     internal-web-start-error: 內部Web伺服器無法啟動
-    could-not-create-directory: 無法創建目錄! <path>
+    could-not-create-directory: 無法創建目錄！<path>
     could-not-read-region: 無法讀取 <x>,<z> 區域的地圖圖片 (已損壞?) 它將被覆蓋
     could-not-save-region: 無法保存 <x>,<z> 區域的地圖
     internal-web-not-running: 內部Web伺服器發生錯誤
@@ -86,6 +86,6 @@ log:
         fetching-version-information: 正在獲取版本資訊...
         behind-branch: squaremap 是分支 <branch> 後面的 '<behind>' 版本!
         download-dev-builds: 從 <link> 下載開發版本
-        unknown-commit: 未知提交'<commit>'，無法檢查更新.
-        behind-releases: squaremap <behind> 版本已過時.
+        unknown-commit: 未知提交'<commit>'，無法檢查更新。
+        behind-releases: squaremap <behind> 版本已過時。
         download-release: 從 <link> 下載最新版本 (<latest>)
