@@ -166,7 +166,7 @@ drivebackup-help-command: |-
   <header>
   <gold><click:run_command:/drivebackup>/drivebackup</click></gold> - 顯示此選單
   <gold><click:run_command:/drivebackup help>/drivebackup help</click></gold> - 顯示幫助資源
-  <gold><click:run_command:/drivebackup commands>/drivebackup commands</click></gold> - 顯示此命令的幫助頁面
+  <gold><click:run_command:/drivebackup commands>/drivebackup commands</click></gold> - 顯示此指令的幫助頁面
   <gold><click:run_command:/drivebackup v>/drivebackup [v|version]</click></gold> - 顯示插件版本
   <gold><click:run_command:/drivebackup linkaccount googledrive>/drivebackup [link|linkaccount] googledrive</click></gold> - 連結你的 Google Drive帳戶進行備份
   <gold><click:run_command:/drivebackup linkaccount onedrive>/drivebackup [link|linkaccount] onedrive</click></gold> - 連結你的 OneDrive 帳戶進行備份
