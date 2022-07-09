@@ -19,7 +19,7 @@ command:
             enabled: <green>渲染進度日誌已啟用
             disabled: <green>渲染進度日誌已禁用
             set-rate: <green>渲染進度日誌的間隔已設置為 </green><seconds> 秒
-            statusmessage: '渲染進度日誌狀態: <enabled>, 間隔: <green><seconds></green> 秒'
+            statusmessage: '渲染進度日誌狀態：<enabled>，間隔：<green><seconds></green> 秒'
     prefix: '<white>[<gradient:#C028FF:#5B00FF>squaremap</gradient>]</white> '
     description:
         help: 獲取 squaremap 的命令幫助
