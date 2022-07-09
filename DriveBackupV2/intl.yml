@@ -6,7 +6,7 @@
 plugin-stop: "關閉插件中！"
 metrics-started: "Metrics 已啟用"
 metrics-error: "Metrics 啟動失敗了"
-update-checker-started: "檢查更新中..."
+update-checker-started: "檢查更新中…"
 update-checker-new-release: |-
   DriveBackup <latest-version> 已經發佈, 你目前正在使用 <current-version>
   從這裡下載更新: <gold><click:open_url:http://bit.ly/2VGtF7L>http://bit.ly/2VGtF7L</click></gold>" 或者點選 <gold><click:run_command:/drivebackup update>/drivebackup update</click></gold> 來更新
@@ -74,7 +74,7 @@ backup-already-running: |-
   <backup-status>
 backup-no-methods: "沒有啟用任何備份方法"
 backup-empty-list: "備份列表是空的"
-backup-start: "正在建立備份，伺服器可能會卡頓小段時間..."
+backup-start: "正在建立備份，伺服器可能會卡頓小段時間…"
 external-ftp-backup-start: "正在從 (S)FTP 伺服器 (<socket-addr>) 下載檔案以包括在備份列表中"
 external-ftp-backup-blacklisted: "未在 (S)FTP 伺服器的備份列表中包括 <blacklisted-files>， 因為它們被 \"<glob-pattern>\" 列入黑名單"
 external-ftp-backup-failed: 未能在備份列表中包括來自 (S)FTP 伺服器 (<socket-addr>) 的檔案，請檢查<gold>config.yml</gold> 中的伺服器證書。
