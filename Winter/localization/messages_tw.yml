@@ -17,18 +17,18 @@
 # Messages related to Gift Chests
 # -------------------------------------------------------------------------------------------
 Chest:
-  Lacks_Chest: "&cPlace the {sign} sign on a chest!"
-  Lacks_Players: "&cPlease specify which players should receive this gift, on each line."
-  Invalid_Format: "&cSign has invalid format! Specify {format}."
-  Create_Success: "&6Successfully placed a new Winter sign."
+  Lacks_Chest: "&c放置 {sign} 告示牌在箱子前"
+  Lacks_Players: "&c請在每一行指定哪些玩家應該收到這份禮物。"
+  Invalid_Format: "&c告示牌的格式無效！應為 {format}。"
+  Create_Success: "&6成功放置新的 Winter 告示牌。"
   Open:
-    Own: "&6Browsing your own Winter chest content ..."
-    Public: "&6&lHere you go, &6enjoy this free gift chest! :)"
-    Private: "&6This gift chest is for you, enjoy it! :)"
-    Admin: "&2You are now viewing a locked gift chest's content."
-    Admin_Dated: "&6Warning: You've bypassed this chest date limit."
+    Own: "&6瀏覽你自己的冬季寶箱內容…"
+    Public: "&6&l送你，&6好好的享受這冬季禮物箱吧！:)"
+    Private: "&6這個禮盒是給你的，盡情享受吧！:)"
+    Admin: "&2您現在正在觀看被鎖定的禮物箱的內容。"
+    Admin_Dated: "&6警告：您已繞過此箱子的日期限制。"
   Expand:
-    Own: "&2You just expanded a locked gift chest."
+    Own: "&2你剛剛擴展了一個上鎖的禮物箱。"
   Break:
     Own: "&cYou just broke (a part of) your own gift chest."
     Admin: "&cYou just broke a (part of a) public gift chest."
