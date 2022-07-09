@@ -67,7 +67,7 @@ unlink-provider-complete: "你的 <provider> 帳戶已斷開連結！"
 google-pick-shared-drive: "您可以已連結一個或多個雲端帳戶，如果您想使用其中一個，請選擇它或在聊天中回覆它的編號。"
 default-google-drive-name: "我的雲端硬碟"
 google-shared-drive-option: "<bold>[<drive-num>]</bold> <gold><hover:show_text:選擇雲端硬碟><click:run_command:'<select-command>'><drive-name></click></hover></gold>"
-file-upload-message: "上傳檔案花費了 <length> 秒 （<speed>KB/s)"
+file-upload-message: "上傳檔案花費了 <length> 秒 （<speed>KB/s）"
 backup-forced: "強制備份中"
 backup-already-running: |-
   一個備份任務正在執行
@@ -75,14 +75,14 @@ backup-already-running: |-
 backup-no-methods: "沒有啟用任何備份方法"
 backup-empty-list: "備份列表是空的"
 backup-start: "正在建立備份，伺服器可能會卡頓小段時間…"
-external-ftp-backup-start: "正在從 （S)FTP 伺服器 （<socket-addr>) 下載檔案以包括在備份列表中"
-external-ftp-backup-blacklisted: "未在 （S)FTP 伺服器的備份列表中包括 <blacklisted-files>， 因為它們被 \"<glob-pattern>\" 列入黑名單"
-external-ftp-backup-failed: 未能在備份列表中包括來自 （S)FTP 伺服器 （<socket-addr>) 的檔案，請檢查<gold>config.yml</gold> 中的伺服器證書。
-external-ftp-backup-complete: "來自 （S)FTP 伺服器 （<socket-addr>) 的檔案已成功包括在備份列表中"
-external-mysql-backup-start: "從MySQL伺服器 （<socket-addr>) 下載資料庫以包括在備份列表中"
+external-ftp-backup-start: "正在從 （S）FTP 伺服器 （<socket-addr>） 下載檔案以包括在備份列表中"
+external-ftp-backup-blacklisted: "未在 （S）FTP 伺服器的備份列表中包括 <blacklisted-files>， 因為它們被 \"<glob-pattern>\" 列入黑名單"
+external-ftp-backup-failed: 未能在備份列表中包括來自 （S）FTP 伺服器 （<socket-addr>） 的檔案，請檢查<gold>config.yml</gold> 中的伺服器證書。
+external-ftp-backup-complete: "來自 （S）FTP 伺服器 （<socket-addr>） 的檔案已成功包括在備份列表中"
+external-mysql-backup-start: "從MySQL伺服器 （<socket-addr>） 下載資料庫以包括在備份列表中"
 external-mysql-backup-blacklisted: "在備份列表中沒有包括 \"<blacklist-entry>\"，因為它被列入了黑名單。"
-external-mysql-backup-failed: 未能在備份列表中包括來自MySQL伺服器 （<socket-addr>) 的資料庫，請檢查<gold>config.yml</gold>中的伺服器憑證。
-external-mysql-backup-complete: "來自MySQL伺服器（<socket-addr>) 的資料庫被成功包括在備份列表中。"
+external-mysql-backup-failed: 未能在備份列表中包括來自MySQL伺服器 （<socket-addr>） 的資料庫，請檢查<gold>config.yml</gold>中的伺服器憑證。
+external-mysql-backup-complete: "來自MySQL伺服器（<socket-addr>） 的資料庫被成功包括在備份列表中。"
 local-backup-date-format-invalid: |-
   無法解析備份 "<file-name>" 的日期格式，這可能是由於日期格式在 config.yml 中被更新。
   此備份會被刪除
@@ -178,7 +178,7 @@ drivebackup-help-command: |-
   <gold><click:run_command:/drivebackup nextbackup>/drivebackup nextbackup</click></gold> - 獲取下一次自動備份的時間/日期
   <gold><click:run_command:/drivebackup status>/drivebackup status</click></gold> - 獲取執行中的備份的狀態
   <gold><click:run_command:/drivebackup backup>/drivebackup backup</click></gold> - 手動執行備份
-  <gold><click:run_command:/drivebackup test ftp>/drivebackup test ftp</click></gold> - 測試與 （S)FTP 伺服器的連線
+  <gold><click:run_command:/drivebackup test ftp>/drivebackup test ftp</click></gold> - 測試與 （S）FTP 伺服器的連線
   <gold><click:run_command:/drivebackup test googledrive>/drivebackup test googledrive</click></gold> - 測試與 Google 雲盤的連線
   <gold><click:run_command:/drivebackup test onedrive>/drivebackup test onedrive</click></gold> - 測試與 OneDrive 的連線
   <gold><click:run_command:/drivebackup test dropbox>/drivebackup test dropbox</click></gold> - 測試與 Dropbox 的連線
