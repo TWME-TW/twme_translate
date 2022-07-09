@@ -30,7 +30,7 @@ Chest:
   Expand:
     Own: "&2你剛剛擴展了一個上鎖的禮物箱。"
   Break:
-    Own: "&cYou just broke (a part of) your own gift chest."
+    Own: "&c你剛剛打破了自己的禮物箱。"
     Admin: "&cYou just broke a (part of a) public gift chest."
     Own_Sign: "&cYou just broke your own gift chest sign."
     Admin_Sign: "&cYou just broke a gift chest sign."
