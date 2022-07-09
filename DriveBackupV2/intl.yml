@@ -23,17 +23,17 @@ updater-successful: "成功更新插件！重啟您的伺服器以生效。"
 config-loaded: "配置已載入！"
 config-reloaded: "配置已重置！"
 date-format-invalid: "日期格式時區無效，使用 UTC"
-backup-list-glob-invalid: "世界無效，忽略備份方法 <entry>"
-backup-list-path-invalid: "路徑無效，忽略備份方法 <entry>"
-backup-list-no-dest-specified: "沒有指定路徑或世界，忽略備份方法 <entry>"
-backup-list-format-invalid: "格式無效，忽略備份方法 <entry>"
+backup-list-glob-invalid: "世界無效，跳過備份方法 <entry>"
+backup-list-path-invalid: "路徑無效，跳過備份方法 <entry>"
+backup-list-no-dest-specified: "沒有指定路徑或世界，跳過備份方法 <entry>"
+backup-list-format-invalid: "格式無效，跳過備份方法 <entry>"
 backup-list-blacklist-invalid: "備份方法 <entry> 中的黑名單無效，忽略"
 ftp-method-pubic-key-invalid: "公鑰存放路徑對 FTP 備份方式無效，忽略"
 ftp-method-passphrase-invalid: "密碼對 FTP 備份方式無效，忽略"
-backup-schedule-days-invalid: "日期列表無效, 忽略排程 <entry>"
-backup-schedule-day-invalid: "星期無效, 忽略星期 \"<day>\""  
-backup-schedule-day-empty: "星期幾列表為空, 忽略排程 <entry>"
-backup-schedule-time-invalid: "時間無效，忽略時間表方法 <entry>"
+backup-schedule-days-invalid: "日期列表無效, 跳過排程 <entry>"
+backup-schedule-day-invalid: "星期無效, 跳過星期 \"<day>\""  
+backup-schedule-day-empty: "星期幾列表為空, 跳過排程 <entry>"
+backup-schedule-time-invalid: "時間無效，跳過時間表方法 <entry>"
 backup-schedule-empty: "備份時間表為空，停用基於時間的備份"
 invalid-backup-delay: "填入的備份延遲無效，使用預設值"
 thread-priority-too-low: "填入的執行緒優先順序小於最小值，使用預設值"
@@ -42,20 +42,20 @@ keep-count-invalid: "保留份數無效，使用預設值"
 local-keep-count-invalid: "本地保留份數無效，使用預設值"
 zip-compression-too-low: "填入的 zip 壓縮等級小於最小值，使用預設值"
 zip-compression-too-high: "填入的 zip 壓縮等級大於最大值，使用預設值"
-external-backup-type-invalid: "備份型別無效，忽略外部備份方法 <entry>"
-external-backup-host-port-invalid: "主機名/埠無效，忽略外部備份方法 <entry>"
-external-backup-user-pass-invalid: "使用者名稱/密碼無效，忽略外部備份方法 <entry>"
-external-backup-format-invalid: "格式無效，忽略外部備份方法 <entry>"
-external-backup-public-key-invalid: "外部備份方法 <entry> 中的公鑰路徑無效，忽略"
-external-backup-passphrase-invalid: "外部備份方法 <entry> 中的密碼無效，忽略"
-external-backup-base-dir-invalid: "外部備份方法 <entry> 中的基礎目錄路徑無效，忽略"
-external-backup-list-invalid: "備份無效，忽略外部備份方法 <entry>。"
-external-backup-list-path-invalid: "路徑無效，忽略外部備份方法 <entry-backup>。"
-external-backup-list-blacklist-invalid: "外部備份方法 <entry-backup> 中的黑名單無效，忽略"
+external-backup-type-invalid: "備份型別無效，跳過外部備份方法 <entry>"
+external-backup-host-port-invalid: "主機名/埠無效，跳過外部備份方法 <entry>"
+external-backup-user-pass-invalid: "使用者名稱/密碼無效，跳過外部備份方法 <entry>"
+external-backup-format-invalid: "格式無效，跳過外部備份方法 <entry>"
+external-backup-public-key-invalid: "外部備份方法 <entry> 中的公鑰路徑無效，跳過"
+external-backup-passphrase-invalid: "外部備份方法 <entry> 中的密碼無效，跳過"
+external-backup-base-dir-invalid: "外部備份方法 <entry> 中的基礎目錄路徑無效，跳過"
+external-backup-list-invalid: "備份無效，跳過外部備份方法 <entry>。"
+external-backup-list-path-invalid: "路徑無效，跳過外部備份方法 <entry-backup>。"
+external-backup-list-blacklist-invalid: "外部備份方法 <entry-backup> 中的黑名單無效，跳過"
 external-database-ssl-invalid: "外部備份方法 <entry> 中的 SSL 設定無效，禁用 SSL"
-external-database-list-invalid: "資料庫無效，忽略外部備份方法 <entry>。"
-external-database-list-name-invalid: "名稱無效，忽略外部備份資料庫方法 <entry-database>"
-external-database-list-blacklist-invalid: "外部備份資料庫方法 <entry-backup> 中的黑名單無效，忽略"
+external-database-list-invalid: "資料庫無效，跳過外部備份方法 <entry>。"
+external-database-list-name-invalid: "名稱無效，跳過外部備份資料庫方法 <entry-database>"
+external-database-list-blacklist-invalid: "外部備份資料庫方法 <entry-backup> 中的黑名單無效，跳過"
 backups-scheduled: "計劃在 <days> 的 <time> 進行一次備份"
 backups-interval-scheduled: "計劃每隔 <delay> 分鐘進行一次備份"
 no-perm: "您無權執行此操作"
@@ -96,11 +96,11 @@ backup-location-start: "正在備份 \"<location>\""
 backup-failed-absolute-path: |-
   建立備份失敗，備份資料夾的路徑需要使用絕對路徑，而不是相對路徑
   絕對路徑可能會覆蓋敏感檔案，更多資訊請參見文件。
-  已忽略備份此位置
+  已跳過備份此位置
 backup-local-failed: |-
   建立本地備份失敗
   即使 local-keep-count 被設定為 0，該插件也需要臨時建立一個本地備份。
-  已忽略備份此位置
+  已跳過備份此位置
 backup-method-uploading: "正在上傳檔案至 <upload-method>"
 backup-method-limit-reached: "在 <upload-method> 中的當前備份位置已有 <file-count> 個檔案，超過了 <file-limit> 個的限制，刪除中"
 backup-method-prune-failed: "刪除超過限制的備份失敗"
@@ -109,14 +109,14 @@ backup-method-shared-drive-prune-failed: |-
   嘗試提升雲端帳戶的帳戶許可權，或將 keep-count 設定為 0 以禁止刪除備份。
 backup-method-upload-failed: "上傳失敗"
 backup-method-not-linked: |-
-  忽略到 <upload-method> 的備份，帳戶尚未連結
+  跳過到 <upload-method> 的備份，帳戶尚未連結
   要連結你的帳戶，請點選 <gold><click:run_command:'<link-command>'><link-command></click></gold>。
 backup-method-not-auth: |-
-  忽略到 <upload-method> 的備份，認證失敗
+  跳過到 <upload-method> 的備份，認證失敗
   請檢查<gold>config.yml<gold>中的憑證是否正確。
 backup-method-error-occurred: "備份到 <upload-method> 失敗，驗證憑證是否正確或用 <gold><click:run_command:'<diagnose-command></click></gold> 診斷問題。"
 backup-method-not-auth-authenticator: |-
-  忽略到 <upload-method> 的備份，認證失敗
+  跳過到 <upload-method> 的備份，認證失敗
   請嘗試重新連結您的帳戶，請點選 <gold><click:run_command:'<link-command>'><link-command></click></gold>。
 backup-method-complete: "已成功上傳備份至 <gold><upload-method></gold>"
 backup-complete: "備份已完成"
