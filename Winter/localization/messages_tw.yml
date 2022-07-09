@@ -28,12 +28,12 @@ Chest:
     Admin: "&2您現在正在觀看被鎖定的禮物箱的內容。"
     Admin_Dated: "&6警告：您已繞過此箱子的日期限制。"
   Expand:
-    Own: "&2你剛剛擴展了一個上鎖的禮物箱。"
+    Own: "&2你擴展了一個上鎖的禮物箱。"
   Break:
-    Own: "&c你剛剛打破了自己的禮物箱。"
-    Admin: "&cYou just broke a (part of a) public gift chest."
-    Own_Sign: "&cYou just broke your own gift chest sign."
-    Admin_Sign: "&cYou just broke a gift chest sign."
+    Own: "&c你打破了自己的禮物箱。"
+    Admin: "&c你打破了一個公共禮物箱。"
+    Own_Sign: "&c你打破了你自己的禮物箱告示牌。"
+    Admin_Sign: "&c你打破了一個禮物盒的告示牌。"
   Timed:
     Exceeded_Limit: "&cThis chest can only be looted {limit} time(s)!"
     Not_Ready: "&cChest will be ready in {time}."
