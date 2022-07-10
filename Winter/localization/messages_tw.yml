@@ -60,11 +60,11 @@ Boxed:
   Chest_Preview: |-
       <center>&f&lWinter
       &r
-      <center>&7Previewing a gift chest! Open it again to loot it. Remember, you can only open this chest once!
+      <center>&7預覽禮物箱！Open it again to loot it. Remember, you can only open this chest once!
   Chest_Open: |-
       <center>&f&lWinter
       &r
-      <center>&7Opening a gift chest…
+      <center>&7開啟一個禮物箱中…
 
 # -------------------------------------------------------------------------------------------
 # Commands-related messages.
