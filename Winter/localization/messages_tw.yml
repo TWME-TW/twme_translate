@@ -64,17 +64,17 @@ Boxed:
   Chest_Open: |-
       <center>&f&lWinter
       &r
-      <center>&7Opening a gift chest...
+      <center>&7Opening a gift chest…
 
 # -------------------------------------------------------------------------------------------
 # Commands-related messages.
 # -------------------------------------------------------------------------------------------
 Commands:
-  No_Console: "&cYou may only use this command as a player"
-  Reload_Success: "Winter {plugin_version} has been reloaded."
-  Reload_Fail: "&4Oops, &creloading failed! See the console for more information. Error: {error}"
-  Snow_Enabled: "&fYou now see snowing particles."
-  Snow_Disabled: "&cYou no longer see snowing particles."
+  No_Console: "&c你必須是玩家才能使用這個指令"
+  Reload_Success: "Winter {plugin_version} 已經重新載入完成"
+  Reload_Fail: "&4哎呀，&c重新載入失敗！有關更多信息，請查看控制台。錯誤：{error}"
+  Snow_Enabled: "&f您現在看的到下雪的粒子。"
+  Snow_Disabled: "&c您不再看的到下雪的粒子。"
 
 # -------------------------------------------------------------------------------------------
 # Words that are changed depending of the context.
@@ -104,9 +104,9 @@ No_Permission: "&c權限不足（{permission}）。"
 # Update available message
 Update:
   Available: |-
-    &2A new version of &3Winter&2 is available.
-    &2Current version: &f{current}&2; New version: &f{new}
-    &2URL: &7https://www.spigotmc.org/resources/{resource_id}/.
+    &3Winter&2 的新版本已經發布
+    &2現在的版本：&f{current}&2；新的版本：&f{new}
+    &2連結：&7https://www.spigotmc.org/resources/{resource_id}/.
 
 # Internal version number. Do not change!
 Version: 1
