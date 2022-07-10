@@ -331,7 +331,7 @@ command:
       addTabExplanation: '&6When enabled we will add defined tabs to existing ones'
       newAliasInfo: '&e輸入新的指令別名,然後按Enter鍵'
       addInfo: '&e輸入新的指令，或者輸入 &6cancel &e取消'
-      addInformationHover: "&e全服變數支持 \n&e想給指令添加延遲: \n&edelay! 5 \n&e新增的變數可用於根據  其位\ 置插入變數 \n&e$1 將獲得新指令提供的變數  並將其放在相應位置 \n&e$1- 將從這一處獲得所有 變數並將其插入原指令 \n&efromConsole!\ \ 將在 控制台執行指令"
+      addInformationHover: "&e全服變數支持 \n&e想給指令新增延遲: \n&edelay! 5 \n&e新增的變數可用於根據  其位\ 置插入變數 \n&e$1 將獲得新指令提供的變數  並將其放在相應位置 \n&e$1- 將從這一處獲得所有 變數並將其插入原指令 \n&efromConsole!\ \ 將在 控制台執行指令"
       editInfo: '&e點擊貼上舊內容，或者輸入 &6cancel &e來取消，或者輸入 &6remove &e來移除一行'
   anvil:
     help:
@@ -439,7 +439,7 @@ command:
       - '!limiteduse:[amount]! 代表你可以執行指令多少次'
       - '!safelimiteduse:[amount]! will not remove item after all usages are used'
       - '!cc! 代表從控制台執行指令，需要權限 cmi.command.attachcommand.cc '
-      - '!cooldownn:[amount]! 添加物品使用冷卻時間.'
+      - '!cooldownn:[amount]! 新增物品使用冷卻時間.'
       - '[interactedPlayer] 插入持有物品時交互玩家的名字'
       - 全服變數支持 [itemUses]
     info:
@@ -645,7 +645,7 @@ command:
         Names: '&7[playerDisplayName]'
   checkaccount:
     help:
-      info: '&e查詢玩家其它帳戶'
+      info: '&e查詢玩家其它帳號'
       args: (playerName/ip)
       explanation:
       - '權限: cmi.command.checkaccount.showip'
@@ -653,9 +653,9 @@ command:
       place: '&e[place]. &6'
       ip: '&6[ip]&e: '
       name: '&6[name]&e(&6[times]&e)'
-      nonIpList: '&e帳戶: &6'
+      nonIpList: '&e帳號: &6'
       nonIpName: '&6[name]'
-      click: '&e點擊查詢 &6[name] &e的帳戶'
+      click: '&e點擊查詢 &6[name] &e的帳號'
       noData: '&c沒有資料'
   checkban:
     help:
@@ -704,7 +704,7 @@ command:
       info: '&e存款'
       args: '[amount]'
     info:
-      transfered: '&e存款 &6[amount] &e至你的帳戶，當前擁有: &6[balance]'
+      transfered: '&e存款 &6[amount] &e至你的帳號，當前擁有: &6[balance]'
       chequeName: '&e支取 &6[amount]'
       chequeLore:
       - '&r&f申請人 &7[playerDisplayName]'
@@ -875,10 +875,10 @@ command:
       removed: '&e配方已移除: [id]. 想讓這個設定生效，你必須重啟伺服器'
       noRecipe: '&e這個ID沒有自定義合成配方'
       edit: '&8編輯配方 (&6[type]&8)'
-      addNew: '&e添加新合成配方 (&6[type]&e)'
-      shapelessRecipe: '&6添加新無序合成'
-      shapedRecipe: '&e添加新有序合成'
-      furnaceRecipe: '&2添加新熔爐熔煉配方'
+      addNew: '&e新增新合成配方 (&6[type]&e)'
+      shapelessRecipe: '&6新增新無序合成'
+      shapedRecipe: '&e新增新有序合成'
+      furnaceRecipe: '&2新增新熔爐熔煉配方'
       campfireRecipe: '&2Make new campfire recipe'
       smithingRecipe: '&2Make new smithing recipe'
       stonecuttingRecipe: '&2Make new stonecutting recipe'
@@ -965,11 +965,8 @@ command:
     info:
       noText: '&c找不到叫這個名字的自定義文字'
       editInfo: '&e點擊貼上舊內容，輸入 &6cancel &e來取消，輸入 &6remove &e來移除一行'
-      addInfo: '&e輸入內容添加新的一行，輸入 &6cancel &e來取消'
-      addInformationHover: "&e各種變數支持 \n&e如果想寫上可以點擊的文字: \n&e<T>&r內容&e</T><H>&r懸浮內容\
-        &e</H><C>&r指令&e</C><SC>&r自動填充 內容&e</SC> \n&6<T> &e以及 &6</T> &e是必備的, 除了這兩個以\
-        外其它變數都是可選的 \n&e請使用 \\u005Cn 來切換下一行 \n&e如果想使用不止一個 JSON 訊息，請使用 <Next> \n&6<CC>\
-        \ &e執行控制台指令僅一次 \n&6<CCI> &e每次玩家點擊都 執行控制台指令 \n&6<URL> &e允許玩家開啟 的網頁"
+      addInfo: '&e輸入內容新增新的一行，輸入 &6cancel &e來取消'
+      addInformationHover: "&e各種變數支持 \n&e如果想寫上可以點擊的文字: \n&e<T>&r內容&e</T><H>&r懸浮內容\ &e</H><C>&r指令&e</C><SC>&r自動填充 內容&e</SC> \n&6<T> &e以及 &6</T> &e是必備的, 除了這兩個以\ 外其它變數都是可選的 \n&e請使用 \\u005Cn 來切換下一行 \n&e如果想使用不止一個 JSON 訊息，請使用 <Next> \n&6<CC>\ \ &e執行控制台指令僅一次 \n&6<CCI> &e每次玩家點擊都 執行控制台指令 \n&6<URL> &e允許玩家開啟 的網頁"
       newInfo: '&e輸入新自定義文本的名稱，或輸入 &6cancel &e返回'
       deleteInfo: '&e輸入 &6confirm &e來確認移除，或輸入 &6cancel &e取消'
       deleted: '&e自定義文字 (&6[ctext]&e) 被移除'
@@ -1029,7 +1026,7 @@ command:
       notSet: '&e未設定'
   effect:
     help:
-      info: '&e給玩家添加藥水效果，使用clear來清除所有藥水效果'
+      info: '&e給玩家新增藥水效果，使用clear來清除所有藥水效果'
       args: '[playername] [effect/clear] (duration) (multiplier) (-s)'
       explanation:
       - -visual 將在右上角加上可見氣泡和圖標
@@ -1039,13 +1036,12 @@ command:
       - /cmi effect zrips nightvision -10 - 將給玩家 Zrips 當前的夜視效果減去10秒
       - /cmi effect all health_boost 60 1 - 將給所有 線上玩家 60 秒 health_boost效果
     info:
-      feedback: '&e藥水效果 &6[effect] &e已被添加至 &3[playerDisplayName]&e 並持續 &6[sec]秒&e
-        ，藥水等級 &6[power] &e(&3[offon]&e).'
+      feedback: '&e藥水效果 &6[effect] &e已被新增至 &3[playerDisplayName]&e 並持續 &6[sec]秒&e，藥水等級 &6[power] &e(&3[offon]&e).'
       cleared: '&e玩家 &3[playerDisplayName]&e 的藥水效果已清除 (&3[offon]&e).'
   enchant:
     help:
       info: '&e附魔物品'
-      args: (playerName) [enchant] [level]
+      args: (playerName) [enchant] [level] (-o) (-onlyvalid) (-keeponlyvalid) (-inform) (-s) (-i:[itemName(:data)]) (clear)
       explanation:
       - -o 將從副手拿走物品
     info:
@@ -1109,6 +1105,7 @@ command:
       - /exp take 10
       - /exp Zrips clear
       - /exp Zrips add 10
+      - /exp Zrips add 10%[10-50]
     info:
       current: '&e[playerDisplayName] &e現在是 &6[lvl]&e等 + &6[currentExp]&e經驗值 總共 &6[exp]&e經驗值.'
       selfFeedback: '&e經驗已設定為 &3[exp] &e，被執行玩家 &3[playerDisplayName]&e (&3[offon]&e).'
@@ -1154,6 +1151,7 @@ command:
       - '- &6pause &e- 暫停掃描'
       - '- &6continue &e- 繼續掃描'
       - '- &6stop &e- 停止掃描'
+      - '- &6stopall &e- stop all scanings'
       - '- &6speed [amount] &e- 設定當前掃描速度'
       - '- &6autospeed [true/false] &e- 自動速度開/關'
       - '- &6messages [true/false] &e- 資訊輸出開/關'
@@ -1171,8 +1169,7 @@ command:
       autospeedChange: '&e自動速度設定為 [state]'
       messagesChange: '&e資訊輸出設定為 [state]'
       NoInfo: '&e無資訊，請先開始掃描！'
-      InfoShow: '&6TPS: &3[tps] &6剩餘 &e[left] &6(&e[min]m:[sec]s&6) &6速度: &e[speed]
-        &6已找到: &e[found]'
+      InfoShow: '&6TPS: &3[tps] &6剩餘 &e[left] &6(&e[min]m:[sec]s&6) &6速度: &e[speed] &6已找到: &e[found]'
       scanList: '&2[number]. &7X:&f[x] &7Z:&f[z]'
       finished: '&e掃描完成, 請使用 &6/cmi fixchunk fix &e來修復損壞區塊 &c區塊會重新生成，該操作不可逆！'
       fixed: '&2[number] &e個區塊已修復'
@@ -1258,13 +1255,17 @@ command:
       - '示例: /give stone'
       - /give Zrips stone 5 n Stonehenge
       - /give stick e knockback:1
+      - /give diamondsword 3 unstack
       - /give Zrips sponge l Got_item_on:_%date/YY/MM/dd-HH:mm:ss%
       - /cmi give Zrips sponge 1 e Knockback:%rand/1-5%
       - /cmi give Zrips sponge %rand/1-10%
+      - /cmi give Zrips sponge l line_one/nline_two
+      - /cmi give Zhax hand Zrips
       - /give sponge a maxhealth:5:mainhand
       - /give diamond_sword unbreakable
       - /give mob_spawner:creeper
       - /give minecraft:diamond_helmet 1 0 {ench:[{id:0,lvl:100},{id:2,lvl:100},{id:34,lvl:100}]}
+      - /give potion:speed-true-true
     info:
       feedback: '&6將 &e[amount] &6x &e[itemname] &6(&e[customitemname]&6) 給予玩家 &e[playerDisplayName]'
       maxLimit: '&c一次不可獲得多於&7[max]的物品'
@@ -1294,13 +1295,12 @@ command:
   glow:
     help:
       info: '&e設定玩家發光'
-      args: (playerName) [true/false/color]
+      args: (playerName) [true/false/color/gui]
       explanation:
       - '示例: /glow Zrips red'
       - '權限: cmi.command.glow.[color] - 允許設定發光顏色'
     info:
-      feedback: '&e你為 &3[playerDisplayName]&e-(&3[offon]&e) &3[boolean]&e [color]發光
-        &e.'
+      feedback: '&e你為 &3[playerDisplayName]&e-(&3[offon]&e) &3[boolean]&e [color]發光&e.'
       targetfeedback: '&3[senderDisplayName]&e 幫你 &3[boolean]&e [color]發光.'
       title: 選擇發光顏色
       incorrect: '&4顏色名稱不正確'
@@ -1309,14 +1309,14 @@ command:
   gm:
     help:
       info: '&e設定玩家的遊戲模式'
-      args: '[playerName] [gamemode]'
+      args: '(playerName) [gamemode]'
     info:
       feedback: '&e你將 &3[playerDisplayName]&e 的遊戲模式設定為 &3[gameMode]&e.'
       targetfeedback: '&e你的遊戲模式已被 &3[senderDisplayName]&e 設定為 &3[gameMode]&e.'
   god:
     help:
       info: '&e設定玩家的上帝模式'
-      args: '[playerName] (true/false)'
+      args: '[playerName] (true/false) (-s)'
     info:
       feedback: '&e你已為 &3[playerDisplayName]&e-(&3[offon]&e) &3[boolean]&e 了上帝模式.'
       targetfeedback: '&3[senderDisplayName]&e 幫你 &3[boolean]&e 了上帝模式.'
@@ -1334,7 +1334,10 @@ command:
       explanation:
       - +cm 將把礦車納入清掃範圍
       - +cb 將把船納入清掃範圍
+      - +sh will include shulker box into cleaning
       - +ci 將把武器和護甲納入清掃範圍
+      - +tnt defines if you want to include primed tnt
+      - +named removes items with custom name or lore
       - +b 將向所有玩家顯示清掃提示語
     info:
       removed: '&e清掃 -[list]'
@@ -1372,14 +1375,14 @@ command:
   head:
     help:
       info: '&e獲得玩家的頭顱'
-      args: '[sourceName] (targetName) (-s)'
+      args: '[sourceName] (targetName) (-s) (amount)'
     info:
       Feedback: '&3[headName] &6的頭顱已獲得'
       targetFeedback: '&3[senderDisplayName]&e 給你玩家 &3[headName] &e的頭顱！'
   heal:
     help:
       info: '&e治癒玩家'
-      args: '[playerName] (healamount/healpercent)'
+      args: '[playerName/all] (healamount/healpercent) (-nofeed) (-ignoreffects) (-dontextinguish)'
     info:
       feedback: '&e你治癒了 &3[playerDisplayName]&e-(&3[offon]&e).'
       feedbackMulti: '&e你回復了 &e玩家 &3[count]血.'
@@ -1399,7 +1402,7 @@ command:
       info: '&e隱藏物品NBT標籤'
       args: (playerName) [flagName/clear]
     info:
-      feedback: '&e你給物品添加了新的NBT標籤，被操作者 &3[playerDisplayName]&e (&3[offon]&e).'
+      feedback: '&e你給物品新增了新的NBT標籤，被操作者 &3[playerDisplayName]&e (&3[offon]&e).'
       cleared: '&e你清除了物品上所有的NBT標籤，被操作者 &3[playerDisplayName]&e (&3[offon]&e).'
       noitem: '&c必須把物品拿在手上'
       inccorectId: '&e無效的NBT標籤名稱'
@@ -1468,8 +1471,7 @@ command:
       shift:
       - '&e一次改變 0.01 ，按住shift可一次改變 0.1'
       listFormat: '&6[name]&7: &r[extra]'
-      addInfo: '&e輸入新一行的文本. 輸入 &6cancel &e取消. 額外變數: &6ICON:&7[Value] &6SICON:&7[Value]&e
-        where &7Value&e- &7[MaterialName-amount]%enchanted%&e, &7%itemInHand%&e, &7頭顱:[headOwner]'
+      addInfo: '&e輸入新一行的文本. 輸入 &6cancel &e取消. 額外變數: &6ICON:&7[Value] &6SICON:&7[Value]&e where &7Value&e- &7[MaterialName-amount]%enchanted%&e, &7%itemInHand%&e, &7頭顱:[headOwner]'
   hologrampages:
     help:
       info: '&e更改全息圖頁面'
@@ -1493,7 +1495,7 @@ command:
   homes:
     help:
       info: '&e查詢家的列表'
-      args: (playerName)
+      args: (playerName/near:[range])
     info:
       nearList: '&7[number]. &e[playerDisplayName] &6[homeName] &7[distance] blocks
         away &e[direction]'
@@ -1509,7 +1511,7 @@ command:
   hunger:
     help:
       info: '&e設定玩家的飢餓值'
-      args: '[playerName] [amount]'
+      args: '[playerName] [amount] (-s)'
     info:
       feedback: '&e你將 &3[playerDisplayName]&e-(&3[offon]&e) 的飢餓值設定為 &3[hunger]&e.'
       targetfeedback: '&3[senderDisplayName]&e 將你的飢餓值已被設定為 &3[hunger]&e.'
@@ -1530,8 +1532,8 @@ command:
       listType: ' &e[type]    '
       editCommands: '&e編輯指令'
       editBlocks: ' &e編輯方塊'
-      addBlock: '&e添加你正目視的方塊'
-      addEntity: ' &e添加你正目視的實體'
+      addBlock: '&e新增你正目視的方塊'
+      addEntity: ' &e新增你正目視的實體'
       manageCommands: '&e切換至指令編輯'
       manageBlockEnt: '&e切換至方塊/實體編輯'
       locationList: '&6[type]'
@@ -1541,15 +1543,14 @@ command:
       entity: (Entity)
       both: (Both)
       none: (None)
-      addedNew: '&e添加新方塊/實體 &6[name]'
+      addedNew: '&e新增新方塊/實體 &6[name]'
       dontExist: '&c該名稱的交互指令不存在'
       exists: '&c該名稱的交互指令已存在'
       blockExist: '&c該方塊已被 &e[name] &c使用'
       entityExist: '&c該實體已被 &e[name] &c使用'
       cantUsePlayer: '&c你不能把玩家作為指令實體'
       addInfo: '&e輸入一個新指令，或者輸入 &6cancel &e取消'
-      addInformationHover: "&e可在內容中使用變數 \n&e想給指令添加延遲: \n&edelay! 5 \n&e附加的變數可被 用於在\
-        其位置顯示變數 \n&e$1 變數代表 新指令，並會被放置在該位置 \n&e$1- 代表來自此處 的所有變數，並插入原指令"
+      addInformationHover: "&e可在內容中使用變數 \n&e想給指令新增延遲: \n&edelay! 5 \n&e附加的變數可被 用於在\ 其位置顯示變數 \n&e$1 變數代表 新指令，並會被放置在該位置 \n&e$1- 代表來自此處 的所有變數，並插入原指令"
       editInfo: '&e點擊貼上舊內容，或者輸入 &6cancel &e來取消，或者輸入 &6remove &e移除一行'
   ifoffline:
     help:
@@ -1653,6 +1654,7 @@ command:
       - '[sneaking]'
       - '[walkspeed]'
       - '[hp]'
+      - '[air]'
       - '[hunger]'
       - '[saturation]'
       - '[exp]'
@@ -1749,7 +1751,7 @@ command:
   invsave:
     help:
       info: '&e保存物品欄'
-      args: (playerName)
+      args: (playerName) (id) (-s)
   ipban:
     help:
       info: '&e封鎖IP'
@@ -1758,10 +1760,8 @@ command:
       - cmi.command.banip.bypass - 無視封鎖
     info:
       message: '&c你被封鎖IP了'
-      messageToAll: '&6[playerDisplayName] &e被管理員 &6[senderDisplayName] &e封鎖了IP，原因:
-        &6[reason]'
-      banedSilent: '&7[&8Silent&7]&6[playerDisplayName] &e被管理員 &6[senderDisplayName]
-        &e靜默封鎖了IP，原因: &6[reason]'
+      messageToAll: '&6[playerDisplayName] &e被管理員 &6[senderDisplayName] &e封鎖了IP，原因: &6[reason]'
+      banedSilent: '&7[&8Silent&7]&6[playerDisplayName] &e被管理員 &6[senderDisplayName] &e靜默封鎖了IP，原因: &6[reason]'
       replacer: '*'
   ipbanlist:
     help:
@@ -1771,13 +1771,15 @@ command:
       banList: '&7[ip] &e- &6[reason]  '
       bannedBy: '&7封鎖者: &f[source]'
       ends: '&7過期時間: &f[time]'
-      related: "&7相關帳戶:\n&f[list]    "
+      related: |-
+        &7相關帳號：
+        &f[list]
   item:
     help:
       info: '&e給自己物品'
       args: '[itemname] (amount)'
       explanation:
-      - 物品名稱和物品描述支持Placeholders
+      - 物品名稱和物品描述支持 Placeholders
       - 'Example: /give stone'
       - /give stone 5 n Stonehenge
       - /give stick e knockback:1
@@ -1800,7 +1802,7 @@ command:
   itemframe:
     help:
       info: '&e管理展示框'
-      args: (invisible/fixed/invulnerable)
+      args: (invisible/fixed/invulnerable/all)
     info:
       enabled: Enabled
       disabled: Disabled
@@ -1928,8 +1930,7 @@ command:
   killall:
     help:
       info: '&e擊殺周圍的怪物'
-      args: (-monsters/-pets/-npc/-golems/-animals/-ambient/-armorstand/-named/-f/-lightning/-list/[mobType])
-        (range) (-s)
+      args: (-monsters/-pets/-npc/-animals/-ambient/-named/-f/-lightning/-list/-m:[mobType]) (-r:range) (-s) (-w:[worldName])
     info:
       infoList: '&2[category]&e: &7[amount] &e([list]&e)'
       removedList: '&6[type]&e: &7[amount]'
@@ -1944,38 +1945,38 @@ command:
       named: 有自定義名字的
   kit:
     help:
-      info: '&e給予預設的禮包'
+      info: '&e給予預設的工具包'
       args: '[kitName] (playerName)'
       explanation:
       - '&e權限:'
-      - '&6cmi.kit.[kitName] &e- 允許使用該禮包'
-      - '&6cmi.kit.bypass.money &e- 無視使用禮包需要支付的金錢'
-      - '&6cmi.kit.bypass.exp &e- 無視使用禮包需要支付的經驗'
-      - '&6cmi.kit.bypass.onetimeuse &e- 無視禮包只能用一次'
-      - '&6/cmi kit [kitName] [playerName] &e- 將禮包給予另一個玩家'
+      - '&6cmi.kit.[kitName] &e- 允許使用該工具包'
+      - '&6cmi.kit.bypass.money &e- 無視使用工具包需要支付的金錢'
+      - '&6cmi.kit.bypass.exp &e- 無視使用工具包需要支付的經驗'
+      - '&6cmi.kit.bypass.onetimeuse &e- 無視工具包只能用一次'
+      - '&6/cmi kit [kitName] [playerName] &e- 將工具包給予另一個玩家'
     info:
-      noMoney: '&e你的錢不夠，使用這個禮包需要花費: &6[cost] &e你只有 &6[balance]'
-      noExp: '&e你的經驗不夠，使用這個禮包需要花費: &6[cost] &e你只有 &6[balance]'
-      noCondition: '&e你沒有權限使用這個禮包，你需要權限: &6[condition]'
-      oneTime: '&c這是一次性的禮包，你已經使用過了！'
-      cantUseNow: '&c接下來 [time] 時間內你都不能使用這個禮包'
+      noMoney: '&e你的錢不夠，使用這個工具包需要花費: &6[cost] &e你只有 &6[balance]'
+      noExp: '&e你的經驗不夠，使用這個工具包需要花費: &6[cost] &e你只有 &6[balance]'
+      noCondition: '&e你沒有權限使用這個工具包，你需要權限: &6[condition]'
+      oneTime: '&c這是一次性的工具包，你已經使用過了！'
+      cantUseNow: '&c接下來 [time] 時間內你都不能使用這個工具包'
       limitedTimeUseError: '&e不能使用超過 &6[times] &e次'
       limitedTimeUse: '&7可使用 &c[times] &7次'
       limitedTimeAllUsed: '&c不能再獲得了'
       canUseIn: '&e距離下一次可用還有: [time]'
       cooldown: '&e冷卻: [time]'
-      noKit: '&e沒有叫這個名字的禮包'
-      kitDoesntExist: '&e無法發現禮包 ([kitName])'
-      noKitAccess: '&c你沒有權限使用這個禮包'
-      noFoundKit: '&e無任何禮包，請先建立一個'
-      givenKit: '&e你將禮包 &6[kit] &e給予了 &6[playerDisplayName]'
-      title: '&8禮包'
+      noKit: '&e沒有叫這個名字的工具包'
+      kitDoesntExist: '&e無法發現工具包 ([kitName])'
+      noKitAccess: '&c你沒有權限使用這個工具包'
+      noFoundKit: '&e無任何工具包，請先建立一個'
+      givenKit: '&e你將工具包 &6[kit] &e給予了 &6[playerDisplayName]'
+      title: '&8工具包'
       nameCanUse: '&6[kitName]'
       nameCantUse: '&7[kitName]'
       group: '&e組: &6[group]'
       left: '&6左鍵 &e點擊使用'
       right: '&6右鍵 &e點擊預覽'
-      take: '&6獲得禮包'
+      take: '&6獲得工具包'
       open: '&7Items from &8[kitName] &7kit！'
       eye: ' &e☬'
       use: '&2'
@@ -1983,50 +1984,49 @@ command:
       list: '&7[number]. &e[kitName] &6- [description]'
   kitcdreset:
     help:
-      info: '&e重置禮包計時'
+      info: '&e重置工具包計時'
       args: (kitName) (playerName)
     info:
-      notCd: '&e禮包未在冷卻中'
-      reset: '&e玩家 &6[playerDisplayName]&e 的禮包 (&6[kit]&e) 的冷卻時間已重置，被操作玩家 '
-      resetAll: '&e已將禮包 (&6[kit]&e)  的冷卻時間對 &6[count] &e位玩家 重置'
+      notCd: '&e工具包未在冷卻中'
+      reset: '&e玩家 &6[playerDisplayName]&e 的工具包 (&6[kit]&e) 的冷卻時間已重置，被操作玩家 '
+      resetAll: '&e已將工具包 (&6[kit]&e)  的冷卻時間對 &6[count] &e位玩家 重置'
       list: '&e[place]. &6[kit] &e[time]'
       listHover: '&e點擊重置'
-      noCd: '&e沒有冷卻中的禮包'
+      noCd: '&e沒有冷卻中的工具包'
   kiteditor:
     help:
-      info: '&e編輯禮包'
-      args: (seticon)
+      info: '&e編輯工具包'
+      args: ''
       explanation:
       - '&e權限:'
-      - '&6cmi.kit.[kitName] &e- 允許使用該禮包'
-      - '&6cmi.kit.bypass.money &e- 無視使用禮包需要支付的金錢'
-      - '&6cmi.kit.bypass.exp &e- 無視使用禮包需要支付的經驗'
-      - '&6/cmi kiteditor &e- 顯示禮包列表'
+      - '&6cmi.kit.[kitName] &e- 允許使用該工具包'
+      - '&6cmi.kit.bypass.money &e- 無視使用工具包需要支付的金錢'
+      - '&6cmi.kit.bypass.exp &e- 無視使用工具包需要支付的經驗'
+      - '&6/cmi kiteditor &e- 顯示工具包列表'
     info:
-      kits: '&e禮包: '
-      iconSet: '&e禮包 &6[kitname] &e的新圖標已設定'
-      kitExists: '&e叫這個名字的禮包已存在！'
-      deleteConfirm: '&e如果你真的想移除 (&6[kitname]&e) 禮包，請點我'
+      kits: '&e工具包: '
+      iconSet: '&e工具包 &6[kitname] &e的新圖標已設定'
+      kitExists: '&e叫這個名字的工具包已存在！'
+      deleteConfirm: '&e如果你真的想移除 (&6[kitname]&e) 工具包，請點我'
       deleteConfirmFinal: '&c注意：該操作不可逆！'
-      kitRemoved: '&e禮包 (&6[kitname]&e) 被移除'
-      kitNotRemoved: '&c禮包 (&6[kitname]&c) 不能被移除'
-      addNewInfo: '&e請在聊天框內輸入禮包名稱，或輸入 ''&6cancel&e'' 來取消'
-      renameCommandInfo: '&e輸入新的禮包指令名稱 或者輸入 ''&6cancel&e'' 取消'
-      renameConfigInfo: '&e輸入新的禮包 config 名稱 或者輸入 ''&6cancel&e'' 取消'
+      kitRemoved: '&e工具包 (&6[kitname]&e) 被移除'
+      kitNotRemoved: '&c工具包 (&6[kitname]&c) 不能被移除'
+      addNewInfo: '&e請在聊天框內輸入工具包名稱，或輸入 ''&6cancel&e'' 來取消'
+      renameCommandInfo: '&e輸入新的工具包指令名稱 或者輸入 ''&6cancel&e'' 取消'
+      renameConfigInfo: '&e輸入新的工具包 config 名稱 或者輸入 ''&6cancel&e'' 取消'
       groupInfo: '&e請輸入新的組名，或輸入 ''&6none&e'' 來移除組，或輸入 ''&6cancel&e'' 取消'
-      commandInfo: '&e請輸入新的指令資訊，或者輸入 ''&6cancel&e'' 取消，可用的變數: &6{USERNAME} {DISPLAYNAME}
-        {WORLDNAME} {KITNAME} {RANDOMPLAYER}'
-      conditionsInfo: '&e請輸入新的禮包領取條件，或者輸入 ''&6cancel&e'' 返回'
-      descInfo: '&e請輸入新的禮包描述，或者輸入 ''&6cancel&e'' 來取消'
-      renamed: '&e已將禮包 &6[kitname] &e命名為 &6[newkitname]&e.'
-      groupSet: '&e已為新組 (&6[groupname]&e) 設定了禮包 &6[kitname]'
+      commandInfo: '&e請輸入新的指令資訊，或者輸入 ''&6cancel&e'' 取消，可用的變數: &6{USERNAME} {DISPLAYNAME} {WORLDNAME} {KITNAME} {RANDOMPLAYER}'
+      conditionsInfo: '&e請輸入新的工具包領取條件，或者輸入 ''&6cancel&e'' 返回'
+      descInfo: '&e請輸入新的工具包描述，或者輸入 ''&6cancel&e'' 來取消'
+      renamed: '&e已將工具包 &6[kitname] &e命名為 &6[newkitname]&e.'
+      groupSet: '&e已為新組 (&6[groupname]&e) 設定了工具包 &6[kitname]'
       commandsListTitle: '&e✎&6指令:'
       conditionsListTitle: '&e✎&6條件:'
       descListTitle: '&e✎&6描述:'
       ListTitleHover: '&e點擊開啟選單'
       ListEditKitHover: '&c編輯 &6[kitname]'
       ListAdd: ' &2+'
-      ListAddHover: '&2添加新的'
+      ListAddHover: '&2新增新的'
       guiClickery:
       - '&e左鍵點擊增加，右鍵點擊減少'
       - '&e按住 &6Shift &e點擊，增加/減少10倍'
@@ -2040,10 +2040,10 @@ command:
       Weight: '&e權重: &6[Weight]'
       WeightExtra:
       - '&e更高的權重意味著更高的優先級'
-      - '&e所有禮包必須在同一組內'
+      - '&e所有工具包必須在同一組內'
       despiteWeight: '&e顯示權重: &6[Weight]'
       despiteWeightExtra:
-      - '&e玩家無法獲得此禮包, 但可以預覽'
+      - '&e玩家無法獲得此工具包, 但可以預覽'
       Slot: '&e格子: &6[slot]'
       Page: '&ePage: &6[page]'
       SlotAuto: '&6自動'
@@ -2069,20 +2069,20 @@ command:
       - '&e這個與權限有關'
       editCommandName:
       - '&e點擊改變指令名稱'
-      - '&e這個決定了你打什麼指令能獲得禮包'
+      - '&e這個決定了你打什麼指令能獲得工具包'
       displayName: '&7DisplayName: &r&f[name]'
       editDisplayName:
       - '&e點擊更改顯示名稱'
       - '&e這只用於視覺效果'
-      kitGroup: '&e禮包組: &6[group]'
+      kitGroup: '&e工具包組: &6[group]'
       dropItems: '&e物品欄已滿時丟棄物品: &6[state]'
       commands: '&e指令:'
       conditions: '&e獲得條件:'
       desc: '&e描述:'
       mainMenu: '&e主選單'
       settings: '&e設定'
-      icon: '&e當禮包可用時的圖標'
-      iconCd: '&e當禮包不可用時的圖標'
+      icon: '&e當工具包可用時的圖標'
+      iconCd: '&e當工具包不可用時的圖標'
   kitusagereset:
     help:
       info: '&e重置kit使用計數器'
@@ -2092,7 +2092,7 @@ command:
       reset: '&eKit (&6[kit]&e) 使用次數被 &6[playerDisplayName] 重置'
       list: '&e[place]. &6[kit] &e[used]/[usages]'
       listHover: '&e點擊重置'
-      noCd: '&e上面沒有使用的禮包 0'
+      noCd: '&e上面沒有使用的工具包 0'
   lastonline:
     help:
       info: '&e顯示之前 x 分鐘內所有線上玩家'
@@ -2103,9 +2103,10 @@ command:
   launch:
     help:
       info: '&e在你目視之處發射火箭'
-      args: (playerName) (p:[power]) (a:[angle]) (d:[direction])
+      args: (playerName) (p:[power]) (a:[angle]) (d:[direction]) (loc:[x]:[y]:[z]) (-nodamage)
       explanation:
       - cmi launch - 在你目視之處發射火箭
+      - cmi launch -nodamage - will launch and prevent damage on fall
       - cmi launch p:3.2 - 可指定火箭的能量 3.2
       - cmi launch p:2.5 a:25 - 可指定火箭發射的角度 25 度，以及能量 2.5
       - cmi launch Zrips d:east - 將朝東方發射，角度和你目視角度一樣
@@ -2117,7 +2118,7 @@ command:
   lfix:
     help:
       info: '&e修復周圍區塊的光照'
-      args: (range) (playerName)
+      args: (range) (playerName) (stop/stopall)
     info:
       NoMore: '&e修復範圍不能大於伺服器的目視區塊範圍，已自動設定為可設定最大範圍'
       startFixing: '&e已找到 &6[amount] &e個區塊待修復，正在開始'
@@ -2133,7 +2134,7 @@ command:
       - cmi.command.list.admin
       - cmi.command.list.staff
       - cmi.command.list.hidden
-      - cmi.command.list.group[number]
+      - cmi.command.list.group.[number]
     info:
       # [groupLine] can be replaced with specific grouped names like [group1] and [group2] and so on, you can have as many of those as you want and order them by your own liking
       List:
@@ -2143,12 +2144,12 @@ command:
       - '[staffLine]'
       - '[groupLine]'
       - '&7========================'
-      staffL: '&e管理員在線上: &f[list]'
-      adminL: '&e線上玩家: &f[list]'
+      staffL: '&7管理員在線上: &f[list]'
+      adminL: '&8線上玩家: &f[list]'
       hiddenPref: '&e&7[H]'
       hiddenCount: '&e&7([amount])'
-      groupL: '&e[groupName]: &f[list]'
-      player: '%cmi_user_afk_symbol%&e[playerDisplayName]'
+      groupL: '&6[groupName]: &f[list]'
+      player: '%cmi_user_afk_symbol%&f[playerDisplayName]'
       # Add as many groups as you wish, by default there is only 10, to create new one, just copy paste one line and add increment into lines name, like group11 or group12 and so on.
       # ATTENTION! group names should be in 'group[number]' format, where you have word 'group' followed by number. This is required and you cant have custom names as they are not required, but we are using number provided to determine which group goes after which
       # Player need to have appropriate permission node to be placed in group cmi.command.list.group.[groupnumber], bigger number have bigger priority
@@ -2166,11 +2167,11 @@ command:
       noGroupLine: '&e列表'
   lockip:
     help:
-      info: '&e一號一IP，禁止不同IP登進一個號'
-      args: '[playername] [add/remove/list/clear] [ip]'
+      info: '&e防止從不同的 IP 位址登入帳號'
+      args: (playername) [add/remove/list/clear] [ip]
     info:
       CantLogin: '&c你不能使用這個IP進入伺服器，請使用第一次進入伺服器時的IP'
-      add: '&e新的IP (&6[ip]&e) 已被添加至玩家 &6[playerDisplayName]'
+      add: '&e新的IP (&6[ip]&e) 已被新增至玩家 &6[playerDisplayName]'
       remove: '&eIp (&6[ip]&e) 已被從玩家 &6[playerDisplayName] &e的列表中移除'
       clear: '&e所有IP已被從玩家 &6[playerDisplayName] &e的列表中移除'
       ipNotFound: '&cIP 未找到'
@@ -2193,7 +2194,7 @@ command:
       clearMail: '&e所有郵件被清空'
       removedMail: '&e移除郵件'
       noMailsById: '&e找不到指定的郵件'
-      noMails: '&e沒有郵件'
+      noMails: '&e你沒有新的郵件'
       mailHover: '&e[senderName] /n &e[time]'
       mailHoverExpires: '/n &eExpires in: &6[time]'
       mailList: ' &7[senderDisplayName]&e: [mail] '
@@ -2305,7 +2306,7 @@ command:
   money:
     help:
       info: '&e查詢金錢'
-      args: '[action] [playerName] [amount]'
+      args: '[pay/give/take/set] [playerName/all/alloffline] [amount][%rand/1-1000%][1%[min-max]][playerName]] (-s)'
     info:
       newBalance: '&6[playerDisplayName] &e現有金錢: &6[money]'
       paid: '&e你將 &6[amount] &e金錢傳送給了 &6[playerDisplayName]'
@@ -2417,7 +2418,7 @@ command:
       info: '&e管理玩家便條'
       args: (playerName) [add/remove/clear/list] (id/note)
     info:
-      newNote: '&e為玩家添加新便條'
+      newNote: '&e為玩家新增新便條'
       clearNote: '&e清除玩家所有便條'
       removedNote: '&e移除玩家便條'
       noNotesById: '&e這個玩家沒有叫這個名字的便條'
@@ -2755,7 +2756,7 @@ command:
       - cmi.command.repair.hand - 允許修理手上的物品
       - cmi.command.repair.armor - 允許修理盔甲欄裡的物品
       - cmi.command.repair.all - 允許修理所有物品
-      - cmi.command.repair.repairshare.bypass - 不添加共享修復保護地修復物品
+      - cmi.command.repair.repairshare.bypass - 不新增共享修復保護地修復物品
     info:
       feedback: '&e已成功修復 &3[playerDisplayName]&e-(&3[offon]&e) 的 &3[amount]&e 件物品.'
       nothing: '&eNothing to repair'
@@ -3575,7 +3576,7 @@ command:
       - tfly Zrips - 查詢玩家的暫時飛行狀態和限時
     info:
       setTimedFly: '&e已設定 &6[playerDisplayName]&e 可暫時飛行 [time]'
-      addTimedFly: '&e已為玩家 &6[playerDisplayName]&e 添加暫時飛行時間 [addTime] ([time])'
+      addTimedFly: '&e已為玩家 &6[playerDisplayName]&e 新增暫時飛行時間 [addTime] ([time])'
       setUntilRelogFly: '&e已設定 &6[playerDisplayName]&e 暫時飛行，直到下一次下線重登'
       targetTimedEnabled: '&e玩家 &3[senderDisplayName]&e 已為你設定了暫時飛行 [time].'
       targetTimedEnabledAdd: '&e你的暫時飛行時間增加了 [addTime] ([time]).'
@@ -3852,7 +3853,7 @@ command:
       explanation:
       - 已設定的 meta 可以用 %cmi_user_meta_[key]% 變數顯示
     info:
-      added: '&e為玩家 &6[playerDisplayName] &e添加meta，key是 &6[key] &e，數值是 &6[value]'
+      added: '&e為玩家 &6[playerDisplayName] &e新增meta，key是 &6[key] &e，數值是 &6[value]'
       cleared: '&e從玩家 &6[playerDisplayName] &e處清除meta'
       removed: '&e移除了 &6[key] &emeta，被操作玩家 &6[playerDisplayName]'
       changed: '&eChanged &6[key] &emeta from &6[oldValue] &eto new value of &6[newValue]'
@@ -4022,7 +4023,7 @@ command:
       info: '&e改變伺服器天氣'
       args: (sun/rain/storm) (lock/duration) (worldName/all)
       explanation:
-      - '添加時間格式: s/m/h/d/w/M/Y'
+      - '新增時間格式: s/m/h/d/w/M/Y'
       - '例如:'
       - /sun
       - /rain
