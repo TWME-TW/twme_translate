@@ -162,7 +162,7 @@ Signs:
 Perks-Lore:
   Unpurchased:
   - ' '
-  - '&6價格: &e%cost%'
+  - '&6價格：&e%cost%'
   Purchased:
   - ' '
   - '&a已購買'
