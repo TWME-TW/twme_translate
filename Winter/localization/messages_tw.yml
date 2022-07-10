@@ -82,12 +82,12 @@ Commands:
 # - In flectic languages (e.g. Slovak), you may specify three cases: sekunda, sekundy, sekund
 # -------------------------------------------------------------------------------------------
 Cases:
-  Player: player, players
-  Level: level, levels
-  Hour: hour, hours
-  Minute: minute, minutes
-  Second: second, seconds
-  Life: life, lifes
+  Player: 玩家, 玩家
+  Level: 等級, 等級
+  Hour: 小時, 小時
+  Minute: 分鐘, 分鐘
+  Second: 秒, 秒
+  Life: 生命, 生命
 
 # -------------------------------------------------------------------------------------------
 # Various short strings used globally across the plugin.
@@ -99,7 +99,7 @@ Parts:
   At: "在"
 
 # No permission message.
-No_Permission: "&cInsufficient permission ({permission})."
+No_Permission: "&c權限不足（{permission}）。"
 
 # Update available message
 Update:
