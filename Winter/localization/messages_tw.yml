@@ -93,10 +93,10 @@ Cases:
 # Various short strings used globally across the plugin.
 # -------------------------------------------------------------------------------------------
 Parts:
-  Is_Enabled: "on"
-  Between: "between"
-  And: "and"
-  At: "at"
+  Is_Enabled: "啟用"
+  Between: "在兩者之間"
+  And: "和"
+  At: "在"
 
 # No permission message.
 No_Permission: "&cInsufficient permission ({permission})."
