@@ -162,17 +162,17 @@ Signs:
 Perks-Lore:
   Unpurchased:
   - ' '
-  - '&6Price: &e%cost%'
+  - '&6價格: &e%cost%'
   Purchased:
   - ' '
-  - '&aPurchased'
+  - '&a已購買'
   Disabled:
   - ' '
-  - '&acDisabled'
+  - '&ac已停用'
 Arena-Vote-Item-Lore:
-- '&aLeft Click to add your vote'
+- '&a左鍵投票'
 - ' '
-- '&cRight Click to remove your vote'
+- '&c右鍵取消投票'
 Lobby-Book:
 - '&4&m->&0&l Hide And Seek \n\n&0This is a very fun minigame that splits players
   into two teams, each team has their own objective that they must fulfill in order
