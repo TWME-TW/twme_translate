@@ -3,47 +3,47 @@ date-format: dd/MM/yyyy
 Scoreboard:
   Arena-Scoreboard-Title: '&6&l躲貓貓'
   Arena-Scoreboard:
-  - '&b時間: &f%timer%'
+  - '&b時間：&f%timer%'
   - ' '
-  - '&7地圖: &a%arena_name%'
-  - '&7狀態: %state%'
+  - '&7地圖：&a%arena_name%'
+  - '&7狀態：%state%'
   - ' '
-  - '&b躲藏者: &e%arena_hiders%'
+  - '&b躲藏者：&e%arena_hiders%'
   - ' '
-  - '&b尋找者: &e%arena_seekers%'
+  - '&b尋找者：&e%arena_seekers%'
   - ' '
-  - '&7時間:'
+  - '&7時間：'
   - '&a%date%'
-  Players-Line: '&b玩家: &e%players%'
+  Players-Line: '&b玩家：&e%players%'
 List:
   top: '&b&m---------&6 場地 (&a%arenas%&6) &b&m---------'
   format: '&b - &e&l%arena%&b - %state%&b - &6(&e%players%&6/&e%maxPlayers%&6)'
   bottom: '&b&m----------------------------'
 Messages:
-  no_permission: 您無權執行此操作!
+  no_permission: 您無權執行此操作！
   no_console: 只有玩家可以使用該命令
-  unknown_command: '&c未知指令! 使用 /has 獲得指令列表!'
-  no_arenas: 沒有可用的場地!
-  no_player_found: 找不到任何同名的玩家!
-  already_in_game: 你已經在遊戲中!
-  unknown_arena: 找不到任何具有該名稱的場地!
-  arena_not_available: 此遊戲暫時無法加入!
-  arena_not_ready: 場地缺少了一些東西！ 你可能還沒有加入!
-  arena_full: 這個場地已經滿了!
+  unknown_command: '&c未知指令！使用 /has 獲得指令列表！'
+  no_arenas: 沒有可用的場地！
+  no_player_found: 找不到任何同名的玩家！
+  already_in_game: 你已經在遊戲中！
+  unknown_arena: 找不到任何具有該名稱的場地！
+  arena_not_available: 此遊戲暫時無法加入！
+  arena_not_ready: 場地缺少了一些東西！你可能還沒有加入！
+  arena_full: 這個場地已經滿了！
   arena_join: 你已經加入了 &e%arena%
-  arena_join_broadcast: '&e%player% &6&a加入了 &6遊戲 ! (&e%players%&6/&e%maxPlayers%&6)'
-  not_in_game: 你必須在遊戲中!
-  in_game: 你不能在遊戲中這樣做!
-  arena_leave: 你已經離開遊戲!
-  arena_leave_broadcast: '&e%player% &6&c離開了 &6遊戲 ! (&e%players%&6/&e%maxPlayers%&6)'
-  command_usage: '用法: &a/has %cmd%&e %usage%'
-  empty_hand_sign_error: 你手上必須沒有任何東西才能使用這個告示牌!
+  arena_join_broadcast: '&e%player% &6&a加入了 &6遊戲！(&e%players%&6/&e%maxPlayers%&6)'
+  not_in_game: 你必須在遊戲中！
+  in_game: 你不能在遊戲中這樣做！
+  arena_leave: 你已經離開遊戲！
+  arena_leave_broadcast: '&e%player% &6&c離開了 &6遊戲！(&e%players%&6/&e%maxPlayers%&6)'
+  command_usage: '用法：&a/has %cmd%&e %usage%'
+  empty_hand_sign_error: 你手上必須沒有任何東西才能使用這個告示牌！
   firework_use: '&a + %earnedCoins% 金幣'
-  cooldown: 你可能還沒有使用這個！ 請等待 &e%time%
-  disguise_select: 你選擇了方塊 &e%disguise%&6 作為你的偽裝!
-  player_death: 你被殺了!
-  player_death_broadcast: '%team% &e%player%&6 has been killed'
-  player_kill: You have earned &b%earnedCoins% &6coins and &d%earnedExp% &6exp!
+  cooldown: 你可能還沒有使用這個！請等待 &e%time%
+  disguise_select: 你選擇了方塊 &e%disguise%&6 作為你的偽裝！
+  player_death: 你被殺了！
+  player_death_broadcast: '%team% &e%player%&6 被殺了'
+  player_kill: 你獲得了 &b%earnedCoins% &6個金幣和 &d%earnedExp% &6經驗！
   player_earn_karma: '&d+%earnedKarma% Karma!'
   player_move: You are no longer a solid block!
   arena_about_to_start: The game is about to start!
