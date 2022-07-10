@@ -45,16 +45,16 @@ Messages:
   player_death_broadcast: '%team% &e%player%&6 被殺了'
   player_kill: 你獲得了 &b%earnedCoins% &6個金幣和 &d%earnedExp% &6經驗！
   player_earn_karma: '&d+%earnedKarma% Karma!'
-  player_move: You are no longer a solid block!
-  arena_about_to_start: The game is about to start!
-  arena_needs_players: The game needs &b%players%&6 more player(s) to start!
-  arena_cancel: The game has been cancelled!
-  arena_starting: Game starting in &b%seconds% &6seconds!
-  arena_start: Game has begun!
-  team_select: You have been selected as a %team%
-  player_disguise: You are disguised as a &e%disguise%
-  disguise_complete: You look like a solid block now!
-  disguise_error: You may not disguise here!
+  player_move: 你現在不是一個固定的方塊！
+  arena_about_to_start: 遊戲即將開始！
+  arena_needs_players: 遊戲還需要 &b%players%&6 位玩家才能開始！
+  arena_cancel: 遊戲已取消！
+  arena_starting: 遊戲將在 &b%seconds% &6秒後開始！
+  arena_start: 遊戲開始！
+  team_select: 您已被選為 %team%
+  player_disguise: 你偽裝成一個 &e%disguise%
+  disguise_complete: 你現在看起來像一個固定的方塊了！
+  disguise_error: 你不能在這裡變成固定的方塊！
   player_earn_coins: You have earned &b%earnedCoins% &6coins for playing!
   game_time_remaining: Game is ending in &b%seconds% &6seconds!
   team_win: '%team% &6have won the game!'
