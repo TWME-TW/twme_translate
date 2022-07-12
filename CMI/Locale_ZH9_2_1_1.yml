@@ -115,7 +115,7 @@ info:
   LoginCustom: ' &6[playerDisplayName] &e加入了遊戲'
   deathlocation: '&e你死在了位於&6[world]&e世界的x:&6[x]&e,y:&6[y]&e z:&6[z]'
   book:
-    exploit: '&cYou cant create book with more than [amount] pages'
+    exploit: '&c你不能創建多於 [amount] 頁的書'
   combat:
     CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player. Wait: [time]'
     CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
