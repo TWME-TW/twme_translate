@@ -136,7 +136,7 @@ info:
     List: '&eid：&6[id]&e. &6[time]'
     KillerSymbol: '&c ☠'
     Click: '&e點擊查詢 ([id]) 已保存物品欄'
-    IdDontExist: '&4該ID不存在'
+    IdDontExist: '&4該 ID 不存在'
     Deleted: '&e成功刪除已保存物品欄'
     Restored: '&e你存儲了 &e[sourcename] &e物品欄，目標玩家： &e[targetname] &e'
     GotRestored: '&e你的物品欄被存儲了 &e[sourcename] &e時間： &e[time]'
