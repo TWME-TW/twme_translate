@@ -106,9 +106,9 @@ Commands:
     Success_Other: '&7{0} &a收到 &7{1} Boss 蛋。'
     No_Player: 從控制台運行時，請將玩家指定為最後一個參數！
   Find:
-    Description: 在加載的區塊中查找 Boss。
+    Description: 在載入的區塊中查找 Boss。
   List:
-    Description: 列出加載的 Boss。
+    Description: 列出載入的 Boss。
     Start: '{prefix_info} &7可用 &8(&4{0}&8)：&7'
     Hover: '&7點擊打開這個 Boss 選單。'
   Menu:
