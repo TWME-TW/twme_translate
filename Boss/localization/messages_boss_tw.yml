@@ -39,7 +39,7 @@ Commands:
   Incompatible: 此指令需要 {0} 或更高的 Minecraft 版本。
   Toggled_Plugin_Part: '''&7你是 '' + (ignoring ? ''&2不再'' : ''&c現在'') + '' &7忽略 {0}。'''
   Use_Alternative_Header: false
-  Alternative_Header: '&cBoss: &7輸入 ''/{0} ?'' 查看所有指令。'
+  Alternative_Header: '&cBoss：&7輸入 ''/{0} ?'' 查看所有指令。'
   No_Console: '&c你只能作為玩家使用此指令。'
   No_BungeeCord: 你需要使用 BungeeCord 才能使用此功能。
   Requires_Console: '&c此指令需要從控制台執行。'
