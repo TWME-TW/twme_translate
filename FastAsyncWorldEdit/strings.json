@@ -96,7 +96,7 @@
 	"fawe.error.no-perm": "你缺少權限: {0}。",
 	"fawe.error.block.not.allowed": "你沒有被允許使用: {0}。",
 	"fawe.error.setting.disable": "缺少設定: {0}。",
-	"fawe.error.brush.not.found": "可用的 brushes: {0}。",
+	"fawe.error.brush.not.found": "可用的筆刷: {0}。",
 	"fawe.error.brush.incompatible": "使用版本不支援筆刷工具。",
 	"fawe.error.no.region": "你目前並沒有允許的區域。",
 	"fawe.error.player.not.found": "找不到玩家: {0}。",
