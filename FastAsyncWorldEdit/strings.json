@@ -53,7 +53,7 @@
 	"fawe.worldedit.brush.brush.line.primary": "新增位置 {0}, 點擊其他位置來新建一條線。",
 	"fawe.worldedit.brush.brush.catenary.direction": "新增一個點 {0}，請點擊你想要建立可彎線條的方向。",
 	"fawe.worldedit.brush.brush.line.secondary": "已建立可彎線條。",
-	"fawe.worldedit.brush.spline.primary.2": "已新增位置，點擊同一點以加入！。",
+	"fawe.worldedit.brush.spline.primary.2": "已新增位置，點擊同一點以加入！",
 	"fawe.worldedit.brush.brush.spline.secondary.error": "您設定的點不夠多!",
 	"fawe.worldedit.brush.spline.secondary": "已建立可彎線條。",
 	"fawe.worldedit.brush.brush.source.mask.disabled": "已禁用筆刷來源遮罩。",
