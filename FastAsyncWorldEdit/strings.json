@@ -1,5 +1,5 @@
 {
-	"prefix": "&8(&4&lFAWE&8)&7 {0}。",
+	"prefix": "&8(&4&lFAWE&8)&7 {0}",
 
 	"fawe.worldedit.history.find.element": "&2{0} {1} &7以前 &3{2}m &6{3} &c/{4}。",
 	"fawe.worldedit.history.find.element.more": " - 變更: {0}\n - 綁定: {1} -> {2}\n - 額外: {3}\n - 硬碟空間: {4}。",
