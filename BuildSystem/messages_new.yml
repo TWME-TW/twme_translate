@@ -50,19 +50,19 @@ sender_not_player: "您必須是玩家才能使用此命令！"
 no_permissions: "%prefix% &c權限不足。"
 
 # /back
-back_usage: "%prefix% &7用法 ：&b/back"
+back_usage: "%prefix% &7用法：&b/back"
 back_teleported: "%prefix% &7你會被傳送至你&b之前的位置&7。"
 back_failed: "%prefix% &c找不到之前的位置。"
 
 # /build
 build_usage: "%prefix% &7用法：&b/build [玩家]"
-build_player_not_found: "%prefix% &c無法找到這個個玩家。"
+build_player_not_found: "%prefix% &c無法找到這個玩家。"
 build_activated_self: "%prefix% &7建築模式已&a開啟&7。"
-build_activated_other_sender: "%prefix% &7建築模式已被 &8[&7 %target%&8] &7&a啟用&7。"
+build_activated_other_sender: "%prefix% &7建築模式已被 &8[&7%target%&8] &7&a啟用&7。"
 build_activated_other_target: "%prefix% &7建築模式已被 &a啟用 &8[&7%sender%&8]&7 開啟。"
 build_deactivated_self: "%prefix% &7建築模式已 &c關閉&7。"
-build_deactivated_other_sender: "%prefix% &7建築模式 &8[&7為 %target%&8] &7是 &c停用&7。"
-build_deactivated_other_target: "%prefix% &7建築模式已被 &c停用 &8[&7由 %sender%&8]&7。"
+build_deactivated_other_sender: "%prefix% &7建築模式被 &8[&7%target%&8] &7是 &c停用&7。"
+build_deactivated_other_target: "%prefix% &7建築模式已被 &c停用，由 &8[&7%sender%&8]&7。"
 
 # /buildSystem
 buildsystem_title: "%prefix% &7&n建築系統幫助："
@@ -112,7 +112,7 @@ physics_unknown_world: "%prefix% &c錯誤的世界名。"
 physics_world_not_imported: "%prefix% &c世界必須先被導入 » /worlds import <世界>"
 physics_activated: "%prefix% &7世界：&b%world% &7的物理已 &a啟用&7。"
 physics_activated_all: "%prefix% &7物理已在&b所有世界 &7&a啟用&7。"
-physics_deactivated: "%prefix% &7世界 ：&b%world% &7的物理已&c關閉&7。"
+physics_deactivated: "%prefix% &7世界：&b%world% &7的物理已&c關閉&7。"
 physics_deactivated_in_world: "%prefix% &7物理在世界：&b%world% &7已被 &c停用&7。"
 
 # /noAI
