@@ -341,13 +341,13 @@ gui_next_page: "&7下一頁 &b»"
 # Old Navigator
 old_navigator_title: "&3» &8世界管理器"
 old_navigator_world_navigator: "&a公共世界列表"
-old_navigator_world_archive: "&6世界歸檔"
+old_navigator_world_archive: "&6世界封存"
 old_navigator_private_worlds: "&b私人世界"
 old_navigator_settings: "&c設定"
 
 # New Navigator
 new_navigator_world_navigator: "&a&l公共世界列表"
-new_navigator_world_archive: "&6&l世界歸檔"
+new_navigator_world_archive: "&6&l世界封存"
 new_navigator_private_worlds: "&b&l私人世界"
 
 # World Navigator
@@ -447,7 +447,7 @@ status_not_started: "&c尚未開始"
 status_in_progress: "&6進行中"
 status_almost_finished: "&a即將完成"
 status_finished: "&2完成"
-status_archive: "&9歸檔"
+status_archive: "&9封存"
 status_hidden: "&f隱藏"
 
 # World Difficulty
