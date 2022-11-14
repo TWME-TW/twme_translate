@@ -429,7 +429,7 @@ create_template: "&e%template%"
 create_generators_create_world: "&e用生成世界插件生成一個世界"
 
 # World Type
-type_normal: "正常"
+type_normal: "一般"
 type_flat: "平坦"
 type_nether: "地獄"
 type_end: "終界"
