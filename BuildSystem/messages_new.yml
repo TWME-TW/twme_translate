@@ -568,8 +568,7 @@ worldeditor_difficulty_lore:
 
 worldeditor_status_item: "&b狀態"
 worldeditor_status_lore:
- - "&7&o更改世界現在的"
- - "&7&o狀態。"
+ - "&7&o更改世界現在的狀態。"
  - ""
  - "&7&n現在狀態&7：%status%"
 
