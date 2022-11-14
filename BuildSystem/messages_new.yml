@@ -682,10 +682,9 @@ settings_worldsort_lore_status_not_started:
  - ""
  - "&7&n現在排序方式&7: &b&o (Not Started ➡ Finished)"
 settings_worldsort_lore_status_finished:
- - "&7&oChange the way worlds are"
- - "&7&osorted in the navigator."
+ - "&7&o改變世界在世界管理器選單的排列。"
  - ""
- - "&7&nCurrently&7: &b&oStatus (Finished ➡ Not Started)"
+ - "&7&n現在排序方式&7: &b&oStatus (Finished ➡ Not Started)"
 settings_worldsort_lore_date_newest:
  - "&7&o改變世界在世界管理器選單的排列。"
  - ""
