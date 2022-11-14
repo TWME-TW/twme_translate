@@ -652,7 +652,7 @@ settings_scoreboard_disabled_lore:
 
 settings_slab_breaking_item: "&b半磚破壞"
 settings_slab_breaking_lore:
- - "&7&o當打掉兩個疊在一起的半磚將只會打掉一個。"
+ - "&7&o當開啟時打掉兩個疊在一起的半磚將只會打掉一個。"
 
 settings_spawnteleport_item: "&b重生點傳送"
 settings_spawnteleport_lore:
