@@ -249,7 +249,7 @@ world_info:
  - " &8- &7建築師：&b%builders%"
  - " &8- &7物品：&b%item%"
  - " &8- &7狀態：&b%status%"
- - " &8- &7項目：&b%project%"
+ - " &8- &7專案：&b%project%"
  - " &8- &7權限：&b%permission%"
  - " &8- &7時間：&b%time%"
  - " &8- &7開始時間：&b%creation%"
