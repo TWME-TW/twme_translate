@@ -661,40 +661,40 @@ settings_spawnteleport_lore:
 
 settings_worldsort_item: "&b世界排序方式"
 settings_worldsort_lore_alphabetically_name_az:
- - "&7&o改變世界在世界管理器選單的排列。"
+ - "&7&o更改世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在排序方式&7：&b&o名稱 (A-Z)"
 settings_worldsort_lore_alphabetically_name_za:
- - "&7&o改變世界在世界管理器選單的排列。"
+ - "&7&o更改世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在排序方式&7：&b&o名稱 (Z-A)"
 settings_worldsort_lore_alphabetically_project_az:
- - "&7&o改變世界在世界管理器選單的排列。"
+ - "&7&o更改世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在排序方式&7：&b&o專案項目 (A-Z)"
 settings_worldsort_lore_alphabetically_project_za:
- - "&7&o改變世界在世界管理器選單的排列。"
+ - "&7&o更改世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在排序方式&7：&b&o專案項目 (Z-A)"
 settings_worldsort_lore_status_not_started:
- - "&7&o改變世界在世界管理器選單的排列。"
+ - "&7&o更改世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在排序方式&7: &b&o狀態 (尚未開始 ➡ 完成)"
 settings_worldsort_lore_status_finished:
- - "&7&o改變世界在世界管理器選單的排列。"
+ - "&7&o更改世界在世界管理器選單的排列。"
  - ""
  - "&7&n現在排序方式&7: &b&狀態 (完成 ➡ 尚未開始)"
 settings_worldsort_lore_date_newest:
- - "&7&o改變世界在世界管理器選單的排列。"
+ - "&7&o更改世界在世界管理器選單的排列。"
  - ""
- - "&7&n現在狀態&7：&b&o創建時間 (最新)"
+ - "&7&n現在排序方式&7：&b&o創建時間 (最新)"
 settings_worldsort_lore_date_oldest:
- - "&7&o改變世界在世界管理器選單的排列。"
+ - "&7&o更改世界在世界管理器選單的排列。"
  - ""
- - "&7&n現在狀態&7：&b&o創建時間 (最舊)"
+ - "&7&n現在排序方式&7：&b&o創建時間 (最舊)"
 
 # Change Design
-design_title: "&3» &8改變顏色"
+design_title: "&3» &8更改顏色"
 design_red: "紅"
 design_orange: "橘"
 design_yellow: "黃"
