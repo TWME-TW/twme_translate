@@ -619,7 +619,7 @@ settings_keep_navigator_lore:
 settings_new_navigator_item: "&b新世界管理器"
 settings_new_navigator_lore:
  - "&7&o一個互動式世界管理器"
- - "&7&o這不再是一個 GUI。"
+ - "&7&o這不再是一個物品欄選單。"
 
 settings_nightvision_item: "&b夜視"
 settings_nightvision_lore:
@@ -679,11 +679,11 @@ settings_worldsort_lore_alphabetically_project_za:
 settings_worldsort_lore_status_not_started:
  - "&7&o更改世界在世界管理器選單的排列。"
  - ""
- - "&7&n現在排序方式&7: &b&o狀態 (尚未開始 ➡ 完成)"
+ - "&7&n現在排序方式&7：&b&o狀態 (尚未開始 ➡ 完成)"
 settings_worldsort_lore_status_finished:
  - "&7&o更改世界在世界管理器選單的排列。"
  - ""
- - "&7&n現在排序方式&7: &b&狀態 (完成 ➡ 尚未開始)"
+ - "&7&n現在排序方式&7：&b&狀態 (完成 ➡ 尚未開始)"
 settings_worldsort_lore_date_newest:
  - "&7&o更改世界在世界管理器選單的排列。"
  - ""
