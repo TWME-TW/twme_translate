@@ -229,10 +229,10 @@ worlds_import_finished: "%prefix% &7世界&a成功&7導入。"
 
 worlds_importall_usage: "%prefix% &7用法：&b/worlds importall"
 worlds_importall_no_worlds: "%prefix% &c沒有找到世界。"
-worlds_importall_started: "%prefix% &7開始導入 &b%amount% &7 個世界…"
+worlds_importall_started: "%prefix% &7開始導入 &b%amount% &7個世界…"
 worlds_importall_delay: "%prefix% &8➥ &7每個世界之間的延遲：&b%delay%s&7。"
 worlds_importall_invalid_character: "%prefix% &c✘ &7&o%world% &7包含無效字符 &8(&c%char%&8)"
-worlds_importall_world_already_imported: "%prefix% &c&l✗ &7世界已經導入：&b%world%"
+worlds_importall_world_already_imported: "%prefix% &c&l✗ &7世界：&b%world% &7已經導入"
 worlds_importall_world_imported: "%prefix% &a✔ &7已導入世界：&b%world%"
 worlds_importall_finished: "%prefix% &7所有世界已&a成功被&7導入。"
 
@@ -281,12 +281,12 @@ worlds_rename_players_world: "%prefix% &7&o你所在的世界正在重命名…"
 worlds_setitem_usage: "%prefix% &7用法：&b/worlds setItem <世界>"
 worlds_setitem_unknown_world: "%prefix% &c未知的世界"
 worlds_setitem_hand_empty: "%prefix% &c您手中沒有物品。"
-worlds_setitem_set: "%prefix% &7世界：&b%world%&7的物品已被更改。"
+worlds_setitem_set: "%prefix% &7世界：&b%world% &7的物品已被更改。"
 
 worlds_setcreator_usage: "%prefix% &7用法：&b/worlds setCreator <世界>"
 worlds_setcreator_unknown_world: "%prefix% &c未知的世界"
 worlds_setcreator_error: "%prefix% &c請再嘗試一遍。"
-worlds_setcreator_set: "%prefix% &7世界：&b%world%&7的創建者已被更改。"
+worlds_setcreator_set: "%prefix% &7世界：&b%world% &7的創建者已被更改。"
 
 worlds_setproject_usage: "%prefix% &7用法：&b/worlds setProject <世界>"
 worlds_setproject_unknown_world: "%prefix% &c未知的世界"
@@ -301,13 +301,13 @@ worlds_setstatus_set: "%prefix% &7世界：&b%world%&7的狀態已被更改為�
 worlds_setpermission_usage: "%prefix% &7用法：&b/worlds setPermission <世界>"
 worlds_setpermission_unknown_world: "%prefix% &c未知的世界"
 worlds_setpermission_error: "%prefix% &c請再嘗試一遍。"
-worlds_setpermission_set: "%prefix% &7世界：&b%world%&7的權限已被更改成功。"
+worlds_setpermission_set: "%prefix% &7世界：&b%world% &7的權限已被更改成功。"
 
 worlds_setspawn_world_not_imported: "%prefix% &c世界必須被導入 » /worlds import <世界>"
-worlds_setspawn_world_spawn_set: "%prefix% &7世界：&b%world%&7的重生點已被設置。"
+worlds_setspawn_world_spawn_set: "%prefix% &7世界：&b%world% &7的重生點已被設置。"
 
 worlds_removespawn_world_not_imported: "%prefix% &c世界必須被導入 » /worlds import <世界>"
-worlds_removespawn_world_spawn_removed: "%prefix% &7世界：&b%world%&7的重生點已被移除。"
+worlds_removespawn_world_spawn_removed: "%prefix% &7世界：&b%world% &7的重生點已被移除。"
 
 worlds_tp_usage: "%prefix% &7用法：&b/worlds tp <世界>"
 worlds_tp_unknown_world: "%prefix% &c未知的世界"
@@ -343,14 +343,14 @@ old_navigator_private_worlds: "&b私人世界"
 old_navigator_settings: "&c設定"
 
 # New Navigator
-new_navigator_world_navigator: "&a&l公共世界列表"
-new_navigator_world_archive: "&6&l世界封存"
+new_navigator_world_navigator: "&a&l公共世界"
+new_navigator_world_archive: "&6&l封存的世界"
 new_navigator_private_worlds: "&b&l私人世界"
 
 # World Navigator
-world_navigator_title: "&3» &8世界管理器"
-world_navigator_no_worlds: "&c&n沒有可用的世界"
-world_navigator_create_world: "&b創建世界"
+world_navigator_title: "&3» &8公共世界"
+world_navigator_no_worlds: "&c&n目前沒有任何公共世界"
+world_navigator_create_world: "&b創建一個公共世界"
 world_item_title: "&3&l%world%"
 world_item_lore_normal:
  - "&7狀態&8：%status%"
@@ -376,7 +376,7 @@ world_item_lore_edit:
 world_item_builders_builder_template: "&b%builder%&7、"
 
 # World Archive
-archive_title: "&3» &8封存的世界"
+archive_title: "&3» &8被封存的世界"
 archive_no_worlds: "&c&n沒有已封存的世界"
 
 # Private Worlds
