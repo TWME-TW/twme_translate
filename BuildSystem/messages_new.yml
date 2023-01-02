@@ -416,9 +416,9 @@ setup_imported_world: "&7導入世界"
 
 # Create World
 create_title: "&3» &8創建世界"
-create_predefined_worlds: "&6預定義的世界"
-create_templates: "&6模板"
-create_generators: "&6生成世界插件"
+create_predefined_worlds: "&6原版的世界"
+create_templates: "&6世界樣板"
+create_generators: "&6生成世界插件的世界"
 create_no_templates: "&c&n沒有可用的模板"
 create_normal_world: "&b一般世界"
 create_flat_world: "&a平坦世界"
@@ -426,7 +426,7 @@ create_nether_world: "&c地獄世界"
 create_end_world: "&e終界世界"
 create_void_world: "&f虛空世界"
 create_template: "&e%template%"
-create_generators_create_world: "&e用生成世界插件生成一個世界"
+create_generators_create_world: "&e用世界生成插件生成一個世界"
 
 # World Type
 type_normal: "一般"
@@ -435,7 +435,7 @@ type_nether: "地獄"
 type_end: "終界"
 type_void: "虛空"
 type_custom: "自定義"
-type_template: "模板"
+type_template: "樣板"
 type_private: "私人"
 
 # World Status
