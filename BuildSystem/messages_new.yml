@@ -337,20 +337,20 @@ gui_next_page: "&7下一頁 &b»"
 
 # Old Navigator
 old_navigator_title: "&3» &8世界管理器"
-old_navigator_world_navigator: "&a公開世界"
+old_navigator_world_navigator: "&a公開的世界"
 old_navigator_world_archive: "&6封存的世界"
 old_navigator_private_worlds: "&b私人世界"
 old_navigator_settings: "&c設定"
 
 # New Navigator
-new_navigator_world_navigator: "&a&l公開世界"
+new_navigator_world_navigator: "&a&l公開的世界"
 new_navigator_world_archive: "&6&l封存的世界"
 new_navigator_private_worlds: "&b&l私人世界"
 
 # World Navigator
-world_navigator_title: "&3» &8公開世界"
-world_navigator_no_worlds: "&c&n目前沒有任何公開世界"
-world_navigator_create_world: "&b創建一個公開世界"
+world_navigator_title: "&3» &8公的開世界"
+world_navigator_no_worlds: "&c&n目前沒有任何公開的世界"
+world_navigator_create_world: "&b創建一個公開的世界"
 world_item_title: "&3&l%world%"
 world_item_lore_normal:
  - "&7狀態&8：%status%"
