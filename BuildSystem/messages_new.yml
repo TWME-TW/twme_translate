@@ -234,7 +234,7 @@ worlds_importall_started: "%prefix% &7開始導入 &b%amount% &7個世界…"
 worlds_importall_delay: "%prefix% &8➥ &7每個世界之間的延遲：&b%delay%s&7。"
 worlds_importall_invalid_character: "%prefix% &c✘ &7&o%world% &7包含無效字符 &8(&c%char%&8)"
 worlds_importall_world_already_imported: "%prefix% &c&l✗ &7世界：&b%world% &7已經導入"
-worlds_import_newer_version: "%prefix% &c&l✗ &7世界：&b%world% &7是由 &c更高的 &7Minecraft版本創建的"
+worlds_import_newer_version: "%prefix% &c&l✗ &7世界：&b%world% &7是由 &c更高 &7的 Minecraft 版本創建的"
 worlds_importall_world_imported: "%prefix% &a✔ &7已導入世界：&b%world%"
 worlds_importall_finished: "%prefix% &7所有世界已&a成功被&7導入。"
 
