@@ -223,7 +223,7 @@ worlds_import_usage: "%prefix% &7用法：&b/worlds import <世界> [-g <生成�
 worlds_import_unknown_world: "%prefix% &c未知的世界"
 worlds_import_world_is_imported: "%prefix% &7這個世界已經被導入。"
 worlds_import_unknown_generator: "%prefix% &c未知生成插件。"
-worlds_import_newer_version: "%prefix% &c&l✗ &b%world% &7was created in a &cnewer version &7of Minecraft"
+worlds_import_newer_version: "%prefix% &c&l✗ &7世界：&b%world% &7是由 &c更高 &7的 Minecraft 版本所創建的"
 worlds_import_started: "%prefix% &7已開始導入世界：&b%world% &7…"
 worlds_import_invalid_character: "%prefix% &7無法導入世界：&c%world%&7。%prefix% &7&o包含無效字符：&c%char% "
 worlds_import_finished: "%prefix% &7世界&a成功&7導入。"
