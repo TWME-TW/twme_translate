@@ -18,7 +18,7 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[AlwaysOnline](https://www.spigotmc.org/resources/alwaysonline.66591/)|6.1.5|||
 |[AntiRedstoneClock](https://www.spigotmc.org/resources/antiredstoneclock-worldguard-plotsquard-support-1-8-1-17.18557/)|1.5.0|||
 |[Boss](https://www.mc-market.org/resources/21619/)|4.4.1||完全硬翻，尚未做任何校對，但已無格式錯誤|
-|[BuildSystem](https://www.spigotmc.org/resources/buildsystem-1-8-1-18.60441/)|2.21.2|完成 中文文案排版指北 標準||
+|[BuildSystem](https://www.spigotmc.org/resources/buildsystem-1-8-1-18.60441/)|2.22.2|完成 中文文案排版指北 標準||
 |[CMI(Content Management Interface)](https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/)|未知||持續更新中|
 |[CMILib](https://www.spigotmc.org/resources/cmilib.87610/)|未知||持續更新中|
 |[CoreArena](https://www.mc-market.org/resources/21643/)|3.2.7||完全硬翻，尚未做任何校對，但已知無格錯誤|
