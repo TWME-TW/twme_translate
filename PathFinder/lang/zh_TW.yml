@@ -1,0 +1,401 @@
+# MESSAGE FILE
+# ----------------------------------------
+# Styling:
+# To style your messages, you must use the MiniMessage formatting.
+# It is a tag based styling method like html or xml and allows you to
+# create hover messages and click actions within your language file!
+#
+# Example: <green>I am a green Text. <hover:show_text:"Hello there">Hover me</hover><green>
+#
+# All information on how to use the formatting can be found here:
+# https://docs.adventure.kyori.net/minimessage/format.html
+#
+# Additionally to the default MiniMessage, you have the following possibilities:
+# <prefix> will always be replaced with the prefix message. (general.prefix)
+# <msg:[message-key]> or <message:[message-key]> will replaced with another already interpreted messages
+#     Using <msg:color_red> and referring to a translation `color_red: <#ff0000>` will not work.
+#     The color will be interpreted as component before being inserted.
+# <ins:[message-key]> will insert a message as raw MiniMessage.
+#     So instead of <msg:color_red>, you can use
+#     <col:color_red> to insert the value of color_red ("<#ff0000>") as simple string.
+#     With this functionality, you can add a style table at the top of your language file and change colors for the
+#     whole file easily.
+# ----------------------------------------
+
+prefix: <offset>PathFinder</offset> <dark_gray>»</dark_gray> <gray>
+general:
+  'true': <offset_light>true</offset_light>
+  'false': <offset_light>false</offset_light>
+  # The numberformat can be specified as argument for x, y and z. Check out https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html for more information on number formatting.
+  # Valid placeholders: <x>, <y>, <z>
+  vector: <offset_light><x:#.##><gray>,</gray> <y:#.##><gray>,</gray> <z:#.##></offset_light>
+  # Valid placeholders: <permission>
+  permission: <main><permission></main>
+  # Valid placeholders: <particle>, <meta>
+  particle: <main><particle> <gray>(<meta>)</gray></main>
+  'null': <main>null</main>
+  gui:
+    accept:
+      name: <green>Accept</green>
+      lore: ''
+    warning:
+      name: <yellow>Warning
+      lore: ''
+  selection:
+    # Valid placeholders: <amount>
+    nodes: <white><u><amount> Nodes</u></white>
+    # Valid placeholders: <amount>
+    groups: <white><u><amount> Groups</u></white>
+    # Valid placeholders: <amount>
+    roadmaps: <white><u><amount> Groups</u></white>
+  target_reached: <ins:prefix>Target reached.
+  target_discovered:
+    # Valid placeholders: <roadmap>, <percent>
+    percent: '<roadmap>: <percent>'
+    # Valid placeholders: <name>, <roadmaps>
+    title: ''
+    # Valid placeholders: <name>, <roadmaps>
+    subtitle: You found <name>
+    # Valid placeholders: <name>
+    actionbar: 'Discovered: <name>'
+command:
+  reload:
+    # Valid placeholders: <error>
+    error: '<negative>An error occurred while reloading: <error></negative>'
+    success:
+      # Valid placeholders: <ms>
+      general: <ins:prefix>Successfully reloaded in <offset_light><ms></offset_light><offset>ms</offset>.
+      # Valid placeholders: <ms>
+      language: <ins:prefix>Successfully reloaded language in <offset_light><ms></offset_light><offset>ms</offset>.
+      # Valid placeholders: <ms>
+      effects: <ins:prefix>Successfully reloaded effects in <offset_light><ms></offset_light><offset>ms</offset>.
+      # Valid placeholders: <ms>
+      config: <ins:prefix>Successfully reloaded config files in <offset_light><ms></offset_light><offset>ms</offset>.
+  help: |
+    <gradient:black:dark_gray:black>------------ <offset>Pathfinder</offset> ------------</gradient>
+    <gray>See this tutorial for a full description on
+    <gray>On how to get started with the plugin.
+
+    <white>Commands:</white>
+    <dark_gray>» </dark_gray><gray><warm>/roadmap</warm> - Edit roadmaps, that group together waypoints
+    <dark_gray>» </dark_gray><gray><warm>/nodegroup</warm> - Edit nodegroups, that add behaviour to groups of nodes
+    <dark_gray>» </dark_gray><gray><warm>/node</warm> - Create, edit and delete nodes
+    <dark_gray>» </dark_gray><gray><warm>/pathvisualizer</warm> - Edit pathvisualizers, to specify particles and more
+    <dark_gray>» </dark_gray><gray><warm>/gps</warm> - Find the shortest way to a nodegroup
+# Valid placeholders: <authors>, <version>, <api-version>
+  info: |
+    <gradient:black:dark_gray:black>------------ <offset>Pathfinder</offset> ------------</gradient>
+    <dark_gray>» </dark_gray><gray>Authors: <warm><authors></warm>
+    <dark_gray>» </dark_gray><gray>Current version: <warm><version></warm>
+    <dark_gray>» </dark_gray><gray>Main Game version: <warm><api-version></warm>
+    <dark_gray>» </dark_gray><gray>Spigot-Page: <warm><u><click:open_url:"https://www.spigotmc.org/resources/gps-pathfinder-minecraft-pathfinding-tool.104961/">https://www.spigotmc.org/...</click></u></warm>
+commands:
+  roadmap:
+    # Valid placeholders: <name>, <key>, <name-format>, <curve-length>, <path-visualizer>, <nodes>, <groups>
+    info: |
+      <offset>Roadmap:</offset> <name> <gray>(<key>)</gray>
+      <dark_gray>» </dark_gray><gray>Name: <main><hover:show_text:"Click to change name"><click:suggest_command:'/roadmap edit <key> name <name-format>'><name-format></click></hover></main>
+      <dark_gray>» </dark_gray><gray>Nodes: <nodes></gray>
+      <dark_gray>» </dark_gray><gray>Groups: <groups></gray>
+      <dark_gray>» </dark_gray><offset>Visualizer:</offset>
+      <dark_gray>  » </dark_gray><gray>Path Visualizer: <main><hover:show_text:"Click to change path-visualizer"><click:suggest_command:'/roadmap edit <key> visualizer <path-visualizer>'><path-visualizer></click></hover>
+      <dark_gray>  » </dark_gray><gray>Default Curve length: <main><hover:show_text:"Click to change curve length"><click:suggest_command:'/roadmap edit <key> curve-length <curve-length>'><curve-length></click></hover>
+    create:
+      # Valid placeholders: <name>
+      success: <ins:prefix><gray>Successfully created Roadmap <offset><name></offset>.</gray>
+      fail: <negative>Could not create Roadmap. Check out console for details.
+    # Valid placeholders: <roadmap>
+    delete: <ins:prefix><gray>Successfully deleted Roadmap <offset><roadmap></offset>.</gray>
+    list:
+      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
+      header: <gradient:black:dark_gray:black>------------ <offset>Roadmaps</offset>
+        ------------</gradient>
+      # Valid placeholders: <key>, <name>, <world>, <discoverable>, <find-distance>, <curve-length>, <path-visualizer>
+      entry: <dark_gray> » </dark_gray><name> <gray>(<key>)</gray>
+      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
+      footer: <gradient:black:dark_gray:black>------------<gray> <click:run_command:/roadmap
+        list <prev-page>>←</click> <page>/<pages> <click:run_command:/roadmap list
+        <next-page>>→</click> </gray>-------------</gradient>
+    editmode:
+      specify_roadmap: '<negative>Please specify a roadmap: /roadmap editmode <roadmap>'
+      # Valid placeholders: <roadmap>
+      activated: <ins:prefix>Editmode deactivated for <offset><roadmap></offset>.
+    # Valid placeholders: <name>, <discovery>
+    force_find: <ins:prefix>Player <name> discovered <discovery>.
+    # Valid placeholders: <name>, <discovery>
+    force_forget: <ins:prefix>Player <name> forgot about <discovery>.
+    # Valid placeholders: <key>, <roadmap>, <old-value>, <name-format>, <value>
+    set_name: <ins:prefix>Successfully set name for <offset><roadmap></offset> to
+      <display-name>. (<pre><name-format></pre>)</gray>
+    # Valid placeholders: <key>, <roadmap>, <old-value>, <value>
+    set_curve_length: <ins:prefix>Successfully set curve length for <offset><roadmap></offset>
+      to <offset_light><value></offset_light>
+    # Valid placeholders: <key>, <roadmap>, <old-value>, <value>
+    set_visualizer: <ins:prefix>Successfully set visualizer for <offset><roadmap></offset>
+      from <old-value> to <value>.</gray>
+  node:
+    # Valid placeholders: <id>
+    create: '<ins:prefix>Successfully created Node #<id>.'
+    # Valid placeholders: <selection>
+    delete: <ins:prefix>Successfully deleted <selection>.
+    # Valid placeholders: <selection>, <location>
+    moved: <ins:prefix><gray>Moved <selection> to <location>.</gray>
+    # Valid placeholders: <id>, <roadmap>, <groups>, <position>, <world>, <curve-length>, <edges>
+    info: |
+      <offset>Node #<id></offset> <gray>(<roadmap>)</gray>
+      <dark_gray>» </dark_gray><gray>Position: <main><position></main> (<world>)
+      <dark_gray>» </dark_gray><gray>Curve-Length: <main><curve-length></main>
+      <dark_gray>» </dark_gray><gray>Edges: <edges>
+      <dark_gray>» </dark_gray><gray>Groups: <groups>
+    info_no_selection: <negative>No nodes found to display. Check your selection query.</negative>
+    # Valid placeholders: <selection>, <length>
+    set_curve_length: <ins:prefix>Curve-length set to <length> for <selection>.
+    # Valid placeholders: <nodes>, <group>
+    add_group: <ins:prefix>Added <nodes> to group <group>.
+    # Valid placeholders: <nodes>, <group>
+    remove_groups: <ins:prefix>Removed <nodes> from group <group>.
+    # Valid placeholders: <nodes>
+    clear_groups: <ins:prefix>Cleared all groups for <nodes>.
+    list:
+      # Valid placeholders: <roadmap-key>, <roadmap-name>, <page>, <next-page>, <prev-page>, <pages>
+      header: <gradient:black:dark_gray:black>------------ <offset>Waypoints</offset>
+        ------------</gradient>
+      # Valid placeholders: <id>, <position>, <world>, <curve-length>, <edges>, <groups>
+      element: '<dark_gray>» </dark_gray><hover:show_text:''<gray>Groups: <groups><newline><gray>Edges
+        to: <edges><newline><gray>Click for more information''><click:run_command:/waypoint
+        info "@n[id=<id>]"><gray>#<id> at <position> (<world>)'
+      # Valid placeholders: <roadmap-key>, <roadmap-name>, <page>, <next-page>, <prev-page>, <pages>
+      footer: <gradient:black:dark_gray:black>------------<gray> <click:run_command:/waypoint
+        list "<selector>" <prev-page>>←</click> <page>/<pages> <click:run_command:/waypoint
+        list "<selector>" <next-page>>→</click> </gray>-------------</gradient>
+    connect:
+      # Valid placeholders: <start>, <end>
+      success: <ins:prefix>Connected <start> to <end>.
+      # Valid placeholders: <start>, <end>
+      identical: '<negative>Nodes cannot be connected to themselves: <start>>'
+      # Valid placeholders: <start>, <end>
+      already_connected: <negative><start> and <end> are already connected.
+    disconnect:
+      # Valid placeholders: <start>, <end>
+      success: <ins:prefix>Disconnected <start> from <end>.
+  node_group:
+    create_fail: <negative>Could not create Nodegroup. Check out console for details.
+    # Valid placeholders: <name>
+    already_exists: <negative>A node group with this namespaced key (<name>) already
+      exists.</negative>
+    # Valid placeholders: <name>
+    create: '<ins:prefix><gray>Node group created: <name>.</gray>'
+    # Valid placeholders: <name>
+    delete: '<ins:prefix><gray>Node group deleted: <name>.</gray>'
+    list:
+      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
+      header: <gradient:black:dark_gray:black>------------ <offset>Node-Groups</offset>
+        ------------</gradient>
+      # Valid placeholders: <page>, <key>, <name>, <size>, <discoverable>
+      line: <dark_gray> » </dark_gray><name> <gray>(<key>)</gray>
+      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
+      footer: <gradient:black:dark_gray:black>------------<gray> <click:run_command:/nodegroup
+        list <prev-page>>←</click> <page>/<pages> <click:run_command:/nodegroup list
+        <next-page>>→</click> </gray>-------------</gradient>
+    # Valid placeholders: <key>, <name>, <old-value>, <value>
+    set_name: <ins:prefix>Displayname set for <key> from <name> to <new-name> (<value>).
+    # Valid placeholders: <key>, <name>, <old-value>, <value>
+    set_permission: <ins:prefix>Permission set for <key> from <old-value> to <value>.
+    # Valid placeholders: <key>, <name>, <old-value>, <value>
+    set_navigable: <ins:prefix>Navigability set for <key> from <old-value> to <value>.
+    # Valid placeholders: <key>, <name>, <old-value>, <value>
+    set_discoverable: <ins:prefix>Discoverability set for <key> from <old-value> to
+      <value>.
+    # Valid placeholders: <key>, <name>, <old-value>, <value>
+    set_find_distance: <ins:prefix>Find distance set for <key> from <old-value> to
+      <value>.
+    terms:
+      # Valid placeholders: <name>, <values>
+      list: |-
+        <ins:prefix>Search terms for <name>:
+        <dark_gray>» <offset_light><values></offset_light></dark_gray>
+# Valid placeholders: <name>, <values>
+      add: '<ins:prefix>Successfully added search terms to <name>: <offset_light><values></offset_light>'
+      # Valid placeholders: <name>, <values>
+      remove: '<ins:prefix>Successfully removed search terms from <name>: <offset_light><values></offset_light>'
+  find:
+    success: <ins:prefix>Navigation started.  [ <aqua><click:run_command:/cancelpath>CANCEL</click></aqua>
+      ]
+    no_nodes_found: <ins:prefix>No matching waypoints could be found.
+    no_path_found: <ins:prefix>No possible way could be found to reach that target.
+    no_visualizer_selected: <ins:prefix>No visualizer is set for this roadmap.
+  cancel_path: <ins:prefix>Navigation cancelled.
+  path_visualizer:
+    list:
+      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
+      header: <gradient:black:dark_gray:black>------------ <offset>Visualizer</offset>
+        ------------</gradient>
+      # Valid placeholders: <key>, <name>, <world>, <discoverable>, <find-distance>, <curve-length>, <path-visualizer>
+      entry: <dark_gray> » </dark_gray><name> <gray>(<key>)</gray>
+      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
+      footer: <gradient:black:dark_gray:black>------------<gray> <click:run_command:/roadmap
+        list <prev-page>>←</click> <page>/<pages> <click:run_command:/roadmap list
+        <next-page>>→</click> </gray>-------------</gradient>
+    create:
+      # Valid placeholders: <key>, <name>, <name-format>, <type>
+      success: <ins:prefix><gray>Successfully created Visualizer <offset><name></offset>
+        (<name-format>) of type '<type>'.</gray>
+      already_exists: <negative>Another visualizer with this name already exists.
+    delete:
+      # Valid placeholders: <key, name, nameformat>
+      success: <ins:prefix><gray>Successfully deleted Visualizer <offset><name></offset>.</gray>
+      error: <negative>An unknown error occurred while deleting a visualizer. Please
+        check the console for more information.
+    set:
+      # Valid placeholders: <key>, <name>, <type>, <value>, <old-value>
+      name: <ins:prefix><gray>Changed name of <old-value> to <value>.
+      # Valid placeholders: <key>, <name>, <type>, <value>, <old-value>
+      perm: <ins:prefix><gray>Changed permission of <name> from <old-value> to <value>.
+      # Valid placeholders: <key>, <name>, <type>, <property>, <value>, <old-value>
+      interval: <ins:prefix><gray>Changed <property> for <name> from <old-value> to
+        <value>.
+    import:
+      already_exists: <negative>Could not import file, another visualizer with this
+        key already exists.</negative>
+      file_doesnt_exist: <negative>Could not import file, there is no example file
+        with this name.</negative>
+      # Valid placeholders: <key>, <name>
+      successful: '<ins:prefix>Successfully imported Visualizer: <name>'
+    type:
+      combined:
+        # Valid placeholders: <entries[:<separator>][:<prefix>][:<suffix>]>
+        info: |-
+          <offset>Visualizer:</offset> <name> <gray>(<key>)</gray>
+          <dark_gray>» </dark_gray><gray>Name: <main><hover:show_text:"Click to change name"><click:suggest_command:"/pathvisualizer edit particle <key> name"><name-format></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Permission: <main><hover:show_text:"Click to change permission"><click:suggest_command:"/pathvisualizer edit particle <key> permission"><permission></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Children:<entries:"":"<br><dark_gray>  » </dark_gray>"/>
+# Valid placeholders: <child>, <visualizer>
+        add: <ins:prefix>Added <child> as child to <visualizer>.
+        remove: <ins:prefix>Removed <child> from children for <visualizer>.
+        clear: <ins:prefix>Cleared all children for <visualizer>.
+      particle_visualizer:
+        # Valid placeholders: <key>, <name>, <name-format>, <type>, <permission>, <interval>, <point-distance>, <particle>, <particle-steps>, <amount>, <speed>, <offset>
+        info: |-
+          <offset>Visualizer:</offset> <name> <gray>(<key>)</gray>
+          <dark_gray>» </dark_gray><gray>Name: <main><hover:show_text:"Click to change name"><click:suggest_command:"/pathvisualizer edit particle <key> name"><name-format></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Permission: <main><hover:show_text:"Click to change permission"><click:suggest_command:"/pathvisualizer edit particle <key> permission"><permission></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Interval: <main><hover:show_text:"Click to change interval"><click:suggest_command:"/pathvisualizer edit particle <key> interval"><interval></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Point-Distance: <main><hover:show_text:"Click to change point-distance"><click:suggest_command:"/pathvisualizer edit particle <key> point-distance"><point-distance></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Particle: <main><hover:show_text:"Click to change particle"><click:suggest_command:"/pathvisualizer edit particle <key> particle"><particle></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Particle-Steps: <main><hover:show_text:"Click to change particle-steps"><click:suggest_command:"/pathvisualizer edit particle-steps <key> particle"><particle-steps></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Amount: <main><hover:show_text:"Click to change amount"><click:suggest_command:"/pathvisualizer edit particle <key> particle"><amount></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Speed: <main><hover:show_text:"Click to change speed"><click:suggest_command:"/pathvisualizer edit particle <key> speed"><speed></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Offset: <main><hover:show_text:"Click to change offset"><click:suggest_command:"/pathvisualizer edit particle <key> particle"><offset></click></hover></main>
+      compass:
+        # Valid placeholders: <marker-north>, <marker-south>, <marker-east>, <marker-west>, <marker-target>, <background>, <color>, <overlay>
+        info: |-
+          <offset>Visualizer:</offset> <name> <gray>(<key>)</gray>
+          <dark_gray>» </dark_gray><gray>Name: <main><hover:show_text:"Click to change name"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> name"><name-format></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Permission: <main><hover:show_text:"Click to change permission"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> permission"><permission></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Interval: <main><hover:show_text:"Click to change interval"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> interval"><interval></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Marker:
+              <dark_gray>» </dark_gray><gray>Target: <marker-target>
+              <dark_gray>» </dark_gray><gray>North: <marker-north>
+              <dark_gray>» </dark_gray><gray>East: <marker-east>
+              <dark_gray>» </dark_gray><gray>South: <marker-south>
+              <dark_gray>» </dark_gray><gray>West: <marker-west>
+          <dark_gray>» </dark_gray><gray>Background: <background>
+          <dark_gray>» </dark_gray><gray>Color: <color>
+          <dark_gray>» </dark_gray><gray>Overlay: <overlay>
+      advanced_particle_visualizer:
+        # Valid placeholders: <key>, <name>, <name-format>, <type>, <permission>, <interval>, <point-distance>, <particle>, <particle-steps>, <amount>, <speed>, <offset-x>, <offset-y>, <offset-z>, <path-x>, <path-y>, <path-z>
+        info: |-
+          <offset>Visualizer:</offset> <name> <gray>(<key>)</gray>
+          <dark_gray>» </dark_gray><gray>Name: <main><hover:show_text:"Click to change name"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> name"><name-format></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Permission: <main><hover:show_text:"Click to change permission"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> permission"><permission></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Interval: <main><hover:show_text:"Click to change interval"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> interval"><interval></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Point-Distance: <main><hover:show_text:"Click to change point-distance"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> point-distance"><point-distance></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Particle: <main><hover:show_text:"Click to change particle"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> particle"><particle></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Particle-Data: <main><hover:show_text:"Click to change particle-Data"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> particle-data"><particle-data></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Amount: <main><hover:show_text:"Click to change amount"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> particle"><amount></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Speed: <main><hover:show_text:"Click to change speed"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> particle"><speed></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Offset:
+              <dark_gray>» </dark_gray><gray>X: <main><hover:show_text:"Click to change offset"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> offset-x"><offset-x></click></hover></main>
+              <dark_gray>» </dark_gray><gray>Y: <main><hover:show_text:"Click to change offset"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> offset-y"><offset-y></click></hover></main>
+              <dark_gray>» </dark_gray><gray>Z: <main><hover:show_text:"Click to change offset"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> offset-z"><offset-z></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Path Offset (e.g. to make Spirals):
+              <dark_gray>» </dark_gray><gray>X: <main><hover:show_text:"Click to change path offset"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> path-x"><path-x></click></hover></main>
+              <dark_gray>» </dark_gray><gray>Y: <main><hover:show_text:"Click to change path offset"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> path-y"><path-y></click></hover></main>
+              <dark_gray>» </dark_gray><gray>Z: <main><hover:show_text:"Click to change path offset"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> path-z"><path-z></click></hover></main>
+      placeholder_api:
+        # Valid placeholders: <key>, <name>, <name-format>, <type>, <permission>, <interval>, <format-north>, <format-north-east>, <format-east>, <format-south-east>, <format-south>, <format-south-west>, <format-west>, <format-north-west>, <format-distance>
+        info: |-
+          <offset>Visualizer:</offset> <name> <gray>(<key>)</gray>
+          <dark_gray>» </dark_gray><gray>Name: <main><hover:show_text:"Click to change name"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> name"><name-format></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Permission: <main><hover:show_text:"Click to change permission"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> permission"><permission></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Interval: <main><hover:show_text:"Click to change interval"><click:suggest_command:"/pathvisualizer edit advanced-particle <key> interval"><interval></click></hover></main>
+          <dark_gray>» </dark_gray><gray>Placeholder:</gray>
+              <dark_gray>» </dark_gray><gray>North: <main><hover:show_text:"Click to change format-north"><click:suggest_command:"/pathvisualizer edit placeholderapi <key> format-north"><format-north></click></hover></main>
+              <dark_gray>» </dark_gray><gray>North-East: <main><hover:show_text:"Click to change format-northeast"><click:suggest_command:"/pathvisualizer edit placeholderapi <key> format-northeast"><format-northeast></click></hover></main>
+              <dark_gray>» </dark_gray><gray>East: <main><hover:show_text:"Click to change format-east"><click:suggest_command:"/pathvisualizer edit placeholderapi <key> format-east"><format-east></click></hover></main>
+              <dark_gray>» </dark_gray><gray>South-East: <main><hover:show_text:"Click to change format-southeast"><click:suggest_command:"/pathvisualizer edit placeholderapi <key> format-southeast"><format-southeast></click></hover></main>
+              <dark_gray>» </dark_gray><gray>South: <main><hover:show_text:"Click to change format-south"><click:suggest_command:"/pathvisualizer edit placeholderapi <key> format-south"><format-south></click></hover></main>
+              <dark_gray>» </dark_gray><gray>South-West: <main><hover:show_text:"Click to change format-southwest"><click:suggest_command:"/pathvisualizer edit placeholderapi <key> format-southwest"><format-southwest></click></hover></main>
+              <dark_gray>» </dark_gray><gray>West: <main><hover:show_text:"Click to change format-west"><click:suggest_command:"/pathvisualizer edit placeholderapi <key> format-west"><format-west></click></hover></main>
+              <dark_gray>» </dark_gray><gray>North-West: <main><hover:show_text:"Click to change format-northwest"><click:suggest_command:"/pathvisualizer edit placeholderapi <key> format-northwest"><format-northwest></click></hover></main>
+              <dark_gray>» </dark_gray><gray>Distance: <main><hover:show_text:"Click to change format-distance"><click:suggest_command:"/pathvisualizer edit placeholderapi <key> format-distance"><format-distance></click></hover></main>
+editor:
+  # Valid placeholders: <list>
+  node_name: <list>
+  toolbar:
+    node_tool:
+      name: <white><u>Node Tool</u></white>
+      lore: |-
+        <gray>» <yellow>right-click:</yellow> Create node</gray>
+        <gray>» <yellow>left-click:</yellow> Delete clicked node</gray>
+    edge_tool:
+      name: <white><u>Edge Tool</u></white>
+      lore: |-
+        <gray>» <yellow>right-click node:</yellow> Connect nodes</gray>
+        <gray>» <yellow>left-click node:</yellow> Disconnect all edges</gray>
+        <gray>» <yellow>left-click edge:</yellow> Dissolve edge</gray>
+        <gray>» <yellow>left-click air:</yellow> Toggle directed</gray>
+      cancelled: <ins:prefix>Node connection mode cancelled
+      # Valid placeholders: <value>
+      directed: '<ins:prefix>Edges directed: <main><value><main>'
+    group_tool:
+      name: <white><u>Assign Group</u></white>
+      lore: ''
+    multi_group_tool:
+      name: <white><u>Mutli Group Tool</u></white>
+      lore: |-
+        <gray>Assign and remove multiple
+        <gray>groups at once.
+
+        <gray>» <yellow>right-click air:</yellow> Open GUI</gray>
+        <gray>» <yellow>right-click node:</yellow> Add groups</gray>
+        <gray>» <yellow>right-click node:</yellow> Remove groups</gray>
+    teleport_tool:
+      name: <white><u>Teleport Tool</u></white>
+      lore: |-
+        <gray>Teleports you to the
+        <gray>nearest node.
+  groups:
+    title: Assign Node Groups
+    info:
+      name: <gold>Info</gold>
+      lore: |-
+        <gray>Create a new nodegroup with
+        <gray>» <yellow>/nodegroup create <key>
+    reset:
+      name: <negative>Reset Groups</negative>
+      lore: |-
+        <gray>Reset all groups for the
+        <gray>selected node.
+    entry:
+      # Valid placeholders: <key>, <name>, <name-format>, <discoverable>, <search-terms>
+      name: <name>
+      # Valid placeholders: <key>, <name>, <name-format>, <permission>, <navigable>, <discoverable>, <find-distance>, <search-terms>
+      lore: |-
+        <dark_gray>» </dark_gray><gray>Key: <key></gray>
+        <dark_gray>» </dark_gray><gray>Name: <name-format></gray>
+        <dark_gray>» </dark_gray><gray>Permission: <permission></gray>
+        <dark_gray>» </dark_gray><gray>Navigable: <navigable></gray>
+        <dark_gray>» </dark_gray><gray>Discoverable: <discoverable></gray>
+        <dark_gray>» </dark_gray><gray>Find distance: <find-distance:#.##></gray>
+        <dark_gray>» </dark_gray><gray>Search terms: <search-terms></gray>
