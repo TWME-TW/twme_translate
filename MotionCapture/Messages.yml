@@ -1,0 +1,118 @@
+# Color Definition. 
+#
+# Versions 1.16 or lower do not support hexadecimal colors.
+# For these versions please include a <color-name>-alternative using regular color codes.
+# You are able to add your own color definitions in the same format.
+
+color-brackets: '#ed2424'
+color-brackets-alternative: '&4'
+
+color-title: '#ed8c24'
+color-title-alternative: '&e'
+
+color-subtitle: '#a61919'
+color-subtitle-alternative: '&c'
+
+color-gray: '#bab2b1'
+color-gray-alternative: '&7'
+
+color-green: '#37c458'
+color-green-alternative: '&a'
+
+color-good: '#1fa35a'
+color-good-alternative: '&a'
+
+color-questionable: '#a35f1f'
+color-questionable-alternative: '&6'
+
+color-error: '#a31f1f'
+color-error-alternative: '&c'
+
+# Messages
+#
+# You are able to change all messages here.
+# Make sure you keep the quotation marks around them.
+# You can change the color definition by changing the string between brackets.
+
+prefix: '<color-brackets>[<color-title>&lMotion Capture<color-brackets>]<color-gray>: '
+startup-message-success: Motion Capture has Successfully started
+startup-message-failed: <color-error>Motion Capture failed to load! &lShutting Down...
+version-control-supported: Running a <color-good>supported &fversion
+version-control-semi-supported: Running a <color-questionable>semi supported &fversion
+version-control-not-supported: <color-error>Running an unsupported version! Shutting
+  down plugin...
+invalid-permissions: <color-error>You have insufficient permissions!
+
+recording-started: Started recording. Select the first slot of your inventory to stop
+  recording
+recording-ended: Stopped recording
+already-recording: You are already recording. Select the first item slot to stop recording
+unselect-first-slot: Please unselect the first slot of your inventory. This slot is
+  used to stop recording
+
+player-can-not-be-found: That player could not be found...
+
+recording-does-not-exist: That recording does not exist
+already-playing: That recording is already playing
+skin-failed: 'Failed to set the skin. Make sure to get a skin URL from mineskin.org
+  website. Example: https://minesk.in/85386ff6d6ff494db372e34d58418093'
+skin-success: Successfully changed the skin of this NPC
+name-success: Successfully changed the name of this NPC
+
+not-playing: That recording is not currently playing
+freeze-frame-received: 'Successfully froze this frame. This means you can now use
+  the [place] command to place this frame across your maps. These will be persistant
+  and will always be there until you remove them. This freeze frame is stored as: '
+freeze-frame-not-found: That freeze frame could not be found
+freeze-frame-placed: Successfully placed that freeze frame
+freeze-frame-removed: Successfully removed nearby freeze frames (Radius of 2 blocks).
+  You have to rejoin the server in order for this to take effect
+
+set-pos1: Successfully set the first corner of the region to your current position
+set-pos2: Successfully set the second corner of the region to your current position
+cleared-region: Successfully cleared the region of this recording
+
+invalid-arguments: Invalid command arguments.
+
+successfully-deleted: Successfully deleted that recording
+entity-type-does-not-exist: That entity type does not exist. Here is a list of all
+  available types
+type-success: Successfully changed the entity type for this recording
+
+set-mode-regular: Changed mode to regular
+set-mode-cycle: Changed mode to cycle
+set-mode-flip: Changed mode to flip
+set-mode-reverse: Changed mode to reverse
+set-mode-reverse-cycle: Changed mode to reverse cycle
+
+color-success: Successfully changed the color. This will affect the color of the wool
+  of sheep. If the NPC type is not sheep then this will not have any effect.
+color-invalid: Color has to be a value between 0 and 15
+not-numeric-color: Color has to be numeric!
+
+set-exclusive-player-true: Turned exclusive player on. This recording will now only
+  be visible to the player who started it.
+set-exclusive-player-false: Turned exclusive player off. This recording will now be
+  visible to all players.
+
+set-auto-true: Turned auto play on. This recording will automatically play when the
+  server starts
+set-auto-false: Turned auto play off. This recording will no longer automatically
+  play when the server starts
+
+set-speed: Changed the speed at which this recording plays back.
+set-slow: Changed the speed at which this recording plays back. This recording has
+  been slowed down by the multiplier specified. This can not be reversed, use the
+  speed command to speed up the recording again if you so desire.
+
+commandblock-1: This command will allow you to replay a recording from a command block
+
+# Headers
+command-header: '          <color-brackets>✤<color-title>&l Motion Capture V2 <color-brackets>✤'
+command-header-1: '              <color-subtitle>&lCommands <color-brackets>(&f<color-gray>%page%&8/&f<color-gray>%max_pages%<color-brackets>)'
+
+# These can not be longer than 40 characters!
+scoreboard-header: <color-brackets>[<color-title>Recording<color-brackets>]
+scoreboard-framecount: '<color-subtitle>Frame Count: '
+scoreboard-animation-length: '<color-subtitle>Animation Length (s): '
+scoreboard-stop-recording: <color-gray>Select slot 1 to stop

@@ -1,0 +1,7 @@
+reload: 設定檔已重新載入。
+noPermissions: 你沒有足夠的權限.
+updateLine2: '&e你目前得版本：&a{currentVer}'
+updateLine1: '&e有可用的新更新：&a{newVer}'
+updateLine3: '&e{url}'
+playerNotFound: 找不到玩家。
+wandNotFound: 找不到建築師魔杖。
