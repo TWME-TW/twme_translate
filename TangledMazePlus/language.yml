@@ -1,53 +1,53 @@
 help-pages:
-  wand-command: 給你一個迷宮製作工具。它像WorldEdit木斧一樣工作，但是給迷宮的 :P \n點擊兩個塊並繼續 &e/maze start&a
-  start-command: 將剪貼板轉換為迷宮佈局. 點擊邊界以放置出口. 繼續 &e/maze build&a
-  add-cut-command: 將您的剪貼板與您的迷宮佈局合併或將其剪切掉.
+  wand-command: '給你一個迷宮製作工具。它像WorldEdit木斧一樣工作，但是給迷宮的 :P 
+               \n點擊兩個塊並繼續 &e/maze start&a'
+  start-command: 將剪貼板轉換為迷宮佈局。點擊邊界以放置出口。繼續 &e/maze build&a
+  add-cut-command: 將您的剪貼板與您的迷宮佈局合併或將其剪切掉。
   tool-command: '在用於編輯迷宮佈局的不同工具之間切換：'
   tools:
     rectangle: 用迷宮工具點擊時創建矩形
     circle: 用迷宮工具創建圓圈
     exit: 在紅石邊界上設置迷宮出口
-    brush: 'left click: expand the redstone border \nright click: shrink the border'
-  settings-command: 'Change how your maze will be built later:'
+    brush: '左鍵點擊：擴大紅石邊界 
+          \n右鍵點擊：縮小邊框'
+  settings-command: '更改稍後構建迷宮的方式：'
   settings:
-    wall-height: height of walls in blocks
-    path-width: width of paths to walk on
-    wall-width: width of walls of the maze
-    roof-width: width of the roof.
-    curliness: '1: short stretches of path, many turns \n10: long alleys, fewer turns'
-  undo-command: Undo the last change to your maze layout like adding or cutting away
-    a clipboard.
-  build-command: Builds your maze. Type in names of blocks to build with, e.g.:\n
-    &e/maze build 5*oak_leaves 2*oak_log[axis=y] glowstone&a \nUse the flags -floor
-    or -roof to build different parts of the maze.
-  unbuild-command: Deconstructs your maze. Use the flags -floor or -roof to unbuild
-    different parts of the maze.
-  teleport-command: Teleports you back to your maze.
+    wall-height: 牆的高度（塊）
+    path-width: 行走路徑的寬度
+    wall-width: 迷宮牆的寬度
+    roof-width: 屋頂的寬度
+    curliness: '1：路段短，轉彎多 
+              \n10：路段長，轉彎少'
+  undo-command: 撤消對迷宮佈局的最後更改，例如添加或刪除剪貼板。
+  build-command: '建立你的迷宮。輸入要使用的方塊的名稱，例如：
+               \n&e/maze build 5*oak_leaves 2*oak_log[axis=y] glowstone&a 
+               \n使用標誌 -floor 或 -roof 來構建迷宮的不同部分。'
+  unbuild-command: 解構你的迷宮。使用標誌 -floor 或 -roof 取消構建迷宮的不同部分。
+  teleport-command: 將你傳送回迷宮。
 infos:
-  plugin-reload: Reloaded config settings.
-  maze-wand-usage: Click two blocks with the and use /maze start to continue.
-  tool-switch: Switched to %tool%.
-  setting-change: Set %setting% to %value%.
-  maze-not-built: Please build the maze first (without -roof or -floor flag).
-  maze-not-editable: Cannot perform this action while your maze is built. /maze unbuild
-  maze-build: Built your maze part with %count% blocks.
-  no-maze-to-unbuild: No maze found to remove.
+  plugin-reload: 重新加載配置設置。
+  maze-wand-usage: 用迷宮製作工具點擊兩個方塊，然後使用 /maze start 繼續。
+  tool-switch: 切換到 %tool%。
+  setting-change: 將 %setting% 設置為 %value%。
+  maze-not-built: 請先建造迷宮（沒有 -roof 或 -floor 標誌）。
+  maze-not-editable: 建造迷宮時無法執行此操作。/maze unbuild
+  maze-build: 用 %count% 個方塊建造你的迷宮部分。
+  no-maze-to-unbuild: 找不到要刪除的迷宮。
 errors:
-  missing-permission: You do not have the permission for this command.
-  clipboard-missing: No clipboard selected with the maze wand. /maze wand
-  maze-missing: No maze started yet. /maze start
-  no-exit-missing: No exits set yet (click on the maze border).
-  invalid-tool: Invalid tool '%tool%'.
-  invalid-setting: Invalid setting '%setting%'.
-  invalid-block-name: Invalid block name '%block%'.
-  invalid-block-property: Invalid property '%property%' for block '%block%'.
-  invalid-block-property-value: Invalid value '%value%' for property '%property%'.
-  missing-block-property-value: 'Missing property value: ''%property%=...''.'
+  missing-permission: 您沒有執行此命令的權限。
+  clipboard-missing: 沒有使用迷宮製作工具選擇剪貼板。/maze wand
+  maze-missing: 迷宮還沒有開始。/maze start
+  no-exit-missing: 尚未設置出口（點擊迷宮邊界）。
+  invalid-tool: 無效工具'%tool%'。
+  invalid-setting: 設置'%setting%'無效。
+  invalid-block-name: 方塊名稱'%block%'無效。
+  invalid-block-property: 方塊'%block%'的屬性'%property%'無效。
+  invalid-block-property-value: 屬性'%property%'的值'%value%'無效。
+  missing-block-property-value: '缺少屬性值：''%property%=...''。'
 plus:
-  backup-saved: Saved maze to file &a'%file%'&e.
-  backup-file-already-exists: File '%file%' already exists. Use /maze backup <file-name>
-    true to override it.
-  backup-save-error: An error occurred while saving. &7(%error%)
-  backup-loaded: Loaded file &a'%file%'&e.
-  backup-file-not-found: Could not find file '%file%'.
-  backup-load-error: Unable to load file '%file%'. Maybe it is damaged? &7(%error%)
+  backup-saved: 已將迷宮保存到文件 &a'%file%'&e。
+  backup-file-already-exists: 文件'%file%'已經存在。使用 /maze backup <檔案名稱> true 覆蓋它。
+  backup-save-error: 保存時出錯。 &7(%error%)
+  backup-loaded: 已加載文件 &a'%file%'&e。
+  backup-file-not-found: 找不到文件'%file%'。
+  backup-load-error: 無法加載文件'%file%'。也許它已損壞？ &7(%error%)
