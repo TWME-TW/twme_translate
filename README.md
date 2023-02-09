@@ -31,6 +31,7 @@ Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 |[PetBlocks](https://www.spigotmc.org/resources/petblocks-mysql-bungeecord-customizeable-gui-1-8-1-18.12056/)|未知||
 |[PlotSquared v6](https://www.spigotmc.org/resources/plotsquared-v6.77506/)|||翻譯中|
 |[SchematicBrushReborn](https://www.spigotmc.org/resources/schematic-brush-reborn.79441/)|2.2.1||插件未實裝翻譯功能|
+|[SelectionVisualizer](https://www.spigotmc.org/resources/selection-visualizer.22631/)|3.2.1.0|||
 |[TrainCarts](https://www.spigotmc.org/resources/traincarts.39592/)|未知|||
 
 ---
