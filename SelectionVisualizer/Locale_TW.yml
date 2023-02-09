@@ -3,7 +3,7 @@
 # 由TWME翻譯(將原本由qsefthuopq翻譯的Locale_CN.yml轉成繁體中文，並大量更新至3.2.1.0版本)
 
 info:
-  prefix: '&e[&aSvis&e] '
+  prefix: '&e[&eSvis&e] '
   GlobalDisable: '&c可視化已關閉. 用 &6/sv toggle &c來啟用!'
   TypeDisable: '&c這一類型的可視化已關閉. 你可以在選單中打開!'
   Gui:
@@ -198,7 +198,7 @@ command:
       args: (fixy)
   gd:
     help:
-      info: '&e顯示 GriefDefender 領地'
+      info: '&e顯示GriefDefender領地'
       args: (fixy)
   gp:
     help:
