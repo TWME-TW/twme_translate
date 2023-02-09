@@ -24,9 +24,9 @@ info:
     Red: '&c紅'
     Blue: '&9藍'
     ColorLore:
-      - '&e顏色: &6[number]'
-      - '&e點擊左/右鍵來調整顏色'
-      - '&e按 shift 一次更改10'
+    - '&e顏色: &6[number]'
+    - '&e點擊左/右鍵來調整顏色'
+    - '&e按 shift 一次更改10'
 modes:
   WEPaste: WorldEdit剪貼板
   WECuboid: WorldEdit立方體
@@ -38,7 +38,7 @@ modes:
   CustomPoint: 點
   CustomChunk: 區塊
   SpawnerSphere: 刷怪籠
-  Beacon: 烽火台				
+  Beacon: 烽火台
   CustomGrid: 網格
   KingdomsArea: Kingdoms王國
   FactionsArea: Factions派系
@@ -56,7 +56,7 @@ modes:
   ChunkyBorderArea: Chunky邊界
   JobsArea: Jobs工作區域
   CMIArea: CMI區域
-modePlaces:
+modeNames:
   WEPaste:
   - 框架
   - 邊
