@@ -26,7 +26,7 @@ info:
     ColorLore:
       - '&e顏色: &6[number]'
       - '&e點擊左/右鍵來調整顏色'
-      - '&e按 shift來增加10倍'
+      - '&e按 shift 一次更改10'
 modes:
   WEPaste: WorldEdit剪貼板
   WECuboid: WorldEdit立方體
@@ -53,7 +53,7 @@ modes:
   CustomBiome: 生物群系
   DiceFurnitureArea: Dice Furniture家具
   WorldBorderArea: World Border世界邊界
-  ChunkyBorderArea: Chunky 邊界
+  ChunkyBorderArea: Chunky邊界
   JobsArea: Jobs工作區域
   CMIArea: CMI區域
 modePlaces:
@@ -162,124 +162,116 @@ command:
       cmdInfoFormat: '[command] &f- &e[description]'
       cmdFormat: '&6/[command]&f[arguments]'
       helpPageDescription: '&e* [description]'
-      explanation: '&e * [explanation]'	       
+      explanation: '&e * [explanation]'
   nocmd:
     help:
       info: '&e顯示所有可用指令'
       args: ''
+  beacon:
+    help:
+      info: '&e顯示烽火台影響距離'
+      args: ''
+    info:
+      lookAtBeacon: '&e看向一個烽火台'
+  biome:
+    help:
+      info: '&e顯示生物群系邊界'
+      args: (fixy)
+  cb:
+    help:
+      info: '&e顯示命令方塊目標區域'
+      args: ''
+    info:
+      badBlock: '&e選定的方塊不是命令方塊'
+      badCommand: '&e此命令方塊並沒有設置目標位置'
+  chunk:
+    help:
+      info: '&e顯示當前區塊'
+      args: ''
+  cmi:
+    help:
+      info: '&e顯示 CMI 選取區'
+      args: ''
+  fc:
+    help:
+      info: '&e顯示Factions派系圈地範圍'
+      args: (fixy)
+  gd:
+    help:
+      info: '&e顯示 GriefDefender 領地'
+      args: (fixy)
+  gp:
+    help:
+      info: '&e顯示GriefPrevention圈地範圍'
+      args: (fixy)
+  grid:
+    help:
+      info: '&e顯示區塊網格'
+      args: (fixy)
   gui:
     help:
       info: '&e打開個人可視化編輯設置選單'
       args: '[type]'
     info:
       notype: '&c沒有這一類型選區的選單'
-  grid:
-    help:
-      info: '&e顯示區塊網格'
-      args: (fixy)
-  watch:
-    help:
-      info: '&e查看其他玩家的選區'
-      args: '[stop/info/playername]'
-    info:
-      Stopped: '&e你停止了 &6[player] &e的選區'
-      NoStop: '&e沒有可停止的東西'
-      Current: '&e你正在觀看 &6[player] &e的選區'
-      NotWatching: '&e你現在沒有在觀看其他玩家的選區'
-      Started: '&e你開始觀看 &6[player] &e的選區'
-  chunk:
-    help:
-      info: '&e顯示當前區塊'
-      args: ''
-  we:
-    help:
-      info: '&e顯示WorldEdit選區或剪貼板內容'
-      args: (paste) (lock/tp)
-    info:
-      teleported: '&e傳送到剪貼地點'
-      noTp: '&e沒有保存的傳送點'
-      return: '&e想要返回粘帖地點請輸入 &6/sv we paste tp'
-  wg:
-    help:
-      info: '&e顯示WorldGuard區域'
-      args: (regionName)
-		  
-       
-	 
-				
-		  
-      
-	 
-						   
-		    
-	 
-						
-				    
-				 
-						     
-						       
-									       
-    info:
-      notIn: '&e你不在WorldGuard區域內'
-      notFound: '&e找不到這個區域'
-				   
-				 
-								
-									
-							       
-					     
-				
-					 
-				     
-				       
-						 
-								     
-		 
-						  
-					    
-				
-       
-	 
-					   
-	      
-    
-	 
-				     
+      Title: '&8選擇選取類型'
+      Back: '&e返回主頁'
+      Range: '&e範圍: &6[current]&7([max]) &e格方塊'
+      ShowFor: '&e顯示: &6[current]&7([max]) &e秒'
+      interval: '&e更新間隔: &6[current][baseInterval]&8([min]) &e刻'
+      intervalExtra: '&e(&6[baseInterval]&e)'
+      SkipBy: '&e跳過: &6[current]'
+      Climbing: '&e攀爬粒子: &6[state]'
+      FillIn: '&e填充: &6[state]'
+      Toggle: '&e點擊切換'
+      RowSpacing: '&6[type] &e行距: &6[current]&8([min])'
+      CollumnSpacing: '&6[type] &e列距: &6[current]&8([min])'
+      Cap: '&6[type] &e最大粒子: &6[current]&7([max])'
+      Effect: '&6[type] &e影響: &6[effect]'
+      ColorName: '&2[colorName]'
+      GreenColor: '&7綠色: &2[[number]]'
+      RedColor: '&7紅色: &c[[number]]'
+      BlueColor: '&7藍色: &9[[number]]'
+      ColorLinesEdit: '&e按Q改變顏色'
+      ColorRandom: '&e您可以從這裡選擇一種隨機顏色'
+      ColorLines:
+      - '&e使用滑鼠左/右鍵進行調整'
+      - '&e按 shift 一次更改10'
+      - '&e按 Q 隨機'
   jobs:
     help:
       info: '&e顯示工作區'
       args: ''
-  spawner:
+  k:
     help:
-      info: '&e顯示刷怪籠活躍範圍和刷怪範圍'
-				 
-		  
-	 
-	 
-					  
-	      
-	 
-					  
-      
-	 
-				       
-				     
+      info: '&e顯示Kingdoms王國圈地範圍'
+      args: (fixy)
+  plot:
+    help:
+      info: '&e顯示PlotSquared畫布'
+      args: (fixy)
+point:
+    help:
+      info: '&e指向一個目標'
+      args: (fixy)
+  reload:
+    help:
+      info: '&e重載配置文件'
       args: ''
     info:
-      lookAtSpawner: '&e請看著一個刷怪籠'
+      feedback: '&e已重載配置文件!'
   res:
     help:
       info: '&e顯示Residence領地範圍'
       args: (residenceName) (-s) (-a)
     info:
       notIn: '&e你不在領地內'
-  cb:
+  spawner:
     help:
-      info: '&e顯示命令方塊選區'
+      info: '&e顯示刷怪籠活躍範圍和刷怪範圍'
       args: ''
     info:
-      badBlock: '&e目標方塊不是命令方塊'
-      badCommand: '&e命令方塊沒有設置目標地點'
+      lookAtSpawner: '&e請看著一個刷怪籠'
   stop:
     help:
       info: '&e停止顯示粒子'
@@ -293,40 +285,31 @@ command:
     info:
       Enabled: '&e可視化 &6已開啟'
       Disabled: '&e可視化 &c已關閉'
-  gp:
-    help:
-      info: '&e顯示GriefPrevention圈地範圍'
-      args: (fixy)
-  fc:
-    help:
-      info: '&e顯示Factions派系圈地範圍'
-      args: (fixy)
   towny:
     help:
       info: '&e顯示Towny城鎮圈地範圍'
       args: (fixy)
-  izone:
+  watch:
     help:
-      info: '&e顯示iZone選區'
-      args: ''
-  k:
-	 
-						 
-							      
-
-
-    help:
-      info: '&e顯示Kingdoms王國圈地範圍'
-      args: (fixy)
-  reload:
-						    
-						    
-						    
-						    
-    help:
-      info: '&e重載配置文件'
-      args: ''
+      info: '&e查看其他玩家的選區'
+      args: '[stop/info/playername]'
     info:
-      feedback: '&e已重載配置文件!'
-						    
-						    
+      Stop: '&e你停止了 &6[player] &e的選區'
+      CurrentList: '&e你正在觀看 &6[player] &e的選區'
+      NotWatching: '&e你現在沒有在觀看其他玩家的選區'
+      Started: '&e你開始觀看 &6[player] &e的選區'
+  we:
+    help:
+      info: '&e顯示WorldEdit選區或剪貼板內容'
+      args: (paste) (lock/tp)
+    info:
+      teleported: '&e傳送到剪貼地點'
+      noTp: '&e沒有保存的傳送點'
+      return: '&e想要返回粘帖地點請輸入 &6/sv we paste tp'
+  wg:
+    help:
+      info: '&e顯示WorldGuard區域'
+      args: (regionName)
+    info:
+      notIn: '&e你不在WorldGuard區域內'
+      notFound: '&e找不到這個區域'
