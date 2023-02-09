@@ -1,6 +1,6 @@
 # 支持顏色代碼和一些變量
 # 但變量只在一些消息內有用
-# 由qsefthuopq翻譯(TWME轉成繁體中文)
+# 由TWME翻譯(將原本由qsefthuopq翻譯的Locale_CN.yml轉成繁體中文，並大量更新至3.2.1.0版本)
 
 info:
   prefix: '&e[&aSV&e] '
