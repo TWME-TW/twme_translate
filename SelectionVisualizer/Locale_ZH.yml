@@ -305,7 +305,7 @@ command:
     info:
       teleported: '&e傳送到剪貼地點'
       noTp: '&e沒有保存的傳送點'
-      return: '&e想要返回粘帖地點請輸入 &6/sv we paste tp'
+      return: '&e想要返回剪貼地點請輸入 &6/sv we paste tp'
   wg:
     help:
       info: '&e顯示WorldGuard區域'
