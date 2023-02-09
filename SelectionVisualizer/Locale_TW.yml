@@ -250,7 +250,7 @@ command:
     help:
       info: '&e顯示PlotSquared畫布'
       args: (fixy)
-point:
+  point:
     help:
       info: '&e指向一個目標'
       args: (fixy)
