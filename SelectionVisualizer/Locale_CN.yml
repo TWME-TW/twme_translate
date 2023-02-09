@@ -1,0 +1,234 @@
+# 支持颜色代码和一些变量
+# 但变量只在一些消息内有用
+# 由qsefthuopq翻译
+
+info:
+  prefix: '&e[&aSV&e] '
+  GlobalDisable: '&c可视化已关闭. 用 &6/sv toggle &c来启用!'
+  TypeDisable: '&c这一类型的可视化已关闭. 你可以在菜单中打开!'
+  Gui:
+    Title: '&8选择你的选区类型'
+    Back: '&e返回主页'
+    Range: '&e范围: &6[current]&7([max]) &e方块'
+    ShowFor: '&e显示时间: &6[current]&7([max]) &e秒'
+    interval: '&e更新间隔: &6[current][baseInterval]&8([min]) &e刻'
+    intervalExtra: '&e(&6[baseInterval]&e)'
+    SkipBy: '&e跳过: &6[current]'
+    Climbing: '&e爬升型粒子效果: &6[state]'
+    Toggle: '&e点击开关'
+    RowSpacing: '&6[type] &e行距: &6[current]&8([min])'
+    CollumnSpacing: '&6[type] &e列距: &6[current]&8([min])'
+    Cap: '&6[type] &e最大粒子数: &6[current]&7([max])'
+    Effect: '&6[type] &e效果: &6[effect]'
+    Green: '&2绿'
+    Red: '&c红'
+    Blue: '&9蓝'
+    ColorLore:
+    - '&e颜色: &6[number]'
+    - '&e点击左/右键来调整颜色'
+    - '&e按 shift来增加10倍'
+modes:
+  WEPaste: 创世神粘贴板
+  WECuboid: 创世神立方体
+  WESphere: 创世神球体
+  WECylinder: 创世神柱体
+  WEPoly: 创世神多边形
+  WEConvex: 创世神凹面
+  CommandBlockCuboid: 命令方块
+  CustomPoint: 点
+  CustomChunk: 区块
+  SpawnerSphere: 刷怪笼
+  CustomGrid: 网格
+  KingdomsArea: Kingdoms王国
+  FactionsArea: Factions派系
+  GriefPreventionArea: GriefPrevention领地
+  WGCuboid: WorldGuard区域
+  iZoneCuboid: iZone领地
+  ResCuboid: Residence领地
+  TownyArea: Towny城镇
+  DiceFurnitureArea: Dice Furniture家具
+  WorldBorderArea: World Border世界边界
+  JobsArea: 工作
+modePlaces:
+  WEPaste:
+  - 框架
+  - 边
+  - 传送点
+  WECuboid:
+  - 框架
+  - 边
+  WESphere:
+  - 表面
+  WECylinder:
+  - 边缘
+  - 表面
+  WEPoly:
+  - 框架
+  - 边
+  WEConvex:
+  - 连接器
+  - 选择路径
+  CommandBlockCuboid:
+  - 框架
+  - 边
+  - 范围
+  CustomPoint:
+  - 线
+  - 方块
+  CustomChunk:
+  - 框架
+  - 边
+  SpawnerSphere:
+  - 范围
+  - 刷怪范围
+  CustomGrid:
+  - 东/西方向
+  - 南/北方向
+  KingdomsArea:
+  - 你的土地
+  - 敌人之地
+  - 盟友之地
+  FactionsArea:
+  - 你的土地
+  - 敌人之地
+  - 盟友之地
+  GriefPreventionArea:
+  - 框架
+  - 边
+  WGCuboid:
+  - 框架
+  - 边
+  iZoneCuboid:
+  - 框架
+  - 边
+  ResCuboid:
+  - 框架
+  - 边
+  - 子领地
+  TownyArea:
+  - 你的土地
+  - 敌人之地
+  - 居民之地
+  DiceFurnitureArea:
+  - 框架
+  - 边
+  WorldBorderArea:
+  - 框架
+  - 边
+  JobsArea:
+  - 框架
+  - 边
+  - 选区
+command:
+  help:
+    output:
+      usage: '&e用法: &6%usage%'
+      title: '&e-------&e ======= &6选区可视化 &e======= &e-------'
+      page: '&e-----&e ====== 页数: &6[1] &e共 &6[2] 页&e====== &e-----'
+      baseline: '&2[command] &6[args]'
+      infoline: ' &e- [info]'
+  nocmd:
+    help:
+      info: '&e显示所有可用指令'
+      args: ''
+  gui:
+    help:
+      info: '&e打开个人可视化编辑设置菜单'
+      args: '[type]'
+    info:
+      notype: '&c没有这一类型选区的菜单'
+  grid:
+    help:
+      info: '&e显示区块网格'
+      args: (fixy)
+  watch:
+    help:
+      info: '&e查看其他玩家的选区'
+      args: '[stop/info/playername]'
+    info:
+      Stopped: '&e你停止了 &6[player] &e的选区'
+      NoStop: '&e没有可停止的东西'
+      Current: '&e你正在观看 &6[player] &e的选区'
+      NotWatching: '&e你现在没有在观看其他玩家的选区'
+      Started: '&e你开始观看 &6[player] &e的选区'
+  chunk:
+    help:
+      info: '&e显示当前区块'
+      args: ''
+  we:
+    help:
+      info: '&e显示创世神选区或粘贴板内容'
+      args: (paste) (lock/tp)
+    info:
+      teleported: '&e传送到粘帖地点'
+      noTp: '&e没有保存的传送点'
+      return: '&e想要返回粘帖地点请输入 &6/sv we paste tp'
+  wg:
+    help:
+      info: '&e显示WorldGuard区域'
+      args: (regionName)
+    info:
+      notIn: '&e你不在WorldGuard区域内'
+      notFound: '&e找不到这个区域'
+  jobs:
+    help:
+      info: '&e显示工作区'
+      args: ''
+  spawner:
+    help:
+      info: '&e显示刷怪笼活跃范围和刷怪范围'
+      args: ''
+    info:
+      lookAtSpawner: '&e请看着一个刷怪笼'
+  res:
+    help:
+      info: '&e显示Residence领地范围'
+      args: (residenceName) (-s) (-a)
+    info:
+      notIn: '&e你不在领地内'
+  cb:
+    help:
+      info: '&e显示命令方块选区'
+      args: ''
+    info:
+      badBlock: '&e目标方块不是命令方块'
+      badCommand: '&e命令方块没有设置目标地点'
+  stop:
+    help:
+      info: '&e停止显示粒子'
+      args: ''
+    info:
+      Stopped: '&e已停止'
+  toggle:
+    help:
+      info: '&e开关可视化'
+      args: ''
+    info:
+      Enabled: '&e可视化 &6已开启'
+      Disabled: '&e可视化 &c已关闭'
+  gp:
+    help:
+      info: '&e显示GriefPrevention圈地范围'
+      args: (fixy)
+  fc:
+    help:
+      info: '&e显示Factions派系圈地范围'
+      args: (fixy)
+  towny:
+    help:
+      info: '&e显示Towny城镇圈地范围'
+      args: (fixy)
+  izone:
+    help:
+      info: '&e显示iZone选区'
+      args: ''
+  k:
+    help:
+      info: '&e显示Kingdoms王国圈地范围'
+      args: (fixy)
+  reload:
+    help:
+      info: '&e重载配置文件'
+      args: ''
+    info:
+      feedback: '&e已重载配置文件!'
