@@ -54,7 +54,7 @@ gui.item.particleBlockDustGold=&e金色方塊粒子
 gui.item.particleBlockDustLeaf=&e綠葉方塊粒子
 
 gui.lore.back=&7回到上一個菜單
-gui.lore.simpleBlocks=&7使用Minecraft自帶的基礎方塊作為寵物的皮膚.
+gui.lore.simpleBlocks=&7使用 Minecraft 自帶的基礎方塊作為寵物的皮膚.
 gui.lore.coloredBlocks=&7使用Minecraft自帶的彩色方塊作為寵物的皮膚.
 gui.lore.playerHeads=&7使用常見的玩家皮膚頭顱作為寵物的皮膚.
 gui.lore.pets=&7使用獨家定制的方塊寵物皮膚.
