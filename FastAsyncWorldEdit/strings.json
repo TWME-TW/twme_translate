@@ -60,8 +60,8 @@
   "fawe.worldedit.brush.spline.secondary": "已建立可彎線條。",
   "fawe.worldedit.brush.brush.source.mask.disabled": "已禁用筆刷來源遮罩。",
   "fawe.worldedit.brush.brush.source.mask": "已設定筆刷來源遮罩。",
+  "fawe.worldedit.brush.brush.transform.disabled": "Brush transform disabled",
   "fawe.worldedit.brush.brush.transform": "已設定筆刷變換。",
-  "fawe.worldedit.brush.brush.transform": "Brush transform set",
   "fawe.worldedit.rollback.rollback.element": "復原中 {0}。",
 
   "fawe.worldedit.tool.tool.inspect": "檢查工具鎖定於 {0}。",
@@ -668,7 +668,7 @@
   "worldedit.help.subcommand-not-found": "找不到位於 '{1}' 下的子指令 '{0}'。",
 
   "worldedit.cli.stopping": "停止中!",
-  "worldedit.cli.unknown-command": "未知的指令!"
+  "worldedit.cli.unknown-command": "未知的指令!",
   "worldedit.version.bukkit.unsupported-adapter": "這個 FAWE 版本沒有完整支援您的Bukkit版本。方塊實體 (例如儲物箱) 將被清空, 方塊屬性 (例如旋轉角度) 將會遺失, 以及一些其他功能無法使用。更新 FAWE 來回復這些功能:\n{0}。",
   "worldedit.bukkit.no-edit-without-adapter": "Editing on unsupported versions is disabled."
 }
