@@ -782,21 +782,6 @@ Location:
   - world-&2World
   - world_nether-&2World Nether
   - world_the_end-&2World The End
-  - YIS-&2Yis
-  - NY-&2Ny
-  - Yaju2-&2Yaju2
-  - Yaju_Flat-&2Yaju Flat
-  - road-&2Road
-  - Yaju-&2Yaju
-  - LookRorwardTo_island-&2Lookrorwardto Island
-  - normal-&2Normal
-  - RWG-&2Rwg
-  - test-&2Test
-  - world132123213-&2World132123213
-  - AFLR-&2Aflr
-  - OSHACRA-&2Oshacra
-  - nandakore-&2Nandakore
-  - Sayama-&2Sayama
 Locations: '&7Locations: '
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
