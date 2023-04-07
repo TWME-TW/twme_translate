@@ -343,9 +343,9 @@ command:
       newAliasInfo: '&e輸入新的別名命令名稱並按 enter'
       addInfo: '&e輸入新命令。輸入 &6cancel &e 以取消'
       addInformationHover: "&e支援發送方類別的全局變量 \n\
-        &edelay! 5 &6以在命令中包含延遲 \n&e$1 &6將使用新命令提供的變量並放置在此處 \n\
-        &e$1- &6自此處起將所有變量插入原始命令 \n&e? &6使它在使用任何最後一個變量時有效。\
-        \用於幫助頁面\n&efromConsole! 將在控制台中執行命令"
+        &edelay! 5 &6以在命令中包含延遲 \n&e$1 &6將使用新命令提供的變量並放置在此處 \n
+        &e$1- &6自此處起將所有變量插入原始命令 \n&e? &6使它在使用任何最後一個變量時有效。\n
+        用於幫助頁面\n&efromConsole! 將在控制台中執行命令"
       editInfo: '&e點擊以粘貼舊文本。輸入 &6cancel &e 以取消操作。輸入 &6remove &e 以移除行'
   anvil:
     help:
@@ -504,15 +504,15 @@ command:
       args: '[playerName] (reason) (-s)'
       explanation:
         - cmi.command.ban.bypass - 可跳過封禁
-      info:
-        # 確保在配置文件中啟用了OverrideLoginMessage
-        message: '&c你被封禁了！'
-        reason: '&6原因：&e[reason]'
-        defaultReason: '&e違反了伺服器規則'
-        messageToAll: '&6[playerDisplayName] &e被 &6[senderDisplayName] &e封禁，原因：&6[reason]'
-        banedSilent: '&7[&8靜音&7]&6[playerDisplayName] &e被 &6[senderDisplayName] &e封禁，原因：&6[reason]'
-        noSelfBan: '&c你不能封禁自己'
-        cantBan: '&c你不能封禁這個玩家'
+    info:
+      # 確保在配置文件中啟用了OverrideLoginMessage
+      message: '&c你被封禁了！'
+      reason: '&6原因：&e[reason]'
+      defaultReason: '&e違反了伺服器規則'
+      messageToAll: '&6[playerDisplayName] &e被 &6[senderDisplayName] &e封禁，原因：&6[reason]'
+      banedSilent: '&7[&8靜音&7]&6[playerDisplayName] &e被 &6[senderDisplayName] &e封禁，原因：&6[reason]'
+      noSelfBan: '&c你不能封禁自己'
+      cantBan: '&c你不能封禁這個玩家'
   banlist:
     help:
       info: '&e查看封禁列表'
@@ -675,34 +675,34 @@ command:
       args: (playerName/ip)
       explanation:
         - '額外權限：cmi.command.checkaccount.showip'
-      info:
-        place: '&e[place]. &6'
-        ip: '&6[ip]&e：'
-        name: '&6[name]&e（&6[times]&e次）'
-        nonIpList: '&e帳號：&6'
-        nonIpName: '&6[name]'
-        click: '&e點擊檢查 &6[name] &e帳號'
-        noData: '&c此用戶沒有紀錄'
-    checkban:
-      help:
-        info: '&e檢查玩家的封禁狀態'
-        args: (playerName)
-      info:
-        list: '&6[place]&e. &e[playerDisplayName] &6[time]'
-        permanent: '&3永久'
-        bannedUntil: '&e封禁時間：&6[time]'
-        reason: '&e原因：&6[reason]'
-        bannedBy: '&e封禁者：&6[sourceDisplayName]'
-        bannedWhen: '&e封禁時間：&6[date]'
+    info:
+      place: '&e[place]. &6'
+      ip: '&6[ip]&e：'
+      name: '&6[name]&e（&6[times]&e次）'
+      nonIpList: '&e帳號：&6'
+      nonIpName: '&6[name]'
+      click: '&e點擊檢查 &6[name] &e帳號'
+      noData: '&c此用戶沒有紀錄'
+  checkban:
+    help:
+      info: '&e檢查玩家的封禁狀態'
+      args: (playerName)
+    info:
+      list: '&6[place]&e. &e[playerDisplayName] &6[time]'
+      permanent: '&3永久'
+      bannedUntil: '&e封禁時間：&6[time]'
+      reason: '&e原因：&6[reason]'
+      bannedBy: '&e封禁者：&6[sourceDisplayName]'
+      bannedWhen: '&e封禁時間：&6[date]'
   checkcommand:
     help:
       info: '&e以關鍵字搜尋可能的指令'
       args: (關鍵字)
-      info:
-        list: '&e[place]. &f[command] &7[args]'
-        hover: '&e[desc]'
-        variableColor: '&f'
-        noCommandFound: '&7找不到符合此關鍵字的指令'
+    info:
+      list: '&e[place]. &f[command] &7[args]'
+      hover: '&e[desc]'
+      variableColor: '&f'
+      noCommandFound: '&7找不到符合此關鍵字的指令'
     checkexp:
       help:
         info: '&e檢查玩家經驗值'
@@ -762,7 +762,6 @@ command:
       - ' &6cmi.command.clearchat.bypass &e- 忽略聊天清理'
     info:
       information: '&e聊天訊息被 &6[senderDisplayName]&e 清除'
-
   clearender:
     help:
       info: '&e清除玩家終界箱內容'
@@ -770,39 +769,6 @@ command:
     info:
       feedback: '&e你已清空 &3[playerDisplayName]&e 的終界箱 (&3[offon]&e)'
       targetfeedback: '&e你的終界箱被 &3[senderDisplayName]&e 清空'
-
-  colorlimits:
-    help:
-      info: '&e顯示所有可能的顏色'
-      args: (playerName)
-    info:
-      publicmessage: ' &e公共訊息: '
-      privatemessage: ' &e私人訊息: '
-      nickname: ' &e暱稱: '
-      signs: ' &e告示牌: '
-      books: ' &e書籍: '
-      itemname: ' &e物品名稱: '
-      itemlore: ' &e物品敘述: '
-      me: ' &eMe: '
-      None: '&e-'
-  clearchat:
-    help:
-      info: '&e清除聊天訊息'
-      args: (self)
-      explanation:
-      - '權限:'
-      - ' &6cmi.command.clearchat.bypass &e- 忽略聊天清理'
-    info:
-      information: '&e聊天訊息被 &6[senderDisplayName]&e 清除'
-
-  clearender:
-    help:
-      info: '&e清除玩家終界箱內容'
-      args: '[playerName] (-s)'
-    info:
-      feedback: '&e你已清空 &3[playerDisplayName]&e 的終界箱 (&3[offon]&e)'
-      targetfeedback: '&e你的終界箱被 &3[senderDisplayName]&e 清空'
-
   colorlimits:
     help:
       info: '&e顯示所有可能的顏色'
@@ -829,7 +795,6 @@ command:
       - '[colorHex] - [colorName]'
       - '[closeColor]？？？？？？？？？？'
       - Shift+點擊
-
   colors:
     help:
       info: '&e顯示所有可用的顏色'
@@ -880,12 +845,12 @@ command:
         - '&6cmi.command.counter.autojoin &e- 自動加入計數器'
         - -f 強制所有玩家參與計數器
         - '範例：/cmi counter start r:30 t:7 msg:&e自定義訊息 -f'
-      info:
-        join: '&e已加入計數器'
-        leave: '&e已離開計數器'
-        go: '&e開始！'
-        tooFast: '&c不能那麼快重複執行命令，請等待：&6[秒]&e秒'
-        noOne: '&c沒有玩家參與此計數器！'
+    info:
+      join: '&e已加入計數器'
+      leave: '&e已離開計數器'
+      go: '&e開始！'
+      tooFast: '&c不能那麼快重複執行命令，請等待：&6[秒]&e秒'
+      noOne: '&c沒有玩家參與此計數器！'
   cplaytime:
     help:
       info: '&e詳細遊玩時間'
@@ -916,22 +881,22 @@ command:
     help:
       info: '&e顯示自定義文字'
       args: '[自定義文字] (玩家名稱/all) (來源玩家)'
-      info:
-        list: '&e自定義文字列表：&6'
-        check: '&e檢查：&6[text]'
+    info:
+      list: '&e自定義文字列表：&6'
+      check: '&e檢查：&6[text]'
   cuff:
     help:
       info: '&e暫停玩家動作'
       args: '[玩家名稱] (true/false) (-s)'
-      info:
-        noChat: '&c您的所有動作都被暫停了。您無法聊天。'
-        noCommand: '&c您被禁止使用命令。 &e允許使用的命令：&6/msg、/r、/tell'
-        cuffed: '&6[playerDisplayName] &e被禁止了'
-        unCuffed: '&6[playerDisplayName] &e已被解禁'
-        free: '&e您現在已經自由了'
-        gotCuffed: '&e您已被禁止'
-        cuffedInfo: '&e您已被禁止'
-        cantCuff: '&c您無法禁止此玩家！'
+    info:
+      noChat: '&c您的所有動作都被暫停了。您無法聊天。'
+      noCommand: '&c您被禁止使用命令。 &e允許使用的命令：&6/msg、/r、/tell'
+      cuffed: '&6[playerDisplayName] &e被禁止了'
+      unCuffed: '&6[playerDisplayName] &e已被解禁'
+      free: '&e您現在已經自由了'
+      gotCuffed: '&e您已被禁止'
+      cuffedInfo: '&e您已被禁止'
+      cantCuff: '&c您無法禁止此玩家！'
   customrecipe:
     help:
       info: '&e管理物品自定義配方'
@@ -1113,28 +1078,28 @@ command:
         - '/cmi effect zrips nightvision +10 - 將 10 秒夜視藥水效果加入到現有效果'
         - '/cmi effect zrips nightvision -10 - 將 10 秒夜視藥水效果從現有效果中移除'
         - '/cmi effect all health_boost 60 1 - 將所有玩家的生命值增加1，持續60秒'
-      info:
-        feedback: '&e已將藥水效果 &6[effect] &e添加給 &3[playerDisplayName]&e，持續 &6[sec] 秒，強度為 &6[power] &e(&3[offon]&e)。'
-        cleared: '&e已為 &3[playerDisplayName]&e 清除所有藥水效果 (&3[offon]&e)。'
+    info:
+      feedback: '&e已將藥水效果 &6[effect] &e添加給 &3[playerDisplayName]&e，持續 &6[sec] 秒，強度為 &6[power] &e(&3[offon]&e)。'
+      cleared: '&e已為 &3[playerDisplayName]&e 清除所有藥水效果 (&3[offon]&e)。'
   enchant:
     help:
       info: '&e附魔物品'
       args: (玩家名稱) [附魔] [等級] (-o) (-onlyvalid) (-keeponlyvalid) (-inform) (-s) (-i:[物品名稱(:資料值)])
       explanation:
         - -o 從副手取物品來附魔
-      info:
-        feedback: '&e已為 &3[playerDisplayName]&e (&3[offon]&e) 附魔了 &3[附魔]:[等級]&e 的物品。'
-        removed: '&e已從 &3[playerDisplayName]&e (&3[offon]&e) 的物品中移除了 &3[附魔] &e附魔。'
-        cleared: '&e已從 &3[playerDisplayName]&e (&3[offon]&e) 的物品中清除了 &3所有 &e附魔。'
-        noitem: '&c手中沒有任何物品。'
-        invalidEnchant: '&c你沒有權限為物品附上無效的附魔。'
-        clearedInvalid: '&e已從物品中移除 &6[amount] &e個無效的附魔。'
-        inccorectId: '&e附魔名稱或 ID 不正確。'
-        wrongItem: '&e你手中的物品不正確。'
-        enchantlimit: '&c你沒有權限使用該附魔。'
-        levellimit: '&c等級太高，最大允許等級為 &e[level]。'
-        possible: '&e可能的附魔：'
-        possibleList: '&6[附魔]'
+    info:
+      feedback: '&e已為 &3[playerDisplayName]&e (&3[offon]&e) 附魔了 &3[附魔]:[等級]&e 的物品。'
+      removed: '&e已從 &3[playerDisplayName]&e (&3[offon]&e) 的物品中移除了 &3[附魔] &e附魔。'
+      cleared: '&e已從 &3[playerDisplayName]&e (&3[offon]&e) 的物品中清除了 &3所有 &e附魔。'
+      noitem: '&c手中沒有任何物品。'
+      invalidEnchant: '&c你沒有權限為物品附上無效的附魔。'
+      clearedInvalid: '&e已從物品中移除 &6[amount] &e個無效的附魔。'
+      inccorectId: '&e附魔名稱或 ID 不正確。'
+      wrongItem: '&e你手中的物品不正確。'
+      enchantlimit: '&c你沒有權限使用該附魔。'
+      levellimit: '&c等級太高，最大允許等級為 &e[level]。'
+      possible: '&e可能的附魔：'
+      possibleList: '&6[附魔]'
     ender:
       help:
         info: '&e打開玩家終界箱'
@@ -1186,11 +1151,10 @@ command:
         - /exp take 10
         - /exp Zrips clear
         - /exp Zrips add 10
-      info:
-        current: '&e[playerDisplayName] &e現在等級為 &6[lvl] &e，經驗值為 &6[currentExp] &e(總共 &6[exp] &e經驗值)。'
-        selfFeedback: '&e已經將 &3[playerDisplayName]&e 的經驗值設置為 &3[exp]&e (&3[offon]&e)。'
-        targetFeedback: '&e你的經驗值被 &3[senderDisplayName]&e 設置為 &3[exp]&e。'
-        
+    info:
+      current: '&e[playerDisplayName] &e現在等級為 &6[lvl] &e，經驗值為 &6[currentExp] &e(總共 &6[exp] &e經驗值)。'
+      selfFeedback: '&e已經將 &3[playerDisplayName]&e 的經驗值設置為 &3[exp]&e (&3[offon]&e)。'
+      targetFeedback: '&e你的經驗值被 &3[senderDisplayName]&e 設置為 &3[exp]&e。'
   ext:
     help:
       info: '&e熄滅一名玩家'
@@ -1359,22 +1323,22 @@ command:
       info: '&e為所有玩家提供物品'
       args: '[物品名稱] (數量) (e|l|n|offline)'
       explanation:
-        - '&e- 給予物品名稱或其帶數據值的ID'
-        - '&e- 可選地提供要給予的數量'
-        - '&e- &6n &e- 定義物品名稱'
-        - '&e- &6l &e- 定義物品描述'
-        - '&e- &6e &e- 定義物品附魔效果'
-        - '&e- &6-s &e- 不顯示反饋訊息'
-        - '&e- &6h &e- 在玩家名稱後跟隨，從其手中給予物品'
-        - '&e- &6inv &e- 在玩家名稱後跟隨，給予其他玩家整個庫存'
-        - '&e- &6offline &e- 包括離線玩家'
-        - '&ecmi giveall stone 1 n &2Uber_stone l &3Stone_lore offline'
-        - '&ecmi giveall h Zrips'
-        - '&ecmi giveall inv Zrips'
-      info:
-        starting: '&6開始為所有玩家提供物品，這可能需要一些時間。'
-        running: '&6已經有 [amount] 名玩家獲得物品，仍在執行中。'
-        feedback: '&6完成。有 [amount] 名玩家獲得物品。'
+      - '&e- 給予物品名稱或其帶數據值的ID'
+      - '&e- 可選地提供要給予的數量'
+      - '&e- &6n &e- 定義物品名稱'
+      - '&e- &6l &e- 定義物品描述'
+      - '&e- &6e &e- 定義物品附魔效果'
+      - '&e- &6-s &e- 不顯示反饋訊息'
+      - '&e- &6h &e- 在玩家名稱後跟隨，從其手中給予物品'
+      - '&e- &6inv &e- 在玩家名稱後跟隨，給予其他玩家整個庫存'
+      - '&e- &6offline &e- 包括離線玩家'
+      - '&ecmi giveall stone 1 n &2Uber_stone l &3Stone_lore offline'
+      - '&ecmi giveall h Zrips'
+      - '&ecmi giveall inv Zrips'
+    info:
+      starting: '&6開始為所有玩家提供物品，這可能需要一些時間。'
+      running: '&6已經有 [amount] 名玩家獲得物品，仍在執行中。'
+      feedback: '&6完成。有 [amount] 名玩家獲得物品。'
   glow:
     help:
       info: '&e設定玩家的發光模式'
@@ -1382,13 +1346,13 @@ command:
       explanation:
         - '範例：/glow Zrips red'
         - '權限：cmi.command.glow.[color] - 允許設置特定的發光顏色'
-      info:
-        feedback: '&e您已將 [color]發光 &e設置為 &3[boolean]&e，對於 &3[playerDisplayName]&e（&3[offon]&e）。'
-        targetfeedback: '&3[senderDisplayName]&e將您的 [color]發光 &e設置為 &3[boolean]&e。'
-        title: 選擇發光顏色
-        incorrect: '&4不正確的顏色名稱'
-        lore: '&2點擊選擇顏色'
-        noPerm: '&4沒有權限'
+    info:
+      feedback: '&e您已將 [color]發光 &e設置為 &3[boolean]&e，對於 &3[playerDisplayName]&e（&3[offon]&e）。'
+      targetfeedback: '&3[senderDisplayName]&e將您的 [color]發光 &e設置為 &3[boolean]&e。'
+      title: 選擇發光顏色
+      incorrect: '&4不正確的顏色名稱'
+      lore: '&2點擊選擇顏色'
+      noPerm: '&4沒有權限'
   gm:
     help:
       info: '&e設定玩家的遊戲模式'
@@ -1553,9 +1517,9 @@ command:
       shift:
       - '&e更改0.01，或按住Shift更改0.1'
       listFormat: '&6[name]&7: &r[extra]'
-      addInfo: '&e輸入新的文字行，輸入 &6cancel &e以取消。額外變數:'
-        '&6ICON:&7[值] &6SICON:&7[值]&e其中&7值&e- &7[材質名稱-數量]%附魔%&e, '
-        '&7%itemInHand%&e, &7Head:[頭部擁有者]'
+      addInfo: '&e輸入新的文字行，輸入 &6cancel &e以取消。額外變數:
+        &6ICON:&7[值] &6SICON:&7[值]&e其中&7值&e- &7[材質名稱-數量]%附魔%&e, 
+        &7%itemInHand%&e, &7Head:[頭部擁有者]'
   hologrampages:
     help:
       info: '&e更改全息影像頁面'
@@ -3645,10 +3609,10 @@ command:
       args: (玩家名稱) (時間秒數) (-s)
       explanation:
       - '範例：'
-      - 'tfly Zrips 30'：為Zrips啟用飛行模式，持續30秒
-      - 'tfly Zrips +30'：增加Zrips飛行模式的時間，額外30秒
-      - 'tfly Zrips 0'：啟用Zrips的飛行模式，直到重新登錄
-      - 'tfly Zrips'：檢查玩家是否啟用了tfly模式，以及直到何時
+      - tfly Zrips 30：為Zrips啟用飛行模式，持續30秒
+      - tfly Zrips +30：增加Zrips飛行模式的時間，額外30秒
+      - tfly Zrips 0：啟用Zrips的飛行模式，直到重新登錄
+      - tfly Zrips：檢查玩家是否啟用了tfly模式，以及直到何時
     info:
       setTimedFly: '&e您已經啟用 &6[playerDisplayName]&e 臨時飛行模式，持續 [time]。'
       addTimedFly: '&e您已經為 &6[playerDisplayName]&e 增加 [addTime] ([time]) 的飛行時間。'
@@ -4152,7 +4116,3 @@ command:
       type: '&7[type]'
       worth: '&7價值: &e[price]'
       title: '&8價值清單'
-
-
-
-
