@@ -247,12 +247,12 @@ Chat:
   itemEmpty: '&7[無]'
 Spy:
   Chat:
-    msg: '&2密探&7[&8[senderDisplayName] &7-> &8[playerDisplayName]&7]&f [message]'
-    custom: '&2密探&8[senderDisplayName] &7-> &4|&8[place]&4|&f [message]'
+    msg: '&2監聽&7[&8[senderDisplayName] &7-> &8[playerDisplayName]&7]&f [message]'
+    custom: '&2監聽&8[senderDisplayName] &7-> &4|&8[place]&4|&f [message]'
   Command:
-    msg: '&5C&2密探&7[&8[senderDisplayName]&7]&7：&f[command]'
+    msg: '&5C&2監聽&7[&8[senderDisplayName]&7]&7：&f[command]'
   Sign:
-    msg: '&5標誌&2密探&7[&8[senderDisplayName]&7]&7：&f[text]'
+    msg: '&5標誌&2監聽&7[&8[senderDisplayName]&7]&7：&f[text]'
 command:
   help:
     output:
@@ -271,7 +271,7 @@ command:
       info: '&e向玩家發送操作欄訊息'
       args: '[playerName/all] [message]'
     info:
-      message: '&f[訊息]'
+      message: '&f[messsage]'
   afk:
     help:
       info: '&e切換 AFK 模式。可提供原因'
@@ -320,18 +320,18 @@ command:
       info: '&e列出所有記錄的警報'
       args: ''
     info:
-      list: ' &e[地點]. &6[玩家顯示名稱] &e[時間] &7原因: [原因]'
+      list: ' &e[place]. &6[playerDisplayName] &e[time] &7原因: [reason]'
   aliaseditor:
     help:
       info: '&e別名編輯器'
       args: (new) (alias-cmd)
     info:
-      ListNumber: '&e[序號].'
-      alias: '&6[別名]'
-      commandList: ' &e/[命令]  '
-      commandListDelay: ' &6[命令]  '
+      ListNumber: '&e[number].'
+      alias: '&6[alias]'
+      commandList: ' &e/[command]  '
+      commandListDelay: ' &6[command]  '
       permRequirements: 權限
-      permReqExplanation: '&7需要 &6cmi.customalias.[別名] &7權限才能使用'
+      permReqExplanation: '&7需要 &6cmi.customalias.[alias] &7權限才能使用'
       tab: ' TabComplete'
       tabCompleteExplanation: '&7禁用時，TabComplete 將無法使用'
       tabCompletes: '&2TabCompletes: '
@@ -357,7 +357,7 @@ command:
   anvilrepaircost:
     help:
       info: '&e設定物品修補費用'
-      args: (playerName) [金額]
+      args: (playerName) [amount]
       explanation:
       - '範例：'
       - /repaircost 10
@@ -375,7 +375,7 @@ command:
   armoreffect:
     help:
       info: '&e修改盔甲效果'
-      args: '[藥水效果]'
+      args: '[potionEffect]'
   armorstand:
     help:
       info: '&e打開裝甲架編輯器'
@@ -395,8 +395,8 @@ command:
       leftLeg: '&7左腿 [coord]&7：&f[amount]'
       rightLeg: '&7右腿 [coord]&7：&f[amount]'
       pos: '&7位置 [coord]&7：&f[amount]'
-      list: '&7[位置]. &6[距離] [物品]'
-      items: '&3[顯示名稱]&e[類型]'
+      list: '&7[place]. &6[distance] [items]'
+      items: '&3[displayName]&e[type]'
       plate: '&7盤子'
       size: '&7大小'
       visible: '&7可見性'
@@ -572,7 +572,7 @@ command:
           info: '&e將 BOSSBAR 訊息傳送給玩家'
           args: '[玩家名稱/全部玩家] (-sec:[秒數])(-t:[持續時間]) (-n:bar的名稱)
               (-p:[最大值/目前值]) (-c:[顏色]) (-s:[1,6,10,12,20]) (-cmd:"command;;command2")
-              (-a:[ticks]) [訊息] (-cancel:bar的名稱)'
+              (-a:[ticks]) [messsage] (-cancel:bar的名稱)'
           explanation:
           - PlaceHolderAPI 可用於進度和文字本身
           - 時間以一般方式定義，例如 1s 表示一秒鐘，1m 表示一分鐘。這會決定在自動隱藏之前將 BAR 顯示多長時間
@@ -592,12 +592,12 @@ command:
   broadcast:
       help:
           info: '&e向所有玩家發送特殊訊息'
-          args: (!) [訊息] (-w:[世界名稱,世界名稱])
+          args: (!) [messsage] (-w:[世界名稱,世界名稱])
           explanation:
           - 如果訊息以驚嘆號開頭，則只會顯示潔淨訊息
           - 可以定義世界以僅在這些世界中廣播訊息
       info:
-          format: '&e[&4廣播&e] &2[訊息]'
+          format: '&e[&4廣播&e] &2[messsage]'
   
   burn:
       help:
@@ -728,12 +728,12 @@ command:
   cheque:
     help:
       info: '&e將金錢轉換成支票'
-      args: (玩家名稱) [金額]
+      args: (玩家名稱) [amount]
     info:
-      transferred: '&e已轉移 &6[金額] &e到您的帳戶。新餘額: &6[餘額]'
-      chequeName: '&e金額為 &6[金額] &e的支票'
+      transferred: '&e已轉移 &6[amount] &e到您的帳戶。新餘額: &6[餘額]'
+      chequeName: '&e金額為 &6[amount] &e的支票'
       chequeLore:
-      - '&r&f由 &7[發送者名稱] &r&f發行'
+      - '&r&f由 &7[senderDisplayName] &r&f發行'
       - '&r&f右鍵點擊以兌現'
       holdPaper: '&e手持一張紙'
       cantUse: '&e無法使用這張紙。它已經是支票了！'
@@ -750,8 +750,8 @@ command:
       - cmi clear +armors - 將刪除盔甲類型的物品
       - cmi clear +armorslots - 將刪除盔甲欄位中的物品
     info:
-      clearFeedback: '&e已從 &3[playerDisplayName]&e 的背包中刪除 &6[數量] &e個物品 (&3[開/關]&e)。'
-      target: '&e您的 &6[數量] &e個物品已被 &3[發送者名稱]&e 從背包中刪除。'
+      clearFeedback: '&e已從 &3[playerDisplayName]&e 的背包中刪除 &6[amount] &e個物品 (&3[開/關]&e)。'
+      target: '&e您的 &6[amount] &e個物品已被 &3[senderDisplayName]&e 從背包中刪除。'
       confirm: '&7點擊以確認清除背包。&c所有物品都將被刪除！'
   clearchat:
     help:
@@ -820,9 +820,9 @@ command:
     info:
       wrongworld: '&c您定義的世界不存在！'
       feedback: '&e您已將&3[playerDisplayName] &e的羅盤箭頭指向&3[sourceDisplayName]&e的位置。'
-      feedbackCustom: '&e您已將&3[playerDisplayName] &e的羅盤箭頭指向&3[X座標][Z座標][世界]&e的位置。'
+      feedbackCustom: '&e您已將&3[playerDisplayName] &e的羅盤箭頭指向&3[x][z][world]&e的位置。'
       targetFeedback: '&e您的羅盤目標已由&3[senderName]&e設置為&3[sourceDisplayName]&e的位置。'
-      targetFeedbackCustom: '&e您的羅盤目標已由&3[sourceDisplayName]&e設置為&3[X座標][Z座標][世界]&e的位置。'
+      targetFeedbackCustom: '&e您的羅盤目標已由&3[sourceDisplayName]&e設置為&3[x][z][world]&e的位置。'
       reset: '&e羅盤目標已重置。'
   condense:
     help:
@@ -858,8 +858,8 @@ command:
     info:
       moreDetails: '&7點擊以獲取更多詳細資訊'
       title: '&8[playerDisplayName] &7遊玩時間'
-      date: '&8[日期]'
-      time: '&7[小時]:00&f-&7[下個小時]:00'
+      date: '&8[date]'
+      time: '&7[hour]:00&f-&7[nextHour]:00'
       thishour: '&7當前小時'
       hourback: '&7上一個小時'
       today: '&7今天'
@@ -923,7 +923,7 @@ command:
       args: (玩家名稱) (-s)
     info:
       noinfo: '&4沒有保存位置可以返回！'
-      feedback: '&6返回上一個保存的位置（[世界]，[X座標]，[Y座標]，[Z座標]）！'
+      feedback: '&6返回上一個保存的位置（[world]，[x]，[Y座標]，[z]）！'
   disableenchant:
     help:
       info: '&e禁用附魔'
@@ -1029,7 +1029,7 @@ command:
   editplaytime:
     help:
       info: '&e編輯玩家遊戲時間'
-      args: (玩家名稱) [加/減/設置] [數量] (-s)
+      args: (玩家名稱) [加/減/設置] [amount] (-s)
     info:
       cantSet: '&c無法更改遊戲時間'
       set: '&e已將遊戲時間從 &6[old] &e更改為 &6[new]'
@@ -1498,13 +1498,13 @@ command:
       newMethod: '&7使用新方法: &6[狀態]'
       hoverParticles: '&7顯示懸停粒子: &6[狀態]'
       stabilizedParticles: '&7穩定粒子: &6[狀態]'
-      particleCount: '&7粒子: &6[數量]'
-      particleType: '&7粒子類型: &6[類型]'
-      particleSpacing: '&7粒子間距: &6[數量]'
-      particleHeight: '&7粒子額外高度: &6[數量]'
-      particleWidth: '&7粒子額外寬度: &6[數量]'
-      particleOffsetX: '&7粒子偏移 X: &6[數量]'
-      particleOffsetY: '&7粒子偏移 Y: &6[數量]'
+      particleCount: '&7粒子: &6[amount]'
+      particleType: '&7粒子類型: &6[type]'
+      particleSpacing: '&7粒子間距: &6[amount]'
+      particleHeight: '&7粒子額外高度: &6[amount]'
+      particleWidth: '&7粒子額外寬度: &6[amount]'
+      particleOffsetX: '&7粒子偏移 X: &6[amount]'
+      particleOffsetY: '&7粒子偏移 Y: &6[amount]'
       autoButton: '&7自動生成分頁按鈕'
       autoButtonLore:
       - '&e當前全息影像尚未有任何頁面'
@@ -1559,7 +1559,7 @@ command:
   hunger:
     help:
       info: '&e設定玩家的飢餓值'
-      args: '[玩家名稱] [數量] (-s)'
+      args: '[玩家名稱] [amount] (-s)'
     info:
       feedback: '&e您已為 &3[playerDisplayName]&e（&3[offon]&e）設定 &3[hunger]&e 的飢餓值。'
       targetfeedback: '&e您的飢餓值已由 &3[senderDisplayName]&e 設定為 &3[hunger]&e。'
@@ -1576,7 +1576,7 @@ command:
       editSign: ' &e[編輯牌子內容]'
       publicHover: "&e更改公共狀態。牌子的頂行為 &7[ic:[name]]"
       createdPublic: '&e創建新的互動式牌子'
-      list: '&e[位置]. &6[name]'
+      list: '&e[place]. &6[name]'
       listType: ' &e[type]    '
       editCommands: '&e編輯命令'
       editBlocks: ' &e編輯方塊'
@@ -1713,18 +1713,18 @@ command:
       newSaturation: '&7飽食度: +&6[saturation]&e'
       newExp: '&7經驗值: &6[totalexp]&7經驗 -> &6[currentexp]&e/&6[needexp] &e(&6[level]&7等級&e)'
       newPos: '&f位置 '
-      newPosHover: '&6[世界] (&e[x]&6:&e[y]&6:&e[z]&6)'
+      newPosHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newAfk: '離開 '
       newAfkHover: '&6上次離開時間: [time]'
       AfkInHover: '&6離開時間: [time]'
       newBed: '&f床 '
-      newBedHover: '&6[世界] (&e[x]&6:&e[y]&6:&e[z]&6)'
+      newBedHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newDeath: '&f死亡 '
-      newDeathHover: '&6[世界] (&e[x]&6:&e[y]&6:&e[z]&6)'
+      newDeathHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newBack: '&f返回 '
-      newBackHover: '&6[世界] (&e[x]&6:&e[y]&6:&e[z]&6)'
+      newBackHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newRespawn: '&f重生 '
-      newRespawnHover: '&6[世界] (&e[x]&6:&e[y]&6:&e[z]&6)'
+      newRespawnHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       inv: '&f背包 '
       ender: '&f終界箱 '
       newSee: '??? '
@@ -1765,7 +1765,7 @@ command:
       - '&e| [名稱][餘額][UUID][IP]'
       - '&e| [OP][god][飛行][遊戲模式][AFK][查看]'
       - '&e| [被禁止][被靜音][被拘束][被監禁][警告][聊天室]'
-      - '&e| [位置][床][重生點][死亡][返回][終界箱][背包]'
+      - '&e| [place][床][重生點][死亡][返回][終界箱][背包]'
       - '&e| [家][郵件][警告]'
       - '&e-----------------------------------------'
   inv:
@@ -1820,9 +1820,9 @@ command:
       info: '&e封禁 IP 列表'
       args: ''
     info:
-      banList: '&7[IP] &e- &6[原因]  '
+      banList: '&7[IP] &e- &6[reason]  '
       bannedBy: '&7封禁人：&f[來源]'
-      ends: '&7到期時間：&f[時間]'
+      ends: '&7到期時間：&f[time]'
       related: |-
         &7相關帳號：
         &f[列表]
@@ -2526,7 +2526,7 @@ command:
   pay:
     help:
       info: '&e執行金錢交易'
-      args: '[玩家名稱] [金額] (-s)'
+      args: '[玩家名稱] [amount] (-s)'
   ping:
     help:
       info: '&e顯示玩家的延遲'
@@ -2534,7 +2534,7 @@ command:
     info:
       feedback: '&e延遲: &6[ping]毫秒'
       selffeedback: '&e你的延遲是 &6[ping]毫秒'
-      customMessage: '[訊息]'
+      customMessage: '[messsage]'
   placeholders:
     help:
       info: '&e列出所有佔位符'
@@ -2589,10 +2589,10 @@ command:
       List: '&e[color][傳送門名稱]'
       redefine: '&e重新定義當前選擇的區域'
       particles: '&e顯示粒子: &6[狀態]'
-      particleType: '&e粒子類型: &6[類型]'
-      particleAmount: '&e粒子數量: &6[數量]'
-      particlePercent: '&e收縮邊緣粒子百分比: &6[數量]%'
-      activationRange: '&e激活範圍: &6[數量]'
+      particleType: '&e粒子類型: &6[type]'
+      particleAmount: '&e粒子數量: &6[amount]'
+      particlePercent: '&e收縮邊緣粒子百分比: &6[amount]%'
+      activationRange: '&e激活範圍: &6[amount]'
       particlePermission: '&e顯示未經許可的粒子: &6[狀態]'
       bungeeTeleport: '&e傳送到準確的Bungee位置: [狀態]'
       requiresPermission: '&e需要 &7[perm] &e權限才能使用: [狀態]'
@@ -2633,11 +2633,11 @@ command:
       info: '&e查看遊玩時間獎勵'
       args: (玩家名稱)
     info:
-      list: '&e[number]. &6[獎勵名稱] &e獎勵在 &6[時間]'
+      list: '&e[number]. &6[獎勵名稱] &e獎勵在 &6[time]'
       listNoStack: '&e[number]. &6[獎勵名稱]'
       listOneTime: '&e[number]. &6[獎勵名稱]'
       claim: ' &2領取!'
-      claimAmount: ' &2領取(x[數量])!'
+      claimAmount: ' &2領取(x[amount])!'
       claimHover: '&2點擊領取獎勵!'
       inform: '!actionbar!&2你有未領取的獎勵! /prewards'
   ptime:
@@ -2767,7 +2767,7 @@ command:
       info: '&e查看物品製作配方'
       args: (物品名稱)
     info:
-      type: '&0[類型]'
+      type: '&0[type]'
       page: ' &0[當前]&7/&0[總數]'
       noRecipes: '&c找不到該物品的任何製作配方'
   reload:
@@ -2820,7 +2820,7 @@ command:
   repaircost:
     help:
       info: '&e設置物品的修復成本'
-      args: (玩家的名稱) [金額]
+      args: (玩家的名稱) [amount]
     info:
       feedback: '&e修復成本：&6[amount]'
       noNeed: '&e無需修復'
@@ -2900,7 +2900,7 @@ command:
   saturation:
     help:
       info: '&e設置玩家的飽和度'
-      args: (玩家的名稱) [數量]
+      args: (玩家的名稱) [amount]
     info:
       feedback: '&e你已經為 &3[playerDisplayName]&e（&3[offon]&e）設置了&3[amount]&e的飽和度。'
       targetfeedback: '&e你的飽和度已由 &3[senderDisplayName]&e 設置為 &3[amount]&e。'
@@ -2947,7 +2947,7 @@ command:
       - '- &6continue &e- 繼續掃描'
       - '- &6stop &e- 停止掃描'
       - '- &6stopall &e- 停止所有掃描'
-      - '- &6speed [數量] &e- 設置當前的掃描速度'
+      - '- &6speed [amount] &e- 設置當前的掃描速度'
       - '- &6autospeed [true/false] &e- 設置自動速度是否開啟'
       - '- &6messages [true/false] &e- 設置消息輸出是否關閉'
       - '變量:'
@@ -3148,7 +3148,7 @@ command:
       info: '&e設定隨機傳送範圍'
       args: (世界名稱) (中心點:[x]:[z]) (最小範圍:[range]) (最大範圍:[range]) (形狀:正方形/圓形) (啟用/停用)
     info:
-      list: '&6[位置]. [世界] [啟用] &7[中心X]:[中心Z] &e[maxDist]/[minDist] [類型]'
+      list: '&6[place]. [world] [啟用] &7[中心X]:[中心Z] &e[maxDist]/[minDist] [type]'
   setspawn:
     help:
       info: '&e設置重生點的傳送命令點'
@@ -3156,7 +3156,7 @@ command:
       explanation:
       - 更多命令使用信息，請參閱 http://www.zrips.net/cmi/commands/spawn/
     info:
-      feedback: '&6重生點設置成功([世界]，[x]，[y]，[z])!'
+      feedback: '&6重生點設置成功([world]，[x]，[y]，[z])!'
       group: ' &e([組])'
       rng: ' &e(範圍: [rng])'
       respawn: '&7單擊以將此重生點設置為可能的重生位置'
@@ -3181,17 +3181,17 @@ command:
       info: '&e更改物品價值'
       args: (物品名稱) -s:(出售價格)
     info:
-      setSell: '&e設置物品出售價格 &7[金額]'
-      setBuy: '&e設置物品購買價格 &7[金額]'
+      setSell: '&e設置物品出售價格 &7[amount]'
+      setBuy: '&e設置物品購買價格 &7[amount]'
       notInUse: '&e主要用於檢測可能的漏洞'
-      sellPrice: '&f出售價格: &e[金額]'
-      buyPrice: '&f購買價格: &2[金額]'
+      sellPrice: '&f出售價格: &e[amount]'
+      buyPrice: '&f購買價格: &2[amount]'
       exploit: '&4可能的漏洞!'
       ingredient: '&2材料'
-      ingredients: '&7[材料]&f(&7[數量]&f) = &e[價格]'
+      ingredients: '&7[材料]&f(&7[amount]&f) = &e[價格]'
       notSet: '&e價格未設置'
       notSetBuy: '&7購買價格未設置'
-      result: '&2可用於製作 &7[製作物]&f(&7[數量]&f)'
+      result: '&2可用於製作 &7[製作物]&f(&7[amount]&f)'
       ingredientsPrice: '&c材料價格: &7[價格]'
       resultPrice: '&c可出售價格: &7[價格]'
       explanation: '&2購買價格僅用於檢測可能的漏洞'
@@ -3275,7 +3275,7 @@ command:
       info: '&e在目標位置播放音效'
       args: '[音效] (-p:[音高]) (-v:[音量]) (玩家名稱/-all) (世界) (x) (y) (z) (-s)'
     info:
-      playing: "&e在 [世界] [x]:[y]:[z] 播放 &6[sound] &e\n音高：&6[pitch]\
+      playing: "&e在 [world] [x]:[y]:[z] 播放 &6[sound] &e\n音高：&6[pitch]\
         \ &e音量：&6[volume]"
       playingMultiple: "&e為 &6[amount] &e個玩家播放 &6[sound] &e\n音高：&6[pitch]\
         \ &e音量：&6[volume]"
@@ -3365,48 +3365,48 @@ command:
       distanceCM: '&e[值]&6厘米'
       distanceM: '&e[值]&6米'
       distanceKm: '&e[值]&6千米'
-      list: '&e[名稱]:&6[數量]'
+      list: '&e[名稱]:&6[amount]'
       listCover: '&e([清單]&e)'
       Quit: '&e離開遊戲次數: &6[次數]'
-      PlayTime: '&e遊玩時間: &6[時間]'
-      SneakTime: '&e潛行時間: &6[時間]'
+      PlayTime: '&e遊玩時間: &6[time]'
+      SneakTime: '&e潛行時間: &6[time]'
       Sleep: '&e在床上睡覺: &6[次數]'
-      Joined: '&e加入時間: &6[時間]'
+      Joined: '&e加入時間: &6[time]'
       Jumps: '&e跳躍次數: &6[次數]'
-      SinceDeath: '&e自上次死亡以來: &6[時間]'
+      SinceDeath: '&e自上次死亡以來: &6[time]'
       Deaths: '&e死亡次數: &6[次數]'
       DeathsByMonsters: '&e被怪物殺死: &6[次數]'
-      TotalDistance: '&e總移動距離: &6[距離]'
-      Walk: '&e行走距離: &6[距離]'
-      Crouch: '&e蹲下距離: &6[距離]'
-      Sprint: '&e奔跑距離: &6[距離]'
-      Swim: '&e游泳距離: &6[距離]'
-      Fall: '&e跌落距離: &6[距離]'
-      Climb: '&e攀爬距離: &6[距離]'
-      Fly: '&e飛行距離: &6[距離]'
-      Dive: '&e潛水距離: &6[距離]'
-      Minecart: '&e鐵路列車距離: &6[距離]'
-      Boat: '&e船行距離: &6[距離]'
-      Pig: '&e豬騎行距離: &6[距離]'
-      Horse: '&e馬騎行距離: &6[距離]'
-      Elytra: '&e鞘翅飛行距離: &6[距離]'
+      TotalDistance: '&e總移動距離: &6[distance]'
+      Walk: '&e行走距離: &6[distance]'
+      Crouch: '&e蹲下距離: &6[distance]'
+      Sprint: '&e奔跑距離: &6[distance]'
+      Swim: '&e游泳距離: &6[distance]'
+      Fall: '&e跌落距離: &6[distance]'
+      Climb: '&e攀爬距離: &6[distance]'
+      Fly: '&e飛行距離: &6[distance]'
+      Dive: '&e潛水距離: &6[distance]'
+      Minecart: '&e鐵路列車距離: &6[distance]'
+      Boat: '&e船行距離: &6[distance]'
+      Pig: '&e豬騎行距離: &6[distance]'
+      Horse: '&e馬騎行距離: &6[distance]'
+      Elytra: '&e鞘翅飛行距離: &6[distance]'
       Damage: '&e傷害 &6[造成] [承受]'
-      DamageDealt: '&e造成傷害: &6[數量]'
-      DamageTaken: '&e承受傷害: &6[數量]'
+      DamageDealt: '&e造成傷害: &6[amount]'
+      DamageTaken: '&e承受傷害: &6[amount]'
       JUMP: '&e跳躍次數: &6[次數]'
       Kills: '&e擊殺 &6'
-      KillsMob: '&e怪物: &6[數量]'
-      KillsPlayer: ' &e玩家: &6[數量]'
+      KillsMob: '&e怪物: &6[amount]'
+      KillsPlayer: ' &e玩家: &6[amount]'
       Blocks: '&e方塊 &6'
-      BlocksMined: '&e挖掘: &6[數量]'
-      BlocksPlaced: ' &e放置: &6[數量]'
+      BlocksMined: '&e挖掘: &6[amount]'
+      BlocksPlaced: ' &e放置: &6[amount]'
       Items: '&e物品 &6'
-      ItemsUsed: '&e使用:&6[數量]'
-      ItemsDrop: '&e丟棄:&6[數量]'
-      ItemsPicked: '&e撿起:&6[數量]'
-      ItemsBroken: '&e破壞:&6[數量]'
-      ItemsCrafted: ' &e製作:&6[數量]'
-      ItemsEnchanted: ' &e附魔:&6[數量]'
+      ItemsUsed: '&e使用:&6[amount]'
+      ItemsDrop: '&e丟棄:&6[amount]'
+      ItemsPicked: '&e撿起:&6[amount]'
+      ItemsBroken: '&e破壞:&6[amount]'
+      ItemsCrafted: ' &e製作:&6[amount]'
+      ItemsEnchanted: ' &e附魔:&6[amount]'
       Opened: '&e開啟 &6[清單]'
       OpenChest: '&e箱子:&6[次數]'
       OpenEnder: '&e終界箱:&6[次數]'
@@ -3511,7 +3511,7 @@ command:
   statsedit:
     help:
       info: '&e編輯玩家統計數據'
-      args: (玩家名稱) [add/take/set] [統計類型] (子類型) [數量] (-s)
+      args: (玩家名稱) [add/take/set] [統計類型] (子類型) [amount] (-s)
     info:
       cantSet: '&c無法設定此類型的統計數據'
       reqSubType: '&c此統計類型需要定義 &6[type] &c子類型'
@@ -3596,7 +3596,7 @@ command:
   tempipban:
     help:
       info: '&e暫時封禁 IP'
-      args: '[IP/玩家名稱] [時間] (理由) (-s)'
+      args: '[IP/玩家名稱] [time] (理由) (-s)'
       explanation:
       - cmi.command.banip.bypass - 繞過封禁
     info:
@@ -3701,8 +3701,8 @@ command:
     info:
       feedback: '&e你已經被傳送到 &3[sourceDisplayName] &e的位置 (&3[offon]&e).'
       bad:
-        msg: '&c傳送位置不安全。[原因]'
-        extraMsg: '&e使用 &6/tpbypass &e繞過這個問題。你還有 [時間]'
+        msg: '&c傳送位置不安全。[reason]'
+        extraMsg: '&e使用 &6/tpbypass &e繞過這個問題。你還有 [time]'
         lava: '&c熔岩'
         void: '&c虛空'
         suffocation: '&c窒息'
@@ -3971,7 +3971,7 @@ command:
   voteedit:
     help:
       info: '&e管理玩家的投票數'
-      args: (玩家名稱) [add/set/take/clear] [數量] (-s)
+      args: (玩家名稱) [add/set/take/clear] [amount] (-s)
       explanation:
       - '範例:'
       - '/voteedit Zrips'
