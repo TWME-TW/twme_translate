@@ -39,7 +39,7 @@
 # 某些行支援將它們發送到自定義位置，例如動作欄、標題、副標題，甚至創建 JSON/可點擊的訊息
 # 如果該行以 !toast! 開頭，玩家將會收到吐司訊息（進度彈出窗口，僅適用於 1.12 及更高版本）。可以使用一些額外的變數來定義類型和圖示。例如：!toast! -t:goal -icon:paper Hello world!
 # 如果該行以 !actionbar! 開頭，玩家將會收到在此變數之後定義的動作欄訊息
-# 如果該行以 !actionbar:[秒數]! 開頭，玩家將會收到在定義的時間內顯示的動作欄訊息
+# 如果該行以 !actionbar:[second]! 開頭，玩家將會收到在定義的時間內顯示的動作欄訊息
 # 如果該行以 !broadcast! 開頭，則每個人都會收到此訊息。您可以添加額外的 !toast!、!actionbar! 或 !title!，以便向每個人發送訊息至特定位置，例如：!broadcast!!title!
 # 如果該行以 !customtext:[cTextName]! 開頭，則將按提供的名稱取出自定義文字，並顯示給玩家。如果在 !broadcast! 之後使用，則每個在線玩家都將獲得此自定義文字訊息
 # 如果該行以 !title! 開頭，則玩家將會收到在此變數之後定義的標題訊息，另外它可以包含 !subtitle!，它會添加副標題訊息
@@ -570,7 +570,7 @@ command:
   bossbarmsg:
       help:
           info: '&e將 BOSSBAR 訊息傳送給玩家'
-          args: '[玩家名稱/全部玩家] (-sec:[秒數])(-t:[持續時間]) (-n:bar的名稱)
+          args: '[玩家名稱/全部玩家] (-sec:[second])(-t:[持續時間]) (-n:bar的名稱)
               (-p:[最大值/目前值]) (-c:[顏色]) (-s:[1,6,10,12,20]) (-cmd:"command;;command2")
               (-a:[ticks]) [messsage] (-cancel:bar的名稱)'
           explanation:
@@ -617,7 +617,7 @@ command:
   charges:
       help:
           info: '&e顯示剩餘的生成器使用次數'
-          args: '[玩家名稱] [add/set/take/clear/reset] (-f)'
+          args: '[playerName] [add/set/take/clear/reset] (-f)'
       info:
           charges: '&e* 使用次數：&6[current]&e/&6[max] [繞過]'
           cd: '&e* 冷卻：&6[cdtime] &e下一個在：&6[time]'
@@ -887,7 +887,7 @@ command:
   cuff:
     help:
       info: '&e暫停玩家動作'
-      args: '[玩家名稱] (true/false) (-s)'
+      args: '[playerName] (true/false) (-s)'
     info:
       noChat: '&c您的所有動作都被暫停了。您無法聊天。'
       noCommand: '&c您被禁止使用命令。 &e允許使用的命令：&6/msg、/r、/tell'
@@ -947,7 +947,7 @@ command:
   donate:
     help:
       info: '&e捐贈手中的物品'
-      args: '[玩家名稱] (數量)'
+      args: '[playerName] (數量)'
     info:
       donated: '&e捐贈 &6[type]&eX&6[amount] &e個物品給 &6[playerDisplayName]'
       got: '&e從 &6[playerDisplayName] &e獲得了 &6[type]&eX&6[amount] &e個物品'
@@ -959,7 +959,7 @@ command:
   down:
     help:
       info: '&e向下傳送一層'
-      args: '[玩家名稱] (-s)'
+      args: '[playerName] (-s)'
     info:
       notFound: '&e沒有適合的位置'
   dsign:
@@ -990,10 +990,10 @@ command:
       info: '&e染色皮革盔甲'
       args: (玩家名稱) (紅,綠,藍/十六進位碼/顏色名稱/隨機/清除/彩虹/白天/生物群系/健康) (-s)
     info:
-      color: '&e當前顏色 - &c[紅],&2[綠],&9[藍] &e十六進位碼：&6#[hex]'
-      custom: '&e啟用自訂顏色模式：&6[模式]'
+      color: '&e當前顏色 - &c[red],&2[green],&9[blue] &e十六進位碼：&6#[hex]'
+      custom: '&e啟用自訂顏色模式：&6[mode]'
       bound: '&e靈魂綁定至：&6'
-      boundName: '[玩家名稱]'
+      boundName: '[playerName]'
   editctext:
     help:
       info: '&e自訂文字編輯器'
@@ -1012,10 +1012,10 @@ command:
       deleteInfo: '&e輸入 &6confirm &e以確認刪除或輸入 &6cancel &e以取消操作'
       deleted: '&e自訂文字 (&6[ctext]&e) 已刪除'
       createdNew: '&e自訂文字 (&6[ctext]&e) 已建立'
-      hidden: '&e隱藏：&6[狀態]'
-      autoPage: '&e自動頁面：&6[狀態]'
-      autoAlias: '&e自動別名：&6[狀態]'
-      permReq: '&e需要權限：&6[狀態]'
+      hidden: '&e隱藏：&6[state]'
+      autoPage: '&e自動頁面：&6[state]'
+      autoAlias: '&e自動別名：&6[state]'
+      permReq: '&e需要權限：&6[state]'
       pageLabel: ' &e<PageLabel>'
       pageLabelHover: '&e[value]'
       listTitle: '&e自訂文字'
@@ -1051,18 +1051,18 @@ command:
       updated: '&e將名稱從 &7[oldName]&e 更改為 &7[newName]'
       placeItem: '&2放置物品以設置自訂圖示'
       placeOffItem: '&2放置物品以設置自訂關閉圖示'
-      autoLore: '&2自動生成描述: [狀態]'
+      autoLore: '&2自動生成描述: [state]'
       group: '&2組別: &7[group]'
       newGroup: '&e輸入新組別名稱'
       displayName: '&2顯示名稱: &7[displayName]'
       newDisplayName: '&e輸入新顯示名稱'
-      randomizeYaw: '&2隨機方向: [狀態]'
-      permission: '&2需要權限才能使用: [狀態]'
-      reqPermission: '&2無權限時顯示: [狀態]'
-      hidden: '&2隱藏: [狀態]'
+      randomizeYaw: '&2隨機方向: [state]'
+      permission: '&2需要權限才能使用: [state]'
+      reqPermission: '&2無權限時顯示: [state]'
+      hidden: '&2隱藏: [state]'
       primaryLocation: '&2主要位置'
       secondaryLocation: '&2額外位置'
-      uniqueLocation: '&2不重複位置: [狀態]'
+      uniqueLocation: '&2不重複位置: [state]'
       slot: '&2欄位: &6[slot]'
       page: '&2頁數: &6[page]'
       overllaps: '&2與以下重疊:'
@@ -1084,12 +1084,12 @@ command:
   enchant:
     help:
       info: '&e附魔物品'
-      args: (玩家名稱) [附魔] [等級] (-o) (-onlyvalid) (-keeponlyvalid) (-inform) (-s) (-i:[物品名稱(:資料值)])
+      args: (玩家名稱) [enchant] [level] (-o) (-onlyvalid) (-keeponlyvalid) (-inform) (-s) (-i:[物品名稱(:資料值)])
       explanation:
         - -o 從副手取物品來附魔
     info:
-      feedback: '&e已為 &3[playerDisplayName]&e (&3[offon]&e) 附魔了 &3[附魔]:[等級]&e 的物品。'
-      removed: '&e已從 &3[playerDisplayName]&e (&3[offon]&e) 的物品中移除了 &3[附魔] &e附魔。'
+      feedback: '&e已為 &3[playerDisplayName]&e (&3[offon]&e) 附魔了 &3[enchant]:[level]&e 的物品。'
+      removed: '&e已從 &3[playerDisplayName]&e (&3[offon]&e) 的物品中移除了 &3[enchant] &e附魔。'
       cleared: '&e已從 &3[playerDisplayName]&e (&3[offon]&e) 的物品中清除了 &3所有 &e附魔。'
       noitem: '&c手中沒有任何物品。'
       invalidEnchant: '&c你沒有權限為物品附上無效的附魔。'
@@ -1099,7 +1099,7 @@ command:
       enchantlimit: '&c你沒有權限使用該附魔。'
       levellimit: '&c等級太高，最大允許等級為 &e[level]。'
       possible: '&e可能的附魔：'
-      possibleList: '&6[附魔]'
+      possibleList: '&6[enchant]'
     ender:
       help:
         info: '&e打開玩家終界箱'
@@ -1130,7 +1130,7 @@ command:
       tamed: '&e已馴服：&6[state]'
       owner: '&e所有者：&6[playerDisplayName]'
       grows: '&e成長時間：&6[time]'
-      horse: '&e馬：&6[跳躍力] &e方塊，&6[速度] &e方塊/秒'
+      horse: '&e馬：&6[jump] &e方塊，&6[speed] &e方塊/秒'
       villager: '&e村民：&7[profession] &e等級：&7[lvl] &e類型：&7[type]'
       subTypes: '&e子類型：&6[list]'
       
@@ -1342,7 +1342,7 @@ command:
   glow:
     help:
       info: '&e設定玩家的發光模式'
-      args: '[玩家名稱] [true/false/color/gui]'
+      args: '[playerName] [true/false/color/gui]'
       explanation:
         - '範例：/glow Zrips red'
         - '權限：cmi.command.glow.[color] - 允許設置特定的發光顏色'
@@ -1356,21 +1356,21 @@ command:
   gm:
     help:
       info: '&e設定玩家的遊戲模式'
-      args: '[玩家名稱] [遊戲模式]'
+      args: '[playerName] [遊戲模式]'
     info:
       feedback: '&e您已將 &3[playerDisplayName]&e（&3[offon]&e）設置為遊戲模式 &3[gameMode]&e。'
       targetfeedback: '&3[senderDisplayName]&e將您的遊戲模式設置為 &3[gameMode]&e。'
   god:
     help:
       info: '&e將玩家的上帝模式設置為true或false'
-      args: '[玩家名稱] [true/false] (-s)'
+      args: '[playerName] [true/false] (-s)'
     info:
       feedback: '&e您已將 &3[playerDisplayName]&e 的上帝模式設置為 &3[boolean]&e（&3[offon]&e）。'
       targetfeedback: '&3[senderDisplayName]&e將您的上帝模式設置為 &3[boolean]&e。'
   grindstone:
     help:
       info: '&e打開磨礪石'
-      args: '[玩家名稱]'
+      args: '[playerName]'
     info:
       feedback: '&e您已為 &3[playerDisplayName]&e (&3[offon]&e) 打開磨礪石。'
       targetfeedback: '&3[senderDisplayName]&e為您打開了磨礪石。'
@@ -1399,7 +1399,7 @@ command:
   haspermission:
     help:
       info: '&e檢查玩家是否具有特定權限'
-      args: '[玩家名稱] [權限節點]'
+      args: '[playerName] [權限節點]'
     info:
       title: '&6[playerDisplayName] &e-> &6[permission]'
       none: '&e玩家沒有設置權限，也不是 OP，結果為 &6[state]'
@@ -1411,7 +1411,7 @@ command:
   hat:
     help:
       info: '&e將物品放在頭部位置（當作帽子）'
-      args: '[玩家名稱]'
+      args: '[playerName]'
     info:
       feedback: '!actionbar!&6您已成功更改帽子！'
       targetfeedback: '&6您的帽子已被 &3[senderDisplayName]&6 更換！'
@@ -1446,7 +1446,7 @@ command:
   hideflags:
     help:
       info: '&e隱藏物品屬性'
-      args: '[玩家名稱] [屬性名稱/清除] (屬性名稱)'
+      args: '[playerName] [屬性名稱/清除] (屬性名稱)'
     info:
       feedback: '&e您已為 &3[playerDisplayName]&e (&3[offon]&e) 的物品添加了新屬性。'
       cleared: '&e已清除 &3[playerDisplayName]&e (&3[offon]&e) 物品的 &3所有屬性&c。'
@@ -1460,44 +1460,44 @@ command:
       howTo: '&c創建新的全息影像，請輸入 &e/cmi hologram new &6[名稱]'
       gui: '&7---- &f<打開設置 GUI> &7----'
       guiHover: '&7打開全息影像設置 GUI'
-      interval: '&7每 &6[秒數] &7秒更新'
+      interval: '&7每 &6[second] &7秒更新'
       intervalLore:
       - '&7定義全息影像更新資訊的頻率(單位為秒)'
       - '&7若文字不會改變，請設為-1'
-      pageInterval: '&7每 &6[秒數] &7秒更換頁面'
+      pageInterval: '&7每 &6[second] &7秒更換頁面'
       pageIntervalLore:
       - '&7定義全息影像自動更換頁面的頻率(單位為秒)'
       pageIntervalNoPages: '&4此全息影像尚未有任何頁面'
-      text: '&7文字間距: &6[間距]'
-      usync: '&7文字同步更改: &6[狀態]'
-      reqPermission: '&7需要權限查看: &6[狀態]'
+      text: '&7文字間距: &6[space]'
+      usync: '&7文字同步更改: &6[state]'
+      reqPermission: '&7需要權限查看: &6[state]'
       teleport: '&7傳送至全息影像位置'
-      icon: '&7圖標間距: &6[間距]'
+      icon: '&7圖標間距: &6[space]'
       iconLore:
       - '&7定義物件之間的距離'
-      range: '&7顯示範圍: &6[方塊數量]'
+      range: '&7顯示範圍: &6[blocks]'
       rangeLore:
       - '&7定義全息影像周圍需要顯示或隱藏的範圍'
-      updateRange: '&7更新範圍: &6[方塊數量]'
+      updateRange: '&7更新範圍: &6[blocks]'
       updateRangeLore:
       - '&7定義觸發全息影像更新的範圍'
       relocate: '&7重新定位'
       relocateLore:
       - '&7將全息影像重新定位至您當前位置'
-      los: '&7視線判定: &6[狀態]'
+      los: '&7視線判定: &6[state]'
       losLore:
       - '&7檢查間隔: [間隔]'
-      interact: '&7可互動: &6[狀態]'
-      particles: '&7顯示粒子: &6[狀態]'
-      big: '&7大按鈕: &6[狀態]'
+      interact: '&7可互動: &6[state]'
+      particles: '&7顯示粒子: &6[state]'
+      big: '&7大按鈕: &6[state]'
       bigLore:
       - '&7請注意大按鈕模式會'
       - '&7阻止您繼續向前移動'
-      order: '&7往下排列: &6[狀態]'
+      order: '&7往下排列: &6[state]'
       commands: '&7指令:'
-      newMethod: '&7使用新方法: &6[狀態]'
-      hoverParticles: '&7顯示懸停粒子: &6[狀態]'
-      stabilizedParticles: '&7穩定粒子: &6[狀態]'
+      newMethod: '&7使用新方法: &6[state]'
+      hoverParticles: '&7顯示懸停粒子: &6[state]'
+      stabilizedParticles: '&7穩定粒子: &6[state]'
       particleCount: '&7粒子: &6[amount]'
       particleType: '&7粒子類型: &6[type]'
       particleSpacing: '&7粒子間距: &6[amount]'
@@ -1559,7 +1559,7 @@ command:
   hunger:
     help:
       info: '&e設定玩家的飢餓值'
-      args: '[玩家名稱] [amount] (-s)'
+      args: '[playerName] [amount] (-s)'
     info:
       feedback: '&e您已為 &3[playerDisplayName]&e（&3[offon]&e）設定 &3[hunger]&e 的飢餓值。'
       targetfeedback: '&e您的飢餓值已由 &3[senderDisplayName]&e 設定為 &3[hunger]&e。'
@@ -1605,11 +1605,11 @@ command:
   ifoffline:
     help:
       info: '&e只有玩家離線時執行命令'
-      args: '[玩家名稱] (命令)'
+      args: '[playerName] (命令)'
   ifonline:
     help:
       info: '&e只有玩家上線時執行命令'
-      args: '[玩家名稱] (命令)'
+      args: '[playerName] (命令)'
   ignore:
     help:
       info: '&e忽略玩家'
@@ -1677,7 +1677,7 @@ command:
       newNameHoverCountry: ' &7[country] &f(&2[countryCode]&f)'
       newFirstLogin: '&7首次登錄時間: &6[firstLogin]'
       newPlaytime: '&7遊戲時間: &6[time]'
-      newOnline: '[狀態] 至: &6[logoff]'
+      newOnline: '[state] 至: &6[logoff]'
       newOnlineStateOn: '&2線上'
       newOnlineStateOff: '&7離線'
       newUUID: '&fUUID '
@@ -1771,7 +1771,7 @@ command:
   inv:
     help:
       info: '&e開啟玩家的背包'
-      args: '[玩家名稱]'
+      args: '[playerName]'
       explanation:
       - cmi.command.inv.preventmodify - 防止背包編輯
       - cmi.invedit - 允許編輯背包
@@ -1877,7 +1877,7 @@ command:
   itemlore:
     help:
       info: '&e修改物品說明'
-      args: (-p:[玩家名稱]) [行號/*] [remove/insert/新的說明行]
+      args: (-p:[playerName]) [行號/*] [remove/insert/新的說明行]
     info:
       feedback: '&e你已經將說明行改為「&r&5[loreLine]&e」，針對 &3[playerDisplayName]&e (&3[offon]&e)。'
       noitem: '&c手上沒有任何物品。'
@@ -1888,7 +1888,7 @@ command:
   itemname:
     help:
       info: '&e重新命名物品'
-      args: (-p:[玩家名稱]) [remove/新的物品名稱]
+      args: (-p:[playerName]) [remove/新的物品名稱]
     info:
       feedback: '&e你已將物品重新命名為 [itemname]，針對 &3[playerDisplayName]&e (&3[offon]&e)。'
       noitem: '&c手上沒有任何物品。'
@@ -1908,7 +1908,7 @@ command:
   jail:
     help:
       info: '&e監禁玩家一段時間'
-      args: '[玩家名稱] (時間) (監獄名稱) (牢房ID) (-s) (r:jail_reason)'
+      args: '[playerName] (時間) (監獄名稱) (牢房ID) (-s) (r:jail_reason)'
     info:
       jailed: '&e您已將&6[playerDisplayName] &e監禁至下一個 [time]'
       jailedPlayer: '&6[playerDisplayName] &e被監禁至下一個 [time]'
@@ -1974,7 +1974,7 @@ command:
   kill:
     help:
       info: '&e殺死玩家'
-      args: '[玩家名稱] (-force) (傷害原因) (-s) (-lightning)'
+      args: '[playerName] (-force) (傷害原因) (-s) (-lightning)'
     info:
       cantKill: '&6無法殺死，被其他插件、遊戲/上帝模式保護。請使用 -forced 變數'
       lackOfAccess: '&6沒有權限進行強制殺死。'
@@ -2526,7 +2526,7 @@ command:
   pay:
     help:
       info: '&e執行金錢交易'
-      args: '[玩家名稱] [amount] (-s)'
+      args: '[playerName] [amount] (-s)'
   ping:
     help:
       info: '&e顯示玩家的延遲'
@@ -2571,7 +2571,7 @@ command:
   point:
     help:
       info: '&e定向到方塊'
-      args: (粒子名稱) (玩家名稱) (-self) (時間) (-s:[速度])
+      args: (粒子名稱) (玩家名稱) (-self) (時間) (-s:[speed])
   portals:
     help:
       info: '&e設置傳送門'
@@ -2588,16 +2588,16 @@ command:
       bungeeSetEmpty: '&e在 &6[serverName] &e伺服器啟動傳送門位置設置，但該伺服器沒有玩家在線。直到有人加入該伺服器此操作才會完成。'
       List: '&e[color][傳送門名稱]'
       redefine: '&e重新定義當前選擇的區域'
-      particles: '&e顯示粒子: &6[狀態]'
+      particles: '&e顯示粒子: &6[state]'
       particleType: '&e粒子類型: &6[type]'
       particleAmount: '&e粒子數量: &6[amount]'
       particlePercent: '&e收縮邊緣粒子百分比: &6[amount]%'
       activationRange: '&e激活範圍: &6[amount]'
-      particlePermission: '&e顯示未經許可的粒子: &6[狀態]'
-      bungeeTeleport: '&e傳送到準確的Bungee位置: [狀態]'
-      requiresPermission: '&e需要 &7[perm] &e權限才能使用: [狀態]'
-      kickBack: '&e禁止未經許可進入: [狀態]'
-      informPermission: '&e當權限不足時通知: [狀態]'
+      particlePermission: '&e顯示未經許可的粒子: &6[state]'
+      bungeeTeleport: '&e傳送到準確的Bungee位置: [state]'
+      requiresPermission: '&e需要 &7[perm] &e權限才能使用: [state]'
+      kickBack: '&e禁止未經許可進入: [state]'
+      informPermission: '&e當權限不足時通知: [state]'
       teleportToLocation: '&e傳送到傳送門位置'
       teleportToTarget: '&e傳送到傳送門目標位置'
       performCommandsWithoutTp: '&e在沒有有效傳送位置的情況下執行命令'
@@ -3198,7 +3198,7 @@ command:
   shadowmute:
     help:
       info: '&e對玩家進行靜音，而不告訴他被靜音了'
-      args: '[玩家名稱] (時間) (-s) (原因)'
+      args: '[playerName] (時間) (-s) (原因)'
   shakeitoff:
     help:
       info: '&e取消騎乘在你身上的實體'
@@ -3547,7 +3547,7 @@ command:
   sudo:
     help:
       info: '&e強制另一個玩家執行指令'
-      args: '[玩家名稱] (command/c:[text])'
+      args: '[playerName] (command/c:[text])'
       explanation:
       - cmi.command.sudo.bypass - 保護玩家免於被「惡作劇」
     info:
@@ -3555,7 +3555,7 @@ command:
   suicide:
     help:
       info: '&e自殺'
-      args: '[玩家名稱] (-s)'
+      args: '[playerName] (-s)'
     info:
       feedback: '&e再見了，殘酷的世界……'
       message: '&6[playerDisplayName] &e結束了自己的生命'
@@ -3579,7 +3579,7 @@ command:
   tempban:
     help:
       info: '&e暫時封禁玩家'
-      args: '[玩家名稱] [時間值] (理由) (-s)'
+      args: '[playerName] [時間值] (理由) (-s)'
       explanation:
       - 封禁的最長時間取決於 cmi.command.tempban.max.[amount]
       - cmi.command.tempban.max.unlimited - 允許無限封禁時間
@@ -3630,7 +3630,7 @@ command:
   tgod:
     help:
       info: '&e設定玩家暫時無敵，直到重新登入或時間到期'
-      args: '[玩家名稱] &3(時間，以秒為單位) (-s)'
+      args: '[playerName] &3(時間，以秒為單位) (-s)'
       explanation:
       - '範例:'
       - 'tgod Zrips 30 - 暫時無敵，持續30秒'
@@ -3697,7 +3697,7 @@ command:
   tp:
     help:
       info: '&e傳送到玩家所在位置'
-      args: '[玩家名稱] (玩家名稱)'
+      args: '[playerName] (玩家名稱)'
     info:
       feedback: '&e你已經被傳送到 &3[sourceDisplayName] &e的位置 (&3[offon]&e).'
       bad:
@@ -3713,7 +3713,7 @@ command:
   tpa:
     help:
       info: '&e詢問玩家是否可以傳送到他們那裡'
-      args: '[玩家名稱] (玩家名稱) (-c)'
+      args: '[playerName] (玩家名稱) (-c)'
     info:
       requestSent: '&e已向 &6[playerDisplayName] &e發送傳送請求'
       gotRequest: '&6[senderDisplayName] &e詢問是否可以傳送到你的位置！'
@@ -3741,7 +3741,7 @@ command:
   tpahere:
     help:
       info: '&e詢問玩家是否可以傳送到你的位置'
-      args: '[玩家名稱] (玩家名稱) (-c)'
+      args: '[playerName] (玩家名稱) (-c)'
     info:
       requestSent: '&e已向 &6[playerDisplayName] &e發送傳送請求'
       gotRequest: '&6[senderDisplayName] &e詢問是否可以傳送到你的位置！'
@@ -3781,7 +3781,7 @@ command:
   tphere:
     help:
       info: '&e傳送玩家到你的位置'
-      args: '[玩家名稱] (玩家名稱)'
+      args: '[playerName] (玩家名稱)'
     info:
       feedback:
         offline: '&e你已經為 &3[playerDisplayName] &e設置了 ([world],[x],[y],[z]) 的重生點 (&3[offon]&e)。'
@@ -3791,11 +3791,11 @@ command:
   tpo:
     help:
       info: '&e強制傳送到玩家的位置'
-      args: '[玩家名稱] (玩家名稱)'
+      args: '[playerName] (玩家名稱)'
   tpohere:
     help:
       info: '&e強制傳送玩家到你的位置'
-      args: '[玩家名稱] (玩家名稱)'
+      args: '[playerName] (玩家名稱)'
   tpopos:
     help:
       info: '&e強制傳送到指定位置'
@@ -3826,7 +3826,7 @@ command:
   tree:
     help:
       info: '&e在你所看的方向生成樹'
-      args: (樹種) (-p:[玩家名稱])
+      args: (樹種) (-p:[playerName])
     info:
       feedback: '&6[tree] &e已生成。'
       cantSpawn: '&c無法在此方塊上生成 (&e[tree]&c)。'
@@ -3856,7 +3856,7 @@ command:
   unjail:
     help:
       info: '&e釋放被關進監獄的玩家'
-      args: '[玩家名稱]'
+      args: '[playerName]'
     info:
       notInJail: '&c該玩家沒有被關進監獄。'
       unjailed: '&e你已經釋放了 &6[playerDisplayName] &e從監獄中。'
@@ -3875,7 +3875,7 @@ command:
   unmute:
     help:
       info: '&e解除玩家的禁言狀態'
-      args: '[玩家名稱] (-s)'
+      args: '[playerName] (-s)'
     info:
       notMuted: '&e該玩家未被禁言'
       unmuted: '&e該玩家現在可以說話了'
@@ -3889,7 +3889,7 @@ command:
   usermeta:
     help:
       info: '&e管理玩家的元數據'
-      args: '[玩家名稱] [add/remove/clear/list/increment] (key) (value) (-s)'
+      args: '[playerName] [add/remove/clear/list/increment] (key) (value) (-s)'
       explanation:
       - 任何設定的元數據都可以在插件周圍使用%cmi_user_meta_[key]%佔位符來顯示。
     info:
@@ -4003,7 +4003,7 @@ command:
   walkspeed:
     help:
       info: '&e設置玩家的行走速度，範圍為 0~10'
-      args: '[玩家名稱] [速度值]'
+      args: '[playerName] [速度值]'
     info:
       feedback: '&e您已將 &3[playerDisplayName] &e的行走速度設置為 &3[amount]&e (&3[offon]&e)'
       targetfeedback: '&e您的行走速度已被 &3[senderDisplayName] &e設置為 &3[amount]&e。'
@@ -4011,7 +4011,7 @@ command:
   warn:
     help:
       info: '&e警告玩家'
-      args: '[玩家名稱] (類別) (原因) (-s)'
+      args: '[playerName] (類別) (原因) (-s)'
     info:
       noSelfWarning: '&c您無法警告自己'
       cantBan: '&c無法警告此玩家'
