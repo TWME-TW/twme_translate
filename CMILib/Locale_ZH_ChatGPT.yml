@@ -408,7 +408,7 @@ info:
     WINDSWEPT_HILLS: 風蝕丘陵
     WINDSWEPT_SAVANNA: 風吹熱帶草原
     WOODED_BADLANDS: 樹木稀疏的荒漠
-EntityType:
+  EntityType:
     allay: 附魔台
     area_effect_cloud: 區域效果雲
     armor_stand: 盔甲架
