@@ -11,7 +11,7 @@ command:
     optional-world: 如果未提供，將使用玩家當前的世界
     optional-center: 如果未指定，將使用（<white>0<gray>,</gray> 0</white>）
   addon:
-    description: 管理 Pl3xMap 插件
+    description: 管理 Pl3xMap 附加插件
   cancelrender:
     description: 取消世界的正在進行的渲染
     not-rendering: <grey><world> <red>沒有正在進行的渲染
@@ -83,8 +83,8 @@ command:
     render-paused: <red>已暫停
     player-only-feature: <red>該功能僅限於玩家使用
 addon:
-  enabling-all: 啟用所有插件
-  disabling-all: 停用所有插件
+  enabling-all: 啟用所有附加插件
+  disabling-all: 停用所有附加插件
   enabling: ' - <name> <version>'
   disabling: ' - <name> <version>'
 httpd:
