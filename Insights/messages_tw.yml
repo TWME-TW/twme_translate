@@ -1,0 +1,60 @@
+messages:
+  prefix: '<aqua><bold>洞察 <dark_gray>» '
+  update-available: '<prefix><dark_aqua>新版本 <green><version> <dark_aqua>的 <aqua>洞察
+    <dark_aqua>已經推出了！詳情請見：<aqua><body>'
+  configs-reloaded: '<prefix><dark_aqua>所有配置文件已重新載入！'
+  area-scan-started: '<prefix><dark_aqua>請等待我們掃描此<area>...'
+  area-scan-queued: '<prefix><red>目前有其他掃描排隊，無法掃描此<area>...'
+  area-scan-completed: '<actionbar><aqua>掃描完成！'
+  limit-reached: '<prefix><red>您在此<area>已達到 <limit> 個 <name> 的限制。請刪除一些。'
+  limit-disallowed-placement: '<prefix><red>您不能在此<area>放置<name>！'
+  limit-notification: '<dark_aqua><name>: <aqua><count><dark_aqua>/<aqua><limit>'
+  scan:
+    start: '<prefix><dark_aqua>正在掃描 <aqua><bold><count></bold><dark_aqua> 個方塊...'
+    already-scanning: '<prefix><red>請等待您的其他掃描完成後再進行下一個掃描。'
+    finish:
+      header: <dark_gray><strikethrough>----------------=<reset><dark_gray>[<aqua><bold>
+        洞察掃描<reset> <dark_gray>]<strikethrough>=---------------
+      chunk-format: <dark_aqua>區塊 <aqua><world><dark_aqua> @ <aqua><chunk-x><dark_aqua>,
+        <aqua><chunk-z>
+      chunk-hover: <dark_aqua>點擊以傳送至此區塊！
+      format: '<aqua> <entry><dark_gray>：<gray><bold><count>'
+      footer: '<dark_aqua>已掃描總計<aqua><bold><chunks></bold> <dark_aqua>個區塊，共<aqua><bold><blocks></bold>
+        <dark_aqua>個方塊和<aqua><bold><entities></bold><dark_aqua>個實體。共耗時<aqua><time><dark_aqua>！
+      progress: '<dark_aqua>進度：<aqua><bold><count></bold><dark_aqua>/<aqua><bold><total></bold>
+        <dark_aqua>個區塊（完成 <aqua><bold><percentage></bold>%<dark_aqua>）'
+  scanregion:
+    no-region: '<prefix><red>此處似乎沒有任何區域！'
+  scancache:
+    no-cache: '<prefix><red>此處似乎沒有任何快取！'
+    cleared: '<prefix><dark_aqua>已刪除此<aqua><area><dark_aqua>的快取！'
+    result:
+      header: <dark_gray><strikethrough>---------------=<reset><dark_gray>[<aqua><bold>
+        洞察快取<reset> <dark_gray>]<strikethrough>=---------------
+      format: '<aqua> <entry><dark_gray>：<gray><bold><count>'
+      footer: '<dark_aqua> 這個<aqua><area><dark_aqua>的快取結果。'
+  stats: |-
+    <dark_gray><strikethrough>---------------=<reset><dark_gray>[<aqua><bold> 洞察統計<reset> <dark_gray>]<strikethrough>=---------------
+    <dark_aqua> 已掃描區塊數量<dark_gray>: <aqua><bold><chunks_scanned></bold>
+    <dark_aqua> 已掃描方塊數量<dark_gray>: <aqua><bold><blocks_scanned></bold>
+    <dark_aqua> 目前排隊大小<dark_gray>: <aqua><bold><queue_size></bold>
+    <dark_gray><strikethrough>-------------------------------------------------
+  teleportchunk:
+    error: '<prefix><red>發生錯誤，請檢查控制台。'
+    not-generated: '<prefix><red>您無法傳送到此區塊，它尚未生成。請使用<dark_red>--generate <red>標誌以覆蓋。'
+    failed: '<prefix><red>未知原因導致傳送失敗，可能控制台中包含堆棧跟蹤信息？'
+    success: '<prefix><dark_aqua>您已經傳送到區塊 <aqua><world> <dark_aqua>@ <aqua><chunk-x><dark_aqua>，<aqua><chunk-z><dark_aqua>！'
+  cancelscan:
+    no-scan: '<prefix><red>您沒有正在進行的掃描可以取消！'
+  scanhistory:
+    no-history: '<prefix><red>您似乎沒有任何掃描歷史記錄！'
+  pagination:
+    button-left: <<<
+    button-right: '>>>'
+    button-color-active: <aqua>
+    button-color-inactive: <gray>
+    button-hover: <gray>點擊以前往第<aqua><page><gray>頁！
+    footer-format: <dark_gray><strikethrough>-------------=<reset><dark_gray>[<button-left><reset><dark_gray>]
+      <dark_aqua>第<aqua><current-page> <dark_aqua>頁（共<aqua><page-amount> <dark_aqua>頁）<dark_gray>[<button-right><reset><dark_gray>]<strikethrough>=-------------
+    no-page: '<prefix><red>該頁面不存在！'
+    no-results: '<prefix><red>沒有結果可供顯示。'
