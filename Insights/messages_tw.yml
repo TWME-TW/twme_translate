@@ -20,7 +20,7 @@ messages:
       chunk-hover: <dark_aqua>點擊以傳送至此區塊！
       format: '<aqua> <entry><dark_gray>：<gray><bold><count>'
       footer: '<dark_aqua>已掃描總計<aqua><bold><chunks></bold> <dark_aqua>個區塊，共<aqua><bold><blocks></bold>
-        <dark_aqua>個方塊和<aqua><bold><entities></bold><dark_aqua>個實體。共耗時<aqua><time><dark_aqua>！
+        <dark_aqua>個方塊和<aqua><bold><entities></bold><dark_aqua>個實體。共耗時<aqua><time><dark_aqua>！'
       progress: '<dark_aqua>進度：<aqua><bold><count></bold><dark_aqua>/<aqua><bold><total></bold>
         <dark_aqua>個區塊（完成 <aqua><bold><percentage></bold>%<dark_aqua>）'
   scanregion:
