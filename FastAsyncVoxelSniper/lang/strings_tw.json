@@ -122,7 +122,7 @@
     "voxelsniper.brush.drain.disc": "&b圓盤排水模式為 {0}",
 
     "voxelsniper.brush.erode.info": "&6侵蝕刷參數：\n&b/b e f [n] -- 將侵蝕面設置為 n。\n&b/b e e [n] -- 將填充面設置為 n。\n&b/b e F [n] -- 將侵蝕遞歸設置為 n。\n&b/b e E [n] -- 將填充遞歸設置為 n。\n&6侵蝕刷預設值：\n&b/b eb default -- 將侵蝕面設置為 0，侵蝕遞歸設置為 1，填充面設置為 0，填充遞歸設置為 1。\n&b/b eb melt -- 將侵蝕面設置為 2，侵蝕遞歸設置為 1，填充面設置為 5，填充遞歸設置為 1。\n&b/b eb fill -- 將侵蝕面設置為 5，侵蝕遞歸設置為 1，填充面設置為 2，填充遞歸設置為 1。\n&b/b eb smooth -- 將侵蝕面設置為 3，侵蝕遞歸設置為 1，填充面設置為 3，填充遞歸設置為 1。\n&b/b eb lift -- 將侵蝕面設置為 6，侵蝕遞歸設置為 0，填充面設置為 1，填充遞歸設置為 1。\n&b/b eb floatclean -- 將侵蝕面設置為 0，侵蝕遞歸設置為 1，填充面設置為 6，填充遞歸設置為 1。",
-    "voxelsniper.brush.erode.set-preset": "&d刷子預設值已設置為：&5",
+    "voxelsniper.brush.erode.set-preset": "&d刷子預設值已設置為：&5{0}",
     "voxelsniper.brush.erode.invalid-preset": "&c無效的預設值：&b{0}",
     "voxelsniper.brush.erode.set-erosion-faces": "&b侵蝕面已設置為：&f{0}",
     "voxelsniper.brush.erode.set-fill-faces": "&9填充面已設置為：&f{0}",
