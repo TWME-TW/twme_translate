@@ -1,5 +1,5 @@
 messages:
-  prefix: '<aqua><bold>洞察 <dark_gray>» '
+  prefix: '<aqua><bold>Insights <dark_gray>» '
   update-available: '<prefix><dark_aqua>新版本 <green><version> <dark_aqua>的 <aqua>洞察
     <dark_aqua>已經推出了！詳情請見：<aqua><body>'
   configs-reloaded: '<prefix><dark_aqua>所有配置文件已重新載入！'
