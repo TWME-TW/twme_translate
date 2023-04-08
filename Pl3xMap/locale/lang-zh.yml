@@ -1,0 +1,139 @@
+prefix:
+  command: '<white>[<gradient:#C028FF:#5B00FF>Pl3xMap</gradient>]</white> '
+command:
+  base: Pl3xMap 命令。'<grey><click:run_command:/map help>/map help</grey>'
+  event:
+    click-for-help: 點擊獲取幫助
+    click-to-confirm: 點擊確認
+  argument:
+    help-query: 幫助查詢
+    optional-player: 如果未指定，將使用執行命令的玩家（控制台必須指定玩家）
+    optional-world: 如果未提供，將使用玩家當前的世界
+    optional-center: 如果未指定，將使用（<white>0<gray>,</gray> 0</white>）
+  addon:
+    description: 管理 Pl3xMap 插件
+  cancelrender:
+    description: 取消世界的正在進行的渲染
+    not-rendering: <grey><world> <red>沒有正在進行的渲染
+    success: <green><world> <grey>的渲染已被取消
+  confirm:
+    description: 確認等待中的命令
+    not-rendering: <red>需要確認。使用 <grey>/map confirm</grey> 確認
+    success: <red>您沒有任何等待確認的命令
+  fullrender:
+    description: 完全渲染一個世界
+    already-rendering: <grey><world> <red>已在渲染中
+    starting: <green>正在開始完全渲染 <grey><world>
+    finished: <green>在 <grey><elapsed></grey> 中完成 <grey><world></grey> 的完全渲染
+    cancelled: <red>取消了 <grey><world></grey> 的完全渲染
+    resumed-rendering: <yellow><world></grey> 先前未完成的完全渲染已繼續進行
+    obtaining-regions: <yellow>正在從文件獲取區域...（這可能需要一些時間）
+    found-total-regions: <green>找到 <grey><total></grey> 個區域文件
+    resumed-total-regions: <green>恢復掃描 <grey><done></grey>/<grey><total></grey>
+      區域 (<gold><percent>%</gold>)
+    use-status-for-progress: <gold>使用 <grey>/map status</grey> 命令查看進度
+    error-parsing-region-file: 無法解析區域文件 <grey><path>（<filename>）
+  help:
+    description: 獲取 Pl3xmap 命令的幫助
+  hide:
+    description: 從地圖上隱藏玩家
+    already-hidden: <grey><player> <red>已從地圖上隱藏
+    success: <grey><player> <green>已從地圖上隱藏
+  pauserender:
+    description: 暫停指定世界的所有渲染
+    paused: <green>已暫停 <grey><world> 的渲染
+    resumed: <green>已恢復 <grey><world> 的渲染
+  radiusrender:
+    description: 渲染世界的一個區域
+    already-rendering: <grey><world> <red>已在渲染中
+    starting: <green>正在開始 <grey><world></grey> 的半徑渲染
+    finished: <green>在 <grey><elapsed></grey> 中完成 <grey><world></grey> 的半徑渲染
+    cancelled: <red>取消了 <grey><world></grey> 的半徑渲染
+    obtaining-regions: <yellow>正在獲取半徑內的區塊...（這可能需要一些時間）
+    found-total-regions: <green>在半徑內找到 <grey><total></grey> 個區塊
+    use-status-for-progress: <gold>使用 <grey>/map status</grey> 命令查看進度
+    error-parsing-region-file: 無法解析區域文件 '<path>'（<filename>）
+  reload:
+    description: 重新載入插件
+    success: <green>Pl3xMap <grey>v<version></grey> 重新載入成功
+  resetmap:
+    description: 取消世界的正在進行的渲染
+    active-render: <red><world> 有正在進行的渲染
+    success: <green>已成功重置 <grey><world> 的地圖
+    failed: <red>無法重置 <grey><world> 的地圖
+  show:
+    description: 在地圖上顯示玩家
+    not-hidden: <grey><player> <red>未被從地圖上隱藏
+    success: <grey><player> <green>已經從地圖上顯示
+  status:
+    description: 查看世界的渲染狀態
+    already-rendering: |-
+      <gold><world></gold> 的地圖狀態
+      背景: <green>正在運行
+      活動: <red>未運行
+    render: |-
+      <green><world></green> 的地圖狀態
+      <white>  背景: <i><background>
+      <white>  前景: <i><foreground>
+    render-details: |-
+      <grey>    區塊: <chunks_done>/<chunks_total> （<gold><percent>%</gold>）
+      <grey>    剩餘時間: <remaining> （<gold><cps> cps</gold>）
+    render-running: <green>正在運行
+    render-not-running: <red>未運行
+    render-paused: <red>已暫停
+    player-only-feature: <red>該功能僅限於玩家使用
+addon:
+  enabling-all: 啟用所有插件
+  disabling-all: 停用所有插件
+  enabling: ' - <name> <version>'
+  disabling: ' - <name> <version>'
+httpd:
+  started:
+    success: <green>內部 Web 伺服器已在 <yellow><bind></yellow>:<yellow><port></yellow> 啟動
+    error: <red>無法啟動內部 Web 伺服器
+  stopped:
+    success: <green>內部 Web 伺服器已停止
+    error: <red>內部 Web 伺服器發生錯誤
+  disabled: <green>內部 Web 伺服器在 <grey>config.yml</grey> 中已被停用
+progress:
+  chat: '<world>：處理了 <processed_chunks>/<total_chunks> 個區塊（<percent>%）<gold><cps> cps</gold> 剩餘時間： <eta>'
+  bossbar: '<gold><world></gold> 的地圖渲染：<red><percent></red>% 剩餘時間： <eta>'
+  eta:
+    unknown: 未知
+error:
+  must-specify-player: <red>您必須指定玩家
+  no-such-player: <red>找不到玩家 <grey><player>
+  must-specify-world: <red>您必須指定世界
+  no-such-world: <red>找不到世界 <grey><world>
+  point-invalid-format: '<point> 不是有效的位置。需要的格式是 <x> <z>'
+  world-disabled: <red>Pl3xMap 在世界 <grey><world></grey> 中已被停用
+  render-stalled: <red>渲染已停滯！取消。
+  must-specify-center: <red>您必須指定中心點
+ui:
+  layer:
+    players: 玩家
+    spawn: 重生點
+    worldborder: 世界邊界
+  title: 線上地圖
+  blockinfo:
+    label: 方塊資訊
+    value: <block><br /><biome>
+  coords:
+    label: 座標
+    value: <x>、<y>、<z>
+  link:
+    label: 分享連結
+    value: ''
+  markers:
+    label: 標記
+    value: 沒有配置任何標記
+  players:
+    label: 線上人數（<online>/<max>）
+    value: 沒有玩家在線上
+  worlds:
+    label: 世界
+    value: 沒有配置任何世界
+  layers:
+    label: 圖層
+    value: 沒有配置任何圖層
+
