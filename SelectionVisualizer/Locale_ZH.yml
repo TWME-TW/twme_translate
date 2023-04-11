@@ -4,7 +4,7 @@
 
 info:
   prefix: '&e[&eSvis&e] '
-  GlobalDisable: '&c可視化已關閉. 用 &6/sv toggle &c來啟用!'
+  GlobalDisable: '&c可視化已關閉. 用 &6/svis toggle &c來啟用!'
   TypeDisable: '&c這一類型的可視化已關閉. 你可以在選單中打開!'
   Gui:
     Title: '&8選擇你的選區類型'
