@@ -3536,14 +3536,14 @@ command:
         \ \n&f總共: &7[total]"
       Java: ' &eJava 版本: &6[mainV].[majorV].[minorV]&e(&6[update]&e) Build: &6[build]'
       DiskUsage: ' &e磁碟使用量: &6[percent]% &e(&6[current]&e/&6[max] GB&e)'
-      Worlds: '&e[number]. &6[world] &e方塊數量: &6[chunks] &e生物數量: &6[entities]\\ &e瓦片數量: &6[tiles] &e玩家數量: &6[players]'
+      Worlds: '&e[number]. &6[world] &e方塊數量: &6[chunks] &e生物數量: &6[entities]\\ &eTile 數量: &6[tiles] &e玩家數量: &6[players]'
   stonecutter:
     help:
-      info: '&e打開石切機'
+      info: '&e打開切石機'
       args: (玩家名稱)
     info:
-      feedback: '&e你已為 &3[playerDisplayName]&e (&3[offon]&e) 打開了石切機。'
-      targetfeedback: '&3[senderDisplayName]&e 為你打開了石切機。'
+      feedback: '&e你已為 &3[playerDisplayName]&e (&3[offon]&e) 打開了切石機。'
+      targetfeedback: '&3[senderDisplayName]&e 為你打開了切石機。'
   sudo:
     help:
       info: '&e強制另一個玩家執行指令'
