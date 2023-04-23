@@ -1,0 +1,107 @@
+#> 下面是針對插件「Train_Carts」的本地化節點集。
+#> 顏色部分，請使用「&」字符後面接0至F的數字。
+#> 需要對這個文件有幫助嗎？請訪問：
+#> https://wiki.traincarts.net/p/BKCommonLib/Localization
+commands: {}
+command:
+  usage: &a查看 &f&nWIKI(&bhttps://wiki.traincarts.net/p/TrainCarts&f&n)&a 獲取更多信息，或使用 /train help。
+  noperm: &c您沒有權限，請向管理員請求幫助。
+  savedtrain:
+    claimed: &c已有其他人聲稱保存的名稱為 %0% 的列車，您無法訪問！
+    global:
+      noperm: &c您沒有權限強制訪問其他人保存的列車，請向管理員請求幫助。
+    notfound: &c名稱為 %0% 的保存的列車不存在！
+    force: &c已有其他人聲稱保存的名稱為 %0% 的列車，但您可以使用 --force 來訪問。
+    claim:
+      invalid: '&c指定的玩家名稱無效：%0%'
+    name:
+      invalid: '&c無效的列車名稱：%0%'
+  ticket:
+    notfound: &c名稱為 %0% 的車票不存在。
+    notediting: |-
+      &c您現在沒有編輯任何車票。
+      &c要創建新的列車車票，請使用 /train ticket create。
+      &c要編輯現有的列車車票，請使用 /train ticket edit [name]。
+  input:
+    train:
+      notfound: &c名稱為 %0% 的列車不存在。
+    cart:
+      notintrain: &c名稱為 '%0%' 的車輛不在選定的列車中。
+      uuidnotfound: &c唯一 ID 為 %0% 的車輛不存在。
+      notnearby: &c找不到靠近指定坐標的車輛。
+    speed:
+      invalid: &c輸入值 %0% 不是有效的數字或速度表達式。
+    acceleration:
+      invalid: &c輸入值 %0% 不是有效的數字或加速度表達式。
+    direction:
+      invalid: &c輸入值 %0% 不是有效的方向。
+    name:
+      empty: &c輸入的列車名稱為空！
+      invalid: &c輸入的列車名稱 '%0%' 包含無效字符！
+    selector:
+      invalid: &c[TrainCarts] 選擇器條件包含語法錯誤！
+  animate:
+    success: &a正在播放動畫 &e%0%&a，速度為 &e%1%&a，相位延遲為 &e%2%。
+    failure: &c無法找到動畫 &e%0%&c！
+property:
+  notfound: &c名稱為 '%0%' 的屬性不存在。
+  error: &c解析屬性 '%0%' 的值 '%1%' 時發生內部錯誤。
+  invalidinput: '&c屬性 ''%0%'' 的值 ''%1%'' 無效：%2%'
+  nopermissionany: &c您沒有權限修改列車屬性。
+  nopermission: &c您沒有權限修改名稱為 '%0%' 的屬性。
+edit:
+  success: &a您正在編輯列車 '&e%0%&a'！
+  noselect: &e您尚未選擇要編輯的列車！
+  notallowed: &c您無權擁有列車！
+  nonefound: &c您沒有可以編輯的列車。
+  notfound: &c找不到名為 '%0%' 的有效列車！
+  notowned: &c您無權訪問這列列車！
+  notloaded: &c當前未加載所選的列車！
+spawn:
+  type:
+    notallowed: &c您無權創建 %0% 類型的礦車。
+select:
+  destination: &e您已選擇 &f%0%&e 為您的目的地！
+ticket:
+  expired: &c您的 %0% 車票已過期。
+  required: &c您沒有擁有此列車的車票！
+  used: &a您已使用您的 &e%0%&a 車票！
+  conflict: &c您擁有多張可用於此列車的車票。請手持正確的車票！
+  ownerconflict: &c列車車票 %0% 不是您的，它屬於 %1%！
+  typeconflict: &c列車車票 %0% 無法用於此列車！
+  add: &f[車票系統]&e 您已收到 %0% 在您的銀行帳戶中！
+  check: &f[車票系統]&e 您當前在您的銀行帳戶中有 %0%！
+  buyfail: &f[車票系統]&c 抱歉，您無法負擔 %0% 的車票。
+  buy: &f[車票系統]&e 您已購買 %0% 的車票。
+  buyowner: &f[車票系統]&e %0% &e於 &f%2%&e 購買了 %1% 的車票。
+  map:
+    invalid: 無效車票
+    expired: 已過期
+    uses:
+      '1': 單次使用
+      '-1': 無限使用
+      default: '%1%/%0% 使用'
+waiter:
+  notfound: &c沒有在軌道上找到 &e%0%&c 的標誌！
+pathfinding:
+  busy: &e正在尋找到達目的地的路線...
+  failed: &c從這裡無法到達目的地 &e%0%&c！
+chest:
+  noperm: &c您沒有使用列車儲物箱的權限！
+  noitem: &c您目前沒有持有列車儲物箱物品！
+  give: &a您已獲得列車儲物箱物品。使用它來儲存和生成列車。
+  giveto: &a已將列車儲物箱物品贈送給玩家 %0%。
+  update: &a您的列車儲物箱物品已更新。
+  locked: &c您的列車儲物箱物品已鎖定，無法拾取列車。
+  pickup: &a已拾取並儲存列車在物品中！
+  full: &c您的列車儲物箱物品已滿，無法拾取列車。
+  imported: &a已將列車導入儲物箱物品中。
+  spawn:
+    success: &a儲存在物品中的列車已生成在軌道上。
+    empty: &c無法生成列車，物品中沒有存儲列車。
+    norail: &c無法生成列車，點擊的方塊不是已知的軌道。
+    noraillook: &c無法生成列車，沒有看到任何軌道或距離太遠。
+    railtooshort: &c無法生成列車，軌道不夠長以容納列車。
+    blocked: &c無法生成列車，由於其他列車的阻礙，軌道上沒有足夠的空間。
+sign:
+  noperm: &c您沒有使用此標誌的權限。

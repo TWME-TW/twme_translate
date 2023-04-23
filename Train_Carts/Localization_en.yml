@@ -1,0 +1,114 @@
+#> Below are the localization nodes set for plugin 'Train_Carts'.
+#> For colors, use the & character followed up by 0 - F
+#> Need help with this file? Please visit:
+#> https://wiki.traincarts.net/p/BKCommonLib/Localization
+commands: {}
+command:
+  usage: &aSee [&f&nthe WIKI](https://wiki.traincarts.net/p/TrainCarts)&r&a for more
+    information, or use /train help
+  noperm: &cYou do not have permission, ask an admin to do this for you.
+  savedtrain:
+    claimed: &cSaved train with name %0% is claimed by someone else, you can not access
+      it!
+    global:
+      noperm: &cYou do not have permission to force access to saved trains by others, ask
+        an admin to do this for you.
+    notfound: &cSaved train with name %0% does not exist!
+    force: &cSaved train with name %0% is claimed by someone else, you can access it anyway
+      with --force
+    claim:
+      invalid: '&cInvalid player name specified: %0%'
+    name:
+      invalid: '&cInvalid train name: %0%'
+  ticket:
+    notfound: &cTicket with name %0% does not exist
+    notediting: |-
+      &cYou are not editing any tickets right now
+      &cTo create a new train ticket, use /train ticket create
+      &cTo edit an existing train ticket, use /train ticket edit [name]
+  input:
+    train:
+      notfound: &cTrain with name %0% does not exist
+    cart:
+      notintrain: &cCart '%0%' does not exist in the selected train
+      uuidnotfound: &cCart with unique ID %0% does not exist
+      notnearby: &cNo cart was found near the specified coordinates
+    speed:
+      invalid: &cInput value %0% is not a valid number or speed expression
+    acceleration:
+      invalid: &cInput value %0% is not a valid number or acceleration expression
+    direction:
+      invalid: &cInput value %0% is not a valid direction
+    name:
+      empty: &cInput train name is empty!
+      invalid: &cInput train name '%0%' contains invalid characters!
+    selector:
+      invalid: &c[TrainCarts] Selector condition contains syntax errors!
+  animate:
+    success: &aNow playing animation &e%0%&a at speed &e%1%&a with phase delay &e%2%
+    failure: &cFailed to find animation &e%0%&c!
+property:
+  notfound: &cProperty with name '%0%' does not exist
+  error: &cAn internal error occurred while parsing value '%1%' for property '%0%'
+  invalidinput: '&cValue ''%1%'' for property ''%0%'' is invalid: %2%'
+  nopermissionany: &cYou do not have permission to modify train properties
+  nopermission: &cYou do not have permission to modify the property with name '%0%'
+edit:
+  success: &aYou are now editing train '&e%0%&a'!
+  noselect: &eYou haven't selected a train to edit yet!
+  notallowed: &cYou are not allowed to own trains!
+  nonefound: &cYou do not own any trains you can edit.
+  notfound: &cCould not find a valid train named '%0%'!
+  notowned: &cYou do not own this train!
+  notloaded: &cThe selected train is not loaded right now!
+spawn:
+  type:
+    notallowed: &cYou do not have permission to create minecarts of type %0%
+select:
+  destination: &eYou have selected &f%0%&e as your destination!
+ticket:
+  expired: &cYour ticket for %0% is expired
+  required: &cYou do not own a ticket for this train!
+  used: &aYou have used your &e%0%&a ticket!
+  conflict: &cYou own multiple tickets that can be used for this train. Please hold
+    the right ticket in your hand!
+  ownerconflict: &cThe train ticket %0% is not yours, it belongs to %1%!
+  typeconflict: &cThe train ticket %0% can not be used for this train!
+  add: &f[Ticket System]&e You received %0% in your bank account!
+  check: &f[Ticket System]&e You currently have %0% in your bank account!
+  buyfail: &f[Ticket System]&c You can't afford a Ticket for %0%, sorry.
+  buy: &f[Ticket System]&e You bought a Ticket for %0%.
+  buyowner: &f[Ticket System]&e %0% &ebought a Ticket for %1% on &f%2%&e.
+  map:
+    invalid: Invalid Ticket
+    expired: EXPIRED
+    uses:
+      '1': Single use
+      '-1': Unlimited uses
+      default: '%1%/%0% uses'
+waiter:
+  notfound: &cDidn't find a &e%0%&c sign on the track!
+pathfinding:
+  busy: &eLooking for a way to reach the destination...
+  failed: &cDestination &e%0%&c could not be reached from here!
+chest:
+  noperm: &cYou do not have permission to use the train storage chest!
+  noitem: &cYou are not currently holding a train storage chest item!
+  give: &aYou have been given a train storage chest item. Use it to store and spawn
+    trains
+  giveto: &aGave a train storage chest item to player %0%
+  update: &aYour train storage chest item has been updated
+  locked: &cYour train storage chest item is locked and can not pick up the train
+  pickup: &aTrain picked up and stored inside the item!
+  full: &cYour train storage chest item is full and can not pick up the train
+  imported: &aThe train was imported into the chest item
+  spawn:
+    success: &aTrain stored inside the item has been spawned on the rails
+    empty: &cTrain can not be spawned, no train is stored in the item
+    norail: &cTrain can not be spawned, clicked block is not a known rail
+    noraillook: &cTrain can not be spawned, not looking at any rail or too far away
+    railtooshort: &cTrain can not be spawned, rails not long enough to fit the train
+    blocked: &cTrain can not be spawned, no space on rails because another train is in
+      the way
+sign:
+  noperm: &cYou do not have permission to use this sign
