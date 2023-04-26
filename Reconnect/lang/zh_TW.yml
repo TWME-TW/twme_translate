@@ -1,0 +1,25 @@
+reconnectionTitle:
+  # 您可以使用動畫占位符為重新連接的文本添加動畫。
+  title: "&c重新啟動中%dots%"
+  subTitle: "&e請稍等。"
+  actionBar: "&b您將在 3 分鐘內&a自動重新連接&b"
+
+# 如果您不希望顯示任何標題或動作欄消息，請留空。
+connectionTitle:
+  title: "&a重新連接中%dots%"
+  subTitle: "&e請稍等。"
+  actionBar: "&a正在重新連接至伺服器%dots%"
+
+# 如果插件未能在時間限制內與先前的伺服器建立連接並將玩家連接到後備伺服器，
+# 則應顯示的文字。如果找不到後備伺服器，包括踢出訊息。
+# 如果您不希望顯示任何標題或動作欄消息，請留空。
+failTitle:
+  title: "&4連接失敗"
+  subTitle: "&c請稍後再次嘗試加入。"
+  actionBar: "&b您已被轉移到備用伺服器！"
+
+# 當插件無法重新連接用戶時找不到後備伺服器時的踢出訊息。
+failKickMessage: "&4重新連接失敗。請稍後再試。"
+
+# 配置版本（不要更改）
+version: 1
