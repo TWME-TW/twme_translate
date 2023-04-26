@@ -97,14 +97,14 @@ modeNames:
   - 南/北方向
   KingdomsArea:
   - 你的土地
-  - 敵人之地
-  - 盟友之地
+  - 敵方區域
+  - 盟友區域
   FactionsArea:
   - 你的土地
-  - 敵人之地
-  - 盟友之地
-  - 中立之地
-  - 休戰之地
+  - 敵方區域
+  - 盟友區域
+  - 中立地區
+  - 休戰地區
   GriefPreventionArea:
   - 框架
   - 邊
@@ -132,8 +132,8 @@ modeNames:
   - 邊
   TownyArea:
   - 你的土地
-  - 敵人之地
-  - 居民之地
+  - 敵方區域
+  - 居民區域
   CustomBiome: []
   DiceFurnitureArea:
   - 框架
@@ -190,19 +190,19 @@ command:
       args: ''
   cmi:
     help:
-      info: '&e顯示 CMI 選取區'
+      info: '&e顯示 CMI 選取區範圍'
       args: ''
   fc:
     help:
-      info: '&e顯示Factions派系圈地範圍'
+      info: '&e顯示 Factions 派系圈地範圍'
       args: (fixy)
   gd:
     help:
-      info: '&e顯示GriefDefender領地'
+      info: '&e顯示 GriefDefender 領地範圍'
       args: (fixy)
   gp:
     help:
-      info: '&e顯示GriefPrevention圈地範圍'
+      info: '&e顯示 GriefPrevention 領地範圍'
       args: (fixy)
   grid:
     help:
@@ -232,7 +232,7 @@ command:
       GreenColor: '&7綠色: &2[[number]]'
       RedColor: '&7紅色: &c[[number]]'
       BlueColor: '&7藍色: &9[[number]]'
-      ColorLinesEdit: '&e按Q改變顏色'
+      ColorLinesEdit: '&e按 Q 改變顏色'
       ColorRandom: '&e您可以從這裡選擇一種隨機顏色'
       ColorLines:
       - '&e使用滑鼠左/右鍵進行調整'
@@ -244,11 +244,11 @@ command:
       args: ''
   k:
     help:
-      info: '&e顯示Kingdoms王國圈地範圍'
+      info: '&e顯示 Kingdoms 領地範圍'
       args: (fixy)
   plot:
     help:
-      info: '&e顯示PlotSquared畫布'
+      info: '&e顯示 PlotSquared 畫布範圍'
       args: (fixy)
   point:
     help:
@@ -262,7 +262,7 @@ command:
       feedback: '&e已重載配置文件!'
   res:
     help:
-      info: '&e顯示Residence領地範圍'
+      info: '&e顯示 Residence 領地範圍'
       args: (residenceName) (-s) (-a)
     info:
       notIn: '&e你不在領地內'
@@ -287,25 +287,25 @@ command:
       Disabled: '&e可視化 &c已關閉'
   towny:
     help:
-      info: '&e顯示Towny城鎮圈地範圍'
+      info: '&e顯示 Towny 圈地範圍'
       args: (fixy)
   watch:
     help:
       info: '&e查看其他玩家的選區'
       args: '[stop/info/playername]'
     info:
-      Stop: '&e你停止了 &6[player] &e的選區'
-      CurrentList: '&e你正在觀看 &6[player] &e的選區'
+      Stop: '&e你已停止來觀看選取區'
+      CurrentList: '&e你正在觀看 &6[playerList] &e的選區'
       NotWatching: '&e你現在沒有在觀看其他玩家的選區'
       Started: '&e你開始觀看 &6[player] &e的選區'
   we:
     help:
-      info: '&e顯示WorldEdit選區或剪貼板內容'
+      info: '&e顯示 WorldEdit 選區或剪貼板內容'
       args: (paste) (lock/tp)
     info:
       teleported: '&e傳送到剪貼地點'
       noTp: '&e沒有保存的傳送點'
-      return: '&e想要返回剪貼地點請輸入 &6/sv we paste tp'
+      return: '&e想要返回剪貼地點請輸入 &6/svis we paste tp'
   wg:
     help:
       info: '&e顯示WorldGuard區域'
