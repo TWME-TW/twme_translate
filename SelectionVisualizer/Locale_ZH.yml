@@ -40,22 +40,22 @@ modes:
   SpawnerSphere: 刷怪籠
   Beacon: 烽火台
   CustomGrid: 網格
-  KingdomsArea: Kingdoms王國
-  FactionsArea: Factions派系
-  GriefPreventionArea: GriefPrevention領地
-  GriefDefenderArea: GriefDefender領地
-  PlotSquaredArea: PlotSquared畫布
-  WGCuboid: WorldGuard區域
-  WGPoly: WorldGuard多邊形
-  ResCuboid: Residence領地
-  ResSubCuboid: Residence子領地
-  TownyArea: Towny城鎮
+  KingdomsArea: Kingdoms 王國
+  FactionsArea: Factions 派系
+  GriefPreventionArea: GriefPrevention 領地
+  GriefDefenderArea: GriefDefender 領地
+  PlotSquaredArea: PlotSquared 畫布
+  WGCuboid: WorldGuard 區域
+  WGPoly: WorldGuard 多邊形
+  ResCuboid: Residence 領地
+  ResSubCuboid: Residence 子領地
+  TownyArea: Towny 城鎮
   CustomBiome: 生物群系
-  DiceFurnitureArea: Dice Furniture家具
-  WorldBorderArea: World Border世界邊界
-  ChunkyBorderArea: Chunky邊界
-  JobsArea: Jobs工作區域
-  CMIArea: CMI區域
+  DiceFurnitureArea: Dice Furniture 家具
+  WorldBorderArea: World Border 世界邊界
+  ChunkyBorderArea: Chunky 邊界
+  JobsArea: Jobs 工作區域
+  CMIArea: CMI 區域
 modeNames:
   WEPaste:
   - 框架
