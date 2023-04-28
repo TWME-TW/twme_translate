@@ -1,0 +1,138 @@
+# PremiumVanish v2.8.6 - Messages
+#
+# Information:
+# <..> means that .. is required; [..] means that .. is optional and can be left out; | INSIDE [] or <> stands for 'OR'
+# You can use the & character for color codes. Example: '&cThe color of this text would be red!'
+# You can use #XXXXXX for HEX color codes. Example: '#663EF6This text would be purple!'
+# You can use %p% to get the player's name. Example: '&4&l%p%, you aren't allowed to execute this command!'
+# You can use %other% to get the name of the target or cause
+# You can use %d% to get the player's display name. If you use Essentials then the display name contains the prefix too
+# You can use %tab% to get the player's name in the player list (TAB)
+# You can use %prefix% to get the player's prefix (Requires Vault)
+# You can use %suffix% to get the player's suffix (Requires Vault)
+# You can use %group% to get the player's group (Requires Vault)
+# You can use %nick% to get the player's nickname (Requires Essentials)
+# You can use %special{<text>|<hoverMessage>|[clickCommand]|[run|suggest]}% to create a clickable/hoverable
+#  message part for any message (only one per message possible)
+# You can use %time{<format>}% to get the current time (Uses the server's timezone)
+#  Replace <format> with the date format of your choice. Example: %time{hh:mma | yyyy/MM/dd}%
+#  More info: http://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
+# You can use %uselevel% and %seelevel% to get the player's respective vanish level (with LayeredPermissions)
+# There is also %health%, %maxhealth%, %tps%, %plain_tps%, %ping% and %plain_ping%
+# Some messages allow different, unique variables too
+#
+# NOTE: You can get WAY more placeholders by installing PlaceholderAPI or MVdWPlaceholderAPI
+#
+# You can also make any message dependent on a player's group by adding 'PerGroup' in front of the message:
+# PerGroupNoPermission:
+#   Admin: 'What, this should not happen you are the Admin!'
+#   Player: 'You have like no permissions anyway'
+#   Silence: ''
+#   Default: 'Access denied.'
+#
+# You can start a message with [JSON] to send JSON text directly.
+# Example: '[JSON]{"text":"Welcome %p%","color":"yellow"}'
+#
+# Empty messages will not be sent.
+# Using \n starts a new line.
+#
+# Important:
+# You must double single quotes if you want to use them inside a message.
+# You must NOT use any tab characters inside this file (indent key) otherwise YAML will spam your console with errors!
+# !! If there are errors in the console after editing this file paste it into an online YAML parser to see if
+# there are any YAML syntax errors !!
+Messages:
+  NoPermission: '&4沒有權限！你沒有被允許進行這個操作。'
+  InvalidUsage: '&c用法無效，你可以使用 %special{&6''/pv help''|&6點此獲得幫助！|/pv help|suggest}% &c來查看幫助。'
+  VanishMessage: '&e%p% 離開了遊戲。'
+  ReappearMessage: '&e%p% 加入了遊戲。'
+  VanishMessageWithPermission: '&a[PV] %p% 消失了。'
+  ReappearMessageWithPermission: '&a[PV] %p% 重新出現了。'
+  OnVanish: '&a你現在隱形了！（%time{hh:mm a}%）'
+  OnReappear: '&a你現在不再隱形了！（%time{hh:mm a}%）'
+  OnVanishCausedByOtherPlayer: '&a%other% 隱藏了你，你現在隱形了！'
+  OnReappearCausedByOtherPlayer: '&a%other% 顯示了你，你現在顯形了！'
+  AlreadyVanishedError: '&c你已經是隱形了！'
+  NotVanishedError: '&c你現在沒有隱形！'
+  AppliedSilentFlag: '  &e使用 -s 標誌：不顯示虛假加入/離開廣播。'
+  AppliedShowInTabFlag: '  &e使用 -t 標誌：在玩家列表中顯示。'
+  SilentJoinMessageForAdmins: '&a[PV] %p% 靜默加入了遊戲。'
+  SilentQuitMessageForAdmins: '&a[PV] %p% 靜默離開了遊戲。'
+  RemindingMessage: '&a你仍然隱形中！'
+  ListMessagePrefix: '&a隱形玩家：&f '
+  ActionBarMessage: '&a你對其他玩家隱形了！'
+  HideOtherMessage: '&a玩家 &e%other%&a 現在隱形了！'
+  ShowOtherMessage: '&a玩家 &e%other%&a 現在顯形了！'
+  CannotHideOtherPlayer: '&c你無權更改 %other% 的可見狀態！'
+  AlreadyInvisibleMessage: '&c玩家 &e%other%&c 已經是隱形的了！'
+  AlreadyVisibleMessage: '&c玩家 &e%other%&c 已經是顯形的了！'
+  PluginReloaded: '&a成功重載 PremiumVanish（%time%ms）！'
+  InvalidSender: '&c你必須是一名玩家才能執行該命令！'
+  PlayerNotOnline: '&c該玩家不在線上！'
+  PlayerNonExistent: '&c該玩家不存在！'
+  TeleportationFailed: '&c你的傳送失敗了，因為其他插件不允許這樣做。'
+  ToggledPickingUpItemsOn: '&e物品撿取已經開啟。'
+  ToggledPickingUpItemsOff: '&e物品撿取已經關閉。'
+  UpdateWarning: '&c警告！重新創建 %updates% 將重置 %changes%。如果您想繼續，請使用 &e/pv recreatefiles confirm&c。'
+  RecreatedConfig: '&a成功重新創建 %updates%！請檢查 %changes%。'
+  NoConfigUpdateAvailable: '&e你的 PremiumVanish-files 已經是最新的！'
+  RecreationRequiredMsg: '&c[PV] 你的 PremiumVanish-files 不是最新的。你可以使用 &e/pv recreatefiles&c 重新創建
+  或者點擊 %special{&6here|&6點此消除此消息！|/pv recreatefiles dismiss|suggest}% &c來消除此消息。
+  重新創建 PremiumVanish 的文件是可選的，可以讓你訪問插件的更新配置和消息。
+  如果你不想重新創建整個配置文件，你也可以手動複製新的消息/設置（參見資源描述中的默認配置文件）。'
+  DismissedRecreationWarning: '&e你不再收到關於此重新創建的通知。'
+  UndismissedRecreationWarning: '&e你現在收到有關此重新創建的通知。'
+  MustBeVanished: '&c你必須是隱形的才能使用此命令！'
+  ScoreboardDisabled: '&c計分板已在配置中禁用。'
+  NoTarget: '&c目前沒有可用的目標！'
+  NoLockedTarget: '&c目前沒有鎖定的目標！'
+  UnlockedPlayer: '&6你已成功解鎖你的目標！'
+  TargetedPlayer: '&e成功選擇了玩家 &a%other%&e！'
+  ScoreboardLockedTarget: '&e[L]'
+  ScoreboardNoTarget: '無'
+  ToggledScoreboardOn: '&e你的隱形計分板已經開啟。'
+  ToggledScoreboardOff: '&e你的隱形計分板已經關閉。'
+  PrintedStacktrace: '&e成功創建堆棧跟踪，請查看控制台！'
+  ChatMessageWarning: '&c[PV] 你的消息必須以 %char% 結尾才能發送！'
+  ChatMessageWarning2: '&c請點擊 %special{&6here|&6點此發送消息！|%message%/|suggest}% &c發送消息。'
+  ChatMessageDenied: '&c[PV] 你不能在隱形狀態下發送消息！ %special{&6[顯形]|&e點此顯形！|/pv off|suggest}%'
+  CommandAccessDenied: '&c[PV] 你不能在隱形狀態下使用此命令！'
+  CreativeItemDenied: '&c[PV] 你不能在隱形狀態下作弊！'
+  SpectatorTeleportDenied: '&c[PV] 你不能在隱形狀態下使用旁觀者菜單進行傳送！'
+  EntityHitDenied: '&c[PV] 你不能在隱形狀態下攻擊玩家或生物！'
+  BlockInteractDenied: '&c[PV] 你不能在隱形狀態下與這個方塊進行交互！'
+  BlockUseDenied: '&c[PV] 你不能在隱形狀態下使用這個方塊！'
+  BlockPlaceDenied: '&c[PV] 你不能在隱形狀態下放置方塊！'
+  BlockBreakDenied: '&c[PV] 你不能在隱形狀態下破壞方塊！'
+  InventoryModifyDenied: '&c[PV] 你不能在隱形狀態下編輯這個背包！'
+  MessageFailedAntiSpam: '&c[PV] 請放慢速度，等待至少 %time% 秒再次運行該命令。'
+  SwitchedGameMode: '&a[PV] 切換了遊戲模式（按下 Shift 鍵兩次）'
+  PluginOutdated: '&c[PV] 你當前使用的版本已經過時，新版本：''%new%''；當前版本：''%current%'''
+  NoDatabaseConnection: '&c[PV] 錯誤：無法連接到數據庫，更多信息請參見控制台。'
+  DynmapFakeJoin: '%d% 加入了遊戲'
+  DynmapFakeQuit: '%d% 離開了遊戲'
+  HelpHeader: '&e<&f---------------&6PremiumVanish-Help&f-----------------&e>'
+  HelpHint: '&7你可以懸停在命令上以顯示更多信息，並點擊命令將其插入到聊天中。'
+  HelpCommands: '&e命令：'
+  HelpCommandFormat: '%special{&a- &c%usage% &b%shortdesc%|&a%usage%\n&f%longdesc%\n&4權限:&e
+  %permission%\n&2控制台:&e %console%|%usage%|suggest}%'
+  HelpCustomCommandShortDescriptions:
+#    '/pv help': 'Custom short description; Keep the indentation, only remove the hashtag!'
+  HelpCustomCommandLongDescriptions:
+#    '/pv target <player>': 'Custom long description'
+  HelpConsoleYes: '是'
+  HelpConsoleNo: '否'
+  HelpOtherPermissions: '%special{&e> 其他權限 <|&a其他權限%permissions%}%'
+  HelpOtherPermissionsPermissionsFormat: '\n&c%permission% &e> &f%description%'
+  HelpFooter: ''
+  InvalidVanishLevel: "&c'%arg%' 不是有效的隱形等級（最大值=%maxlevel%）。"
+  SetVanishLevelDenied: "&c你無法將你的等級設置為 %level%！"
+  LayeredPermissionsDisabled: "&c配置中必須啟用層次權限。"
+  SetVanishLevel: "&a你將你的隱形等級設置為 %level%！"
+  DiscordSRVFakeQuit: "&e%p% 離開了遊戲"
+  DiscordSRVFakeJoin: "&e%p% 加入了遊戲"
+  PlaceholderIsVanishedYes: '是'
+  PlaceholderIsVanishedNo: '否'
+  PlaceholderVanishPrefix: '&a[V] &r'
+  PlaceholderVanishSuffix: ' &r&a[V]'
+MessagesVersion: 2.8.6
