@@ -1,0 +1,78 @@
+# |------------------------------------------------------------------------
+# |                       CommandPanels Config File
+# |                           By RockyHawk v5.2
+# |               https://www.spigotmc.org/resources/67788/
+# |
+# |------------------------------------------------------------------------
+config:
+  refresh-panels: true
+  refresh-delay: 20
+  panel-blocks: true
+  ingame-editor: true
+  hotbar-items: true
+  custom-commands: true
+  auto-register-commands: true
+  auto-update-panels: true
+  server-ping-timeout: 10
+  stop-sound: true
+  disabled-world-message: true
+  panel-snooper: false
+  allow-unsafe-mini-message: true
+  format:
+    tag: '&6[&bCommandPanels&6] '
+    perms: '&c沒有權限。'
+    reload: '&a已重新載入。'
+    nopanel: '&c找不到面板。'
+    noitem: '&c面板沒有可點擊的項目。'
+    notitem: '&c找不到該玩家。'
+    error: '&c配置文件中發現錯誤。'
+    offline: 離線
+    offlineHeadValue: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmU1Mjg2YzQ3MGY2NmZmYTFhMTgzMzFjYmZmYjlhM2MyYTQ0MjRhOGM3MjU5YzQ0MzZmZDJlMzU1ODJhNTIyIn19fQ==
+    input: '&cYour Input is too long!'
+input:
+  input-cancel: cancel
+  input-cancelled: '&c已取消！'
+  max-input-length: -1
+  input-message:
+  - '&a輸入指令所需的參數'
+  - '&c輸入 &4%cp-args% &c取消指令'
+hexcodes:
+  start_tag: '#'
+  end_tag: ''
+placeholders:
+  primary:
+    start: '%'
+    end: '%'
+  secondary:
+    start: '{'
+    end: '}'
+updater:
+  auto-update: false
+  minor-updates-only: true
+  update-checks: true
+purchase:
+  currency:
+    enable: true
+    success: '&a已成功購買，花費 $%cp-args%'
+    failure: '&c餘額不足！'
+  data:
+    enable: true
+    success: '&a已成功購買，花費 $%cp-args%'
+    failure: '&c餘額不足！'
+  tokens:
+    enable: true
+    success: '&a已成功購買，花費 %cp-args% 個代幣。'
+    failure: '&c代幣不足！'
+  coins:
+    enable: true
+    success: '&a已成功購買，花費 %cp-args% 枚硬幣。'
+    failure: '&c硬幣不足！'
+  item:
+    enable: true
+    success: '&a已成功售出 %cp-args% 個物品。'
+    failure: '&c物品不足！'
+  xp:
+    enable: true
+    success: '&a已成功購買，花費 %cp-args% 點經驗值。'
+    failure: '&c經驗值不足！'
+
