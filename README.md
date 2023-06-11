@@ -6,7 +6,7 @@
 
 ---
 
-Discord ID：TWME#5162
+Discord ID：@twme
 
 Plugins Drive 插件討論群：https://discord.gg/dTFNDzK7Nz
 
