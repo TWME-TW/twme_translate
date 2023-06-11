@@ -1,96 +1,96 @@
 classicDebugMode:
-  noPermission: "&cYou do not have permission to use the Classic Debug Mode."
+  noPermission: "&c您沒有權限使用經典除錯模式。"
   # Available replacements %block%
-  noProperties: "&c&lThis block has no properties."
+  noProperties: "&c&l此方塊沒有任何屬性。"
   # Available replacements %block% %property%
-  notApplicable: "&c&lYou cannot apply that property to this block."
+  notApplicable: "&c&l您無法將該屬性應用於此方塊。"
 copyDebugMode:
-  noPermission: "&cYou do not have permission to use the Copy Debug Mode."
-  emptyClipboard: "&c&lYour clipboard is empty."
+  noPermission: "&c您沒有權限使用複製除錯模式。"
+  emptyClipboard: "&c&l您的剪貼簿是空的。"
   # Available replacements %block%
-  noProperties: "&c&lThis block has no properties."
-  clearedClipboard: "&7Clipboard cleared."
-  noBlockToCopy: "&c&lYou have no block to copy."
+  noProperties: "&c&l此方塊沒有任何屬性。"
+  clearedClipboard: "&7剪貼簿已清空。"
+  noBlockToCopy: "&c&l您沒有要複製的方塊。"
   # Available replacements %block%
-  copiedAllProperties: "&7Copied all properties."
-  noBlockToPaste: "&c&lThere is no block to paste onto."
+  copiedAllProperties: "&7已複製所有屬性。"
+  noBlockToPaste: "&c&l沒有方塊可貼上。"
   # Available replacements %block%
-  noApplicableProperties: "&c&lThere are no applicable properties to apply to this block."
+  noApplicableProperties: "&c&l沒有適用的屬性可應用於此方塊。"
   # Available replacements %block%
-  pastedProperties: "&7Pasted applicable properties."
+  pastedProperties: "&7已貼上適用的屬性。"
 freezeDebugMode:
-  noPermission: "&cYou do not have permission to use the Freeze Debug Mode."
-  noFrozenBlocks: "&c&lYou do not have any frozen blocks."
+  noPermission: "&c您沒有權限使用凍結除錯模式。"
+  noFrozenBlocks: "&c&l您沒有任何凍結的方塊。"
   # Available replacements %unfrozen% %totalFrozen%
-  unfrozeBlocks: "&7Unfroze %unfrozen%/%totalFrozen% blocks."
+  unfrozeBlocks: "&7解凍了 %unfrozen%/%totalFrozen% 個方塊。"
 errors:
-  cannotBindDebugSession: "&cCannot bind DebugSession to DebugContext."
+  cannotBindDebugSession: "&c無法將 DebugSession 綁定到 DebugContext。"
 preferences:
   description:
-    sneakTimeout: "How quickly you need to double sneak to toggle the mode shifter on/off."
-    changeCooldown: "How long you must wait to change modes again."
-    sneakMinimum: "The least amount of time sneak needs to be maintained to toggle the mode shifter."
-    sneakMaximum: "The most amount of time sneak can be maintained to toggle the mode shifter."
-    shiftMode: "The shift mode to use when changing debug modes."
+    sneakTimeout: "需要快速連續潛行以切換模式轉換器開/關的時間。"
+    changeCooldown: "必須等待多長時間才能再次更改模式。"
+    sneakMinimum: "潛行需要維持的最短時間才能切換模式轉換器。"
+    sneakMaximum: "潛行可以維持的最長時間以切換模式轉換器。"
+    shiftMode: "切換除錯模式時要使用的轉換模式。"
 shifter:
   double:
     # Available replacements %timeRemaining%
-    timeRemaining: "&7Timeout: %timeRemaining%"
+    timeRemaining: "&7剩餘時間：%timeRemaining%"
     # Available replacements %timeRemaining%
-    cooldown: "&7Cooldown: %timeRemaining%"
+    cooldown: "&7冷卻時間：%timeRemaining%"
   hold:
     # Available replacements %timeRemaining%
-    holdTime: "&7Hold Time: %timeRemaining%"
+    holdTime: "&7保持時間：%timeRemaining%"
     # Available replacements %timeRemaining%
-    timeRemaining: "&7Time Remaining: %timeRemaining%"
+    timeRemaining: "&7剩餘時間：%timeRemaining%"
 command:
   info:
-    description: "Gives you a usable debug stick, or runs one of the many subcommands. Do '/dbs help' for a list of subcommands."
+    description: "給予您一個可使用的除錯棒，或執行其中一個許多子命令。輸入 '/dbs help' 以獲取子命令列表。"
   errors:
     # Available replacements %subcommand%
-    unknownSubcommand: "&cArgument &7'%subcommand%'&c provided did not match any subcommand. Do '/dbs help' for a list of subcommands."
+    unknownSubcommand: "&c提供的參數 &7'%subcommand%'&c 不符合任何子命令。輸入 '/dbs help' 以獲取子命令列表。"
     # Available replacements %preference%
-    unknownPreference: "&cUnknown preference &7'%preference%'&c."
+    unknownPreference: "&c未知偏好設定 &7'%preference%'&c。"
     # Available replacements %mode%
-    unknownDebugMode: "&c&l'%mode%' is not a valid debug mode."
+    unknownDebugMode: "&c&l'%mode%' 不是有效的除錯模式。"
     # Available replacements %mode%
-    noModePermission: "&cYou do not have permission to use that debug mode."
+    noModePermission: "&c您沒有權限使用該除錯模式。"
   messages:
-    givenDebugStick: "&7You now have the Debug Stick."
+    givenDebugStick: "&7您現在擁有了除錯棒。"
     # Available replacements %preference% %value%
-    preferenceSet: "&7Preference '%preference%' has been set to '%value%'."
-    pluginReloaded: "&7Plugin reloaded."
+    preferenceSet: "&7已將偏好設定 '%preference%' 設置為 '%value%'。"
+    pluginReloaded: "&7插件已重新載入。"
     # Available replacements %mode%
-    modeSet: "&7Your debug mode is now '%mode%'."
+    modeSet: "&7您的除錯模式現在是 '%mode%'。"
 
     helpCommand:
-      header: "&7<< EDS Command Help (Hover for details) >>"
-      dbs: "Gives you an Enhanced Debug Stick"
-      mode: "Lets you change debug shift modes"
-      about: "Gives information about the plugin"
-      reload: "Reloads the plugin"
+      header: "&7<< EDS 命令說明（懸停以查看詳細信息）>>"
+      dbs: "給予您一個增強版除錯棒"
+      mode: "讓您更改除錯模式轉換器"
+      about: "提供有關插件的信息"
+      reload: "重新載入插件"
       preference:
-        description: "Lets you change user preferences"
-        preference: "The preference to change"
-        value: "The value to set the preference to"
+        description: "讓您更改使用者偏好設定"
+        preference: "要更改的偏好設定"
+        value: "要設置的偏好值"
 
     aboutCommand:
-      header: "&7 << About the EnhancedDebugStick >>"
+      header: "&7 << 關於 EnhancedDebugStick >>"
       # Available replacements %apiVersion%
-      apiVersion: "&7  API Version: %apiVersion%"
+      apiVersion: "&7  API 版本：%apiVersion%"
       # Available replacements %pluginVersion%
-      pluginVersion: "&7  Plugin Version: %pluginVersion%"
+      pluginVersion: "&7  插件版本：%pluginVersion%"
       permissions:
-        ifEnabled: "(If command is enabled)"
-        header: "&7  Permissions: (Hover for details)"
-        dbs: "Permission to get the EnhancedDebugStick"
-        about: "Permission to get version and permission information"
-        classic: "Permission to use the Classic Debug Mode"
-        copy: "Permission to use the Copy Debug Mode"
-        freeze: "Permission to use the Freeze Debug Mode"
-        reload: "Permission to reload the plugin"
-        help: "Permission to get the command help"
-        preference: "Permission to change user preferences"
+        ifEnabled: "(如果命令已啟用)"
+        header: "&7  權限：（懸停以查看詳細信息）"
+        dbs: "獲取增強版除錯棒的權限"
+        about: "獲取版本和權限信息的權限"
+        classic: "使用經典除錯模式的權限"
+        copy: "使用複製除錯模式的權限"
+        freeze: "使用凍結除錯模式的權限"
+        reload: "重新載入插件的權限"
+        help: "獲取命令說明的權限"
+        preference: "更改使用者偏好設定的權限"
 
 
 

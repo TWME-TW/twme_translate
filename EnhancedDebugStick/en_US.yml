@@ -1,0 +1,97 @@
+classicDebugMode:
+  noPermission: "&cYou do not have permission to use the Classic Debug Mode."
+  # Available replacements %block%
+  noProperties: "&c&lThis block has no properties."
+  # Available replacements %block% %property%
+  notApplicable: "&c&lYou cannot apply that property to this block."
+copyDebugMode:
+  noPermission: "&cYou do not have permission to use the Copy Debug Mode."
+  emptyClipboard: "&c&lYour clipboard is empty."
+  # Available replacements %block%
+  noProperties: "&c&lThis block has no properties."
+  clearedClipboard: "&7Clipboard cleared."
+  noBlockToCopy: "&c&lYou have no block to copy."
+  # Available replacements %block%
+  copiedAllProperties: "&7Copied all properties."
+  noBlockToPaste: "&c&lThere is no block to paste onto."
+  # Available replacements %block%
+  noApplicableProperties: "&c&lThere are no applicable properties to apply to this block."
+  # Available replacements %block%
+  pastedProperties: "&7Pasted applicable properties."
+freezeDebugMode:
+  noPermission: "&cYou do not have permission to use the Freeze Debug Mode."
+  noFrozenBlocks: "&c&lYou do not have any frozen blocks."
+  # Available replacements %unfrozen% %totalFrozen%
+  unfrozeBlocks: "&7Unfroze %unfrozen%/%totalFrozen% blocks."
+errors:
+  cannotBindDebugSession: "&cCannot bind DebugSession to DebugContext."
+preferences:
+  description:
+    sneakTimeout: "How quickly you need to double sneak to toggle the mode shifter on/off."
+    changeCooldown: "How long you must wait to change modes again."
+    sneakMinimum: "The least amount of time sneak needs to be maintained to toggle the mode shifter."
+    sneakMaximum: "The most amount of time sneak can be maintained to toggle the mode shifter."
+    shiftMode: "The shift mode to use when changing debug modes."
+shifter:
+  double:
+    # Available replacements %timeRemaining%
+    timeRemaining: "&7Timeout: %timeRemaining%"
+    # Available replacements %timeRemaining%
+    cooldown: "&7Cooldown: %timeRemaining%"
+  hold:
+    # Available replacements %timeRemaining%
+    holdTime: "&7Hold Time: %timeRemaining%"
+    # Available replacements %timeRemaining%
+    timeRemaining: "&7Time Remaining: %timeRemaining%"
+command:
+  info:
+    description: "Gives you a usable debug stick, or runs one of the many subcommands. Do '/dbs help' for a list of subcommands."
+  errors:
+    # Available replacements %subcommand%
+    unknownSubcommand: "&cArgument &7'%subcommand%'&c provided did not match any subcommand. Do '/dbs help' for a list of subcommands."
+    # Available replacements %preference%
+    unknownPreference: "&cUnknown preference &7'%preference%'&c."
+    # Available replacements %mode%
+    unknownDebugMode: "&c&l'%mode%' is not a valid debug mode."
+    # Available replacements %mode%
+    noModePermission: "&cYou do not have permission to use that debug mode."
+  messages:
+    givenDebugStick: "&7You now have the Debug Stick."
+    # Available replacements %preference% %value%
+    preferenceSet: "&7Preference '%preference%' has been set to '%value%'."
+    pluginReloaded: "&7Plugin reloaded."
+    # Available replacements %mode%
+    modeSet: "&7Your debug mode is now '%mode%'."
+
+    helpCommand:
+      header: "&7<< EDS Command Help (Hover for details) >>"
+      dbs: "Gives you an Enhanced Debug Stick"
+      mode: "Lets you change debug shift modes"
+      about: "Gives information about the plugin"
+      reload: "Reloads the plugin"
+      preference:
+        description: "Lets you change user preferences"
+        preference: "The preference to change"
+        value: "The value to set the preference to"
+
+    aboutCommand:
+      header: "&7 << About the EnhancedDebugStick >>"
+      # Available replacements %apiVersion%
+      apiVersion: "&7  API Version: %apiVersion%"
+      # Available replacements %pluginVersion%
+      pluginVersion: "&7  Plugin Version: %pluginVersion%"
+      permissions:
+        ifEnabled: "(If command is enabled)"
+        header: "&7  Permissions: (Hover for details)"
+        dbs: "Permission to get the EnhancedDebugStick"
+        about: "Permission to get version and permission information"
+        classic: "Permission to use the Classic Debug Mode"
+        copy: "Permission to use the Copy Debug Mode"
+        freeze: "Permission to use the Freeze Debug Mode"
+        reload: "Permission to reload the plugin"
+        help: "Permission to get the command help"
+        preference: "Permission to change user preferences"
+
+
+
+
