@@ -1,161 +1,159 @@
 # !-----------------------------------------------------------------------------------------!
 #
-#                              Welcome to the localization file
+#                              歡迎來到本地化文件
 #
 # -------------------------------------------------------------------------------------------
 #
-#  This file contains most of the visual messages and notification player receives
-#  while interacting with this plugin. Simply edit them as you like and apply changes
-#  by restarting the server or reloading the plugin.
+#  此文件包含大部分玩家與本插件交互時接收到的視覺訊息和通知。只需按照您的喜好編輯它們，
+#  並通過重新啟動服務器或重新加載插件應用更改。
 #
-#  To not display a message, set it to 'none'
+#  要不顯示訊息，將其設置為 'none'
 #
-#  Messages supports variables in brackets {} and color codes with & character
+#  訊息支援使用大括號 {} 中的變數和通過 & 字符設置的顏色代碼。
 # !-----------------------------------------------------------------------------------------!
 
 # -------------------------------------------------------------------------------------------
-# Log-related messages.
+# 與日誌相關的訊息。
 # -------------------------------------------------------------------------------------------
 Log:
   Ignore_In_Room:
-    Type: IGNORED OPENING OF CHESTS IN CHEST ROOM
-    Console_Msg: '&e{0} opened {1} in chest room, ignoring..'
-    Log_Msg: '&eOpened {1} in chest room, ignoring..'
+    Type: 忽略在箱子房間開啟箱子
+    Console_Msg: '&e{0} 在箱子房間中開啟了 {1}，已忽略..'
+    Log_Msg: '&e在箱子房間中開啟了 {1}，已忽略..'
   Ignore_Metadata:
-    Type: IGNORED ITEMS DUE TO METADATA
-    Console_Msg: '&eIgnoring {0}''s {1} with {2} metadata'
-    Log_Msg: '&eIgnore {1} with {2} metadata'
+    Type: 忽略由於元數據而被禁止的物品
+    Console_Msg: '&e忽略 {0} 的 {1}，帶有 {2} 元數據'
+    Log_Msg: '&e忽略 {1}，帶有 {2} 元數據'
   Crashable:
-    Type: CRASHABLE ITEMS
-    Console_Msg: '&c[SEVERE] {0} had crashable item {1} (id {2}), removing..'
-    Log_Msg: '&c[SEVERE] Crashable item {1} id {2}'
+    Type: 可致當機的物品
+    Console_Msg: '&c[嚴重] {0} 擁有可致當機的物品 {1} (ID {2})，已移除..'
+    Log_Msg: '&c[嚴重] 可致當機的物品 {1} ID {2}'
   Illegal:
-    Type: BANNED ITEMS
-    Console_Msg: '&cTaking {0}''s banned item {1}'
-    Log_Msg: '&cTaking banned item {1}'
+    Type: 被禁止的物品
+    Console_Msg: '&c取走 {0} 的被禁止物品 {1}'
+    Log_Msg: '&c取走被禁止物品 {1}'
   Stack_Illegal:
-    Type: OVERSTACKED ITEMS
-    Console_Msg: '&cTaking {0}''s abnormally stacked item {1} {2}x'
-    Log_Msg: '&cAbnormally {2}x stacked {1}'
+    Type: 堆疊數量超過限制的物品
+    Console_Msg: '&c取走 {0} 異常堆疊的物品 {1} {2}個'
+    Log_Msg: '&c異常堆疊 {1}，數量 {2}個'
   Hacked_Potion:
-    Type: HACKED POTIONS
-    Console_Msg: '&cTaking {0}''s hacked {1} potion'
-    Log_Msg: '&cHacked {1} potion'
+    Type: 非法藥水
+    Console_Msg: '&c取走 {0} 的非法 {1} 藥水'
+    Log_Msg: '&c非法 {1} 藥水'
   Infinite_Potion:
-    Type: INFINITE POTIONS
-    Console_Msg: '&cTaking {0}''s infinite {1} potion'
-    Log_Msg: '&cInfinite {1} potion'
+    Type: 無限藥水
+    Console_Msg: '&c取走 {0} 的無限 {1} 藥水'
+    Log_Msg: '&c無限 {1} 藥水'
   Enchant_Unnatural:
-    Type: UNAPPLICABLE ENCHANTS
-    Console_Msg: '&cTaking {0}''s unnatural {1} enchant on {2}'
-    Log_Msg: '&cUnnatural {1} enchant on {2}'
+    Type: 不可應用的附魔
+    Console_Msg: '&c取走 {0} 的不自然的 {1} 附魔於 {2}'
+    Log_Msg: '&c不自然的 {1} 附魔於 {2}'
   Enchant_Too_High:
-    Type: TOO HIGH ENCHANTS
-    Console_Msg: '&cTaking {0}''s too high enchant {1} {2} on {3}'
-    Log_Msg: '&cToo high {1} enchant lvl {2} on {3}'
+    Type: 附魔等級過高
+    Console_Msg: '&c取走 {0} 的附魔等級過高的 {1} {2} 在 {3} 上'
+    Log_Msg: '&c附魔等級過高的 {1}，等級 {2} 在 {3} 上'
   Worldedit:
-    Type: WORLDEDIT
-    Console_Msg: '&cLimiting WorldEdit for {0}, skipped {1}x of {2}s above max limit
-      {3}x near {4}'
-    Log_Msg: '&cSkipping {1}x of {2}s above max limit {3}x near {4}'
+    Type: WorldEdit
+    Console_Msg: '&c限制 {0} 的 WorldEdit，跳過 {1}個超過最大限制的 {2}s，附近 {3}個 {4}'
+    Log_Msg: '&c跳過 {1}個超過最大限制的 {2}s，附近 {3}個 {4}'
   Above_Limit:
-    Type: ITEMS ABOVE LIMIT
-    Console_Msg: '&cTaking {0}x of {1}''s {2} above limit {3}x'
-    Log_Msg: '&c{0}x {2} above limit {3}x'
+    Type: 物品超過限制
+    Console_Msg: '&c取走 {0}x 的 {1}，超過限制 {3}x'
+    Log_Msg: '&c{0}x 的 {2}，超過限制 {3}x'
   Transaction:
-    Type: SHOP TRANSACTIONS
-    # The {1} is usually replaced by verbs from below
-    Console_Msg: '&7[{0}] {2} {1} {5} for {4}$ from {3}'
-    Log_Msg: '&7[{0}] {1} {5} for {4}$ from {3}'
+    Type: 商店交易
+    # {1}通常由下面的動詞取代
+    Console_Msg: '&7[{0}] {2} {1} {5} 給 {3}，價格 {4}$'
+    Log_Msg: '&7[{0}] {1} {5} 給 {3}，價格 {4}$'
 
 # -------------------------------------------------------------------------------------------
 # Messages relating to the chest room
 # -------------------------------------------------------------------------------------------
 Room:
   No_Permission:
-    Chest: "&cYou lack permissions to view chests' content."
-    Logs: "&cYou lack permissions to view player logs."
-    Cornerstone: "&cYou lack permissions to set chest room foundation."
-    Destroy: "&cThe chest room area is protected."
+    Chest: "&c您沒有權限查看箱子內容。"
+    Logs: "&c您沒有權限查看玩家日誌。"
+    Cornerstone: "&c您沒有權限設置箱子房間地基。"
+    Destroy: "&c箱子房間區域受到保護。"
 
-  Chest_Menu_Title: "&0Confiscated Chest View"
-  Browsing: "&2Browsing chest content. You may copy content to your inventory, but all changes are lost upon closing."
-  Cornerstone_Set: "&7You have now set the &2chest room &7foundation."
+  Chest_Menu_Title: "&0沒收箱子查看"
+  Browsing: "&2正在瀏覽箱子內容。您可以將內容複製到您的背包中，但所有更改都會在關閉後失效。"
+  Cornerstone_Set: "&7您已經設置了 &2箱子房間 &7地基。"
 
-  # WARNING: Changing this AFTER your room is created will break the signs for all older chests!
+  # 警告：在創建房間之後更改此內容將破壞所有舊箱子的標誌！
   Sign: |-
     -=-=-=-=-=-=-
-    &4Confiscate
+    &4沒收箱子
     {player}
     -=-=-=-=-=-=-
 
 # -------------------------------------------------------------------------------------------
-# Verbs used in the above messages in the transaction log.
+# 上面訊息中在交易記錄中使用到的動詞。
 # -------------------------------------------------------------------------------------------
 Verbs:
-  Buy: bought
-  Sell: sold
-  Gamble: gambled
-  Barter: bartered
+  Buy: 購買
+  Sell: 出售
+  Gamble: 賭博
+  Barter: 交換
 
 # -------------------------------------------------------------------------------------------
-# Commands-related messages.
+# 與指令相關的訊息。
 # -------------------------------------------------------------------------------------------
 Commands:
-  Invalid_Sub_Argument: "&cInvalid parameter. Run '/{label} {0}' for help."
-  Invalid_Argument_Multiline: "&cInvalid parameter. Usage:"
-  Label_Description: "&cDescription: {description}"
-  Label_Usage: "&cUsage:"
-  Label_Usages: "&cUsages:"
-  Error: "&4&lOups! &cThe command failed :( Check the console and report the error."
-  No_Console: "&cYou may only use this command as a player"
-  Invalid_Argument: "&cInvalid argument. Run &6/{label}&c for help."
-  Invalid_Param: "Unhandled param /{label} {param}"
+  Invalid_Sub_Argument: "&c參數無效。請輸入 '/{label} {0}' 以獲取幫助。"
+  Invalid_Argument_Multiline: "&c參數無效。用法："
+  Label_Description: "&c說明：{description}"
+  Label_Usage: "&c用法："
+  Label_Usages: "&c用法："
+  Error: "&4&l抱歉！ &c指令執行失敗 :( 請檢查控制台並報告錯誤。"
+  No_Console: "&c只有玩家可以使用這個指令"
+  Invalid_Argument: "&c無效的參數。請輸入 &6/{label}&c 以獲得幫助。"
+  Invalid_Param: "未處理的參數 /{label} {param}"
   Room:
-    Label: "{prefix} &6Commands to manage the chest room. Tip: Click signs in the chest room to view player's log."
-    Label_Tool: "Receive room foundation tool."
-    Label_Tp: "Be teleported to the room."
-    Cornerstone_Tool_Get: "&2Foundation tool obtained. Right click to setup the cornerstone for the chest room. The room builds itself further once something is caught. &cThe room builds from scratch, but previous room and player logs are preserved."
-    Not_Created: "&cThe room is not yet created. Use '/c room tool' to obtain the creation tool."
-    Player_Lacks_Chest: "&cPlayer '{player}' hasn't any chest in the chest room."
-    Teleported_Generic: "&2You have been teleported to chest room."
-    Teleported_Player: "&2You have been teleported to {player}'s chest room."
+    Label: "{prefix} &6用於管理箱子房間的指令。提示：點擊箱子房間中的標誌可查看玩家日誌。"
+    Label_Tool: "獲取房間地基工具。"
+    Label_Tp: "傳送到房間。"
+    Cornerstone_Tool_Get: "&2地基工具已獲得。右鍵單擊以設置箱子房間地基。當有東西被沒收時，房間會自動擴建。&c房間將從零開始建造，但之前的房間和玩家日誌將被保留。"
+    Not_Created: "&c房間尚未創建。請使用 '/c room tool' 獲取創建工具。"
+    Player_Lacks_Chest: "&c玩家 '{player}' 在箱子房間中沒有任何箱子。"
+    Teleported_Generic: "&2您已經傳送到箱子房間。"
+    Teleported_Player: "&2您已經傳送到 {player} 的箱子房間。"
   Inv:
-    Label: "{prefix} &6Commands to manage players' inventories."
-    Label_View: "Browse player's inventory content."
-    Label_Enderview: "Browse player's ender chest content."
-    Label_Armor: "Browse player's armor content."
+    Label: "{prefix} &6用於管理玩家背包的指令。"
+    Label_View: "瀏覽玩家的背包內容。"
+    Label_Enderview: "瀏覽玩家的終界箱內容。"
+    Label_Armor: "瀏覽玩家的裝備欄內容。"
 
-    Cannot_Browse_Own: "&cYou are already browsing your inventory!"
+    Cannot_Browse_Own: "&c您已經在瀏覽您的背包！"
 
-    Write_Online: "&2Granted live access to {player}'s {type} inventory."
-    Read_Online: "&2Granted read access to {player}'s {type} inventory."
-    Read_Offline: "&2Granted read access to {player}'s {type} inventory."
-    Read_Offline_Fail: "&cCould not read offline {type} inventory of {player}."
+    Write_Online: "&2已授予對 {player} 的 {type} 背包的實時訪問權限。"
+    Read_Online: "&2已授予對 {player} 的 {type} 背包的讀取權限。"
+    Read_Offline: "&2已授予對 {player} 的 {type} 背包的讀取權限。"
+    Read_Offline_Fail: "&c無法讀取 {player} 的離線 {type} 背包。"
 
-    Unsupported_Too_New: "&cPlayer '{player}' is offline. Viewing offline players' inventories is not supported on {version} for now."
-    Unsupported_Too_Old: "&cPlayer '{player}' is offline. Viewing offline players' inventories requires Minecraft {version} or newer."
-    Unsupported_Library_Missing: "&cPlayer '{player}' is offline. Please install PowerNBT to browse inventories of offline players."
+    Unsupported_Too_New: "&c玩家 '{player}' 離線。目前版本的 {version} 不支持查看離線玩家的背包。"
+    Unsupported_Too_Old: "&c玩家 '{player}' 離線。查看離線玩家的背包需要 Minecraft {version} 或更高版本。"
+    Unsupported_Library_Missing: "&c玩家 '{player}' 離線。請安裝 PowerNBT 以瀏覽離線玩家的背包。"
 
-    Menu_Armor_View: "&0Viewing {player}'s armor"
-    Menu_Read: "&0Reading {player}'s {type}."
+    Menu_Armor_View: "&0正在查看 {player} 的裝備欄"
+    Menu_Read: "&0正在讀取 {player} 的 {type}。"
 
-    Armor_Write: "&2Granted live access to {player}'s armor."
-    Armor_Offline_Read: "&2Granted read access to {player}'s armor."
-    Armor_Offline_Read_Fail: "&cCould not read offline armor content of {player}."
+    Armor_Write: "&2已授予對 {player} 的裝備欄的實時訪問權限。"
+    Armor_Offline_Read: "&2已授予對 {player} 的裝備欄的讀取權限。"
+    Armor_Offline_Read_Fail: "&c無法讀取 {player} 的離線裝備欄內容。"
 
   Log:
-    Label: "{prefix} &6Commands to manage player's log file where messages about their confiscated items are stored."
-    Label_View: "View player's logs."
-    Label_Stats: "View logs statistics."
-    Label_View_Command: "Confiscate Exempt View for {player}"
-    No_Logs: "&cThere are no logs created yet."
-    No_Logs_Player: "&cPlayer '{player}' has no stored logs."
-    Finished: "&7Log finished. Run &6/c room tp {player} &7to review their items."
-    Logs_Header: "&fConfiscate Exempt Statistics "
-    Logs_Line_Type: "&7There are {size} player files matching {type}."
-    Logs_Line_Generic: "&7There are {size} player files. Type &6/c stats [type] &7to specify type."
-    Unknown_Type: "&cUnknown log type '{type}'. Valid values: {available}"
+    Label: "{prefix} &6用於管理玩家日誌檔案的指令，其中存儲有有關其被沒收物品的訊息。"
+    Label_View: "查看玩家的日誌。"
+    Label_Stats: "查看日誌統計信息。"
+    Label_View_Command: "查看 {player} 的例外沒收內容"
+    No_Logs: "&c尚未創建任何日誌。"
+    No_Logs_Player: "&c玩家 '{player}' 沒有存儲的日誌。"
+    Finished: "&7日誌完成。運行 &6/c room tp {player} &7以檢視其物品。"
+    Logs_Header: "&f免除沒收日誌統計"
+    Logs_Line_Type: "&7有 {size} 個玩家檔案符合 {type}。"
+    Logs_Line_Generic: "&7有 {size} 個玩家檔案。輸入 &6/c stats [type] &7以指定類型。"
+    Unknown_Type: "&c未知的日誌類型 '{type}'。有效值：{available}"
 
   Reload:
     Success: "&6Confiscate {plugin_version} has been reloaded."
