@@ -1,8 +1,8 @@
-# Color Definition. 
+# 顏色定義。
 #
-# Versions 1.16 or lower do not support hexadecimal colors.
-# For these versions please include a <color-name>-alternative using regular color codes.
-# You are able to add your own color definitions in the same format.
+# 版本1.16或更低版本不支持十六進制顏色。
+# 對於這些版本，請使用常規顏色代碼包括一個<color-name>-alternative。
+# 您可以按照相同的格式添加自己的顏色定義。
 
 color-brackets: '#ed2424'
 color-brackets-alternative: '&4'
@@ -28,91 +28,77 @@ color-questionable-alternative: '&6'
 color-error: '#a31f1f'
 color-error-alternative: '&c'
 
-# Messages
+# 訊息
 #
-# You are able to change all messages here.
-# Make sure you keep the quotation marks around them.
-# You can change the color definition by changing the string between brackets.
+# 您可以在此更改所有訊息。
+# 請確保您在它們周圍保留引號。
+# 您可以通過更改方括號中的字符串來更改顏色定義。
 
-prefix: '<color-brackets>[<color-title>&lMotion Capture<color-brackets>]<color-gray>: '
-startup-message-success: Motion Capture has Successfully started
-startup-message-failed: <color-error>Motion Capture failed to load! &lShutting Down...
-version-control-supported: Running a <color-good>supported &fversion
-version-control-semi-supported: Running a <color-questionable>semi supported &fversion
-version-control-not-supported: <color-error>Running an unsupported version! Shutting
-  down plugin...
-invalid-permissions: <color-error>You have insufficient permissions!
+prefix: '<color-brackets>[<color-title>&l動態捕捉<color-brackets>]<color-gray>: '
+startup-message-success: Motion Capture已成功啟動
+startup-message-failed: <color-error>Motion Capture加載失敗！&l關閉中...
+version-control-supported: 執行<color-good>支持的&f版本
+version-control-semi-supported: 執行<color-questionable>半支持的&f版本
+version-control-not-supported: <color-error>正在運行不受支持的版本！關閉插件...
+invalid-permissions: <color-error>您的權限不足！
 
-recording-started: Started recording. Select the first slot of your inventory to stop
-  recording
-recording-ended: Stopped recording
-already-recording: You are already recording. Select the first item slot to stop recording
-unselect-first-slot: Please unselect the first slot of your inventory. This slot is
-  used to stop recording
+recording-started: 開始錄製。選擇您的第一個物品欄位以停止錄製
+recording-ended: 停止錄製
+already-recording: 您已經在錄製了。選擇第一個物品欄位以停止錄製
+unselect-first-slot: 請取消選擇您的物品欄的第一個欄位。此欄位用於停止錄製
 
-player-can-not-be-found: That player could not be found...
+player-can-not-be-found: 無法找到該玩家...
 
-recording-does-not-exist: That recording does not exist
-already-playing: That recording is already playing
-skin-failed: 'Failed to set the skin. Make sure to get a skin URL from mineskin.org
-  website. Example: https://minesk.in/85386ff6d6ff494db372e34d58418093'
-skin-success: Successfully changed the skin of this NPC
-name-success: Successfully changed the name of this NPC
+recording-does-not-exist: 該錄製不存在
+already-playing: 該錄製已經在播放中
+skin-failed: '無法設置皮膚。請確保從mineskin.org網站上獲取皮膚URL。例如：https://minesk.in/85386ff6d6ff494db372e34d58418093'
+skin-success: 成功更改此NPC的皮膚
+name-success: 成功更改此NPC的名稱
 
-not-playing: That recording is not currently playing
-freeze-frame-received: 'Successfully froze this frame. This means you can now use
-  the [place] command to place this frame across your maps. These will be persistant
-  and will always be there until you remove them. This freeze frame is stored as: '
-freeze-frame-not-found: That freeze frame could not be found
-freeze-frame-placed: Successfully placed that freeze frame
-freeze-frame-removed: Successfully removed nearby freeze frames (Radius of 2 blocks).
-  You have to rejoin the server in order for this to take effect
+not-playing: 該錄製當前未在播放
+freeze-frame-received: '已成功凍結此幀。這意味著您現在可以使用[place]命令將此幀放置在地圖上。這些將是持久的，直到您刪除它們。此凍結幀存儲為：'
+freeze-frame-not-found: 找不到該凍結幀
+freeze-frame-placed: 成功放置該凍結幀
+freeze-frame-removed: 成功刪除附近的凍結幀（2格半徑範圍內）。您必須重新加入服務器才能生效。
 
-set-pos1: Successfully set the first corner of the region to your current position
-set-pos2: Successfully set the second corner of the region to your current position
-cleared-region: Successfully cleared the region of this recording
+set-pos1: 已成功將區域的第一個角落設置為您當前的位置
+set-pos2: 已成功將區域的第二個角落設置為您當前的位置
+cleared-region: 已成功清除了此錄製的區域
 
-invalid-arguments: Invalid command arguments.
+invalid-arguments: 無效的命令參數。
 
-successfully-deleted: Successfully deleted that recording
-entity-type-does-not-exist: That entity type does not exist. Here is a list of all
-  available types
-type-success: Successfully changed the entity type for this recording
+successfully-deleted: 成功刪除了該錄製
+entity-type-does-not-exist: 該實體類型不存在。這裡有所有可用類型的列表
+type-success: 成功更改了該錄製的實體類型
 
-set-mode-regular: Changed mode to regular
-set-mode-cycle: Changed mode to cycle
-set-mode-flip: Changed mode to flip
-set-mode-reverse: Changed mode to reverse
-set-mode-reverse-cycle: Changed mode to reverse cycle
+set-mode-regular: 已將模式更改為常規模式
+set-mode-cycle: 已將模式更改為循環模式
+set-mode-flip: 已將模式更改為翻轉模式
+set-mode-reverse: 已將模式更改為反轉模式
+set-mode-reverse-cycle: 已將模式更改為反轉循環模式
 
-color-success: Successfully changed the color. This will affect the color of the wool
-  of sheep. If the NPC type is not sheep then this will not have any effect.
-color-invalid: Color has to be a value between 0 and 15
-not-numeric-color: Color has to be numeric!
+color-success: 成功更改了顏色。這將影響羊毛的顏色。如果NPC類型不是羊，則不會產生任何影響。
+color-invalid: 顏色必須是0到15之間的值
+not-numeric-color: 顏色必須是數字！
 
-set-exclusive-player-true: Turned exclusive player on. This recording will now only
-  be visible to the player who started it.
-set-exclusive-player-false: Turned exclusive player off. This recording will now be
-  visible to all players.
+set-exclusive-player-true: 打開了獨家播放器。這個錄製現在只會對啟動它的玩家可見。
+set-exclusive-player-false: 關閉了獨家播放器。現在所有玩家都可以看到這個錄製。
 
-set-auto-true: Turned auto play on. This recording will automatically play when the
-  server starts
-set-auto-false: Turned auto play off. This recording will no longer automatically
-  play when the server starts
+set-auto-true: 打開自動播放功能。當伺服器啟動時，這個錄製將自動播放。
+set-auto-false: 關閉自動播放功能。這個錄製將不再在伺服器啟動時自動播放。
 
-set-speed: Changed the speed at which this recording plays back.
-set-slow: Changed the speed at which this recording plays back. This recording has
-  been slowed down by the multiplier specified. This can not be reversed, use the
-  speed command to speed up the recording again if you so desire.
+set-speed: 更改錄製播放速度。
+set-slow: 更改錄製播放速度。這個錄製已經被指定的倍速減慢。這個操作無法撤銷，如果需要，請使用 speed 命令再次加速錄製。
 
-commandblock-1: This command will allow you to replay a recording from a command block
+commandblock-1: 此命令將允許您從指令方塊重播錄製內容。
 
-# Headers
-command-header: '          <color-brackets>✤<color-title>&l Motion Capture V2 <color-brackets>✤'
-command-header-1: '              <color-subtitle>&lCommands <color-brackets>(&f<color-gray>%page%&8/&f<color-gray>%max_pages%<color-brackets>)'
+# 標題
+command-header: '          <color-brackets>✤<color-title>&l 動作捕捉 V2 <color-brackets>✤'
+command-header-1: '              <color-subtitle>&l指令 <color-brackets>(&f<color-gray>%page%&8/&f<color-gray>%max_pages%<color-brackets>)'
 
-# These can not be longer than 40 characters!
-scoreboard-header: <color-brackets>[<color-title>Recording<color-brackets>]
-scoreboard-framecount: '<color-subtitle>Frame Count: '
-scoreboard-animation-length: '<color-subtitle>Animation Length (s): '
-scoreboard-stop-recording: <color-gray>Select slot 1 to stop
+# 以下內容不得超過 40 個字元！
+scoreboard-header: <color-brackets>[<color-title>錄製<color-brackets>]
+scoreboard-framecount: '<color-subtitle>幀數: '
+scoreboard-animation-length: '<color-subtitle>錄製長度（秒）: '
+scoreboard-stop-recording: <color-gray>選擇第一個插槽停止錄製
+
