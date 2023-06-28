@@ -55,99 +55,94 @@ Messages:
   player_disguise: 你偽裝成一個 &e%disguise%
   disguise_complete: 你現在看起來像一個固定的方塊了！
   disguise_error: 你不能在這裡變成固定的方塊！
-  player_earn_coins: You have earned &b%earnedCoins% &6coins for playing!
-  game_time_remaining: Game is ending in &b%seconds% &6seconds!
-  team_win: '%team% &6have won the game!'
-  no_global_lobby: There is no global lobby that have been set!
-  not_enough_coins: You dont have enough coins to do that!
-  not_enough_karma: You dont have enough karma to do that!
-  successful_purchase: You have successfully purchased an item!
-  coins_modified: Your coins has been modified!
-  exp_modified: Your exp has been modified!
-  modifier_changed: Your coins/exp modifier has been updated!
-  hiders_receive_items: You have received your protective items!
-  blocked_cmd: You may not use non hide and seek commands!
-  time_skip: Time has been skipped to &b%seconds%
-  cant_vote_any_more: You have reached your maximum amount of votes!
-  player_vote: You have successfully voted for the map &b%map%
-  map_select: The map &e%map% &6has won the voting!
-  powerups_spawn: '&e&l&nPowerups have spawned!'
-  powerup_about_to_spawn: '&e&l&nPowerups &ewill spawn after &6%seconds%'
-  powerup_pick: '&b&n&l%player% &epicked up a powerup!'
-  powerup_nospace: You dont have enough space around you!
-  powerup_effect_seekers: '&b&n&l%player% &eused his powerup on the seekers!'
-  no_disguise_selector: You do not have the disguise selector perk purchased, so you
-    may not use this category
-  rankup_broadcast: '&e%player% &6has ranked up to &a%rank%'
-  stats_reset: '&cYour stats has been reset!'
-  player_spectate: You are now in spectating mode, you can left click players to see
-    their point of view! and shift click to seperate your view of theirs
-  anti_seeker_quit_activation: '&cAll seekers have left the game! due to that, &e%player%
-    &cwas selected randomly to become the next seeker!'
-  fireworks_unavailable: You may not use fireworks right now!
-  coins_powerup: You have earned &a%coins% &6coins! &bcongratulations
-  trail_equip: 'You have selected the trail: %trail%'
-  seekers_release: '&4&l&kA&e&l Seekers have been released! &4&l&kA'
+  player_earn_coins: 恭喜您獲得 &b%earnedCoins% &6個遊戲幣！
+  game_time_remaining: 遊戲將在 &b%seconds% &6秒後結束！
+  team_win: '%team% &6贏得了遊戲！'
+  no_global_lobby: 目前沒有設置全局大廳！
+  not_enough_coins: 您的遊戲幣不足，無法執行此操作！
+  not_enough_karma: 您的Karma不足，無法執行此操作！
+  successful_purchase: 您已成功購買物品！
+  coins_modified: 您的遊戲幣已被修改！
+  exp_modified: 您的經驗值已被修改！
+  modifier_changed: 您的遊戲幣/經驗值加成已更新！
+  hiders_receive_items: 您已獲得保護物品！
+  blocked_cmd: 您無法使用非隱藏與尋找相關的指令！
+  time_skip: 時間已跳轉至 &b%seconds% &6秒！
+  cant_vote_any_more: 您已達到最大投票數量！
+  player_vote: 您已成功為地圖 &b%map% &6投票！
+  map_select: 地圖 &e%map% &6已經贏得了投票！
+  powerups_spawn: '&e&l&n道具已經生成！'
+  powerup_about_to_spawn: '&e&l&n道具將在 &6%seconds% &e秒後生成！'
+  powerup_pick: '&b&n&l%player% &e撿起了一個道具！'
+  powerup_nospace: 您周圍的空間不足，無法使用此道具！
+  powerup_effect_seekers: '&b&n&l%player% &e將道具使用在尋找者身上！'
+  no_disguise_selector: 您尚未購買偽裝選擇器權限，無法使用此類別！
+  rankup_broadcast: '&e%player% &6已晋升為 &a%rank% &6等級！'
+  stats_reset: '&c您的統計數據已被重置！'
+  player_spectate: 您已切換至旁觀模式，您可以點擊玩家查看他們的視角，並按下Shift鍵分離您的視角。
+  anti_seeker_quit_activation: '&c所有尋找者都已離開遊戲！因此，&e%player% &c被隨機選中成為下一個尋找者！'
+  fireworks_unavailable: 您目前無法使用煙火！
+  coins_powerup: 恭喜您獲得 &a%coins% &6個遊戲幣！
+  trail_equip: '您已選擇了軌跡： %trail%'
+  seekers_release: '&4&l&kA&e&l 尋找者已釋放！ &4&l&kA'
 Game-States:
-  Waiting: '&aWaiting'
-  Starting: '&eStarting'
-  INGAME: '&cINGAME'
-  ENDING: '&cENDING'
-  DISABLED: '&cDISABLED'
+  Waiting: '&a等待中'
+  Starting: '&e即將開始'
+  INGAME: '&c進行中'
+  ENDING: '&c結束中'
+  DISABLED: '&c已禁用'
 Inventories:
-  Arenas: '&4&nArenas'
-  Shop: '&4&nShop'
-  Disguise-Selector: '&4Choose your disguise!'
-  Hider-Chance: '&4&nHider chance'
-  Special-Blocks: '&4&nSpecial blocks'
-  Perks: '&4&nPerks'
-  Perk-Type-Selector: '&4&nSelect group'
-  Karma-Shop: '&4&nKarma shop'
-  Block-Purchase: '&4Confirm block purchase!'
-  Trails: '&6Trails'
+  Arenas: '&4&n競技場列表'
+  Shop: '&4&n商店'
+  Disguise-Selector: '&4選擇偽裝'
+  Hider-Chance: '&4&n隱藏者機率'
+  Special-Blocks: '&4&n特殊方塊'
+  Perks: '&4&n特殊權限'
+  Perk-Type-Selector: '&4&n選擇權限分類'
+  Karma-Shop: '&4&nKarma商店'
+  Block-Purchase: '&4確認方塊購買'
+  Trails: '&6軌跡'
 Shop:
   Hider-Chance:
-    name: '&cHider chance'
+    name: '&c隱藏者機率'
     lore:
-    - '&7You can modify how'
-    - '&7likely you will become'
-    - '&7a hider here!'
+    - '&7在這裡您可以調整'
+    - '&7成為隱藏者的機率！'
   Special-Blocks:
-    name: '&eSpecial blocks!'
+    name: '&e特殊方塊'
     lore:
-    - '&7You can buy some extra'
-    - '&7blocks to disguise as'
-    - '&7here'
+    - '&7在這裡您可以購買'
+    - '&7額外的偽裝方塊！'
   Perks:
-    name: '&aPerks!'
+    name: '&a特殊權限'
     lore:
-    - '&7You can buy some extra'
-    - '&7perks that will help you'
-    - '&7win here'
+    - '&7在這裡您可以購買'
+    - '&7可幫助您贏得遊戲的'
+    - '&7額外權限！'
   Karma-Shop:
-    name: '&dKarma shop!'
+    name: '&dKarma商店'
     lore:
-    - '&7You can use your karma'
-    - '&7in buying stuff here!'
+    - '&7在這裡您可以使用Karma'
+    - '&7購買各種物品！'
 Match-Earnings:
 - '&3      ========================'
 - ' '
-- '&b          Total Coins earned: &6%game_coins%'
+- '&b          獲得的遊戲幣: &6%game_coins%'
 - ' '
-- '&b           Total Exp earned: &6%game_exp%'
+- '&b           獲得的經驗值: &6%game_exp%'
 - ' '
-- '&b             Fireworks used: &6%game_fireworks%'
+- '&b             使用的煙火: &6%game_fireworks%'
 - ' '
-- '&e                Play time: &6%game_playtime%'
+- '&e                遊戲時間: &6%game_playtime%'
 - ' '
 - '&3      ========================'
 Achievement-Unlock:
 - ' '
-- '%randomcolor%    &m----------&4&k AA&e Achievement unlocked &4&kAA %randomcolor%&m----------'
+- '%randomcolor%    &m----------&4&k AA&e 解鎖成就 &4&kAA %randomcolor%&m----------'
 - ' '
 - '            - &6%name% &8(&a%description%&8)'
-- '            - &aCongratulations!'
-- '            - &d+ %earnedCoins% coins %modifier%'
+- '            - &a恭喜您!'
+- '            - &d+ %earnedCoins% 遊戲幣 %modifier%'
 - ' '
 Signs:
   prefix: '&3[躲貓貓]'
@@ -174,15 +169,12 @@ Arena-Vote-Item-Lore:
 - ' '
 - '&c右鍵取消投票'
 Lobby-Book:
-- '&4&m->&0&l Hide And Seek \n\n&0This is a very fun minigame that splits players
-  into two teams, each team has their own objective that they must fulfill in order
-  to win! all your statistics will be saved so dont worry about quiting at any time'
-- '&4&m->&0&l Seekers mission \n\n&cSeekers &0have to locate hidden players around
-  the map, but that is no easy thing to do, becase players are very well disguised
-  and look like a block that fits with the surroundings'
-- '&4&m->&0&l Hiders mission \n\n&9Hiders &0must find a good spot in the map that
-  fits the block they are disguised as, otherwise they will probably get caught! stay
-  alive till the end of the game to win and gain coins'
-- '&4&m->&0&l Coins \n\n&0This plugin offers a custom coins system which allows players
-  to purchase various things, coins can be earned by killing players or simply winning
-  the game, hiders can also get coins by using their fireworks'
+- '&4&m->&0&l 捉迷藏 \n\n&0這是一個非常有趣的小遊戲，將玩家分成兩個隊伍，
+  每個隊伍都有自己的目標，必須完成它們才能贏得勝利！您的所有統計數據都會被保存，
+  所以不用擔心隨時退出遊戲。'
+- '&4&m->&0&l 追擊者的任務 \n\n&c追擊者&0必須在地圖上找到隱藏的玩家，
+  但這並不是一件簡單的事情，因為玩家都非常善於偽裝，看起來就像與周圍環境相符的方塊。'
+- '&4&m->&0&l 藏匿者的任務 \n\n&9藏匿者&0必須在地圖上找到一個適合他們偽裝方塊的好地方，
+  否則他們很可能會被發現！保持生存直到遊戲結束以贏得勝利和遊戲幣。'
+- '&4&m->&0&l 遊戲幣 \n\n&0此插件提供了一個自定義遊戲幣系統，允許玩家購買各種物品，
+  遊戲幣可以通過殺死玩家或贏得遊戲來獲得，藏匿者還可以通過使用他們的煙火來獲得遊戲幣。'
