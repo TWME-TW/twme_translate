@@ -64,8 +64,11 @@ build_deactivated_self: "%prefix% &7Build mode was &cdeactivated&7."
 build_deactivated_other_sender: "%prefix% &7Build mode &8[&7for %target%&8] &7was &cdeactivated&7."
 build_deactivated_other_target: "%prefix% &7Build mode was &cdeactivated &8[&7by %sender%&8]&7."
 
-# /buildSystem
-buildsystem_title: "%prefix% &7&nBuildSystem Help:"
+# /buildsystem
+buildsystem_usage: "%prefix% &7Usage: &b/buildsystem [page]"
+buildsystem_invalid_page: "%prefix% &cInvalid page."
+buildsystem_title_with_page: "%prefix% &7&nBuildSystem Help:&8 (&7%page%/%max%&8)"
+buildsystem_permission: "&7&nPermission&8: &b%permission%"
 buildsystem_back: "&7Teleport to your previous location."
 buildsystem_blocks: "&7Opens a menu with secret blocks."
 buildsystem_build: "&7Puts you into 'build mode'."
@@ -91,7 +94,7 @@ config_reloaded: "%prefix% &7The config was reloaded."
 # /explosions
 explosions_usage: "%prefix% &7Usage: &b/explosions <world>"
 explosions_unknown_world: "%prefix% &cUnknown world."
-explosions_world_not_imported: "%prefix% &cWorld must be imported » /worlds import <world>"
+explosions_world_not_imported: "%prefix% &cWorld must be imported: /worlds import <world>"
 explosions_activated: "%prefix% &7Explosions in &b%world% &7were &aactivated&7."
 explosions_deactivated: "%prefix% &7Explosions in &b%world% &7were &cdeactivated&7."
 explosions_deactivated_in_world: "%prefix% &7Explosions in &b%world% &7are currently &cdeactivated&7."
@@ -109,16 +112,16 @@ gamemode_set_other: "%prefix% &b%target%&7's gamemode was set to &b%gamemode%&7.
 # /physics
 physics_usage: "%prefix% &7Usage: &b/physics <world>"
 physics_unknown_world: "%prefix% &cUnknown world."
-physics_world_not_imported: "%prefix% &cWorld must be imported » /worlds import <world>"
+physics_world_not_imported: "%prefix% &cWorld must be imported: /worlds import <world>"
 physics_activated: "%prefix% &7Physics in &b%world% &7were &aactivated&7."
 physics_activated_all: "%prefix% &7Physics in &ball worlds &7were &aactivated&7."
 physics_deactivated: "%prefix% &7Physics in &b%world% &7were &cdeactivated&7."
 physics_deactivated_in_world: "%prefix% &7Physics in &b%world% &7are currently &cdeactivated&7."
 
-# /noAI
+# /noai
 noai_usage: "%prefix% &7Usage: &b/noai <world>"
 noai_unknown_world: "%prefix% &cUnknown world."
-noai_world_not_imported: "%prefix% &cWorld must be imported » /worlds import <world>"
+noai_world_not_imported: "%prefix% &cWorld must be imported: /worlds import <world>"
 noai_deactivated: "%prefix% &7Entity AIs in &b%world% &7were &aactivated&7."
 noai_activated: "%prefix% &7Entity AIs in &b%world% &7were &cdeactivated&7."
 noai_activated_in_world: "%prefix% &7Entity AIs in &b%world% &7are currently &cdeactivated&7."
@@ -133,7 +136,7 @@ spawn_usage: "%prefix% &7Usage: &b/spawn"
 spawn_admin: "%prefix% &7Usage: &b/spawn [set/remove]"
 spawn_teleported: "%prefix% &7You were teleported to the &bspawn&7."
 spawn_unavailable: "%prefix% &cThere isn't a spawn to teleport to."
-spawn_world_not_imported: "%prefix% &cWorld must be imported » /worlds import <world>"
+spawn_world_not_imported: "%prefix% &cWorld must be imported: /worlds import <world>"
 spawn_set: "%prefix% &7Spawn set to &b%x% %y% %z% &7in &b%world%&7."
 spawn_remove: "%prefix% &7The spawn was removed."
 
@@ -219,20 +222,25 @@ worlds_help_import: "&7Import a world."
 worlds_help_importall: "&7Import all worlds at once."
 worlds_help_unimport: "&7Unimport a world."
 
-worlds_import_usage: "%prefix% &7Usage: &b/worlds import <world> [-g <generator>]"
+worlds_import_usage: "%prefix% &7Usage: &b/worlds import <world> [-g <generator> | -c <creator>]"
 worlds_import_unknown_world: "%prefix% &cUnknown world."
-worlds_import_world_is_imported: "%prefix% &7This world is already imported."
+worlds_import_world_is_imported: "%prefix% &cThis world is already imported."
 worlds_import_unknown_generator: "%prefix% &cUnknown generator."
+worlds_import_player_not_found: "%prefix% &cThat player was not found."
+worlds_import_newer_version: "%prefix% &b%world% &7was created in a &cnewer version &7of Minecraft. Unable to import."
 worlds_import_started: "%prefix% &7The import of &b%world% &7has started..."
 worlds_import_invalid_character: "%prefix% &7Unable to import &c%world%&7. %prefix% &7&oName contains invalid character: &c%char%"
 worlds_import_finished: "%prefix% &7The world was &asuccessfully &7imported."
 
-worlds_importall_usage: "%prefix% &7Usage: &b/worlds importall"
+worlds_importall_usage: "%prefix% &7Usage: &b/worlds importall [-g <generator> | -c <creator>]"
 worlds_importall_no_worlds: "%prefix% &cNo worlds were found."
 worlds_importall_started: "%prefix% &7Beginning import of &b%amount% &7worlds..."
 worlds_importall_delay: "%prefix% &8➥ &7Delay between each world: &b%delay%s&7."
+worlds_importall_already_started: "%prefix% &cAll worlds are already being imported."
+worlds_importall_player_not_found: "%prefix% &cThat player was not found."
 worlds_importall_invalid_character: "%prefix% &c✘ &7&o%world% &7contains invalid character &8(&c%char%&8)"
-worlds_importall_world_already_imported: "%prefix% &c&l✗ &7World already imported: &b%world%"
+worlds_importall_world_already_imported: "%prefix% &c✘ &7World already imported: &b%world%"
+worlds_importall_newer_version: "%prefix% &c✘ &b%world% &7was created in a &cnewer version &7of Minecraft"
 worlds_importall_world_imported: "%prefix% &a✔ &7World imported: &b%world%"
 worlds_importall_finished: "%prefix% &7All worlds have been &asuccessfully &7imported."
 
@@ -303,7 +311,7 @@ worlds_setpermission_unknown_world: "%prefix% &cUnknown world."
 worlds_setpermission_error: "%prefix% &cPlease try again."
 worlds_setpermission_set: "%prefix% &b%world%&7's permission was successfully changed."
 
-worlds_setspawn_world_not_imported: "%prefix% &cWorld must be imported » /worlds import <world>"
+worlds_setspawn_world_not_imported: "%prefix% &cWorld must be imported: /worlds import <world>"
 worlds_setspawn_world_spawn_set: "%prefix% &b%world%&7's spawnpoint was set."
 
 worlds_removespawn_world_not_imported: "%prefix% &cWorld must be imported » /worlds import <world>"
@@ -311,10 +319,10 @@ worlds_removespawn_world_spawn_removed: "%prefix% &b%world%&7's spawnpoint was r
 
 worlds_tp_usage: "%prefix% &7Usage: &b/worlds tp <world>"
 worlds_tp_unknown_world: "%prefix% &cUnknown world."
-worlds_tp_world_not_imported: "%prefix% &cWorld must be imported » /worlds import <world>"
+worlds_tp_world_not_imported: "%prefix% &cWorld must be imported: /worlds import <world>"
 worlds_tp_entry_forbidden: "%prefix% &cYou are not allowed to enter this world!"
 
-worlds_unimport_usage: "%prefix% &7Usage: &b/worlds import <world> [-g <generator>]"
+worlds_unimport_usage: "%prefix% &7Usage: &b/worlds unimport <world>"
 worlds_unimport_unknown_world: "%prefix% &cUnknown world."
 worlds_unimport_players_world: "%prefix% &7&oThe world you were in was unimported."
 worlds_unimport_finished: "%prefix% &b%world% &7has been &aunimported&7."
@@ -374,6 +382,25 @@ world_item_lore_edit:
  - "&8- &7&oLeft click&8: &7Teleport"
  - "&8- &7&oRight click&8: &7Edit"
 world_item_builders_builder_template: "&b%builder%&7, "
+world_sort_title: "&bSort"
+world_sort_name_az: "&8» &7&oName (A-Z)"
+world_sort_name_za: "&8» &7&oName (Z-A)"
+world_sort_project_az: "&8» &7&oProject (A-Z)"
+world_sort_project_za: "&8» &7&oProject (Z-A)"
+world_sort_status_not_started: "&8» &7&oNot Started &8&o➡ &7&oFinished"
+world_sort_status_finished: "&8» &7&oFinished &8&o➡ &7&oNot Started"
+world_sort_date_newest: "&8» &7&oCreation date (Newest)"
+world_sort_date_oldest: "&8» &7&oCreation date (Oldest)"
+world_filter_title: "&bFilter"
+world_filter_mode_none: "&8» &7&oNone"
+world_filter_mode_starts_with: "&8» &7&oStarts with: &b&o%text%"
+world_filter_mode_contains: "&8» &7&oContains: &b&o%text%"
+world_filter_mode_matches: "&8» &7&oMatches: &b&o%text%"
+world_filter_lore:
+ - ""
+ - "&8- &7&oLeft click&8: &7Change text"
+ - "&8- &7&oRight click&8: &7Change mode"
+ - "&8- &7&oShift click&8: &7Reset to default"
 
 # World Archive
 archive_title: "&3» &8World Archive"
@@ -602,27 +629,27 @@ settings_change_design_lore:
 
 settings_clear_inventory_item: "&bClear Inventory"
 settings_clear_inventory_lore:
- - "&7&oWhen enabled a player's"
+ - "&7&oWhen enabled, a player's"
  - "&7&oinventory is cleared on join."
 
 settings_disableinteract_item: "&bDisable Block Interactions"
 settings_disableinteract_lore:
- - "&7&oWhen enabled interactions with"
+ - "&7&oWhen enabled, interactions with"
  - "&7&ocertain blocks are disabled."
 
 settings_hideplayers_item: "&bHide Players"
 settings_hideplayers_lore:
- - "&7&oWhen enabled all players"
- - "&7&oonline will be hidden."
+ - "&7&oWhen enabled, all online"
+ - "&7&oplayers will be hidden."
 
 settings_instantplacesigns_item: "&bInstant Place Signs"
 settings_instantplacesigns_lore:
- - "&7&oWhen enabled signs are placed"
+ - "&7&oWhen enabled, signs are placed"
  - "&7&owithout opening the text input."
 
 settings_keep_navigator_item: "&bKeep Navigator"
 settings_keep_navigator_lore:
- - "&7&oWhen enabled the navigator"
+ - "&7&oWhen enabled, the navigator"
  - "&7&owill remain in your inventory"
  - "&7&oeven when you clear it."
 
@@ -633,22 +660,22 @@ settings_new_navigator_lore:
 
 settings_nightvision_item: "&bNightvision"
 settings_nightvision_lore:
- - "&7&oWhen enabled you will"
+ - "&7&oWhen enabled, you will"
  - "&7&oreceive permanent night vision."
 
 settings_no_clip_item: "&bNoClip"
 settings_no_clip_lore:
- - "&7&oWhen flying against a wall you"
+ - "&7&oWhen flying against a wall, you"
  - "&7&owill be put into spectator mode."
 
 settings_open_trapdoors_item: "&bOpen Trapdoors"
 settings_open_trapdoors_lore:
- - "&7&oWhen right clicking iron (trap-)doors"
+ - "&7&oWhen right clicking iron (trap-)doors,"
  - "&7&othey will be opened/closed."
 
 settings_placeplants_item: "&bPlace Plants"
 settings_placeplants_lore:
- - "&7&oWhen enabled you can place"
+ - "&7&oWhen enabled, you can place"
  - "&7&oplants on every kind of block."
 
 settings_scoreboard_item: "&bScoreboard"
@@ -662,56 +689,14 @@ settings_scoreboard_disabled_lore:
 
 settings_slab_breaking_item: "&bSlab breaking"
 settings_slab_breaking_lore:
- - "&7&oWhen breaking double slabs"
+ - "&7&oWhen breaking double slabs,"
  - "&7&oonly one half will be broken."
 
 settings_spawnteleport_item: "&bSpawn Teleport"
 settings_spawnteleport_lore:
- - "&7&oWhen enabled you will be"
+ - "&7&oWhen enabled, you will be"
  - "&7&oteleported to the spawn"
  - "&7&oif it has been set."
-
-settings_worldsort_item: "&bWorld Sort"
-settings_worldsort_lore_alphabetically_name_az:
- - "&7&oChange the way worlds are"
- - "&7&osorted in the navigator."
- - ""
- - "&7&nCurrently&7: &b&oName (A-Z)"
-settings_worldsort_lore_alphabetically_name_za:
- - "&7&oChange the way worlds are"
- - "&7&osorted in the navigator."
- - ""
- - "&7&nCurrently&7: &b&oName (Z-A)"
-settings_worldsort_lore_alphabetically_project_az:
- - "&7&oChange the way worlds are"
- - "&7&osorted in the navigator."
- - ""
- - "&7&nCurrently&7: &b&oProject (A-Z)"
-settings_worldsort_lore_alphabetically_project_za:
- - "&7&oChange the way worlds are"
- - "&7&osorted in the navigator."
- - ""
- - "&7&nCurrently&7: &b&oProject (Z-A)"
-settings_worldsort_lore_status_not_started:
- - "&7&oChange the way worlds are"
- - "&7&osorted in the navigator."
- - ""
- - "&7&nCurrently&7: &b&oStatus (Not Started ➡ Finished)"
-settings_worldsort_lore_status_finished:
- - "&7&oChange the way worlds are"
- - "&7&osorted in the navigator."
- - ""
- - "&7&nCurrently&7: &b&oStatus (Finished ➡ Not Started)"
-settings_worldsort_lore_date_newest:
- - "&7&oChange the way worlds are"
- - "&7&osorted in the navigator."
- - ""
- - "&7&nCurrently&7: &b&oCreation date (Newest)"
-settings_worldsort_lore_date_oldest:
- - "&7&oChange the way worlds are"
- - "&7&osorted in the navigator."
- - ""
- - "&7&nCurrently&7: &b&oCreation date (Oldest)"
 
 # Change Design
 design_title: "&3» &8Change Design"
