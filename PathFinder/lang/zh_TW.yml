@@ -1,238 +1,232 @@
-# MESSAGE FILE
+# 訊息檔案
 # ----------------------------------------
-# Styling:
-# To style your messages, you must use the MiniMessage formatting.
-# It is a tag based styling method like html or xml and allows you to
-# create hover messages and click actions within your language file!
+# 樣式：
+# 若要對您的訊息進行樣式設定，您必須使用 MiniMessage 的格式。
+# 它是一種基於標籤的樣式方法，類似於 HTML 或 XML，可以讓您在語言檔案中創建懸停訊息和點擊操作！
 #
-# Example: <green>I am a green Text. <hover:show_text:"Hello there">Hover me</hover><green>
+# 範例： <green>我是綠色文字。 <hover:show_text:"Hello there">懸停於此</hover><green>
 #
-# All information on how to use the formatting can be found here:
+# 關於如何使用格式設定的所有資訊都可以在這裡找到：
 # https://docs.adventure.kyori.net/minimessage/format.html
 #
-# Additionally to the default MiniMessage, you have the following possibilities:
-# <prefix> will always be replaced with the prefix message. (general.prefix)
-# <msg:[message-key]> or <message:[message-key]> will replaced with another already interpreted messages
-#     Using <msg:color_red> and referring to a translation `color_red: <#ff0000>` will not work.
-#     The color will be interpreted as component before being inserted.
-# <ins:[message-key]> will insert a message as raw MiniMessage.
-#     So instead of <msg:color_red>, you can use
-#     <col:color_red> to insert the value of color_red ("<#ff0000>") as simple string.
-#     With this functionality, you can add a style table at the top of your language file and change colors for the
-#     whole file easily.
+# 此外，除了預設的 MiniMessage 格式，您還有以下選擇：
+# <prefix> 將始終替換為前綴訊息（general.prefix）。
+# <msg:[message-key]> 或 <message:[message-key]> 將被替換為其他已解釋的訊息。
+#     使用 <msg:color_red> 並引用翻譯 `color_red: <#ff0000>` 將不起作用。
+#     該顏色將在插入之前被解釋為元件。
+# <ins:[message-key]> 將以原始 MiniMessage 形式插入一條訊息。
+#     因此，不需要使用 <msg:color_red>，您可以使用
+#     <col:color_red> 以簡單字串的方式插入 color_red 的值（"<#ff0000>"）。
+#     利用此功能，您可以在語言檔案的頂部添加樣式表，輕鬆更改整個檔案的顏色。
 # ----------------------------------------
 
-prefix: <offset>PathFinder</offset> <dark_gray>»</dark_gray> <gray>
+
+prefix: <offset>路徑尋找器</offset> <dark_gray>»</dark_gray> <gray>
 general:
-  'true': <offset_light>true</offset_light>
-  'false': <offset_light>false</offset_light>
-  # The numberformat can be specified as argument for x, y and z. Check out https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html for more information on number formatting.
-  # Valid placeholders: <x>, <y>, <z>
+  'true': <offset_light>是</offset_light>
+  'false': <offset_light>否</offset_light>
+  # 數字格式可以作為 x、y 和 z 的參數進行指定。詳細資訊請參閱 https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html。
+  # 有效的佔位符: <x>, <y>, <z>
   vector: <offset_light><x:#.##><gray>,</gray> <y:#.##><gray>,</gray> <z:#.##></offset_light>
-  # Valid placeholders: <permission>
+  # 有效的佔位符: <permission>
   permission: <main><permission></main>
-  # Valid placeholders: <particle>, <meta>
+  # 有效的佔位符: <particle>, <meta>
   particle: <main><particle> <gray>(<meta>)</gray></main>
   'null': <main>null</main>
-  gui:
-    accept:
-      name: <green>Accept</green>
-      lore: ''
-    warning:
-      name: <yellow>Warning
-      lore: ''
-  selection:
-    # Valid placeholders: <amount>
-    nodes: <white><u><amount> Nodes</u></white>
-    # Valid placeholders: <amount>
-    groups: <white><u><amount> Groups</u></white>
-    # Valid placeholders: <amount>
-    roadmaps: <white><u><amount> Groups</u></white>
-  target_reached: <ins:prefix>Target reached.
-  target_discovered:
-    # Valid placeholders: <roadmap>, <percent>
-    percent: '<roadmap>: <percent>'
-    # Valid placeholders: <name>, <roadmaps>
-    title: ''
-    # Valid placeholders: <name>, <roadmaps>
-    subtitle: You found <name>
-    # Valid placeholders: <name>
-    actionbar: 'Discovered: <name>'
+gui:
+  accept:
+    name: <green>接受</green>
+    lore: ''
+  warning:
+    name: <yellow>警告
+    lore: ''
+selection:
+  # 有效的佔位符: <amount>
+  nodes: <white><u><amount> 個節點</u></white>
+  # 有效的佔位符: <amount>
+  groups: <white><u><amount> 個群組</u></white>
+  # 有效的佔位符: <amount>
+  roadmaps: <white><u><amount> 個路線圖</u></white>
+target_reached: <ins:prefix>已到達目標。
+target_discovered:
+  # 有效的佔位符: <roadmap>, <percent>
+  percent: '<roadmap>: <percent>'
+  # 有效的佔位符: <name>, <roadmaps>
+  title: ''
+  # 有效的佔位符: <name>, <roadmaps>
+  subtitle: 您發現了 <name>
+  # 有效的佔位符: <name>
+  actionbar: '已發現: <name>'
 command:
   reload:
-    # Valid placeholders: <error>
-    error: '<negative>An error occurred while reloading: <error></negative>'
+    # 有效的佔位符: <error>
+    error: '<negative>重新載入時發生錯誤: <error></negative>'
     success:
-      # Valid placeholders: <ms>
-      general: <ins:prefix>Successfully reloaded in <offset_light><ms></offset_light><offset>ms</offset>.
-      # Valid placeholders: <ms>
-      language: <ins:prefix>Successfully reloaded language in <offset_light><ms></offset_light><offset>ms</offset>.
-      # Valid placeholders: <ms>
-      effects: <ins:prefix>Successfully reloaded effects in <offset_light><ms></offset_light><offset>ms</offset>.
-      # Valid placeholders: <ms>
-      config: <ins:prefix>Successfully reloaded config files in <offset_light><ms></offset_light><offset>ms</offset>.
+      # 有效的佔位符: <ms>
+      general: <ins:prefix>成功重新載入，耗時 <offset_light><ms></offset_light><offset>毫秒</offset>。
+      # 有效的佔位符: <ms>
+      language: <ins:prefix>成功重新載入語言文件，耗時 <offset_light><ms></offset_light><offset>毫秒</offset>。
+      # 有效的佔位符: <ms>
+      effects: <ins:prefix>成功重新載入特效，耗時 <offset_light><ms></offset_light><offset>毫秒</offset>。
+      # 有效的佔位符: <ms>
+      config: <ins:prefix>成功重新載入設定檔案，耗時 <offset_light><ms></offset_light><offset>毫秒</offset>。
   help: |
-    <gradient:black:dark_gray:black>------------ <offset>Pathfinder</offset> ------------</gradient>
-    <gray>See this tutorial for a full description on
-    <gray>On how to get started with the plugin.
+    <gradient:black:dark_gray:black>------------ <offset>路徑尋找器</offset> ------------</gradient>
+    <gray>查看這個教學以了解該插件的完整描述
+    <gray>以及如何開始使用該插件。
 
-    <white>Commands:</white>
-    <dark_gray>» </dark_gray><gray><warm>/roadmap</warm> - Edit roadmaps, that group together waypoints
-    <dark_gray>» </dark_gray><gray><warm>/nodegroup</warm> - Edit nodegroups, that add behaviour to groups of nodes
-    <dark_gray>» </dark_gray><gray><warm>/node</warm> - Create, edit and delete nodes
-    <dark_gray>» </dark_gray><gray><warm>/pathvisualizer</warm> - Edit pathvisualizers, to specify particles and more
-    <dark_gray>» </dark_gray><gray><warm>/gps</warm> - Find the shortest way to a nodegroup
-# Valid placeholders: <authors>, <version>, <api-version>
+    <white>指令：</white>
+    <dark_gray>» </dark_gray><gray><warm>/roadmap</warm> - 編輯路線圖，將路徑點分組
+    <dark_gray>» </dark_gray><gray><warm>/nodegroup</warm> - 編輯節點群組，為一組節點添加行為
+    <dark_gray>» </dark_gray><gray><warm>/node</warm> - 創建、編輯和刪除節點
+    <dark_gray>» </dark_gray><gray><warm>/pathvisualizer</warm> - 編輯路徑可視化器，指定粒子效果等
+    <dark_gray>» </dark_gray><gray><warm>/gps</warm> - 找到到達節點群組的最短路徑
+# 有效的佔位符: <authors>, <version>, <api-version>
   info: |
-    <gradient:black:dark_gray:black>------------ <offset>Pathfinder</offset> ------------</gradient>
-    <dark_gray>» </dark_gray><gray>Authors: <warm><authors></warm>
-    <dark_gray>» </dark_gray><gray>Current version: <warm><version></warm>
-    <dark_gray>» </dark_gray><gray>Main Game version: <warm><api-version></warm>
-    <dark_gray>» </dark_gray><gray>Spigot-Page: <warm><u><click:open_url:"https://www.spigotmc.org/resources/gps-pathfinder-minecraft-pathfinding-tool.104961/">https://www.spigotmc.org/...</click></u></warm>
+    <gradient:black:dark_gray:black>------------ <offset>路徑尋找器</offset> ------------</gradient>
+    <dark_gray>» </dark_gray><gray>作者： <warm><authors></warm>
+    <dark_gray>» </dark_gray><gray>當前版本： <warm><version></warm>
+    <dark_gray>» </dark_gray><gray>主要遊戲版本： <warm><api-version></warm>
+    <dark_gray>» </dark_gray><gray>Spigot 頁面： <warm><u><click:open_url:"https://www.spigotmc.org/resources/gps-pathfinder-minecraft-pathfinding-tool.104961/">https://www.spigotmc.org/...</click></u></warm>
 commands:
   roadmap:
-    # Valid placeholders: <name>, <key>, <name-format>, <curve-length>, <path-visualizer>, <nodes>, <groups>
+    # 有效的佔位符: <name>, <key>, <name-format>, <curve-length>, <path-visualizer>, <nodes>, <groups>
     info: |
-      <offset>Roadmap:</offset> <name> <gray>(<key>)</gray>
-      <dark_gray>» </dark_gray><gray>Name: <main><hover:show_text:"Click to change name"><click:suggest_command:'/roadmap edit <key> name <name-format>'><name-format></click></hover></main>
-      <dark_gray>» </dark_gray><gray>Nodes: <nodes></gray>
-      <dark_gray>» </dark_gray><gray>Groups: <groups></gray>
-      <dark_gray>» </dark_gray><offset>Visualizer:</offset>
-      <dark_gray>  » </dark_gray><gray>Path Visualizer: <main><hover:show_text:"Click to change path-visualizer"><click:suggest_command:'/roadmap edit <key> visualizer <path-visualizer>'><path-visualizer></click></hover>
-      <dark_gray>  » </dark_gray><gray>Default Curve length: <main><hover:show_text:"Click to change curve length"><click:suggest_command:'/roadmap edit <key> curve-length <curve-length>'><curve-length></click></hover>
+      <offset>路線圖：</offset> <name> <gray>(<key>)</gray>
+      <dark_gray>» </dark_gray><gray>名稱： <main><hover:show_text:"點擊以更改名稱"><click:suggest_command:'/roadmap edit <key> name <name-format>'><name-format></click></hover></main>
+      <dark_gray>» </dark_gray><gray>節點數量： <nodes></gray>
+      <dark_gray>» </dark_gray><gray>節點群組數量： <groups></gray>
+      <dark_gray>» </dark_gray><offset>可視化器：</offset>
+      <dark_gray>  » </dark_gray><gray>路徑可視化器： <main><hover:show_text:"點擊以更改路徑可視化器"><click:suggest_command:'/roadmap edit <key> visualizer <path-visualizer>'><path-visualizer></click></hover>
+      <dark_gray>  » </dark_gray><gray>預設曲線長度： <main><hover:show_text:"點擊以更改曲線長度"><click:suggest_command:'/roadmap edit <key> curve-length <curve-length>'><curve-length></click></hover>
     create:
-      # Valid placeholders: <name>
-      success: <ins:prefix><gray>Successfully created Roadmap <offset><name></offset>.</gray>
-      fail: <negative>Could not create Roadmap. Check out console for details.
-    # Valid placeholders: <roadmap>
-    delete: <ins:prefix><gray>Successfully deleted Roadmap <offset><roadmap></offset>.</gray>
+      # 有效的佔位符: <name>
+      success: <ins:prefix><gray>成功創建路線圖 <offset><name></offset>。</gray>
+      fail: <negative>無法創建路線圖。請查看控制台以獲取詳細資訊。
+    # 有效的佔位符: <roadmap>
+    delete: <ins:prefix><gray>成功刪除路線圖 <offset><roadmap></offset>。</gray>
     list:
-      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
-      header: <gradient:black:dark_gray:black>------------ <offset>Roadmaps</offset>
+      # 有效的佔位符: <page>, <next-page>, <prev-page>, <pages>
+      header: <gradient:black:dark_gray:black>------------ <offset>路線圖</offset>
         ------------</gradient>
-      # Valid placeholders: <key>, <name>, <world>, <discoverable>, <find-distance>, <curve-length>, <path-visualizer>
+      # 有效的佔位符: <key>, <name>, <world>, <discoverable>, <find-distance>, <curve-length>, <path-visualizer>
       entry: <dark_gray> » </dark_gray><name> <gray>(<key>)</gray>
-      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
+      # 有效的佔位符: <page>, <next-page>, <prev-page>, <pages>
       footer: <gradient:black:dark_gray:black>------------<gray> <click:run_command:/roadmap
         list <prev-page>>←</click> <page>/<pages> <click:run_command:/roadmap list
         <next-page>>→</click> </gray>-------------</gradient>
     editmode:
-      specify_roadmap: '<negative>Please specify a roadmap: /roadmap editmode <roadmap>'
-      # Valid placeholders: <roadmap>
-      activated: <ins:prefix>Editmode deactivated for <offset><roadmap></offset>.
-    # Valid placeholders: <name>, <discovery>
-    force_find: <ins:prefix>Player <name> discovered <discovery>.
-    # Valid placeholders: <name>, <discovery>
-    force_forget: <ins:prefix>Player <name> forgot about <discovery>.
-    # Valid placeholders: <key>, <roadmap>, <old-value>, <name-format>, <value>
-    set_name: <ins:prefix>Successfully set name for <offset><roadmap></offset> to
-      <display-name>. (<pre><name-format></pre>)</gray>
-    # Valid placeholders: <key>, <roadmap>, <old-value>, <value>
-    set_curve_length: <ins:prefix>Successfully set curve length for <offset><roadmap></offset>
-      to <offset_light><value></offset_light>
-    # Valid placeholders: <key>, <roadmap>, <old-value>, <value>
-    set_visualizer: <ins:prefix>Successfully set visualizer for <offset><roadmap></offset>
-      from <old-value> to <value>.</gray>
+      specify_roadmap: '<negative>請指定一個路線圖：/roadmap editmode <roadmap>'
+      # 有效的佔位符: <roadmap>
+      activated: <ins:prefix>已停用 <offset><roadmap></offset> 的編輯模式。
+    # 有效的佔位符: <name>, <discovery>
+    force_find: <ins:prefix>玩家 <name> 發現了 <discovery>。
+    # 有效的佔位符: <name>, <discovery>
+    force_forget: <ins:prefix>玩家 <name> 忘記了 <discovery>。
+    # 有效的佔位符: <key>, <roadmap>, <old-value>, <name-format>, <value>
+    set_name: <ins:prefix>成功將 <offset><roadmap></offset> 的名稱設為
+      <display-name>。（<pre><name-format></pre>）</gray>
+    # 有效的佔位符: <key>, <roadmap>, <old-value>, <value>
+    set_curve_length: <ins:prefix>成功將 <offset><roadmap></offset> 的曲線長度設為 <offset_light><value></offset_light>。
+    # 有效的佔位符: <key>, <roadmap>, <old-value>, <value>
+    set_visualizer: <ins:prefix>成功將 <offset><roadmap></offset> 的可視化器從 <old-value> 更改為 <value>。</gray>
   node:
-    # Valid placeholders: <id>
-    create: '<ins:prefix>Successfully created Node #<id>.'
-    # Valid placeholders: <selection>
-    delete: <ins:prefix>Successfully deleted <selection>.
-    # Valid placeholders: <selection>, <location>
-    moved: <ins:prefix><gray>Moved <selection> to <location>.</gray>
-    # Valid placeholders: <id>, <roadmap>, <groups>, <position>, <world>, <curve-length>, <edges>
+    # 有效的佔位符: <id>
+    create: '<ins:prefix>成功創建節點 #<id>。'
+    # 有效的佔位符: <selection>
+    delete: <ins:prefix>成功刪除<selection>。
+    # 有效的佔位符: <selection>, <location>
+    moved: <ins:prefix><gray>移動了<selection>到<location>。</gray>
+    # 有效的佔位符: <id>, <roadmap>, <groups>, <position>, <world>, <curve-length>, <edges>
     info: |
-      <offset>Node #<id></offset> <gray>(<roadmap>)</gray>
-      <dark_gray>» </dark_gray><gray>Position: <main><position></main> (<world>)
-      <dark_gray>» </dark_gray><gray>Curve-Length: <main><curve-length></main>
-      <dark_gray>» </dark_gray><gray>Edges: <edges>
-      <dark_gray>» </dark_gray><gray>Groups: <groups>
-    info_no_selection: <negative>No nodes found to display. Check your selection query.</negative>
-    # Valid placeholders: <selection>, <length>
-    set_curve_length: <ins:prefix>Curve-length set to <length> for <selection>.
-    # Valid placeholders: <nodes>, <group>
-    add_group: <ins:prefix>Added <nodes> to group <group>.
-    # Valid placeholders: <nodes>, <group>
-    remove_groups: <ins:prefix>Removed <nodes> from group <group>.
-    # Valid placeholders: <nodes>
-    clear_groups: <ins:prefix>Cleared all groups for <nodes>.
+      <offset>節點 #<id></offset> <gray>(<roadmap>)</gray>
+      <dark_gray>» </dark_gray><gray>位置: <main><position></main> (<world>)
+      <dark_gray>» </dark_gray><gray>曲線長度: <main><curve-length></main>
+      <dark_gray>» </dark_gray><gray>邊緣: <edges>
+      <dark_gray>» </dark_gray><gray>群組: <groups>
+    info_no_selection: <negative>找不到要顯示的節點。請檢查您的選擇查詢。</negative>
+    # 有效的佔位符: <selection>, <length>
+    set_curve_length: <ins:prefix>已將<selection>的曲線長度設置為<length>。
+    # 有效的佔位符: <nodes>, <group>
+    add_group: <ins:prefix>已將<group>添加到節點<nodes>。
+    # 有效的佔位符: <nodes>, <group>
+    remove_groups: <ins:prefix>已從節點<group>中刪除<group>。
+    # 有效的佔位符: <nodes>
+    clear_groups: <ins:prefix>已清除<group>的所有群組。
     list:
-      # Valid placeholders: <roadmap-key>, <roadmap-name>, <page>, <next-page>, <prev-page>, <pages>
-      header: <gradient:black:dark_gray:black>------------ <offset>Waypoints</offset>
+      # 有效的佔位符: <roadmap-key>, <roadmap-name>, <page>, <next-page>, <prev-page>, <pages>
+      header: <gradient:black:dark_gray:black>------------ <offset>路徑點</offset>
         ------------</gradient>
-      # Valid placeholders: <id>, <position>, <world>, <curve-length>, <edges>, <groups>
-      element: '<dark_gray>» </dark_gray><hover:show_text:''<gray>Groups: <groups><newline><gray>Edges
-        to: <edges><newline><gray>Click for more information''><click:run_command:/waypoint
-        info "@n[id=<id>]"><gray>#<id> at <position> (<world>)'
-      # Valid placeholders: <roadmap-key>, <roadmap-name>, <page>, <next-page>, <prev-page>, <pages>
+      # 有效的佔位符: <id>, <position>, <world>, <curve-length>, <edges>, <groups>
+      element: '<dark_gray> » </dark_gray><hover:show_text:''<gray>群組: <groups><newline><gray>邊緣
+        至: <edges><newline>點擊以獲取更多信息''><click:run_command:/waypoint info "@n[id=<id>]"><gray>#<id>
+        在 <position> (<world>)'
+      # 有效的佔位符: <roadmap-key>, <roadmap-name>, <page>, <next-page>, <prev-page>, <pages>
       footer: <gradient:black:dark_gray:black>------------<gray> <click:run_command:/waypoint
         list "<selector>" <prev-page>>←</click> <page>/<pages> <click:run_command:/waypoint
         list "<selector>" <next-page>>→</click> </gray>-------------</gradient>
     connect:
-      # Valid placeholders: <start>, <end>
-      success: <ins:prefix>Connected <start> to <end>.
-      # Valid placeholders: <start>, <end>
-      identical: '<negative>Nodes cannot be connected to themselves: <start>>'
-      # Valid placeholders: <start>, <end>
-      already_connected: <negative><start> and <end> are already connected.
+      # 有效的佔位符: <start>, <end>
+      success: <ins:prefix>已將<start>連接到<end>。
+      # 有效的佔位符: <start>, <end>
+      identical: '<negative>無法將節點連接到自身：<start>>'
+      # 有效的佔位符: <start>, <end>
+      already_connected: <negative><start>和<end>已經連接。
     disconnect:
-      # Valid placeholders: <start>, <end>
-      success: <ins:prefix>Disconnected <start> from <end>.
+      # 有效的佔位符: <start>, <end>
+      success: <ins:prefix>已將<start>從<end>斷開。
   node_group:
-    create_fail: <negative>Could not create Nodegroup. Check out console for details.
-    # Valid placeholders: <name>
-    already_exists: <negative>A node group with this namespaced key (<name>) already
-      exists.</negative>
-    # Valid placeholders: <name>
-    create: '<ins:prefix><gray>Node group created: <name>.</gray>'
-    # Valid placeholders: <name>
-    delete: '<ins:prefix><gray>Node group deleted: <name>.</gray>'
+    create_fail: <negative>無法創建節點組。請檢查控制台以獲取詳細信息。</negative>
+    # 有效的佔位符: <name>
+    already_exists: <negative>已存在具有此命名空間鍵（<name>）的節點組。</negative>
+    # 有效的佔位符: <name>
+    create: '<ins:prefix><gray>節點組已創建：<name>。</gray>'
+    # 有效的佔位符: <name>
+    delete: '<ins:prefix><gray>節點組已刪除：<name>。</gray>'
     list:
-      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
-      header: <gradient:black:dark_gray:black>------------ <offset>Node-Groups</offset>
+      # 有效的佔位符: <page>, <next-page>, <prev-page>, <pages>
+      header: <gradient:black:dark_gray:black>------------ <offset>節點組</offset>
         ------------</gradient>
-      # Valid placeholders: <page>, <key>, <name>, <size>, <discoverable>
+      # 有效的佔位符: <page>, <key>, <name>, <size>, <discoverable>
       line: <dark_gray> » </dark_gray><name> <gray>(<key>)</gray>
-      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
+      # 有效的佔位符: <page>, <next-page>, <prev-page>, <pages>
       footer: <gradient:black:dark_gray:black>------------<gray> <click:run_command:/nodegroup
         list <prev-page>>←</click> <page>/<pages> <click:run_command:/nodegroup list
         <next-page>>→</click> </gray>-------------</gradient>
-    # Valid placeholders: <key>, <name>, <old-value>, <value>
-    set_name: <ins:prefix>Displayname set for <key> from <name> to <new-name> (<value>).
-    # Valid placeholders: <key>, <name>, <old-value>, <value>
-    set_permission: <ins:prefix>Permission set for <key> from <old-value> to <value>.
-    # Valid placeholders: <key>, <name>, <old-value>, <value>
-    set_navigable: <ins:prefix>Navigability set for <key> from <old-value> to <value>.
-    # Valid placeholders: <key>, <name>, <old-value>, <value>
-    set_discoverable: <ins:prefix>Discoverability set for <key> from <old-value> to
-      <value>.
-    # Valid placeholders: <key>, <name>, <old-value>, <value>
-    set_find_distance: <ins:prefix>Find distance set for <key> from <old-value> to
-      <value>.
+    # 有效的佔位符: <key>, <name>, <old-value>, <value>
+    set_name: <ins:prefix>已為<key>的顯示名稱設置為<new-name>（<value>），原名：<name>。</prefix>
+    # 有效的佔位符: <key>, <name>, <old-value>, <value>
+    set_permission: <ins:prefix>已為<key>的權限設置從<old-value>更改為<value>。</prefix>
+    # 有效的佔位符: <key>, <name>, <old-value>, <value>
+    set_navigable: <ins:prefix>已為<key>的可導航性設置從<old-value>更改為<value>。</prefix>
+    # 有效的佔位符: <key>, <name>, <old-value>, <value>
+    set_discoverable: <ins:prefix>已為<key>的可發現性設置從<old-value>更改為<value>。</prefix>
+    # 有效的佔位符: <key>, <name>, <old-value>, <value>
+    set_find_distance: <ins:prefix>已為<key>的尋找距離設置從<old-value>更改為<value>。</prefix>
     terms:
-      # Valid placeholders: <name>, <values>
+      # 有效的佔位符: <name>, <values>
       list: |-
-        <ins:prefix>Search terms for <name>:
+        <ins:prefix>搜尋條件（Search terms）：<name>
         <dark_gray>» <offset_light><values></offset_light></dark_gray>
-# Valid placeholders: <name>, <values>
-      add: '<ins:prefix>Successfully added search terms to <name>: <offset_light><values></offset_light>'
-      # Valid placeholders: <name>, <values>
-      remove: '<ins:prefix>Successfully removed search terms from <name>: <offset_light><values></offset_light>'
+      # 有效的佔位符: <name>, <values>
+      add: '<ins:prefix>成功將搜尋條件添加到<name>：<offset_light><values></offset_light>'
+      # 有效的佔位符: <name>, <values>
+      remove: '<ins:prefix>成功從<name>移除搜尋條件：<offset_light><values></offset_light>'
   find:
-    success: <ins:prefix>Navigation started.  [ <aqua><click:run_command:/cancelpath>CANCEL</click></aqua>
+    success: <ins:prefix>導航已開始。 [ <aqua><click:run_command:/cancelpath>CANCEL</click></aqua>
       ]
-    no_nodes_found: <ins:prefix>No matching waypoints could be found.
-    no_path_found: <ins:prefix>No possible way could be found to reach that target.
-    no_visualizer_selected: <ins:prefix>No visualizer is set for this roadmap.
-  cancel_path: <ins:prefix>Navigation cancelled.
+    no_nodes_found: <ins:prefix>找不到匹配的航點（waypoints）。
+    no_path_found: <ins:prefix>找不到可到達目標的路徑。
+    no_visualizer_selected: <ins:prefix>此路線圖（roadmap）未設置可視化工具（visualizer）。
+  cancel_path: <ins:prefix>導航已取消。
   path_visualizer:
     list:
-      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
-      header: <gradient:black:dark_gray:black>------------ <offset>Visualizer</offset>
+      # 有效的佔位符: <page>, <next-page>, <prev-page>, <pages>
+      header: <gradient:black:dark_gray:black>------------ <offset>可視化工具（Visualizer）</offset>
         ------------</gradient>
-      # Valid placeholders: <key>, <name>, <world>, <discoverable>, <find-distance>, <curve-length>, <path-visualizer>
+      # 有效的佔位符: <key>, <name>, <world>, <discoverable>, <find-distance>, <curve-length>, <path-visualizer>
       entry: <dark_gray> » </dark_gray><name> <gray>(<key>)</gray>
-      # Valid placeholders: <page>, <next-page>, <prev-page>, <pages>
+      # 有效的佔位符: <page>, <next-page>, <prev-page>, <pages>
       footer: <gradient:black:dark_gray:black>------------<gray> <click:run_command:/roadmap
         list <prev-page>>←</click> <page>/<pages> <click:run_command:/roadmap list
         <next-page>>→</click> </gray>-------------</gradient>
