@@ -1,0 +1,188 @@
+prefix: '&3[&6HideAndSeek&3] &6'
+date-format: dd/MM/yyyy
+Scoreboard:
+  Arena-Scoreboard-Title: '&6&lHide and Seek'
+  Arena-Scoreboard:
+  - '&bTime: &f%timer%'
+  - ' '
+  - '&7Map: &a%arena_name%'
+  - '&7State: %state%'
+  - ' '
+  - '&bHiders: &e%arena_hiders%'
+  - ' '
+  - '&bSeekers: &e%arena_seekers%'
+  - ' '
+  - '&7Time:'
+  - '&a%date%'
+  Players-Line: '&bPlayers: &e%players%'
+List:
+  top: '&b&m---------&6 Arenas (&a%arenas%&6) &b&m---------'
+  format: '&b - &e&l%arena%&b - %state%&b - &6(&e%players%&6/&e%maxPlayers%&6)'
+  bottom: '&b&m----------------------------'
+Messages:
+  no_permission: You dont have a permission to do this!
+  no_console: Only players may use that command
+  unknown_command: '&cUnknown command! use /has for a list of commands!'
+  no_arenas: There are no available arenas!
+  no_player_found: Could not find any player with that name!
+  already_in_game: You are already in a game!
+  unknown_arena: Could not find any arena with that name!
+  arena_not_available: This game is currently not available to join!
+  arena_not_ready: The arena is missing something! you may not join yet!
+  arena_full: That arena is full!
+  arena_join: You have joined the arena &e%arena%
+  arena_join_broadcast: '&e%player% &6has &ajoined &6the game! (&e%players%&6/&e%maxPlayers%&6)'
+  not_in_game: You must be in a game to do that!
+  in_game: You must not be in a game to do that!
+  arena_leave: You have left the game!
+  arena_leave_broadcast: '&e%player% &6has &cleft &6the game! (&e%players%&6/&e%maxPlayers%&6)'
+  command_usage: 'Usage: &a/has %cmd%&e %usage%'
+  empty_hand_sign_error: You must have nothing in hand to use this sign!
+  firework_use: '&a + %earnedCoins% Coins'
+  cooldown: You may not use this yet! please wait &e%time%
+  disguise_select: You have selected the block &e%disguise%&6 as your disguise!
+  player_death: You have been killed!
+  player_death_broadcast: '%team% &e%player%&6 has been killed'
+  player_kill: You have earned &b%earnedCoins% &6coins and &d%earnedExp% &6exp!
+  player_earn_karma: '&d+%earnedKarma% Karma!'
+  player_move: You are no longer a solid block!
+  arena_about_to_start: The game is about to start!
+  arena_needs_players: The game needs &b%players%&6 more player(s) to start!
+  arena_cancel: The game has been cancelled!
+  arena_starting: Game starting in &b%seconds% &6seconds!
+  arena_start: Game has begun!
+  team_select: You have been selected as a %team%
+  player_disguise: You are disguised as a &e%disguise%
+  disguise_complete: You look like a solid block now!
+  disguise_error: You may not disguise here!
+  player_earn_coins: You have earned &b%earnedCoins% &6coins for playing!
+  game_time_remaining: Game is ending in &b%seconds% &6seconds!
+  team_win: '%team% &6have won the game!'
+  no_global_lobby: There is no global lobby that have been set!
+  not_enough_coins: You dont have enough coins to do that!
+  not_enough_karma: You dont have enough karma to do that!
+  successful_purchase: You have successfully purchased an item!
+  coins_modified: Your coins has been modified!
+  exp_modified: Your exp has been modified!
+  modifier_changed: Your coins/exp modifier has been updated!
+  hiders_receive_items: You have received your protective items!
+  blocked_cmd: You may not use non hide and seek commands!
+  time_skip: Time has been skipped to &b%seconds%
+  cant_vote_any_more: You have reached your maximum amount of votes!
+  player_vote: You have successfully voted for the map &b%map%
+  map_select: The map &e%map% &6has won the voting!
+  powerups_spawn: '&e&l&nPowerups have spawned!'
+  powerup_about_to_spawn: '&e&l&nPowerups &ewill spawn after &6%seconds%'
+  powerup_pick: '&b&n&l%player% &epicked up a powerup!'
+  powerup_nospace: You dont have enough space around you!
+  powerup_effect_seekers: '&b&n&l%player% &eused his powerup on the seekers!'
+  no_disguise_selector: You do not have the disguise selector perk purchased, so you
+    may not use this category
+  rankup_broadcast: '&e%player% &6has ranked up to &a%rank%'
+  stats_reset: '&cYour stats has been reset!'
+  player_spectate: You are now in spectating mode, you can left click players to see
+    their point of view! and shift click to seperate your view of theirs
+  anti_seeker_quit_activation: '&cAll seekers have left the game! due to that, &e%player%
+    &cwas selected randomly to become the next seeker!'
+  fireworks_unavailable: You may not use fireworks right now!
+  coins_powerup: You have earned &a%coins% &6coins! &bcongratulations
+  trail_equip: 'You have selected the trail: %trail%'
+  seekers_release: '&4&l&kA&e&l Seekers have been released! &4&l&kA'
+Game-States:
+  Waiting: '&aWaiting'
+  Starting: '&eStarting'
+  INGAME: '&cINGAME'
+  ENDING: '&cENDING'
+  DISABLED: '&cDISABLED'
+Inventories:
+  Arenas: '&4&nArenas'
+  Shop: '&4&nShop'
+  Disguise-Selector: '&4Choose your disguise!'
+  Hider-Chance: '&4&nHider chance'
+  Special-Blocks: '&4&nSpecial blocks'
+  Perks: '&4&nPerks'
+  Perk-Type-Selector: '&4&nSelect group'
+  Karma-Shop: '&4&nKarma shop'
+  Block-Purchase: '&4Confirm block purchase!'
+  Trails: '&6Trails'
+Shop:
+  Hider-Chance:
+    name: '&cHider chance'
+    lore:
+    - '&7You can modify how'
+    - '&7likely you will become'
+    - '&7a hider here!'
+  Special-Blocks:
+    name: '&eSpecial blocks!'
+    lore:
+    - '&7You can buy some extra'
+    - '&7blocks to disguise as'
+    - '&7here'
+  Perks:
+    name: '&aPerks!'
+    lore:
+    - '&7You can buy some extra'
+    - '&7perks that will help you'
+    - '&7win here'
+  Karma-Shop:
+    name: '&dKarma shop!'
+    lore:
+    - '&7You can use your karma'
+    - '&7in buying stuff here!'
+Match-Earnings:
+- '&3      ========================'
+- ' '
+- '&b          Total Coins earned: &6%game_coins%'
+- ' '
+- '&b           Total Exp earned: &6%game_exp%'
+- ' '
+- '&b             Fireworks used: &6%game_fireworks%'
+- ' '
+- '&e                Play time: &6%game_playtime%'
+- ' '
+- '&3      ========================'
+Achievement-Unlock:
+- ' '
+- '%randomcolor%    &m----------&4&k AA&e Achievement unlocked &4&kAA %randomcolor%&m----------'
+- ' '
+- '            - &6%name% &8(&a%description%&8)'
+- '            - &aCongratulations!'
+- '            - &d+ %earnedCoins% coins %modifier%'
+- ' '
+Signs:
+  prefix: '&3[HideAndSeek]'
+  stats: '&bStats'
+  leave: '&bLeave'
+  autojoin: '&bAuto-Join'
+  shop: '&bShop'
+  join:
+    default: '&bJoin'
+    line2_color: '&b'
+    line4_format: '&6(&e%players%&6/&e%maxplayers%&6)'
+Perks-Lore:
+  Unpurchased:
+  - ' '
+  - '&6Price: &e%cost%'
+  Purchased:
+  - ' '
+  - '&aPurchased'
+  Disabled:
+  - ' '
+  - '&acDisabled'
+Arena-Vote-Item-Lore:
+- '&aLeft Click to add your vote'
+- ' '
+- '&cRight Click to remove your vote'
+Lobby-Book:
+- '&4&m->&0&l Hide And Seek \n\n&0This is a very fun minigame that splits players
+  into two teams, each team has their own objective that they must fulfill in order
+  to win! all your statistics will be saved so dont worry about quiting at any time'
+- '&4&m->&0&l Seekers mission \n\n&cSeekers &0have to locate hidden players around
+  the map, but that is no easy thing to do, becase players are very well disguised
+  and look like a block that fits with the surroundings'
+- '&4&m->&0&l Hiders mission \n\n&9Hiders &0must find a good spot in the map that
+  fits the block they are disguised as, otherwise they will probably get caught! stay
+  alive till the end of the game to win and gain coins'
+- '&4&m->&0&l Coins \n\n&0This plugin offers a custom coins system which allows players
+  to purchase various things, coins can be earned by killing players or simply winning
+  the game, hiders can also get coins by using their fireworks'
