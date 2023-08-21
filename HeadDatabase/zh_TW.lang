@@ -38,7 +38,7 @@ messages.headsFound: &e找到頭顱!
 messages.searchForHeads: &c搜索頭顱
 messages.pluginInfo: &c插件訊息
 messages.pluginSuggest: &c建議頭顱
-messages.pluginSuggestLore: &7請先檢查數據庫
+messages.pluginSuggestLore: &7請先檢查資料庫
 messages.chatSearch: &b輸入你要搜索的內容
 messages.databaseStillLoading: &c頭顱數據庫正在載入中！ 請稍等一下再進行此操作
 messages.customCommandItemName: &c返回主選單
