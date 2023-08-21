@@ -20,22 +20,22 @@ config:
   allow-unsafe-mini-message: true
   format:
     tag: '&6[&bCommandPanels&6] '
-    perms: '&c¨S¦³Åv­­¡C'
-    reload: '&a¤w­«·s¸ü¤J¡C'
-    nopanel: '&c§ä¤£¨ì­±ªO¡C'
-    noitem: '&c­±ªO¨S¦³¥iÂIÀ»ªº¶µ¥Ø¡C'
-    notitem: '&c§ä¤£¨ì¸Óª±®a¡C'
-    error: '&c°t¸m¤å¥ó¤¤µo²{¿ù»~¡C'
-    offline: Â÷½u
+    perms: '&cæ²’æœ‰æ¬Šé™ã€‚'
+    reload: '&aå·²é‡æ–°è¼‰å…¥ã€‚'
+    nopanel: '&cæ‰¾ä¸åˆ°é¢æ¿ã€‚'
+    noitem: '&cé¢æ¿æ²’æœ‰å¯é»æ“Šçš„é …ç›®ã€‚'
+    notitem: '&cæ‰¾ä¸åˆ°è©²ç©å®¶ã€‚'
+    error: '&cé…ç½®æ–‡ä»¶ä¸­ç™¼ç¾éŒ¯èª¤ã€‚'
+    offline: é›¢ç·š
     offlineHeadValue: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmU1Mjg2YzQ3MGY2NmZmYTFhMTgzMzFjYmZmYjlhM2MyYTQ0MjRhOGM3MjU5YzQ0MzZmZDJlMzU1ODJhNTIyIn19fQ==
-    input: '&cYour Input is too long!'
+    input: '&cä½ è¼¸å…¥çš„æ–‡å­—å¤ªé•·äº†!'
 input:
   input-cancel: cancel
-  input-cancelled: '&c¤w¨ú®ø¡I'
+  input-cancelled: '&cå·²å–æ¶ˆï¼'
   max-input-length: -1
   input-message:
-  - '&a¿é¤J«ü¥O©Ò»İªº°Ñ¼Æ'
-  - '&c¿é¤J &4%cp-args% &c¨ú®ø«ü¥O'
+  - '&aè¼¸å…¥æŒ‡ä»¤æ‰€éœ€çš„åƒæ•¸'
+  - '&cè¼¸å…¥ &4%cp-args% &cå–æ¶ˆæŒ‡ä»¤'
 hexcodes:
   start_tag: '#'
   end_tag: ''
@@ -53,26 +53,26 @@ updater:
 purchase:
   currency:
     enable: true
-    success: '&a¤w¦¨¥\ÁÊ¶R¡Aªá¶O $%cp-args%'
-    failure: '&c¾lÃB¤£¨¬¡I'
+    success: '&aå·²æˆåŠŸè³¼è²·ï¼ŒèŠ±è²» $%cp-args%'
+    failure: '&cé¤˜é¡ä¸è¶³ï¼'
   data:
     enable: true
-    success: '&a¤w¦¨¥\ÁÊ¶R¡Aªá¶O $%cp-args%'
-    failure: '&c¾lÃB¤£¨¬¡I'
+    success: '&aå·²æˆåŠŸè³¼è²·ï¼ŒèŠ±è²» $%cp-args%'
+    failure: '&cé¤˜é¡ä¸è¶³ï¼'
   tokens:
     enable: true
-    success: '&a¤w¦¨¥\ÁÊ¶R¡Aªá¶O %cp-args% ­Ó¥N¹ô¡C'
-    failure: '&c¥N¹ô¤£¨¬¡I'
+    success: '&aå·²æˆåŠŸè³¼è²·ï¼ŒèŠ±è²» %cp-args% å€‹ä»£å¹£ã€‚'
+    failure: '&cä»£å¹£ä¸è¶³ï¼'
   coins:
     enable: true
-    success: '&a¤w¦¨¥\ÁÊ¶R¡Aªá¶O %cp-args% ªTµw¹ô¡C'
-    failure: '&cµw¹ô¤£¨¬¡I'
+    success: '&aå·²æˆåŠŸè³¼è²·ï¼ŒèŠ±è²» %cp-args% æšç¡¬å¹£ã€‚'
+    failure: '&cç¡¬å¹£ä¸è¶³ï¼'
   item:
     enable: true
-    success: '&a¤w¦¨¥\°â¥X %cp-args% ­Óª««~¡C'
-    failure: '&cª««~¤£¨¬¡I'
+    success: '&aå·²æˆåŠŸå”®å‡º %cp-args% å€‹ç‰©å“ã€‚'
+    failure: '&cç‰©å“ä¸è¶³ï¼'
   xp:
     enable: true
-    success: '&a¤w¦¨¥\ÁÊ¶R¡Aªá¶O %cp-args% ÂI¸gÅç­È¡C'
-    failure: '&c¸gÅç­È¤£¨¬¡I'
+    success: '&aå·²æˆåŠŸè³¼è²·ï¼ŒèŠ±è²» %cp-args% é»ç¶“é©—å€¼ã€‚'
+    failure: '&cç¶“é©—å€¼ä¸è¶³ï¼'
 
