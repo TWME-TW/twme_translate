@@ -1,7 +1,7 @@
 info:
   prefix: '&e[&aMFM&e] '
-  ArmorStandlLimit: '&6你不能在這個區塊中放置盔甲架. 允許的最大值是 &e[amount]&6!'
-  ItemFrameLimit: '&6你不能在這個區塊中放置物品展示框。允許的最大值是 &e[amount]&6!'
+  ArmorStandlLimit: '&6你不能在這個區塊中放置盔甲架. 允許的最大數量是 &e[amount]&6!'
+  ItemFrameLimit: '&6你不能在這個區塊中放置物品展示框。允許的最大數量是 &e[amount]&6!'
   WolfCount: '&c太多隻跟隨你的狼, &7[amount] &c隻已經坐下'
   BlockLimit: '&c太多的 [type] 被放置於這個區塊, &7你只能放置 &e[amount] &c個'
   cleanup: '&7自動清除的實體數: &e[amount]'
