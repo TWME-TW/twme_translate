@@ -1,0 +1,58 @@
+help:
+  head: "&a%pluginname% &e說明："
+  give: |-
+    &e /%command% give <玩家> rocket <特效> <強度> [<配置>] &7- 賦予煙火火箭
+    &e /%command% give <玩家> star <特效> [<配置>] &7- 賦予煙火星星
+  launch: "&e /%command% launch <特效> [<世界>,]<x>,<y>,<z> <強度> [<配置>] &7- 發射煙火"
+  show: "&e /%command% show <特效> [<世界>,]<x>,<y>,<z> [<配置>] &7- 顯示煙火效果"
+  reload: "&c /%command% reload &7- 重新載入配置"
+error:
+  no-world: "&c請指定一個世界！"
+  no-player: "&c找不到在線上的玩家 &e%player%&c。"
+  invalid-input: "&c輸入無效 &e%input%&c！ %error%"
+  invalid-config: "&c提供的配置無效！ %error%"
+  invalid-item: "&c提供的物品無效！ %error%"
+  chunk-no-loaded: "&c位於 &e%location%&c 的區塊未載入！"
+commands:
+  give: "&e將 %type% %item% 賦予給 %player%。"
+  show: "&e顯示煙火效果 %type%。"
+  launch: "&e發射帶有效果 %type% 的煙火。"
+fireworks:
+  explosion: 爆炸
+  explosion-types:
+    normal: 普通
+    large: 大型
+    huge: 巨大
+  map: 地圖 %id%
+  mapbox: 地圖 %id% 方塊
+  text: '文字 "%text%&7"'
+  textbox: '文字框 "%text%&7"'
+  snow: 雪花
+  snow-strengths:
+    "1": 一點點
+    "2": 再多一些
+    "3": 很多
+  fountain: 噴泉
+  head: "%player%'s 臉"
+  headbox: "%player%'s 頭"
+  transparent: 透明
+  custom: 自定義
+  cowface: 牛的臉
+  cowfacebox: 牛的臉方塊
+colors:
+  white: 白色
+  orange: 橙色
+  magenta: 品紅色
+  light_blue: 淺藍色
+  yellow: 黃色
+  lime: 檸檬綠
+  pink: 粉紅色
+  gray: 灰色
+  silver: 銀色
+  cyan: 青色
+  purple: 紫色
+  blue: 藍色
+  brown: 棕色
+  green: 綠色
+  red: 紅色
+  black: 黑色
