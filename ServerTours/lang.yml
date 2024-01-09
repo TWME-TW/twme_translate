@@ -1,0 +1,103 @@
+#  ___                     _____
+# / __| ___ _ ___ _____ _ |_   _|__ _  _ _ _ ___
+# \__ \/ -_) '_\ V / -_) '_|| |/ _ \ || | '_(_-<
+# |___/\___|_|  \_/\___|_|  |_|\___/\_,_|_| /__/
+#
+# 這個配置文件會在新選項可用時自動更新。
+# 上一次自動更新時間: 2024-01-08 01:11:11 (2.0.13)
+
+chatMenu:
+  header: '編輯點 '
+  numSet: '{} 設定'
+  none: 無
+  
+  buttons:
+    preview: '[預覽]'
+    teleport: '[傳送]'
+    move: '[移動]'
+    remove: '[移除]'
+    close: '[關閉]'
+  
+  tooltips:
+    playerExecutor: 指令將以玩家執行的方式運行。
+    consoleExecutor: 指令將以控制台執行的方式運行。
+    
+    triggers:
+      enter: 當玩家到達這一點時執行指令
+      exit: 當玩家移動到下一點時執行指令
+      quit: 如果玩家在這一點離開導覽，則執行指令
+    
+    pointTypes:
+      stationary: 讓攝影機在這一點保持靜止一段時間。
+      interpolate: 以指定的速度使攝影機在這一點和下一點之間平滑移動。
+      orbit: 在面對這一點的同時繞著它旋轉攝影機。
+    
+    confirmModes:
+      mouse: 需要玩家按下左鼠標按鈕
+      keyboard: 需要玩家按下 F 鍵
+      chat: 需要玩家在聊天中點擊按鈕
+    
+    preview: 從這一點開始預覽導覽路線
+    teleport: 傳送到這一點
+    move: 將這一點傳送到您的位置
+    remove: 移除這一點
+    close: 關閉聊天菜單
+    
+    setString: 點擊設定值
+    clearString: 點擊清除值
+    changeString: 點擊更改值
+    
+    alreadySelected: 已選取
+    select: 點擊選取
+    
+    enable: 點擊啟用
+    disable: 點擊停用
+  
+  units:
+    second: 秒
+    degreesPerSecond: °/秒
+    degrees: °
+    blocks: ' 個方塊'
+  
+  labels:
+    label: 用於此路線點的名稱，方便識別。僅在編輯模式中使用，不會顯示給導覽玩家。
+    confirmToContinue: 如果選中，用戶需要按繼續按鈕才能進入下一點。
+    title: 當玩家到達這一點時向其顯示的標題。使用 \n 添加第二行（副標題）。
+    description: 玩家到達這一點時將在聊天中顯示的文本。使用 \n 添加多行。
+    addCommand: 點擊添加指令，該指令將在玩家查看此路線點後執行。您可以使用 %player% 作為玩家名的占位符。
+
+continueConfirm:
+  mouse: '&7按下 &a左鼠標按鈕 &7繼續導覽。'
+  keyboard: '&7按下您鍵盤上的 &a[F] &7繼續導覽。'
+  button:
+    text: '[繼續]'
+    instruction: 點擊繼續導覽
+
+commands:
+  errors:
+    playerOnly: '&c此指令僅供玩家使用'
+    noPermission: '&c您無權使用此指令 &7({})'
+    unknownSubCommand: '&c未知子指令 {}'
+    invalidNumber: '&c{} 不是一個數字'
+    usage: '&c用法: {}'
+    
+    routeNotFound: '&c該導覽路線不存在。使用 /tour create {} 創建它。'
+    pointNotFound: '&c在路線 {} 上找不到點 #{}'
+    playerNotFound: '&c找不到玩家 {}'
+    
+    routeAlreadyExists: '&c已經存在名為 {} 的路線'
+    alreadyWatching: '&c您已經在觀看導覽！'
+    alreadyWatchingOther: '&c{} 已經在觀看導覽！'
+    alreadyEditing: '&c您已經處於編輯模式！'
+    alreadyEditingOther: '&c{} 已經處於編輯模式！您必須在您可以編輯此路線之前退出編輯模式。'
+    notWatching: '&c您未在觀看導覽！'
+    notEditing: '&c您未處於編輯模式！'
+    notWaiting: '&c您未在等待確認'
+    
+    noPoints: '&c路線必須包含至少一個點'
+    commandsDisabled: '&c您無法在導覽期間使用指令'
+  
+  forcedOut: '&e您被 {} 強制退出編輯模式'
+  forcedOutOther: '&e{} 已經在編輯此路線，但被強制退出'
+  
+ 
