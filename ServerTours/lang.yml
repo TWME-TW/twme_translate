@@ -9,7 +9,7 @@
 chatMenu:
   header: '編輯點 '
   numSet: '{} 設定'
-  none: 無
+  none: None
   
   buttons:
     preview: '[預覽]'
@@ -19,29 +19,29 @@ chatMenu:
     close: '[關閉]'
   
   tooltips:
-    playerExecutor: 指令將以玩家執行的方式運行。
-    consoleExecutor: 指令將以控制台執行的方式運行。
+    playerExecutor: "指令將以玩家執行的方式運行。"
+    consoleExecutor: "指令將以控制台執行的方式運行。"
     
     triggers:
-      enter: 當玩家到達這一點時執行指令
-      exit: 當玩家移動到下一點時執行指令
-      quit: 如果玩家在這一點離開導覽，則執行指令
+      enter: "當玩家到達這一點時執行指令"
+      exit: "當玩家移動到下一點時執行指令"
+      quit: "如果玩家在這一點離開導覽，則執行指令"
     
     pointTypes:
-      stationary: 讓攝影機在這一點保持靜止一段時間。
-      interpolate: 以指定的速度使攝影機在這一點和下一點之間平滑移動。
-      orbit: 在面對這一點的同時繞著它旋轉攝影機。
+      stationary: "讓攝影機在這一點保持靜止一段時間。"
+      interpolate: "以指定的速度使攝影機在這一點和下一點之間平滑移動。"
+      orbit: "在面對這一點的同時繞著它旋轉攝影機。"
     
     confirmModes:
-      mouse: 需要玩家按下左鼠標按鈕
-      keyboard: 需要玩家按下 F 鍵
-      chat: 需要玩家在聊天中點擊按鈕
+      mouse: "需要玩家按下左鼠標按鈕"
+      keyboard: "需要玩家按下 F 鍵"
+      chat: "需要玩家在聊天中點擊按鈕"
     
-    preview: 從這一點開始預覽導覽路線
-    teleport: 傳送到這一點
-    move: 將這一點傳送到您的位置
-    remove: 移除這一點
-    close: 關閉聊天菜單
+    preview: "從這一點開始預覽導覽路線"
+    teleport: "傳送到這一點"
+    move: "將這一點傳送到您的位置"
+    remove: "移除這一點"
+    close: "關閉聊天菜單"
     
     setString: 點擊設定值
     clearString: 點擊清除值
@@ -100,4 +100,41 @@ commands:
   forcedOut: '&e您被 {} 強制退出編輯模式'
   forcedOutOther: '&e{} 已經在編輯此路線，但被強制退出'
   
- 
+  routeCreated: '&a路線已創建。切換到編輯模式，使用 {}'
+  routeRemoved: '&a路線已移除。'
+  particlesEnabled: '&a粒子已啟用。'
+  particlesDisabled: '&c粒子已停用。'
+  reloaded: '&a配置已重新載入。'
+  playedNear: '&a開始播放導覽路線 &e{} &a，對附近的玩家播放時間為 {}。'
+
+warnings:
+  interpolateNotSet: '&c[!] &f沒有下一個點可供插值。'
+  interpolateWorlds: '&c[!] &f無法在不同的世界之間插值'
+
+hotbarItems:
+  createPoint: '&b創建路線點'
+  previewRoute: '&b預覽路線'
+  pointSelect: '&b選擇路線點'
+  exitEditMode: '&e退出編輯模式'
+  toggleParticlesOn: '&b切換粒子 &a(啟用)'
+  toggleParticlesOff: '&b切換粒子 &c(停用)'
+
+actionBar:
+  watching: "觀看導覽"
+  shiftToExit: "按住SHIFT退出"
+  editing: '編輯模式: '
+  editingDesc: "編輯 {}"
+
+points:
+  selectedName: '&b點 #{}'
+  unselectedName: '點 #{}'
+
+selectInventory:
+  title: "路線點 ({})"
+  nextPage: "下一頁"
+  prevPage: "上一頁"
+  
+  pointTitle: '&b點 #{}'
+  type: '類型: {}'
+  world: '世界: {}'
+  coords: 'X: {} Y: {} Z: {}'
