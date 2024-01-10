@@ -1,160 +1,106 @@
-#  ___                     _____
-# / __| ___ _ ___ _____ _ |_   _|__ _  _ _ _ ___
-# \__ \/ -_) '_\ V / -_) '_|| |/ _ \ || | '_(_-<
-# |___/\___|_|  \_/\___|_|  |_|\___/\_,_|_| /__/
-#
-# This config file automatically updates when new options are available.
-# Last automatic update: 2024-01-10 01:20:08 (2.0.13)
-
-chatMenu:
-  header: '編輯點'
-  numSet: '{} 設定'
-  none: 無
-
-  buttons:
-    preview: '[預覽]'
-    teleport: '[傳送]'
-    move: '[移動]'
-    remove: '[移除]'
-    close: '[關閉]'
-
-  tooltips:
-    playerExecutor: 命令將會像玩家自己執行一樣運行。
-    consoleExecutor: 命令將會像從控制台執行一樣運行。
-
-    triggers:
-      enter: 當玩家到達此點時將運行命令
-      exit: 當玩家移動到下一點時將運行命令
-      quit: 如果玩家在此點退出導覽，將運行命令
-
-    pointTypes:
-      stationary: 使攝像機在此點保持靜止一段時間。
-      interpolate: 以指定速度使攝像機在此點和下一點之間平滑移動。
-      orbit: 使攝像機圍繞此點旋轉並朝向它。
-
-    confirmModes:
-      mouse: 需要玩家按下左鍵
-      keyboard: 需要玩家按下 F 鍵
-      chat: 需要玩家在聊天中點擊按鈕
-
-    preview: 從此點開始預覽導覽路線
-    teleport: 傳送至此點
-    move: 將此點傳送至你的位置
-    remove: 移除此點
-    close: 關閉聊天菜單
-
-    setString: 點擊設定值
-    clearString: 點擊清除值
-    changeString: 點擊更改值
-
-    alreadySelected: 已經選擇
-    select: 點擊選擇
-
-    enable: 點擊啟用
-    disable: 點擊停用
-
-  units:
-    second: 秒
-    degreesPerSecond: °/秒
-    degrees: °
-    blocks: ' 方塊'
-
-  labels:
-    label: 標籤
-    pointType: 點類型
-    timeVisible: 可見時間
-    confirmToContinue: 確認繼續
-    confirmMode: 模式
-    title: 標題
-    description: 描述
-    commands: 命令
-    executedBy: 執行者
-    triggeredBy: 觸發者
-
-    # Orbit Mode
-    distance: 距離
-    speed: 速度
-    startingPoint: 起始點
-    heightOffset: 高度偏移
-
-  instructions:
-    label: 作為此路線點的名稱，用於輕鬆識別。
-      這僅在編輯模式中使用，不會顯示給導覽玩家。
-    confirmToContinue: 如果勾選，使用者需要按下繼續按鈕
-      才能前往下一點。
-    title: 當玩家到達此點時顯示標題。使用 \n 添加第二行（副標題）。
-    description: 玩家到達此點時將在聊天中顯示此文本。使用 \n 添加多行。
-    addCommand: 點擊添加一個命令，該命令將在玩家完成查看此路線點後執行。您可以使用 %player% 作為玩家名稱的佔位符。
-
-continueConfirm:
-  mouse: '&7按左鍵 &a滑鼠左鍵 &7繼續導覽。'
-  keyboard: '&7按 &a[F] &7鍵繼續導覽。'
-  button:
-    text: '[繼續]'
-    instruction: 點擊繼續導覽
-
-commands:
-  errors:
-    playerOnly: '&c此命令僅供玩家使用'
-    noPermission: '&c您沒有權限使用此命令 &7({})'
-    unknownSubCommand: '&c未知的子命令 {}'
-    invalidNumber: '&c{} 不是一個數字'
-    usage: '&c使用方法: {}'
-
-    routeNotFound: '&c該導覽路線不存在。使用 /tour create {} 來創建它。'
-    pointNotFound: '&c在路線 {} 上找不到點 #{}'
-    playerNotFound: '&c找不到玩家 {}'
-
-    routeAlreadyExists: '&c名為 {} 的路線已經存在'
-    alreadyWatching: '&c您已經在觀看導覽！'
-    alreadyWatchingOther: '&c{} 已經在觀看導覽！'
-    alreadyEditing: '&c您已經在編輯模式中！'
-    alreadyEditingOther: '&c{} 已經在編輯模式中！他們必須在您編輯此路線之前退出編輯模式。'
-    notWatching: '&c您沒有在觀看導覽！'
-    notEditing: '&c您不在編輯模式中！'
-    notWaiting: '&c您沒有在等待確認'
-
-    noPoints: '&c路線必須包含至少一個點'
-    commandsDisabled: '&c您不能在導覽期間使用命令'
-
-  forcedOut: '&e您被 {} 強制退出編輯模式'
-  forcedOutOther: '&e{} 已經在編輯此路線，但被迫退出'
-
-  routeCreated: '&a路線已創建。使用 {} 切換到編輯模式'
-  routeRemoved: '&a路線已刪除。'
-  particlesEnabled: '&a已啟用粒子。'
-  particlesDisabled: '&c已禁用粒子。'
-  reloaded: '&a配置已重新加載。'
-  playedNear: '&a開始為附近的玩家播放導覽路線 &e{} &a{}。'
-
-warnings:
-  interpolateNotSet: '&c[!] &f沒有下一個點可以插值運算'
-  interpolateWorlds: '&c[!] &f無法在不同的世界之間進行插值運算'
-
-hotbarItems:
-  createPoint: '&b創建路線點'
-  previewRoute: '&b預覽路線'
-  pointSelect: '&b選擇路線點'
-  exitEditMode: '&e退出編輯模式'
-  toggleParticlesOn: '&b切換粒子 &a(啟用)'
-  toggleParticlesOff: '&b切換粒子 &c(禁用)'
-
-actionBar:
-  watching: 觀看導覽
-  shiftToExit: 按住 SHIFT 退出
-  editing: '編輯模式: '
-  editingDesc: 編輯 {}
-
-points:
-  selectedName: '&b點 #{}'
-  unselectedName: '點 #{}'
-
-selectInventory:
-  title: 路線點 ({})
-  nextPage: 下一頁
-  prevPage: 上一頁
-
-  pointTitle: '&b點 #{}'
-  type: '類型: {}'
-  world: '世界: {}'
-  coords: 'X: {} Y: {} Z: {}'
+language:
+  prefix: "<green>CinematicCreator <dark_gray>»"
+  reloaded: "%prefix% <green>重新載入插件。"
+  no-permission: "%prefix% <red>您無權使用該指令。"
+  no-player: "%prefix% <red>您必須是一名玩家才能使用該指令。"
+  help-commands:
+    - ""
+    - "<b><green>影片製作指令<b>"
+    - ""
+    - "<green>/cinematics <dark_gray>- <gray>開啟影片菜單。"
+    - "<green>/cinematics reload <dark_gray>- <gray>重新載入插件。"
+    - "<green>/cinematics start <player> <dark_gray>- <gray>為玩家開始一個影片。"
+    - "<green>/cinematics stop <player> <dark_gray>- <gray>為玩家停止一個影片。"
+    - "<green>/cinematics create <name> <dark_gray>- <gray>創建一個影片。"
+    - "<green>/cinematics update <name> <dark_gray>- <gray>更新一個影片。"
+    - "<green>/cinematics delete <name> <dark_gray>- <gray>刪除一個影片。"
+    - ""
+  cinematic:
+    cinematic-created: "<green>影片 <white>%name% <green>已創建。"
+    cinematic-updated: "<green>影片 <white>%name% <green>已更新。"
+    cinematic-deleted: "<green>影片 <white>%name% <green>已刪除。"
+    cinematic-renamed: "<green>影片 <white>%old-name% <green>已更名為 <white>%new-name%<green>。"
+    cinematic-changed-speed: "<green>影片 <white>%name%<green> 的速度已更改為 <white>%speed%<green>。"
+    cinematic-changed-fov: "<green>影片 <white>%name%<green> 的視野已更改為 <white>%fov%<green>。"
+    cinematic-not-found: "<red>找不到影片 <white>%name%<red>。"
+    cinematic-already-exists: "<red>影片 <white>%name%<red> 已存在。"
+    frame-created: "<gray>幀 <yellow>%priority%<dark_gray>(<yellow>%location%<dark_gray>) <gray>已創建。"
+    frame-deleted: "<gray>幀 <yellow>%priority%<dark_gray>(<yellow>%location%<dark_gray>) <gray>已刪除。"
+    frame-moved: "<gray>幀 <yellow>%priority%<dark_gray>(<yellow>%location%<dark_gray>) <gray>已移動。"
+    frame-changed-location: "<gray>幀 <yellow>%priority%<dark_gray>(<yellow>%old-location%<dark_gray>) <gray>位置已更改為 <green>%new-location%<dark_gray>。"
+    frame-not-found: "<red>找不到幀 <yellow>%priority% <red>。"
+    figure-created: "<gray>在<yellow>%location%<gray>創建了模型 <yellow>%model-id%。"
+    figure-deleted: "<gray>刪除了模型 <yellow>%model-id%。"
+  action:
+    cancelled: "<red>操作已取消。"
+    create-cinematic-bar: "<gray>輸入您想要創建的影片的名稱。"
+    create-cinematic-message:
+      - ""
+      - "<gray>輸入您想要創建的影片的名稱。"
+      - "<gray>輸入 <red>cancel <gray> 以取消。"
+    rename-cinematic-bar: "<gray>輸入 %name% 影片的新名稱。"
+    rename-cinematic-message:
+      - ""
+      - "<gray>輸入 %name% 影片的新名稱。"
+      - "<gray>輸入 <red>cancel <gray> 以取消。"
+    change-speed-bar: "<gray>輸入 %name% 影片的新速度。"
+    change-speed-message:
+      - ""
+      - "<gray>輸入 %name% 影片的新速度。"
+      - "<gray>當前速度: <white>%speed%"
+      - "<gray>輸入 <red>cancel <gray> 以取消。"
+    change-fov-bar: "<gray>輸入 %name% 影片的新視野 (1-10)。"
+    change-fov-message:
+      - ""
+      - "<gray>輸入 %name% 影片的新視野 (1-10)。"
+      - "<gray>當前視野: <white>%fov%"
+      - "<gray>輸入 <red>cancel <gray> 以取消。"
+    create-frame-bar: "<gray>輸入 'add' 以添加一個幀或 'stop' 以停止。"
+    create-frame-message:
+      - ""
+      - "<gray>輸入 'add' 以添加一個幀或 'stop' 以停止。"
+      - "<gray>輸入 <red>cancel <gray> 以取消。"
+    change-start-blindness-bar: "<gray>輸入 %name% 影片的新開始失明 %type%。"
+    change-start-blindness-message:
+      - ""
+      - "<gray>輸入 %name% 影片的新開始失明 %type%。"
+      - "<gray>範例: <white>1s (1 秒)"
+      - "<gray>範例: <white>1m (1 分鐘)"
+      - "<gray>範例: <white>1h (1 小時)"
+      - "<gray>輸入 <red>cancel <gray> 以取消。"
+    change-finish-blindness-bar: "<gray>輸入 %name% 影片的新結束失明 %type%。"
+    change-finish-blindness-message:
+      - ""
+      - "<gray>輸入 %name% 影片的新結束失明 %type%。"
+      - "<gray>範例: <white>1s (1 秒)"
+      - "<gray>範例: <white>1m (1 分鐘)"
+      - "<gray>範例: <white>1h (1 小時)"
+      - "<gray>輸入 <red>cancel <gray> 以取消。"
+    change-delay-bar: "<gray>輸入延遲的持續時間。"
+    change-delay-message:
+      - ""
+      - "<gray>輸入延遲的持續時間。"
+      - "<gray>範例: <white>1s (1 秒)"
+      - "<gray>範例: <white>1m (1 分鐘)"
+      - "<gray>範例: <white>1h (1 小時)"
+      - "<gray>輸入 <red>cancel <gray> 以取消。"
+    create-pause-scenario-bar: "<gray>輸入暫停的持續時間。"
+    create-pause-scenario-message:
+      - ""
+      - "<gray>輸入暫停的持續時間。"
+      - "<gray>範例: <white>1s (1 秒)"
+      - "<gray>範例: <white>1m (1 分鐘)"
+      - "<gray>範例: <white>1h (1 小時)"
+      - "<gray>輸入 <red>cancel <gray> 以取消。"
+    create-command-scenario-bar: "<gray>輸入您想要執行的指令。"
+    create-command-scenario-message:
+      - ""
+      - "<gray>輸入您想要執行的指令。"
+      - "<gray>範例: <white><console>say Hello %player%!"
+      - "<gray>範例: <white><player>say Hello World!"
+      - "<gray>輸入 <red>cancel <gray> 以取消。"
+    create-message-scenario-bar: "<gray>輸入您想要發送的訊息。"
+    create-message-scenario-message:
+      - ""
+      - "<gray>輸入您想要發送的訊息。"
+      - "<gray>
