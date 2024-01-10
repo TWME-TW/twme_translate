@@ -1,0 +1,195 @@
+language:
+
+  prefix: "<green>CinematicCreator <dark_gray>»"
+
+  reloaded: "%prefix% <green>Reloaded the plugin."
+  no-permission: "%prefix% <red>You do not have permission to use this command."
+  no-player: "%prefix% <red>You must be a player to use this command."
+
+  help-commands:
+    - ""
+    - "<b><green>CinematicCreator Commands<b>"
+    - ""
+    - "<green>/cinematics <dark_gray>- <gray>Opens the cinematics menu."
+    - "<green>/cinematics reload <dark_gray>- <gray>Reloads the plugin."
+    - "<green>/cinematics start <player> <dark_gray>- <gray>Starts a cinematic for a player."
+    - "<green>/cinematics stop <player> <dark_gray>- <gray>Stops a cinematic for a player."
+    - "<green>/cinematics create <name> <dark_gray>- <gray>Creates a cinematic."
+    - "<green>/cinematics update <name> <dark_gray>- <gray>Updates a cinematic."
+    - "<green>/cinematics delete <name> <dark_gray>- <gray>Deletes a cinematic."
+    - ""
+
+  cinematic:
+    cinematic-created: "<green>Cinematic <white>%name% <green>has been created."
+    cinematic-updated: "<green>Cinematic <white>%name% <green>has been updated."
+    cinematic-deleted: "<green>Cinematic <white>%name% <green>has been deleted."
+    cinematic-renamed: "<green>Cinematic <white>%old-name% <green>has been renamed to <white>%new-name%<green>."
+    cinematic-changed-speed: "<green>Cinematic <white>%name%'s <green>speed has been changed to <white>%speed%<green>."
+    cinematic-changed-fov: "<green>Cinematic <white>%name%'s <green>fov has been changed to <white>%fov%<green>."
+    cinematic-not-found: "<red>Cinematic <white>%name% <red>not found."
+    cinematic-already-exists: "<red>Cinematic <white>%name% <red>already exists."
+
+    frame-created: "<gray>Frame <yellow>%priority%<dark_gray>(<yellow>%location%<dark_gray>) <gray>has been created."
+    frame-deleted: "<gray>Frame <yellow>%priority%<dark_gray>(<yellow>%location%<dark_gray>) <gray>has been deleted."
+    frame-moved: "<gray>Frame <yellow>%priority%<dark_gray>(<yellow>%location%<dark_gray>) <gray>has been moved."
+    frame-changed-location: "<gray>Frame <yellow>%priority%<dark_gray>(<yellow>%old-location%<dark_gray>) <gray>changed location to <green>%new-location%<dark_gray>."
+    frame-not-found: "<red>Frame <yellow>%priority% <red>not found."
+
+    figure-created: "<gray>Figure <yellow>%model-id% <gray>has been created at <yellow>%location%."
+    figure-deleted: "<gray>Figure <yellow>%model-id% <gray>has been deleted."
+
+  action:
+    cancelled: "<red>Action cancelled."
+
+    create-cinematic-bar: "<gray>Write the name of the cinematic you want to create."
+    create-cinematic-message:
+      - ""
+      - "<gray>Write the name of the cinematic you want to create."
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    rename-cinematic-bar: "<gray>Write the new name of the %name% cinematic."
+    rename-cinematic-message:
+      - ""
+      - "<gray>Write the new name of the %name% cinematic."
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    change-speed-bar: "<gray>Write the new speed of the %name% cinematic."
+    change-speed-message:
+      - ""
+      - "<gray>Write the new speed of the %name% cinematic."
+      - "<gray>Current speed: <white>%speed%"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    change-fov-bar: "<gray>Write the new fov of the %name% cinematic. (1-10)"
+    change-fov-message:
+      - ""
+      - "<gray>Write the new fov of the %name% cinematic. (1-10)"
+      - "<gray>Current fov: <white>%fov%"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-frame-bar: "<gray>Write 'add' to add a frame or 'stop' to stop."
+    create-frame-message:
+      - ""
+      - "<gray>Write 'add' to add a frame or 'stop' to stop."
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    change-start-blindness-bar: "<gray>Write the new start blindness %type% of the %name% cinematic."
+    change-start-blindness-message:
+      - ""
+      - "<gray>Write the new start blindness %type% of the %name% cinematic."
+      - "<gray>Example: <white>1s (1 second)"
+      - "<gray>Example: <white>1m (1 minute)"
+      - "<gray>Example: <white>1h (1 hour)"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    change-finish-blindness-bar: "<gray>Write the new finish blindness %type% of the %name% cinematic."
+    change-finish-blindness-message:
+      - ""
+      - "<gray>Write the new finish blindness %type% of the %name% cinematic."
+      - "<gray>Example: <white>1s (1 second)"
+      - "<gray>Example: <white>1m (1 minute)"
+      - "<gray>Example: <white>1h (1 hour)"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    change-delay-bar: "<gray>Write the duration of the delay."
+    change-delay-message:
+      - ""
+      - "<gray>Write the duration of the delay."
+      - "<gray>Example: <white>1s (1 second)"
+      - "<gray>Example: <white>1m (1 minute)"
+      - "<gray>Example: <white>1h (1 hour)"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-pause-scenario-bar: "<gray>Write the duration of the pause."
+    create-pause-scenario-message:
+      - ""
+      - "<gray>Write the duration of the pause."
+      - "<gray>Example: <white>1s (1 second)"
+      - "<gray>Example: <white>1m (1 minute)"
+      - "<gray>Example: <white>1h (1 hour)"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-command-scenario-bar: "<gray>Write the command you want to execute."
+    create-command-scenario-message:
+      - ""
+      - "<gray>Write the command you want to execute."
+      - "<gray>Example: <white><console>say Hello %player%!"
+      - "<gray>Example: <white><player>say Hello World!"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-message-scenario-bar: "<gray>Write the message you want to send."
+    create-message-scenario-message:
+      - ""
+      - "<gray>Write the message you want to send."
+      - "<gray>Example: <white><actionbar>Hello %player%!"
+      - "<gray>Example: <white><title>Hello %player%!"
+      - "<gray>Example: <white><chat>Hello %player%!"
+      - "<gray>These messages can be change from the file where the cinematics are stored."
+      - "<gray>But after changing it, you need to run <yellow>'/cinematics update <cinematic>'"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-sound-scenario-bar: "<gray>Write the sound you want to play."
+    create-sound-scenario-message:
+      - ""
+      - "<gray>Write the sound you want to play."
+      - "<gray>Example: <white>ENTITY_PLAYER_LEVELUP"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-world-time-scenario-bar: "<gray>Write the world time you want to set."
+    create-world-time-scenario-message:
+      - ""
+      - "<gray>Write the world time you want to set."
+      - "<gray>Example: <white>6000"
+      - "<gray>Example: <white>3000"
+      - "<gray>Example: <white>0"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-weather-scenario-bar: "<gray>Write the weather you want to set."
+    create-weather-scenario-message:
+      - ""
+      - "<gray>Write the weather you want to set."
+      - "<gray>Example: <white>DOWNFALL"
+      - "<gray>Example: <white>CLEAR"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-speed-scenario-bar: "<gray>Write the speed you want to set."
+    create-speed-scenario-message:
+      - ""
+      - "<gray>Write the speed you want to set."
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-fov-scenario-bar: "<gray>Write the fov you want to set. (1-10)"
+    create-fov-scenario-message:
+      - ""
+      - "<gray>Write the fov you want to set. (1-10)"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-blindness-scenario-bar: "<gray>Write the blindness you want to set. (fadeIn, stay, fadeOut)"
+    create-blindness-scenario-message:
+      - ""
+      - "<gray>Write the blindness you want to set."
+      - "<gray>Example: <white>3s (3 seconds)"
+      - "<gray>Example: <white>1s,3s,1s (fadeIn, stay, fadeOut)"
+      - "<gray>Example: <white>1s,1500ms,1s (fadeIn, stay, fadeOut)"
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-head-rotation-scenario-bar: "<gray>Write the head rotation speed you want to set."
+    create-head-rotation-scenario-message:
+      - ""
+      - "<gray>Write the head rotation speed you want to set."
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-figure-scenario-bar: "<gray>Write the model id of the figure you want to create."
+    create-figure-scenario-message:
+      - ""
+      - "<gray>Write the model id of the figure you want to create."
+      - "<gray>Works with model engine."
+      - "<gray>Type <red>cancel <gray>to cancel."
+
+    create-figure-animation-scenario-bar: "<gray>Write an animation for the %model-id%."
+    create-figure-animation-scenario-message:
+      - ""
+      - "<gray>Write an animation for the %model-id%."
+      - "<gray>Example: <white>WALK"
+      - "<gray>Example: <white>ATTACK"
+      - "<gray>Type <red>cancel <gray>to cancel."
