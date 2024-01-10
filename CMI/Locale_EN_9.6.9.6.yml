@@ -42,16 +42,8 @@
 # If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
 # If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
 # If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
-# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
+# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message. Optional time can be defined with !title:4.5! which will keep title message for 4.5 seconds
 # If line starts with !bossbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
-# To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
-# <T> and </T> required, other is optional
-# Use /n to break line
-# To have more than one JSON message use <Next>
-# <C> performs command as a player who clicked
-# <CC> performs command from console once
-# <CCI> performs command from console every time player clicks text
-# <URL> includes url
 #
 #
 #
@@ -81,7 +73,6 @@ info:
     Boss:
       DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
       WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
-  Spawner: '&r[type] Spawner'
   FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
   ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
   Elevator:
@@ -132,7 +123,7 @@ info:
   combat:
     CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
       Wait: [time]'
-    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
+    CantUseCommand: '!actionbar!&cCan''t use command while in combat mode. Wait: [time]'
     bossBarPvp: '&cCombat mode [autoTimeLeft]'
     bossBarPve: '&2Combat mode [autoTimeLeft]'
   noSchedule: '&cSchedule by this name is not found'
@@ -182,6 +173,8 @@ info:
     subinv: '&eYour sub inventory should be empty!'
     subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!'
   Relog: '&eRelog might be needed for change to take effect'
+  outsideWorldBorder: '&cLocation is outside world border'
+  IncorrectColor: '&4Color defined incorrectly!'
   time:
     # Mainly for placeholder playtime output
     # Use + sign at the start of line to force include it even if specific and previous time values are 0
@@ -193,10 +186,6 @@ info:
   CommandFormat: '&cIncorrect command format'
   ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
   ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
-  months: '&e[months] &6months '
-  oneMonth: '&e[months] &6month '
-  weeks: '&e[weeks] &6weeks '
-  oneWeek: '&e[weeks] &6week '
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
@@ -774,6 +763,8 @@ command:
       - '&r&fRight click to deposit'
       holdPaper: '&eHold paper in your hand'
       cantUse: '&eCan''t use this piece of paper. It is a cheque already!'
+      clarification: '&cThis type of cheque is no longer accepted. Please contact
+        with staff member to update it'
   clear:
     help:
       info: '&eClear players inventory'
@@ -864,6 +855,8 @@ command:
         by &3[senderName]&e.'
       targetFeedbackCustom: '&eYour compass target was set to &3[x] [z] [world] &elocation
         by &3[sourceDisplayName]&e.'
+      targetPlayerFeedback: '&3[playerDisplayName] &eset their compass towards your
+        location'
       reset: '&eCompass target got reseted'
   condense:
     help:
@@ -1045,7 +1038,7 @@ command:
       info: '&eCustom text editor'
       args: ''
     info:
-      noText: '&cCant find custom text by this name'
+      noCText: '&cCant find custom text by this name ([name])'
       editInfo: '&eClick to paste old text. Type &6cancel &eto cancel action. Type
         &6remove &eto remove line'
       addInfo: '&eEnter new line text. Type &6cancel &eto cancel'
@@ -1144,11 +1137,10 @@ command:
       - -o will take item from offhand
     info:
       feedback: '&eYou have enchanted item with &3[enchant]:[level]&e enchantment
-        for &3[playerDisplayName]&e (&3[offon]&e).'
-      removed: '&eYou have removed &3[enchant] &eenchanted from item for &3[playerDisplayName]&e
-        (&3[offon]&e).'
-      cleared: '&eCleared &3ALL &eenchantments from item for &3[playerDisplayName]&e
-        (&3[offon]&e).'
+        for &3[playerDisplayName]'
+      removed: '&eYou have removed &3[enchant] &eenchanted from item for &3[playerDisplayName]'
+      clear: '&eCleared enchantments from item for &3[playerDisplayName]'
+      clearOne: '&eRemoved &3[enchant] &eenchantment from item for &3[playerDisplayName]'
       noitem: '&cNot holding any item in hand.'
       invalidEnchant: '&cYou dont have permission to enchant item with invalid enchantment'
       clearedInvalid: '&eRemoved &6[amount] &einvalid enchantments from item'
@@ -1156,6 +1148,7 @@ command:
       wrongItem: '&eWrong item in your hand'
       enchantlimit: '&cYou dont have access to this enchantment'
       levellimit: '&cLevel is too high, max allowed is &e[level].'
+      conflict: '&cConflicting enchantment &7[enchant1] &c-> &7[enchant2]'
       possible: '&ePossible enchants: '
       possibleList: '&6[enchant]'
   ender:
@@ -1357,23 +1350,12 @@ command:
   give:
     help:
       info: '&eGive item to player'
-      args: (playerName) [itemname/hand] (amount/playerName) (-slot:[number])
+      args: (playerName) [itemdata/hand] (playerName) (-slot:[number]) (unstack) (-s)
       explanation:
-      - Name and lore supports placeholders
-      - 'Example: /give stone'
-      - /give Zrips stone 5 n Stonehenge
-      - /give stick e knockback:1
-      - /give diamondsword 3 unstack
-      - /give Zrips sponge l Got_item_on:_%date/YY/MM/dd-HH:mm:ss%
-      - /cmi give Zrips sponge 1 e Knockback:%rand/1-5%
-      - /cmi give Zrips sponge %rand/1-10%
-      - /cmi give Zrips sponge l line_one/nline_two
-      - /cmi give Zhax hand Zrips
-      - /give sponge a maxhealth:5:mainhand
-      - /give diamond_sword unbreakable
-      - /give mob_spawner:creeper
-      - /give minecraft:diamond_helmet 1 0 {ench:[{id:0,lvl:100},{id:2,lvl:100},{id:34,lvl:100}]}
-      - /give potion:speed-true-true
+      - |-
+        Example: /cmi give diamondsword;{#Gray}My_Uber_Sword;&2Goblin_Slayer!
+        {#pink}With_Love!;sharpness:3,durability:3;hideenchants
+      - <T>More information at www.zrips.net/cmi/commands/icwol/</T><URL>https://www.zrips.net/cmi/commands/icwol/</URL>
     info:
       feedback: '&6Giving &e[amount] &6of &e[itemname] &6(&e[customitemname]&6) to
         &e[playerDisplayName]'
@@ -1407,7 +1389,8 @@ command:
       args: (playerName) [true/false/color/gui]
       explanation:
       - 'Example: /glow Zrips red'
-      - 'Permissions: cmi.command.glow.[color] - allows to set particular glow color'
+      - 'Permissions: cmi.command.glow.color.[color] - allows to set particular glow
+        color'
     info:
       feedback: '&eYou have set [color]glow &eto &3[boolean]&e for &3[playerDisplayName]&e
         (&3[offon]&e).'
@@ -1530,7 +1513,7 @@ command:
       interval: '&7Update every &6[second] &7seconds'
       intervalLore:
       - '&7How often, in seconds, information on the hologram is updated'
-      - '&7If text is not changing, set it to -1'
+      - '&7If text is not changing, set it to 0'
       pageInterval: '&7Change page every &6[second] &7seconds'
       pageIntervalLore:
       - '&7How often, in seconds, hologram page is changed automatically'
@@ -1572,9 +1555,41 @@ command:
       particleWidth: '&7Particle extra width: &6[amount]'
       particleOffsetX: '&7Particle offset X: &6[amount]'
       particleOffsetY: '&7Particle offset Y: &6[amount]'
+      locationRange: '&7Modify location and range'
+      interactions: '&7Modify interactions'
+      newDisplayMethod: '&7Use new display method: &6[state]'
+      enabled: '&7Activated: &6[state]'
+      followType: '&7Follow type: &6[type]'
+      doubleSided: '&7Double sided: &6[state]'
+      holoYaw: '&7Yaw: &6[angle]'
+      holoPitch: '&7Pitch: &6[angle]'
+      pitchLimits: |-
+        &4When pitch is not at 0 degrees
+        &4interactions with hologram support
+        will be disabled
+      alignment: '&7Text alignment: &6[type]'
+      shadow: '&7Text shadow: &6[state]'
+      textAlpha: '&7Text transparency: &6[alpha]'
+      bgAlpha: '&7Background transparency: &6[alpha]'
+      bgColor: '&7Background color: &6[color]'
+      scaleWidth: '&7Scale width: &6[scale]'
+      scaleHeight: '&7Scale height: &6[scale]'
+      lightLevels: '&7Light levels'
+      levels: |-
+        &7Sky: &6[sky]
+        &7Block: &6[block]
+      iconScale: '&7Icon scale: &6[scale]'
+      iconPitch: '&7Icon pitch: &6[angle]'
+      iconYaw: '&7Icon yaw: &6[angle]'
+      reset: '&7Press &6Q &7to reset'
+      embeddedAutoButton: '&7Enabled pagination buttons: [state]'
+      # Use ctext format to define different behaviors for plain and hover over text
+      # Commands are not supported, only text and hover
+      prevPage: <T>&6<<<<  </T><H>&e<<<<  </H>
+      nextPage: <T>  &6>>>></T><H>  &e>>>></H>
       autoButton: '&7Automatically generate pagination buttons'
       autoButtonLore:
-      - '&eCurrent hologram doesnt have any pages create'
+      - '&eCurrent hologram doesnt have any pages created'
       - '&eUse &6!nextpage! &eas a new line to make next page'
       autoButtonForward: '&2This hologram already has forwards button created'
       autoButtonBackward: '&2This hologram already has backwards button created'
@@ -1737,7 +1752,7 @@ command:
       - '[playerDisplayName]'
       - '[nick]'
       - '[group]'
-      - '[knownAs]'
+      - '[title]'
       - '[onlineoffline]'
       - '[playtime]'
       newIp: '&fIP '
@@ -1747,7 +1762,7 @@ command:
       - '[firstLogin]'
       newNameHoverNick: '&7Nick: &f[nick]'
       newNameHoverGroup: '&7Group: &f[group]'
-      newNameHoverKnownAs: '&7Also known as: &f[nameList]'
+      newNameHoverTitle: '&7Prefix: &f[prefix] &7Suffix: &f[suffix]'
       newNameHoverIp: '&7Ip: &f[ip]'
       newNameHoverPing: '&7Ping: &f[ping]'
       newNameHoverCountry: ' &7[country] &f(&2[countryCode]&f) [city]'
@@ -1967,6 +1982,7 @@ command:
         (&3[offon]&e).'
       maxLines: '&eThere is only &6[lines] &elines of lore.'
       blocked: '&eThis item is blocked from re-loring.'
+      nomodification: '&cYou can''t modify existing lore lines'
   itemname:
     help:
       info: '&eRename items'
@@ -2034,6 +2050,7 @@ command:
     info:
       jailList: '&6[place]. &e[jailName] &7Cells:&e[cellCount] &7Jailed:&6[count]'
       cellList: '&6[place]. &7Id:&e[cellId] &7Jailed:&6[count]'
+      jailedBy: '&6Jailed by: &e[playerDisplayName]'
       cellJailedList: '&6[place]. &e[playerDisplayName] &7release in &e[time]'
       Release: '&7Click to release'
   jump:
@@ -2109,6 +2126,10 @@ command:
       noFoundKit: '&eCan''t find any kits'
       givenKit: '&eYou have given &6[kit] &eto &6[playerDisplayName]'
       title: '&8Kits'
+      # List of custom kit GUI titles based by page
+      # If title isint defined we will use default one
+      titlesByPage:
+      - '&8Kits'
       nameCanUse: '&6[kitName]'
       nameCantUse: '&7[kitName]'
       group: '&eGroup: &6[group]'
@@ -2220,6 +2241,10 @@ command:
       editDisplayName:
       - '&eClick to change display name'
       - '&eThis only used for visual purposes'
+      fileName: '&7FileName: &r&f[name]'
+      editFileName:
+      - '&eClick to change file name'
+      - '&eWill define where kit should be saved at'
       kitGroup: '&eKit group: &6[group]'
       dropItems: '&eDrop item if full: &6[state]'
       commands: '&eCommands:'
@@ -2348,8 +2373,10 @@ command:
       removedMail: '&eRemoved mail'
       noMailsById: '&eThere is no mail by this id for this player'
       noMails: '&eYou have no mail'
-      mailHover: '&e[senderName] /n &e[time]'
-      mailHoverExpires: '/n &eExpires in: &6[time]'
+      mailHover: "&e[senderName] \n&e[time]"
+      mailHoverExpires: |2-
+
+        &eExpires in: &6[time]
       mailList: ' &7[senderDisplayName]&e: [mail] '
       waitingMail: '&eYou have &6[amount] &emails. Click to check them out.'
   mailall:
@@ -2618,6 +2645,10 @@ command:
         acceptingMoney: '&eAccepting money payments'
         chatbubble: '&eChat bubbles'
         pmSound: '&ePrivate messages sounds'
+        rideMe: '&ePlayers can ride you'
+        pveDamageNumbers: '&eShows PvE damage numbers'
+        pvpDamageNumbers: '&eShows PvP damage numbers'
+        InformDurability: '&eInform on item durability loss'
   panimation:
     help:
       info: '&ePlay custom particle animation'
@@ -2644,7 +2675,6 @@ command:
     info:
       feedback: '&ePing: &6[ping]ms'
       selffeedback: '&eYour ping is &6[ping]ms'
-      customMessage: '[message]'
   placeholders:
     help:
       info: '&eList out all placeholders'
@@ -2821,12 +2851,15 @@ command:
       requiredExp: ' &eExp: [color][current]&e/&6[needed]'
       requiredVotes: ' &eVotes: [color][current]&e/&6[needed]'
       requiredPerm: ' &ePerm: '
+      requiredPlaceholder: ' &eCustom: '
+      requiredPlaceholderList: '[color][message]'
+      requiredPlaceholderHover: '&e[color][current]&e/&6[needed]'
       requiredMcmmo: ' &eMcmmo: '
-      requiredMcmmoList: '&e[color][name] '
+      requiredMcmmoList: '&e[color][name]'
       requiredMcmmoListHover: ' &e[color][current]&e/&6[needed]'
       requiredMcmmoPower: Power
       requiredAurelium: ' &eAurelium: '
-      requiredAureliumList: '&e[color][name] '
+      requiredAureliumList: '&e[color][name]'
       requiredAureliumListHover: ' &e[color][current]&e/&6[needed]'
       requiredJobs: ' &eJobs: '
       requiredJobsList: ' &e[color][name]'
@@ -2890,6 +2923,19 @@ command:
       args: (itemName) (-c)
     info:
       type: '&0[type]'
+      types:
+        Shaped: Shaped
+        Shapeless: Shapeless
+        Furnace: Furnace
+        Blasting: Blasting
+        Campfire: Campfire
+        Cooking: Cooking
+        Merchant: Merchant
+        Smoking: Smoking
+        Stonecutting: Stonecutting
+        Smithing: Smithing
+        Complex: Complex
+        Unknown: Unknown
       page: ' &0[current]&7/&0[total]'
       noRecipes: '&cCant find any recipes for this item'
   reload:
@@ -2993,7 +3039,7 @@ command:
   resetdbfields:
     help:
       info: '&eResets particular database columns to default value'
-      args: '[collumnName] (-w:[worldName]) (-p:[playerName])'
+      args: '[columnName] (-w:[worldName]) (-p:[playerName])'
     info:
       feedback: '&eUpdated &7[amount] &eplayers'
       nofield: '&cCant find field by this name'
@@ -3427,8 +3473,8 @@ command:
   sound:
     help:
       info: '&ePlay sound at target location'
-      args: '[sound] (-p:[pitch]) (-v:[volume]) (playerName/-all) (world;x;y;z) (-r:[radius])
-        (-s)'
+      args: '[sound] (-p:[pitch]) (-v:[volume]) (playerName/-all/-l:playerName) (world;x;y;z)
+        (-r:[radius]) (-s)'
     info:
       playing: "&ePlaying &6[sound] &eat [world] [x]:[y]:[z] \n&ePitch: &6[pitch]\
         \ &eVolume: &6[volume]"
@@ -3470,34 +3516,8 @@ command:
       info: '&eSpawns entity at your location'
       args: '[EntityType]'
       explanation:
-      - ' &e- First argument always is main entities name'
-      - ' &e- You can define entities states: baby, adult, dumb, immortal, tamed,
-        n-[name], upwards, glow, skull-[name], helmet-[itemname], chest-[itemname],
-        legs-[itemname], boots-[itemname], mhand-[itemname], ohand-[itemname], effect-levitation/10/1-speed/10/2.
-        /n Example: horse:baby:tamed:n-Horsy, zombie:skull-Zrips:n-AngryZombie:mhand-Diamond_Sword'
-      - ' &e- some entities have special variables: '
-      - '    &6Sheep &e- white, brown, red, rainbow and so on... &6primed_tnt &e-
-        [ticks], incendiary'
-      - '    &6Horse &e- white, chestnut, creamy, darkbrown, gray, black'
-      - '    &6Ocelot &e- red, siamese, wild, black &6experience_orb &e- [number]'
-      - '    &6Skeleton &e- wither, &6Creeper &e- charged &6Wolf &e- angry'
-      - '    &6Zombie &e- villager, blacksmith, butcher, farmer, priest, librarian'
-      - '    &6Villager &e- blacksmith, butcher, farmer, priest, librarian'
-      - '    &6Slime, MagmaCube &e- size by giving number from 1. slime:3'
-      - '    &6ArmorStands &e- nogravity, noplate, arms, noarms, small'
-      - '    &6ShulkerBullet &e- [target], bounce'
-      - ' &e- Extra variables:'
-      - '     &6ps:zombie:priest:baby-1 &e- passanger with amount'
-      - '     &6hp:20 &e- health'
-      - '     &6sp:3 &e- spreads randomly entities in range'
-      - '     &6s:4 &e- entities speed'
-      - '     &6t:[playername] &e- target which one entities will atack'
-      - '     &6q:10 &e- amount you want to spawn'
-      - '     &6[playername] &e- spawns entities at players location'
-      - '     &6loc:123/13.0/-15/World &e- spawn location. World name is optional
-        if used as player'
-      - 'Example: /cmi spawnmob sheep:adult:rainbow ps:chicken:baby:n-Chick_on_Sheep
-        q:10 sp:10 hp:50 s:2'
+      - 'Example: /cmi spawnmob sheep:adult:rainbow 3 sp:5'
+      - <T>More information at www.zrips.net/cmi/commands/spawnmob/</T><URL>https://www.zrips.net/cmi/commands/spawnmob/</URL>
     info:
       wrongEntityName: '&eIncorrect entity name'
       spawnedEntities: '&eSpawned &6[entities] &eentities '
@@ -4141,7 +4161,7 @@ command:
       CMIB: '&7CMIB '
       newVault: '&eVault: &6[version] '
       Modules: '&eModules -> &a[enabled] enabled &7[disabled] disabled&e: &c[list]'
-      Bungee: ' &eBungeeCord '
+      Network: ' &e[type] '
       CMILib: '&eCMILib: &6[version] '
       cmilVersionNew: '&e-> [newVersion]'
   viewrange:
@@ -4187,7 +4207,7 @@ command:
       ownLine: '&2[place]. &2[playerDisplayName]: &2[votes]'
   walkspeed:
     help:
-      info: '&eSet players walk speed from 0 to 10'
+      info: '&eSet players walk speed from 0 to 5'
       args: (playerName) [amount] (-s)
     info:
       feedback: '&eYou have set &3[amount]&e walk speed for &3[playerDisplayName]&e
