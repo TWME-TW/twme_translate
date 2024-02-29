@@ -1,0 +1,291 @@
+# This version number is language-specific.
+# If there is an included language file for this language and the included version is higher,
+# the file in the plugin directory will be replaced with the included file.
+# If you don't want your language file being reset with new versions, set this version number to 99999
+
+version: 8
+
+color:
+  p: '9'
+  s: 'f'
+  t: '7'
+update: '&tThere is a new update of &pAuxProtect&t available!\n&tCurrent Version: &p<current_version> &tNew Version: &p<new_version>\n&thttps://www.spigotmc.org/resources/auxprotect.99147/'
+no-permission: '&cYou don''t have permission for that.'
+no-permission-node: '&cYou don''t have permission for that: &t<node>'
+no-permission-flag: '&cYou don''t have permission for that flag.'
+invalid-parameter: '&cInvalid parameter: <invalid_parameter>'
+invalid-syntax: '&cInvalid syntax.'
+invalid-notenough: '&cNot enough arguments.'
+error: '&cAn error occurred'
+action-disabled: '&cThat action is disabled.'
+notplayererror: 'That command can only be used ingame'
+backup-sqliteonly: 'Backups only work on SQLite'
+unknown-subcommand: 'Unknown subcommand. Do ''/ap help'' for more info.'
+command:
+  ap:
+    help: '&tDo &p/ap help&t for more info.'
+    developed-by: 'Developed by'
+    backup-created: 'Backup created: <file>'
+    config-reloaded: '&pConfig reloaded.'
+    lang-reloaded: '&pLanguage reloaded: <locale>'
+    lang-not-found: '&pLanguage file not found: <file>'
+  saveinv:
+    success: '&p<target>''<optional_s> &tinventory has been manually saved. &otime:<time>'
+    toosoon: '&cThat user''s inventory has been saved too recently.'
+  inv:
+    recovered: '&p<admin> &srecovered &p<target>''<optional_s> &sinventory from &p<time> &sago.'
+    force-recovered: '&p<admin> &sforce recovered &p<target>''<optional_s> &sinventory from &p<time> &sago.'
+    success: '&sYou recovered &p<target>''<optional_s> &sinventory.'
+    notify-player: '&p<admin> &srecovered your inventory from &p<time> &sago.'
+    notify-player-ensure-room: '&tEnsure you have room in your inventory before claming!'
+    item-viewer: 'Item Viewer'
+  claiminv:
+    cancelled-other: '&aYou cancelled <target>''<optional_s> claimable inventory.'
+    cancelled: '&cYour claimable inventory was cancelled.'
+    youhavenone: '&cYou have no inventory to claim.'
+    otherhasnone: '&cThat player has no claimable inventory to cancel.'
+    header: 'Inventory Claim'
+    claim-button:
+      label: 'Claim'
+      hover: '&sClick to claim your recovered inventory'
+  purge:
+    purging: '&pPurging ''<table>''...'
+    uids: '&pPurging unused UIDs...'
+    notvacuum: '&cSkipping condensing SQLite file. Last performed <time> ago. To force this, run ''ap sqli vacuum'' from the console.'
+    vacuum: '&pCondensing SQLite file...'
+    complete-count: '&pPurge complete. Purged <rows> rows.'
+    error: '&cAn error occurred while purging.'
+    time: '&cThat purge is too short. Try a longer amount of time.'
+    table: '&cThat table is invalid or does not exist.'
+    nopurge: '&cThat table cannot be purged directly.'
+    skipauto: '&pSkipping auto-purge as it has only been <time> since last.'
+  lookup:
+    unknown-world: '&cUnknown world: <world>'
+    looking: '&pSearching database...'
+    noresults: '&cNo results found.'
+    count: '&p<results> &sresults found.'
+    page-footer: '&tPage (&p<page_number>/<page_count>&t) &p<entry_count> &ttotal entries.'
+    page-footer-groups: '&tPage (&p<page_number>/<page_count>&t) &p<entry_count> &ttotal groups.'
+    no-results-selected: '&cYou don''t have a lookup to page through.'
+    nopage: '&cThat page does not exist.'
+    toomany: '&cToo many entries. Try narrowing your search. (<count> entries, over <max>)'
+    incompatible-tables: '&cThose actions are incompatible.'
+    action-negate: '&cYou cannot negate actions.'
+    action-perm: '&cYou do not have permission to lookup that action. &t''<node>'''
+    action-none: '&cYou must specify an action.'
+    rating-wrong: '&cYou can only specify ''rating'' for a:vein.'
+    nodata: '&cThat table does not have data logs.'
+    playback:
+      starting: '&pPlayback starting...'
+      stopped: '&pPlayback stopped.'
+      toolong: '&cCan not playback a range greater than <limit>.'
+    playtime:
+      header: '&p<target>''<optional_s> Playtime'
+      hover: '&p<time>\n&p<minutes> &8online'
+      nouser: '&cNo user specified'
+      toomanyusers: '&cToo many users specified'
+      toolong: '&cMax time range for playtime is <days> days.'
+    invalid-time-parameter: 'Invalid time specifier: <specifier>'
+  help:
+    nohelp: '&cThis command does not have a help page.'
+    header: '&t----- &pAuxProtect Help &t- &p/$prefix <command> &t-----'
+    # Note, the <> brackets in the help language lists are literals and do not refer to translations.
+    help:
+    - '&p/$prefix lookup <params> &s- Perform a lookup'
+    - '&p/$prefix purge <params> &s- Perform a database purge'
+    - '&p/$prefix info &s- Version and credit information'
+    - '&p/$prefix help [command] &s- Show this message, or more information on a subcommand'
+    - '&s'
+    - '&tSee the Wiki for more: https://github.com/Heliosares/AuxProtect/wiki'
+    inventory:
+      - '&s/$prefix &pinventory &s<name> [time]'
+    lookup:
+    - '&s/$prefix &plookup &s<params>'
+    - '&pParams:'
+    - '&pTime: &sIn seconds, minutes, hours, days, or weeks, represented by the first letter (i.e ''s'' for seconds).'
+    - '&pBefore/After: &sUsed to set a range for time lookup.'
+    - '&pAction: &sType of world interaction log, see tab completion for options.'
+    - '&pTarget: &sSpecify the parameter an action was performed to. You can use an asterisk as a wildcard and a dash as a space in this parameter.'
+    - '&pRadius: &sSpecify the square block radius for a lookup.'
+    - '&sAll parameters can be inverted using &p''!'' &s(i.e radius:5,!2 would do a lookup within 5 blocks of the player, but NOT within 2 blocks.)'
+    playtime:
+      - '&s/$prefix &pplaytime &s<name> [time]'
+    purge:
+    - '&s/$prefix &ppurge &s<table | all> <time>'
+    - '&sSee tab completion for list of valid tables.'
+    - '&sMinimum time is 2 weeks.'
+  time:
+    server-time: '&pServer time:'
+playernotfound: '&cPlayer not found.'
+lookup-playernotfound: '&cPlayer <target> not found.'
+lookup-unknownaction: '&cUnknown action: <action>.'
+xray-rate-nochange: '&cThat is already the rating for that entry.'
+xray-rate-written: '&aRating successfully written.'
+xray-done: '&aThere are no more xray checks!'
+xray-notfound: '&cNo results found at that time'
+xray-toomany: '&cToo many results found'
+xray-already-rated: '&cThis entry has already been rated. Would you like to rate anyway?'
+xray-click-to-change: '&aClick to rate'
+inactive-alert: '&8[&4Server&8] &e<user> &tmay be inactive. &e<inactive_minutes> &tout of &e<total_minutes> &tminutes inactive.'
+yes: 'Yes'
+no: 'No'
+database-busy: '&cThe database is currently busy. Try again later or check the console for more information.'
+protocollib-not-loaded: '&cProtocolLib is required for this action and it is not installed.'
+
+results:
+  click-to-copy: 'Click to copy to clipboard'
+  click-to-copy-time: '&tClick to copy epoch time. (<time>ms)'
+  click-to-view: 'Click to view!'
+  grouping-of: '&fGrouping of &p<entry_count> &fentries'
+  header: '&pAuxProtect Results'
+  page:
+    first: '&pJump to First Page'
+    previous: '&pPrevious Page'
+    next: '&pNext Page'
+    last: '&pJump to Last Page'
+  redacted: 'REDACTED'
+  time: '&t<time> ago'
+  time-now: '&tJust Now'
+  view: 'View'
+  view-inv: 'View Inv'
+
+inv-recover-menu:
+  main-header: '<target>''<optional_s> Inventory - <time> ago'
+  ender-header: '<target>''<optional_s> Ender Chest - <time> ago'
+  xp-error: '&cUnable to recover experience.'
+  button:
+    force:
+      label: '&2&lForce Recover Inventory'
+      hover:
+      - ''
+      - '&a&lDouble Click'
+      - ''
+      - '&tThis will &c&loverwrite &7the player''s'
+      - '&7current inventory and exp with'
+      - '&7what is in the view above.'
+    force-unavailable:
+      label: '&8&lForce Recover Inventory Unavailable'
+      hover:
+      - '&cPlayer must be online to'
+      - '&cforce recover their inventory'
+    recover:
+      label: '&a&lRecover Inventory'
+      hover:
+      - ''
+      - '&tThis will give the player a'
+      - '&tprompt to claim this inventory as'
+      - '&t if they were opening a chest with'
+      - '&t the above contents. They will also get'
+      - '&tthe exp stated here.'
+      - ''
+      - '&cThis will not overwrite anything and may'
+      - '&cduplicate items &tif they weren''t'
+      - '&tactually lost originally.'
+    close: '&c&lClose'
+    ender-chest: '&8&lView Enderchest'
+    xp:
+      had: '&2Player had <xp> xp'
+      error: '&8No XP data'
+
+actions:
+  activity: activity
+  alert: may be hacking
+  anvil: anvilled
+  auctionbuy: bought from auction
+  auctionlist: listed for auction
+  breakitem: broke item
+  bucket:
+    p: caught fish
+    n: released fish
+  censor: was censored
+  chat: said
+  command: executed
+  connect: connected to
+  consume: consumed
+  craft: crafted
+  drop: dropped
+  elytra:
+    p: started flying
+    n: stopped flying
+  enchant: enchanted
+  entity:
+    p: placed entity
+    n: destroyed entity
+  explode: caused explosion of
+  gamemode: switched gamemode to
+  grab: grabbed
+  hurt: hurt
+  ignoreabandoned: ignored abandoned warning
+  inv:
+    p: opened
+    n: closed
+  inventory: inventory
+  ip: Unique IP
+  itemframe:
+    p: add itemframe
+    n: remove itemframe
+  jobs: earned from job
+  kick: was kicked
+  kill: killed
+  land: projectile landed
+  launch: launched
+  leash:
+    p: leashed
+    n: unleashed
+  lightning: struck lightning
+  money: money
+  mount:
+    p: mounted
+    n: unmounted
+  msg: messaged
+  nametag: name tagged
+  nationbalance: nation balance
+  nationbank:
+    p: deposited
+    n: withdrew
+  nationcreate: created nation
+  nationdelete: deleted nation
+  nationjoin:
+    p: joined nation
+    n: left nation
+  nationrename: renamed nation
+  pay: paid
+  pickup: picked up
+  pluginload:
+    p: loaded plugin
+    n: unloaded plugin
+  pos: position
+  raidtrigger: triggered raid
+  raidspawn: spawned raider
+  recover: recovered inv of
+  respawn: respawned
+  session:
+    p: logged in
+    n: logged out
+  shop:
+    p: bought
+    n: sold
+  smith: upgraded to netherite
+  tame: tamed
+  totem: used totem
+  townbalance: town balance
+  townbank:
+    p: deposited
+    n: withdrew
+  townclaim:
+    p: claimed
+    n: unclaimed
+  towncreate: created town
+  towndelete: deleted town
+  townjoin:
+    p: joined town
+    n: left town
+  townmayor: became the mayor of
+  townmerge: merged into
+  townrename: renamed town to
+  townyname: named
+  tp:
+    p: teleported to
+    n: teleported from
+  username: username
+  vein: mined vein
