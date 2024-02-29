@@ -9,283 +9,283 @@ color:
   p: '9'
   s: 'f'
   t: '7'
-update: '&tThere is a new update of &pAuxProtect&t available!\n&tCurrent Version: &p<current_version> &tNew Version: &p<new_version>\n&thttps://www.spigotmc.org/resources/auxprotect.99147/'
-no-permission: '&cYou don''t have permission for that.'
-no-permission-node: '&cYou don''t have permission for that: &t<node>'
-no-permission-flag: '&cYou don''t have permission for that flag.'
-invalid-parameter: '&cInvalid parameter: <invalid_parameter>'
-invalid-syntax: '&cInvalid syntax.'
-invalid-notenough: '&cNot enough arguments.'
-error: '&cAn error occurred'
-action-disabled: '&cThat action is disabled.'
-notplayererror: 'That command can only be used ingame'
-backup-sqliteonly: 'Backups only work on SQLite'
-unknown-subcommand: 'Unknown subcommand. Do ''/ap help'' for more info.'
+update: '&t有新版本的 &pAuxProtect&t 可用！\n&t目前版本: &p<current_version> &t新版本: &p<new_version>\n&thttps://www.spigotmc.org/resources/auxprotect.99147/'
+no-permission: '&c您沒有執行該操作的權限。'
+no-permission-node: '&c您沒有執行該操作的權限: &t<node>'
+no-permission-flag: '&c您沒有執行該旗標的權限。'
+invalid-parameter: '&c無效的參數: <invalid_parameter>'
+invalid-syntax: '&c無效的語法。'
+invalid-notenough: '&c參數不足。'
+error: '&c發生錯誤'
+action-disabled: '&c該操作已被停用。'
+notplayererror: '該指令僅可在遊戲中使用'
+backup-sqliteonly: '備份僅在 SQLite 上運作'
+unknown-subcommand: '未知的子指令。請使用 ''/ap help'' 以獲取更多資訊。'
 command:
   ap:
-    help: '&tDo &p/ap help&t for more info.'
-    developed-by: 'Developed by'
-    backup-created: 'Backup created: <file>'
-    config-reloaded: '&pConfig reloaded.'
-    lang-reloaded: '&pLanguage reloaded: <locale>'
-    lang-not-found: '&pLanguage file not found: <file>'
+    help: '&t輸入 &p/ap help&t 以獲取更多資訊。'
+    developed-by: '開發者'
+    backup-created: '已建立備份: <file>'
+    config-reloaded: '&p配置文件重新載入。'
+    lang-reloaded: '&p語言文件重新載入: <locale>'
+    lang-not-found: '&p找不到語言文件: <file>'
   saveinv:
-    success: '&p<target>''<optional_s> &tinventory has been manually saved. &otime:<time>'
-    toosoon: '&cThat user''s inventory has been saved too recently.'
+    success: '&p<target>''<optional_s> &t的存檔已手動保存。&o時間：<time>'
+    toosoon: '&c該使用者的存檔已保存得太近了。'
   inv:
-    recovered: '&p<admin> &srecovered &p<target>''<optional_s> &sinventory from &p<time> &sago.'
-    force-recovered: '&p<admin> &sforce recovered &p<target>''<optional_s> &sinventory from &p<time> &sago.'
-    success: '&sYou recovered &p<target>''<optional_s> &sinventory.'
-    notify-player: '&p<admin> &srecovered your inventory from &p<time> &sago.'
-    notify-player-ensure-room: '&tEnsure you have room in your inventory before claming!'
-    item-viewer: 'Item Viewer'
+    recovered: '&p<admin> &s恢復了&p<target>''<optional_s> &s於&p<time> &s前的存檔。'
+    force-recovered: '&p<admin> &s強制恢復了&p<target>''<optional_s> &s於&p<time> &s前的存檔。'
+    success: '&s您已恢復了&p<target>''<optional_s> &s的存檔。'
+    notify-player: '&p<admin> &s從&p<time> &s前恢復了您的存檔。'
+    notify-player-ensure-room: '&t在領取前確保您的存檔有足夠空間！'
+    item-viewer: '物品檢視器'
   claiminv:
-    cancelled-other: '&aYou cancelled <target>''<optional_s> claimable inventory.'
-    cancelled: '&cYour claimable inventory was cancelled.'
-    youhavenone: '&cYou have no inventory to claim.'
-    otherhasnone: '&cThat player has no claimable inventory to cancel.'
-    header: 'Inventory Claim'
+    cancelled-other: '&a您取消了<target>''<optional_s>可以領取的存檔。'
+    cancelled: '&c您的可以領取的存檔已被取消。'
+    youhavenone: '&c您沒有可以領取的存檔。'
+    otherhasnone: '&c該玩家沒有可以取消的可以領取的存檔。'
+    header: '存檔領取'
     claim-button:
-      label: 'Claim'
-      hover: '&sClick to claim your recovered inventory'
+      label: '領取'
+      hover: '&s點擊以領取您恢復的存檔。'
   purge:
-    purging: '&pPurging ''<table>''...'
-    uids: '&pPurging unused UIDs...'
-    notvacuum: '&cSkipping condensing SQLite file. Last performed <time> ago. To force this, run ''ap sqli vacuum'' from the console.'
-    vacuum: '&pCondensing SQLite file...'
-    complete-count: '&pPurge complete. Purged <rows> rows.'
-    error: '&cAn error occurred while purging.'
-    time: '&cThat purge is too short. Try a longer amount of time.'
-    table: '&cThat table is invalid or does not exist.'
-    nopurge: '&cThat table cannot be purged directly.'
-    skipauto: '&pSkipping auto-purge as it has only been <time> since last.'
+    purging: '&p清理 ''<table>''中...'
+    uids: '&p清理未使用的UID...'
+    notvacuum: '&c跳過壓縮SQLite檔案。上次執行於<time>前。若要強制執行，請從控制台運行 ''ap sqli vacuum''。'
+    vacuum: '&p壓縮SQLite檔案...'
+    complete-count: '&p清理完成。已清理<rows>行。'
+    error: '&c清理時發生錯誤。'
+    time: '&c該清理時間太短。請嘗試更長的時間。'
+    table: '&c該表格無效或不存在。'
+    nopurge: '&c無法直接清理該表格。'
+    skipauto: '&p跳過自動清理，因為上次僅過去<time>。'
   lookup:
-    unknown-world: '&cUnknown world: <world>'
-    looking: '&pSearching database...'
-    noresults: '&cNo results found.'
-    count: '&p<results> &sresults found.'
-    page-footer: '&tPage (&p<page_number>/<page_count>&t) &p<entry_count> &ttotal entries.'
-    page-footer-groups: '&tPage (&p<page_number>/<page_count>&t) &p<entry_count> &ttotal groups.'
-    no-results-selected: '&cYou don''t have a lookup to page through.'
-    nopage: '&cThat page does not exist.'
-    toomany: '&cToo many entries. Try narrowing your search. (<count> entries, over <max>)'
-    incompatible-tables: '&cThose actions are incompatible.'
-    action-negate: '&cYou cannot negate actions.'
-    action-perm: '&cYou do not have permission to lookup that action. &t''<node>'''
-    action-none: '&cYou must specify an action.'
-    rating-wrong: '&cYou can only specify ''rating'' for a:vein.'
-    nodata: '&cThat table does not have data logs.'
+    unknown-world: '&c未知世界: <world>'
+    looking: '&p搜索資料庫...'
+    noresults: '&c未找到結果。'
+    count: '&p找到<results>個結果。'
+    page-footer: '&t頁面 (&p<page_number>/<page_count>&t) &p<entry_count> &t總條目數。'
+    page-footer-groups: '&t頁面 (&p<page_number>/<page_count>&t) &p<entry_count> &t總群組數。'
+    no-results-selected: '&c您沒有要翻頁查找的內容。'
+    nopage: '&c該頁面不存在。'
+    toomany: '&c條目太多。請嘗試縮小搜索範圍。 (條目數: <count>，超過上限: <max>)'
+    incompatible-tables: '&c這些操作不相容。'
+    action-negate: '&c您不能否定這些操作。'
+    action-perm: '&c您無權查詢該操作。 &t''<node>'''
+    action-none: '&c您必須指定一個操作。'
+    rating-wrong: '&c您只能為 a:vein 指定 ''rating''。'
+    nodata: '&c該表格沒有數據日誌。'
     playback:
-      starting: '&pPlayback starting...'
-      stopped: '&pPlayback stopped.'
-      toolong: '&cCan not playback a range greater than <limit>.'
+      starting: '&p播放開始...'
+      stopped: '&p播放停止。'
+      toolong: '&c無法播放超過<limit>的範圍。'
     playtime:
-      header: '&p<target>''<optional_s> Playtime'
-      hover: '&p<time>\n&p<minutes> &8online'
-      nouser: '&cNo user specified'
-      toomanyusers: '&cToo many users specified'
-      toolong: '&cMax time range for playtime is <days> days.'
-    invalid-time-parameter: 'Invalid time specifier: <specifier>'
+      header: '&p<target>''<optional_s> 遊玩時間'
+      hover: '&p<time>\n&p<minutes> &8線上'
+      nouser: '&c未指定使用者'
+      toomanyusers: '&c指定的使用者太多'
+      toolong: '&c遊玩時間的最大範圍為<days>天。'
+    invalid-time-parameter: '無效的時間參數: <specifier>'
   help:
-    nohelp: '&cThis command does not have a help page.'
-    header: '&t----- &pAuxProtect Help &t- &p/$prefix <command> &t-----'
-    # Note, the <> brackets in the help language lists are literals and do not refer to translations.
+    nohelp: '&c此指令沒有說明頁面。'
+    header: '&t----- &pAuxProtect 說明 &t- &p/$prefix <command> &t-----'
+    # 注意，說明語言列表中的 <> 括號是字面上的，並不是指翻譯內容。
     help:
-    - '&p/$prefix lookup <params> &s- Perform a lookup'
-    - '&p/$prefix purge <params> &s- Perform a database purge'
-    - '&p/$prefix info &s- Version and credit information'
-    - '&p/$prefix help [command] &s- Show this message, or more information on a subcommand'
+    - '&p/$prefix lookup <params> &s- 執行查詢'
+    - '&p/$prefix purge <params> &s- 執行資料庫清理'
+    - '&p/$prefix info &s- 顯示版本和信用資訊'
+    - '&p/$prefix help [command] &s- 顯示此消息，或更多有關子指令的資訊'
     - '&s'
-    - '&tSee the Wiki for more: https://github.com/Heliosares/AuxProtect/wiki'
+    - '&t查看更多信息，請參閱 Wiki: https://github.com/Heliosares/AuxProtect/wiki'
     inventory:
       - '&s/$prefix &pinventory &s<name> [time]'
     lookup:
     - '&s/$prefix &plookup &s<params>'
-    - '&pParams:'
-    - '&pTime: &sIn seconds, minutes, hours, days, or weeks, represented by the first letter (i.e ''s'' for seconds).'
-    - '&pBefore/After: &sUsed to set a range for time lookup.'
-    - '&pAction: &sType of world interaction log, see tab completion for options.'
-    - '&pTarget: &sSpecify the parameter an action was performed to. You can use an asterisk as a wildcard and a dash as a space in this parameter.'
-    - '&pRadius: &sSpecify the square block radius for a lookup.'
-    - '&sAll parameters can be inverted using &p''!'' &s(i.e radius:5,!2 would do a lookup within 5 blocks of the player, but NOT within 2 blocks.)'
+    - '&p參數:'
+    - '&pTime: &s以秒、分鐘、小時、天或週為單位，由第一個字母表示（例如 ''s'' 代表秒）。'
+    - '&pBefore/After: &s用於設置時間查詢的範圍。'
+    - '&pAction: &s世界交互日誌的類型，查看選項的遞補選項。'
+    - '&pTarget: &s指定執行動作的參數。您可以在此參數中使用星號作為通配符，使用破折號作為空格。'
+    - '&pRadius: &s指定查詢的方塊半徑。'
+    - '&s所有參數都可以使用 &p''!'' &s進行反轉（例如，radius:5,!2 將在玩家周圍 5 個方塊內進行查詢，但不包括 2 個方塊內的區域）。'
     playtime:
       - '&s/$prefix &pplaytime &s<name> [time]'
     purge:
     - '&s/$prefix &ppurge &s<table | all> <time>'
-    - '&sSee tab completion for list of valid tables.'
-    - '&sMinimum time is 2 weeks.'
+    - '&s查看遞補選項以獲取有效表格列表。'
+    - '&s最短時間為2週。'
   time:
-    server-time: '&pServer time:'
-playernotfound: '&cPlayer not found.'
-lookup-playernotfound: '&cPlayer <target> not found.'
-lookup-unknownaction: '&cUnknown action: <action>.'
-xray-rate-nochange: '&cThat is already the rating for that entry.'
-xray-rate-written: '&aRating successfully written.'
-xray-done: '&aThere are no more xray checks!'
-xray-notfound: '&cNo results found at that time'
-xray-toomany: '&cToo many results found'
-xray-already-rated: '&cThis entry has already been rated. Would you like to rate anyway?'
-xray-click-to-change: '&aClick to rate'
-inactive-alert: '&8[&4Server&8] &e<user> &tmay be inactive. &e<inactive_minutes> &tout of &e<total_minutes> &tminutes inactive.'
-yes: 'Yes'
-no: 'No'
-database-busy: '&cThe database is currently busy. Try again later or check the console for more information.'
-protocollib-not-loaded: '&cProtocolLib is required for this action and it is not installed.'
+    server-time: '&p伺服器時間:'
+playernotfound: '&c未找到玩家。'
+lookup-playernotfound: '&c未找到玩家 <target>。'
+lookup-unknownaction: '&c未知操作: <action>。'
+xray-rate-nochange: '&c該條目的評分已經是該等級。'
+xray-rate-written: '&a評分成功寫入。'
+xray-done: '&a沒有更多的X射線檢查了！'
+xray-notfound: '&c在該時間找不到結果'
+xray-toomany: '&c找到太多結果'
+xray-already-rated: '&c此條目已被評分。是否仍要進行評分？'
+xray-click-to-change: '&a點擊以評分'
+inactive-alert: '&8[&4伺服器&8] &e<user> &t可能是非活躍的。&e<inactive_minutes> &t超過 &e<total_minutes> &t分鐘不活躍。'
+yes: '是'
+no: '否'
+database-busy: '&c數據庫當前繁忙。請稍後再試，或檢查控制台以獲取更多信息。'
+protocollib-not-loaded: '&c此操作需要安裝 ProtocolLib，但未安裝。'
 
 results:
-  click-to-copy: 'Click to copy to clipboard'
-  click-to-copy-time: '&tClick to copy epoch time. (<time>ms)'
-  click-to-view: 'Click to view!'
-  grouping-of: '&fGrouping of &p<entry_count> &fentries'
-  header: '&pAuxProtect Results'
+  click-to-copy: '點擊以複製到剪貼板'
+  click-to-copy-time: '&t點擊以複製紀元時間。 (<time>毫秒)'
+  click-to-view: '點擊查看！'
+  grouping-of: '&f共 &p<entry_count> &f項目'
+  header: '&pAuxProtect 結果'
   page:
-    first: '&pJump to First Page'
-    previous: '&pPrevious Page'
-    next: '&pNext Page'
-    last: '&pJump to Last Page'
-  redacted: 'REDACTED'
-  time: '&t<time> ago'
-  time-now: '&tJust Now'
-  view: 'View'
-  view-inv: 'View Inv'
+    first: '&p跳至第一頁'
+    previous: '&p上一頁'
+    next: '&p下一頁'
+    last: '&p跳至最後一頁'
+  redacted: '已隱藏'
+  time: '&t<time>前'
+  time-now: '&t剛剛'
+  view: '查看'
+  view-inv: '查看存檔'
+
 
 inv-recover-menu:
-  main-header: '<target>''<optional_s> Inventory - <time> ago'
-  ender-header: '<target>''<optional_s> Ender Chest - <time> ago'
-  xp-error: '&cUnable to recover experience.'
+  main-header: '<target>''<optional_s> 存檔 - <time>前'
+  ender-header: '<target>''<optional_s> 結界箱 - <time>前'
+  xp-error: '&c無法恢復經驗值。'
   button:
     force:
-      label: '&2&lForce Recover Inventory'
+      label: '&2&l強制恢復存檔'
       hover:
       - ''
-      - '&a&lDouble Click'
+      - '&a&l雙擊'
       - ''
-      - '&tThis will &c&loverwrite &7the player''s'
-      - '&7current inventory and exp with'
-      - '&7what is in the view above.'
+      - '&t這將 &c&l覆蓋 &7玩家的'
+      - '&7當前存檔和經驗值為'
+      - '&7上方顯示的內容。'
     force-unavailable:
-      label: '&8&lForce Recover Inventory Unavailable'
+      label: '&8&l無法強制恢復存檔'
       hover:
-      - '&cPlayer must be online to'
-      - '&cforce recover their inventory'
+      - '&c玩家必須在線上才能'
+      - '&c強制恢復他們的存檔'
     recover:
-      label: '&a&lRecover Inventory'
+      label: '&a&l恢復存檔'
       hover:
       - ''
-      - '&tThis will give the player a'
-      - '&tprompt to claim this inventory as'
-      - '&t if they were opening a chest with'
-      - '&t the above contents. They will also get'
-      - '&tthe exp stated here.'
+      - '&t這將給玩家一個'
+      - '&t提示，可以將這個存檔'
+      - '&t視為打開擁有上述內容的箱子。'
+      - '&t他們還將獲得此處聲明的經驗值。'
       - ''
-      - '&cThis will not overwrite anything and may'
-      - '&cduplicate items &tif they weren''t'
-      - '&tactually lost originally.'
-    close: '&c&lClose'
-    ender-chest: '&8&lView Enderchest'
+      - '&c這不會覆蓋任何東西，並且可能'
+      - '&c複製物品 &c（如果它們原來並未丟失）。'
+    close: '&c&l關閉'
+    ender-chest: '&8&l查看結界箱'
     xp:
-      had: '&2Player had <xp> xp'
-      error: '&8No XP data'
+      had: '&2玩家有 <xp> 經驗值'
+      error: '&8沒有經驗值數據'
+
 
 actions:
-  activity: activity
-  alert: may be hacking
-  anvil: anvilled
-  auctionbuy: bought from auction
-  auctionlist: listed for auction
-  breakitem: broke item
+  activity: 活動
+  alert: 可能在使用外掛
+  anvil: 被砸鐵砧
+  auctionbuy: 從拍賣購買
+  auctionlist: 列在拍賣中
+  breakitem: 破壞物品
   bucket:
-    p: caught fish
-    n: released fish
-  censor: was censored
-  chat: said
-  command: executed
-  connect: connected to
-  consume: consumed
-  craft: crafted
-  drop: dropped
+    p: 抓到魚
+    n: 釋放魚
+  censor: 被審查
+  chat: 說
+  command: 執行指令
+  connect: 連接到
+  consume: 消耗
+  craft: 製作
+  drop: 丟棄
   elytra:
-    p: started flying
-    n: stopped flying
-  enchant: enchanted
+    p: 開始飛行
+    n: 停止飛行
+  enchant: 附魔
   entity:
-    p: placed entity
-    n: destroyed entity
-  explode: caused explosion of
-  gamemode: switched gamemode to
-  grab: grabbed
-  hurt: hurt
-  ignoreabandoned: ignored abandoned warning
+    p: 放置實體
+    n: 摧毀實體
+  explode: 導致爆炸
+  gamemode: 切換遊戲模式至
+  grab: 抓取
+  hurt: 受傷
+  ignoreabandoned: 忽略廢棄警告
   inv:
-    p: opened
-    n: closed
-  inventory: inventory
-  ip: Unique IP
+    p: 開啟
+    n: 關閉
+  inventory: 存檔
+  ip: 唯一IP
   itemframe:
-    p: add itemframe
-    n: remove itemframe
-  jobs: earned from job
-  kick: was kicked
-  kill: killed
-  land: projectile landed
-  launch: launched
+    p: 添加物品框
+    n: 移除物品框
+  jobs: 從工作中獲得
+  kick: 被踢出
+  kill: 擊殺
+  land: 投射物著陸
+  launch: 啟動
   leash:
-    p: leashed
-    n: unleashed
-  lightning: struck lightning
-  money: money
+    p: 拴繩
+    n: 解除拴繩
+  lightning: 觸發閃電
+  money: 貨幣
   mount:
-    p: mounted
-    n: unmounted
-  msg: messaged
-  nametag: name tagged
-  nationbalance: nation balance
+    p: 上坐騎
+    n: 卸下坐騎
+  msg: 發送消息
+  nametag: 貼上名牌
+  nationbalance: 國家餘額
   nationbank:
-    p: deposited
-    n: withdrew
-  nationcreate: created nation
-  nationdelete: deleted nation
+    p: 存款到國家銀行
+    n: 從國家銀行提款
+  nationcreate: 建立國家
+  nationdelete: 刪除國家
   nationjoin:
-    p: joined nation
-    n: left nation
-  nationrename: renamed nation
-  pay: paid
-  pickup: picked up
+    p: 加入國家
+    n: 離開國家
+  nationrename: 重新命名國家
+  pay: 付款
+  pickup: 撿起
   pluginload:
-    p: loaded plugin
-    n: unloaded plugin
-  pos: position
-  raidtrigger: triggered raid
-  raidspawn: spawned raider
-  recover: recovered inv of
-  respawn: respawned
+    p: 載入插件
+    n: 卸載插件
+  pos: 位置
+  raidtrigger: 觸發襲擊
+  raidspawn: 生成襲擊者
+  recover: 恢復了存檔，屬於
+  respawn: 重生
   session:
-    p: logged in
-    n: logged out
+    p: 登入遊戲
+    n: 登出遊戲
   shop:
-    p: bought
-    n: sold
-  smith: upgraded to netherite
-  tame: tamed
-  totem: used totem
-  townbalance: town balance
+    p: 購買了
+    n: 出售了
+  smith: 升級為下界合金
+  tame: 馴服了
+  totem: 使用了不死圖騰
+  townbalance: 鎮的餘額
   townbank:
-    p: deposited
-    n: withdrew
+    p: 存款到鎮銀行
+    n: 從鎮銀行提款
   townclaim:
-    p: claimed
-    n: unclaimed
-  towncreate: created town
-  towndelete: deleted town
+    p: 領土被宣告
+    n: 取消領土宣告
+  towncreate: 建立了鎮
+  towndelete: 刪除了鎮
   townjoin:
-    p: joined town
-    n: left town
-  townmayor: became the mayor of
-  townmerge: merged into
-  townrename: renamed town to
-  townyname: named
+    p: 加入了鎮
+    n: 離開了鎮
+  townmayor: 成為了鎮的市長
+  townmerge: 合併到了
+  townrename: 將鎮重新命名為
+  townyname: 命名為
   tp:
-    p: teleported to
-    n: teleported from
-  username: username
-  vein: mined vein
+    p: 传送到
+    n: 传送从
+  username: 使用者名稱
+  vein: 挖掘了礦脈
