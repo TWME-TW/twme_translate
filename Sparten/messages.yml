@@ -1,0 +1,46 @@
+console_name: 控制台
+no_permission: "&c您沒有權限與此互動。"
+player_not_found_message: "&c找不到玩家。"
+staff_chat_message: "&8[&4員工聊天&8]&c {player} &e{message}"
+not_enough_saved_logs: "&8[&2{prefix}&8]&c保存的日誌不足。必須至少為 {amount} 行。"
+config_reload: "&8[&2{prefix}&8]&e配置文件已成功重新載入。"
+kick_reason: "&c {reason}"
+kick_broadcast_message: "&8[&2{prefix}&8]&c {player}&7 因為 {reason} 被踢出遊戲。"
+reconnect_kick_message: "&8[&2{prefix}&8]&c請等待幾秒鐘再登錄。"
+player_ip_limit_kick_message: "&8[&2{prefix}&8]&c您的IP達到了玩家限制。"
+check_stored_data_delete_message: "&8[&2{prefix}&8]&a檢查的存儲數據已成功刪除&8: &2{check}"
+player_violation_reset_message: "&8[&2{prefix}&8]&a玩家的違規次數已成功重置&8: &2{player}"
+player_stored_data_delete_message: "&8[&2{prefix}&8]&a玩家的存儲數據已成功刪除&8: &2{player}"
+detection_notification:
+  "&8[&2{prefix}&8] &4{player} &c正在以 &4{detection:category:adverb}
+  &c使用 &4{detection} x{vls:detection} &8&b| &r&f{ping}ms &8&b| &r&f{tps} TPS &8&b|
+  &r&fsilent: {silent:detection}, {info}"
+blocked_command_message: "&8[&2{prefix}&8]&c您無權執行該指令。"
+blocked_word_message: "&8[&2{prefix}&8]&c您無權輸入該內容。"
+chat_cooldown_message: "&8[&2{prefix}&8]&c請等待 {time} 秒，然後再次輸入。"
+command_cooldown_message: "&8[&2{prefix}&8]&c請等待 {time} 秒，然後再次執行指令。"
+same_message_warning: "&8[&2{prefix}&8]&c請避免再次發送相同的訊息。"
+check_enable_message: "&8[&2{prefix}&8] &a您啟用了檢查&8：&7 {detection}"
+check_disable_message: "&8[&2{prefix}&8] &c您停用了檢查&8：&7 {detection}"
+non_existing_check: "&8[&2{prefix}&8] &c此檢查不存在。"
+bypass_message: "&8[&2{prefix}&8] &c{player} &7現在正在繞過 &4{detection} &7檢查，持續時間為 &e{time} &7秒。"
+warning_message: "&c {reason}"
+warning_feedback_message: "&8[&2{prefix}&8]&7您警告了 &c{player} &7原因&8: &4{reason}"
+notifications_enable: "&8[&2{prefix}&8] &a您已啟用通知。"
+notifications_modified: "&8[&2{prefix}&8] &e您已修改通知設定。"
+notifications_disable: "&8[&2{prefix}&8] &c您已停用通知。"
+awareness_notification: "&8[&2{prefix} 通知&8]&a {info}"
+suspicion_notification: |-
+  &8[&2{prefix}&8] &6{size} 名玩家 &e可能正在使用作弊模組&8: &6{players}
+  &e執行 '/spartan menu' 以查看未來的相互作用。
+wave_start_message: "&8[&2{prefix}&8]&c 波次即將開始。"
+wave_end_message: "&8[&2{prefix}&8]&c 波次已結束，共進行了 {total} 次行動。"
+wave_clear_message: "&8[&2{prefix}&8]&c 波次已清除。"
+wave_add_message: "&8[&2{prefix}&8]&a {player} 已添加到波次。"
+wave_remove_message: "&8[&2{prefix}&8]&c {player} 已從波次中移除。"
+full_wave_list: "&8[&2{prefix}&8]&c 波次列表已滿。"
+wave_not_added_message: "&8[&2{prefix}&8]&c {player} 未被添加到波次。"
+unknown_command: '&f未知指令。請輸入 "/help" 獲取幫助。'
+failed_command: "&8[&2{prefix}&8]&c指令執行失敗。請檢查您的參數並重試。"
+successful_command: "&8[&2{prefix}&8]&a指令成功執行。"
+massive_command_reason: "&8[&2{prefix}&8]&c原因的長度太長了。"
