@@ -1,0 +1,74 @@
+# GUIPlus 訊息
+
+PREFIX: "&6[GUIPlus]"
+
+#
+# 使用者訊息
+# 您可以將這些訊息更改為伺服器語言
+#
+DAYS: 天(天)
+HOURS: 小時(小時)
+MINUTES: 分鐘(分鐘)
+SECONDS: 秒(秒)
+NO_PERM: "&c您沒有執行此命令的權限"
+TARGET_DOES_NOT_EXISTS: "&c該玩家不在線上"
+
+# %cmd% 將被替換為命令別名
+TARGET_REQUIRED: "&c用法: &7/%cmd% <玩家>"
+
+# %name% 將被替換為 GUI 名稱
+GUI_TARGET_REQUIRED: "&c用法: &7/gui open %name% <玩家>"
+CMD_GUI_PERM: "&c您沒有權限開啟此 GUI"
+CMD_GUI_EXISTS: "&c該 GUI 不存在"
+ACTION_NOT_ENOUGH_PERMISSIONS: "&c您沒有足夠的權限"
+ACTION_STILL_ON_COOLDOWN: "&e您必須等待 §7%time%"
+ACTION_NOT_ENOUGH_MONEY: "&c您沒有足夠的金錢支付此項目"
+ACTION_NOT_ENOUGH_XP: "&c您沒有足夠的經驗值支付此項目"
+ACTION_NOT_ENOUGH_ITEMS: "&c您沒有足夠的物品支付此項目"
+DATA_NOT_LOADED: "&c等等！您的數
+
+
+#
+# 管理員訊息
+# 在大多數情況下，您的預設玩家不會看到這些訊息
+#
+NO_CONSOLE: "&c只有玩家可以使用此命令"
+GUI_NEW_NAME: "&e在聊天中輸入新的 &7名稱 &e"
+GUI_NEW_TITLE: "&e在聊天中輸入新的 &7標題 &e"
+GUI_NEW_SIZE: "&e在聊天中輸入新的 &7大小 &e"
+GUI_NEW_PERMISSION: "&e在聊天中輸入新的 &7權限 &e"
+GUI_NEW_COOLDOWN: "&e在聊天中輸入新的 &7冷卻時間 &e(&7範例: &a200ms&e)"
+GUI_CHANGED_NAME: "&e名稱已更改為 &7%name%"
+GUI_EXISTS_NAME: "&c此名稱已存在"
+GUI_NEW_ALIAS: "&e在聊天中輸入新的 &7命令別名 &e(不包括 &7/&e)"
+GUI_CHANGED_TITLE: "&e標題已更改為 &7%name%"
+GUI_MAX_TITLE: "&c標題的最大大小為 32"
+GUI_CHANGED_SIZE: "&e大小已更改為 &7%size%"
+GUI_CLONE: "&e在聊天中輸入另一個 GUI 的名稱"
+GUI_MAX_SIZE: "&c最大大小為 54"
+GUI_VALID_NUMBER: "&c這不是一個有效的數字"
+GUI_CHANGED_PERMISSION: "&e權限已更改為 &7%name%"
+GUI_CHANGED_ALIAS: "&e命令別名已更改為 &7%cmd%"
+ITEM_NEW_DISPLAYNAME: "&e在聊天中輸入新的 &7顯示名稱 &e"
+ITEM_NEW_SHOW_PERMISSION: "&e在聊天中輸入新的 &7顯示權限 &e"
+ITEM_NEW_SKULL_OWNER: "&e在聊天中輸入新的 &7頭顱擁有者 &e"
+ITEM_MAX_DISPLAYNAME: "&c顯示名稱的最大大小為 32"
+ITEM_CHANGED_DISPLAYNAME: "&e顯示名稱已更改為 %name%"
+ITEM_CHANGED_SHOW_PERMISSION: "&e顯示權限已更改為 %name%"
+ITEM_CHANGED_SKULL_OWNER: "&e將頭顱擁有者更改為 %name%"
+LIST_NEW_LORE: "&e在聊天中輸入新的 &7描述"
+CMD_GUI_ALREADYEXISTS: "&c此 GUI 已存在"
+CMD_GUI_DELETE: "&e您已刪除 GUI &7%name%"
+CMD_GUI_RELOAD: "&e重新載入完成"
+CMD_GUI_RELOAD_ERROR: "&c重新載入失敗（檢查控制台）"
+CMD_GUI_OTHER_ONLINE: "&c該玩家未在線上"
+CMD_GUI_OTHER_EXECUTED: "&e您已為 %player% 開啟了 GUI"
+ACTION_NEW_PRICE: "&e在聊天中輸入新的 &7價格"
+ACTION_NEW_PRICE_EXP: "&e在聊天中輸入新的經驗價格（L 代表等級）"
+ACTION_PRICE_NEGATIVE: "&c不允許負數價格"
+ACTION_CHANGED_PRICE: "&e價格已更改為 &7%size%"
+ACTION_COOLDOWN_NEGATIVE: "&c不允許負數冷卻時間"
+ACTION_COOLDOWN_WRONG_UNIT: "&c這不是一個有效的時間單位"
+ACTION_CHANGED_COOLDOWN: "&e冷卻時間已更改為 &7%time%"
+ACTION_NEW_COMMAND: "&e在聊天中輸入新的 &7命令"
+ACTION_CHANGED_COMMAND: "&e將命令更改為 %name%"
