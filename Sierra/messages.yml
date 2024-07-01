@@ -1,0 +1,144 @@
+#
+#  ███████╗ ██╗ ███████╗ ██████╗  ██████╗   █████╗
+#  ██╔════╝ ██║ ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔══██╗
+#  ███████╗ ██║ █████╗   ██████╔╝ ██████╔╝ ███████║
+#  ╚════██║ ██║ ██╔══╝   ██╔══██╗ ██╔══██╗ ██╔══██║
+#  ███████║ ██║ ███████╗ ██║  ██║ ██║  ██║ ██║  ██║
+#  ╚══════╝ ╚═╝ ╚══════╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝
+#
+# Packet Analysis Tool for the Minecraft Protocol by Feelix
+# Documentation: https://sierra.squarecode.de/
+# Learn more at https://discord.gg/squarecode/
+
+commands:
+
+  alerts:
+    # Message when toggling alert notifications
+    # {prefix}: Prefix
+    # {status}: Status of alerts (enabled/disabled)
+    toggle: "{prefix} &f你已{status} &f提醒訊息"
+
+  mitigation:
+    # Message when toggling mitigation messages
+    # {prefix}: Prefix
+    # {status}: Status of mitigation messages (enabled/disabled)
+    toggle: "{prefix} &f你已{status} &f緩解訊息"
+
+  history:
+    # Message when no history entries are available
+    # {prefix}: Prefix
+    empty: "{prefix} &c沒有歷史記錄"
+
+    # Message for protocol usage of the history command
+    # {prefix}: Prefix
+    invalid: "{prefix} &c用法錯誤，請嘗試 /sierra history <頁數>"
+
+    # Header for history pages
+    # {prefix}: Prefix
+    # {current}: Current page number
+    # {total}: Total number of pages
+    # {entries}: Number of entries on the current page
+    header: "{prefix} &f顯示條目: &7(第 &b{current} &7頁，共 &b{total} &7頁 - &3{entries} &7條目)"
+
+    # Single history entry
+    # {timestamp}: Timestamp of the entry
+    # {username}: Username
+    # {ping}: User's ping in milliseconds
+    # {version}: User's version
+    # {mitigationStrategy}: Type of punishment
+    # {description}: Description of the punishment
+    entry: "&7{timestamp} &3{username}&8/&b{version} &7({ping}ms) -> &b{mitigationStrategy}"
+
+    # History hover info
+    # {prefix}: Prefix
+    # {description}: Description of the punishment
+    hover: "{prefix} &7資訊: &b{description}"
+
+  reload:
+    # Success message for reloading the configuration
+    # {prefix}: Prefix
+    success: "{prefix} &f配置重新載入 &a成功"
+
+  monitor:
+    # Header for the performance monitor
+    # {prefix}: Prefix
+    header: "{prefix} &f性能監視器 &7(你的數據)"
+
+    # Message when no data is found
+    # {prefix}: Prefix
+    nothing-found: "{prefix} &c未找到數據！"
+
+    # Header for packet data
+    # {prefix}: Prefix
+    packets-header: "{prefix} &b&l封包:"
+
+    # Header for environment data
+    # {prefix}: Prefix
+    environment-header: "{prefix} &b&l環境:"
+
+    # Entry in the performance monitor
+    # {prefix}: Prefix
+    # {title}: Title of the entry
+    # {delay}: Delay in milliseconds
+    entry: "{prefix}  &8- &f{title} &7({delay}ms)"
+
+  info:
+    # Header for player information
+    # {prefix}: Prefix
+    # {playerName}: Player's name
+    header: "{prefix} &7玩家資料 &b{playerName}&7:"
+
+    # Message for protocol usage of the info command
+    # {prefix}: Prefix
+    invalid: "{prefix} &c用法錯誤，請嘗試 /sierra info <名稱>"
+
+    # Message when no detections are found
+    # {prefix}: Prefix
+    no-detections: "{prefix} &c未發現任何異常"
+
+    # Information about checks and violations
+    # {prefix}: Prefix
+    # {checkType}: Type of check
+    # {violations}: Number of violations
+    check-info: "{prefix}  &8- &7{checkType}: &b{violations}"
+
+    # Detailed information about a player
+    # {prefix}: Prefix
+    # {clientVersion}: Client version
+    # {brand}: Client brand
+    # {ping}: Player's ping in milliseconds
+    # {gameMode}: Player's game mode
+    # {ticksExisted}: Number of ticks the player has existed
+    # {n}: New line
+    information: "{prefix} &7版本: &b{clientVersion}{n}{prefix} &7客戶端: &b{brand}{n}{prefix} &7延遲: &b{ping}ms{n}{prefix} &7遊戲模式: &b{gameMode}{n}{prefix} &7存在時間: &b{ticksExisted}{n}{prefix} &b&l檢查資訊"
+
+layout:
+
+  # The prefix for all plugin messages
+  prefix: "&3Sierra &7>"
+
+  # Use this field to recolor the remaining accent colors that are not listed here.
+  # Difference here a ¬ß must be used instead of an & sign.
+  offset-color: "¬ßb"
+
+  # Notification message for detecting violations
+  detection-message:
+
+    # This message is being sent to all players having the sierra.command.use permission,
+    # once someone is being suspected of crashing.
+    # The {prefix} placeholder gets replaced with the plugin`s prefix
+    # The {username} placeholder gets replaced with the offender's name.
+    # The {mitigation} placeholder gets replaced with the checks punishment result
+    # The {checkname} placeholder gets replaced with the check name
+    # The {violations} placeholder gets replaced with the checks violation count
+    staff-alert: "{prefix} &b{username} &8─ &f{mitigation} &b{checkname} &8─ &3x{violations}"
+
+    # What should the notice be in each alert?
+    alert-command-note: "&f點擊以傳送"
+
+    # What should the command be that is executed when the message is clicked?
+    # The variable {username} can be used as a substitute for the player's name
+    alert-command: "/tp {username}"
+
+    # Hover information on mitigation / punishment
+    alert-content: " &7玩家名稱: &b{username}{n} &7版本: &b{clientVersion}{n} &7客戶端: &b{brand}{n} &7存在時間: &b{ticksExisted}{n} &7遊戲模式: &b{gameMode}{n} &7標籤: &b{tags}{n} &7描述: &b{description}{n} &7除錯資訊: &b{debugInfo}{n}{n} {alertNote}"
