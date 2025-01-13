@@ -147,7 +147,7 @@ info:
     Online: '&6Online'
     Offline: '&cOffline'
     TrueColor: '&2'
-    FalseColor: '&4'
+    FalseColor: '&c'
     'True': '&6True'
     'False': '&cFalse'
     Enabled: '&6Enabled'
@@ -206,6 +206,7 @@ info:
   Spawner: '&r[type] Spawner'
   DamageCause:
     block_explosion: Explosion
+    campfire: campfire
     contact: Block Damage
     cramming: cramming
     custom: Unknown
@@ -238,74 +239,75 @@ info:
     wither: Wither
     world_border: world border
   Biomes:
-    BADLANDS: Badlands
-    BAMBOO_JUNGLE: Bamboo jungle
-    BASALT_DELTAS: Basalt deltas
-    BEACH: Beach
-    BIRCH_FOREST: Birch forest
-    CHERRY_GROVE: Cherry grove
-    COLD_OCEAN: Cold ocean
-    CRIMSON_FOREST: Crimson forest
-    CUSTOM: Custom
-    DARK_FOREST: Dark forest
-    DEEP_COLD_OCEAN: Deep cold ocean
-    DEEP_DARK: Deep dark
-    DEEP_FROZEN_OCEAN: Deep frozen ocean
-    DEEP_LUKEWARM_OCEAN: Deep lukewarm ocean
-    DEEP_OCEAN: Deep ocean
-    DESERT: Desert
-    DRIPSTONE_CAVES: Dripstone caves
-    END_BARRENS: End barrens
-    END_HIGHLANDS: End highlands
-    END_MIDLANDS: End midlands
-    ERODED_BADLANDS: Eroded badlands
-    FLOWER_FOREST: Flower forest
-    FOREST: Forest
-    FROZEN_OCEAN: Frozen ocean
-    FROZEN_PEAKS: Frozen peaks
-    FROZEN_RIVER: Frozen river
-    GROVE: Grove
-    ICE_SPIKES: Ice spikes
-    JAGGED_PEAKS: Jagged peaks
-    JUNGLE: Jungle
-    LUKEWARM_OCEAN: Lukewarm ocean
-    LUSH_CAVES: Lush caves
-    MANGROVE_SWAMP: Mangrove swamp
-    MEADOW: Meadow
-    MUSHROOM_FIELDS: Mushroom fields
-    NETHER_WASTES: Nether wastes
     OCEAN: Ocean
-    OLD_GROWTH_BIRCH_FOREST: Old growth birch forest
-    OLD_GROWTH_PINE_TAIGA: Old growth pine taiga
-    OLD_GROWTH_SPRUCE_TAIGA: Old growth spruce taiga
     PLAINS: Plains
+    DESERT: Desert
+    WINDSWEPT_HILLS: Windswept hills
+    FOREST: Forest
+    TAIGA: Taiga
+    SWAMP: Swamp
+    MANGROVE_SWAMP: Mangrove swamp
     RIVER: River
+    NETHER_WASTES: Nether wastes
+    THE_END: The end
+    FROZEN_OCEAN: Frozen ocean
+    FROZEN_RIVER: Frozen river
+    SNOWY_PLAINS: Snowy plains
+    MUSHROOM_FIELDS: Mushroom fields
+    BEACH: Beach
+    JUNGLE: Jungle
+    SPARSE_JUNGLE: Sparse jungle
+    DEEP_OCEAN: Deep ocean
+    STONY_SHORE: Stony shore
+    SNOWY_BEACH: Snowy beach
+    BIRCH_FOREST: Birch forest
+    DARK_FOREST: Dark forest
+    SNOWY_TAIGA: Snowy taiga
+    OLD_GROWTH_PINE_TAIGA: Old growth pine taiga
+    WINDSWEPT_FOREST: Windswept forest
     SAVANNA: Savanna
     SAVANNA_PLATEAU: Savanna plateau
-    SMALL_END_ISLANDS: Small end islands
-    SNOWY_BEACH: Snowy beach
-    SNOWY_PLAINS: Snowy plains
-    SNOWY_SLOPES: Snowy slopes
-    SNOWY_TAIGA: Snowy taiga
-    SOUL_SAND_VALLEY: Soul sand valley
-    SPARSE_JUNGLE: Sparse jungle
-    STONY_PEAKS: Stony peaks
-    STONY_SHORE: Stony shore
-    SUNFLOWER_PLAINS: Sunflower plains
-    SWAMP: Swamp
-    TAIGA: Taiga
-    THE_END: The end
-    THE_VOID: The void
-    WARM_OCEAN: Warm ocean
-    WARPED_FOREST: Warped forest
-    WINDSWEPT_FOREST: Windswept forest
-    WINDSWEPT_GRAVELLY_HILLS: Windswept gravelly hills
-    WINDSWEPT_HILLS: Windswept hills
-    WINDSWEPT_SAVANNA: Windswept savanna
+    BADLANDS: Badlands
     WOODED_BADLANDS: Wooded badlands
+    SMALL_END_ISLANDS: Small end islands
+    END_MIDLANDS: End midlands
+    END_HIGHLANDS: End highlands
+    END_BARRENS: End barrens
+    WARM_OCEAN: Warm ocean
+    LUKEWARM_OCEAN: Lukewarm ocean
+    COLD_OCEAN: Cold ocean
+    DEEP_LUKEWARM_OCEAN: Deep lukewarm ocean
+    DEEP_COLD_OCEAN: Deep cold ocean
+    DEEP_FROZEN_OCEAN: Deep frozen ocean
+    THE_VOID: The void
+    SUNFLOWER_PLAINS: Sunflower plains
+    WINDSWEPT_GRAVELLY_HILLS: Windswept gravelly hills
+    FLOWER_FOREST: Flower forest
+    ICE_SPIKES: Ice spikes
+    OLD_GROWTH_BIRCH_FOREST: Old growth birch forest
+    OLD_GROWTH_SPRUCE_TAIGA: Old growth spruce taiga
+    WINDSWEPT_SAVANNA: Windswept savanna
+    ERODED_BADLANDS: Eroded badlands
+    BAMBOO_JUNGLE: Bamboo jungle
+    SOUL_SAND_VALLEY: Soul sand valley
+    CRIMSON_FOREST: Crimson forest
+    WARPED_FOREST: Warped forest
+    BASALT_DELTAS: Basalt deltas
+    DRIPSTONE_CAVES: Dripstone caves
+    LUSH_CAVES: Lush caves
+    DEEP_DARK: Deep dark
+    MEADOW: Meadow
+    GROVE: Grove
+    SNOWY_SLOPES: Snowy slopes
+    FROZEN_PEAKS: Frozen peaks
+    JAGGED_PEAKS: Jagged peaks
+    STONY_PEAKS: Stony peaks
+    CHERRY_GROVE: Cherry grove
+    CUSTOM: Custom
   EntityType:
     allay: Allay
     area_effect_cloud: Area effect cloud
+    armadillo: Armadillo
     armor_stand: Armor stand
     arrow: Arrow
     axolotl: Axolotl
@@ -314,37 +316,42 @@ info:
     blaze: Blaze
     block_display: Block display
     boat: Boat
+    bogged: Bogged
     breeze: Breeze
+    breeze_wind_charge: Breeze wind charge
     camel: Camel
     cat: Cat
     cave_spider: Cave spider
     chest_boat: Chest boat
+    chest_minecart: Chest minecart
     chicken: Chicken
     cod: Cod
+    command_block_minecart: Command block minecart
     cow: Cow
     creeper: Creeper
     dolphin: Dolphin
     donkey: Donkey
     dragon_fireball: Dragon fireball
-    dropped_item: Dropped item
     drowned: Drowned
     egg: Egg
     elder_guardian: Elder guardian
     enderman: Enderman
     endermite: Endermite
-    ender_crystal: Ender crystal
     ender_dragon: Ender dragon
     ender_pearl: Ender pearl
-    ender_signal: Ender signal
+    end_crystal: End crystal
     evoker: Evoker
     evoker_fangs: Evoker fangs
+    experience_bottle: Experience bottle
     experience_orb: Experience orb
+    eye_of_ender: Eye of ender
     falling_block: Falling block
     fireball: Fireball
-    firework: Firework
-    fishing_hook: Fishing hook
+    firework_rocket: Firework rocket
+    fishing_bobber: Fishing bobber
     fox: Fox
     frog: Frog
+    furnace_minecart: Furnace minecart
     ghast: Ghast
     giant: Giant
     glow_item_frame: Glow item frame
@@ -352,29 +359,26 @@ info:
     goat: Goat
     guardian: Guardian
     hoglin: Hoglin
+    hopper_minecart: Hopper minecart
     horse: Horse
     husk: Husk
     illusioner: Illusioner
     interaction: Interaction
     iron_golem: Iron golem
+    item: Item
     item_display: Item display
     item_frame: Item frame
-    leash_hitch: Leash hitch
-    lightning: Lightning
+    leash_knot: Leash knot
+    lightning_bolt: Lightning bolt
     llama: Llama
     llama_spit: Llama spit
     magma_cube: Magma cube
     marker: Marker
     minecart: Minecart
-    minecart_chest: Minecart chest
-    minecart_command: Minecart command
-    minecart_furnace: Minecart furnace
-    minecart_hopper: Minecart hopper
-    minecart_mob_spawner: Minecart mob spawner
-    minecart_tnt: Minecart tnt
+    mooshroom: Mooshroom
     mule: Mule
-    mushroom_cow: Mushroom cow
     ocelot: Ocelot
+    ominous_item_spawner: Ominous item spawner
     painting: Painting
     panda: Panda
     parrot: Parrot
@@ -385,7 +389,7 @@ info:
     pillager: Pillager
     player: Player
     polar_bear: Polar bear
-    primed_tnt: Primed tnt
+    potion: Potion
     pufferfish: Pufferfish
     rabbit: Rabbit
     ravager: Ravager
@@ -400,16 +404,17 @@ info:
     small_fireball: Small fireball
     sniffer: Sniffer
     snowball: Snowball
-    snowman: Snowman
+    snow_golem: Snow golem
+    spawner_minecart: Spawner minecart
     spectral_arrow: Spectral arrow
     spider: Spider
-    splash_potion: Splash potion
     squid: Squid
     stray: Stray
     strider: Strider
     tadpole: Tadpole
     text_display: Text display
-    thrown_exp_bottle: Thrown exp bottle
+    tnt: Tnt
+    tnt_minecart: Tnt minecart
     trader_llama: Trader llama
     trident: Trident
     tropical_fish: Tropical fish
@@ -431,153 +436,129 @@ info:
     zombie_horse: Zombie horse
     zombie_villager: Zombie villager
     zombified_piglin: Zombified piglin
-  EnchantAliases:
-    swift_sneak:
-    - SWIFTSNEAK
-    protection_fall:
-    - FallProtection
-    - FeatherFalling
-    arrow_infinite:
-    - Infinity
-    arrow_fire:
-    - Flame
-    impaling:
-    - Impaling
-    protection_environmental:
-    - Protection
-    knockback:
-    - Knockback
-    depth_strider:
-    - DepthStrider
-    luck:
-    - Luck
-    silk_touch:
-    - SilkTouch
-    loyalty:
-    - Loyalty
-    vanishing_curse:
-    - VanishingCurse
-    protection_fire:
-    - FireProtection
-    channeling:
-    - Channeling
-    binding_curse:
-    - BindingCurse
-    sweeping_edge:
-    - SweepingEdge
-    quick_charge:
-    - QUICKCHARGE
-    damage_arthropods:
-    - BaneOfArthropods
-    frost_walker:
-    - FrostWalker
-    multishot:
-    - Multishot
-    protection_projectile:
-    - ProjectileProtection
-    water_worker:
-    - AquaAffinity
-    soul_speed:
-    - SOULSPEED
-    loot_bonus_mobs:
-    - Looting
-    damage_undead:
-    - Smite
-    piercing:
-    - Piercing
-    lure:
-    - Lure
-    riptide:
-    - Riptide
-    arrow_damage:
-    - Power
-    protection_explosions:
-    - BlastProtection
-    mending:
-    - Mending
-    fire_aspect:
-    - FireAspect
-    oxygen:
-    - Respiration
-    thorns:
-    - Thorns
-    arrow_knockback:
-    - Punch
-    damage_all:
-    - Sharpness
-    dig_speed:
-    - Efficiency
-    loot_bonus_blocks:
-    - Fortune
-    durability:
-    - Unbreaking
+  # Avoid adding color codes to the enchant name
+  EnchantNames:
+    dig_speed: Dig_speed
+    sweeping_edge: Sweeping_edge
+    loot_bonus_mobs: Loot_bonus_mobs
+    quick_charge: Quick_charge
+    silk_touch: Silk_touch
+    soul_speed: Soul_speed
+    density: Density
+    breach: Breach
+    arrow_fire: Arrow_fire
+    loot_bonus_blocks: Loot_bonus_blocks
+    water_worker: Water_worker
+    multishot: Multishot
+    channeling: Channeling
+    loyalty: Loyalty
+    binding_curse: Binding_curse
+    arrow_knockback: Arrow_knockback
+    arrow_damage: Arrow_damage
+    protection_projectile: Protection_projectile
+    damage_all: Damage_all
+    frost_walker: Frost_walker
+    protection_fire: Protection_fire
+    impaling: Impaling
+    luck: Luck
+    riptide: Riptide
+    mending: Mending
+    protection_environmental: Protection_environmental
+    oxygen: Oxygen
+    piercing: Piercing
+    protection_fall: Protection_fall
+    swift_sneak: Swift_sneak
+    durability: Durability
+    fire_aspect: Fire_aspect
+    lure: Lure
+    damage_undead: Damage_undead
+    knockback: Knockback
+    depth_strider: Depth_strider
+    wind_burst: Wind_burst
+    arrow_infinite: Arrow_infinite
+    vanishing_curse: Vanishing_curse
+    damage_arthropods: Damage_arthropods
+    protection_explosions: Protection_explosions
+    thorns: Thorns
   PotionEffectAliases:
-    fire_resistance:
-    - Fire resistance
-    water_breathing:
-    - Water breathing
-    jump:
-    - Jump
-    saturation:
-    - Saturation
-    health_boost:
-    - Health boost
-    night_vision:
-    - Night vision
-    weakness:
-    - Weakness
-    wither:
-    - Wither
-    slow_digging:
-    - Slow digging
-    slow_falling:
-    - Slow falling
-    luck:
-    - Luck
-    increase_damage:
-    - Increase damage
-    poison:
-    - Poison
-    hero_of_the_village:
-    - Hero of the village
-    unluck:
-    - Unluck
+    instanthealth:
+    - Instant health
     invisibility:
     - Invisibility
-    absorption:
-    - Absorption
-    slow:
-    - Slow
-    fast_digging:
-    - Fast digging
-    glowing:
-    - Glowing
-    bad_omen:
-    - Bad omen
-    dolphins_grace:
-    - Dolphins grace
-    levitation:
-    - Levitation
-    conduit_power:
-    - Conduit power
+    waterbreathing:
+    - Water breathing
+    resistance:
+    - Resistance
+    unluck:
+    - Unluck
     blindness:
     - Blindness
-    harm:
-    - Harm
-    confusion:
-    - Confusion
-    heal:
-    - Heal
-    regeneration:
-    - Regeneration
+    haste:
+    - Haste
+    poison:
+    - Poison
+    slowness:
+    - Slowness
     hunger:
     - Hunger
+    slowfalling:
+    - Slow falling
+    weaving:
+    - Weaving
+    fireresistance:
+    - Fire resistance
+    saturation:
+    - Saturation
+    raidomen:
+    - Raid omen
+    jumpboost:
+    - Jump boost
+    dolphinsgrace:
+    - Dolphins grace
+    miningfatigue:
+    - Mining fatigue
+    healthboost:
+    - Health boost
+    regeneration:
+    - Regeneration
+    conduitpower:
+    - Conduit power
+    badomen:
+    - Bad omen
+    luck:
+    - Luck
     speed:
     - Speed
+    trialomen:
+    - Trial omen
+    strength:
+    - Strength
     darkness:
     - Darkness
-    damage_resistance:
-    - Damage resistance
+    heroofthevillage:
+    - Hero of the village
+    levitation:
+    - Levitation
+    instantdamage:
+    - Instant damage
+    oozing:
+    - Oozing
+    weakness:
+    - Weakness
+    nausea:
+    - Nausea
+    windcharged:
+    - Wind charged
+    absorption:
+    - Absorption
+    wither:
+    - Wither
+    glowing:
+    - Glowing
+    infested:
+    - Infested
+    nightvision:
+    - Night vision
 direction:
   n: North
   ne: North East
@@ -646,7 +627,7 @@ teleportation:
 econ:
   noMoney: '&cYou have no money'
   charged: '!actionbar!&fCharged: &6[amount]'
-  notEnoughMoney: '&cYou dont have enough money. Required (&6[amount]&c)'
+  notEnoughMoney: '&cYou don''t have enough money. Required (&6[amount]&c)'
   tooMuchMoney: '&cYou have too much money'
 Selection:
   SelectPoints: '&cSelect 2 points with selection tool! AKA: &6[tool]'
@@ -669,6 +650,8 @@ Location:
   Yaw: '&eYaw: &6[yaw]'
   WorldNames:
   - world-&2World
+  - world_nether-&2World Nether
+  - world_the_end-&2World The End
 Locations: '&7Locations: '
 command:
   help:
