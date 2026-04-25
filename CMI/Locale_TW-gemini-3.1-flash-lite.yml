@@ -1,0 +1,4249 @@
+info:
+  Same: '{gcw}無法開啟您自己的背包進行編輯！'
+  cantLoginWithDifCap: '{gcw}無法使用不同大小寫的名稱登入！舊名稱：{gcs}[oldName]{gcw}。目前名稱：{gcs}[currentName]'
+  NoCommandWhileSleeping: '{gcw}睡覺時無法執行指令！'
+  PurgeNotEnabled: '{gcw}設定檔中未啟用清除功能！'
+  TeamManagementDisabled: '{gcp}當 DisableTeamManagement 設為 true 時，此功能將受到限制！'
+  NoGameMode: '{gcw}請使用 0/1/2/3 或 Survival/Creative/Adventure/Spectator 或 s/c/a/sp！'
+  NameChange: '{gcs}[playerDisplayName] {gcp}已登入，別名為：{gcs}[namelist]'
+  Cooldowns: '{gcp}此指令冷卻中，還需等待 {gcs}[time]'
+  specializedCooldowns: '{gcp}此指令正在冷卻中，請等待 {gcs}[time]'
+  specializedRunning: '{gcp}指令仍在執行中，請等待 {gcs}[time]'
+  CooldownOneTime: '{gcp}此指令只能使用一次！'
+  WarmUp:
+    canceled: '{gcp}指令因您的移動而取消'
+    counter: '!actionbar!{gcp}--> 等待 {gcs}[time] {gcp}秒 <--'
+    DontMove: '!title!{gcp}傳送中！！subtitle!{gcp}等待 {gcw}[time] {gcp}秒'
+    Boss:
+      DontMove: '{gcw}請勿移動，持續 {gcs}[autoTimeLeft] {gcw}秒！'
+      WaitFor: '{gcw}請等待 {gcs}[autoTimeLeft] {gcw}秒！'
+  FailedSpawnerMine: '!actionbar!{gcw}挖掘刷怪籠失敗。掉落機率 {gcs}[percent]%'
+  ClickSpawner: '!actionbar!{gcs}[percent]% {gcp}掉落機率'
+  Elevator:
+    created: '{gcp}已建立電梯告示牌'
+  CantPlaceSpawner: '{gcp}無法在距離另一個刷怪籠太近的地方放置刷怪籠（{gcs}[range]{gcp}）'
+  ChunksLoading: '{gcp}世界區塊資料仍在載入中。請稍候片刻再試。'
+  CantUseNonEncrypted: '!actionbar!{gcw}此物品上的指令未加密。無法使用！'
+  CantUseTrident: '!actionbar!{gcw}目前無法使用帶有激流附魔的三叉戟！'
+  CantDecode: '!actionbar!{gcw}無法解碼訊息/指令。金鑰檔案包含錯誤的金鑰。請通知伺服器管理員'
+  CantTeleport: '{gcp}您無法傳送，因為您攜帶了過多受限物品。將滑鼠游標移至此行上方以查看允許的最大物品數量。'
+  CantTeleportDistance: '{gcp}抱歉，您無法傳送超過 {gcs}[amount] {gcp}格的距離！'
+  BlackList: '{gcp}[material] [amount] {gcs}上限：[max]'
+  wrongPortal: '{gcw}您位於錯誤的影響範圍內'
+  ItemWillBreak: '!actionbar!{gcp}您的物品（{gcs}[itemName]{gcp}）即將損壞！{gcs}[current]{gcp}/{gcs}[max]'
+  ArmorWillBreak: '!actionbar!{gcp}您的 [itemName] 即將損壞！{gcs}[current]{gcp}/{gcs}[max]'
+  flyingToHigh: '{gcw}您無法飛得這麼高，最大高度為 {gcs}[max]{gcw}！'
+  specializedItemFail: '{gcw}無法根據數值判定特殊物品需求：{gcs}[value]'
+  sunSpeeding: 睡眠人數 [count] / [total]，時間加速 [speed]×
+  sleepersRequired: '!actionbar!{gcs}[sleeping] {gcp}位玩家正在睡覺，還需 {gcs}[required] {gcp}位玩家才能加速夜晚'
+  sunSpeedingTitle: '{gcs}[hour]'
+  skippingNight: '!title!{gcsp}正在跳過夜晚'
+  sunSpeedingSubTitle: '{gcs}[count]{gcp}/{gcs}[total] {gcp}（{gcs}[speed]×{gcp}）'
+  repairConfirm: '{gcp}點擊以確認修復 {gcs}[items] {gcp}個物品，費用為 {gcs}[cost]'
+  bookDate: '{gcp}撰寫於 {gcs}[date]'
+  maintenance: '{gcp}維護模式'
+  mapLimit: '{gcw}無法超過 30,000,000 格'
+  startedEditingPainting: '{gcp}您已開始編輯畫作。點擊任何其他方塊以取消。'
+  canceledEditingPainting: '{gcp}您已取消畫作編輯模式'
+  changedPainting: '!actionbar!{gcp}已將畫作變更為 {gcs}[name] {gcp}，ID 為 {gcs}[id]'
+  noSpam: '!title!{gcw}禁止洗頻！'
+  noCmdSpam: '!title!{gcw}禁止洗頻指令！'
+  spamConsoleInform: '{gcw}玩家（{gcs}[playerName]{gcw}）觸發了（{gcs}[rules]{gcw}）聊天過濾器，內容為：&r
+    [message]'
+  # 此行可包含額外變數：[totalUsers] [onlinePlayers]
+  FirstJoin: '{gcp}歡迎 {gcs}[playerDisplayName] {gcp}來到我們的伺服器！'
+  # 別忘了在設定檔中啟用自訂登出訊息！
+  LogoutCustom: ' {gcs}[playerDisplayName] {gcp}離開了遊戲'
+  # 別忘了在設定檔中啟用自訂登入訊息！
+  LoginCustom: ' {gcs}[playerDisplayName] {gcp}加入了遊戲'
+  deathlocation: '{gcp}您死於 x:{gcs}[x]{gcp}, y:{gcs}[y]{gcp}, z:{gcs}[z]{gcp}，位於 {gcs}[world]'
+  book:
+    exploit: '{gcw}您無法建立超過 [amount] 頁的書'
+  move:
+    CantUseShulkerBox: '{gcw}移動時無法使用界伏盒'
+  combat:
+    CostToOpen: '!actionbar!{gcp}開啟費用：[amount]'
+    CantUseShulkerBox: '{gcw}與玩家戰鬥時無法使用界伏盒。請等待：[time]'
+    CantUseCommand: '!actionbar!{gcw}戰鬥模式下無法使用指令。請等待：[time]'
+    bossBarPvp: '{gcw}戰鬥模式 [autoTimeLeft]'
+    bossBarPve: '{gcn}戰鬥模式 [autoTimeLeft]'
+  noSchedule: '{gcw}找不到此名稱的排程'
+  totem:
+    cooldown: '{gcp}圖騰冷卻時間：[time]'
+    warmup: '{gcp}圖騰效果：[time]'
+    cantConsume: '{gcp}因冷卻時間限制，無法使用圖騰'
+  InventorySave:
+    info: '{gcp}資訊：{gcn}[playerDisplayName]'
+    saved: '{gcs}[time] {gcp}背包已儲存，ID：{gcs}[id]'
+    NoSavedInv: '{gcp}此玩家沒有任何已儲存的背包'
+    NoEntries: '{gce}檔案存在，但未找到任何背包！'
+    CantFind: '{gcp}找不到此 ID 的背包'
+    TopLine: '{gcp}----------- {gcs}[playerDisplayName] 已儲存的背包 {gcp}-----------'
+    List: '{gcp}ID：{gcs}[id]{gcp}。{gcs}[time]'
+    KillerSymbol: '{gcw} ☠'
+    Click: '{gcp}點擊以查看（[id]）已儲存的背包'
+    IdDontExist: '{gcw}此儲存 ID 不存在！'
+    Deleted: '{gcp}已成功刪除已儲存的背包！'
+    Restored: '{gcp}您已為 {gcs}[targetname] {gcp}使用者還原了 {gcs}[sourcename] {gcp}的背包。'
+    GotRestored: '{gcp}您的背包已從 {gcs}[sourcename] {gcp}的儲存檔還原，時間為 {gcs}[time]'
+    LoadForSelf: '{gcp}為自己載入此背包'
+    LoadForOwner: '{gcp}為擁有者載入此背包'
+    NextInventory: '{gcp}下一個背包'
+    PreviousInventory: '{gcp}上一個背包'
+    Editable: '{gcp}編輯模式已啟用'
+    NonEditable: '{gcp}編輯模式已停用'
+  vanishSymbolOn: '{gcs}[{gcn}隱身{gcs}]&r'
+  vanishSymbolOff: ''
+  afkSymbolOn: '{gcs}[{gcn}暫離{gcs}]&r'
+  afkSymbolOff: ''
+  beeinfo: '!actionbar!{gcp}蜂蜜等級：{gcs}[level]{gcp}/{gcs}[maxlevel] {gcp}蜜蜂數量：{gcs}[count]{gcp}/{gcs}[maxcount]'
+  decoratedpotinfo: '!actionbar!{gcp}內容物：{gcs}[items]'
+  pvp:
+    noGodDamage: '!actionbar!{gcw}處於無敵狀態時無法傷害玩家'
+  pve:
+    noGodDamage: '!actionbar!{gcw}處於無敵狀態時無法傷害生物'
+  InvEmpty:
+    armor: '{gcp}您的盔甲欄位必須為空！'
+    hand: '{gcp}您的手部必須為空！'
+    maininv: '{gcp}您的主背包必須為空！'
+    maininvslots: '{gcp}您的主背包至少需要 {gcs}[count] {gcp}個空位！'
+    inv: '{gcp}您的背包必須為空！'
+    offhand: '{gcp}您的副手必須為空！'
+    quickbar: '{gcp}您的快捷列必須為空！'
+    quickbarslots: '{gcp}您的快捷列至少需要 {gcs}[count] {gcp}個空位！'
+    subinv: '{gcp}您的子背包必須為空！'
+    subinvslots: '{gcp}您的子背包至少需要 {gcs}[count] {gcp}個空位！'
+  Relog: '{gcp}可能需要重新登入才能使變更生效'
+  Any: 任意
+  Reset: '{gcp}按下 {gcs}Q {gcp}以重設'
+  outsideWorldBorder: '{gcw}位置超出世界邊界'
+  noWorldAccess: '{gcw}無世界存取權限'
+  IncorrectColor: '{gcw}顏色定義錯誤！'
+  IncorrectFile: '{gcw}檔案名稱定義錯誤！'
+  time:
+    days: '{gcn}[d]{gcn}天：'
+    hours: '{gcn}[h]{gcn}時 '
+    minutes: '{gcn}[m]{gcn}分 '
+    seconds: '{gcn}[s]{gcn}秒'
+  CommandFormat: '{gcw}指令格式錯誤'
+  ServerSwitchOut: ' {gcs}[playerDisplayName] {gcp}切換伺服器至 {gcs}[serverName]'
+  ServerSwitchIn: ' {gcs}[playerDisplayName] {gcp}來自 {gcs}[serverName] {gcp}伺服器'
+dialog:
+  signEditor: 告示編輯器
+  update: 更新
+  save: 儲存
+  close: 關閉
+  line: 行 [line]
+warp:
+  list: '{gcs}[pos]{gcp}. {gcs}[warpName] {gcn}—— {gcs}[worldName] ({x}：{y}：{z})'
+afk:
+  'off': '{gcs}Playing'
+  # Placeholders can be used for MayNotRespond and MayNotRespondStaff
+  MayNotRespond: '{gcp}Player is AFK and may not respond'
+  MayNotRespondStaff: '{gcp}Staff member is AFK and may not respond. Try contacting
+    us through discord'
+BossBar:
+  hpBar: '{gcs}[受害者] {gcs}[目前]{gcs}/{gcs}[最大] {gcs}({gcw}-[傷害]{gcs})'
+  playerhpBar: '{gcs}%cmi_user_display_name% {gcs}[目前]{gcs}/{gcs}[最大] {gcs}({gcw}-[傷害]{gcs})'
+Potion:
+  Effects: '{gcp}藥水效果'
+  List: '{gcs}[PotionName] [PotionAmplifier] {gcp}持續時間：{gcs}[LeftDuration] {gcp}秒'
+  NoPotions: '{gcp}無'
+Information:
+  Title: '{gcp}玩家資訊'
+  Health: '{gcp}生命值：{gcs}[Health]/[maxHealth]'
+  Hunger: '{gcp}飽食度：{gcs}[Hunger]'
+  Saturation: '{gcp}飽和度：{gcs}[Saturation]'
+  Exp: '{gcp}經驗值：{gcs}[Exp]'
+  NotEnoughExp: '{gcp}經驗值不足：{gcs}[Exp]'
+  NotEnoughExpNeed: '{gcp}經驗值不足：{gcs}[Exp]/[need]'
+  tooMuchExp: '{gcp}經驗值過多：{gcs}[Exp]/[need]'
+  NotEnoughVotes: '{gcp}票數不足：{gcs}[votes]'
+  TooMuchVotes: '{gcp}票數過多：{gcs}[votes]'
+  BadGameMode: '{gcw}您無法在目前的遊戲模式下執行此操作'
+  BadArea: '{gcw}您無法在此區域執行此操作'
+  GameMode: '{gcp}遊戲模式：{gcs}[GameMode]'
+  Flying: '{gcp}飛行狀態：{gcs}[Flying]'
+  Uuid: '{gcs}[uuid]'
+  FirstConnection: '{gcp}首次連線：{gcs}[time]'
+  Lastseen: '{gcp}最後上線：{gcs}[time]'
+  Onlinesince: '{gcp}上線時間：{gcs}[time]'
+  Money: '{gcp}餘額：{gcs}[money]'
+  Group: '{gcp}群組：{gcs}[group]'
+econ:
+  commandCost: '{gcp}此指令費用為 {gcs}[cost] {gcp}請重複輸入或點擊此處確認'
+  disabled: '{gcw}經濟系統支援已停用，無法使用此指令'
+Elytra:
+  Speed: '{gcp}速度：{gcs}[speed]{gcp} km/h'
+  SpeedBoost: ' {gcs}+ '
+  SpeedSuperBoost: ' {gcn}+ '
+  CanUse: '{gcw}未經許可，無法裝備鞘翅！'
+  CantGlide: '{gcw}此處無法使用鞘翅！'
+  Charging: '{gcp}充電中 {gcs}[percentage]{gcp}%'
+NetherPortal:
+  ToHigh: '{gcw}傳送門過高，最大高度為 {gcs}[max]{gcw}！'
+  ToWide: '{gcw}傳送門過寬，最大寬度為 {gcs}[max]{gcw}！'
+  Creation: '!actionbar!{gcp}已建立 [height]×[width] 的地獄傳送門！'
+  Disabled: '{gcw}傳送門建立功能已停用！'
+Ender:
+  Title: '{gcp}開啟終界箱'
+Chat:
+  localPrefix: ''
+  shoutPrefix: '{gcn}[S]&r'
+  LocalNoOne: '!actionbar!{gcw}沒有人聽見您的訊息，若要使用全域聊天，請在訊息前加上 !'
+  shoutDeduction: '!actionbar!{gcw}已扣除 {gcs}[amount] {gcw}作為喊話費用'
+  # 使用 \n 來新增換行
+  publicHover: '{gcp}發送時間： {gcs}%server_time_hh:mm:ss%'
+  privateHover: '{gcp}發送時間： {gcs}%server_time_hh:mm:ss%'
+  staffHover: '{gcp}發送時間： {gcs}%server_time_hh:mm:ss%'
+  helpopHover: '{gcp}發送時間： {gcs}%server_time_hh:mm:ss%'
+  link: '&l{gcw}[{gcn}連結{gcw}]'
+  item: '{gcn}[%cmi_iteminhand_displayname%[amount]{gcn}]'
+  itemAmount: ' ×[amount]'
+  itemEmpty: '{gcn}[強大的拳頭]'
+Spy:
+  Chat:
+    msg: '{gcn}間諜{gcp}[{gcp}[senderDisplayName] {gcp}-> {gcp}[playerDisplayName]{gcp}]{gcs}
+      [message]'
+    custom: '{gcn}間諜{gcp}[senderDisplayName] {gcp}-> {gcw}|{gcp}[place]{gcw}|{gcs}
+      [message]'
+  Command:
+    msg: '{gcs}指令{gcn}間諜{gcp}[{gcp}[senderDisplayName]{gcp}]{gcp}： {gcs}[command]'
+  Sign:
+    msg: '{gcs}告示牌{gcn}間諜{gcp}[{gcp}[senderDisplayName]{gcp}]{gcp}： {gcs}[text]'
+command:
+  help:
+    output:
+      usage: '{gcp}用法： {gcs}%usage%'
+      cmdInfoFormat: '{gcp}[指令] {gcp}- {gcs}[說明]'
+      cmdFormat: '{gcp}/[指令]{gcn}[參數]'
+      helpPageDescription: '{gcs}* [說明]'
+      explanation: '{gcs} * [解釋]'
+      title: '{gcs}------ ======= {gcp}說明 {gcs}======= ------'
+  nocmd:
+    help:
+      info: '{gcp} 顯示所有可用指令'
+      args: ''
+  actionbarmsg:
+    help:
+      info: 發送動作列訊息給玩家
+      args: '[玩家名稱/全部] (-s:[秒數]) [訊息]'
+    info:
+      message: '[訊息]'
+  afk:
+    help:
+      info: 切換暫離模式。可提供原因。
+      args: (-p:玩家名稱) (原因) (-s)
+    info:
+      # 此設定僅決定標題訊息，不影響聊天室訊息。若需修改聊天室訊息，請查看 config.yml 檔案。
+      afkTitle: '{gcp}您現在已暫離'
+      afkSubTitle:
+        - '{gcu}餅乾別吃太多！'
+        - '{gcu}真是個釣魚的好日子'
+        - '{gcu}又暫離了？'
+        - '{gcu}你跑去哪了？'
+  afkcheck:
+    help:
+      info: 檢查玩家掛機狀態
+      args: '[玩家名稱/全部]'
+    info:
+      feedback: '{gcs}[playerDisplayName]{gcp}：{gcs}[status]'
+      feedbackInactive: '{gcp}已閒置 {gcs}[time]'
+      feedbackAll: '{gcs}[place]{gcp}. {gcs}[playerDisplayName]{gcp}：{gcs}[status]'
+      feedbackReason: '{gcn}[reason]'
+  air:
+    help:
+      info: 設定玩家的氧氣量
+      args: '[playerName] [amount] (-s)'
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerName]{gcp} 的氧氣量設定為 {gcs}[amount]{gcp}。'
+      targetFeedback: '{gcp}您的氧氣量已被 {gcs}[senderDisplayName]{gcp} 設定為 {gcs}[amount]{gcp}。'
+      current: '{gcp}{gcs}[playerDisplayName] {gcp}目前的氧氣量：{gcs}[amount]'
+  alert:
+    help:
+      info: 通知管理員玩家登入
+      args: '[add/list/remove] [playerName] (原因) (-s)'
+      explanation:
+        - '{gcp}權限：'
+        - '{gcs}command.alert.info.inform {gcp}- 查看玩家登入提醒'
+    info:
+      inform:
+        - '{gcp}!提醒!******** {gcs}[name] {gcw}剛剛登入了！ {gcp}*******!提醒!'
+      reason: '{gcp}提醒原因： {gcs}[reason]'
+      removed: '{gcs}[playerDisplayName] {gcp}已從提醒清單中移除'
+      added: '{gcp}若 {gcs}[playerDisplayName] {gcp}在接下來的 24 小時內登入，系統將發送提醒訊息給所有管理員'
+      online: '{gcs}[playerDisplayName] {gcp}已經在線上'
+      add: '{gcu}增加額外天數'
+      list: ' {gcs}[place]. {gcs}[playerDisplayName] {gcs}[time] {gcn}原因： [reason]'
+  aliaseditor:
+    help:
+      info: 別名編輯器
+      args: (新) (別名指令)
+    info:
+      ListNumber: '{gcs}[編號]．'
+      alias: '{gcs}[別名]'
+      commandList: ' {gcs}/[指令]  '
+      commandListDelay: ' {gcs}[指令]  '
+      permRequirements: 權限需求
+      permReqExplanation: '{gcp}需要 {gcs}cmi.customalias.[別名] {gcp}權限才能使用'
+      tab: ' 分頁補全'
+      tabCompleteExplanation: '{gcp}停用後，分頁補全將無法運作'
+      tabCompletes: '{gcu}分頁補全： '
+      cTab: ' 自訂分頁'
+      file: ' {gcu}檔案名稱'
+      fileExplanation: '{gcp}目前目標檔案： {gcs}[檔案]'
+      addTabComplete: ' 新增分頁'
+      addTabExplanation: '{gcp}啟用後，我們將把定義的分頁加入現有的分頁中'
+      exact: ' 精確匹配'
+      addExactExplanation: '{gcp}啟用後，僅在輸入完全相同的指令時才會觸發此別名'
+      newAliasInfo: '{gcp}請輸入新的別名指令名稱並按下 Enter'
+      addInfo: '{gcp}請輸入新的指令。輸入 {gcs}cancel {gcp}以取消'
+      addInformationHover: "{gcp}支援發送者類別的通用變數 \n{gcp}delay! 5 {gcs}於指令中加入延遲 \n{gcp}$1
+        {gcs}將擷取新指令提供的變數並填入該位置 \n{gcp}$1- {gcs}從此處擷取所有變數並插入原始指令中 \n{gcp}? {gcs}在使用任何最後變數時使其有效。用於說明頁面\
+        \ \n{gcp}fromConsole! 將從控制台執行指令"
+      editInfo: '{gcp}點擊以貼上舊文字。輸入 {gcs}cancel {gcp}以取消動作。輸入 {gcs}remove {gcp}以移除該行'
+  anvil:
+    help:
+      info: 開啟鐵砧
+      args: (玩家名稱) (-s)
+    info:
+      feedback: '{gcp}你已為 {gcs}[playerDisplayName]{gcp} 開啟鐵砧。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 為你開啟了鐵砧。'
+  anvilrepaircost:
+    help:
+      info: 設定物品修理費用
+      args: (玩家名稱) [數值]
+      explanation:
+        - 範例：
+        - /repaircost 10
+        - /repaircost set 10
+        - /repaircost add 10
+        - /repaircost take 10
+        - /repaircost Zrips clear
+        - /repaircost Zrips add 10
+    info:
+      current: '{gcp}目前物品基礎修理費用為：{gcs}[cost]{gcp}。'
+      noitem: '{gcw}手中未持有任何物品。'
+      cantDetermineCost: '{gcw}無法判定該物品的基礎修理費用。'
+      selffeedback: '{gcp}已將 {gcs}[playerDisplayName]{gcp} 手中物品的基礎修理費用設定為 {gcs}[amount]{gcp}。'
+      targetfeedback: '{gcp}您的物品修理費用已被 {gcs}[senderDisplayName]{gcp} 設定為 {gcs}[amount]{gcp}。'
+  armoreffect:
+    help:
+      info: 修改護甲效果
+      args: '[藥水效果]'
+  armorstand:
+    help:
+      info: 開啟盔甲架編輯器
+      args: (last/near)
+    info:
+      cantClick: '{gcw}無法執行。已有其他人正在編輯此盔甲架'
+      tooFar: '{gcw}盔甲架距離過遠'
+      title: 編輯器
+      coordX: '{gcw}X'
+      coordY: '{gcu}Y'
+      coordZ: '{gcp}Z'
+      body: '{gcp}身體旋轉：{gcs}[amount]'
+      head: '{gcp}頭部 [coord]{gcp}：{gcs}[amount]'
+      torso: '{gcp}軀幹 [coord]{gcp}：{gcs}[amount]'
+      leftArm: '{gcp}左臂 [coord]{gcp}：{gcs}[amount]'
+      rightArm: '{gcp}右臂 [coord]{gcp}：{gcs}[amount]'
+      leftLeg: '{gcp}左腿 [coord]{gcp}：{gcs}[amount]'
+      rightLeg: '{gcp}右腿 [coord]{gcp}：{gcs}[amount]'
+      pos: '{gcp}位置 [coord]{gcp}：{gcs}[amount]'
+      list: '{gcp}[place]. {gcs}[distance] [items]'
+      items: '{gcs}[displayName]{gcp}[type]'
+      plate: '{gcp}底座'
+      size: '{gcp}小型'
+      visible: '{gcp}可見'
+      arms: '{gcp}顯示手臂'
+      gravity: '{gcp}重力'
+      glow: '{gcp}發光'
+      invulnerable: '{gcp}無敵'
+      name: '{gcp}顯示名稱'
+      nameEdit: '{gcp}Q 鍵點擊以編輯名稱'
+      interactable: '{gcp}可互動'
+      scale: '{gcp}比例：{gcs}[amount]'
+      scaleLimits: '{gcs}[min] {gcp}- {gcs}[max]'
+      explanation: '{gcp}滑鼠左鍵或右鍵可調整數值'
+      explanation2: '{gcp}按住 Shift 鍵可加速 10 倍'
+      disableGravity: '{gcp}若要更改此數值，請先關閉重力'
+      copyLabel: '{gcp}開啟複製選單'
+      copyTitle: '{gcp}選擇您想複製的項目'
+      click: '{gcp}點擊盔甲架以進行複製，或點擊任意方塊以取消程序'
+      canceled: '{gcp}盔甲架複製程序已取消'
+      updated: '{gcp}盔甲架已更新'
+      positionLabel: '{gcp}開啟位置選項'
+      saveLabel: '{gcp}開啟模板儲存器'
+      saveButton: '{gcp}儲存'
+      saveTitle: '{gcp}選擇您想儲存的項目'
+      receivedItem: '{gcp}已將特殊盔甲架放入您的背包'
+      armorStandItem: '{gcp}盔甲架模板：{gcs}[name]'
+      action:
+        helmet: '{gcp}頭盔'
+        chest: '{gcp}胸甲'
+        offhand: '{gcp}副手'
+        mainhand: '{gcp}主手'
+        leggings: '{gcp}護腿'
+        boots: '{gcp}靴子'
+        name: '{gcp}名稱'
+        body: '{gcp}身體'
+        plate: '{gcp}底座'
+        size: '{gcp}尺寸'
+        visible: '{gcp}可見'
+        arms: '{gcp}手臂'
+        gravity: '{gcp}重力'
+        glow: '{gcp}發光'
+        invulnerable: '{gcp}無敵'
+        interactable: '{gcp}可互動'
+        scale: '{gcp}比例'
+        head: '{gcp}頭部'
+        torso: '{gcp}軀幹'
+        leftArm: '{gcp}左臂'
+        rightArm: '{gcp}右臂'
+        leftLeg: '{gcp}左腿'
+        rightLeg: '{gcp}右腿'
+  attachcommand:
+    help:
+      info: 將指令附加至物品
+      args: '[指令/-clear]'
+      explanation:
+        - 使用 ;; 分隔指令
+        - 您可以分別定義在滑鼠左鍵或右鍵點擊時執行的指令
+        - 「!left!」用於執行滑鼠左鍵點擊時的指令
+        - 「!right!」用於執行滑鼠右鍵點擊時的指令
+        - 「!limiteduse:[數量]!」定義此物品可使用的次數
+        - 「!safelimiteduse:[數量]!」在所有次數用盡後不會移除物品
+        - 「!cc!」從控制台執行指令，需要 cmi.command.attachcommand.cc 權限
+        - 「!cooldownn:[時間]!」增加物品使用的冷卻時間
+        - 「[interactedPlayer]」插入您手持物品時與之互動的玩家名稱
+        - 全域變數可與 [itemUses] 搭配使用
+    info:
+      list: ' {gcp}[id]。 {gcp}[cmd]'
+      uses: '{gcp}物品使用次數： {gcp}[amount]'
+      usesLeft: '!actionbar!{gcp}剩餘使用次數： {gcp}[itemUses]'
+      cooldown: '{gcp}物品冷卻中。請等待 {gcp}[time]'
+  autorecharge:
+    help:
+      info: 切換自動飛行充能
+      args: (玩家名稱) [經驗值/金錢/關閉/開啟] (-s)
+    info:
+      moneyState: '{gcp}金錢充能：[state]'
+      expState: '{gcp}經驗值充能：[state]'
+      updated: '{gcp}狀態已變更為 [state]'
+  back:
+    help:
+      info: 傳送回最後儲存的位置
+      args: (玩家名稱) (-s)
+    info:
+      noinfo: '{gcw}沒有可返回的儲存位置！'
+      feedback: '{gcp}已返回最後儲存的位置（{gcs}[worldName]{gcp}，{gcs}[x]{gcp}，{gcs}[y]{gcp}，{gcs}[z]{gcp}）！'
+  balance:
+    help:
+      info: 查詢金錢餘額
+      args: (玩家名稱)
+    info:
+      balance: '{gcp}餘額：{gcs}[money]'
+      balanceOther: '{gcs}[playerDisplayName] {gcp}的餘額：{gcs}[money]'
+  baltop:
+    help:
+      info: 查看財富排行榜
+      args: (玩家名稱)
+    info:
+      topLine: '{gcp}&m-----{gcs} 財富排行榜 {gcp}&m-----'
+      topLineHover: '{gcp}伺服器總額：{gcn}[total]'
+      list: '{gcp}[place]{gcp}. {gcs}[playerDisplayName]：{gcn}[balance]'
+      ownLine: '{gcu}[place]{gcp}. {gcs}[playerDisplayName]：{gcn}[balance]'
+      # 若不想顯示懸停訊息，請留空
+      hover: '{gcs}[playerName]'
+      recalculating: '{gcs}排行榜正在重新計算中，請稍候幾秒再試'
+  ban:
+    help:
+      info: 封禁玩家
+      args: '[玩家名稱] (原因) (-s)'
+      explanation:
+        - cmi.command.ban.bypass - 用於繞過封禁
+    info:
+      # 請確保已在設定檔中啟用 OverrideLoginMessage
+      message: '{gcw}您已被本伺服器封禁！'
+      reason: '{gcp}原因：{gcs}[reason]'
+      defaultReason: '{gcp}違反伺服器規則'
+      messageToAll: '{gcs}[playerDisplayName] {gcp}已被 {gcs}[senderDisplayName] {gcp}封禁，原因：{gcs}[reason]'
+      banedSilent: '{gcp}[{gcn}靜默{gcp}]{gcs}[playerDisplayName] {gcp}已被 {gcs}[senderDisplayName]
+        {gcp}封禁，原因：{gcs}[reason]'
+      noSelfBan: '{gcw}您無法封禁自己'
+      cantBan: '{gcw}您無法封禁該玩家'
+  banlist:
+    help:
+      info: 封鎖名單
+      args: (-s)
+  bbroadcast:
+    help:
+      info: 發送特殊訊息給所有伺服器上的所有玩家
+      args: (!) [訊息] (-s:[伺服器名稱,伺服器名稱])
+      explanation:
+        - 若訊息以 ! 開頭，則會顯示純淨的訊息內容
+        - 可指定伺服器，僅在該些伺服器中廣播訊息
+    info:
+      format: '{gcp}[{gcw}廣播{gcp}] {gcn}[訊息]'
+  blockcycling:
+    help:
+      info: 循環方塊狀態
+      args: ''
+  blockinfo:
+    help:
+      info: 檢查方塊資訊
+      args: ''
+    info:
+      Id: ' {gcp}ID：{gcs}[id][data]'
+      Material: ' {gcp}材質：{gcs}[name][ndata]'
+      RealName: ' {gcp}實際名稱：{gcs}[name]'
+      TempLight: ' {gcp}溫度：{gcs}[temp]{gcp}，亮度 - 方塊：{gcs}[blevel]{gcp}， 天空：{gcs}[slevel]{gcp}，總計：{gcs}[level]'
+      Resistance: ' {gcp}抗性 - 開採：{gcs}[mining]{gcp}，爆炸：{gcs}[explosion]'
+      noteBlock: ' {gcp}音調：{gcs}[tone] {gcp}八度：{gcs}[octave] {gcp}樂器： {gcs}[instrument]
+        {gcp}音高：{gcs}[pitch]'
+      BlockState: ' {gcp}[state]：{gcs}[value]'
+      BlockHitBox: ' {gcp}高度：{gcs}[height] {gcp}長度：{gcs}[length] {gcp}寬度： {gcs}[width]'
+      BlockHitBoxHover: '{gcp}距頂部：{gcs}[top] {gcp}距底部：{gcs}[bottom]'
+      Books: ' {gcp}書本：{gcs}[list]'
+      Enchant: '{gcs}[name]：{gcp}[level] '
+  blocknbt:
+    help:
+      info: 顯示方塊 NBT 資訊
+      args: ''
+    info:
+      noNbt: '{gcp}該方塊不包含任何 NBT 資料'
+  book:
+    help:
+      info: 編輯書籍
+      args: '[作者/標題/解鎖] [數值]'
+    info:
+      noitem: '{gcw}手中未持有任何物品。'
+      notBook: '{gcw}該物品並非書本。'
+      wrongValue: '{gcw}該物品並非已封裝的書本。'
+      inccorectAction: '{gcp}動作名稱不正確。'
+      authorChanged: '{gcp}作者已變更為：{gcs}[author]'
+      titleChanged: '{gcp}標題已變更為：{gcs}[title]'
+      unlocked: '{gcp}書本已解鎖'
+  bossbarmsg:
+    help:
+      info: 發送 Boss 血條訊息給玩家
+      args: '[playerName/all] (-sec:[秒數])(-t:[顯示時長]) (-n:血條名稱) (-p:[最大值/當前值]) (-c:[顏色])
+        (-s:[1,6,10,12,20]) (-cmd:"指令;;指令2") (-pcmd:"指令;;指令2") (-a:[刻度]) [訊息] (-cancel:血條名稱)'
+      explanation:
+        - 進度條與文字內容皆支援 PlaceHolderAPI
+        - 時間採用一般定義方式，例如 1s 代表一秒，1m 代表一分鐘。 此設定將決定血條在自動隱藏前，會對玩家顯示多久
+        - 血條名稱為選填，若定義相同的名稱，則當前的血條將會更新 為新的資訊
+        - 顏色可選：red（紅）、green（綠）、pink（粉紅）、purple（紫）、white（白）、yellow（黃）
+        - 最大值與當前值決定了血條的填充比例，可使用 PlaceHolderAPI 變數來進行動態更新
+        - 範例：
+        - /cmi bossbar Zrips BossBarTitle
+        - /cmi bossbarmsg all -t:1s -p:%server_max_players%/%server_online% 
+          -n:testbar -c:red &2血條標題 %server_online%/%server_max_players% 
+          &e%cmi_user_name%
+        - /cmi bossbarmsg all -p:+1 -n:testbar - 將會為指定名稱的當前進度條增加 1%
+        - /cmi bossbarmsg all -p:-1 -n:testbar - 將會從指定名稱的當前進度條中扣除 1%
+        - /cmi bossbarmsg all -s:10 -n:testbar - 將會把指定名稱的血條樣式設為 10 個區段
+        - /cmi bossbarmsg all -sec:5 - 將會從 0 到 5 進行 5 秒的計數
+        - /cmi bossbarmsg all -sec:-5 - 將會從 5 到 0 進行 5 秒的倒數
+        - -cmd：若目標為特定玩家，則會對該玩家執行指令；若目標為所有人（all），則僅會執行一次。若搭配「all」變數使用，此指令不會轉換像 
+          [playerName] 這類的變數。請改用 -pcmd：
+        - -pcmd：若目標為「all」，則會對每一位玩家分別執行指令
+        - https://www.zrips.net/cmi/commands/bossbarmsg-handling/
+  broadcast:
+    help:
+      info: 發送特殊訊息給所有玩家
+      args: (!) [訊息] (-w:[世界名稱,世界名稱]) (-r:[範圍]) (-c:[世界;x;y;z])
+      explanation:
+        - 若訊息以 ! 開頭，則將顯示純淨訊息
+        - 可指定世界，僅在該些世界中進行廣播
+    info:
+      format: '{gcp}[{gcw}廣播{gcp}] {gcu}[訊息]'
+  burn:
+    help:
+      info: 點燃玩家
+      args: (玩家名稱) (時間) (-s)
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 點燃，持續時間為 {gcs}[time]。'
+      targetfeedback: '{gcp}您已被 {gcs}[senderDisplayName]{gcp} 點燃，持續時間為 {gcs}[time]&e。'
+  cartographytable:
+    help:
+      info: 開啟製圖桌
+      args: (玩家名稱) (-s)
+    info:
+      feedback: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 開啟製圖桌。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 為您開啟了製圖桌。'
+  charges:
+    help:
+      info: 顯示剩餘的刷怪籠充能次數
+      args: '[玩家名稱] [add/set/take/clear/reset] (-f)'
+    info:
+      charges: '{gcp}* 充能次數：{gcs}[current]{gcp}/{gcs}[max] [bypass]'
+      cd: '{gcp}* 冷卻時間：{gcs}[cdtime] {gcp}下次可用時間：{gcs}[time]'
+      bypass: '{gcs}（繞過）'
+      allUsed: '{gcp}充能次數已用盡！下次可用時間：[time]'
+      noGroup: '{gcp}未指派充能群組'
+      cantBreak: '{gcp}在指派充能群組前，您無法進行破壞'
+      minusCd: '{gcp} 刷怪籠充能冷卻時間減少 {gcs}[sec]{gcp} 秒'
+      add: '{gcp}已為 {gcs}[playerDisplayName] {gcp}增加 {gcs}[amount] {gcp}次刷怪籠充能'
+      set: '{gcp}已將 {gcs}[playerDisplayName] {gcp}的刷怪籠充能設定為 {gcs}[amount] {gcp}次'
+      clear: '{gcp}已清除 {gcs}[playerDisplayName] {gcp}的所有刷怪籠充能'
+      reset: '{gcp}已重設 {gcs}[playerDisplayName] {gcp}的刷怪籠充能群組'
+      take: '{gcp}已從 {gcs}[playerDisplayName] {gcp}扣除 {gcs}[amount] {gcp}次刷怪籠充能'
+  chat:
+    help:
+      info: 建立並加入聊天室
+      args: '[create/join/leave/list/invite/kick/listrooms] (chatName/playerName)
+        (-private) (-locked) (-persistent)'
+    info:
+      joined: '{gcp}已加入聊天室：{gcs}[chatRoomName]'
+      joinedWatcher: '{gcp}正在觀察聊天室：{gcs}[chatRoomName]'
+      stopeedWatching: '{gcp}已停止觀察聊天室：{gcs}[chatRoomName]'
+      watcherSymbol: ◕‿◕
+      watcherSymbolActive: '{gcu}'
+      watcherSymbolInactive: '{gcn}'
+      joinedInfo: '{gcs}[playerDisplayName] {gcp}加入了聊天室'
+      alreadyIn: '{gcp}您已在 {gcs}[chatRoomName] {gcp}聊天室中'
+      left: '{gcp}已離開 {gcs}[chatRoomName] {gcp}聊天室'
+      leftInfo: '{gcs}[playerDisplayName] {gcp}離開了聊天室'
+      invite: '{gcs}[playerDisplayName] {gcp}邀請您加入聊天室：{gcs}[chatRoomName]'
+      sentInvite: '{gcp}已邀請 {gcs}[playerDisplayName] {gcp}加入聊天室：{gcs}[chatRoomName]'
+      format: '{gcn}|{gcs}[chatRoomName]{gcn}| {gcs}[playerDisplayName]：&r[message]'
+      nobody: '{gcw}聊天室內無人'
+      notOwner: '{gcw}僅聊天室擁有者可執行此操作'
+      wrongName: '{gcw}聊天室名稱錯誤'
+      takenName: '{gcw}聊天室名稱已被佔用，請使用其他名稱'
+      notIn: '{gcw}使用者不在聊天室中'
+      cantJoin: '{gcw}此聊天室為私人性質，且您未收到邀請'
+      cantSee: '{gcw}此聊天室為私人性質，您沒有權限查看其中的訊息'
+      kicked: '{gcs}[playerDisplayName] {gcp}已被踢出聊天室'
+      cantleave: '{gcp}無法離開已鎖定的聊天室'
+      gotKicked: '{gcw}您已被踢出 {gcs}[chatRoomName] {gcw}聊天室'
+      list: '{gcp}[chatRoomName]{gcp}：{gcs}[list]'
+      globalList: '{gcs}[number]. [joined]{gcp}[chatRoomName][private]{gcp}：{gcs}[count][expires]'
+      globalListPrivate: '{gcn}(P)'
+      globalListJoined: '{gcu}+'
+      globalListHover:
+        Owner: '{gcp}擁有者：{gcs}[playerDisplayName]'
+        Ends: ' {gcp}過期時間：{gcs}[time]'
+        Names: '{gcs}[playerDisplayName]'
+  chatcolor:
+    help:
+      info: 選擇聊天顏色
+      args: (玩家名稱)
+    info:
+      reset: '{gcp}重設'
+  checkaccount:
+    help:
+      info: 搜尋玩家的其他帳號
+      args: (玩家名稱/IP)
+      explanation:
+        - 額外權限：cmi.command.checkaccount.showip
+    info:
+      place: '{gcs}[位置]{gcp}。{gcs}'
+      ip: '{gcp}[IP]{gcs}：'
+      name: '{gcs}[名稱]{gcp}（{gcs}[次數]{gcp}）'
+      nonIpList: '{gcp}帳號：{gcs}'
+      nonIpName: '{gcs}[名稱]'
+      click: '{gcp}點擊以查看 {gcs}[名稱] {gcp}帳號'
+      noData: '{gcw}找不到該使用者的紀錄'
+  checkban:
+    help:
+      info: 檢查玩家封禁狀態
+      args: (玩家名稱)
+    info:
+      list: '{gcs}[place]{gcp}. {gcs}[playerDisplayName] {gcs}[time]'
+      name: '{gcp}名稱：{gcs}[playerName]'
+      permanent: '{gcn}永久'
+      bannedUntil: '{gcp}封禁期限：{gcs}[time]'
+      reason: '{gcp}原因：{gcs}[reason]'
+      bannedBy: '{gcp}封禁者：{gcs}[sourceDisplayName]'
+      bannedWhen: '{gcp}封禁時間：{gcs}[date]'
+  checkcommand:
+    help:
+      info: 透過關鍵字搜尋可能的指令
+      args: （關鍵字）
+    info:
+      list: '{gcs}[地點]{gcp}。 {gcs}[指令] {gcn}[參數]'
+      hover: '{gcs}[描述]'
+      variableColor: '{gcn}'
+      noCommandFound: '{gcw}找不到符合此關鍵字的指令'
+  checkexp:
+    help:
+      info: 查詢玩家經驗值
+      args: (玩家名稱)
+    info:
+      current: '{gcp}等級：{gcs}[currentLevel] {gcp}經驗值：{gcs}[levelExp] {gcp}總經驗值：{gcs}[exp]'
+      need: '{gcp}距離下一等級所需經驗值：{gcs}[missingExp]'
+  checkperm:
+    help:
+      info: 檢查可能的權限節點
+      args: （關鍵字）
+    info:
+      list: '{gcs}[位置]{gcp}。{gcs}[權限]'
+      hover: '{gcs}[描述]'
+      others: |-
+        {gcw}
+        ---->當指令用於其他玩家時<----
+        {gcw}需要基礎指令
+      permissionColor: '{gcp}'
+      cmdPermissionColor: '{gcu}'
+      variableColor: '{gcn}'
+      noPermissionFound: '{gcw}找不到符合此關鍵字的權限'
+  cheque:
+    help:
+      info: 將貨幣轉換為支票
+      args: (玩家名稱) [金額]
+    info:
+      transferred: '{gcp}已將 {gcp}[amount] {gcp}轉入您的帳戶。新餘額：{gcp}[balance]'
+      chequeName: '{gcp}金額為 {gcp}[amount] 的支票'
+      chequeLore:
+        - '&r{gcn}由 {gcs}[senderDisplayName] {gcn}簽發'
+        - '&r{gcn}按右鍵以存入'
+      holdPaper: '{gcp}請將紙張拿在手上'
+      cantUse: '{gcp}無法使用這張紙。它已經是一張支票了！'
+      clarification: '{gcw}此類支票已不再受理。請聯繫工作人員進行更新'
+  clear:
+    help:
+      info: 清除玩家物品欄
+      args: (玩家名稱) (物品(:數量)(;資料)) (-s) (+清除類型) -exact
+      explanation:
+        - 可用的清除類型：quickbar、inventory、partinventory、weapons、armorslots、tools、armors、mainhand、offhand
+        - 必須以 + 號開頭
+        - 可同時使用多種類型
+        - cmi clear +armors - 將移除防具類物品
+        - cmi clear +armorslots - 將移除裝備欄中的物品
+    info:
+      clearFeedback: '{gcp}您已從 {gcp}[playerDisplayName]{gcp} 的物品欄中移除了 {gcp}[amount]
+        {gcp}個物品。'
+      target: '{gcp}[senderDisplayName]{gcp} 已從您的物品欄中移除了 {gcp}[amount] {gcp}個物品。'
+      confirm: '{gcu}點擊以確認清除物品欄。&c所有物品將被移除！'
+  clearchat:
+    help:
+      info: 清除聊天記錄
+      args: (self) (-s)
+      explanation:
+        - 權限：
+        - ' cmi.command.clearchat.bypass - 忽略聊天記錄清除'
+    info:
+      information: '{gcp}聊天記錄已由 {gcs}[senderDisplayName] 清除'
+  clearender:
+    help:
+      info: 清除玩家的終界箱
+      args: '[玩家名稱] (-s)'
+    info:
+      feedback: '{gcp}您已清除 {gcs}[playerDisplayName]{gcp} 的終界箱。'
+      targetfeedback: '{gcp}您的終界箱已被 {gcs}[senderDisplayName]{gcp} 清除。'
+  colorlimits:
+    help:
+      info: 顯示所有可用的顏色
+      args: (玩家名稱)
+    info:
+      publicmessage: ' {gcp}公開：'
+      privatemessage: ' {gcp}私人：'
+      nickname: ' {gcp}暱稱：'
+      signs: ' {gcp}告示牌：'
+      books: ' {gcp}書本：'
+      itemname: ' {gcp}物品名稱：'
+      itemlore: ' {gcp}物品說明：'
+      me: ' {gcp}我：'
+      None: '{gcp}-'
+  colorpicker:
+    help:
+      info: 選擇十六進位顏色
+      args: (十六進位代碼/顏色名稱)
+    info:
+      hovers:
+        - '[color]⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛'
+        - '{gcn}[hex]'
+        - '{gcp}最接近的命名顏色：'
+        - '[colorHex] - [colorName]'
+        - '[closeColor]⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛'
+        - '{gcs}Shift + 點擊'
+  colors:
+    help:
+      info: 顯示所有可用的顏色
+      args: (玩家名稱)
+    info:
+      List:
+        - '{gcp}***************************************'
+        - '     &0&%0  &1&%1  &2&%2  &3&%3  &4&%4  &5&%5  &6&%6  &7&%7'
+        - '     &8&%8  &9&%9  &a&%a  &b&%b  &c&%c  &d&%d  &e&%e  &f&%f'
+        - '       &%k - &k魔法&r      &%l - &l粗體'
+        - '       &%m - &m刪除線&r     &%n - &n底線'
+        - '       &%o - &o斜體&r      &%r - &r重設'
+        - '{gcp}***************************************'
+  compass:
+    help:
+      info: 將玩家的指南針指向您的位置
+      args: (目標名稱) (來源名稱) (x) (z) (世界名稱) (重設) (-s)
+      explanation:
+        - 範例：/cmi compass Zhax
+        - /cmi compass Zhax Zrips
+        - /cmi compass Zhax LT_Craft 0 0 -s
+        - /cmi compass reset Zhax
+    info:
+      wrongworld: '{gcw}您指定的世界不存在！'
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName] {gcp}的指南針指向 {gcs}[sourceDisplayName]
+        {gcp}的位置。'
+      feedbackCustom: '{gcp}您已將 {gcs}[playerDisplayName] {gcp}的指南針指向 {gcs}[x] [z]
+        [world] {gcp}的位置。'
+      targetFeedback: '{gcp}您的指南針目標已被 {gcs}[senderName] {gcp}設定為 {gcs}[sourceDisplayName]
+        {gcp}的位置。'
+      targetFeedbackCustom: '{gcp}您的指南針目標已被 {gcs}[sourceDisplayName] {gcp}設定為 {gcs}[x]
+        [z] [world] {gcp}的位置。'
+      targetPlayerFeedback: '{gcs}[playerDisplayName] {gcp}將他們的指南針指向了您的位置'
+      reset: '{gcp}指南針目標已重設'
+  condense:
+    help:
+      info: 將物品壓縮為方塊
+      args: (物品名稱) (玩家名稱) (-s)
+    info:
+      converted: '{gcp}已將 {gcs}[items] {gcp}物品轉換為 {gcs}[blocks] {gcp}方塊'
+      nothing: '{gcw}您的背包中沒有可供壓縮的物品。'
+  counter:
+    help:
+      info: 啟動周圍玩家的計數器
+      args: '[join/leave/start] (t:時間) (r:[範圍/-1]) (c:[世界:x:y:z]) (msg:自訂訊息) (-f)'
+      explanation:
+        - 權限：
+        - cmi.command.counter.force - 強制對範圍內的所有人啟動計數器
+        - cmi.command.counter.time - 定義自訂時間範圍
+        - cmi.command.counter.range - 定義自訂範圍
+        - cmi.command.counter.msg - 定義自訂訊息
+        - cmi.command.counter.autojoin - 自動加入計數器
+        - -f 將強制對範圍內的所有玩家啟動計數器
+        - 範例：/cmi counter start r:30 t:7 msg:&e自訂訊息 -f
+    info:
+      join: '{gcp}已加入計數器'
+      leave: '{gcp}已離開計數器'
+      go: '{gcp}開始！'
+      tooFast: '{gcw}指令重複速度過快，請等待：{gcs}[sec]{gcp} 秒'
+      noOne: '&c沒有人看到這個計數器！'
+  cplaytime:
+    help:
+      info: 詳細遊玩時間
+      args: (playerName)
+    info:
+      moreDetails: '{gcp}點擊查看更多詳情'
+      title: '&8[playerDisplayName] 的 {gcp}遊玩時間'
+      date: '&8[date]'
+      time: '{gcs}[hour]:00{gcn}—{gcs}[nextHour]:00'
+      thishour: '{gcp}當前小時'
+      hourback: '{gcp}上一小時'
+      today: '{gcp}今日'
+      yesterday: '{gcp}昨日'
+      thisweek: '{gcp}本週'
+      week: '{gcp}7 日區間'
+      thismonth: '{gcp}本月'
+      month: '{gcp}30 日區間'
+      thisyear: '{gcp}今年'
+      year: '{gcp}365 日區間'
+      total: '{gcp}總計'
+  ctellraw:
+    help:
+      info: 發送 tellraw 類型的訊息
+      args: '[玩家名稱/all] [格式化訊息]'
+      explanation:
+        - 用法與 https://www.zrips.net/cmi/custom-text/ 所示相同，亦即 customtext 指令
+  ctext:
+    help:
+      info: 顯示自訂文字
+      args: '[cText] (playerName/all) (sourcePlayer) (pageNumber)'
+    info:
+      list: '{gcp}自訂文字：{gcs}'
+      check: '{gcp}檢查：{gcs}[text]'
+  cuff:
+    help:
+      info: 暫停玩家動作
+      args: '[玩家名稱] (true/false) (-s)'
+    info:
+      noChat: '{gcw}您的所有動作皆已暫停，無法進行聊天。'
+      noCommand: '{gcw}您在暫停期間無法使用指令。{gcp}允許使用的指令：{gcs}/msg, /r, /tell'
+      cuffed: '{gcs}[playerDisplayName] {gcp}已被上銬'
+      unCuffed: '{gcs}[playerDisplayName] {gcp}已解開手銬'
+      free: '{gcp}您現在自由了'
+      gotCuffed: '{gcp}您已被上銬'
+      cuffedInfo: '{gcp}您目前處於上銬狀態'
+      cantCuff: '&c您無法對該玩家上銬！'
+  customrecipe:
+    help:
+      info: 管理物品自訂合成表
+      args: ''
+    info:
+      removed: '{gcp}合成表已移除：[id]。若要完全生效，您需要重新啟動伺服器。'
+      noRecipe: '{gcp}找不到該 ID 的自訂合成表'
+      edit: '{gcp}編輯合成表（{gcs}[type]{gcp}）'
+      addNew: '{gcp}新增合成表（{gcs}[type]{gcp}）'
+      shapelessRecipe: '{gcp}製作新的無序合成表'
+      shapedRecipe: '{gcp}製作新的有序合成表'
+      furnaceRecipe: '{gcp}製作新的熔爐合成表'
+      campfireRecipe: '{gcp}製作新的營火合成表'
+      smithingRecipe: '{gcp}製作新的鍛造合成表'
+      stonecuttingRecipe: '{gcp}製作新的切石機合成表'
+      blastingRecipe: '{gcp}製作新的高爐合成表'
+      smokingRecipe: '{gcp}製作新的煙燻爐合成表'
+      exact: '{gcp}要求精確材料：{gcs}[state]'
+      exists: '{gcw}看起來已經存在類似的合成表了'
+      mainTitle: '{gcp}自訂合成表（{gcs}[current]{gcp}/{gcs}[total]{gcp}）'
+  database:
+    help:
+      info: 管理備份資料
+      args: '[動作] (玩家名稱) (資料類型) (檔案名稱)'
+    info:
+      backupSuccess: '{gcp}備份已建立，名稱為 {gcs}[name] {gcp}資料表：{gcs}[types]'
+      backupFailed: '{gcp}備份失敗'
+      userDataRestored: '{gcp}已還原 {gcs}[playerName] {gcp}的資料。資料表：{gcs}[types]'
+      userDataFailed: '{gcw}還原 {gcs}[playerName] {gcw}的資料失敗'
+  dback:
+    help:
+      info: 返回死亡地點
+      args: (玩家名稱) (-s)
+    info:
+      noinfo: '{gcw}沒有可返回的儲存位置！'
+      feedback: '{gcp}已返回最後儲存的位置（[world]，[x]，[y]，[z]）！'
+  dialogs:
+    help:
+      info: 顯示指定的對話框
+      args: '[dialogName] (playerName) ([variableName]:value) (-s)'
+    info:
+      notFound: '{gcw}找不到該名稱的對話框'
+  disableenchant:
+    help:
+      info: 停用附魔
+      args: (附魔名稱/ID) (停用/啟用)
+    info:
+      title: 附魔停用器
+      feedback: '{gcs}[enchantName] {gcp}已被 {gcs}[state]'
+  dispose:
+    help:
+      info: 丟棄不需要的物品
+      args: (playerName)
+    info:
+      title: '{gcw}放置所有您不需要的物品'
+      cant: '{gcw}您無法丟棄此物品'
+  distance:
+    help:
+      info: 檢查兩點之間的距離
+      args: (玩家名稱) (玩家名稱)
+    info:
+      feedback: '{gcp}距離：{gcs}[dist] {gcp}x：{gcs}[x] {gcp}y：{gcs}[y] {gcp}z：{gcs}[z]
+        {gcp}方向：{gcs}[dir]'
+  donate:
+    help:
+      info: 捐贈您手上的物品
+      args: '[playerName] (數量)'
+    info:
+      donated: '{gcp}已捐贈 {gcs}[type]{gcp} × {gcs}[amount] {gcp}個物品給 {gcs}[playerDisplayName]'
+      got: '{gcp}收到來自 {gcs}[playerDisplayName] {gcp}的 {gcs}[type]{gcp} × {gcs}[amount]
+        {gcp}捐贈'
+      sentOffer: '{gcp}已發送捐贈給 {gcs}[playerDisplayName]{gcp}。等待對方接受中'
+      gotOffer: '{gcp}收到來自 {gcs}[sourceDisplayName] {gcp}的 {gcs}[type]{gcp} × {gcs}[amount]
+        {gcp}捐贈。點擊以接受。'
+      doesnthave: '{gcp}玩家已不再持有此物品'
+      no: '{gcp}沒有待處理的捐贈'
+      list: '&7[number]. {gcp}[playerDisplayName] {gcp}- &7[material] {gcs} × {gcp}[amount]'
+  down:
+    help:
+      info: 傳送至下一層樓
+      args: '[玩家名稱] (-s) (max)'
+    info:
+      notFound: '{gcp}找不到合適的位置'
+  dsign:
+    help:
+      info: 管理動態告示牌
+      args: (new)
+      explanation:
+        - 注視告示牌並執行 /cmi dsign new
+    info:
+      howTo: '{gcw}這不是動態告示牌，若要建立新的，請執行 {gcs}/cmi dsign new'
+      gui: '{gcs}---- {gcp}<開啟介面> {gcs}----'
+      guiHover: '{gcp}開啟動態告示牌設定介面'
+      individual: '{gcp}個別化：[狀態]'
+      individualLore:
+        - '{gcu}True {gcp}— 告示牌將對每位玩家顯示不同內容'
+        - '{gcu}True {gcp}— 將更新玩家佔位符'
+        - '{gcd}False {gcp}— 告示牌將進行實體更新'
+        - '{gcd}False {gcp}— 效率較高，但同時限制較多'
+      interval: '{gcp}每 {gcs}[秒] {gcp}秒更新一次'
+      intervalLore:
+        - '{gcp}告示牌資訊更新的頻率（以秒為單位）'
+        - '{gcp}這同時定義了文字捲動的速度'
+      range: '{gcp}啟用範圍：{gcs}[方塊]'
+      rangeLore:
+        - '{gcp}定義觸發更新的告示牌周圍區域'
+  dye:
+    help:
+      info: 染色皮革盔甲
+      args: (玩家名稱) (紅,綠,藍/十六進位代碼/顏色名稱/隨機/清除/彩虹/白天/生物群系/生命值) (-s)
+    info:
+      color: '{gcp}目前顏色 - {gcs}[紅],[綠],[藍] {gcp}十六進位：&6#[十六進位]'
+      custom: '{gcp}已啟用自訂顏色模式：{gcs}[模式]'
+      bound: '{gcp}靈魂綁定至：{gcs}'
+      boundName: '[玩家名稱]'
+  editctext:
+    help:
+      info: 自訂文字編輯器
+      args: ''
+    info:
+      noCText: '{gcw}找不到名為「[name]」的自訂文字'
+      editInfo: '{gcp}點擊以貼上舊文字。輸入 {gcs}cancel {gcp}以取消動作。輸入 {gcs}remove {gcp}以移除該行'
+      addInfo: '{gcp}輸入新行文字。輸入 {gcs}cancel {gcp}以取消'
+      addInformationHover: "{gcp}支援發送者類別的通用變數 \n{gcp}若要包含可點擊訊息： \n{gcp}<T>&r文字{gcp}</T><H>&r懸停文字{gcp}</H><C>&r指令{gcp}</C><SC>&r建議文字{gcp}</SC>\
+        \ \n{gcs}<T> {gcp}與 {gcs}</T> {gcp}為必要項目，其餘為選填 \n{gcp}使用 \\u005Cn 進行換行 \n\
+        {gcp}若要使用多個 JSON 訊息，請使用 <Next> \n{gcs}<SC> {gcp}點擊時建議文字 \n{gcs}<SI> {gcp}按住
+        Shift 點擊時建議文字，不會覆蓋聊天欄中的現有文字 \n{gcs}<CC> {gcp}執行一次控制台指令 \n{gcs}<CCI> {gcp}玩家每次點擊文字時執行控制台指令\
+        \ \n{gcs}<URL> {gcp}允許新增網址以將玩家重新導向至網頁"
+      newInfo: '{gcp}輸入新自訂文字的名稱。輸入 {gcs}cancel {gcp}以取消'
+      deleteInfo: '{gcp}輸入 {gcs}confirm {gcp}以確認移除，或輸入 {gcs}cancel {gcp}以取消此動作'
+      deleted: '{gcp}自訂文字（{gcs}[ctext]{gcp}）已移除'
+      createdNew: '{gcp}自訂文字（{gcs}[ctext]{gcp}）已建立'
+      hidden: '{gcp}隱藏：{gcs}[state]'
+      autoPage: '{gcp}自動分頁：{gcs}[state]'
+      autoAlias: '{gcp}自動別名：{gcs}[state]'
+      permReq: '{gcp}需要權限：{gcs}[state]'
+      pageLabel: ' {gcp}<PageLabel>'
+      pageLabelHover: '{gcp}[value]'
+      listTitle: '{gcp}自訂文字列表'
+      listFormat: '{gcs}[name]&7：&r[extra]'
+  editlocale:
+    help:
+      info: 編輯您的語言環境檔案
+      args: (關鍵字)
+    info:
+      found: '{gcs}********* {gcp}已找到：[found] {gcs}*********'
+  editplaytime:
+    help:
+      info: 編輯玩家遊玩時間
+      args: (玩家名稱) [增加/減少/設定] [數值] (-s)
+    info:
+      cantSet: '{gcw}無法變更遊玩時間'
+      set: '{gcp}已從 {gcs}[old] {gcp}變更為 {gcs}[new]'
+  editwarnings:
+    help:
+      info: 檢查玩家警告
+      args: (玩家名稱/clearall) (清除)
+    info:
+      list: '{gcs}[place]{gcp}. {gcs}[time] {gcp}由 {gcs}[warnedBy] {gcp}發出，原因：{gcs}[warnedFor]'
+      hover: '{gcp}過期時間：{gcs}[time]'
+      cleared: '{gcp}該玩家的所有警告皆已清除'
+      allCleared: '{gcp}所有玩家的警告皆已清除'
+  editwarp:
+    help:
+      info: 編輯傳送點
+      args: (傳送點名稱) (新名稱)
+    info:
+      exists: '{gcw}名為 {gcs}[newName]{gcw} 的傳送點已存在。請選擇另一個名稱'
+      updated: '{gcp}已將名稱從 {gcs}[oldName]{gcp} 更新為 {gcs}[newName]'
+      placeItem: '{gcp}放置物品以設定自訂圖示'
+      placeOffItem: '{gcp}放置物品以設定自訂關閉圖示'
+      autoLore: '{gcp}自動生成說明文字：[state]'
+      group: '{gcp}群組：{gcs}[group]'
+      newGroup: '{gcp}輸入新群組名稱'
+      displayName: '{gcp}顯示名稱：{gcs}[displayName]'
+      newDisplayName: '{gcp}輸入新顯示名稱'
+      randomizeYaw: '{gcp}隨機方向：[state]'
+      permission: '{gcp}使用權限需求：[state]'
+      reqPermission: '{gcp}無權限時顯示：[state]'
+      hidden: '{gcp}隱藏：[state]'
+      primaryLocation: '{gcp}主要位置'
+      secondaryLocation: '{gcp}額外位置'
+      uniqueLocation: '{gcp}重複位置：[state]'
+      slot: '{gcp}欄位：{gcs}[slot]'
+      page: '{gcp}頁面：{gcs}[page]'
+      overllaps: '{gcp}重疊於：'
+      notSet: '{gcp}未設定'
+  effect:
+    help:
+      info: 為玩家添加藥水效果。使用 clear 來移除所有效果。
+      args: '[玩家名稱/all] [效果/clear] (持續時間/infinite) (倍率) (-s) (-visual)'
+      explanation:
+        - -visual 將會添加可見的氣泡與右上角的圖示。
+        - 範例：
+        - /cmi effect zrips nightvision 60 1 —— 將給予 Zrips 60 秒的夜視效果。
+        - /cmi effect zrips nightvision +10 —— 將為目前的夜視時間增加 10 秒。
+        - /cmi effect zrips nightvision -10 —— 將從目前的夜視時間扣除 10 秒。
+        - /cmi effect all health_boost 60 1 —— 將為所有在線玩家提升 1 點生命值。
+    info:
+      feedback: '{gcp}藥水效果 {gcs}[effect] {gcp}已添加至 {gcs}[playerDisplayName]{gcp}，持續時間為
+        {gcs}[sec] 秒{gcp}，強度為 {gcs}[power]。'
+      cleared: '{gcp}已清除 {gcs}[playerDisplayName]{gcp} 的所有藥水效果&e。'
+  emojipicker:
+    help:
+      info: 選擇表情符號
+      args: ''
+    info:
+      hovers:
+        - '{gcs}Shift+點擊'
+  enchant:
+    help:
+      info: 附魔物品
+      args: (玩家名稱) [附魔名稱] [等級] (-o) (-onlyvalid) (-keeponlyvalid) (-inform) (-s)
+        (-i:[物品名稱(:資料值)]) (clear)
+      explanation:
+        - -o 將會從副手取得物品
+    info:
+      enchanted: '{gcp}已為 {gcs}[playerDisplayName] {gcp}將物品附上 {gcs}[enchant] {gcp}等級
+        {gcs}[level]{gcp}'
+      removed: '{gcp}你已為 {gcs}[playerDisplayName] {gcp}移除了物品上的 {gcs}[enchant] {gcp}附魔'
+      clear: '{gcp}已為 {gcs}[playerDisplayName] {gcp}清除物品上的所有附魔'
+      clearOne: '{gcp}已為 {gcs}[playerDisplayName] {gcp}移除了物品上的 {gcs}[enchant] {gcp}附魔'
+      noitem: '{gcw}手中未持有任何物品。'
+      invalidEnchant: '{gcw}你沒有權限將無效的附魔附加至物品上'
+      clearedInvalid: '{gcp}已從物品中移除 {gcs}[amount] {gcp}個無效附魔'
+      inccorectId: '{gcp}附魔名稱或 ID 不正確。'
+      wrongItem: '{gcp}手中持有的物品錯誤'
+      enchantlimit: '{gcw}你沒有使用此附魔的權限'
+      levellimit: '{gcw}等級過高，允許的最大等級為 {gcp}[level]{gcw}。'
+      conflict: '{gcw}附魔衝突：{gcs}[enchant1] {gcw}-> {gcs}[enchant2]'
+      possible: '{gcp}可用的附魔：'
+      possibleList: '{gcs}[enchant]'
+  ender:
+    help:
+      info: 開啟玩家的終界箱
+      args: (玩家名稱) (玩家名稱)
+      explanation:
+        - cmi.command.ender.preventmodify - 防止物品欄被修改
+        - cmi.enderedit - 允許編輯已開啟的物品欄
+    info:
+      title: '{gcs}[playerDisplayName] {gcp}的終界箱'
+      feedback: '{gcp}您正在編輯 {gcs}[playerDisplayName] {gcp}的終界箱。'
+  endgateway:
+    help:
+      info: 切換終界傳送門光束
+      args: ''
+    info:
+      off: '{gcp}光束已切換為 {gcd}關閉'
+      on: '{gcp}光束已切換為 {gcu}開啟'
+  entityinfo:
+    help:
+      info: 檢查實體資訊
+      args: (玩家名稱)
+    info:
+      type: '{gcp}實體類型：{gcs}[type]'
+      customName: '{gcp}自訂名稱：{gcs}[name]'
+      health: '{gcp}生命值：{gcs}[current]{gcp}/{gcs}[max]'
+      lastDamage: '{gcp}上次傷害來源：{gcs}[cause]'
+      tamed: '{gcp}已馴服：{gcs}[state]'
+      id: '{gcp}ID：{gcs}[id]'
+      uuid: '{gcs}[uuid]'
+      owner: '{gcp}擁有者：{gcs}[playerDisplayName]'
+      grows: '{gcp}成長剩餘時間：{gcs}[time]'
+      horse: '{gcp}馬匹：跳躍 {gcs}[jump] {gcp}格，速度 {gcs}[speed] {gcp}格/秒'
+      villager: '{gcp}職業：{gcs}[profession] {gcp}等級：{gcs}[lvl] {gcp}類型：{gcs}[type]'
+      subTypes: '{gcp}子類型：{gcs}[list]'
+  entitynbt:
+    help:
+      info: 檢查實體 NBT 資訊
+      args: (玩家名稱) (-console)
+  exp:
+    help:
+      info: 設定玩家經驗值。使用 L 來設定等級。
+      args: '[玩家名稱] [add/set/take/clear] [數值][%rand/10-20%][1%[最小值-最大值][[玩家名稱]]] (-s)'
+      explanation:
+        - 範例：
+        - /exp 10
+        - /exp add 10
+        - /exp set 10L
+        - /exp take 10
+        - /exp Zrips clear
+        - /exp Zrips add 10
+        - /exp Zrips add 10%[10-50]
+    info:
+      current: '{gcs}[playerDisplayName] {gcp}目前的等級為 {gcs}[lvl]{gcp}，擁有 {gcs}[currentExp]{gcp}
+        經驗值，總計 {gcs}[exp]{gcp} 經驗值。'
+      selfFeedback: '{gcp}已為 {gcs}[playerDisplayName] {gcp}設定經驗值為 {gcs}[exp]{gcp}。'
+      targetFeedback: '{gcp}您的經驗值已被 {gcs}[senderDisplayName] {gcp}設定為 {gcs}[exp]{gcp}。'
+  ext:
+    help:
+      info: 熄滅一名玩家
+      args: (玩家名稱) (-s)
+    info:
+      feedback: '{gcp}您已熄滅了 {gcs}[playerDisplayName]{gcp}。'
+      targetfeedback: '{gcp}您已被 {gcs}[senderDisplayName]{gcp} 熄滅。'
+  falldistance:
+    help:
+      info: 設定玩家墜落距離
+      args: (玩家名稱) (數值) (-s)
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的墜落距離設定為 {gcs}[amount]{gcp}。'
+  feed:
+    help:
+      info: 餵食玩家
+      args: (玩家名稱/all) (-s)
+    info:
+      feedback: '{gcp}你已餵食 {gcs}[playerDisplayName]{gcp}。'
+      feedbackMulti: '{gcp}你已餵食 {gcs}[count] {gcp}位玩家。'
+      targetfeedback: '{gcp}你已被 {gcs}[senderDisplayName]{gcp} 餵食。'
+  findbiome:
+    help:
+      info: 透過名稱尋找最近的生物群系
+      args: (生物群系名稱/停止/全部停止)
+    info:
+      infoShow: '{gcp}TPS：{gcs}[tps] {gcp}剩餘 {gcs}[left] {gcp}({gcs}[time]{gcp}) 速度：{gcs}[speed]'
+      stopped: '{gcp}已停止！'
+      cantFindBiome: '{gcp}找不到您指定的生物群系。已檢查 {gcs}[amount] {gcp}個區塊'
+      teleportedTo: '{gcp}已傳送到 {gcs}[biome] {gcp}生物群系'
+  fixchunk:
+    help:
+      info: 掃描損壞的區塊
+      args: w [世界名稱] r [區塊範圍] c [x:z]
+      explanation:
+        - 子指令：
+        - '- stats - 顯示目前的掃描統計資訊'
+        - '- pause - 暫停掃描'
+        - '- continue - 繼續掃描'
+        - '- stop - 停止掃描'
+        - '- stopall - 停止所有掃描'
+        - '- speed [數值] - 設定目前的掃描速度'
+        - '- autospeed [true/false] - 開啟或關閉自動速度'
+        - '- messages [true/false] - 開啟或關閉訊息輸出'
+        - 範例：
+        - /fixchunk w LT_Craft
+        - /fixchunk w LT_Craft r 50 c 1024:-2048
+        - /fixchunk w LT_Craft r g
+        - /fixchunk fix
+    info:
+      startScanning: '{gcp}發現 {gcs}[amount] {gcp}個區塊待檢查。開始掃描！'
+      paused: '{gcp}掃描已暫停，若要繼續，請使用 {gcs}/cmi fixchunk continue。'
+      continuing: '{gcp}掃描繼續中'
+      stoped: '{gcp}掃描已停止。您可以使用 /cmi fixchunk info 查看結果。'
+      speedChange: '{gcp}速度已變更為 [amount]'
+      autospeedChange: '{gcp}自動速度狀態已變更為 [state]'
+      messagesChange: '{gcp}訊息狀態已變更為 [state]'
+      NoInfo: '{gcp}目前沒有資訊'
+      InfoShow: '{gcs}TPS：{gcs}[tps] {gcs}剩餘 {gcp}[left] {gcs}({gcp}[min]分：[sec]秒{gcs})
+        {gcs}速度：{gcp}[speed] {gcs}已發現：{gcp}[found]'
+      scanList: '{gcs}[number]。 {gcp}X：{gcs}[x] {gcp}Z：{gcs}[z]'
+      finished: '{gcp}掃描完成，請使用 {gcs}/cmi fixchunk fix {gcp}來修復發現的問題。 {gcn}區塊將會被重新生成！'
+      fixed: '{gcs}[number] {gcp}個區塊已修復'
+      total: '{gcp}正在檢查 [current]/[until]，總計 [total]'
+      stats:
+        - '{gcp}************************************************************'
+        - '{gcp}* {gcs}區塊：{gcp}[checked]/[total]'
+        - '{gcp}* {gcs}掃描範圍：{gcp}[range]'
+        - '{gcp}* {gcs}掃描速度：{gcp}[scanspeed] {gcs}({gcp}[autospeed]{gcs})'
+        - '{gcp}* {gcs}實際速度：{gcp}[cps] {gcs}CPS ({gcp}[avgcps] 平均{gcs})'
+        - '{gcp}* {gcs}世界：{gcp}[world]'
+        - '{gcp}* {gcs}已發現：{gcp}[found]'
+        - '{gcp}* {gcs}時間：{gcp}[min]分 [sec]秒'
+        - '{gcp}************************************************************'
+  flightcharge:
+    help:
+      info: 管理與查看飛行能量
+      args: (add/take/set/show/expcharge/moneycharge/recharge) (玩家名稱) (數值) (-s)
+    info:
+      charge: '{gcp}目前能量：{gcs}[charge]{gcp}/{gcs}[max]'
+      changed: '{gcp}您的飛行能量等級已變更為 {gcs}[charge]'
+      newCharge: '{gcp}新的能量等級：{gcs}[charge]'
+      bossbar: '{gcu}>> {gcp}飛行能量 {gcs}[charge][changeAmount]{gcp}/{gcs}[max] {gcu}<<'
+      guiTitle: '{gcp}飛行能量補充'
+      buttonExp: '{gcp}使用經驗值補充'
+      buttonMoney: '{gcp}使用金錢補充'
+      max: '{gcp}能量已全滿'
+      amounts:
+        - '{gcp}左鍵點擊 +1。花費：{gcs}[amount1]'
+        - '{gcp}Shift + 左鍵 +10。花費：{gcs}[amount10]'
+        - '{gcp}右鍵點擊 +100。花費：{gcs}[amount100]'
+        - '{gcp}Shift + 右鍵 +1000。花費：{gcs}[amount1000]'
+        - '{gcp}滑鼠中鍵 +10000。花費：{gcs}[amount10000]'
+        - ''
+      changeAmount: '{gcp}（{gcs}[amount]{gcp}）'
+      cost: '{gcp}已消耗 {gcs}[amount] {gcp}補充了 {gcs}[charge] {gcp}點飛行能量'
+  fly:
+    help:
+      info: 設定玩家飛行模式為開啟或關閉
+      args: '[玩家名稱] (true/false) (-s)'
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的飛行模式設定為 {gcs}[boolean]{gcp}。'
+      targetFeedback: '{gcs}[senderDisplayName]{gcp} 已將您的飛行模式設定為 {gcs}[boolean]{gcp}。'
+  flyc:
+    help:
+      info: 切換飛行消耗模式
+      args: (玩家名稱) (true/false) (-s)
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的飛行消耗模式設定為 {gcs}[boolean]{gcp}。'
+      targetFeedback: '{gcp}您的飛行消耗模式已被 {gcs}[senderDisplayName]{gcp} 設定為 {gcs}[boolean]{gcp}。'
+      targetFeedbackSelf: '{gcp}您的飛行消耗模式已被設定為 {gcs}[boolean]'
+      noCharge: '{gcp}飛行能量已耗盡'
+  flyspeed:
+    help:
+      info: 設定玩家飛行速度，範圍為 0 到 10
+      args: (玩家名稱) [數值] (-s)
+    info:
+      feedback: '{gcp}您已將 {gcp}[playerDisplayName]{gcp} 的飛行速度設定為 {gcp}[amount]{gcp}。'
+      targetfeedback: '{gcp}您的飛行速度已被 {gcp}[senderDisplayName]{gcp} 設定為 {gcp}[amount]{gcp}。'
+      max: '{gcp}您允許的最大飛行速度為 {gcs}[max]{gcp}。'
+  gamerule:
+    help:
+      info: 管理遊戲規則
+      args: （世界） （規則） （數值）
+    info:
+      updated: '{gcp}遊戲規則（{gcs}[rule]{gcp}）已為 {gcs}[world] {gcp}變更為 {gcs}[value]'
+  generateworth:
+    help:
+      info: 自動產生可能的物品價值
+      args: ''
+  getbook:
+    help:
+      info: 取得書籍
+      args: '[書籍名稱] (玩家名稱)'
+    info:
+      list: '{gcp}書籍：{gcs}'
+      check: '{gcp}檢查：{gcs}[text]'
+      title: '{gcn}[title]'
+  giftpet:
+    help:
+      info: 將您的馴服寵物贈送給其他玩家
+      args: '[playerName] (-s)'
+    info:
+      notTameable: '{gcp}此實體無法被馴服'
+      notTamed: '{gcp}此實體尚未被馴服'
+      notOwner: '{gcp}您不是此實體的主人'
+      gifted: '{gcp}您已將 {gcs}[type] {gcp}實體贈送給 {gcs}[playerDisplayName]'
+      received: '{gcp}您收到了來自 {gcs}[sourceDisplayName] {gcp}的 {gcs}[type] {gcp}實體'
+  give:
+    help:
+      info: 給予玩家物品
+      args: (玩家名稱) [物品資料/手持] (玩家名稱) (-slot:[數字]) (不堆疊) (-s)
+      explanation:
+        - |-
+          範例：/cmi give diamondsword;{#Gray}My_Uber_Sword;&2Goblin_Slayer!
+          {#pink}With_Love!;sharpness:3,durability:3;hideenchants
+        - <T>更多資訊請見 
+          www.zrips.net/cmi/commands/icwol/</T><URL>https://www.zrips.net/cmi/commands/icwol/</URL>
+    info:
+      feedback: '{gcp}正在給予 {gcs}[playerDisplayName] {gcp}共 {gcs}[amount] 個 {gcs}[itemname]
+        {gcp}({gcs}[customitemname]{gcp})'
+      maxLimit: '{gcw}單次給予的物品數量不能超過 {gcn}[max] {gcw}個'
+      notItem: '{gcw}無法給予該物品，這並非有效的物品'
+      maxLimitResize: '&{gcw}不能超過 {gcn}[max] 的限制。{gcw}正在調整至上限。'
+  giveall:
+    help:
+      info: 給予所有玩家物品
+      args: '[物品名稱] (數量) (e|l|n|offline)'
+      explanation:
+        - '&e- 提供物品名稱或其 ID 與資料值'
+        - '&e- 可選擇性提供您想給予的數量'
+        - '&e- &6n &e- 用於定義物品名稱'
+        - '&e- &6l &e- 用於定義物品說明'
+        - '&e- &6e &e - 用於定義物品附魔'
+        - '&e- &6-s &e - 不會顯示回饋訊息'
+        - '&e- &6h &e - 後接玩家名稱，將給予該玩家手上的物品'
+        - '&e- &6inv &e - 後接玩家名稱，將給予該玩家完整的背包物品'
+        - '&e- &6offline &e- 用於包含離線玩家'
+        - '&ecmi giveall stone 1 n &2Uber_stone l &3Stone_lore offline'
+        - '&ecmi giveall h Zrips'
+        - '&ecmi giveall inv Zrips'
+    info:
+      starting: '{gcp}開始給予所有玩家物品，這可能需要一些時間。'
+      running: '{gcs}[amount] {gcp}位玩家已獲得物品，程序執行中。'
+      feedback: '{gcp}完成。共有 {gcs}[amount] {gcp}位玩家獲得物品。'
+  glow:
+    help:
+      info: 設定玩家的發光模式
+      args: (玩家名稱) [true/false/顏色/gui]
+      explanation:
+        - 範例：/glow Zrips red
+        - 權限：cmi.command.glow.color.[顏色] - 允許設定特定的發光顏色
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的 [color]發光 {gcp}設定為 {gcs}[boolean]{gcp}。'
+      targetfeedback: '{gcp}您的 [color]發光 {gcp}模式已被 {gcs}[senderDisplayName]{gcp} 設定為
+        {gcs}[boolean]{gcp}。'
+      title: '{gcp}選擇發光顏色'
+      incorrect: '{gcw}顏色名稱不正確'
+      lore: '{gcu}點擊以選擇顏色'
+      noPerm: '{gcw}尚無權限'
+  gm:
+    help:
+      info: 設定玩家的遊戲模式
+      args: (玩家名稱) [遊戲模式]
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的遊戲模式設定為 {gcs}[gameMode]{gcp}。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 已將您的遊戲模式設定為 {gcs}[gameMode]{gcp}。'
+  god:
+    help:
+      info: 設定玩家無敵模式為開啟或關閉
+      args: '[玩家名稱] (true/false) (-s)'
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的無敵模式設定為 {gcs}[boolean]{gcp}。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 已將您的無敵模式設定為 {gcs}[boolean]{gcp}。'
+  grindstone:
+    help:
+      info: 開啟磨刀石
+      args: (玩家名稱) (-s)
+    info:
+      feedback: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 開啟磨刀石。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 為您開啟了磨刀石。'
+  groundclean:
+    help:
+      info: 清除伺服器中不必要的物品
+      args: (+cb) (+cm) (+ci) (+b) (+sh) (+tnt) (+all) (+fl) (+named) 
+        (-w:[worldName]) (-s)
+      explanation:
+        - +cm 將礦車納入清除範圍
+        - +cb 將船隻納入清除範圍
+        - +sh 將界伏盒納入清除範圍
+        - +ci 設定是否包含武器與防具
+        - +tnt 設定是否包含已點燃的 TNT
+        - +named 移除具有自訂名稱或說明文字的物品
+        - +b 向所有人廣播清除訊息
+    info:
+      removed: '{gcp}已移除 -[list]'
+      items: ' {gcp}物品： {gcs}[items]'
+      arrows: ' {gcp}箭矢： {gcs}[arrows]'
+      exporbs: ' {gcp}經驗球： {gcs}[exporbs]'
+      blocks: ' {gcp}掉落中的方塊： {gcs}[blocks]'
+      projectiles: ' {gcp}拋射物： {gcs}[projectiles]'
+      tnt: ' {gcp}已點燃的 TNT： {gcs}[tnt]'
+      boat: ' {gcp}船隻： {gcs}[boat]'
+      minecart: ' {gcp}礦車： {gcs}[minecart]'
+      nothing: '{gcp}沒有可移除的項目。'
+  haspermission:
+    help:
+      info: 檢查玩家是否擁有特定權限
+      args: (玩家名稱) [權限節點]
+    info:
+      title: '{gcs}[玩家顯示名稱] {gcp}-> {gcs}[權限]'
+      none: '{gcp}玩家未設定該權限且非管理員（OP）。結果為 {gcs}[狀態]'
+      softSet: '{gcp}由 plugin.yml 設定為 {gcs}[狀態]'
+      hardSet: '{gcp}由其他插件強制設定為 {gcs}[狀態]'
+      notHardSet: '{gcp}未強制設定，在某些情況下可能導致 &cFalse'
+      ops: '{gcp}結果為 {gcs}[狀態]，因為該玩家是管理員（OP）'
+      minMax: '{gcp}最小值：{gcs}[最小值] {gcp}最大值：{gcs}[最大值]'
+  hat:
+    help:
+      info: 將物品放置為帽子
+      args: (玩家名稱)
+    info:
+      feedback: '!actionbar!{gcp}您已成功更換帽子！'
+      targetfeedback: '{gcp}您的帽子已被 {gcs}[senderDisplayName] {gcp}更換！'
+      fullinv: '{gcs}[playerDisplayName] {gcp}的背包已滿，無法更換帽子！'
+      incorrect: '{gcs}頭部欄位的物品不正確，無法以新物品替換。請手動移除。'
+      cantUse: '{gcs}無法將此物品作為帽子使用'
+  head:
+    help:
+      info: 取得玩家頭顱
+      args: '[來源名稱] (目標名稱) (-s) (數量)'
+    info:
+      Feedback: '{gcs}[headName] {gcp}頭顱已建立！'
+      targetFeedback: '{gcp}你從 {gcs}[senderDisplayName] {gcp}那裡獲得了 {gcs}[headName]
+        {gcp}頭顱！'
+  heal:
+    help:
+      info: 治療玩家
+      args: '[玩家名稱/all] (治療量/治療百分比) (-nofeed) (-ignoreffects) (-dontextinguish)'
+    info:
+      feedback: '{gcp}您已治療 {gcs}[playerDisplayName]{gcp}。'
+      feedbackMulti: '{gcp}您已治療 {gcs}[count] {gcp}位玩家。'
+      targetfeedback: '{gcp}您已由 {gcs}[senderDisplayName]{gcp} 治療。'
+  helpop:
+    help:
+      info: 發送求助訊息給工作人員
+      args: '[訊息]'
+      explanation:
+        - 需要 cmi.command.helpop.inform 權限才能查看訊息
+    info:
+      message: '{gcd}[求助]{gcw}[{gcn}[senderDisplayName]{gcw}]&r{gcd} [message]'
+      feedback: '{gcd}[求助]{gcn}您的問題已提交給線上工作人員'
+      offline: '{gcd}[求助]{gcn}目前沒有工作人員在線上，請稍後再試'
+  hideflags:
+    help:
+      info: 隱藏物品標籤
+      args: (玩家名稱) [標籤名稱/清除] (標籤名稱)
+    info:
+      feedback: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 的物品新增了標籤。'
+      cleared: '{gcp}已清除 {gcs}所有 {gcp}{gcs}[playerDisplayName]{gcp} 物品上的標籤。'
+      noitem: '&c手中未持有任何物品。'
+      inccorectId: '{gcp}標籤名稱不正確。'
+  hologram:
+    help:
+      info: 管理全像投影
+      args: ''
+    info:
+      base: '{gcp}基底'
+      board: '{gcp}看板'
+      icons: '{gcp}圖示'
+      particle: '{gcp}粒子'
+      interaction: '{gcp}互動'
+      state: '{gcp}[state]'
+      offset: '{gcs}偏移量'
+      scale: '{gcs}縮放'
+      direction: '{gcs}方向'
+      material: '{gcp}材質：{gcs}[material]'
+      light: '{gcp}亮度等級 天空：{gcs}[sky] {gcp}方塊：{gcs}[block]'
+      reset: '{gcp}按下 {gcs}Q {gcp}以重設'
+      basicDirection: '{gcp}俯仰角：{gcs}[x] {gcp}偏航角：{gcs}[y]'
+      fullDirection: '{gcp}俯仰角：{gcs}[x] {gcp}偏航角：{gcs}[y] {gcp}翻滾角：{gcs}[z]'
+      basicScale: '{gcp}寬度：{gcs}[x] {gcp}高度：{gcs}[y]'
+      fullScale: '{gcp}寬度：{gcs}[x] {gcp}高度：{gcs}[y] {gcp}深度：{gcs}[z]'
+      basicVector: '{gcp}X：{gcs}[x] {gcp}Y：{gcs}[y]'
+      fullVector: '{gcp}X：{gcs}[x] {gcp}Y：{gcs}[y] {gcp}Z：{gcs}[z]'
+      howTo: '&c若要建立新的全像投影，請執行 &e/cmi hologram new {gcs}[name]'
+      gui: '{gcs}---- {gcp}<開啟設定介面> {gcs}----'
+      guiHover: '{gcp}開啟全像投影設定介面'
+      groupRelocate: '&7重新定位整個 &f[group] &7群組'
+      groupCount: '&7群組包含 &f[count] &7個全像投影'
+      pageInterval: '{gcp}每 {gcs}[second] {gcp}秒切換頁面'
+      pageIntervalLore:
+        - '{gcp}全像投影頁面自動切換的頻率（以秒為單位）'
+      pageIntervalNoPages: '{gcd}此全像投影尚未包含任何頁面'
+      reqPermission: '{gcp}檢視權限需求：{gcs}[state]'
+      teleport: '{gcp}傳送到全像投影位置'
+      range: '{gcp}顯示範圍：{gcs}[blocks]'
+      rangeLore:
+        - '{gcp}定義全像投影周圍的顯示或隱藏區域'
+      updateRange: '{gcp}更新範圍：{gcs}[blocks]'
+      updateRangeLore:
+        - '{gcp}定義觸發全像投影更新的周圍區域'
+      relocate: '{gcp}重新定位'
+      relocateLore:
+        - '{gcp}將全像投影重新定位至您目前的位置'
+      holoYaw: '{gcp}偏航角：{gcs}[angle]'
+      los: '{gcp}視線判定：{gcs}[state]'
+      interact: '{gcp}可互動：{gcs}[state]'
+      particles: '{gcp}顯示粒子：{gcs}[state]'
+      seeThrough: '{gcp}透視：{gcs}[state]'
+      seeThroughExtra: '{gcp}啟用看板時，文字可能無法顯示'
+      commands: '{gcp}指令：'
+      hoverParticles: '{gcp}顯示懸停粒子：{gcs}[state]'
+      particleCount: '{gcp}粒子數量：{gcs}[count]'
+      particleType: '{gcp}粒子類型：{gcs}[type]'
+      particleSpacing: '{gcp}粒子間距：{gcs}[amount]'
+      basePrefix: '{gcp}基底前綴：&r[prefix]X'
+      hoverPrefix: '{gcp}懸停前綴：&r[prefix]X'
+      locationRange: '{gcp}修改位置與範圍'
+      interactions: '{gcp}修改互動設定'
+      animations: '{gcp}修改動畫設定'
+      displayMethod: '{gcp}類型：{gcs}[state]'
+      enabled: '{gcp}已啟用：{gcs}[state]'
+      followType: '{gcp}跟隨類型：{gcs}[type]'
+      doubleSided: '{gcp}雙面顯示：{gcs}[state]'
+      autoRotate: '{gcp}自動旋轉：{gcs}[angle]'
+      alignment: '{gcp}文字對齊：{gcs}[type]'
+      shadow: '{gcp}文字陰影：{gcs}[state]'
+      textAlpha: '{gcp}文字透明度：{gcs}[alpha]'
+      textWidth: '{gcp}文字自動換行寬度：{gcs}[width]'
+      order: '{gcp}向下排列：{gcs}[state]'
+      animationFadeIn: '{gcp}淡入：{gcs}[value]'
+      animationFadeOut: '{gcp}淡出：{gcs}[value]'
+      bgColor: '{gcp}背景顏色：{gcs}[color]'
+      bgAlpha: '{gcp}背景透明度：{gcs}[alpha]'
+      textFiller: '{gcp}文字填充：{gcs}[width]'
+      filler: ' '
+      textFillerExplanation: '{gcp}加入 %filler% 以自動填充文字'
+      interval: '{gcp}每 {gcs}[second] {gcp}秒更新'
+      intervalLore:
+        - '{gcp}全像投影資訊的更新頻率（以秒為單位）'
+        - '{gcp}若文字未變動，請設為 0'
+      embeddedAutoButton: '{gcp}啟用分頁按鈕：[state]'
+      autoPage: <T><<<<  </T><C>[prevPage]</C><T>  >>>></T><C>[nextPage]</C>
+      moveX: '{gcp}X：{gcs}[x]'
+      moveY: '{gcp}Y：{gcs}[y]'
+      moveZ: '{gcp}Z：{gcs}[z]'
+      listFormat: '{gcp}[name]{gcp}：&r[extra]'
+  hologrampages:
+    help:
+      info: 切換全像投影頁面
+      args: '[全像投影名稱] (玩家名稱) (next/prev/[頁碼])'
+  home:
+    help:
+      info: 傳送至住家位置
+      args: (住家名稱) (玩家名稱) (傳送對象)
+    info:
+      list: '{gcp}住家：{gcs}'
+      listNonePrivate: '{gcn}'
+      listPrivate: '{gcu}'
+      click: '{gcp}點擊以傳送至 {gcs}[home]'
+      teleported: '{gcp}已傳送至住家：{gcs}[home]'
+      noHomes: '{gcd}尚未儲存任何住家'
+      private: '{gcd}此住家位置為私人設定！'
+      blacklisted: '{gce}你的背包中含有黑名單物品。'
+      limitReached: '{gce}你的住家數量已達上限，請移除部分住家'
+      remove: '{gcd}Shift + 右鍵點擊以移除住家'
+      missingBed: '{gcd}找不到住家位置的床'
+      notAccessible: '{gcd}住家位置所在的世界（{gcs}[worldName]{gcd}）不存在！'
+      guiTitle: '{gcs}[playerDisplayName] {gcp}的住家 {gcs}[current]{gcp}/{gcs}[max]'
+  homes:
+    help:
+      info: 可點擊以傳送至該處的住家列表。
+      args: (玩家名稱/附近:[範圍])
+    info:
+      nearList: '{gcs}[number]. {gcs}[playerDisplayName] {gcn}[homeName] {gcp}距離 {gcs}[distance]
+        個方塊 {gcs}[direction]'
+      closeButton: '{gcp}關閉'
+      infoButton: '{gcp}資訊'
+      bedButton: '{gcp}床鋪位置'
+      homeButton: '{gcp}住家位置'
+      deathButton: '{gcp}死亡位置'
+      backButton: '{gcp}返回位置'
+      slot: '{gcp}欄位：{gcs}[slot]'
+      private: '{gcp}私人：{gcs}[state]'
+      favorite: '{gcp}最愛：{gcs}[state]'
+      lore: |-
+        {gcp}[world]
+        {gcs}[x]{gcp}：{gcs}[y]{gcp}：{gcs}[z]
+      picker: '{gcp}點擊以更換圖示'
+      edit: '{gcp}按下 Q 鍵以編輯'
+  hunger:
+    help:
+      info: 設定玩家飢餓值
+      args: '[playerName] [amount] (-s)'
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的飢餓值設定為 {gcs}[hunger]{gcp}。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 將您的飢餓值設定為 {gcs}[hunger]{gcp}。'
+  ic:
+    help:
+      info: 建立互動指令
+      args: (new) (name)
+    info:
+      public: ' {gcu}[公開]'
+      notPublic: ' {gcn}[非公開]'
+      reqPerm: ' {gcu}[需權限]'
+      noPerm: ' {gcn}[需權限]'
+      cancelEvent: ' {gcu}[取消事件]'
+      passEvent: ' {gcn}[通過事件]'
+      permHover: ' {gcp}放置此告示牌需要 {gcs}[permission] {gcp}權限'
+      editSign: ' {gcs}[編輯告示牌行數]'
+      publicHover: "{gcp}變更公開狀態。\n告示牌首行 {gcs}[ic:[name]]"
+      createdPublic: '{gcp}已建立新的互動告示牌'
+      list: '{gcp}[place]。 {gcs}[name]'
+      listType: ' {gcs}[type]    '
+      editCommands: '{gcp}編輯指令'
+      editBlocks: ' {gcp}編輯方塊'
+      addBlock: '{gcp}新增您正注視的方塊'
+      addEntity: ' {gcp}新增您正注視的實體'
+      manageCommands: '{gcp}切換至指令編輯器'
+      manageBlockEnt: '{gcp}切換至方塊/實體編輯器'
+      locationList: '{gcs}[type]'
+      entityList: '{gcn}[type]'
+      notPublicIc: '{gcw}您無法使用此項目，它並未公開'
+      block: (方塊)
+      entity: (實體)
+      both: (兩者)
+      none: (無)
+      addedNew: '{gcp}已為 {gcs}[name] 新增方塊/實體'
+      dontExist: '{gcw}找不到此名稱的互動指令'
+      exists: '{gcw}此名稱的互動指令已存在'
+      blockExist: '{gcw}此方塊已被 {gcp}[name] 使用'
+      entityExist: '{gcw}此實體已被 {gcp}[name] 使用'
+      addInfo: '{gcp}輸入新指令。輸入 {gcs}cancel {gcp}以取消'
+      addInformationHover: "{gcp}支援發送者類別的通用變數。\n若要在指令中加入延遲：\n{gcp}delay! 5\n{gcp}可使用額外變數來插入對應位置的變數：\n\
+        {gcp}$1 將會取得新指令提供的變數並置入該處\n{gcp}$1- 將會取得從此處開始的所有變數並插入原始指令中"
+      editInfo: '{gcp}點擊以貼上舊文字。輸入 {gcs}cancel {gcp}以取消動作。輸入 {gcs}remove {gcp}以移除該行'
+  ifoffline:
+    help:
+      info: 僅在玩家離線時執行指令
+      args: '[playerName] (command)'
+  ifonline:
+    help:
+      info: 僅在玩家在線時執行指令
+      args: '[playerName] (指令)'
+  ignore:
+    help:
+      info: 忽略玩家
+      args: (玩家名稱/UUID/all) (-p:[玩家名稱])
+      explanation:
+        - cmi.command.ignore.bypass - 用於繞過忽略清單
+    info:
+      self: '{gcw}別傻了，你不能忽略你自己'
+      added: '{gcp}你現在已忽略 {gcs}[playerDisplayName]'
+      addedAll: '{gcp}你現在已忽略所有人'
+      all: '{gcp}所有人'
+      removed: '{gcp}你不再忽略 {gcs}[playerDisplayName]'
+      removedAll: '{gcp}你不再忽略所有人'
+      list: '{gcs}[place]{gcp}. {gcs}[playerDisplayName]  '
+      ignoringYou: '{gcs}[playerDisplayName] {gcp}正在忽略你'
+      empty: '{gcp}忽略清單是空的'
+  importfrom:
+    help:
+      info: 從其他插件匯入資料
+      args: '[essentials/hd] [home/warp/nick/logoutlocation/money/mail]'
+    info:
+      converted: '{gcp}已轉換：{gcs}[done]{gcp}/{gcs}[total] {gcp}位使用者'
+      convertedWarps: '{gcp}已轉換 {gcs}[amount] {gcp}個傳送點'
+      noInfo: '{gcd}您尚未指定具體想要匯入的資訊'
+      savingInProgress: '{gcp}資料將於接下來幾分鐘內儲存至資料庫，實際時間取決於需要儲存的項目數量'
+      HDfile: '{gcd}找不到 HolographicDisplays 插件的資料庫檔案。正在中止。'
+      HDexist: '{gcd}名為 {gcs}[name] {gcd}的全息投影已存在。正在跳過。'
+      HDfailed: '{gcd}無法載入全息投影（{gcs}[name]{gcd}）'
+      HDimported: '{gcp}已匯入 {gcs}[amount] {gcp}個全息投影'
+  importoldusers:
+    help:
+      info: 從主世界資料夾中的 playerdata 資料夾匯入使用者。匯入期間伺服器可能會出現短暫延遲。
+      args: ''
+    info:
+      starting: '{gcp}正在開始匯入'
+      feedback: '{gcp}已匯入 {gcs}[amount] {gcp}位新使用者'
+  info:
+    help:
+      info: 顯示玩家資訊
+      args: '[玩家名稱/UUID]'
+    info:
+      feedback:
+        uuid: '{gcp}左鍵點擊以將 UUID 貼上至聊天框'
+        ouuid: '{gcp}Shift + 左鍵點擊以將線上 UUID 貼上至聊天框'
+      newName: '{gcs}[playerName]'
+      newBalance: '{gcp}({gcs}[balance]{gcp}) '
+      newDisplayName: '{gcp}顯示名稱：&r[playerDisplayName]'
+      newNameHover:
+        - '[playerDisplayName]'
+        - '[nick]'
+        - '[group]'
+        - '[title]'
+        - '[onlineoffline]'
+        - '[playtime]'
+      newIp: '{gcp}IP '
+      newIpHover:
+        - '[ip][country]'
+        - '[ping]'
+        - '[firstLogin]'
+      newNameHoverNick: '{gcp}暱稱：{gcs}[nick]'
+      newNameHoverGroup: '{gcp}群組：{gcs}[group]'
+      newNameHoverTitle: '{gcp}前綴：{gcs}[prefix] {gcp}後綴：{gcs}[suffix]'
+      newNameHoverIp: '{gcp}IP：{gcs}[ip]'
+      newNameHoverPing: '{gcp}延遲：{gcs}[ping]'
+      newNameHoverCountry: ' {gcs}[country] {gcp}({gcs}[countryCode]{gcp}) {gcs}[city]'
+      newFirstLogin: '{gcp}首次登入：{gcs}[firstLogin]'
+      newPlaytime: '{gcp}遊玩時間：{gcs}[time]'
+      newOnline: '[state] 持續時間：{gcs}[logoff]'
+      newOnlineStateOn: '{gcu}線上'
+      newOnlineStateOff: '{gcn}離線'
+      newUUID: '{gcp}UUID '
+      newUUIDHover: '{gcp}UUID：{gcs}[UUID]'
+      newOUUIDHover: '{gcp}線上 UUID：{gcs}[OUUID]'
+      newTurnedOnColor: '{gcu}'
+      newTurnedOffColor: '{gcn}'
+      newOp: '管理員 '
+      newGod: '無敵 '
+      newFly: '可飛行{gcs}([flying]{gcs}) '
+      newFlying: 飛行中
+      newFlyHover: '{gcp}飛行速度：{gcs}[flyspeed]'
+      newFlyTemp: '{gcp}暫時飛行：{gcs}[time]'
+      newFlyCharge: '{gcp}飛行能量：{gcs}[charge]'
+      newElytraFlyHover: '{gcp}正在使用鞘翅飛行'
+      newGodHover: '{gcp}暫時無敵剩餘：{gcs}[time]'
+      newNoDamageHover: '{gcp}無敵時間剩餘：{gcs}[time]'
+      newSneaking: 潛行中
+      newSprint: 衝刺中
+      newWalkSpeed: '{gcp}移動速度：{gcs}[walkspeed]'
+      newGameMode: '{gcp}模式：{gcs}[gameMode] '
+      newGameModeHover:
+        - '[sprint]'
+        - '[sneaking]'
+        - '[walkspeed]'
+        - '[hp]'
+        - '[air]'
+        - '[hunger]'
+        - '[saturation]'
+        - '[exp]'
+      newHp: '{gcp}生命值：{gcs}[hp]{gcp}/{gcs}[maxhp]'
+      newAir: '{gcp}氧氣：{gcs}[leftAir]{gcp}/{gcs}[totalAir]'
+      newHunger: '{gcp}飽食度：{gcs}[food]{gcp}/{gcs}20'
+      newSaturation: '{gcp}飽和度 +{gcs}[saturation]'
+      newExp: '{gcp}經驗值：{gcs}[totalexp]{gcp}exp -> {gcs}[currentexp]{gcp}/{gcs}[needexp]
+        {gcp}({gcs}[level]{gcp} 等級{gcp})'
+      newPos: '{gcp}座標 '
+      newPosHover: '{gcs}[world] {gcp}({gcs}[x]{gcp}：{gcs}[y]{gcp}：{gcs}[z]{gcp})'
+      newAfk: '掛機 '
+      newAfkHover: '{gcp}已掛機：{gcs}[time]'
+      AfkInHover: '{gcp}將於以下時間掛機：{gcs}[time]'
+      newBed: '{gcp}床位 '
+      newBedHover: '{gcs}[world] {gcp}({gcs}[x]{gcp}：{gcs}[y]{gcp}：{gcs}[z]{gcp})'
+      newDeath: '{gcp}死亡 '
+      newDeathHover: '{gcs}[world] {gcp}({gcs}[x]{gcp}：{gcs}[y]{gcp}：{gcs}[z]{gcp})'
+      newBack: '{gcp}返回 '
+      newBackHover: '{gcs}[world] {gcp}({gcs}[x]{gcp}：{gcs}[y]{gcp}：{gcs}[z]{gcp})'
+      newRespawn: '{gcp}重生 '
+      newRespawnHover: '{gcs}[world] {gcp}({gcs}[x]{gcp}：{gcs}[y]{gcp}：{gcs}[z]{gcp})'
+      inv: '{gcp}背包 '
+      ender: '{gcp}終界箱 '
+      newSee: '◕‿◕ '
+      newSeeHover: '{gcp}可看見您'
+      newSeeHoverNot: '{gcu}無法看見您'
+      vanished: '(隱身) '
+      vanishedHover: '{gcp}已隱身'
+      newBanned: '已封禁 '
+      newBannedHover:
+        - '{gcp}封禁者：{gcs}[name]'
+        - '{gcp}剩餘時間：{gcs}[left]'
+        - '{gcp}原因：{gcs}[reason]'
+      newMuted: '已禁言 '
+      newMutedHover:
+        - '{gcp}剩餘時間：{gcs}[left]'
+        - '{gcp}原因：{gcs}[reason]'
+      newShadowMutedHover: '{gcd}隱形禁言'
+      newCuffed: '已上銬 '
+      newJailed: '已監禁 '
+      newJailedHover:
+        - '{gcp}監獄：{gcs}[jail]'
+        - '{gcp}牢房：{gcs}[id]'
+        - '{gcp}剩餘時間：{gcs}[time]'
+        - '{gcp}原因：{gcs}[reason]'
+      newHomes: '{gcp}住處：{gcs}[count] '
+      newMail: '{gcp}郵件：{gcs}[count] '
+      newWarnings: '{gcp}警告：{gcs}[count] '
+      newAlert: '警報 '
+      newAlertHover:
+        - '{gcp}剩餘時間：{gcs}[left]'
+        - '{gcp}原因：{gcs}[reason]'
+      newChatRoom: '聊天室 '
+      newChatRoomHover:
+        - '{gcp}聊天室：{gcs}[name]'
+        - '{gcp}人數：{gcs}[count]'
+      List:
+        - '{gcp}------------- [enableColor]啟用 [disableColor]停用{gcp} -------------'
+        - '{gcp}| [name][balance][UUID][ip]'
+        - '{gcp}| [OP][god][fly][gameMode][afk][see]'
+        - '{gcp}| [banned][muted][cuffed][jailed][alert][chatroom]'
+        - '{gcp}| [pos][bed][respawn][death][back][ender][inv]'
+        - '{gcp}| [homes][mail][warnings]'
+        - '{gcp}-----------------------------------------'
+  inv:
+    help:
+      info: 開啟玩家的背包
+      args: '[玩家名稱]'
+      explanation:
+        - cmi.command.inv.preventmodify - 防止編輯背包
+        - cmi.invedit - 允許編輯背包
+        - cmi.command.inv.location - 顯示玩家位置
+    info:
+      feedback: '{gcp}您正在編輯 {gcs}[playerDisplayName] {gcp}的背包。'
+  invcheck:
+    help:
+      info: 以預覽模式開啟已儲存的物品欄
+      args: (玩家名稱) [ID] (-e) (最後)
+  invlist:
+    help:
+      info: 顯示已儲存的物品清單
+      args: （玩家名稱）
+  invload:
+    help:
+      info: 載入已儲存的物品欄
+      args: (來源名稱) (目標名稱) [ID/最新]
+  invremove:
+    help:
+      info: 移除玩家的已儲存物品欄
+      args: (玩家名稱) [ID/all/last]
+  invremoveall:
+    help:
+      info: 移除所有已儲存的物品欄
+      args: '[confirmed]'
+    info:
+      removed: '{gcp}所有已儲存的物品欄皆已移除（{gcs}[count]{gcp}）'
+  invsave:
+    help:
+      info: 儲存物品欄
+      args: (玩家名稱) (ID) (-s)
+  ipban:
+    help:
+      info: 封鎖 IP
+      args: '[IP/玩家名稱] (原因) (-s)'
+      explanation:
+        - cmi.command.banip.bypass - 繞過封鎖權限
+    info:
+      message: '{gcw}您的 IP 已被本伺服器封鎖！'
+      messageToAll: '{gcs}[playerDisplayName] {gcp}已被 {gcs}[senderDisplayName] {gcp}封鎖
+        IP，原因：{gcs}[reason]'
+      banedSilent: '{gcn}[{gcu}靜默{gcn}]{gcs}[playerDisplayName] {gcp}已被 {gcs}[senderDisplayName]
+        {gcp}封鎖 IP，原因：{gcs}[reason]'
+      replacer: '*'
+  ipbanlist:
+    help:
+      info: 封鎖 IP 清單
+      args: ''
+    info:
+      banList: '{gcs}[IP] {gcp}- {gcs}[原因]  '
+      bannedBy: '{gcp}封鎖者： {gcs}[來源]'
+      ends: '{gcp}結束時間： {gcs}[時間]'
+      related: |-
+        {gcp}關聯帳號：
+        {gcs}[清單]
+  item:
+    help:
+      info: 將物品給予自己
+      args: '[物品資料/手持] (-slot:[數字]) (不堆疊) (-s)'
+  itemcmdata:
+    help:
+      info: 檢查或修改物品的自訂模型資料
+      args: '[set/delete/list/add] (玩家名稱) (浮點數,true,false,字串) (-s)'
+    info:
+      nothing: '{gcp}不包含任何模型資料'
+      set: '{gcp}已將新的模型資料設定為：{gcs}[value]'
+      current: '{gcp}目前的模型資料：{gcs}[value]'
+      deleted: '{gcp}已移除模型資料：{gcs}[value]'
+  itemframe:
+    help:
+      info: 管理物品展示框
+      args: (invisible/fixed/invulnerable/all)
+    info:
+      feedback: '{gcs}[count] {gcp} 個物品展示框在您周圍變為隱形'
+  iteminfo:
+    help:
+      info: 顯示物品資訊
+      args: (玩家名稱)
+    info:
+      nameMat: ' {gcp}名稱：{gcs}[name] {gcp}材質：{gcs}[material]'
+      mojangHover: '{gcp}Mojang 名稱：{gcs}[name]'
+      display: ' {gcp}顯示名稱：{gcs}[display]'
+      lore: ' {gcp}說明：'
+      loreLine: '   {gcs}[loreLine]'
+      enchants: ' {gcp}附魔：{gcs}[enchants]'
+      entityType: ' {gcp}實體類型：{gcs}[type]'
+      customModel: ' {gcp}自訂模型數據：{gcs}[data]'
+      durability: ' {gcp}耐久度：{gcs}[current]{gcp}/{gcs}[max]'
+      unbreakable: ' {gcs}(不可損壞)'
+      stackSize: ' {gcp}最大堆疊數量：{gcs}[size]'
+  itemlore:
+    help:
+      info: 修改物品說明文字
+      args: (-p:[玩家名稱]) [行號/*] [移除/插入/ 新說明文字]
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的說明文字第 ({gcs}[line]{gcp})
+        行修改為「&r{gcs}[loreLine]{gcp}」。'
+      noitem: '{gcd}手中未持有任何物品。'
+      removed: '{gcp}已移除 {gcs}[playerDisplayName]{gcp} 的物品說明文字第 {gcs}[line] {gcp}行。'
+      inserted: '{gcp}已插入 {gcs}[playerDisplayName]{gcp} 的物品說明文字第 {gcs}[line] {gcp}行。'
+      maxLines: '{gcp}說明文字僅有 {gcs}[lines] {gcp}行。'
+      blocked: '{gcp}此物品禁止修改說明文字。'
+      nomodification: '{gcw}您無法修改現有的說明文字行。'
+  itemname:
+    help:
+      info: 重新命名物品
+      args: (-p:[玩家名稱]) [移除/您的新物品名稱]
+    info:
+      feedback: '{gcp}您已將物品重新命名為 {gcs}[itemname] {gcp}，對象為 {gcs}[playerDisplayName]{gcp}。'
+      noitem: '{gcd}手中未持有任何物品。'
+      removed: '{gcp}已移除 {gcs}[playerDisplayName]{gcp} 的物品名稱。'
+      blocked: '{gcp}此物品禁止重新命名。'
+      maxLength: '{gcw}新名稱過長。最大長度為 {gcs}[length] {gcw}個字元。'
+  itemnbt:
+    help:
+      info: 顯示物品 NBT 資訊
+      args: (玩家名稱)
+    info:
+      jump: '{gcs}[鍵][類型]'
+      type: ' {gcp}（{gcs}[類型]{gcp}）'
+      value: ：{gcs}[值]
+      list: '{gcp}- {gcs}[值]'
+      noNbt: '{gcp}物品不包含任何 NBT 資料'
+  jail:
+    help:
+      info: 將玩家監禁一段時間
+      args: '[玩家名稱] (時間) (監獄名稱) (牢房 ID) (-s) (r:監禁理由)'
+    info:
+      jailed: '{gcp}您已將 {gcs}[playerDisplayName] {gcp}關入監獄，刑期為 [time]'
+      jailedPlayer: '{gcs}[playerDisplayName] {gcp}已被關入監獄，刑期為 [time]'
+      reason: ' {gcp}理由：{gcs}[reason]'
+      leftTime: '!title!{gcn}監禁時間：!subtitle![time]'
+      jailedTarget: '{gcp}您已被監禁！剩餘時間：[time]'
+      jailedTimeChange: '{gcp}監禁時間已變更為 [time]'
+      cantTalk: '{gcd}您在監禁期間無法說話'
+      cantTalkRange: '!actionbar!{gcn}您的聊天範圍限制為 {gcs}[range] {gcn}個方塊'
+      failed: '{gcw}無法監禁玩家。請檢查目標監獄名稱、牢房 ID 或時間格式'
+      bossbar: '{gcn}監禁時間：[autoTimeLeft]'
+      noCommand: '{gcw}您在監禁期間無法使用此指令！'
+  jailedit:
+    help:
+      info: 編輯監獄
+      args: ''
+    info:
+      notInArea: '{gcw}您不在監獄區域內'
+      noName: '{gcw}找不到該名稱的監獄'
+      noCell: '{gcw}找不到該 ID 的牢房'
+      exist: '{gcw}該名稱的監獄已存在'
+      createdJail: '{gcp}已成功建立新監獄（{gcs}[jail]{gcp}）'
+      createdCell: '{gcp}已成功建立新牢房（{gcs}[jail]{gcp}：{gcs}[cellId]{gcp}）'
+      collides: '{gcw}與 {gcs}[jailName] {gcw}監獄範圍重疊'
+      editCells: '{gcp}編輯牢房列表'
+      cList: '{gcp}ID：{gcs}[id] {gcp}關押人數：{gcs}[amount]'
+      jailListTpHover: '{gcp}設定監獄外傳送點'
+      jailListAreaHover: '{gcp}重新定義區域'
+      jailRemoved: '{gcp}已移除（{gcs}[jail]{gcp}）監獄'
+      jailOutside: '{gcp}已設定新的監獄外位置'
+      jailArea: '{gcp}已重新定義 {gcs}[jail] 的區域'
+      cellRemoved: '{gcp}已從 {gcs}[jail] 移除（{gcs}[cellId]{gcp}）牢房'
+      list: '{gcp}牢房：{gcs}[cells] {gcp}關押人數：{gcs}[amount] {gcn}[jail]'
+      listTp: '{gcp}[tp] '
+      listArea: '{gcp}[area] '
+      areaShow: '{gcp}[S] '
+  jaillist:
+    help:
+      info: 列出監獄
+      args: (監獄名稱) (牢房 ID)
+    info:
+      jailList: '{gcs}[place]{gcp}. {gcs}[jailName] {gcp}牢房數：{gcs}[cellCount] {gcp}關押人數：{gcs}[count]'
+      cellList: '{gcs}[place]{gcp}. {gcp}ID：{gcs}[cellId] {gcp}關押人數：{gcs}[count]'
+      jailedBy: '{gcp}關押者：{gcs}[playerDisplayName]'
+      cellJailedList: '{gcs}[place]. {gcs}[playerDisplayName] {gcp}將於 {gcs}[time]
+        後釋放'
+      Release: '{gcp}點擊以釋放'
+  jump:
+    help:
+      info: 跳轉至目標方塊
+      args: ''
+    info:
+      tooFar: '{gcd}視線範圍內無方塊，或距離過遠（最遠 {gcs}[max] {gcd}個方塊）'
+  kick:
+    help:
+      info: 以自訂訊息踢除玩家
+      args: '[玩家名稱/all] (訊息) (-s)'
+      explanation:
+        - cmi.command.kick.bypass - 防止被踢出伺服器
+    info:
+      defaultMessage: '{gcp}已從伺服器踢除'
+      cantKick: '{gcp}無法踢除此玩家'
+      messageToAll: '{gcs}[playerDisplayName] {gcp}已被踢出伺服器。'
+      kickReason: ' {gcp}原因：{gcs}[reason]'
+      all: '{gcp}已從伺服器踢除 {gcs}[amount] {gcp}名玩家'
+  kill:
+    help:
+      info: 擊殺玩家
+      args: '[玩家名稱] (-forced) (傷害來源) (-s) (-lightning)'
+    info:
+      cantKill: '{gcp}無法擊殺，受到其他插件、遊戲模式或上帝模式保護。請使用 {gcs}-forced {gcp}變數'
+      lackOfAccess: '{gcp}沒有權限使用強制擊殺。'
+      killed: '{gcp}已擊殺 {gcs}[玩家顯示名稱]'
+  killall:
+    help:
+      info: 擊殺周圍的生物
+      args: 
+        (-monsters/-pets/-npc/-animals/-ambient/-named/-all/-force/-lightning/-list/-m:[mobType])
+        (-r:range) (-s) (-w:[worldName])
+    info:
+      infoList: '{gcs}[category]{gcp}：{gcs}[amount] &e([list]&e)'
+      removedList: '{gcs}[type]{gcp}：{gcs}[amount]'
+      total: '{gcp}總共移除了：{gcs}[amount] {gcp}([list]{gcp})'
+      noRemove: '{gcp}沒有可移除的項目'
+      monsters: 怪物
+      pets: 寵物
+      npc: NPC
+      animals: 動物
+      ambient: 環境生物
+      vehicles: 載具
+      named: 具備自訂名稱
+      withitems: 具備物品
+      force: 強制
+      custom: 依類型
+  kit:
+    help:
+      info: 給予預設的禮包。
+      args: '[禮包名稱] (玩家名稱) (-s) (-open) (-preview) (-c)'
+      explanation:
+        - 權限：
+        - cmi.kit.[禮包名稱] - 允許使用特定禮包
+        - cmi.kit.bypass.money - 繞過金錢需求
+        - cmi.kit.bypass.exp - 繞過經驗值需求
+        - cmi.kit.bypass.onetimeuse - 繞過單次使用限制
+        - /cmi kit [禮包名稱] [玩家名稱] - 將禮包給予其他玩家
+    info:
+      noMoney: '{gcp}金錢不足。費用：{gcs}[cost] {gcp}您擁有：{gcs}[balance]'
+      noExp: '{gcp}經驗值不足。費用：{gcs}[cost] {gcp}您擁有：{gcs}[balance]'
+      noCondition: '{gcp}您沒有使用此禮包的特殊條件權限：{gcs}[condition]'
+      oneTime: '{gcd}這是單次使用禮包，您已經領取過了！'
+      cantUseNow: '{gcd}您在接下來的 {gcs}[time] 內無法使用此禮包'
+      limitedTimeUseError: '{gcp}無法使用超過 {gcs}[times] {gcp}次'
+      limitedTimeUse: '{gcp}可使用 {gcs}[times] {gcp}次'
+      limitedTimeAllUsed: '{gcd}您無法再領取更多了'
+      canUseIn: "{gcp}可再次使用時間：\n[time]"
+      cooldown: "{gcp}冷卻時間：\n[time]"
+      noKit: '{gcp}找不到該名稱的禮包'
+      kitDoesntExist: '{gcp}找不到禮包（[kitName]）'
+      noKitAccess: '{gcw}您沒有權限使用此禮包'
+      noFoundKit: '{gcp}找不到任何禮包'
+      givenKit: '{gcp}您已將 {gcs}[kit] {gcp}禮包給予 {gcs}[playerDisplayName]'
+      title: '{gcp}禮包'
+      # 可使用 [kitName] 或 [kitDisplayName]
+      kitGuiTitle: '{gcs}[kitDisplayName]'
+      # 根據頁面自訂禮包 GUI 標題清單
+      # 若未定義標題，將使用預設標題
+      titlesByPage:
+        - '{gcp}禮包'
+      nameCanUse: '{gcs}[kitName]'
+      nameCantUse: '{gcn}[kitName]'
+      group: '{gcp}群組：{gcs}[group]'
+      left: '{gcs}左鍵 {gcp}領取'
+      right: '{gcs}右鍵 {gcp}預覽'
+      take: '{gcs}領取此禮包！'
+      open: '{gcp}來自 {gcs}[kitName] {gcp}禮包的物品！'
+      eye: ' {gcp}☬'
+      use: '{gcu}'
+      cantuse: '{gcn}'
+      list: '{gcs}[number]{gcp}. {gcs}[kitName] {gcp}- {gcs}[description]'
+  kitcdreset:
+    help:
+      info: 重置禮包冷卻時間
+      args: (禮包名稱) (玩家名稱/全部)
+    info:
+      notCd: '{gcp}禮包目前不在冷卻階段'
+      reset: '{gcp}禮包（{gcs}[kit]{gcp}）已重置 {gcs}[playerDisplayName] {gcp}的冷卻時間'
+      resetAll: '{gcp}禮包（{gcs}[kit]{gcp}）已重置 {gcs}[count] {gcp}位玩家的冷卻時間'
+      list: '{gcp}[place]. {gcs}[kit] {gcp}[time]'
+      listHover: '{gcp}點擊以重置'
+      noCd: '{gcp}目前沒有禮包處於冷卻中'
+  kiteditor:
+    help:
+      info: 禮包編輯器
+      args: ''
+      explanation:
+        - 權限：
+        - cmi.kit.[kitName] - 允許使用特定禮包
+        - cmi.kit.bypass.money - 繞過金錢需求
+        - cmi.kit.bypass.exp - 繞過經驗值需求
+        - /cmi kiteditor - 顯示禮包列表
+    info:
+      kits: '{gcp}禮包：'
+      iconSet: '{gcp}已為 {gcs}[kitname] {gcp}禮包設定新圖示'
+      kitExists: '{gcp}已有同名的禮包！'
+      deleteConfirm: '{gcp}若確定要移除 ({gcs}[kitname]{gcp}) 禮包，請點擊此處！'
+      deleteConfirmFinal: '{gcw}此操作無法復原！'
+      kitRemoved: '{gcp}禮包 ({gcs}[kitname]{gcp}) 已移除'
+      kitNotRemoved: '{gcw}無法移除禮包 ({gcs}[kitname]{gcw})'
+      addNewInfo: '{gcp}請在聊天欄輸入禮包名稱並按下 Enter。輸入「{gcs}cancel{gcp}」以取消此操作。'
+      renameCommandInfo: '{gcp}請在聊天欄輸入新的禮包 {gcs}指令 {gcp}名稱並按下 Enter。輸入「{gcs}cancel{gcp}」以取消此操作。'
+      renameConfigInfo: '{gcp}請在聊天欄輸入新的禮包 {gcs}設定檔 {gcp}名稱並按下 Enter。輸入「{gcs}cancel{gcp}」以取消此操作。'
+      groupInfo: '{gcp}請在聊天欄輸入新的群組名稱並按下 Enter。輸入「{gcs}none{gcp}」以移除群組。輸入「{gcs}cancel{gcp}」以取消此操作。'
+      commandInfo: '{gcp}請在聊天欄輸入新的指令並按下 Enter。輸入「{gcs}cancel{gcp}」以取消此操作。可用佔位符：{gcs}{USERNAME}
+        {DISPLAYNAME} {WORLDNAME} {KITNAME} {RANDOMPLAYER}'
+      conditionsInfo: '{gcp}請在聊天欄輸入新的必要權限節點並按下 Enter。輸入「{gcs}cancel{gcp}」以取消此操作'
+      descInfo: '{gcp}請在聊天欄輸入新的說明並按下 Enter。輸入「{gcs}cancel{gcp}」以取消此操作'
+      renamed: '{gcp}已將 {gcs}[kitname] {gcp}重新命名為 {gcs}[newkitname]{gcp}。'
+      groupSet: '{gcp}已為 {gcs}[kitname] {gcp}設定新群組 ({gcs}[groupname]{gcp})'
+      commandsListTitle: '{gcp}✎{gcs}指令：'
+      conditionsListTitle: '{gcp}✎{gcs}條件：'
+      descListTitle: '{gcp}✎{gcs}說明：'
+      ListTitleHover: '{gcp}點擊以開啟介面'
+      ListEditKitHover: '&c編輯 {gcs}[kitname]'
+      ListAdd: ' {gcu}+'
+      ListAddHover: '{gcu}新增'
+      guiClickery:
+        - '{gcp}滑鼠左鍵增加，右鍵減少'
+        - '{gcp}按住 {gcs}Shift {gcp}可將變更速度提升 10 倍'
+        - '{gcp}快速重複點擊可加速數值變更'
+        - '{gcp}停止點擊 1 秒後將恢復預設數值'
+      OffHand: '{gcp}在此放置副手物品'
+      Helmet: '{gcp}在此放置頭盔'
+      Chest: '{gcp}在此放置胸甲'
+      Legs: '{gcp}在此放置護腿'
+      Boots: '{gcp}在此放置靴子'
+      Weight: '{gcp}權重：{gcs}[Weight]'
+      WeightExtra:
+        - '{gcp}數值越高，優先級越高'
+        - '{gcp}禮包應位於同一群組中'
+      despiteWeight: '{gcp}無視權重顯示：{gcs}[Weight]'
+      despiteWeightExtra:
+        - '{gcp}玩家無法領取該禮包，但可以預覽'
+      Slot: '{gcp}欄位：{gcs}[slot]'
+      Page: '{gcp}頁數：{gcs}[page]'
+      SlotAuto: '{gcs}自動'
+      Clone: '{gcp}從背包複製物品'
+      CloneExtra:
+        - '{gcp}使用滑鼠右鍵以包含盔甲'
+        - '{gcp}再次點擊以還原變更'
+      timeDelay: '{gcp}延遲：{gcs}[time]'
+      usages: '{gcp}可使用 {gcs}[times] {gcp}次'
+      withoutUsage: '{gcp}無剩餘次數時顯示：{gcs}[state]'
+      usagesUnlimited: '{gcs}無限'
+      ignoreWeight: '{gcp}無視權重顯示：{gcs}[state]'
+      timeDelaySeconds: '{gcp}以秒為單位：{gcs}[time]'
+      moneyCost: '{gcp}金錢消耗：[cost]'
+      expCost: '{gcp}經驗消耗：[cost]'
+      enabled: '{gcp}已啟用'
+      disabled: '{gcs}已停用'
+      delete: '{gcs}刪除禮包'
+      clickToSwitch: '{gcp}點擊以切換狀態'
+      clickToEdit: '{gcp}點擊以開始編輯'
+      editConfigName:
+        - '{gcp}點擊以重新命名設定檔名稱'
+        - '{gcp}這僅用於決定權限節點'
+      editCommandName:
+        - '{gcp}點擊以重新命名指令名稱'
+        - '{gcp}這會設定領取此禮包所需的指令'
+      displayName: '{gcp}顯示名稱：&r{gcs}[name]'
+      editDisplayName:
+        - '{gcp}點擊以變更顯示名稱'
+        - '{gcp}這僅用於視覺呈現'
+      fileName: '{gcp}檔案名稱：&r{gcs}[name]'
+      editFileName:
+        - '{gcp}點擊以變更檔案名稱'
+        - '{gcp}這將決定禮包儲存的位置'
+      kitGroup: '{gcp}禮包群組：{gcs}[group]'
+      dropItems: '{gcp}背包滿時掉落物品：{gcs}[state]'
+      commands: '{gcp}指令：'
+      conditions: '{gcp}條件：'
+      desc: '{gcp}說明：'
+      mainMenu: '{gcp}主選單'
+      settings: '{gcp}設定'
+      icon: '{gcp}禮包 {gcu}可用 {gcp}時使用的圖示'
+      iconCd: '{gcp}禮包 {gcn}不可用 {gcp}時使用的圖示'
+  kitusagereset:
+    help:
+      info: 重置禮包使用次數計數器
+      args: (禮包名稱) (玩家名稱)
+    info:
+      notLimited: '{gcp}該禮包沒有使用次數限制'
+      reset: '{gcp}禮包（{gcs}[kit]{gcp}）的使用次數已為 {gcs}[playerDisplayName] 重置'
+      list: '{gcp}[place]. {gcs}[kit] {gcp}[used]/[usages]'
+      listHover: '{gcp}點擊以重置'
+      noCd: '{gcp}目前沒有使用次數大於 0 的禮包'
+  lastonline:
+    help:
+      info: 顯示過去 x 分鐘內遊玩的玩家
+      args: (-p:[頁碼])
+    info:
+      searching: '{gcp}正在搜尋 {gcs}[checked]{gcp}/{gcs}[total] {gcp}（{gcs}[found]{gcp}）'
+      List: ' {gcs}[place]{gcp}. {gcs}[name] {gcp}-> {gcs}[time]'
+      timeFrame: '{gcp}過去 1 小時（{gcs}[time1]{gcp}）、24 小時（{gcs}[time2]{gcp}）、7 天（{gcs}[time3]{gcp}）、30
+        天（{gcs}[time4]{gcp}）'
+  launch:
+    help:
+      info: 朝向您注視的方向或指定角度發射
+      args: (玩家名稱) (p:[力道]) (a:[角度]) (d:[方向]) (loc:[x]:[y]:[z]) (-nodamage)
+      explanation:
+        - cmi launch - 將朝向您注視的方向發射
+        - cmi launch -nodamage - 將發射並避免墜落傷害
+        - cmi launch p:3.2 - 將以 3.2 的力道發射
+        - cmi launch p:2.5 a:25 - 將朝向您注視的方向，以 25 度的角度與 2.5 的力道發射
+        - cmi launch Zrips d:east - 將朝東方發射，並保持您注視的角度
+        - cmi launch Zrips d:0 - 將朝 0 度方向（南方）發射
+        - cmi launch Zrips d:~180 - 將向後發射
+        - cmi launch d:45 a:30 p:2 - 將朝西南方以 30 度角與 2 的力道發射
+        - cmi launch loc:150:120:123 - 將玩家發射至目標座標
+    info:
+      feedback: '!actionbar!{gcp}[{gcu}咻！{gcp}]'
+  lfix:
+    help:
+      info: 修復您周圍區塊的光影
+      args: (範圍) (玩家名稱) (停止/全部停止)
+    info:
+      NoMore: '{gcp}範圍不能超過伺服器的視距。已調整為允許的最大值。'
+      startFixing: '{gcp}共找到 {gcs}[amount] {gcp}個區塊待修復。開始執行！'
+      InfoShow: '{gcp}TPS：{gcs}[tps] {gcp}剩餘 {gcs}[left] {gcp}({gcs}[min]分：[sec]秒{gcp})
+        速度：{gcs}[speed]'
+      Finished: '{gcp}光影修復已完成'
+      Stopped: '{gcp}已停止'
+  list:
+    help:
+      info: 顯示線上玩家列表
+      args: ''
+      explanation:
+        - 權限：
+        - cmi.command.list.admin
+        - cmi.command.list.staff
+        - cmi.command.list.hidden
+        - cmi.command.list.group.[number]
+    info:
+      # [groupLine] 可以替換為特定的分組名稱，例如 [group1]、[group2] 等等。你可以根據喜好新增任意數量的分組，並自行調整排列順序。
+      List:
+        - '{gcn}========================'
+        - '{gcp}線上玩家 {gcs}[amount][hidden]{gcp}/{gcs}[maxamount]'
+        - '[adminLine]'
+        - '[staffLine]'
+        - '[groupLine]'
+        - '{gcn}========================'
+      staffL: '{gcn}管理員：{gcs}[list]'
+      adminL: '{gcu}管理員：{gcs}[list]'
+      hiddenPref: '{gcn}[隱藏]'
+      hiddenCount: '{gcn}（[amount]）'
+      groupL: '{gcp}[groupName]：{gcn}[list]'
+      player: '%cmi_user_afk_symbol%{gcn}[playerDisplayName]'
+      # 你可以新增任意數量的分組。預設僅有 10 個，若要建立新的分組，只需複製並貼上一行，並將名稱中的數字遞增，例如 group11 或 group12 等等。
+      # 注意！分組名稱必須採用「group[數字]」的格式，即單字「group」後接數字。這是必要格式，無法使用自訂名稱。我們使用該數字來決定各分組的排列順序。
+      # 玩家需要擁有對應的權限節點才能被歸入該分組：cmi.command.list.group.[groupnumber]，數字越大優先級越高。
+      groups:
+        group1: '{gcp}分組 1：{gcn}[list]'
+        group2: '{gcp}分組 2：{gcn}[list]'
+        group3: '{gcp}分組 3：{gcn}[list]'
+        group4: '{gcp}分組 4：{gcn}[list]'
+        group5: '{gcp}分組 5：{gcn}[list]'
+        group6: '{gcp}分組 6：{gcn}[list]'
+        group7: '{gcp}分組 7：{gcn}[list]'
+        group8: '{gcp}分組 8：{gcn}[list]'
+        group9: '{gcp}分組 9：{gcn}[list]'
+        group10: '{gcp}分組 10：{gcn}[list]'
+      noGroupLine: '{gcp}列表'
+  lockip:
+    help:
+      info: 防止從不同的 IP 位址登入帳號
+      args: (玩家名稱) [add/remove/list/clear] [ip]
+    info:
+      CantLogin: '{gcw}您無法從此 IP 位址登入'
+      add: '{gcp}已為 {gcs}[playerDisplayName] {gcp}新增 IP ({gcs}[ip]{gcp})'
+      remove: '{gcp}已將 IP ({gcs}[ip]{gcp}) 從 {gcs}[playerDisplayName] {gcp}移除'
+      clear: '{gcp}已移除 {gcs}[playerDisplayName] {gcp}的所有 IP'
+      ipNotFound: '&c找不到該 IP'
+      empty: '&c列表為空'
+      list: '{gcs}[place]{gcp}. {gcs}[ip]'
+  loom:
+    help:
+      info: 開啟織布機
+      args: (玩家名稱)
+    info:
+      feedback: '{gcp}你已為 {gcs}[playerDisplayName]{gcp} 開啟織布機。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 為你開啟了織布機。'
+  mail:
+    help:
+      info: 發送與接收郵件
+      args: '[send/clear/read/sendtemp] [playerName] (time) (message)'
+    info:
+      sentMail: '{gcp}郵件已發送給 {gcs}[playerDisplayName]'
+      gotMail: '!actionbar!{gcp}您收到來自 {gcs}[senderDisplayName] {gcp}的郵件'
+      clearMail: '{gcp}所有郵件皆已清除！'
+      removedMail: '{gcp}已移除郵件'
+      noMailsById: '{gcp}該玩家沒有此 ID 的郵件'
+      noMails: '{gcp}您沒有郵件'
+      mailHover: "{gcp}[senderName] \n{gcp}[time]"
+      mailHoverExpires: |2-
+
+        {gcp}過期時間：{gcs}[time]
+      mailList: ' {gcs}[senderDisplayName]{gcp}：[mail] '
+      waitingMail: '{gcp}您有 {gcs}[amount] {gcp}封郵件。點擊以查看。'
+  mailall:
+    help:
+      info: 檢查或發送郵件給所有玩家
+      args: '[send/clear/remove] [訊息]'
+    info:
+      sentMail: '{gcp}已發送 {gcs}[amount] {gcp} 封郵件'
+      clearMail: '{gcs}[amount] {gcp} 封郵件已被移除'
+      removedMail: '{gcp}已移除 {gcs}[amount] {gcp} 封郵件'
+  maintenance:
+    help:
+      info: 將伺服器設定為維護模式
+      args: (true/false) (訊息)
+      explanation:
+        - cmi.command.maintenance.bypass - 用於繞過維護模式
+    info:
+      feedback: '{gcp}伺服器目前處於維護模式，請稍後再試。'
+      set: '{gcp}伺服器維護模式已設定為 {gcs}[state] {gcp}，訊息為：{gcs}[message]'
+  maxhp:
+    help:
+      info: 設定玩家的最大生命值
+      args: '[set/add/take/clear] [playerName] [amount] (-s)'
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName] {gcp}的最大生命值設定為 {gcs}[maxHp]{gcp}。'
+      targetfeedback: '{gcp}您的最大生命值已被 {gcs}[senderDisplayName] {gcp}設定為 {gcs}[maxHp]{gcp}。'
+  maxplayers:
+    help:
+      info: 變更伺服器可連線的玩家人數上限
+      args: '[數量]'
+      explanation:
+        - 權限：
+        - cmi.fullserver.bypass - 加入已滿的伺服器
+    info:
+      changed: '{gcp}已將允許的玩家人數上限從 {gcs}[old] {gcp}變更為 {gcs}[new]{gcp}。線上人數：{gcs}[current]'
+      label: '{gcp}玩家人數上限。目前：{gcs}[online]{gcp}/{gcs}[max]'
+  me:
+    help:
+      info: 發送特殊訊息給所有玩家
+      args: '[訊息]'
+    info:
+      format: '{gcp}* [senderDisplayName] {gcs}[message]'
+  merchant:
+    help:
+      info: 開啟商人交易視窗
+      args: '[類型] (玩家名稱) (等級)'
+    info:
+      incorrect: '{gcw}職業不正確。'
+      feedback: '{gcp}您已開啟 {gcs}[type] {gcp}交易給 {gcs}[playerDisplayName]{gcp}。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 為您開啟了 {gcs}[type] {gcp}交易。'
+      professions:
+        leatherworker: 皮革工匠
+        mason: 石匠
+        fletcher: 製箭師
+        weaponsmith: 武器匠
+        toolsmith: 工具匠
+        librarian: 圖書管理員
+        shepherd: 牧羊人
+        farmer: 農夫
+        cleric: 牧師
+        nitwit: 傻子
+        cartographer: 製圖師
+        armorer: 盔甲匠
+        butcher: 屠夫
+        none: 無
+        fisherman: 漁夫
+  migratedatabase:
+    help:
+      info: 變更資料庫系統並遷移所有資料
+      args: ''
+  mirror:
+    help:
+      info: 開始方塊放置／破壞鏡像功能。
+      args: (start/stop)
+    info:
+      started: '{gcp}鏡像功能已啟動'
+      stopped: '{gcn}鏡像功能已停止'
+      tooFar: '{gcd}您距離鏡像中心太遠（最大 {gcs}[blocks] {gcd}格）。功能已暫停！'
+      noBlocks: '{gcd}方塊數量不足'
+      used: '{gcp}已使用：{gcs}[blocks]'
+      title: '{gcp}鏡像'
+      location: '{gcp}位置'
+      offset: '{gcp}偏移'
+      offsetPos: '{gcp}X：{gcs}[x] {gcp}Y：{gcs}[y] {gcp}Z：{gcs}[z] {gcp}- {gcs}[id]'
+      sections: '{gcp}區段：{gcs}[sections]'
+      flipType: '{gcp}翻轉類型：{gcs}[type]'
+      sectionsAdjust: '{gcp}Shift + 滑鼠點擊以調整'
+      blocksToPlace: '{gcp}待放置方塊：{gcs}[blocks]{gcp}/{gcs}[total]'
+      Action:
+        XR:
+          Name: XR
+          Desc: '{gcp}於 {gcs}X {gcp}軸鏡像'
+        YR:
+          Name: YR
+          Desc: '{gcp}於 {gcs}Y {gcp}軸鏡像'
+        ZR:
+          Name: ZR
+          Desc: '{gcp}於 {gcs}Z {gcp}軸鏡像'
+        X90:
+          Name: X90
+          Desc: '{gcp}於 {gcs}X {gcp}軸旋轉 90°'
+        Y90:
+          Name: Y90
+          Desc: '{gcp}於 {gcs}Y {gcp}軸旋轉 90°'
+        Z90:
+          Name: Z90
+          Desc: '{gcp}於 {gcs}Z {gcp}軸旋轉 90°'
+        X90R:
+          Name: X90R
+          Desc: '{gcp}於 {gcs}X {gcp}軸旋轉 -90°'
+        Y90R:
+          Name: Y90R
+          Desc: '{gcp}於 {gcs}Y {gcp}軸旋轉 -90°'
+        Z90R:
+          Name: Z90R
+          Desc: '{gcp}於 {gcs}Z {gcp}軸旋轉 -90°'
+        XY180:
+          Name: XY180
+          Desc: '{gcp}於 {gcs}Z {gcp}軸旋轉 180°'
+        YZ180:
+          Name: YZ180
+          Desc: '{gcp}於 {gcs}X {gcp}軸旋轉 180°'
+        ZX180:
+          Name: ZX180
+          Desc: '{gcp}於 {gcs}Y {gcp}軸旋轉 180°'
+        XYZ180:
+          Name: XYZ180
+          Desc: '{gcp}於 {gcs}所有 {gcp}軸旋轉 180°'
+        XS:
+          Name: XS
+          Desc: '{gcp}於 {gcs}X {gcp}軸展開'
+        YS:
+          Name: YS
+          Desc: '{gcp}於 {gcs}Y {gcp}軸展開'
+        ZS:
+          Name: ZS
+          Desc: '{gcp}於 {gcs}Z {gcp}軸展開'
+        XYM:
+          Name: XYM
+          Desc: '{gcp}以 {gcs}X {gcp}至 {gcs}Y {gcp}平面鏡像'
+        YZM:
+          Name: YZM
+          Desc: '{gcp}以 {gcs}Z {gcp}至 {gcs}Y {gcp}平面鏡像'
+        ZXM:
+          Name: ZXM
+          Desc: '{gcp}以 {gcs}X {gcp}至 {gcs}Z {gcp}平面鏡像'
+        XYMR:
+          Name: XYMR
+          Desc: '{gcp}以 {gcs}X {gcp}至 {gcs}Y {gcp}平面反向鏡像'
+        YZMR:
+          Name: YZMR
+          Desc: '{gcp}以 {gcs}Y {gcp}至 {gcs}Z {gcp}平面反向鏡像'
+        ZXMR:
+          Name: ZXMR
+          Desc: '{gcp}以 {gcs}X {gcp}至 {gcs}Z {gcp}平面反向鏡像'
+  mobhead:
+    help:
+      info: 取得生物頭顱
+      args: '[生物類型] (項目編號) (玩家名稱) (-s)'
+    info:
+      got: '{gcp}已取得 {gcs}[type] {gcp}生物頭顱'
+      base: '{gcp}基礎掉落機率：{gcs}[chance]%'
+      personal: '{gcp}您的掉落機率：{gcs}[chance]%'
+      headSpecific: '{gcp}該頭顱的特定掉落機率：{gcs}[chance]%'
+      criteria: '{gcp}條件：{gcs}[criteria]'
+      title: '{gcs}[current]{gcp}/{gcs}[total]'
+  money:
+    help:
+      info: 管理金錢餘額
+      args: '[pay/give/take/set] [playerName/all/alloffline/allonline] [amount][%rand/1-1000%][1%[min-max][[playerName]]]
+        (-s)'
+    info:
+      newBalance: '{gcs}[playerDisplayName] {gcp}的新餘額為：{gcs}[money]'
+      paid: '{gcp}您已發送 {gcs}[amount] {gcp}給 {gcs}[playerDisplayName]'
+      gotMoney: '{gcp}您從 {gcs}[senderDisplayName] {gcp}處收到 {gcs}[amount] {gcp}。餘額：{gcs}[money]'
+      gotMoneyGive: '{gcp}您收到了 {gcs}[amount] {gcp}。餘額：{gcs}[money]'
+      lostMoney: '{gcs}[amount] {gcp}已從您的餘額中扣除。剩餘：{gcs}[money]'
+      worldGroups: '{gcw}您無法在不同的世界群組間進行轉帳'
+      self: '{gcw}您不能將錢轉給自己！'
+      confirm: '{gcp}點擊確認轉帳 {gcs}[money] {gcp}給 {gcs}[playerDisplayName] {gcu}&l[✔]'
+      notAccepting: '{gcp}該使用者目前不接受來自其他玩家的款項'
+      giveAll: '{gcp}已發放 {gcs}[totalAmount] {gcp}給 {gcs}[playerCount] {gcp}位玩家'
+      takeAll: '{gcp}已從 {gcs}[playerCount] {gcp}位玩家處扣除 {gcs}[totalAmount]'
+      taxes: '{gcp}稅額：{gcs}[taxes]'
+      overLimit: '{gcs}[playerDisplayName] {gcp}因持有金額上限限制，無法接收您的款項'
+  more:
+    help:
+      info: 將物品堆疊填充至最大數量
+      args: (玩家名稱) (-clone/[數量])
+      explanation:
+        - 權限：
+        - ' cmi.command.more.oversize - 以取得超額堆疊'
+    info:
+      feedback: '{gcp}已將 {gcs}[playerDisplayName]{gcp} 的堆疊填充至 {gcs}[amount]{gcp}。'
+  msg:
+    help:
+      info: 發送訊息給玩家
+      args: '[玩家名稱] [訊息]'
+      explanation:
+        - 若訊息以 ! 開頭，則會顯示不含發送者名稱的純淨訊息
+        - 需要 cmi.command.msg.clean 權限
+        - 若訊息以 !- 開頭，則會顯示不含發送者名稱的純淨訊息，且無法回覆
+        - 需要 cmi.command.msg.noreply 權限
+    info:
+      TargetMsg: '{gcn}[{gcs}[senderDisplayName] {gcn}-> &8我{gcn}]&r&f [message]'
+      SenderMsg: '{gcn}[{gcs}我 {gcn}-> {gcs}[playerDisplayName]{gcn}]&r&f [message]'
+      noPM: '{gcd}玩家目前不接受私人訊息'
+      badGroup: '{gcd}無法發送私人訊息給該群組的玩家'
+  mute:
+    help:
+      info: 禁言玩家
+      args: '[玩家名稱] (時間) (-s) (原因)'
+      explanation:
+        - 範例：
+        - /cmi mute zrips 1m
+        - /cmi mute zrips +30s
+        - /cmi mute zrips -15m
+        - /cmi mute zrips 1h
+        - /cmi mute zrips 1h 因辱罵他人
+    info:
+      mutedFor: '{gcs}[playerDisplayName] {gcp}已被禁言，時長 {gcs}[time]'
+      muted: '{gcp}您已被禁言，時長 {gcs}[time]'
+      reason: '{gcp}原因：{gcs}[reason]'
+      badTimeRanges: '{gcw}禁言時長不可超過 {gcs}[time] {gcp}（{gcs}[seconds]{gcp} 秒）'
+  mutechat:
+    help:
+      info: 禁止公開訊息
+      args: (時間) (-s) (原因)
+      explanation:
+        - 範例：
+        - /cmi mutechat 1m
+        - '/cmi mutechat 1h '
+    info:
+      mutedFor: '{gcp}公開聊天室已靜音，持續時間：{gcs}[time]'
+      isMuted: '!actionbar!{gcp}公開聊天室已靜音，持續時間：{gcs}[time]'
+      muteReason: '{gcp}靜音原因：{gcs}[reason]'
+  nameplate:
+    help:
+      info: 設定玩家名稱標籤的前綴、後綴或顏色
+      args: (玩家名稱) (-pref:[前綴]) (-suf:[後綴]) (-c:[顏色代碼]) (重設) (-s)
+      explanation:
+        - 使用 _ 來增加空格，並使用 __ 來增加底線，適用於預留位置等情況
+    info:
+      feedback: '{gcp}您已更新 {gcs}[playerDisplayName]{gcp} 的名稱標籤。'
+      targetfeedback: '{gcp}您的名稱標籤已更新'
+      namePlate: '{gcp}[playerDisplayName] 的名稱標籤：{gcs}[namePlate]'
+  near:
+    help:
+      info: 查看您附近的人
+      args: (距離)
+    info:
+      nope: '{gcp}您附近沒有任何人'
+      list: '{gcp}[place]. {gcs}[playerDisplayName] {gcp}— {gcs}[distance] m'
+      aproxList: '{gcp}[place]. {gcs}[playerDisplayName] {gcp}— {gcs}[dir] {gcn}~[distance]
+        m'
+  nick:
+    help:
+      info: 變更玩家暱稱
+      args: '[新暱稱/off] (玩家名稱) (-s)'
+      explanation:
+        - 若要變更為不同的暱稱：cmi.command.nick.different
+        - 若要繞過長度限制，請使用 cmi.command.nick.bypass.length
+    info:
+      changed: '{gcp}暱稱已變更為 &r[newNickName] {gcp}，原暱稱為 &r[oldNickName]'
+      changedTarget: '{gcp}您的暱稱已由 &r[senderDisplayName] {gcp}變更為 &r[newNickName]'
+      reset: '{gcp}暱稱已重設為預設值'
+      sameNick: '{gcw}您沒有權限變更為其他暱稱。您僅能變更顏色'
+      blockedNick: '{gcw}您無法使用此暱稱'
+      blockedNickLength: '{gcp}暱稱過長。最多允許 {gcs}[amount] {gcp}個字元'
+      blockedNickLengthMin: '{gcp}暱稱過短。最少需 {gcs}[amount] {gcp}個字元'
+      inUse: '{gcw}該暱稱已被其他玩家使用'
+  notarget:
+    help:
+      info: 切換怪物不攻擊模式
+      args: (玩家名稱) (true/false) (-s)
+    info:
+      enabled: '{gcp}怪物將不再攻擊您！'
+      disabled: '{gcp}怪物現在會開始攻擊您！'
+  note:
+    help:
+      info: 管理玩家筆記
+      args: (玩家名稱) [add/remove/clear/list] (ID/筆記內容)
+    info:
+      newNote: '{gcp}已為玩家新增筆記'
+      clearNote: '{gcp}已清除該玩家的所有筆記'
+      removedNote: '{gcp}已移除該玩家的筆記'
+      noNotesById: '{gcp}找不到該玩家對應此 ID 的筆記'
+      noNotes: '{gcp}該玩家目前沒有儲存的筆記'
+      listNotes: '{gcs}[筆記]'
+  openbook:
+    help:
+      info: 開啟書籍介面
+      args: (cText) (playerName) (fileName.txt)
+  oplist:
+    help:
+      info: 檢查營運者玩家列表
+      args: ''
+    info:
+      feedback: '{gcp}* {gcs}[編號]{gcp}. {gcs}[玩家名稱]'
+  options:
+    help:
+      info: 修改個人選項
+      args: (玩家名稱) (選項) (啟用/停用/切換/狀態) (-s)
+      explanation:
+        - 可用的動作：visibleHolograms、shiftSignEdit、totemBossBar、bossBarCompass、tagSound、chatSpy、cmdSpy、signSpy、acceptingPM、acceptingTPA、acceptingMoney、chatbubble、pmsound、deathmessages
+    info:
+      title: '{gcn}選項'
+      state: '{gcn}狀態：{gcs}[state]'
+      feedback: '{gcs}[description]{gcp}：{gcs}[state]'
+      option:
+        visibleHolograms: '{gcp}顯示全像投影'
+        shiftSignEdit: '{gcp}Shift 鍵編輯告示牌'
+        totemBossBar: '{gcp}圖騰 BossBar'
+        bossBarCompass: '{gcp}指南針 BossBar'
+        tagSound: '{gcp}聊天標記音效'
+        chatSpy: '{gcp}聊天監控'
+        cmdSpy: '{gcp}指令監控'
+        signSpy: '{gcp}告示牌監控'
+        acceptingPM: '{gcp}接收私人訊息'
+        acceptingTPA: '{gcp}接收傳送請求'
+        acceptingMoney: '{gcp}接收金錢轉帳'
+        chatbubble: '{gcp}聊天氣泡'
+        pmSound: '{gcp}私人訊息音效'
+        rideMe: '{gcp}允許玩家騎乘您'
+        pveDamageNumbers: '{gcp}顯示 PvE 傷害數值'
+        pvpDamageNumbers: '{gcp}顯示 PvP 傷害數值'
+        InformDurability: '{gcp}通知物品耐久度損耗'
+        receivePets: '{gcp}是否願意接收寵物作為禮物'
+        deathMessages: '{gcp}是否顯示死亡訊息'
+        notarget: '{gcp}是否希望被怪物忽略'
+  panimation:
+    help:
+      info: 播放自訂粒子動畫
+      args: (變數/玩家名稱/全部停止) (停止)
+      explanation:
+        - 使用說明請參閱 https://www.zrips.net/cmi/extra/particles/
+  particlepicker:
+    help:
+      info: 選擇粒子
+      args: (particleName)
+  patrol:
+    help:
+      info: 巡邏
+      args: ''
+    info:
+      noPatrol: '{gcp}目前沒有玩家可供您巡邏'
+      Patroling: '{gcp}目前正在巡邏：{gcs}[playerDisplayName]'
+      lastPatrol: '{gcp}上次巡邏時間為 {gcs}[time]{gcp} 前'
+      notes: '{gcp}擁有 {gcs}[amount] {gcp} 則筆記'
+  pay:
+    help:
+      info: 執行金錢交易
+      args: '[playerName] [amount] (-s)'
+  ping:
+    help:
+      info: 顯示玩家延遲
+      args: (玩家名稱/訊息)
+    info:
+      feedback: '{gcs}[玩家名稱] {gcp}延遲：{gcs}[ping] ms'
+      selffeedback: '{gcp}您的延遲為 {gcs}[ping] ms'
+  placeholders:
+    help:
+      info: 列出所有佔位符
+      args: (解析) (佔位符) (玩家名稱)
+    info:
+      list: '{gcs}[place]{gcp}. {gcs}[placeholder]'
+      outputResult: ' {gcp}結果： {gcs}[result]'
+      parse: '{gcs}[placeholder] {gcp}經由 {gcs}[source] {gcp}解析結果 &8|&r[result]&8|'
+  playercollision:
+    help:
+      info: 設定玩家碰撞模式
+      args: (玩家名稱) [true/false] (-s)
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的碰撞模式設定為 {gcs}[boolean]{gcp}。'
+      targetfeedback: '{gcp}您的碰撞模式已變更為 {gcs}[boolean]'
+  playtime:
+    help:
+      info: 顯示玩家總遊玩時間
+      args: （玩家名稱）
+    info:
+      total: '{gcp}* 總遊玩時間：{gcs}[time]'
+      joined: '{gcp}* 加入時間：{gcs}[time]'
+  playtimetop:
+    help:
+      info: 顯示玩家總遊玩時數排行榜
+      args: '[頁碼]'
+    info:
+      topLine: '{gcp}----- 遊玩時數排行榜 {gcp}-----'
+      scanning: '{gcp}目前正在掃描資料，請稍候片刻再試'
+      loading: '{gcp}資料尚未載入。掃描程序即將開始，完成後您將會收到結果'
+      list: '{gcs}[number]{gcp}. {gcs}[playerDisplayName] {gcp}- {gcs}[time]'
+      place: '{gcs}[playerDisplayName] {gcp}目前位於第 {gcs}[place] {gcp}名'
+      ownLine: '{gcu}[number]{gcp}. {gcs}[playerDisplayName] {gcp}- {gcs}[time]'
+  point:
+    help:
+      info: 指向方塊
+      args: (粒子名稱) (玩家名稱) (-self) (時間) (-s:[速度])
+  portals:
+    help:
+      info: 設定傳送門
+      args: (new/nearest/forceupdate/setlocation/enabled) (portalName) 
+        (world:x:y:z:yaw:pitch)
+    info:
+      collides: '{gcw}與 {gcs}[portalName] {gcw}傳送門發生碰撞'
+      exist: '{gcw}此名稱的傳送門已存在'
+      notExist: '{gcw}此名稱的傳送門不存在'
+      locationSet: '{gcp}已將 {gcs}[portalName] {gcp}的傳送門位置設定為您目前的位置'
+      removed: '{gcp}傳送門 {gcs}[portalName] {gcp}已移除'
+      click: '{gcp}點擊以將 {gcs}[portalName] {gcp}的傳送位置設定為您目前的位置'
+      bungeeSet: '{gcp}移動至該位置並點擊此訊息，以設定傳送目的地'
+      bungeeSetConfirmed: '{gcp}跨服傳送門（{gcs}[portal]{gcp}）位置已從 {gcs}[sourceServer]
+        {gcp}伺服器設定為 {gcp}[location]'
+      bungeeSetEmpty: '{gcp}已在 {gcs}[serverName] {gcp}伺服器發起傳送門位置設定，但該伺服器目前無人在線。此操作將在有人加入後完成'
+      List: '{gcp}[color][portalName]'
+      redefine: '{gcp}從當前選取範圍重新定義區域'
+      particles: '{gcp}粒子效果：{gcs}[state]'
+      particleType: '{gcp}粒子類型：{gcs}[type]'
+      particleAmount: '{gcp}粒子數量：{gcs}[amount]'
+      particleOrigin: '{gcp}粒子來源：{gcs}[value]'
+      particlePercent: '{gcp}邊緣收縮粒子百分比：{gcs}[amount]%'
+      activationRange: '{gcp}啟動範圍：{gcs}[amount]'
+      particlePermission: '{gcp}無權限時顯示粒子：{gcs}[state]'
+      bungeeTeleport: '{gcp}傳送至精確的跨服位置：[state]'
+      requiresPermission: '{gcp}使用需具備 {gcs}[perm] {gcp}權限：[state]'
+      kickBack: '{gcp}禁止無權限者進入：[state]'
+      informPermission: '{gcp}權限不足時通知：[state]'
+      cancelWarmup: '{gcp}離開時取消指令預熱：[state]'
+      teleportToLocation: '{gcp}傳送至傳送門位置'
+      teleportToTarget: '{gcp}傳送至傳送門目標位置'
+      performCommandsWithoutTp: '{gcp}在沒有有效傳送位置的情況下執行指令'
+      editCommands: '{gcp}編輯傳送門指令'
+      setTeleportLocation: '{gcp}設定傳送位置'
+      setSafeLocation: '{gcp}設定外部安全位置'
+      save: '{gcp}儲存變更至檔案'
+      removePortal: '{gcp}移除傳送門'
+      cantUsePortal: '{gcw}您無法使用此傳送門'
+  pos:
+    help:
+      info: 顯示玩家目前的座標位置
+      args: (玩家名稱)
+    info:
+      feedback: '{gcp}[playerDisplayName] {gcp}([world]{gcp},{gcs}[x]{gcp}:{gcs}[y]{gcp}:{gcs}[z]{gcp})'
+      feedbackRegion: '{gcp}區塊 {gcs}[chunkx]{gcp}:{gcs}[chunkz]{gcp} 區域 {gcs}[regionx]{gcp}:{gcs}[regionz]'
+      feedbackDirection: '{gcp}方向 {gcs}[direction] {gcp}({gcs}[degrees] {gcp}度)'
+      feedbackBiome: '{gcp}生物群系 {gcs}[biome]'
+      feedbackLight: '{gcp}亮度等級 {gcs}[lightLevel]'
+      netherCoord: '{gcp}地獄世界座標：{gcp}({gcs}[x]{gcp}:{gcs}[y]{gcp}:{gcs}[z]{gcp})'
+      normalCoord: '{gcp}主世界座標：{gcp}({gcs}[x]{gcp}:{gcs}[y]{gcp}:{gcs}[z]{gcp})'
+  preview:
+    help:
+      info: 載入指定範圍的區塊
+      args: '[範圍] (內部範圍)'
+    info:
+      NoMore: '{gcp}範圍不能超過 32 個區塊。已變更為允許的最大值。'
+      startSending: '{gcp}已找到 {gcs}[amount] {gcp}個區塊準備傳送。開始執行！'
+      InfoShow: '{gcp}TPS：{gcs}[tps] {gcp}剩餘 {gcs}[left] {gcp}（{gcs}[min] 分：[sec]
+        秒{gcp}） 速度：{gcs}[speed]'
+      Finished: '{gcp}已完成。在您那端載入所有區塊可能需要額外的時間。'
+  prewards:
+    help:
+      info: 檢查遊玩時數獎勵
+      args: (玩家名稱)
+    info:
+      list: '{gcs}[place]{gcp}. {gcs}[rewardName] {gcp}獎勵，將於 {gcs}[time] 後領取'
+      listNoStack: '{gcs}[place]{gcp}. {gcs}[rewardName]'
+      listOneTime: '{gcs}[place]{gcp}. {gcs}[rewardName]'
+      claim: ' {gcu}領取！'
+      claimAmount: ' {gcu}領取 (x[amount])！'
+      claimHover: '{gcu}點擊以領取獎勵！'
+      inform: '!actionbar!{gcu}您有尚未領取的獎勵！ {gcs}/prewards'
+  ptime:
+    help:
+      info: 控制玩家個人時間
+      args: (freeze/unfreeze/day/night/dusk/morning/realtime/reset) (playerName)
+        (-s)
+      explanation:
+        - 範例：
+        - /ptime 13:00:00
+        - /ptime 1pm
+        - /ptime 13
+        - /ptime 7000ticks
+        - /ptime Zrips 1pm
+        - /ptime freeze
+        - /ptime unfreeze
+        - /ptime realtime
+        - /ptime reset
+    info:
+      check: '{gcp}個人時間：{gcs}[24h] {gcp}或 {gcs}[12h] {gcp}或 {gcs}[ticks]ticks'
+      frozen: ' &c(-)'
+      gotreseted: '{gcs}[playerDisplayName] {gcp}的時間已重設'
+      gotfrozen: '{gcs}[playerDisplayName] {gcp}的時間已凍結'
+      gotunfrozen: '{gcs}[playerDisplayName] {gcp}的時間已解除凍結'
+      setto: '{gcp}已將 {gcs}[playerDisplayName] {gcp}的時間設定為 {gcs}[24h] {gcp}或 {gcs}[12h]
+        {gcp}或 {gcs}[ticks]ticks'
+  purge:
+    help:
+      info: 根據不活躍天數清理世界資料夾中的玩家資料
+      args: (停止)
+    info:
+      stopped: '{gcp}清理已停止。'
+  pweather:
+    help:
+      info: 控制玩家天氣
+      args: '[sun/rain/reset] (playerName) (-s)'
+    info:
+      check: '{gcp}個人天氣：{gcs}[weather]'
+      gotreseted: '{gcs}[playerDisplayName] {gcp}的天氣已重設'
+      setto: '{gcp}已將 {gcs}[playerDisplayName] {gcp}的個人天氣設為 {gcs}[weather]'
+      gotset: '{gcp}您的個人天氣已設為 {gcs}[weather]'
+      reset: '{gcp}天氣已重設'
+  rankdown:
+    help:
+      info: 降低您的階級
+      args: (玩家名稱) (階級名稱) (確認) (-cmd) (-cost)
+      explanation:
+        - -cmd 將執行為前一個階級升級所定義的指令
+        - -cost 將在為前一個階級升級定義的情況下，向玩家收取金錢、經驗值或物品
+    info:
+      noPrev: '{gcp}找不到任何前一個階級'
+      list: '{gcp}請選擇您想要 {gcs}降級 {gcp}到的階級：'
+      confirm: '{gcp}點擊此處確認 {gcs}降級 {gcp}至 {gcs}[rank]'
+      downranked: '{gcp}已降級至 {gcs}[rank]'
+  rankinfo:
+    help:
+      info: 您的階級資訊
+      args: (玩家名稱) (階級名稱)
+    info:
+      distanceCM: '[value] cm'
+      distanceM: '[value] m'
+      distanceKm: '[value] km'
+      requiredMoney: ' {gcp}金錢：[color][current]{gcp}/{gcs}[needed]'
+      requiredExp: ' {gcp}經驗值：[color][current]{gcp}/{gcs}[needed]'
+      requiredVotes: ' {gcp}投票數：[color][current]{gcp}/{gcs}[needed]'
+      requiredPerm: ' {gcp}權限：'
+      requiredPlaceholder: ' {gcp}自訂：'
+      requiredPlaceholderList: '[color][message]'
+      requiredPlaceholderHover: '{gcp}[color][current]{gcp}/{gcs}[needed]'
+      requiredMcmmo: ' {gcp}McMMO：'
+      requiredMcmmoList: '{gcp}[color][name]'
+      requiredMcmmoListHover: ' {gcp}[color][current]{gcp}/{gcs}[needed]'
+      requiredMcmmoPower: 能力值
+      requiredAurelium: ' {gcp}Aurelium：'
+      requiredAureliumList: '{gcp}[color][name]'
+      requiredAureliumListHover: ' {gcp}[color][current]{gcp}/{gcs}[needed]'
+      requiredAuraSkills: ' {gcp}AuraSkills：'
+      requiredAuraSkillsList: '{gcp}[color][name]'
+      requiredAuraSkillsListHover: ' {gcp}[color][current]{gcp}/{gcs}[needed]'
+      requiredJobs: ' {gcp}職業：'
+      requiredJobsList: ' {gcp}[color][name]'
+      requiredJobsListHover: ' {gcp}[color][current]{gcp}/{gcs}[needed]'
+      requiredJobsTotalLevel: 總等級
+      requiredItem: ' {gcp}物品：'
+      requiredItemsList: '{gcp}[color][name]'
+      requiredItemListHover: '{gcp}[color][current]{gcp}/{gcs}[needed]'
+      currentRank: ' {gcp}您目前的階級：{gcs}[rankName]'
+      elseCurrentRank: ' {gcs}[playerDisplayName] {gcp}目前的階級：{gcs}[rankName]'
+      rankNameLine: ' {gcp}⸺⸺ {gcs}[rankName] {gcp}[rankupState] {gcp}⸺⸺'
+      canRankup: ' {gcu}可晉升！'
+      cantRankup: ''
+      requiredStats: ' {gcp}[name][extra]{gcp}：[color][current]{gcp}/{gcs}[needed]'
+      requiredStatsExtra: ' （{gcs}[type]{gcp}）'
+      nextRanks: ' {gcp}下個階級：{gcs}'
+      finalRank: ' {gcp}這是最終階級'
+      noRank: ' {gcp}找不到該階級'
+      check: '{gcp}查看 {gcs}[rank] {gcp}階級'
+      progressBarHover: '{gcp}進度 [percent]%'
+  ranklist:
+    help:
+      info: 可用階級列表
+      args: ''
+    info:
+      list: '{gcs}[place]{gcp}。 [currentRankMarker]{gcs}[rankName][currentRankMarker]'
+      currentRankMarker: '{gcu}+'
+      hoverNext: "{gcp}下一階： \n{gcs}[rankList]"
+      hoverLast: '{gcu}最終階級'
+  rankset:
+    help:
+      info: 設定玩家階級
+      args: (玩家名稱) [階級名稱] (-cmd) (-cost)
+      explanation:
+        - -cmd 將執行該階級定義的升級指令
+        - -cost 將在該階級定義升級時，扣除玩家的金錢、經驗值或物品
+        - 即使玩家沒有足夠的金錢、經驗值或所需物品，仍會獲得該階級
+    info:
+      set: '{gcp}[playerDisplayName] 的階級已變更為 {gcs}[rankName]'
+  rankup:
+    help:
+      info: 提升您的階級
+      args: (玩家名稱) (階級名稱) (確認)
+    info:
+      noRank: ' {gcp}您目前沒有任何關聯的階級'
+      requiresPrevious: ' {gcp}您無法升級至此階級。這需要您先擁有 {gcs}[rank] {gcp}階級'
+      list: '{gcp}請選擇一個您想升級的階級： '
+      confirm: '{gcp}點擊此處確認升級至 {gcs}[ranks]'
+  realname:
+    help:
+      info: 查詢玩家真實姓名
+      args: (玩家名稱/暱稱)
+    info:
+      feedback: '{gcs}[playerDisplayName] {gcp}真實姓名 {gcs}[playerName]'
+  recipe:
+    help:
+      info: 查詢物品合成配方
+      args: (物品名稱) (-c)
+    info:
+      type: '{gcs}[類型]'
+      types:
+        Shaped: 有序合成
+        Shapeless: 無序合成
+        Transmute: 轉換
+        Furnace: 熔爐
+        Blasting: 爆破
+        Campfire: 營火
+        Cooking: 烹飪
+        Merchant: 交易
+        Smoking: 煙燻
+        Stonecutting: 切石
+        Smithing: 鍛造
+        Complex: 複雜
+        Unknown: 未知
+      page: ' {gcs}[當前]{gcp}/{gcs}[總計]'
+      noRecipes: '{gcw}找不到該物品的任何配方'
+  releasepet:
+    help:
+      info: 釋放已馴服的寵物
+      args: (-s)
+    info:
+      released: '{gcp}你已將 {gcs}[type] {gcp}放歸野外！'
+  reload:
+    help:
+      info: 重新載入插件設定與語言檔案
+      args: ''
+    info:
+      feedback: '{gcp}CMI 設定與語言檔案已重新載入！耗時 {gcs}[ms] ms'
+      failedConfig: '{gcw}設定檔案載入失敗！請檢查拼字！'
+      failedLocale: '{gcw}語言檔案載入失敗！請檢查拼字！'
+  removehome:
+    help:
+      info: 移除傳送點
+      args: (傳送點名稱) (玩家名稱)
+    info:
+      remove: '{gcd}點擊以移除'
+      removed: '{gcp}傳送點 ({gcs}[home]{gcp}) 已移除'
+      list: '{gcs}[home]'
+  removeuser:
+    help:
+      info: 移除使用者及其資料
+      args: '[uuid/duplicates]'
+    info:
+      removed: '{gcp}使用者（{gcs}[uuid]{gcp}）已移除'
+      removedDuplicate: '{gcs}[amount]{gcp}/{gcs}[max] {gcp}個重複項目已移除'
+  removewarp:
+    help:
+      info: 移除傳送點
+      args: (傳送點名稱)
+    info:
+      remove: '{gcd}點擊以移除'
+      removed: '{gcp}傳送點（{gcs}[warp]{gcp}）已移除'
+      notYours: '{gcd}此傳送點不屬於你！'
+  repair:
+    help:
+      info: 修復物品
+      args: '[hand/offhand/armor/all] (玩家名稱)'
+      explanation:
+        - cmi.command.repair.hand - 允許使用者修復手持物品
+        - cmi.command.repair.offhand - 允許使用者修復副手物品
+        - cmi.command.repair.armor - 允許使用者修復裝備欄中的物品
+        - cmi.command.repair.all - 允許使用者修復整個背包的物品
+        - cmi.command.repair.repairshare.bypass - 允許使用者修復物品時 不增加修復共享保護
+    info:
+      feedback: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 修復了 {gcs}[amount]{gcp} 件物品。'
+      nothing: '{gcp}沒有可修復的物品'
+      cant: '{gcp}無法修復此物品'
+      feedbackMoney: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 修復了 {gcs}[amount]{gcp}
+        件物品。 費用：{gcs}[cost]'
+      itemOwner: '{gcp}最後修復者：{gcs}[owner]'
+      cantUse: '!title!{gcw}無法使用此物品！！subtitle!{gcp}請自行修復！'
+  repaircost:
+    help:
+      info: 檢查物品維修費用
+      args: (hand/offhand/armor/all) (playerName)
+    info:
+      feedback: '{gcp}維修費用：{gcs}[amount]'
+      noNeed: '{gcp}無需維修'
+  replaceblock:
+    help:
+      info: 取代您周圍當前世界中的區塊
+      args: id [區塊名稱:資料/ID:資料] w [區塊名稱:資料/ID:資料] r [區塊範圍/g] y [最大高度]
+      explanation:
+        - 子指令：
+        - '- pause &e- 暫停取代'
+        - '- continue &e- 繼續取代'
+        - '- stop &e- 停止取代'
+        - '- speed [數值] &e- 設定當前的取代速度'
+        - '- autospeed [true/false] &e- 開啟或關閉自動速度'
+        - '- messages [true/false] &e- 開啟或關閉訊息輸出'
+        - 範例：
+        - /cmi replaceblock id 52 w stone r 10
+        - /cmi replaceblock id 52,gold_block w stone r 15 y 100
+        - /cmi replaceblock id 52 w air r g y 100
+        - /cmi replaceblock id iron_ore%75 w stone%90,dirt%5 r g
+    info:
+      startScanning: '{gcp}發現 {gcs}[amount] {gcp}個區塊待檢查。開始執行！'
+      paused: '{gcp}取代已暫停，若要繼續請使用 {gcs}/cmi blockreplace continue。'
+      continuing: '{gcp}繼續執行取代'
+      stoped: '{gcp}取代已停止。'
+      speedChange: '{gcp}速度已變更為 [amount]'
+      autospeedChange: '{gcp}自動速度已變更為 [state]'
+      messagesChange: '{gcp}訊息狀態已變更為 [state]'
+      infoShow: '{gcs}TPS：&3[tps] {gcs}剩餘 {gcp}[left] {gcs}({gcp}[time]{gcs}) {gcs}速度：{gcp}[speed]
+        {gcs}已取代：{gcp}[found]'
+      finished: '{gcp}完成！！！已取代：{gcs}[amount] {gcp}個區塊！耗時 {gcs}[time]{gcp}。'
+  reply:
+    help:
+      info: 回覆最後一位訊息發送者
+      args: '[訊息]'
+    info:
+      noOneToReply: '{gcp}沒有人可以回覆'
+  resetback:
+    help:
+      info: 重置玩家的返回位置
+      args: (玩家名稱) (原因) (-死亡) (-s)
+    info:
+      feedback: '{gcp}返回位置已重置！'
+  resetdbfields:
+    help:
+      info: 將指定的資料庫欄位重設為預設值
+      args: '[columnName] (-w:[worldName]) (-p:[playerName])'
+    info:
+      feedback: '{gcp}已更新 {gcs}[amount] {gcp}位玩家'
+      nofield: '{gcw}找不到該名稱的欄位'
+  ride:
+    help:
+      info: 騎乘目標實體
+      args: 列表
+      explanation:
+        - ' cmi.command.ride.[entityType] - 取得騎乘實體的權限'
+    info:
+      riding: '{gcp}您正在騎乘 {gcs}[entityName]'
+      cantRide: '{gcw}您無法騎乘（{gcs}[entityName]{gcq}）實體'
+      someOneElse: '&c已有其他人正在騎乘此實體'
+      ridingYou: '{gcs}[playerDisplayName] {gcp}正在騎乘您，請輸入 {gcs}/shakeitoff {gcp}將其甩下'
+      canRide: '{gcp}可騎乘：{gcs}[list]'
+  rt:
+    help:
+      info: 傳送至隨機位置
+      args: (玩家名稱) (世界名稱) (-s)
+    info:
+      possible: '{gcp}可用的世界：{gcs}[worlds]'
+      tpLimit: '{gcp}傳送過於頻繁，請等待 {gcs}[time] {gcp}後再試'
+      cantDo: '{gcp}無法從不同世界進行隨機傳送'
+      IncorrectLocation: '{gcs}無法找到合適的傳送位置，請等待 {gcp}[time] {gcs}後再試。'
+      teleported: '!actionbar!{gcs}咻——！'
+      ongoingSearch: '!actionbar!{gcn}[dots]搜尋中（{gcs}[current]{gcn}/{gcs}[max]{gcn}）[dots]'
+  sameip:
+    help:
+      info: 列出從相同 IP 登入的玩家
+      args: ''
+    info:
+      list: '{gcs}[地點]。{gcp}'
+  saturation:
+    help:
+      info: 設定玩家飽食度
+      args: (玩家名稱) [數值]
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的飽食度設定為 {gcs}[amount]{gcp}。'
+      targetfeedback: '{gcp}您的飽食度已被 {gcs}[senderDisplayName]{gcp} 設定為 {gcs}[amount]{gcp}。'
+  saveall:
+    help:
+      info: 儲存每一位玩家的物品欄
+      args: (天數範圍/-online)
+      explanation:
+        - -online 變數可用於僅儲存線上玩家的物品欄
+    info:
+      saving: '[symbol] {gcp}已檢查：{gcs}[checked]{gcp} 於 {gcs}[total]{gcp} 已儲存：{gcs}[saved]
+        {gcp}已跳過：{gcs}[skipped] [simbol]'
+      saved: '{gcp}儲存完成。已儲存：{gcs}[saved] {gcp}已跳過：{gcs}[skipped]'
+  saveditems:
+    help:
+      info: 儲存或管理已儲存的項目
+      args: '[save/get/remove/list] (項目名稱) (-t:玩家名稱) (-a:數量) (-c:類別/all) (-s)'
+    info:
+      info:
+        - '{gcn}左鍵點擊以獲取項目'
+        - '{gcn}滑鼠中鍵點擊以刪除'
+      got: '{gcp}已獲取 {gcs}[name] {gcp}項目'
+      give: '{gcp}給予 {gcs}[name] {gcp}項目'
+      removed: '{gcp}已移除 {gcs}[name] {gcp}項目'
+      saved: '{gcp}已儲存 {gcs}[name] {gcp}項目'
+      uiTitle: 類別：[category] {gcs}[current]{gcp}/{gcs}[total]
+      name: '{gcp}名稱：{gcs}[name]'
+      category: '{gcp}類別：{gcs}[category]'
+  sc:
+    help:
+      info: 開始告示牌複製程序
+      args: (玩家名稱) (單面)
+    info:
+      punch: '{gcp}請點擊告示牌以貼上文字，或點擊任何非告示牌的方塊以取消程序'
+      canceled: '{gcp}告示牌複製程序已取消'
+      updated: '{gcp}告示牌已更新'
+  scale:
+    help:
+      info: 設定實體比例
+      args: '[set/add/take/clear] (玩家名稱) [數值] (-s)'
+    info:
+      feedback: '{gcp}您已將 {gcs}[entityName]{gcp} 的比例設定為 {gcs}[scale]{gcp}。'
+      scale: '{gcp}比例：{gcs}[scale]'
+      targetfeedback: '{gcp}您的比例已被 {gcs}[senderDisplayName]{gcp} 設定為 {gcs}[scale]{gcp}。'
+  scan:
+    help:
+      info: 掃描當前世界中的物品
+      args: ''
+      explanation:
+        - <T>更多資訊請見 
+          https://www.zrips.net/cmi/extra/scan/</T><URL>https://www.zrips.net/cmi/extra/scan/</URL>
+    info:
+      ListEntity: '{gcs}[number]{gcp}. [location] {gcs}[checked][type] {gcs}[amount]'
+      ListBlock: '{gcs}[number]{gcp}. [location] {gcp}[checked][type] {gcs}[amount]'
+      pause: '{gcp}掃描已暫停，若要繼續請使用 {gcs}/cmi scan resume'
+      resume: '{gcp}掃描已恢復'
+      noInformation: '{gcp}沒有相關資訊'
+      nothing: '{gcw}提供的掃描條件不正確'
+      progress: '{gcp}已找到：{gcs}[totalFound] {gcp}待檢查區塊：{gcs}[checked]{gcp}/{gcs}[from]
+        {gcp}已跳過：{gcs}[skipped] {gcp}速度：{gcs}[speed]'
+      loading: '{gcn}正在載入資料……'
+      teleport: '{gcp}點擊以傳送'
+  scavenge:
+    help:
+      info: 回收物品及其附魔
+      args: (playerName)
+    info:
+      enchantWorth: '{gcp}附魔價值：{gcs}[price]'
+      enchantFailChance: '{gcw}失敗機率：{gcs}[chance]%'
+      enchantFailed: '{gcw}失敗。{gcs}[enchant]{gcw} 等級 {gcs}[level] {gcw}失敗機率為 {gcs}[chance]%'
+      enchantLevelChance: '{gcw}等級降低機率：{gcs}[chance]%'
+      gotIngredients: '{gcp}你獲得了 [itemList]'
+      gotIngredientsFormat: '{gcs}[material]{gcp}—{gcs}[amount]'
+      itemBroke: '{gcw}物品已損毀，損毀機率為 [chance]%'
+      confirm: '{gcu}確認回收。費用：{gcs}[price]'
+      itemBreakChance: '{gcw}物品損毀機率：{gcs}[chance]%'
+      itemBreakChanceExtra: '{gcw}[durability]% 耐久度增加 {gcs}[chance]% {gcw}損毀機率'
+      itemBreak: '{gcw}點擊後物品將會損毀！'
+      ingredientReturnChance: '{gcp}材料返還機率：{gcs}[chance]%'
+      cantScavenge: '{gcw}無法回收'
+      insertItem: '{gcu}請將物品放入上方欄位'
+      scavengeCost: '{gcp}回收費用：{gcs}[cost]'
+      moreTitle: '{gcp}數量不正確：{gcs}[input]{gcp}/{gcs}[required]'
+      moreLore:
+        - '{gcp}你需要更多此物品。'
+        - '{gcp}至少需要 {gcs}[amount]'
+      title: '{gcp}回收者'
+  schedule:
+    help:
+      info: 觸發排程
+      args: '[scheduleName] (-updatetimer)'
+  se:
+    help:
+      info: 變更告示牌文字行。
+      args: (SignLine) [Text]
+      explanation:
+        - 使用 \n 來新增行。
+  search:
+    help:
+      info: 搜尋所有玩家的特定物品或統計數據
+      args: ''
+      explanation:
+        - <T>更多資訊請見 
+          https://www.zrips.net/cmi/extra/search/</T><URL>https://www.zrips.net/cmi/extra/search/</URL>
+    info:
+      baseList: '{gcs}[number]{gcp}. [location] {gcs}[playerName][amount]'
+      regularList: '{gcs}[number]{gcp}. {gcs}[playerName][amount]'
+      amount: ' {gcp}（{gcs}[totalcount]{gcp}）'
+      found: '{gcp}已從 {gcs}[files] {gcp}位已檢查的玩家中找到 {gcs}[amount] {gcp}筆資料'
+      noresults: '{gcp}找不到符合您條件的結果'
+      nothing: '{gcw}提供的搜尋條件不正確'
+      noactive: '{gcp}沒有正在進行或現存的搜尋結果'
+      active: '{gcp}搜尋作業已在進行中，請等待完成或取消它'
+      searching: '{gcp}搜尋中，這可能需要一些時間才能完成'
+      progress: '{gcp}已找到 {gcs}[totalFound] {gcp}筆，共 {gcs}[checked] {gcp}/ {gcs}[from]
+        {gcp}，速度：{gcs}[speed]'
+      location:
+        ender: '{gcs}終界箱'
+        enderS: '{gcs}終界箱 -> 潛影盒'
+        enderB: '{gcs}終界箱 -> 束口袋'
+        inv: '{gcp}背包'
+        invS: '{gcp}背包 -> 潛影盒'
+        invB: '{gcp}背包 -> 束口袋'
+        PlayerVault: '{gcp}玩家倉庫'
+  seen:
+    help:
+      info: 查詢玩家最後上線時間
+      args: '[玩家名稱/UUID]'
+    info:
+      feedback: '{gcs}[playerDisplayName] {gcp}已經 {gcp}[offon] {gcp}了 {gcs}[time]{gcp}之久！'
+  select:
+    help:
+      info: 管理選取區域
+      args: (pos1/pos2/shift/expand/contract/clear) (數量)
+  sell:
+    help:
+      info: 出售背包中的物品
+      args: (all/blocks/hand/same/gui/material) (玩家名稱) (-s)
+    info:
+      total: '{gcp}已售出 {gcs}[amount] {gcp}個物品，共獲得 {gcs}[total] {gcp}。目前餘額為 {gcs}[balance]'
+      close: '{gcp}請放入您想要出售的物品'
+      sellInfo: '{gcp}售價：{gcs}[price]'
+  sendall:
+    help:
+      info: 將所有線上玩家傳送至目標伺服器
+      args: '[伺服器名稱]'
+  server:
+    help:
+      info: 連線至 BungeeCord 伺服器
+      args: '[伺服器名稱] (玩家名稱) (-f)'
+  serverlinks:
+    help:
+      info: 設定伺服器連結
+      args: ''
+      explanation:
+        - 請使用「;」分隔顯示名稱與連結
+  serverlist:
+    help:
+      info: 顯示伺服器列表
+      args: ''
+    info:
+      listOnline: '{gcs}[place]. {gcu}[serverName] {gcs}[count]{gcp}/{gcs}[max]'
+      listOffline: '{gcs}[place]. {gcd}[serverName] {gcs}0{gcp}/{gcs}0'
+      consoleInfo: ' {gcp}({gcs}[ip]{gcp}：{gcs}[port]{gcp})'
+  servertime:
+    help:
+      info: 顯示伺服器時間
+      args: ''
+    info:
+      time: '{gcp}伺服器時間：{gcs}[time]'
+      format: dd/MM/YYYY HH:mm:ss
+      timeZone: '{gcp}時區名稱：{gcs}[name]'
+      timeZoneId: '{gcp}時區 ID：{gcs}[id]'
+      timeZoneOffset: '{gcp}時區偏移量：{gcs}[offset]'
+  setenchantworth:
+    help:
+      info: 變更附魔價值
+      args: ''
+  setfirstspawn:
+    help:
+      info: 設定初始重生點
+      args: (玩家名稱)
+    info:
+      feedback: '{gcp}已設定初始重生點（{gcs}[世界]{gcp}，{gcs}[x]{gcp}，{gcs}[y]{gcp}，{gcs}[z]{gcp}）！'
+  sethome:
+    help:
+      info: 設定住家位置
+      args: (住家名稱) (玩家名稱) (-p) (-l:世界名稱;x;y;z) (方塊/材質) (欄位編號) (-overwrite)
+      explanation:
+        - cmi.command.sethome.unlimited
+        - -l 將定義自訂的住家位置，此功能需要 cmi.command.sethome.customloc 權限節點
+    info:
+      set: '{gcp}您已成功建立名為 {gcs}[homeName]{gcp} 的住家！'
+      setBed: '{gcp}已建立床鋪重生點'
+      private: ' {gcu}(私人)'
+      maxFavorites: '{gcw}您一次最多只能擁有 {gcp}[amount] {gcw}個最愛住家'
+      noMore: '{gcw}您已達到住家設定上限'
+      exist: "{gcw}已存在名為 ({gcs}[name]{gcw}) 的住家位置！ \n{gcp}點擊以確認覆蓋。"
+      noOverwrite: '{gcw}您沒有權限覆蓋現有的住家位置。請移除舊的住家或選擇其他名稱。'
+      slotTaken: '!actionbar!{gcw}住家欄位已被 &7[homeName]{gcw} 使用，請考慮使用其他欄位'
+      setIcon: '!actionbar:3!&7已將住家圖示設為 {gcs}[material] &7材質'
+      tooManyInWorld: '{gcw}您在此世界中無法再建立更多住家。最多允許 {gcs}[max]{gcw} 個，您目前已有 {gcs}[current]'
+  setmotd:
+    help:
+      info: 設定伺服器每日公告（MOTD）
+      args: '[newMotd] (-s)'
+      explanation:
+        - 使用 \n 來建立第二行
+        - 使用 _ 來建立空格，若需要多個空格，請在 _ 後方加上空格
+    info:
+      changed: '{gcp}已將每日公告變更為：'
+  setrt:
+    help:
+      info: 設定隨機傳送範圍
+      args: （世界名稱） （中心點：[x]：[z]） （最小：[範圍]） （最大：[範圍]） （方形／圓形） （啟用／停用）
+    info:
+      list: '{gcs}[place]。 {gcp}[world] [enabled] {gcs}[centerX]{gcp}：{gcs}[centerZ]
+        [maxDist]{gcp}/{gcs}[minDist] [type]'
+  setspawn:
+    help:
+      info: 設定重生指令的傳送點
+      args: (玩家名稱) (true/false) (-g:[群組名稱]) (-rng:[範圍]) (-w:世界名稱,地獄世界) 
+        (-loc:[世界;x;y;z;偏航角;俯仰角])
+      explanation:
+        - 關於指令用法的更多資訊，請參閱 https://www.zrips.net/cmi/commands/spawn/
+    info:
+      feedback: '{gcp}重生點已設定（{gcs}[世界],[x],[y],[z]{gcp}）！'
+      group: ' {gcp}（{gcs}[群組]{gcp}）'
+      rng: ' {gcp}（範圍：{gcs}[範圍]{gcp}）'
+      respawn: '{gcn}點擊以將此重生點設為可能的重生位置'
+  setwarp:
+    help:
+      info: 設定傳送點位置
+      args: '[傳送點名稱] (需求權限) (手持物品/頭顱/頭顱:[玩家名稱]) (欄位) (自動顯示說明) (-g:[群組名稱]) (世界;x;y;z;偏航角;俯仰角)
+        (-確認)'
+      explanation:
+        - 範例：
+        - /cmi setwarp spawn - 簡單設定傳送點至出生點
+        - /cmi setwarp spawn true - 建立傳送點，且使用時需具備 cmi.command.warp.[傳送點名稱] 權限節點
+        - /cmi setwarp spawn hand - 建立傳送點，並將手持物品作為該傳送點在介面中的圖示
+        - /cmi setwarp spawn 13 - 建立傳送點，並設定其在介面中的顯示欄位（1-54）
+        - /cmi setwarp spawn true hand 13 - 建立傳送點，使用手持物品作為圖示、設定欄位為 13，並要求具備權限
+        - /cmi setwarp spawn true hand 13 false - 與上述相同，但不自動產生說明文字
+    info:
+      newSet: '{gcp}已設定新的傳送點（&6[warp]{gcp}）'
+      noSet: '{gcw}此名稱的傳送點已存在'
+      noMore: '{gcw}您已達到允許的傳送點上限。（{gcps}[max]{gcp}）'
+  setworth:
+    help:
+      info: 變更物品價值
+      args: (物品名稱) -s:(販售價格)
+    info:
+      setSell: '{gcp}設定物品販售價格 {gcs}[金額]'
+      setBuy: '{gcp}設定物品購買價格 {gcs}[金額]'
+      notInUse: '{gcp}主要用於偵測潛在的漏洞利用'
+      sellPrice: '{gcp}販售價格：{gcp}[金額]'
+      buyPrice: '{gcp}購買價格：{gcs}[金額]'
+      exploit: '{gce}偵測到潛在的漏洞利用！'
+      ingredient: '{gcn}材料'
+      ingredients: '{gcs}[材料]{gcp}（{gcs}[數量]{gcp}）＝ {gcs}[價格]'
+      notSet: '{gcp}價格未設定'
+      notSetBuy: '{gcd}購買價格未設定'
+      result: '{gcp}合成結果為 {gcs}[結果]{gcp}（{gcs}[數量]{gcp}）'
+      ingredientsPrice: '{gcp}材料價格：{gcs}[價格]'
+      resultPrice: '{gcp}可販售價格：{gcs}[價格]'
+      explanation: '{gcn}購買價格僅用於偵測潛在的漏洞利用'
+  shadowmute:
+    help:
+      info: 將玩家靜音，且不通知對方已被靜音
+      args: '[playerName] (時間) (-s) (原因)'
+  shakeitoff:
+    help:
+      info: 卸下任何騎乘於您或目標玩家身上的實體
+      args: (玩家名稱) (-s)
+    info:
+      shaked: '{gcp}您已卸下：{gcs}[entity]'
+      nothing: '{gcp}沒有可卸下的實體'
+  shoot:
+    help:
+      info: 發射投射物
+      args: (玩家名稱) (-t:目標玩家) (類型) (速度)
+  silence:
+    help:
+      info: 封鎖公開訊息
+      args: ''
+      explanation:
+        - cmi.command.silence.bypass - 用於繞過靜音狀態
+    info:
+      change: '{gcp}靜音模式 {gcs}[state]'
+      inMode: '{gcp}玩家目前處於靜音模式'
+  silentchest:
+    help:
+      info: 切換靜音寶箱
+      args: ''
+      explanation:
+        - 當您開啟寶箱時，周圍的玩家將不會看到寶箱開啟的動畫。
+        - 此功能需要安裝 ProtocolLib 才能運作。
+    info:
+      feedback: '{gcp}您已將靜音寶箱模式切換為 {gcs}[offon]。'
+      onOpen: '{gcp}正在靜音開啟寶箱。'
+      cantOpen: '{gcw}無法開啟。戰利品尚未生成。'
+  sit:
+    help:
+      info: 坐在你的位置上
+      args: (玩家名稱) (-persistent) (-s) (位置) (on/off)
+    info:
+      onSit: '!actionbar!{gcp}你現在正坐著'
+      onStandUp: '!actionbar!{gcp}你已經站起來了'
+      accupied: '!actionbar!{gcw}這裡已經有人坐了！'
+  skin:
+    help:
+      info: 變更玩家外觀
+      args: '[外觀名稱/關閉/更新] (玩家名稱) (-s)'
+    info:
+      changed: '{gcp}已將外觀變更為 {gcs}[skinOwner] {gcp}樣式'
+      failed: '{gcp}套用外觀失敗'
+      resetSteve: '{gcp}已移除外觀'
+      reset: '{gcp}已套用預設外觀'
+      update: '{gcp}已更新外觀'
+  smite:
+    help:
+      info: 以閃電擊中地面或玩家
+      args: (玩家名稱/位置) (-safe) (-s)
+    info:
+      gotSmited: '{gcp}你被閃電擊中了！'
+      targetSmited: '{gcp}正在擊中目標！'
+  smithingtable:
+    help:
+      info: 開啟鍛造台
+      args: (玩家名稱)
+    info:
+      feedback: '{gcp}你已為 {gcs}[playerDisplayName]{gcp} 開啟鍛造台。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 為你開啟了鍛造台。'
+  solve:
+    help:
+      info: 解方程式
+      args: '[方程式]'
+    info:
+      result: '{gcp}結果：{gcs}[res]'
+      incorrect: '{gcw}輸入錯誤：{gcs}[input]'
+  sound:
+    help:
+      info: 在目標位置播放音效
+      args: '[sound] (-p:[pitch]) (-v:[volume]) (playerName/-all/-l:playerName) (world;x;y;z)
+        (-r:[radius]) (-s)'
+    info:
+      playing: "{gcp}正在於 [world] [x]：[y]：[z] 播放 {gcs}[sound] \n{gcp}音高：{gcs}[pitch]
+        {gcp}音量：{gcs}[volume]"
+      playingMultiple: "{gcp}正在為 {gcs}[amount] {gcp}位玩家播放 {gcs}[sound] \n{gcp}音高：{gcs}[pitch]
+        {gcp}音量：{gcs}[volume]"
+  spawn:
+    help:
+      info: 傳送回重生點
+      args: (玩家名稱) (-s)
+    info:
+      notset: '{gcw}尚未設定重生點！'
+      feedback: '{gcp}您已被傳送至重生點。'
+      feedbackother: '{gcs}[playerDisplayName] {gcp}已被傳送至重生點。'
+  spawner:
+    help:
+      info: 設定刷怪籠
+      args: '[實體類型]'
+    info:
+      feedback: '{gcp}刷怪籠已設定為 {gcs}[type] {gcp}類型'
+      wrongEntityIdName: '{gcw}錯誤的實體 ID 或名稱'
+      cantSet: '{gcw}無法設定此類型的刷怪籠'
+      cantDetect: '{gcw}無法偵測到刷怪籠方塊'
+      pickOne: '{gcp}請選擇刷怪籠類型'
+  spawnereditor:
+    help:
+      info: 編輯生成器
+      args: ''
+    info:
+      type: '{gcp}變更類型：{gcs}[type]'
+      nextIn: '{gcp}下次生成時間：{gcs}[time]'
+      nearby: '{gcp}最大鄰近實體數：{gcs}[count]'
+      maxdelay: '{gcp}最大生成延遲：{gcs}[count]'
+      mindelay: '{gcp}最小生成延遲：{gcs}[count]'
+      prange: '{gcp}所需玩家範圍：{gcs}[range]'
+      spawncount: '{gcp}生成數量：{gcs}[count]'
+      spawnrange: '{gcp}生成範圍：{gcs}[range]'
+  spawnmob:
+    help:
+      info: 在您的位置生成實體
+      args: '[實體類型]'
+      explanation:
+        - 範例：/cmi spawnmob sheep:adult:rainbow 3 sp:5
+        - <T>更多資訊請見 
+          www.zrips.net/cmi/commands/spawnmob/</T><URL>https://www.zrips.net/cmi/commands/spawnmob/</URL>
+    info:
+      wrongEntityName: '{gcp}實體名稱不正確'
+      spawnedEntities: '{gcp}已生成 {gcs}[entities] {gcp}個實體 '
+      spawnedPasangers: '{gcp}以及 {gcs}[passengers] {gcp}個乘客'
+      nothingSpawned: '{gcp}未生成任何實體'
+      cantSpawn: '{gcp}無法生成此類型的實體'
+  speed:
+    help:
+      info: 設定玩家的步行或飛行速度
+      args: (玩家名稱) [數值] (-s)
+  staffmsg:
+    help:
+      info: 發送訊息至管理員頻道
+      args: '[訊息/切換/開啟/關閉]'
+    info:
+      message: '{gcu}[管理員]{gcd}[{gcs}[senderDisplayName]{gcd}]&r{gcw} [訊息]'
+      toggledOn: '{gcp}已啟用常駐管理員聊天室。您現在可以在公開聊天頻道中發送訊息。'
+      toggledOff: '{gcp}已關閉常駐管理員聊天室'
+  stats:
+    help:
+      info: 查看玩家統計數據
+      args: (玩家名稱)
+    info:
+      distanceCM: '{gcs}[value]cm'
+      distanceM: '{gcs}[value]m'
+      distanceKm: '{gcs}[value]km'
+      list: '{gcs}[name]：{gcs}[amount]'
+      listCover: '{gcp}（{gcs}[list]{gcp}）'
+      Quit: '{gcp}退出遊戲次數：{gcs}[value]'
+      PlayTime: '{gcp}遊玩時間：{gcs}[value]'
+      SneakTime: '{gcp}潛行時間：{gcs}[value]'
+      Sleep: '{gcp}床上睡覺次數：{gcs}[value]'
+      Joined: '{gcp}加入時間：{gcs}[time]'
+      Jumps: '{gcp}跳躍次數：{gcs}[value]'
+      SinceDeath: '{gcp}距離上次死亡：{gcs}[value]'
+      Deaths: '{gcp}死亡次數：{gcs}[value]'
+      DeathsByMonsters: '{gcp}被怪物擊殺：{gcs}[value]'
+      TotalDistance: '{gcp}總移動距離：{gcs}[value]'
+      Walk: '{gcp}步行：{gcs}[value]'
+      Crouch: '{gcp}潛行：{gcs}[value]'
+      Sprint: '{gcp}衝刺：{gcs}[value]'
+      Swim: '{gcp}游泳：{gcs}[value]'
+      Fall: '{gcp}墜落：{gcs}[value]'
+      Climb: '{gcp}攀爬：{gcs}[value]'
+      Fly: '{gcp}飛行：{gcs}[value]'
+      Dive: '{gcp}潛水：{gcs}[value]'
+      Minecart: '{gcp}礦車：{gcs}[value]'
+      Boat: '{gcp}船：{gcs}[value]'
+      Pig: '{gcp}豬：{gcs}[value]'
+      Horse: '{gcp}馬：{gcs}[value]'
+      Elytra: '{gcp}鞘翅：{gcs}[value]'
+      Damage: '{gcp}傷害 {gcs}[dealt] [taken]'
+      DamageDealt: '{gcp}造成：{gcs}[value]'
+      DamageTaken: '{gcp}承受：{gcs}[value]'
+      JUMP: '{gcp}跳躍次數：{gcs}[value]'
+      Kills: '{gcp}擊殺 {gcs}'
+      KillsMob: '{gcp}生物：{gcs}[value]'
+      KillsPlayer: ' {gcp}玩家：{gcs}[value]'
+      Blocks: '{gcp}方塊 {gcs}'
+      BlocksMined: '{gcp}挖掘：{gcs}[value]'
+      BlocksPlaced: ' {gcp}放置：{gcs}[value]'
+      Items: '{gcp}物品 {gcs}'
+      ItemsUsed: '{gcp}使用：{gcs}[value]'
+      ItemsDrop: '{gcp}丟棄：{gcs}[value]'
+      ItemsPicked: '{gcp}拾取：{gcs}[value]'
+      ItemsBroken: '{gcp}損壞：{gcs}[value]'
+      ItemsCrafted: ' {gcp}製作：{gcs}[value]'
+      ItemsEnchanted: ' {gcp}附魔：{gcs}[value]'
+      Opened: '{gcp}開啟 {gcs}[list]'
+      OpenChest: '{gcp}箱子：{gcs}[value]'
+      OpenEnder: '{gcp}終界箱：{gcs}[value]'
+      OpenShulker: '{gcp}界伏盒：{gcs}[value]'
+      Interacted: '{gcp}互動 {gcs}[list]'
+      InteractBeacon: '{gcp}信標：{gcs}[value]'
+      InteractBrewingStand: '{gcp}釀造台：{gcs}[value]'
+      InteractCraftTable: '{gcp}工作台：{gcs}[value]'
+      InteractFurnace: '{gcp}熔爐：{gcs}[value]'
+      Inspected: '{gcp}檢查 {gcs}[list]'
+      InspectDispenser: '{gcp}發射器：{gcs}[value]'
+      InspectDropper: '{gcp}投擲器：{gcs}[value]'
+      InspectHopper: '{gcp}漏斗：{gcs}[value]'
+      Statistics:
+        LEAVE_GAME: 退出遊戲
+        PLAY_ONE_TICK: 遊玩時間
+        TIME_SINCE_DEATH: 距離上次死亡
+        TIME_SINCE_REST: 距離上次休息
+        SNEAK_TIME: 潛行時間
+        ACCOUNT_AGE: 帳號年齡
+        TRAVEL: 移動
+        WALK_ONE_CM: 步行
+        CROUCH_ONE_CM: 潛行
+        SPRINT_ONE_CM: 衝刺
+        SWIM_ONE_CM: 游泳
+        FALL_ONE_CM: 墜落
+        CLIMB_ONE_CM: 攀爬
+        FLY_ONE_CM: 飛行
+        DIVE_ONE_CM: 潛水
+        WALK_UNDER_WATER_ONE_CM: 水下步行
+        WALK_ON_WATER_ONE_CM: 水面步行
+        MINECART_ONE_CM: 礦車移動
+        BOAT_ONE_CM: 船隻移動
+        PIG_ONE_CM: 豬隻移動
+        HORSE_ONE_CM: 馬匹移動
+        AVIATE_ONE_CM: 鞘翅飛行
+        HAPPY_GHAST_ONE_CM: 惡魂移動
+        JUMP: 跳躍
+        DAMAGE_DEALT: 造成傷害
+        DAMAGE_TAKEN: 承受傷害
+        DAMAGE_DEALT_ABSORBED: 造成傷害（被吸收）
+        DAMAGE_DEALT_RESISTED: 造成傷害（被抵抗）
+        DAMAGE_BLOCKED_BY_SHIELD: 盾牌格擋傷害
+        DAMAGE_ABSORBED: 吸收傷害
+        DAMAGE_RESISTED: 抵抗傷害
+        DEATHS: 死亡次數
+        ENTITY_KILLED_BY: 被擊殺來源
+        MOB_KILLS: 生物擊殺數
+        PLAYER_KILLS: 玩家擊殺數
+        ITEM_ENCHANTED: 物品附魔
+        ANIMALS_BRED: 動物繁殖
+        FISH_CAUGHT: 釣魚次數
+        TALKED_TO_VILLAGER: 與村民交談
+        TRADED_WITH_VILLAGER: 與村民交易
+        CAKE_SLICES_EATEN: 食用蛋糕片數
+        CAULDRON_FILLED: 煉藥鍋裝水
+        CAULDRON_USED: 煉藥鍋使用
+        ARMOR_CLEANED: 盔甲清洗
+        BANNER_CLEANED: 旗幟清洗
+        BREWINGSTAND_INTERACTION: 釀造台互動
+        BEACON_INTERACTION: 信標互動
+        CRAFTING_TABLE_INTERACTION: 工作台互動
+        FURNACE_INTERACTION: 熔爐互動
+        DISPENSER_INSPECTED: 發射器檢查
+        DROPPER_INSPECTED: 投擲器檢查
+        HOPPER_INSPECTED: 漏斗檢查
+        CHEST_OPENED: 箱子開啟
+        TRAPPED_CHEST_TRIGGERED: 陷阱箱觸發
+        ENDERCHEST_OPENED: 終界箱開啟
+        NOTEBLOCK_PLAYED: 音階盒演奏
+        NOTEBLOCK_TUNED: 音階盒調音
+        FLOWER_POTTED: 花盆種植
+        RECORD_PLAYED: 唱片播放
+        SLEEP_IN_BED: 床上睡覺
+        SHULKER_BOX_OPENED: 界伏盒開啟
+        CLEAN_SHULKER_BOX: 界伏盒清洗
+        DROP: 物品丟棄
+        MINE_BLOCK: 方塊挖掘
+        PLACE_BLOCK: 方塊放置
+        BREAK_ITEM: 物品損壞
+        CRAFT_ITEM: 物品製作
+        USE_ITEM: 物品使用
+        PICKUP: 物品拾取
+        KILL_ENTITY: 怪物擊殺
+        STRIDER_ONE_CM: 熾足獸移動
+        INTERACT_WITH_BLAST_FURNACE: 高爐互動
+        INTERACT_WITH_SMOKER: 煙燻爐互動
+        INTERACT_WITH_LECTERN: 講台互動
+        INTERACT_WITH_CAMPFIRE: 營火互動
+        INTERACT_WITH_CARTOGRAPHY_TABLE: 製圖台互動
+        INTERACT_WITH_LOOM: 織布機互動
+        INTERACT_WITH_STONECUTTER: 切石機互動
+        INTERACT_WITH_ANVIL: 鐵砧互動
+        INTERACT_WITH_GRINDSTONE: 磨刀石互動
+        INTERACT_WITH_SMITHING_TABLE: 鍛造台互動
+        BELL_RING: 鐘聲敲響
+        RAID_TRIGGER: 襲擊觸發
+        RAID_WIN: 襲擊勝利
+        TARGET_HIT: 標靶命中
+        OPEN_BARREL: 木桶開啟
+        DROP_COUNT: 丟棄次數
+        TOTAL_WORLD_TIME: 世界遊玩時間
+  statsedit:
+    help:
+      info: 編輯玩家統計數據
+      args: (玩家名稱) [新增/減少/設定] [統計項目] (子類型) [數值] (-s)
+    info:
+      cantSet: '{gcw}無法設定此類型的統計數據'
+      reqSubType: '{gcw}此統計項目需要定義 {gcs}[類型] {gcw}子類型'
+      set: '{gcp}已將 {gcs}[統計項目] {gcp}的數值從 {gcs}[舊值] {gcp}變更為 {gcs}[新值] {gcp}({gcs}[額外資訊]{gcp})'
+  status:
+    help:
+      info: 顯示伺服器狀態
+      args: ''
+    info:
+      Platform: ' {gcp}平台：{gcs}[platform] {gcp}({gcs}[os]{gcp}) {gcp}執行緒數量：{gcs}[threads]'
+      Tps: ' {gcp}TPS：{gcs}[tps]'
+      CpuUsage: ' {gcp}CPU 使用率：{gcs}[cpuusage]% {gcp}({gcs}[cores] 核心{gcp})'
+      Uptime:
+        main: ' {gcp}運作時間：'
+        weeks: '{gcs}[weeks] {gcp}週 '
+        days: '{gcs}[days] {gcp}天 '
+        hours: '{gcs}[hours] {gcp}小時 '
+        mins: '{gcs}[mins] {gcp}分鐘 '
+        secs: '{gcs}[secs] {gcp}秒 '
+      MemoryUsage: ' {gcp}記憶體使用量：{gcs}[percent]% {gcp}({gcs}[current]{gcp}/{gcs}[max]
+        MB{gcp})'
+      MemoryUsageHover: "{gcp}可用：{gcs}[free] \n{gcp}已配置：{gcs}[allocated] \n{gcp}最大：{gcs}[max]\
+        \ \n{gcp}總計：{gcs}[total]"
+      Java: ' {gcp}Java 版本：{gcs}[mainV].[majorV].[minorV]{gcp}({gcs}[update]{gcp})
+        建置版本：{gcs}[build]'
+      DiskUsage: ' {gcp}磁碟使用量：{gcs}[percent]% {gcp}({gcs}[current]{gcp}/{gcs}[max]
+        GB{gcp})'
+      Worlds: '{gcs} [number]. {gcp}[world] {gcs}[chunks] {gcp}區塊 {gcs}[entities]
+        {gcp}實體 {gcs}[tiles] {gcp}磚塊 {gcs}[players] {gcp}玩家'
+      MostTiles: '{gcp}磚塊數量最多 ({gcs}[tiles]{gcp}) 的區塊位於 {gcs}[coord]'
+      MostEntities: '{gcp}實體數量最多 ({gcs}[entities]&7) 的區塊位於 {gcs}[coord] &7'
+      Pending: '{gcp}待處理任務：{gcs}[taskCount]'
+  stonecutter:
+    help:
+      info: 開啟切石機
+      args: (玩家名稱) (-s)
+    info:
+      feedback: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 開啟切石機。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 為您開啟了切石機。'
+  sudo:
+    help:
+      info: 強制其他玩家執行指令
+      args: '[玩家名稱] (指令/c:[文字])'
+      explanation:
+        - cmi.command.sudo.bypass - 保護玩家免受「惡作劇」影響
+    info:
+      performed: '{gcp}已以 {gcs}[playerDisplayName] {gcp}玩家身分執行「{gcs}[command]{gcp}」指令'
+  suicide:
+    help:
+      info: 自盡
+      args: '[玩家名稱] (-s)'
+    info:
+      feedback: '{gcp}再見了，殘酷的世界……'
+      message: '{gcp}[玩家顯示名稱] {gcp}結束了自己的生命'
+      totem: '{gcp}手持圖騰時無法使用'
+  switchplayerdata:
+    help:
+      info: 將所有資料從一名玩家轉移至另一名玩家
+      args: '[來源玩家名稱/UUID] [目標玩家名稱/UUID]'
+      explanation:
+        - 請使用 UUID 以進行更精確的轉移，特別是在使用者名稱相互重疊的情況下
+    info:
+      same: '{gcp}提供的目標使用者與來源使用者相同'
+      transferred: '{gcs}[sourceName] {gcp}的資料已與 {gcs}[Name] {gcp}進行交換'
+      failed: '{gcw}玩家資料交換失敗'
+  tablistupdate:
+    help:
+      info: 強制更新所有或特定玩家的列表
+      args: (玩家名稱) (-s)
+    info:
+      updated: '{gcp} 列表已更新'
+  tempban:
+    help:
+      info: 暫時封禁玩家
+      args: '[玩家名稱] [時間數值] (原因) (-s)'
+      explanation:
+        - 封禁最大時長取決於 cmi.command.tempban.max.[數值]
+        - cmi.command.tempban.max.unlimited - 允許無限期封禁
+        - 若無任何權限，最大值將為 60 秒
+        - 範例：
+        - /cmi tempban zrips 5m 因為辱罵
+    info:
+      message: '{gcw}已暫時封禁！'
+      messageToAll: '{gcs}[playerDisplayName] {gcp}被 {gcs}[senderDisplayName] {gcp}暫時封禁，時長：{gcs}[time]
+        {gcp}原因：{gcs}[reason]'
+      banedSilent: '{gcn}[{gcu}靜默{gcn}]{gcs}[playerDisplayName] {gcp}被 {gcs}[senderDisplayName]
+        {gcp}暫時封禁，時長：{gcs}[time] {gcp}原因：{gcs}[reason]'
+      time: '{gcp}您將在 {gcs}[time] {gcp}後解除封禁'
+      badTime: '{gcw}時間格式設定錯誤'
+      badTimeRanges: '{gcw}您無法封禁超過 [time] {gcs}([seconds]) 的時長'
+  tempipban:
+    help:
+      info: 暫時封鎖 IP
+      args: '[IP/玩家名稱] [時間] (原因) (-s)'
+      explanation:
+        - cmi.command.banip.bypass - 繞過封鎖權限
+    info:
+      message: '{gcw}IP 已被暫時封鎖！'
+      messageToAll: '{gcs}[playerDisplayName] {gcp}已被暫時封鎖 IP，時長 {gcs}[time]{gcp}，執行者：{gcs}[senderDisplayName]{gcp}，原因：{gcs}[reason]'
+      banedSilent: '{gcp}[{gcu}靜默{gcp}]{gcs}[playerDisplayName] {gcp}已被暫時封鎖 IP，時長
+        {gcs}[time]{gcp}，原因：{gcs}[reason]'
+  tfly:
+    help:
+      info: 設定玩家的臨時飛行模式，直到重新登入或時間結束為止
+      args: (玩家名稱) (秒數) (-s)
+      explanation:
+        - 範例：
+        - tfly Zrips 30 —— 在接下來的 30 秒內啟用飛行模式
+        - tfly Zrips +30m —— 額外增加 30 秒的飛行模式時間
+        - tfly Zrips 0 —— 啟用飛行模式直到重新登入
+        - tfly Zrips —— 檢查玩家是否已啟用臨時飛行模式以及剩餘時間
+    info:
+      setTimedFly: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 設定了接下來 [time] 的臨時飛行模式'
+      addTimedFly: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 額外增加了 [addTime]（總計 [time]）的飛行時間'
+      takeTimedFly: '{gcp}您已扣除 {gcs}[playerDisplayName]{gcp} 的 [addTime]（剩餘 [time]）飛行時間'
+      setUntilRelogFly: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 設定了直到重新登入為止的臨時飛行模式。'
+      targetTimedEnabled: '{gcp}您的飛行模式已由 {gcs}[senderDisplayName]{gcp} 啟用，持續 [time]。'
+      targetTimedEnabledAdd: '{gcp}您的飛行時間已增加 [addTime]（總計 [time]）。'
+      targetTimedEnabledTake: '{gcp}您的飛行時間已扣除 [addTime]（剩餘 [time]）。'
+      targetUntilRelogEnabled: '{gcp}您的飛行模式已由 {gcs}[senderDisplayName]{gcp} 啟用，直到您重新登入為止。'
+      setFor: '{gcp}臨時飛行模式已啟用，持續 [time]'
+      setForRelog: '{gcp}臨時飛行模式已啟用，直到重新登入為止'
+      notSet: '{gcp}該玩家未啟用臨時飛行模式'
+      willBeDisabled: '{gcp}飛行模式將在 [time] 後停用'
+      disabled: '{gcp}臨時飛行模式已停用！'
+  tgod:
+    help:
+      info: 設定玩家暫時的無敵模式，直到重新登入或時間結束為止
+      args: '[玩家名稱] (秒數) (-s)'
+      explanation:
+        - 範例：
+        - tgod Zrips 30 —— 為玩家開啟接下來 30 秒的無敵模式
+        - tgod Zrips 0 —— 為玩家開啟無敵模式，直到重新登入為止
+        - tgod Zrips —— 查詢玩家是否擁有無敵模式，以及剩餘時間
+    info:
+      setTimedGod: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 設定了暫時無敵模式，持續時間為 [time]'
+      setUntilRelogGod: '{gcp}您已為 {gcs}[playerDisplayName]{gcp} 設定了暫時無敵模式，直到重新登入為止。'
+      targetTimedEnabled: '{gcp}您已由 {gcs}[senderDisplayName]{gcp} 開啟了暫時無敵模式，持續時間為
+        [time]。'
+      targetUntilRelogEnabled: '{gcp}您已由 {gcs}[senderDisplayName]{gcp} 開啟了暫時無敵模式，直到您重新登入為止'
+      setFor: '{gcp}暫時無敵模式已開啟，持續時間為 [time]'
+      setForRelog: '{gcp}暫時無敵模式已開啟，直到重新登入為止'
+      notSet: '{gcp}該玩家未啟用暫時無敵模式'
+      willBeDisabled: '{gcp}無敵模式將在 [time] 後關閉'
+      disabled: '{gcp}暫時無敵模式已關閉！'
+  time:
+    help:
+      info: 控制伺服器時間
+      args: (時間) (世界) (調整 [數值]) (-平滑)
+      explanation:
+        - 範例：
+        - /day
+        - /night
+        - /time 13:00:00
+        - /time 1pm
+        - /time 13
+        - /time 7000ticks
+        - /time 1pm Lt_Craft
+        - /time 1pm all
+        - /time add 0:30
+        - /time take 0:30
+        - /time freeze
+        - /time unfreeze
+        - /time realtime
+        - /time autorealtime start/stop
+    info:
+      check: '{gcp}時間：{gcs}[24 小時制] {gcp}或 {gcs}[12 小時制] {gcp}或 {gcs}[刻度]ticks {gcp}於
+        {gcs}[世界]'
+      frozen: ' {gcn}(-)'
+      frozenTime: '{gcp}時間已凍結'
+      real: ' {gcs}(+)'
+      realTime: '{gcp}自動即時時間'
+      autorealstart: '{gcp}已開始為 {gcs}[世界] {gcp}進行自動時間調整'
+      autorealstop: '{gcp}已停止為 {gcs}[世界] {gcp}進行自動時間調整'
+      gotfrozen: '{gcs}[世界] {gcp}的時間已被凍結'
+      gotunfrozen: '{gcs}[世界] {gcp}的時間已解除凍結'
+      cantset: '{gcp}無法將時間設定為此數值'
+      setto: '{gcp}已將 {gcs}[世界] {gcp}的時間設定為 {gcs}[24 小時制] {gcp}或 {gcs}[12 小時制] {gcp}或
+        {gcs}[刻度]ticks'
+  titlemsg:
+    help:
+      info: 發送標題訊息給玩家
+      args: "[玩家名稱/all] [標題 \n 副標題] (-in:[刻數]) (-out:[刻數]) (-keep:[刻數])"
+    info:
+      message: '&f[訊息]'
+  toast:
+    help:
+      info: 發送快顯訊息給玩家
+      args: '[玩家名稱/all] (-t:[訊息類型]) (-icon:[材質]) [訊息]'
+    info:
+      message: '&f[訊息]'
+  top:
+    help:
+      info: 傳送至您所在位置的最高點
+      args: '[playerName] (-s)'
+  tp:
+    help:
+      info: 傳送至玩家所在位置
+      args: '[playerName] (玩家名稱)'
+    info:
+      feedback: '{gcp}您已被傳送至 {gcp}[sourceDisplayName] {gcp}的位置。'
+      bad:
+        msg: '{gcw}傳送目的地不安全。{gcs}[reason]'
+        extraMsg: '{gcp}請使用 {gcs}/tpbypass {gcp}來略過此限制。您還有 {gcs}[time]'
+        badfloor: '{gcw}地面不穩（{gcs}[material]{gcw}）'
+        void: '{gcw}虛空'
+        fall: '{gcw}墜落（{gcs}[distance]{gcw}）'
+        suffocation: '{gcw}窒息'
+        unknown: '{gcw}未知'
+        plugin: '{gcw}第三方插件'
+      notAllowed: '{gcw}無法傳送至該玩家'
+      prevented: '{gcw}傳送功能已被其他插件阻擋'
+  tpa:
+    help:
+      info: 詢問玩家是否允許您傳送到他們身邊
+      args: '[playerName] (玩家名稱) (-c)'
+    info:
+      requestSent: '{gcp}已向 {gcs}[playerDisplayName] {gcp}發送請求'
+      gotRequest: '{gcs}[senderDisplayName] {gcp}請求傳送到您身邊！'
+      time: '{gcp}您有 {gcs}[time] {gcp}的時間來接受此請求'
+      canceled: '{gcp}傳送請求已被取消'
+      # 此行僅能包含預設變數（[message][cancelButton]），您可以根據喜好調整它們的順序
+      senderFeedbackMessageFormat: '[message][cancelButton]'
+      alreadyRequesting: '{gcp}您已經向 {gcs}[playerDisplayName] {gcp}發送了傳送請求，請等待對方接受'
+      banned: '{gcp}您在接下來的 {gcs}[time] {gcp}內無法向 {gcs}[playerDisplayName] {gcp}發送傳送請求'
+  tpaall:
+    help:
+      info: 要求所有線上玩家傳送到您的位置
+      args: ''
+    info:
+      requestSent: '{gcp}請求已發送給所有玩家'
+  tpaccept:
+    help:
+      info: 接受傳送請求
+      args: (玩家名稱)
+    info:
+      noRequest: '{gcp}目前沒有傳送請求'
+      NotOnline: '{gcp}該玩家已不在線上'
+      accepted: '{gcs}[playerDisplayName] {gcp}已接受請求'
+      youAccepted: '{gcp}已接受傳送'
+  tpahere:
+    help:
+      info: 請求玩家接受傳送至您的位置
+      args: '[玩家名稱] (玩家名稱) (-c)'
+    info:
+      requestSent: '{gcp}已向 {gcs}[playerDisplayName] {gcp}發送請求'
+      gotRequest: '{gcs}[senderDisplayName] {gcp}請求將您傳送至其位置！'
+      accept: '{gcu}點擊以接受傳送請求！'
+  tpall:
+    help:
+      info: 將所有在線玩家傳送至指定位置
+      args: (玩家名稱)
+    info:
+      feedback: '{gcp}您已被傳送至 {gcs}[playerDisplayName] {gcp}的位置（{gcs}[world],[x],[y],[z]{gcp}）。'
+  tpallworld:
+    help:
+      info: 將所有玩家從指定的世界傳送至目標地點
+      args: '[世界名稱] (世界名稱;x;y;z(;偏航角;俯仰角)) (-a)'
+      explanation:
+        - -a 變數會將所有身處於已不存在之世界的玩家，傳送至目標地點
+    info:
+      started: '{gcp}傳送作業已開始！'
+      current: '{gcp}目前已傳送 {gcs}[amount] {gcp}位玩家，並檢查了 {gcs}[files] {gcp}個檔案'
+      total: '{gcp}已從 {gcs}[files] {gcp}位檢查過的玩家中，總共傳送了 {gcs}[amount] {gcp}位'
+      WorldNotFound: '{gcp}找不到名為 {gcs}[name] {gcp}的世界，該世界尚未載入。請確保名稱正確，我們將直接使用該名稱。'
+  tpbypass:
+    help:
+      info: 跳過傳送至不安全位置的限制
+      args: (玩家名稱)
+    info:
+      noSavedTp: '{gcw}沒有已儲存的不安全傳送位置'
+      feedback: '{gcp}已傳送至不安全的位置'
+  tpdeny:
+    help:
+      info: 拒絕傳送請求
+      args: (玩家名稱)
+    info:
+      noRequest: '{gcp}您目前沒有任何傳送請求！'
+      youDenied: '{gcp}您的傳送請求已被拒絕！'
+      denied: '{gcs}[senderDisplayName] {gcp}拒絕了您的請求。'
+  tphere:
+    help:
+      info: 將玩家傳送至您的位置
+      args: '[玩家名稱] (玩家名稱) (-s)'
+    info:
+      feedback:
+        offline: '{gcp}您已為 {gcs}[playerDisplayName] {gcp}設定了重生點（{gcs}[world],[x],[y],[z]{gcp}）。'
+        online: '{gcp}您已將 {gcs}[playerDisplayName] {gcp}傳送至您的位置'
+        player: '{gcp}您已被傳送至 {gcs}[sourceDisplayName] {gcp}的位置'
+      notAllowed: '{gcp}無法傳送該玩家'
+  tpo:
+    help:
+      info: 強制傳送至玩家所在位置
+      args: '[玩家名稱] (玩家名稱)'
+  tpohere:
+    help:
+      info: 強制將玩家傳送至您的位置
+      args: '[玩家名稱] (玩家名稱)'
+  tpopos:
+    help:
+      info: 強制傳送至指定位置
+      args: (-p:playerName) [x] [y] [z] (world) (pitch) (yaw) (-rng:[range])
+    info:
+      feedback: '{gcp}您已被傳送至 ({gcs}[world],[x],[y],[z]{gcp})。'
+      feedbackOther: '{gcs}[playerDisplayName] {gcp}已被傳送至 ({gcs}[world],[x],[y],[z]{gcp})。'
+  tppos:
+    help:
+      info: 傳送至指定位置
+      args: (-p:玩家名稱) [x] [y] [z] (世界) (俯仰角) (偏航角) (-rng:[範圍])
+    info:
+      feedback: '{gcp}您已被傳送至（{gcs}[world],[x],[y],[z]{gcp}）。'
+      feedbackOther: '{gcs}[playerDisplayName] {gcp}已被傳送至（{gcs}[world],[x],[y],[z]{gcp}）。'
+  tps:
+    help:
+      info: 檢查伺服器 TPS 狀態
+      args: (-spikes)
+    info:
+      tps: '{gcp}TPS：'
+      # 可定義自訂的 TPS 範圍，數量不限
+      tpsList: '{gcs}[3] [10] [30] [60] [600]'
+      explanation: '{gcp}一個區塊 {gcs}60 {gcp}秒。最大 {gcs}600 {gcp}秒'
+      minMax: '{gcp}最大值：{gcs}[max] {gcp}最小值：{gcs}[min]'
+      hover:
+        - '[tpscolor][tps]'
+        - '{gcs}[time]'
+  tree:
+    help:
+      info: 在您注視的位置生成樹木
+      args: (樹木類型) (-p:[玩家名稱])
+    info:
+      feedback: '{gcs}[樹木] {gcp}已生成。'
+      cantSpawn: '{gcw}無法在此方塊上生成（{gcs}[樹木]{gcw}）。'
+  trim:
+    help:
+      info: 修改盔甲飾邊
+      args: (玩家名稱) (-s) (清除)
+    info:
+      title: '{gcp}修改盔甲飾邊'
+  unban:
+    help:
+      info: 解除玩家或 IP 的封禁
+      args: '[玩家名稱/IP] (-s)'
+    info:
+      unBaned: '!broadcast!{gcs}[playerDisplayName] {gcp}已解除封禁'
+      unBanedSilent: '&7[&8靜默&7]{gcs}[playerDisplayName] {gcp}已解除封禁'
+      notBanned: '{gcs}[playerDisplayName] {gcp}並未被封禁'
+  unbreakable:
+    help:
+      info: 使物品無法損壞
+      args: (玩家名稱) (true/false) (-o)
+    info:
+      feedback: '{gcp}您已將物品設為 [state] {gcp}，對象為 {gcs}[playerDisplayName]{gcp}。'
+      breakable: '{gcd}可損壞'
+      unbreakable: '{gcu}無法損壞'
+  uncondense:
+    help:
+      info: 將物品拆解為較小的組件
+      args: (物品名稱) (玩家名稱) (-s)
+    info:
+      converted: '{gcp}已將 {gcs}[blocks] {gcp}個區塊轉換為 {gcs}[items] {gcp}個物品'
+      nothing: '{gcw}你的背包中沒有可以拆解的物品。'
+  unjail:
+    help:
+      info: 將玩家從監獄中釋放
+      args: '[playerName] (-s)'
+    info:
+      notInJail: '{gcw}目標玩家並未在監獄中'
+      unjailed: '{gcp}你已將 {gcs}[playerDisplayName] {gcp}從監獄中釋放'
+      unjailedTarget: '{gcp}你已被釋放出監獄！'
+  unloadchunks:
+    help:
+      info: 從伺服器記憶體中卸載區塊
+      args: (-f)
+      explanation:
+        - -f 變數將強制一次卸載所有區塊。
+    info:
+      removed: '{gcp}已移除 -{gcs}[list]'
+      startScanning: '{gcp}找到 &6[amount] {gcp}個區塊準備卸載。開始執行！'
+      InfoShow: '{gcp}TPS：{gcs}[tps] {gcp}剩餘 {gcs}[left] {gcp}（{gcs}[min] 分：[sec]
+        秒{gcp}） 速度：{gcs}[speed] {gcp}已卸載：{gcs}[found]'
+      Finished: '{gcp}完成！！！已卸載：{gcs}[amount] {gcp}個區塊！耗時 {gcs}[minutes] {gcp} 分 {gcs}[seconds]
+        {gcp} 秒。'
+  unmute:
+    help:
+      info: 取消靜音玩家
+      args: '[playerName] (-s)'
+    info:
+      notMuted: '{gcp}玩家未被靜音'
+      unmuted: '{gcp}玩家現在可以說話了'
+      unmutedTarget: '{gcp}你現在可以說話了'
+  unmutechat:
+    help:
+      info: 取消靜音公開聊天室
+      args: (-s)
+    info:
+      unmuted: '{gcp}已取消公開聊天室的靜音'
+  usermeta:
+    help:
+      info: 管理玩家元數據
+      args: '[玩家名稱] [add/remove/clear/list/increment] (鍵) (值) (-s)'
+      explanation:
+        - 任何已設定的元數據皆可透過外掛中的 %cmi_user_meta_[key]% 佔位符進行顯示
+    info:
+      added: '{gcp}已為 {gcs}[playerDisplayName] {gcp}新增元數據，鍵為 {gcs}[key] {gcp}，值為 {gcs}[value]'
+      cleared: '{gcp}已清除 {gcs}[playerDisplayName] {gcp}的元數據'
+      removed: '{gcp}已從 {gcs}[playerDisplayName] {gcp}移除 {gcs}[key] {gcp}元數據'
+      changed: '{gcp}已將 {gcs}[key] {gcp}元數據從 {gcs}[oldValue] {gcp}變更為新值 {gcs}[newValue]'
+      ls: '{gcs}[key]{gcp}：[value]'
+  util:
+    help:
+      info: 管理工具
+      args: (removeseats/testtarget/convertitems)
+    info:
+      removedSits: '{gcp}已從所有世界中移除 {gcs}[count] {gcp}個空座位。'
+  vanish:
+    help:
+      info: 隱身玩家
+      args: (玩家名稱/列表) (開啟/關閉) (-s)
+    info:
+      vanished: '{gcp}您已進入隱身狀態'
+      unvanish: '{gcp}您已恢復可見狀態'
+      targetVanished: '{gcs}[playerDisplayName] {gcp}已進入隱身狀態'
+      targetUnvanish: '{gcs}[playerDisplayName] {gcp}已恢復可見狀態'
+      list: '{gcp}[place]. {gcs}[playerDisplayName] {gcp}（{gcs}[offon]{gcp}）'
+      noVanished: '{gcp}目前沒有隱身中的玩家'
+      noMsg: '{gcw}隱身時無法發送訊息。請在 vanishedit 中進行設定'
+  vanishedit:
+    help:
+      info: 編輯玩家的隱身模式
+      args: (玩家名稱) (動作) (true/false)
+    info:
+      isVanished: '&e已隱身'
+      damageToEntity: '&e可對他人造成傷害'
+      playerDamage: '&e可承受傷害'
+      itemPickup: '&e可拾取物品'
+      mobAggro: '&e怪物可鎖定目標'
+      interaction: '&e可進行物理互動'
+      noisyChest: '&e會發出聲響的箱子'
+      informOnLeave: '&e顯示離開訊息'
+      informOnJoin: '&e顯示加入訊息'
+      nightVision: '&e套用夜視效果'
+      bossbar: '&e隱身時顯示 Boss 條'
+      afkcommands: '&e隱身時觸發掛機指令'
+      PrivateMessages: '&e接收私人訊息'
+      relogDisable: '&e重新登入時關閉隱身'
+      noMessages: '&e無公開訊息'
+      fakeJoinLeave: '&e隱身狀態變更時顯示偽造的加入/離開訊息'
+      mobSpawning: '&e怪物將在附近生成'
+      stopPlaytime: '&e遊玩時間將停止累計'
+      sleepIgnore: '&e睡眠計數時忽略此玩家'
+      joinVanished: '&e一律以隱身模式加入'
+      deathMessages: '&e顯示死亡訊息'
+      hookPlayers: '&e正在掛鉤實體'
+      level: '&e隱身等級'
+      bossbarTitle: '{gcp}已隱身'
+      modified: '{gcp}已將 {gcs}[type] {gcp}設定為 {gcs}[state]'
+  version:
+    help:
+      info: 顯示插件版本
+      args: ''
+    info:
+      cmiVersion: '{gcp}CMI：{gcs}[version]'
+      cmiVersionNew: '{gcp}-> [newVersion]'
+      dbType: ' {gcn}[db]'
+      newServer: '{gcp}伺服器：{gcs}[version]'
+      Economy: '{gcp}CMI 經濟系統：{gcs}[state] '
+      Chat: '{gcp}CMI 聊天系統：{gcs}[state] '
+      CMIB: '{gcp}CMIB '
+      newVault: '{gcp}Vault：{gcs}[version] '
+      Modules: '{gcp}模組 -> {gcu}[enabled] 已啟用 {gcd}[disabled] 已停用{gcp}： {gcd}[list]'
+      Network: ' {gcp}[type] '
+      CMILib: '{gcp}CMILib：{gcs}[version] '
+      cmilVersionNew: '{gcp}-> [newVersion]'
+  viewdistance:
+    help:
+      info: 變更視距
+      args: '[範圍] (玩家名稱/世界名稱/重設) (視距/模擬)'
+    info:
+      output: '{gcp}視距：{gcs}[view] {gcp}模擬：{gcs}[simulation] {gcn}[type]'
+  voteedit:
+    help:
+      info: 管理玩家投票
+      args: (玩家名稱) [add/set/take/clear] [數量] (-s)
+      explanation:
+        - 範例：
+        - /voteedit Zrips
+        - /voteedit add 10
+        - /voteedit take 10
+        - /voteedit Zrips clear
+        - /voteedit Zrips add 10
+    info:
+      currentVotes: '{gcs}[playerDisplayName] {gcp}目前擁有 {gcs}[votes] {gcp}票'
+      selfFeedback: '{gcp}已將 {gcs}[playerDisplayName] {gcp}的票數設為 {gcs}[votes]{gcp}。'
+      targetFeedback: '{gcp}您的票數已被 {gcs}[senderDisplayName] {gcp}設為 {gcs}[votes]{gcp}。'
+  votes:
+    help:
+      info: 查詢玩家投票次數
+      args: (playerName)
+    info:
+      currentVoteSelf: '{gcp}您已投下 {gcs}[votes] {gcp}票'
+      currentVotes: '{gcp}[playerDisplayName] {gcp}目前擁有 {gcs}[votes] {gcp}票'
+      voteCooldown: '{gcp}您還需要等待 {gcs}[time] {gcp}才能再次投票'
+      voteLimit: '{gcp}您已達到今日投票次數上限。您還需要等待 {gcs}[time] {gcp}才能再次投票'
+  votetop:
+    help:
+      info: 查看最高票數列表
+      args: (玩家名稱)
+    info:
+      topLine: '{gcp}————— 最高票數 —————'
+      list: '{gcp}[名次]。 {gcs}[玩家顯示名稱]{gcp}： {gcs}[票數]'
+      ownLine: '{gcu}[名次]。 {gcs}[玩家顯示名稱]{gcp}： {gcs}[票數]'
+  walkspeed:
+    help:
+      info: 設定玩家的步行速度，範圍為 0 至 5
+      args: (玩家名稱) [數值] (-s)
+    info:
+      feedback: '{gcp}您已將 {gcs}[playerDisplayName]{gcp} 的步行速度設定為 {gcs}[amount]{gcp}。'
+      targetfeedback: '{gcp}您的步行速度已被 {gcs}[senderDisplayName]{gcp} 設定為 {gcs}[amount]{gcp}。'
+      max: '{gcp}您允許設定的最高步行速度為 {gcs}[max]{gcp}。'
+  warn:
+    help:
+      info: 警告玩家
+      args: '[玩家名稱] (類別) (原因) (-s)'
+    info:
+      noSelfWarning: '{gcw}你無法警告你自己'
+      cantBan: '{gcw}無法警告此玩家'
+      messageToAll: '{gcs}[playerDisplayName] {gcw}被 {gcs}[senderDisplayName] {gcw}警告，原因為：{gcs}[reason]'
+      banedSilent: '{gcn}[{gcu}靜默{gcn}]{gcs}[playerDisplayName] {gcw}被 {gcs}[senderDisplayName]
+        {gcw}警告，原因為：{gcs}[reason]'
+  warnings:
+    help:
+      info: 檢查玩家警告紀錄
+      args: (玩家名稱)
+    info:
+      totalPoints: '{gcp}---- {gcs}[playerDisplayName] {gcp}累計違規點數：{gcs}[totalPoints]
+        {gcp}----'
+      noWarnings: '{gcp}該玩家目前沒有任何警告紀錄'
+      list: '{gcp}[place]. {gcs}[time] {gcp}由 [warnedBy] 紀錄，原因：{gcp}[warnedFor]'
+      hover:
+        - '{gcp}過期時間：{gcs}[time]'
+        - '{gcp}違規點數：{gcs}[points]'
+  warp:
+    help:
+      info: 傳送至躍遷點位置
+      args: (躍遷點名稱) (玩家名稱) (-s) (-g:[群組名稱]) (-p:[頁碼])
+    info:
+      list: '{gcp}躍遷點：{gcs}'
+      click: '{gcp}點擊以傳送至 {gcs}[warp]'
+      teleported: '{gcp}已傳送至躍遷點：{gcs}[warp]'
+      noWarps: '{gcw}目前沒有已儲存的躍遷點'
+      autoLoreName: '{gcs}[warpName]'
+      autoLoreFormat:
+        - '{gcs}[worldName]'
+        - '{gcs}[x]：[y]：[z]'
+        - '{gcs}[creator]'
+      creator: '{gcp}建立者：{gcs}[creator]'
+      noWarpByName: '{gcw}找不到該名稱的躍遷點'
+      noAccess: '{gcw}無權存取此躍遷點'
+      guiTitle: '{gcp}躍遷點'
+      pageTitles:
+        - '&2躍遷點 1'
+        - '&8躍遷點 2'
+        - '&0躍遷點 3'
+  warpgroups:
+    help:
+      info: 列出傳送點群組
+      args: ''
+    info:
+      list: '{gcp}[編號]。 {gcs}[群組] {gcp}({gcs}[數量]{gcp})'
+  weather:
+    help:
+      info: 控制伺服器天氣
+      args: (sun/rain/storm) (lock/duration) (worldName/all)
+      explanation:
+        - 額外的時間格式可使用：s/m/h/d/w/M/Y
+        - 範例：
+        - /sun
+        - /rain
+        - /storm
+        - /sun lock
+        - /sun 120
+        - /sun Lt_Craft
+        - /sun 1h
+        - /sun 10m
+    info:
+      setTo: '{gcp}將 {gcs}[world] {gcp}的天氣設定為 {gcs}[weather] {gcp}，持續時間為 {gcs}[time]'
+      currentState: '{gcs}[world] {gcp}-> {gcs}[weather] {gcp}，持續時間為 {gcs}[time]'
+      sunny: 晴天
+      rainy: 雨天
+      thundering: 雷雨天
+  workbench:
+    help:
+      info: 開啟工作檯
+      args: (玩家名稱) (-s)
+    info:
+      feedback: '{gcp}你已為 {gcs}[playerDisplayName]{gcp} 開啟工作檯。'
+      targetfeedback: '{gcs}[senderDisplayName]{gcp} 為你開啟了工作檯。'
+  world:
+    help:
+      info: 傳送至不同世界
+      args: (normal/nether/end/1/2/3……) (玩家名稱) (-s)
+      explanation:
+        - 除了基礎權限節點外，還需要 cmi.command.world.[世界名稱] 權限
+    info:
+      here: '{gcp}已經在此處'
+  worth:
+    help:
+      info: 檢查物品價值
+      args: (all/blocks/hand/material)
+    info:
+      worthless: '{gcp}無價值'
+      damaged: ' {gcp}({gcs}[percent]% {gcp}已損壞)'
+      shulker: '{gcp}販售前請先將物品從界伏盒中取出'
+      repair: '{gcp}販售前請先修復'
+      basePrice: '{gcs}[itemName]{gcp}（{gcs}[amount]{gcp}） -> {gcs}[price]'
+      fullPrice: '{gcs}[price]'
+      total: '{gcp}總價值：{gcs}[total]'
+  worthlist:
+    help:
+      info: 檢查已設定販售價格的物品清單
+      args: (玩家名稱) (-missing)
+    info:
+      type: '{gcs}[類型]'
+      worth: '{gcp}價值：{gcs}[價格]'
+      title: '{gcp}價值清單'
